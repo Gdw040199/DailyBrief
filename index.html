@@ -1,0 +1,957 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日简报 · 2026-06-01</title>
+<style>
+  :root {
+    --bg: #fafaf9;
+    --bg-elevated: #ffffff;
+    --fg: #18181b;
+    --fg-soft: #3f3f46;
+    --muted: #71717a;
+    --rule: #e4e4e7;
+    --card: #f4f4f5;
+    --link: #1d4ed8;
+    --accent: #18181b;
+    --accent-fg: #fafaf9;
+    --rank-high-bg: #fee2e2;
+    --rank-high-fg: #991b1b;
+    --rank-mid-bg: #fef3c7;
+    --rank-mid-fg: #92400e;
+    --rank-low-bg: #e0e7ff;
+    --rank-low-fg: #3730a3;
+    --hero-grad-from: #fafaf9;
+    --hero-grad-to: #f4f4f5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0a0a0a;
+      --bg-elevated: #18181b;
+      --fg: #fafafa;
+      --fg-soft: #d4d4d8;
+      --muted: #a1a1aa;
+      --rule: #27272a;
+      --card: #18181b;
+      --link: #93c5fd;
+      --accent: #fafafa;
+      --accent-fg: #0a0a0a;
+      --rank-high-bg: rgba(239,68,68,0.18);
+      --rank-high-fg: #fca5a5;
+      --rank-mid-bg: rgba(245,158,11,0.18);
+      --rank-mid-fg: #fcd34d;
+      --rank-low-bg: rgba(99,102,241,0.18);
+      --rank-low-fg: #a5b4fc;
+      --hero-grad-from: #18181b;
+      --hero-grad-to: #0a0a0a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+      "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+
+  /* ===== header ===== */
+  header.report-header { margin-bottom: 1.25rem; }
+  .eyebrow {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  h1.report-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0.4rem 0 1.2rem;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+  .archive-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--rule);
+    padding-bottom: 1px;
+  }
+  .archive-link:hover { color: var(--accent); border-bottom-style: solid; }
+  .hero-card {
+    background: linear-gradient(135deg, var(--hero-grad-from) 0%, var(--hero-grad-to) 100%);
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    padding: 1rem 1.4rem;
+    border-radius: 0.6rem;
+  }
+  .hero-eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  .hero-headline {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0.35rem 0 0;
+    line-height: 1.45;
+    color: var(--fg);
+  }
+  .overview-card {
+    margin: 0.7rem 0 0;
+    padding: 0.7rem 1.1rem;
+    background: var(--card);
+    border-radius: 0.5rem;
+    border-left: 3px solid var(--muted);
+  }
+  .overview-card .eyebrow { display: block; margin-bottom: 0.3rem; }
+  .overview-text {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.65;
+    color: var(--fg-soft);
+  }
+
+  /* ===== primary tabs ===== */
+  .tabs {
+    display: flex;
+    gap: 0.25rem;
+    margin: 1.25rem 0 0.75rem;
+    border-bottom: 1px solid var(--rule);
+    flex-wrap: wrap;
+  }
+  .tab {
+    background: none;
+    border: none;
+    padding: 0.7rem 1.1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--muted);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    font-family: inherit;
+    transition: color 0.15s;
+  }
+  .tab:hover { color: var(--fg); }
+  .tab.active {
+    color: var(--fg);
+    border-bottom-color: var(--accent);
+  }
+  .tab .count {
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin-left: 0.4rem;
+    font-weight: 400;
+  }
+  .panel { display: none; }
+  .panel.active { display: block; }
+
+  /* ===== digest (AI 简报) — compact ===== */
+  .digest-category { margin-bottom: 1.1rem; }
+  .category-header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.55rem;
+    margin: 0 0 0.55rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .category-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--fg);
+    margin: 0;
+    letter-spacing: 0.05em;
+  }
+  .category-count {
+    font-size: 0.7rem;
+    color: var(--muted);
+    background: var(--card);
+    padding: 0.12rem 0.45rem;
+    border-radius: 999px;
+  }
+  .brief-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  @media (min-width: 720px) {
+    .brief-list { grid-template-columns: 1fr 1fr; }
+  }
+  .brief {
+    background: var(--bg-elevated);
+    border: 1px solid var(--rule);
+    border-radius: 0.5rem;
+    padding: 0.7rem 0.95rem;
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .brief:hover {
+    border-color: var(--muted);
+    transform: translateY(-1px);
+  }
+  .brief-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+    margin-bottom: 0.3rem;
+  }
+  .brief-source {
+    font-size: 0.72rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+  }
+  .brief-rank {
+    font-size: 0.7rem;
+    padding: 0.12rem 0.5rem;
+    border-radius: 999px;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  .brief-rank.high { background: var(--rank-high-bg); color: var(--rank-high-fg); }
+  .brief-rank.mid  { background: var(--rank-mid-bg);  color: var(--rank-mid-fg); }
+  .brief-rank.low  { background: var(--rank-low-bg);  color: var(--rank-low-fg); }
+  .brief-title {
+    font-size: 0.98rem;
+    font-weight: 600;
+    margin: 0 0 0.3rem;
+    line-height: 1.35;
+  }
+  .brief-title a { color: var(--fg); text-decoration: none; }
+  .brief-title a:hover { color: var(--link); text-decoration: underline; }
+  .brief-summary {
+    margin: 0;
+    color: var(--fg-soft);
+    font-size: 0.86rem;
+    line-height: 1.55;
+  }
+
+  .editor-card {
+    background: var(--card);
+    border-left: 3px solid var(--muted);
+    border-radius: 0.5rem;
+    padding: 1rem 1.3rem;
+    margin: 1.5rem 0 1.2rem;
+  }
+  .editor-card .eyebrow { display: block; margin-bottom: 0.4rem; }
+  .editor-text {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--fg);
+  }
+  .keywords { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.5rem; }
+  .keyword {
+    background: var(--card);
+    color: var(--fg-soft);
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+  }
+
+  /* ===== L2 sub-tabs ===== */
+  .sub-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 1rem 0;
+  }
+  .sub-tab {
+    background: var(--card);
+    border: 1px solid transparent;
+    padding: 0.5rem 1.05rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--fg-soft);
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.15s;
+  }
+  .sub-tab:hover { border-color: var(--muted); color: var(--fg); }
+  .sub-tab.active {
+    background: var(--accent);
+    color: var(--accent-fg);
+  }
+  .sub-tab .count {
+    font-size: 0.7rem;
+    opacity: 0.75;
+    margin-left: 0.4rem;
+    font-weight: 400;
+  }
+  .sub-content { display: none; }
+  .sub-content.active { display: block; }
+
+  /* ===== L3 source-tabs ===== */
+  .source-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin: 0.9rem 0 1.3rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .source-tab {
+    background: none;
+    border: 1px solid var(--rule);
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.83rem;
+    color: var(--fg-soft);
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.15s;
+  }
+  .source-tab:hover { border-color: var(--muted); color: var(--fg); }
+  .source-tab.active {
+    background: var(--fg);
+    color: var(--bg);
+    border-color: var(--fg);
+  }
+  .source-tab .count {
+    font-size: 0.7rem;
+    opacity: 0.75;
+    margin-left: 0.3rem;
+  }
+  .source-content { display: none; }
+  .source-content.active { display: block; }
+
+  /* ===== article cards in raw panels ===== */
+  .article {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .article:first-child { padding-top: 0; }
+  .article:last-child { border-bottom: none; }
+  .article-title {
+    font-size: 1rem;
+    margin: 0 0 0.3rem;
+    font-weight: 500;
+    line-height: 1.45;
+  }
+  .article-title a { color: var(--fg); text-decoration: none; }
+  .article-title a:hover { color: var(--link); text-decoration: underline; }
+  .article-meta { color: var(--muted); font-size: 0.76rem; margin: 0 0 0.35rem; }
+  .article-stats {
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin: 0 0 0.4rem;
+    font-feature-settings: "tnum";
+  }
+  .article-excerpt {
+    margin: 0;
+    color: var(--fg-soft);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  .article-summary {
+    margin: 0.55rem 0 0;
+    padding: 0.6rem 0.85rem;
+    background: var(--card);
+    border-left: 2px solid var(--link);
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--fg);
+  }
+  .summary-label {
+    display: inline-block;
+    font-size: 0.68rem;
+    color: var(--link);
+    margin-right: 0.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .empty {
+    color: var(--muted);
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    margin-top: 2.5rem;
+    border-top: 1px solid var(--rule);
+    padding-top: 1.1rem;
+    color: var(--muted);
+    font-size: 0.82rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="report-header">
+    <span class="eyebrow">每日简报</span>
+    <h1 class="report-title">2026-06-01</h1>
+    <a class="archive-link" href="./archive.html">← 历史归档</a>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="tech">技术动态<span class="count">50</span></button>
+    <button class="tab" data-tab="politics">时政观察<span class="count">15</span></button>
+  </nav>
+
+  <section class="panel active" data-panel="tech">
+    <nav class="sub-tabs"><button class="sub-tab active" data-sub="github-trending" data-cat="tech">GitHub Trending<span class="count">15</span></button><button class="sub-tab" data-sub="arxiv-papers" data-cat="tech">arXiv 论文<span class="count">0</span></button><button class="sub-tab" data-sub="trending-papers" data-cat="tech">热门论文<span class="count">20</span></button><button class="sub-tab" data-sub="x-viral" data-cat="tech">X 推文<span class="count">0</span></button><button class="sub-tab" data-sub="ai-news" data-cat="tech">AI 媒体<span class="count">15</span></button></nav>
+<div class="sub-contents"><div class="sub-content active" data-sub-content="github-trending" data-cat="tech">
+    
+    <div class="source-contents">
+      <div class="source-content active" data-source-content="github-trending" data-sub="github-trending" data-cat="tech">
+    <article class="article">
+  <h3 class="article-title"><a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" rel="noopener noreferrer">harry0703/MoneyPrinterTurbo</a></h3>
+  <p class="article-stats">Python · ★ 75,537 · 🍴 10,736 · 📈 1,937 stars today</p>
+  
+  <p class="article-excerpt">利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 基于AI大模型的一键短视频生成工具，输入文本即可快速输出高清视频。适合内容创作者、营销人员快速制作短视频素材，无需剪辑经验，大幅提升视频生产效率。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/microsoft/markitdown" target="_blank" rel="noopener noreferrer">microsoft/markitdown</a></h3>
+  <p class="article-stats">Python · ★ 135,977 · 🍴 9,280 · 📈 2,798 stars today</p>
+  
+  <p class="article-excerpt">Python tool for converting files and office documents to Markdown.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 微软出品的Python工具，能将Word、Excel、PPT等Office文档及多种文件格式转换为Markdown。方便文档归档、网页发布、AI处理等场景，支持命令行和API调用，简单高效。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/D4Vinci/Scrapling" target="_blank" rel="noopener noreferrer">D4Vinci/Scrapling</a></h3>
+  <p class="article-stats">Python · ★ 57,161 · 🍴 5,548 · 📈 606 stars today</p>
+  
+  <p class="article-excerpt">🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 自适应网页爬虫框架，从单次请求到大规模爬取全覆盖。内置反爬处理、智能解析与并发控制，适合数据采集工程师快速构建稳定爬虫，降低被封风险。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/nesquena/hermes-webui" target="_blank" rel="noopener noreferrer">nesquena/hermes-webui</a></h3>
+  <p class="article-stats">Python · ★ 10,275 · 🍴 1,394 · 📈 357 stars today</p>
+  
+  <p class="article-excerpt">Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Hermes Agent的Web/手机UI，让你通过浏览器或移动端远程操控AI Agent。方便随时随地下达任务、查看执行结果，特别适合移动办公和跨设备协作场景。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/EveryInc/compound-engineering-plugin" target="_blank" rel="noopener noreferrer">EveryInc/compound-engineering-plugin</a></h3>
+  <p class="article-stats">TypeScript · ★ 18,846 · 🍴 1,416 · 📈 251 stars today</p>
+  
+  <p class="article-excerpt">Official Compound Engineering plugin for Claude Code, Codex, Cursor, and more</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Compound Engineering官方插件，适配Claude Code、Codex、Cursor等AI编码工具。提供复合工程模板和自动化流程，帮助开发者将重复工作交给AI，提升软件工程效率。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/github/docs" target="_blank" rel="noopener noreferrer">github/docs</a></h3>
+  <p class="article-stats">TypeScript · ★ 19,804 · 🍴 67,295 · 📈 27 stars today</p>
+  
+  <p class="article-excerpt">The open-source repo for docs.github.com</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> GitHub官方文档的开源仓库，贡献者可提交修正或新内容。维护了平台所有功能的说明、API参考和最佳实践，是开发者查阅和学习GitHub操作的第一手资料。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/OpenBMB/VoxCPM" target="_blank" rel="noopener noreferrer">OpenBMB/VoxCPM</a></h3>
+  <p class="article-stats">Python · ★ 23,798 · 🍴 2,737 · 📈 635 stars today</p>
+  
+  <p class="article-excerpt">VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> OpenBMB推出的VoxCPM2多语言语音合成模型，采用无Tokenizer架构，支持创意语音设计和逼真声音克隆。适合配音、虚拟助手、无障碍阅读等自然语音生成场景，无需额外分词。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/revfactory/harness" target="_blank" rel="noopener noreferrer">revfactory/harness</a></h3>
+  <p class="article-stats">HTML · ★ 4,810 · 🍴 661 · 📈 323 stars today</p>
+  
+  <p class="article-excerpt">A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 元技能框架，自动设计领域专属的AI智能体团队、定义角色并生成所需技能。适合需要多智能体协作的企业，如客服分流、文档审阅等复杂任务。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/FareedKhan-dev/train-llm-from-scratch" target="_blank" rel="noopener noreferrer">FareedKhan-dev/train-llm-from-scratch</a></h3>
+  <p class="article-stats">Jupyter Notebook · ★ 3,232 · 🍴 471 · 📈 626 stars today</p>
+  
+  <p class="article-excerpt">A straightforward method for training your LLM, from downloading data to generating text.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 手把手教你从头训练LLM，涵盖数据下载、预处理、训练到文本生成全流程。面向想深入理解大模型原理的研究者和爱好者，提供可复现的简易方法。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/supermemoryai/supermemory" target="_blank" rel="noopener noreferrer">supermemoryai/supermemory</a></h3>
+  <p class="article-stats">TypeScript · ★ 23,538 · 🍴 2,120 · 📈 264 stars today</p>
+  
+  <p class="article-excerpt">Memory engine and app that is extremely fast, scalable. The Memory API for the AI era.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 为AI时代设计的记忆引擎，提供高速可扩展的Memory API。允许AI应用跨会话存储和检索用户信息，适合聊天机器人、个人助理等需要长期记忆的场景。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/Crosstalk-Solutions/project-nomad" target="_blank" rel="noopener noreferrer">Crosstalk-Solutions/project-nomad</a></h3>
+  <p class="article-stats">TypeScript · ★ 27,841 · 🍴 2,717 · 📈 374 stars today</p>
+  
+  <p class="article-excerpt">Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Project N.O.M.A.D.是一款离线生存计算机，内置关键工具、知识库和AI，无需网络即可运行。适用于应急通信、野外探险、灾难救援等缺乏基础设施的环境。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/anthropics/claude-code" target="_blank" rel="noopener noreferrer">anthropics/claude-code</a></h3>
+  <p class="article-stats">Python · ★ 129,125 · 🍴 21,013 · 📈 489 stars today</p>
+  
+  <p class="article-excerpt">Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Anthropic推出的终端智能编码助手，理解整个代码库，能执行重复任务、解释复杂代码、管理Git工作流。面向开发者，在终端内直接提升编码效率。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/nicobailon/pi-subagents" target="_blank" rel="noopener noreferrer">nicobailon/pi-subagents</a></h3>
+  <p class="article-stats">TypeScript · ★ 1,931 · 🍴 263 · 📈 69 stars today</p>
+  
+  <p class="article-excerpt">Pi extension for async subagent delegation with truncation, artifacts, and session sharing</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 为Pi AI开发的扩展，支持异步子代理委托，并处理截断、工件和会话共享。适合将复杂对话拆解为子任务，由不同代理并行处理，提升AI协作能力。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/emmabostian/developer-portfolios" target="_blank" rel="noopener noreferrer">emmabostian/developer-portfolios</a></h3>
+  <p class="article-stats">Python · ★ 23,554 · 🍴 4,628 · 📈 73 stars today</p>
+  
+  <p class="article-excerpt">A list of developer portfolios for your inspiration</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 汇集众多优秀开发者个人作品集的列表，涵盖不同风格和技术栈。前端设计师和开发者可从中获取灵感，学习如何展示自己的项目与技能。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/codecrafters-io/build-your-own-x" target="_blank" rel="noopener noreferrer">codecrafters-io/build-your-own-x</a></h3>
+  <p class="article-stats">Markdown · ★ 509,667 · 🍴 48,342 · 📈 1,158 stars today</p>
+  
+  <p class="article-excerpt">Master programming by recreating your favorite technologies from scratch.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 通过从零实现Git、数据库、Docker等技术来学习编程的经典教程合集。适合希望深入理解系统原理的开发者，动手重建，巩固计算机科学基础。</p>
+</article>
+  </div>
+    </div>
+  </div>
+<div class="sub-content" data-sub-content="arxiv-papers" data-cat="tech">
+    
+    <div class="source-contents">
+      <div class="source-content active" data-source-content="arxiv-papers" data-sub="arxiv-papers" data-cat="tech">
+    <p class="empty">该源今日无内容。</p>
+  </div>
+    </div>
+  </div>
+<div class="sub-content" data-sub-content="trending-papers" data-cat="tech">
+    
+    <div class="source-contents">
+      <div class="source-content active" data-source-content="huggingface-papers" data-sub="trending-papers" data-cat="tech">
+    <article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.30161" target="_blank" rel="noopener noreferrer">Why Far Looks Up: Probing Spatial Representation in Vision-Language Models</a></h3>
+  <p class="article-stats">👍 45</p>
+  <p class="article-meta">05/28 08:00</p>
+  <p class="article-excerpt">Vision-language models (VLMs) achieve strong performance on spatial reasoning benchmarks, yet it remains unclear whether this reflects structured 3D understanding or reliance on statistical shortcuts in natural images. We introduce a representation-level analysis framework that constructs minimal co</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出表征级分析框架，通过最小对比对探测VLM空间推理来源，揭示模型依赖统计捷径而非结构化3D理解。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.31264" target="_blank" rel="noopener noreferrer">COLLEAGUE.SKILL: Automated AI Skill Generation via Expert Knowledge Distillation</a></h3>
+  <p class="article-stats">👍 43</p>
+  <p class="article-meta">05/29 08:00</p>
+  <p class="article-excerpt">LLM agents are increasingly expected not only to complete isolated tasks, but also to carry bounded representations of human expertise, judgment, and interaction style. Building such person-grounded agents remains difficult because actionable knowledge associated with a person or role is usually emb</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出COLLEAGUE.SKILL方法，通过专家知识蒸馏自动生成可承载人类专家知识、判断和交互风格的AI技能，使LLM agent更个性化。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.31584" target="_blank" rel="noopener noreferrer">LongTraceRL: Learning Long-Context Reasoning from Search Agent Trajectories with Rubric Rewards</a></h3>
+  <p class="article-stats">👍 28</p>
+  <p class="article-meta">05/29 08:00</p>
+  <p class="article-excerpt">Long-context reasoning remains a central challenge for large language models, which often fail to locate and integrate key information in extensive distracting content. Reinforcement learning with verifiable rewards (RLVR) has shown promise for this task, yet existing methods are limited by low-conf</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出LongTraceRL，利用搜索智能体轨迹和评分奖励学习长上下文推理，解决LLM在大量干扰信息中定位整合关键信息的难题。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.30010" target="_blank" rel="noopener noreferrer">EarlyTom: Early Token Compression Completes Fast Video Understanding</a></h3>
+  <p class="article-stats">👍 28</p>
+  <p class="article-meta">05/28 08:00</p>
+  <p class="article-excerpt">Video large language models (Video-LLMs) have demonstrated strong capabilities in video understanding tasks. However, their practical deployment is still hindered by the inefficiency introduced by processing massive amounts of visual tokens. Although recent approaches achieve extremely low token ret</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出EarlyTom，通过早期令牌压缩大幅减少视觉令牌数量，实现高效视频理解，在极低保留率下保持任务性能。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.30819" target="_blank" rel="noopener noreferrer">Function2Scene: 3D Indoor Scene Layout from Functional Specifications</a></h3>
+  <p class="article-stats">👍 23</p>
+  <p class="article-meta">05/29 08:00</p>
+  <p class="article-excerpt">Most text-driven 3D indoor scene synthesis methods generate rooms from object-centric prompts, asking what furniture should be placed rather than how the space is used. Yet in real interior design, a layout is judged by how well it supports its occupants, e.g., their activities and physical needs. W</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出Function2Scene，从功能规范（如活动、物理需求）直接生成3D室内场景布局，而非仅依赖物体列表，更贴合实际设计需求。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.31075" target="_blank" rel="noopener noreferrer">Task-Focused Memorization for Multimodal Agents</a></h3>
+  <p class="article-stats">👍 18</p>
+  <p class="article-meta">05/29 08:00</p>
+  <p class="article-excerpt">Long-term memory is essential for multimodal agents to build coherent experience, accumulate world knowledge, and achieve continual learning. However, constructing effective memory goes beyond memory module design and basic requirements such as accuracy and fidelity; the key challenge lies in determ</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出任务聚焦记忆方法，让多模态智能体根据任务需求选择性记忆关键信息，提升长期记忆的连贯性和持续学习能力。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.29507" target="_blank" rel="noopener noreferrer">Xetrieval: Mechanistically Explaining Dense Retrieval</a></h3>
+  <p class="article-stats">👍 17</p>
+  <p class="article-meta">05/28 08:00</p>
+  <p class="article-excerpt">Explaining why dense retrievers assign high relevance scores remains challenging because retrieval decisions are made through opaque high-dimensional embeddings. Existing explanations often focus on surface signals, such as lexical matches, token alignments, or post-hoc textual rationales, and thus </p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出Xetrieval，从机制层面解释稠密检索的评分决策，揭示高维嵌入中的真正影响因素，超越表面信号如词法匹配。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.30407" target="_blank" rel="noopener noreferrer">Exploring Autonomous Agentic Data Engineering for Model Specialization</a></h3>
+  <p class="article-stats">👍 14</p>
+  <p class="article-meta">05/28 08:00</p>
+  <p class="article-excerpt">Large Language Models (LLMs) have demonstrated strong performance on general tasks, while often struggling to adapt to specialized domains without high-quality domain-specific data. Existing LLM-based data curation methods primarily rely on human-designed workflows, leaving it unexamined whether LLM</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 探索自主智能体数据工程，让LLM自主设计数据流程以生成领域专用数据，实现模型专业化，减少人工工作流依赖。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.29447" target="_blank" rel="noopener noreferrer">Recovering Policy-Induced Errors: Benchmarking and Trajectory Synthesis for Robust GUI Agents</a></h3>
+  <p class="article-stats">👍 13</p>
+  <p class="article-meta">05/28 08:00</p>
+  <p class="article-excerpt">While GUI agents have advanced rapidly, they often lack the robustness to recover from their own errors, hindering real-world deployment. To bridge this gap at both the evaluation and data levels, we introduce GUI-RobustEval and propose Robustness-driven Trajectory Synthesis. GUI-RobustEval contains</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出GUI-RobustEval基准和鲁棒性驱动轨迹合成方法，用于评估和增强GUI智能体从自身错误中恢复的能力。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.30434" target="_blank" rel="noopener noreferrer">LongDS-Bench: On the Failure of Long-Horizon Agentic Data Analysis</a></h3>
+  <p class="article-stats">👍 13</p>
+  <p class="article-meta">05/28 08:00</p>
+  <p class="article-excerpt">Real-world data analysis is inherently iterative, yet existing benchmarks mostly evaluate isolated or short interactive tasks, leaving agents&#39; ability to track evolving analytical context over long horizons untested. We introduce LongDS, a benchmark for long-horizon, multi-turn data analysis where a</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出LongDS-Bench基准，评估智能体在长周期、多轮数据分析中追踪演化上下文的能力，揭示现有方法在长视野任务中易失败。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.31042" target="_blank" rel="noopener noreferrer">From Prompt Injection to Persistent Control: Defending Agentic Harness Against Trojan Backdoors</a></h3>
+  <p class="article-stats">👍 12</p>
+  <p class="article-meta">05/29 08:00</p>
+  <p class="article-excerpt">LLM agents are evolving from conversational chatbots to operational tools in real-world workspaces. In local agentic harnesses, an LLM can read and write files, call tools, and reuse workspace state across sessions. While such capabilities enhance utility, they also expose a new attack surface for a</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 研究针对agentic harness的木马后门攻击，提出防御方法防止提示注入演变为持久控制，保护LLM agent工作空间安全。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.30102" target="_blank" rel="noopener noreferrer">When Cloud Agents Meet Device Agents: Lessons from Hybrid Multi-Agent Systems</a></h3>
+  <p class="article-stats">👍 11</p>
+  <p class="article-meta">05/28 08:00</p>
+  <p class="article-excerpt">The design space of agentic AI inference spans two extremes: frontier large language models (LLMs), typically hosted in the cloud and offering strong performance across a wide range of tasks at substantially high cost, and more cost-efficient small language models (SLMs), which are amenable to on-de</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 探索云侧大模型与设备端小模型混合的多智能体系统设计，分析性能与成本权衡，为混合推理架构提供经验教训。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.30876" target="_blank" rel="noopener noreferrer">dMoE: dLLMs with Learnable Block Experts</a></h3>
+  <p class="article-stats">👍 10</p>
+  <p class="article-meta">05/29 08:00</p>
+  <p class="article-excerpt">Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive models, offering competitive performance while naturally supporting parallel decoding. However, as dLLMs are increasingly integrated with Mixture-of-Experts (MoE) architectures to scale model c</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出dMoE，将可学习块专家集成到扩散LLM中，实现更高效的模型扩展与并行解码，缓解MoE架构扩展问题。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.26730" target="_blank" rel="noopener noreferrer">PRISM: A Multi-Dimensional Benchmark for Evaluating LLM Peer Reviewers</a></h3>
+  <p class="article-stats">👍 10</p>
+  <p class="article-meta">05/27 08:00</p>
+  <p class="article-excerpt">The rapid growth in submissions to machine learning venues has strained the scientific peer-review system and intensified interest in LLM-based automated peer reviewers. However, how good these systems are actually, especially compared to human reviewers at catching scientific gaps, remains poorly u</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出PRISM基准，从多维度评估LLM作为同行评审人的能力，对比人类评审员发现科学漏洞的效果，揭示当前系统不足。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.30350" target="_blank" rel="noopener noreferrer">DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation</a></h3>
+  <p class="article-stats">👍 8</p>
+  <p class="article-meta">05/28 08:00</p>
+  <p class="article-excerpt">Robot manipulation critically depends on perception that preserves the action-relevant aspects of a scene. Yet most robot learning pipelines are built upon visual encoders pre-trained for static recognition or vision-language alignment, leaving motion understanding to downstream policies. We introdu</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出DynaFLIP，通过三模态（视觉、触觉、动力学）动态引导的表征学习，保留动作相关场景信息，提升机器人操作感知。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.30052" target="_blank" rel="noopener noreferrer">REPOT: Recoverable Program-of-Thought via Checkpoint Repair</a></h3>
+  <p class="article-stats">👍 6</p>
+  <p class="article-meta">05/28 08:00</p>
+  <p class="article-excerpt">One-shot Program-of-Thought (PoT) emits a Python program that prints a primitive-action plan; a single invalid action silently invalidates the trajectory. We introduce RePoT (Recoverable PoT): a deterministic verified replay that walks the plan through the environment to its first invalid transition</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出RePoT（可恢复思维程序），通过确定性验证回放和检查点修复，使智能体从无效动作中恢复，避免单步失败导致整个轨迹无效。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.24785" target="_blank" rel="noopener noreferrer">PANDO: Efficient Multimodal AI Agents via Online Skill Distillation</a></h3>
+  <p class="article-stats">👍 5</p>
+  <p class="article-meta">05/26 08:00</p>
+  <p class="article-excerpt">Recent advances in multimodal web agents often rely on increased inference-time computation, including rollout search, verifier passes, offline skill discovery, and specialist model stacks. This raises a central question: can a web agent become more efficient as it accumulates experience, rather tha</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出PANDO，通过在线技能蒸馏使多模态web智能体随经验积累而更高效，减少推理时计算，反问能否越用越高效。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.23657" target="_blank" rel="noopener noreferrer">OpenSkillEval: Automatically Auditing the Open Skill Ecosystem for LLM Agents</a></h3>
+  <p class="article-stats">👍 4</p>
+  <p class="article-meta">05/28 08:00</p>
+  <p class="article-excerpt">Skills, i.e., structured workflow instructions distilled for large language models (LLMs), are becoming an increasingly important mechanism for improving agent performance on real-world downstream tasks. However, as the open-source skill ecosystem rapidly expands, it remains unclear how different mo</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出OpenSkillEval，自动审计开源技能生态中不同模型使用技能的效果，评估技能质量对LLM agent下游任务性能的影响。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.21781" target="_blank" rel="noopener noreferrer">Reflective Prompt Tuning through Language Model Function-Calling</a></h3>
+  <p class="article-stats">👍 4</p>
+  <p class="article-meta">05/20 08:00</p>
+  <p class="article-excerpt">Large language models (LLMs) have become increasingly capable of following instructions and complex reasoning, making prompting a flexible interface for adapting models without parameter updates. Yet prompt design remains labor-intensive and highly sensitive to formatting, phrasing, and instruction </p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出反思式提示调优方法，利用语言模型的函数调用能力自动优化提示设计，减少人工劳动和对格式的敏感度。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.24786" target="_blank" rel="noopener noreferrer">CONF-KV: Confidence-Aware KV Cache Eviction with Mixed-Precision Storage for Long-Horizon LLM</a></h3>
+  <p class="article-stats">👍 4</p>
+  <p class="article-meta">05/24 08:00</p>
+  <p class="article-excerpt">Long-horizon LLM inference turns the key--value (KV) cache into the dominant GPU memory consumer and makes per-token attention increasingly expensive. Many common eviction policies use static recency windows or historical attention, leaving unused a signal computed on every decoding step: the model&#39;</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出CONF-KV，利用模型每步解码的置信度信号指导KV缓存驱逐，结合混合精度存储，降低长上下文推理的GPU内存和计算开销。</p>
+</article>
+  </div>
+    </div>
+  </div>
+<div class="sub-content" data-sub-content="x-viral" data-cat="tech">
+    
+    <div class="source-contents">
+      <div class="source-content active" data-source-content="attentionvc-ai" data-sub="x-viral" data-cat="tech">
+    <p class="empty">该源今日无内容。</p>
+  </div>
+    </div>
+  </div>
+<div class="sub-content" data-sub-content="ai-news" data-cat="tech">
+    
+    <div class="source-contents">
+      <div class="source-content active" data-source-content="_merged" data-sub="ai-news" data-cat="tech">
+    <article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai" target="_blank" rel="noopener noreferrer">Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action</a></h3>
+  
+  <p class="article-meta">Hugging Face Blog · 06/01 12:44</p>
+  
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 英伟达推出Cosmos 3，为首个面向物理AI推理与行动的开源全模态模型。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.latent.space/p/ainews-founders-and-forward-deployed" target="_blank" rel="noopener noreferrer">[AINews] Founders and Forward Deployed Engineers</a></h3>
+  
+  <p class="article-meta">Latent Space · 05/30 09:57</p>
+  <p class="article-excerpt">a quiet day lets us highlight the new AIE WF focuses</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> AI新闻简报主要介绍创始人及前端部署工程师，当日市场较为平静。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://openai.com/index/boston-childrens-hospital" target="_blank" rel="noopener noreferrer">Boston Children’s uses AI to unlock new diagnoses</a></h3>
+  
+  <p class="article-meta">OpenAI News · 05/29 20:00</p>
+  <p class="article-excerpt">Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 波士顿儿童医院利用OpenAI技术改善患者护理、减轻运营负担，并协助诊断超过40个罕见病病例。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://openai.com/index/braintrust" target="_blank" rel="noopener noreferrer">How Braintrust turns customer requests into code with Codex</a></h3>
+  
+  <p class="article-meta">OpenAI News · 05/29 20:00</p>
+  <p class="article-excerpt">How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Braintrust工程师使用Codex与GPT-5.5，将客户需求转化为代码，加速实验与开发。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.technologyreview.com/2026/05/29/1138107/how-the-popes-magnifica-humanitas-offers-a-template-for-individuals-to-meet-the-ai-moment/" target="_blank" rel="noopener noreferrer">How the Pope’s Magnifica Humanitas offers a template for individuals to meet the AI moment</a></h3>
+  
+  <p class="article-meta">MIT Tech Review AI · 05/29 18:00</p>
+  <p class="article-excerpt">Pope Leo XIV’s new encyclical on artificial intelligence includes a statement that warrants serious attention from technologists and policymakers: “Technology is never neutral.” Magnifica Humanitas (“Magnificent Humanity”) is a clarion call to all people to act with courage and solidarity as we ente</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 教皇利奥十四世发布关于人工智能的通谕《至伟之人性》，强调「技术从不中立」，呼吁众人勇敢行动应对AI时代。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://news.smol.ai/issues/26-05-29-not-much/" target="_blank" rel="noopener noreferrer">not much happened today</a></h3>
+  
+  <p class="article-meta">Smol AI News · 05/29 13:44</p>
+  <p class="article-excerpt">**Anthropic** rolled out **Claude Opus 4.8**, which shows incremental improvements but mixed benchmark results, including better cooperation and coding behavior but some regressions in document parsing. Platform updates include mid-conversation system instructions enhancing long agent sessions, thou</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Anthropic发布Claude Opus 4.8，基准测试结果有增有减：协作与编码能力提升，文档解析出现退化；平台增加对话中系统指令。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense" target="_blank" rel="noopener noreferrer">Strengthening societal resilience with Rosalind Biodefense</a></h3>
+  
+  <p class="article-meta">OpenAI News · 05/29 11:00</p>
+  <p class="article-excerpt">OpenAI launches Rosalind Biodefense, expanding trusted access to GPT-Rosalind for vetted developers and U.S. government partners advancing biodefense, public health, and pandemic preparedness through frontier AI.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> OpenAI推出Rosalind Biodefense，向审查通过的开发者和美国政府合作伙伴扩展GPT-Rosalind安全访问，推进生物防御与公共卫生。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.latent.space/p/ainews-anthropic-raises-965b-series" target="_blank" rel="noopener noreferrer">[AINews] Anthropic raises $965B Series H, releases Opus 4.8 and Dynamic Workflows/ultracode</a></h3>
+  
+  <p class="article-meta">Latent Space · 05/29 10:07</p>
+  <p class="article-excerpt">Total Anthropic victory!</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Anthropic完成9650亿美元H轮融资，同时发布Opus 4.8及Dynamic Workflows，被视为全面胜利。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://openai.com/index/trustworthy-third-party-evaluations-foundations" target="_blank" rel="noopener noreferrer">A shared playbook for trustworthy third party evaluations</a></h3>
+  
+  <p class="article-meta">OpenAI News · 05/29 08:00</p>
+  <p class="article-excerpt">OpenAI shares guidance on third-party AI evaluations, covering how to assess model capabilities, safeguards, and validity for frontier systems.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> OpenAI发布第三方AI评估指南，涵盖如何评估前沿系统的模型能力、安全保障及有效性。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/blog/torch-profiler" target="_blank" rel="noopener noreferrer">Profiling in PyTorch (Part 1): A Beginner&#39;s Guide to torch.profiler</a></h3>
+  
+  <p class="article-meta">Hugging Face Blog · 05/29 08:00</p>
+  
+  <p class="article-summary"><span class="summary-label">中文介绍</span> PyTorch官方博客发布torch.profiler入门指南，帮助初学者了解PyTorch性能分析工具。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://tldr.tech/ai/2026-05-29" target="_blank" rel="noopener noreferrer">Opus 4.8 🧠, Anthropic at $965B 💰, Microsoft’s coding model 👨‍💻</a></h3>
+  
+  <p class="article-meta">TLDR AI · 05/29 08:00</p>
+  
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 当日AI新闻：Anthropic发布Opus 4.8并完成9650亿美元融资，微软推出新编程模型。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.latent.space/p/cognition" target="_blank" rel="noopener noreferrer">The Age of Async Agents — Cognition&#39;s Walden Yan &amp; OpenInspect&#39;s Cole Murray</a></h3>
+  
+  <p class="article-meta">Latent Space · 05/29 02:41</p>
+  <p class="article-excerpt">80% Devin Commits, Spec-to-PR Workflows, Full VMs, Agent Memory, and PMs Shipping Code</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Cognition与OpenInspect讨论异步智能体时代，涉及Devin提交占比80%、从规格到PR工作流、智能体记忆及产品经理交付代码。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://openai.com/index/endava" target="_blank" rel="noopener noreferrer">How Endava builds an agentic organization with Codex</a></h3>
+  
+  <p class="article-meta">OpenAI News · 05/28 20:00</p>
+  <p class="article-excerpt">Learn how Endava uses Codex to build an agentic organization, accelerating software delivery and reducing requirements analysis from weeks to hours.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Endava利用Codex构建智能体组织，加速软件交付，将需求分析时间从数周缩短至数小时。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.technologyreview.com/2026/05/28/1138053/the-ai-hype-index-ai-gets-booed-in-graduation-season/" target="_blank" rel="noopener noreferrer">The AI Hype Index: AI gets booed in graduation season</a></h3>
+  
+  <p class="article-meta">MIT Tech Review AI · 05/28 17:51</p>
+  <p class="article-excerpt">It is one thing to say AI will change the world. It is another to expect the class of 2026 to applaud it. In fact, when former Google CEO Eric Schmidt told University of Arizona graduates that their task is to help shape AI, he was met with a resounding chorus of boos. “I can…</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> AI热潮指数显示，2026届毕业生对AI持怀疑态度。前谷歌CEO埃里克·施密特建议毕业生帮助塑造AI，遭一片嘘声。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.latent.space/p/ainews-cognition-raises-1b-in-26b" target="_blank" rel="noopener noreferrer">[AINews] Cognition raises $1B in $26B Series D</a></h3>
+  
+  <p class="article-meta">Latent Space · 05/28 15:26</p>
+  <p class="article-excerpt">coding is an uncapped TAM market</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Cognition以260亿美元估值完成10亿美元D轮融资，认为编程市场总规模不受限制。</p>
+</article>
+  </div>
+    </div>
+  </div></div>
+  </section>
+  <section class="panel" data-panel="politics">
+    <div class="sub-content active" data-sub-content="world" data-cat="politics">
+    
+    <div class="source-contents">
+      <div class="source-content active" data-source-content="_merged" data-sub="world" data-cat="politics">
+    <article class="article">
+  <h3 class="article-title"><a href="https://www.theguardian.com/environment/2026/jun/01/typhoon-jangmi-japan-europe-temperatures-australia" target="_blank" rel="noopener noreferrer">Typhoon Jangmi threatens Japan as Europe swelters</a></h3>
+  
+  <p class="article-meta">The Guardian · 06/01 15:17</p>
+  <p class="article-excerpt">Powerful winds and rain expected in parts of Japan and Australia, while temperatures in Spain could hit 40C A powerful tropical storm is forecast to track near Okinawa, Japan, on Mondaybefore moving towards the south-east of the country. Typhoon Jangmi (also known as Typhoon No 6) has formed within </p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 台风“蔷蜜”逼近日本冲绳，带来强风暴雨，预计周一靠近冲绳并向东南移动；同时欧洲西班牙等地气温可能达到40摄氏度。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.theguardian.com/australia-news/live/2026/jun/01/australia-news-live-one-nation-labor-poll-free-public-transport-victoria-pauline-hanson-anthony-albanese" target="_blank" rel="noopener noreferrer">Australia news live: Hastie says falling house prices might not be ‘all that encouraging’ for recent buyers; 13-year-old allegedly planned attack on Queensland school</a></h3>
+  
+  <p class="article-meta">The Guardian · 06/01 15:17</p>
+  <p class="article-excerpt">Follow today’s news live Get our breaking news email, free app or daily news podcast Tony Abbott, the new party president of the Liberals, said he wouldn’t get “too excited” by the poll showing One Nation’s surging support. But he told RN this morning he believes the country is in trouble and the Li</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 澳大利亚自由党新主席托尼·艾伯特不因一国党支持率上升而激动；住房部长哈斯蒂称房价下跌对近期购房者可能不是好消息；一名13岁少年被控策划袭击昆士兰学校。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.nytimes.com/2026/06/01/world/syria-war-crimes-trial-austria.html" target="_blank" rel="noopener noreferrer">Syrian Officers Who Hid in Plain Sight Face War Crime Charges in Austria</a></h3>
+  
+  <p class="article-meta">NYT World · 06/01 15:14</p>
+  <p class="article-excerpt">The trial, Austria’s first against Assad regime officials, will be a rare chance for Syrian witnesses to confront two men they have accused of torture.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 奥地利首次审判叙利亚阿萨德政权官员，两名被控实施酷刑的官员出庭，叙利亚证人获得罕见机会与他们对质。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.theguardian.com/world/live/2026/jun/01/iran-war-live-news-updates-kuwait-missile-drone-attack-us-strikes-iran-radar-sites" target="_blank" rel="noopener noreferrer">Middle East crisis live: Kuwait reports missile and drone attack as Trump claims war will ‘all work out well’</a></h3>
+  
+  <p class="article-meta">The Guardian · 06/01 15:11</p>
+  <p class="article-excerpt">Kuwaiti state media report sirens sounding across the country as US president hits out a ‘chirping’ critics and says they should ‘sit back and relax’ European leaders condemn Israel’s deepening incursion into Lebanon The exchange of strikes between the US and Iran reflects the fragility of the curre</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 科威特报告遭导弹和无人机袭击；特朗普称战争将“一切顺利”；欧洲领导人谴责以色列深入黎巴嫩；美国与伊朗互相打击军事目标。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.nytimes.com/2026/05/31/world/americas/colombia-election-president-candidates.html" target="_blank" rel="noopener noreferrer">Colombia Presidential Election Heads to a Runoff</a></h3>
+  
+  <p class="article-meta">NYT World · 06/01 15:04</p>
+  <p class="article-excerpt">The candidate, Abelardo de la Espriella, will face a senator from the left-wing party of the outgoing president, Gustavo Petro, in a June runoff.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 哥伦比亚总统选举进入第二轮，候选人阿贝拉多·德·拉·埃斯普列拉将与现任总统佩特罗的左翼政党议员伊万·塞佩达在6月对决。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.nytimes.com/2026/06/01/world/middleeast/us-strikes-iran-goruk-qeshm.html" target="_blank" rel="noopener noreferrer">U.S. Says It Hit More Military Targets in Southern Iran</a></h3>
+  
+  <p class="article-meta">NYT World · 06/01 14:52</p>
+  <p class="article-excerpt">The U.S. military said it carried out ‘self-defense strikes’ over the weekend. Iran’s military said it had targeted a military base in retaliation for an American strike.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 美军称在伊朗南部发动“自卫打击”，击中更多军事目标；伊朗军方称已报复性打击美军基地。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.bbc.com/news/articles/crlpy8n7pr6o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">US says it struck Iranian radar sites as Kuwait reports missile and drone attacks</a></h3>
+  
+  <p class="article-meta">BBC World · 06/01 14:47</p>
+  <p class="article-excerpt">Iran and the US say they have carried out fresh attacks around the Strait of Hormuz, the third known escalation in a week.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 美国称袭击了伊朗雷达站；科威特报告遭导弹和无人机攻击；伊朗和美国在霍尔木兹海峡附近一周内第三次升级冲突。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.bbc.com/news/videos/cj4p7vwxr05o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Marilyn Monroe lookalikes gather to celebrate her 100th birthday</a></h3>
+  
+  <p class="article-meta">BBC World · 06/01 14:28</p>
+  <p class="article-excerpt">Fans set a new world record for the largest gathering of people dressed as Marilyn Monroe to celebrate what would have been the legendary actress’ centenary.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 玛丽莲·梦露仿妆爱好者聚集庆祝她诞辰100周年，创下最大规模梦露装扮聚会世界纪录。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.bbc.com/news/articles/cglp7p787njo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Huge blast kills dozens in rebel-held village in Myanmar</a></h3>
+  
+  <p class="article-meta">BBC World · 06/01 14:23</p>
+  <p class="article-excerpt">Insurgents say it was caused by explosives being used for mining close to the Chinese border.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 缅甸一处反政府武装控制的村庄发生巨大爆炸，造成数十人死亡；反政府武装称爆炸由靠近中国边境的采矿炸药引发。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.aljazeera.com/video/newsfeed/2026/6/1/aje-onl-nf_sv_colombia-heads-to-presidential-runoff-010626?traffic_source=rss" target="_blank" rel="noopener noreferrer">Tense election night in Colombia as country heads to presidential runoff</a></h3>
+  
+  <p class="article-meta">Al Jazeera · 06/01 14:18</p>
+  <p class="article-excerpt">Colombia’s election heads to a June 21 runoff after a tight first round between de la Espriella and Cepeda.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 哥伦比亚总统选举进入第二轮，6月21日阿贝拉多·德·拉·埃斯普列拉与伊万·塞佩达对决。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.npr.org/2026/06/01/nx-s1-5842833/first-round-colombia-presidential-vote" target="_blank" rel="noopener noreferrer">Right-wing candidate pulls ahead in first round of Colombia&#39;s presidential vote</a></h3>
+  
+  <p class="article-meta">NPR World · 06/01 14:02</p>
+  <p class="article-excerpt">Tough-on-crime outsider Aberaldo de la Espriella took the lead in Colombia&#39;s presidential race on Sunday night, setting up a runoff with Iván Cepeda, an ally of outgoing President Gustavo Petro.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 哥伦比亚总统选举首轮投票中，强硬派候选人阿贝拉多·德·拉·埃斯普列拉领先，将与现任总统佩特罗的盟友伊万·塞佩达在第二轮对决。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.nytimes.com/2026/06/01/world/asia/taiwan-china-new-york-times-expulsion.html" target="_blank" rel="noopener noreferrer">Taiwan Criticizes China’s Expulsion of New York Times Reporter</a></h3>
+  
+  <p class="article-meta">NYT World · 06/01 14:00</p>
+  <p class="article-excerpt">The Taiwan president’s spokeswoman said China used “baseless pretexts” to punish journalists, which she called evidence that Beijing was a “troublemaker.”</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 台湾批评中国大陆以“毫无根据的借口”驱逐《纽约时报》记者，称此举表明北京是“麻烦制造者”。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.theguardian.com/world/2026/jun/01/wildfires-devastating-richer-areas-but-fewer-hectares-burned-globally-study" target="_blank" rel="noopener noreferrer">Wildfires devastating richer areas but fewer hectares burned globally – study</a></h3>
+  
+  <p class="article-meta">The Guardian · 06/01 14:00</p>
+  <p class="article-excerpt">‘Megafires’ in California, Canada, South Korea and Europe in 2025, but changes to farming slowed spread in parts of Africa “Devastating” wildfires ripped across the wealthier parts of the world in 2025, a study has found, even as globally, the area ravaged by flames fell. Catastrophic blazes claimed</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 研究显示，2025年“特大火灾”肆虐加州、加拿大、韩国和欧洲等富裕地区，但全球过火面积下降，非洲部分地区因农业方式变化减缓了火势蔓延。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.npr.org/2026/06/01/g-s1-125126/us-iran-war-updates" target="_blank" rel="noopener noreferrer">U.S. bombs Iranian military sites and Kuwait is hit by drone and missile fire</a></h3>
+  
+  <p class="article-meta">NPR World · 06/01 13:53</p>
+  <p class="article-excerpt">The U.S. military says it bombed Iranian radar and drone control sites in Iran after Tehran shot down an American MQ-1 Predator drone this weekend. Kuwait said its air defenses opened fire on Monday.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 美军轰炸伊朗雷达和无人机控制站，此前伊朗击落美军MQ-1“捕食者”无人机；科威特周一启动防空火力应对袭击。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.theguardian.com/world/2026/jun/01/iran-strikes-us-military-base-kuwait-iranian-air-defences" target="_blank" rel="noopener noreferrer">Iran targets American base in region after US strikes Iranian air defences</a></h3>
+  
+  <p class="article-meta">The Guardian · 06/01 13:42</p>
+  <p class="article-excerpt">Attacks reported in Kuwait – home to a US military base – and around the strait of Hormuz in latest exchange of fire as peace negotiations continue Middle East live – latest updates The US said it struck Iranian military sites at the weekend and Iran’s Revolutionary Guard said on Monday it had targe</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 伊朗袭击该地区美军基地，美国周末打击伊朗防空系统；科威特等地发生交火，和谈继续进行。</p>
+</article>
+  </div>
+    </div>
+  </div>
+  </section>
+
+  <footer>
+    内容均来自原媒体，本站仅作摘要整理与回链。
+  </footer>
+</main>
+<script>
+  document.querySelectorAll('.tabs > .tab').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var target = btn.dataset.tab;
+      document.querySelectorAll('.tabs > .tab').forEach(function (b) {
+        b.classList.toggle('active', b === btn);
+      });
+      document.querySelectorAll('.panel').forEach(function (p) {
+        p.classList.toggle('active', p.dataset.panel === target);
+      });
+    });
+  });
+  document.querySelectorAll('.sub-tab').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var panel = btn.closest('.panel');
+      if (!panel) return;
+      var sub = btn.dataset.sub;
+      panel.querySelectorAll('.sub-tab').forEach(function (b) {
+        b.classList.toggle('active', b === btn);
+      });
+      panel.querySelectorAll('.sub-content').forEach(function (p) {
+        p.classList.toggle('active', p.dataset.subContent === sub);
+      });
+    });
+  });
+  document.querySelectorAll('.source-tab').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var subContent = btn.closest('.sub-content');
+      if (!subContent) return;
+      var src = btn.dataset.source;
+      subContent.querySelectorAll('.source-tab').forEach(function (b) {
+        b.classList.toggle('active', b === btn);
+      });
+      subContent.querySelectorAll('.source-content').forEach(function (p) {
+        p.classList.toggle('active', p.dataset.sourceContent === src);
+      });
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+{
+  "hero_headline": "Anthropic融资$65B估值$965B",
+  "daily_overview": "AI领域再掀巨浪：Anthropic完成65亿美元融资，估值逼近万亿美元，并发布Opus 4.8模型，性能有升有降。同时，NVIDIA开源物理AI模型Cosmos 3，OpenAI合作医院诊断罕见病，Google DeepMind启动亚太环境加速器。地缘政治方面，美伊在霍尔木兹海峡交火，美军空袭伊朗雷达站；哥伦比亚总统选举进入第二轮，右翼候选人领先；菲律宾警告中国在黄岩岛巡逻，南海紧张持续。市场对AI投资热情不减，但中东与亚太安全风险需警惕。",
+  "tech_briefs": [
+    {
+      "title": "Anthropic获$65B融资 发布Opus 4.8模型",
+      "url": "https://news.smol.ai/issues/26-05-28-anthropic-series-h/",
+      "source": "Smol AI News",
+      "summary": "Anthropic宣布$65B Series H融资，估值$965B，并发布Opus 4.8模型及Dynamic Workflows，性能有所提升但部分基准出现回落。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "NVIDIA发布开源物理AI模型Cosmos 3",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
+      "source": "Hugging Face Blog",
+      "summary": "首个开源物理AI全模态模型，能进行物理推理与行动规划，将加速机器人、自动驾驶等领域研究。",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI技术助波士顿儿童医院诊断罕见病",
+      "url": "https://openai.com/index/boston-childrens-hospital",
+      "source": "OpenAI News",
+      "summary": "利用OpenAI模型分析病历，已帮助诊断40多例罕见病，减轻医护人员文书负担。",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind启动亚太环境风险AI加速器",
+      "url": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks/",
+      "source": "DeepMind Blog",
+      "summary": "宣布在亚太地区启动加速器计划，支持初创企业用AI应对洪水、火灾等环境风险。",
+      "importance": 7
+    },
+    {
+      "title": "微软开源文件转Markdown工具Markitdown",
+      "url": "https://github.com/microsoft/markitdown",
+      "source": "GitHub Trending",
+      "summary": "Python工具，可将Office文档、PDF等转为Markdown格式，提升内容处理效率。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美国空袭伊朗雷达站 科威特报告导弹袭击",
+      "url": "https://www.bbc.com/news/articles/crlpy8n7pr6o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "美国称打击了伊朗在霍尔木兹海峡附近的雷达站，科威特报告遭导弹和无人机攻击，局势紧张。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "哥伦比亚总统选举将进入第二轮投票",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/1/aje-onl-nf_sv_colombia-heads-to-presidential-runoff-010626?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "首轮投票中右翼候选人德·拉·埃斯普列利亚领先，将与左翼候选人塞佩达在6月21日对决。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "菲律宾防长警告 中国开始在黄岩岛附近巡逻",
+      "url": "https://www.dw.com/zh/菲防长发出威胁警告-中国开始在黄岩岛附近巡逻/a-77363306?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "中国海警开始在黄岩岛附近巡逻，此前菲方称面临严重威胁，中美关系缓和未减少南海紧张。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "今日科技融资与地缘冲突同步升温，AI产业估值再创新高，中东与南海紧张局势提醒投资人需关注风险平衡。",
+  "keywords": [
+    "Anthropic",
+    "Opus 4.8",
+    "美伊冲突",
+    "哥伦比亚大选",
+    "南海",
+    "NVIDIA Cosmos",
+    "AI诊断",
+    "地缘政治"
+  ]
+}
