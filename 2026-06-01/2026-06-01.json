@@ -1,68 +1,75 @@
 {
-  "hero_headline": "美伊冲突升级 以色列空袭贝鲁特郊区",
-  "daily_overview": "中东局势急剧恶化，美伊互攻不断，以色列总理下令轰炸贝鲁特郊区真主党据点，停火希望渺茫，油价飙升。技术方面，Anthropic以9650亿美元估值完成650亿美元H轮融资并发布Opus 4.8模型，AI资本热潮不减；OpenAI在医疗领域突破，帮助诊断罕见病并推出生物防御工具；NVIDIA发布首个开源全模态物理AI模型Cosmos 3；前沿研究关注知识蒸馏与角色化代理生成。军事冲突与技术巨头大幅融资共同主导今日新闻版面。",
+  "hero_headline": "Anthropic融资9650亿美元，发布Opus 4.8",
+  "daily_overview": "今日科技方面，Anthropic完成9650亿美元H轮融资并推出Claude Opus 4.8模型，微软开源文档转Markdown工具Markitdown，波士顿儿童医院利用AI诊断40余罕见病，NVIDIA发布首款开放实体AI全模态模型Cosmos 3。时政方面，美伊冲突持续升级，以色列威胁打击贝鲁特；欧委会称对华贸易关系“不可持续”寻求成员国支持；菲律宾与越南升级外交伙伴关系应对南海紧张。市场对AI融资与地缘风险同时保持关注。",
   "tech_briefs": [
     {
-      "title": "Anthropic完成9650亿美元H轮融资 发布Opus 4.8",
+      "title": "Anthropic完成9650亿美元融资，发布Opus 4.8和动态工作流",
       "url": "https://news.smol.ai/issues/26-05-28-anthropic-series-h/",
       "source": "Smol AI News",
-      "summary": "Anthropic以9650亿美元估值完成650亿美元H轮融资，同步发布Opus 4.8与动态工作流，模型合作与编码能力增强但文档解析有退步。（多家报道）",
+      "summary": "Anthropic宣布650亿美元H轮融资，估值9650亿美元，同时推出Claude Opus 4.8及动态工作流功能，提升协作与编码能力。（多家报道）",
       "importance": 10
     },
     {
-      "title": "OpenAI助力罕见病诊断与生物防御",
-      "url": "https://openai.com/index/boston-childrens-hospital",
-      "source": "OpenAI News",
-      "summary": "波士顿儿童医院利用OpenAI技术诊断超40种罕见病；同时OpenAI推出Rosalind Biodefense项目，向美政府开放GPT-Rosalind用于生物安全与流行病防范。（多家报道）",
-      "importance": 9
-    },
-    {
-      "title": "NVIDIA发布首个开源全模态模型Cosmos 3",
-      "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
-      "source": "Hugging Face Blog",
-      "summary": "NVIDIA推出Cosmos 3，称其为首个开源全模态模型，专为物理世界AI推理与行动设计，可处理并理解多模态物理场景。",
+      "title": "微软开源Markitdown：文件转Markdown工具",
+      "url": "https://github.com/microsoft/markitdown",
+      "source": "GitHub Trending",
+      "summary": "微软开源的Python工具，可将Office文档、图片等各类文件转换为Markdown格式，方便文档迁移、内容提取和AI处理。",
       "importance": 8
     },
     {
-      "title": "AI研究：知识蒸馏与角色化技能生成",
-      "url": "https://huggingface.co/papers/2605.31264",
-      "source": "HuggingFace Trending Papers",
-      "summary": "提出COLLEAGUE.SKILL框架，通过专家知识蒸馏自动生成AI技能，使LLM代理具备人类专长与判断风格，缓解角色化构建瓶颈。",
+      "title": "波士顿儿童医院用AI诊断40余罕见病",
+      "url": "https://openai.com/index/boston-childrens-hospital",
+      "source": "OpenAI News",
+      "summary": "波士顿儿童医院利用OpenAI技术改善患者护理，减少运营负担，已帮助诊断出40多例罕见疾病。",
+      "importance": 8
+    },
+    {
+      "title": "NVIDIA发布Cosmos 3：首个开放实体AI全模态模型",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
+      "source": "Hugging Face Blog",
+      "summary": "NVIDIA发布Cosmos 3，声称是首个面向物理AI推理与行动的开放全模态模型，支持机器人和自动驾驶等场景。",
+      "importance": 7
+    },
+    {
+      "title": "OpenAI推出Rosalind生物防御计划",
+      "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
+      "source": "OpenAI News",
+      "summary": "OpenAI扩展GPT-Rosalind访问权限，向审查通过的开发者及美国政府合作伙伴开放，助力生物防御与大流行病防范。",
       "importance": 7
     }
   ],
   "politics_briefs": [
     {
-      "title": "美伊互攻停火摇摆 以色列轰炸贝鲁特郊区",
-      "url": "https://www.bbc.com/news/articles/c4g419e2xlvo",
+      "title": "美伊冲突升级：以色列威胁打击贝鲁特，油价飙升",
+      "url": "https://www.bbc.com/news/articles/crlpy8n7pr6o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "summary": "美国与伊朗相互打击军事目标，停火岌岌可危；以色列总理下令轰炸贝鲁特郊区真主党据点，冲突升级，油价因伊朗可能退出和谈飙升。（多家报道）",
+      "summary": "美伊相互攻击，美国空袭伊朗雷达站，伊朗瞄准驻科威特美军。以色列下令打击贝鲁特真主党据点，油价因伊朗可能退出和谈而飙升。（多家报道）",
       "importance": 10
     },
     {
-      "title": "欧委会拟对华采取更强硬贸易措施",
-      "url": "https://www.dw.com/zh/对中国采取更强硬措施？欧委会将首先寻求欧盟各国支持/a-77380374",
+      "title": "欧委会称对华贸易关系不可持续，寻求成员国支持新措施",
+      "url": "https://www.dw.com/zh/对中国采取更强硬措施？欧委会将首先寻求欧盟各国支持/a-77380374?maca=chi-rss-chi-all-1127-rdf",
       "source": "DW 中文",
-      "summary": "欧委会称欧盟与中国贸易关系「不可持续」，计划制定新保护措施，但需先争取德国等成员国支持，中方已发出警告。",
+      "summary": "欧委会表示欧盟与中国当前贸易和投资关系“不可持续”，将寻求德国等成员国支持，制定新的贸易保护措施，北京发出警告。",
       "importance": 8
     },
     {
-      "title": "菲越升级外交伙伴关系 强调南海航行自由",
+      "title": "菲律宾与越南升级外交伙伴关系，强调南海航行自由",
       "url": "https://thediplomat.com/2026/06/philippines-vietnam-upgrade-diplomatic-partnership-amid-maritime-tensions-with-china/",
       "source": "The Diplomat",
-      "summary": "菲律宾总统小马科斯表示维护南海和平稳定与航行自由「不可谈判」，两国升级伙伴关系以应对海上紧张局势。",
+      "summary": "菲律宾总统小马科斯表示，维持南海和平稳定与航行自由对两国“不容谈判”，菲越升级伙伴关系应对中国海上紧张局势。",
       "importance": 7
     }
   ],
-  "editor_note": "中东战火重燃与AI资本狂潮同日占据头条，技术乐观主义与地缘裂痕形成鲜明对比。",
+  "editor_note": "AI融资与模型发布不减，但地缘冲突同步激化，技术力量需在复杂国际环境中谨慎前行。",
   "keywords": [
-    "美伊冲突",
-    "以色列",
-    "黎巴嫩",
     "Anthropic",
     "OpenAI",
-    "NVIDIA Cosmos 3",
-    "AI 融资",
-    "欧盟对华"
+    "微软",
+    "NVIDIA",
+    "伊朗",
+    "欧盟",
+    "菲律宾",
+    "南海"
   ]
 }
