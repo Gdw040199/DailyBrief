@@ -1,68 +1,68 @@
 {
-  "hero_headline": "Anthropic融资965B并发布Opus 4.8",
-  "daily_overview": "今日AI行业迎来重磅消息：Anthropic完成650亿美元Series H融资，估值逼近9650亿，同步推出Claude Opus 4.8模型；OpenAI展示波士顿儿童医院AI诊断成果并启动Rosalind生物防御项目；NVIDIA发布首个开源物理AI模型Cosmos 3。地缘政治方面，美伊在霍尔木兹海峡再次交火，局势持续紧张；哥伦比亚总统选举进入决选，右翼候选人领先；奥地利首次审判叙利亚战争罪案件。市场与技术并行，全球格局动态调整。",
+  "hero_headline": "美伊冲突升级，哥伦比亚大选进入决选",
+  "daily_overview": "中东局势再度紧张，美伊在霍尔木兹海峡附近互袭，本周已第三次升级；哥伦比亚总统选举首轮无人过半，右翼候选人领先进入6月21日决选。科技领域，Anthropic以9650亿美元估值完成650亿美元H轮融资并推出Opus 4.8模型，OpenAI启动Rosalind Biodefense生物防御计划，NVIDIA发布开源物理AI模型Cosmos 3，波士顿儿童医院利用AI诊断40余例罕见病。AI竞赛与地缘冲突同步加速。",
   "tech_briefs": [
     {
-      "title": "Anthropic融资965B并发布Opus 4.8",
+      "title": "Anthropic融资650亿美元，发布Opus 4.8模型",
       "url": "https://news.smol.ai/issues/26-05-28-anthropic-series-h/",
       "source": "Smol AI News",
-      "summary": "Anthropic完成650亿美元Series H融资，估值9650亿美元，同时发布Claude Opus 4.8，在协作与编码方面有改进。多家报道。",
+      "summary": "Anthropic以9650亿美元估值完成65B美元H轮融资，同时推出Opus 4.8模型和Dynamic Workflows，显示AI竞争白热化。（多家报道）",
       "importance": 10
     },
     {
-      "title": "AI诊断罕见病：波士顿儿童医院案例",
-      "url": "https://openai.com/index/boston-childrens-hospital",
+      "title": "OpenAI推出Rosalind Biodefense计划",
+      "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
       "source": "OpenAI News",
-      "summary": "波士顿儿童医院利用OpenAI技术改善患者护理，诊断超过40种罕见病，减轻运营负担。",
-      "importance": 8
-    },
-    {
-      "title": "NVIDIA发布开源物理AI模型Cosmos 3",
-      "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
-      "source": "Hugging Face Blog",
-      "summary": "NVIDIA发布Cosmos 3，首个开源全方位物理AI模型，用于物理世界的推理与行动。",
+      "summary": "OpenAI启动Rosalind Biodefense，向受信任开发者及美国政府合作伙伴提供GPT-Rosalind用于生物防御、公共卫生和流行病防范。",
       "importance": 9
     },
     {
-      "title": "微软开源文档转Markdown工具Markitdown",
-      "url": "https://github.com/microsoft/markitdown",
-      "source": "GitHub Trending",
-      "summary": "微软开源Python工具Markitdown，可转换多种文件与Office文档为Markdown格式，便于内容处理。",
-      "importance": 7
+      "title": "NVIDIA开源Cosmos 3物理AI模型",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
+      "source": "Hugging Face Blog",
+      "summary": "NVIDIA发布首个开放全模态物理AI模型Cosmos 3，旨在推动机器人及自动驾驶领域的物理推理与行动能力。",
+      "importance": 8
+    },
+    {
+      "title": "波士顿儿童医院用AI诊断40余例罕见病",
+      "url": "https://openai.com/index/boston-childrens-hospital",
+      "source": "OpenAI News",
+      "summary": "波士顿儿童医院借助OpenAI技术改善患者护理、减轻运营负担，成功诊断超过40例罕见病。",
+      "importance": 8
     }
   ],
   "politics_briefs": [
     {
-      "title": "美伊在霍尔木兹海峡再交火",
+      "title": "美伊在霍尔木兹海峡附近再次交火",
       "url": "https://www.bbc.com/news/articles/crlpy8n7pr6o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "summary": "美国称打击伊朗雷达站，科威特报告导弹与无人机攻击，为一周内第三次地区升级。",
+      "summary": "美国和伊朗在霍尔木兹海峡附近发动新一轮攻击，本周已第三次升级，科威特报告导弹与无人机袭击。（多家报道）",
       "importance": 10
     },
     {
-      "title": "哥伦比亚总统选举进入决选",
+      "title": "哥伦比亚总统选举进入第二轮决选",
       "url": "https://www.nytimes.com/2026/05/31/world/americas/colombia-election-president-candidates.html",
       "source": "NYT World",
-      "summary": "首轮投票后右翼候选人德·拉·埃斯普里埃拉领先，将于6月21日与左翼塞佩达对决。多家报道。",
+      "summary": "5月31日首轮投票，右翼候选人德拉斯普里埃拉领先，将与左翼参议员塞佩达在6月21日决选。",
       "importance": 9
     },
     {
-      "title": "奥地利首次审判叙利亚战争罪",
-      "url": "https://www.nytimes.com/2026/06/01/world/syria-war-crimes-trial-austria.html",
-      "source": "NYT World",
-      "summary": "奥地利审理两名叙利亚前官员涉嫌战争罪，为该国首次对阿萨德政权官员问责。",
+      "title": "法国海军在北大西洋扣押涉嫌制裁的俄油轮",
+      "url": "https://www.theguardian.com/world/2026/jun/01/macron-french-navy-boarded-russia-linked-oil-tanker-atlantic",
+      "source": "The Guardian",
+      "summary": "马克龙称法国海军在北大西洋登上并扣押一艘涉嫌规避制裁的俄油轮，行动获英国支持。",
       "importance": 8
     }
   ],
-  "editor_note": "AI行业资本狂潮再起，但地缘冲突与安全风险仍需警惕。技术发展与全球稳定并行，值得持续观察。",
+  "editor_note": "AI竞赛以千亿估值加速推进，地缘冲突与大国博弈同步升温。AI从诊断罕见病到生物防御，应用边界不断扩大。",
   "keywords": [
     "Anthropic",
     "Opus 4.8",
     "美伊冲突",
-    "哥伦比亚选举",
-    "AI诊断",
-    "物理AI",
-    "战争罪审判",
-    "开源模型"
+    "哥伦比亚大选",
+    "AI生物防御",
+    "NVIDIA Cosmos 3",
+    "黄岩岛",
+    "Rosalind"
   ]
 }
