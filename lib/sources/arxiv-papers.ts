@@ -198,12 +198,14 @@ export async function fetchArxivPapers(
     sourceId,
     title: e.title,
     url: e.link,
-    excerpt: e.abstract.slice(0, 300),
+    excerpt: e.abstract,  // full abstract for display
     publishedAt: e.published ? new Date(e.published) : undefined,
     category: "tech" as const,
     // Store primary category for display
     meta: e.categories[0] || "cs.CV",
     // Store full abstract for LLM classification
     content: e.abstract,
+    // Author list from RSS dc:creator
+    authors: e.authors,
   }));
 }

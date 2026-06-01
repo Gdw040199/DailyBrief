@@ -321,8 +321,16 @@ export function groupRaw(
             "cv-other": [],
           };
           for (const a of arxivBucket.items) {
-            const dir = (a.meta as string) || "cv-other";
-            if (byDir[dir]) byDir[dir].push(a);
+            // meta format: "category" or "category|codeUrl"
+            const metaStr = (a.meta as string) || "cv-other";
+            const pipeIdx = metaStr.indexOf("|");
+            const dir = pipeIdx >= 0 ? metaStr.slice(0, pipeIdx) : metaStr;
+            const codeUrl = pipeIdx >= 0 ? metaStr.slice(pipeIdx + 1) : "";
+            if (byDir[dir]) {
+              byDir[dir].push(a);
+              // Store codeUrl on the article for rendering
+              if (codeUrl) a.codeUrl = codeUrl;
+            }
           }
           const dirLabels: Record<string, string> = {
             motion: "Human Motion",
@@ -399,11 +407,17 @@ function renderArticleHtml(a: ArticleInput, showSource = false): string {
   const time = formatDate(a.publishedAt);
   const sourceLabel = showSource && a.source ? escapeHtml(a.source) : "";
   const metaLine = [sourceLabel, time].filter(Boolean).join(" · ");
+  const authors = a.authors ? escapeHtml(a.authors) : "";
+  // Code repository link (stored by arXiv enrichment)
+  const codeUrl = a.codeUrl;
+  const codeLink = codeUrl ? `<a class="code-link" href="${escapeHtml(codeUrl)}" target="_blank" rel="noopener noreferrer">📦 Code</a>` : "";
   // News-style summary label for politics, project-intro style for GH/tech.
   const newsy = a.category === "politics";
   const summaryLabel = newsy ? STR.summaryLabelNews : STR.summaryLabelIntro;
   return `<article class="article">
   <h3 class="article-title"><a href="${url}" target="_blank" rel="noopener noreferrer">${title}</a></h3>
+  ${authors ? `<p class="article-authors">${authors}</p>` : ""}
+  ${codeLink ? `<p class="article-code">${codeLink}</p>` : ""}
   ${meta ? `<p class="article-stats">${meta}</p>` : ""}
   ${metaLine ? `<p class="article-meta">${metaLine}</p>` : ""}
   ${excerpt ? `<p class="article-excerpt">${excerpt}</p>` : ""}
@@ -453,19 +467,23 @@ function renderRawCategoryPanel(
   category: Category,
   subs: SubGroup[],
 ): string {
-  if (subs.length === 0) {
+  // Filter out sub-groups with zero items across all sources
+  const nonEmpty = subs.filter((s) =>
+    s.sources.some((src) => src.items.length > 0),
+  );
+  if (nonEmpty.length === 0) {
     return `<p class="empty">${STR.emptyCategory}</p>`;
   }
-  if (subs.length === 1) {
-    return renderSubContent(category, subs[0], true);
+  if (nonEmpty.length === 1) {
+    return renderSubContent(category, nonEmpty[0], true);
   }
-  const subTabs = subs
+  const subTabs = nonEmpty
     .map((s, i) => {
       const count = s.sources.reduce((n, src) => n + src.items.length, 0);
       return `<button class="sub-tab${i === 0 ? " active" : ""}" data-sub="${escapeHtml(s.id)}" data-cat="${category}">${escapeHtml(s.name)}<span class="count">${count}</span></button>`;
     })
     .join("");
-  const panels = subs
+  const panels = nonEmpty
     .map((s, i) => renderSubContent(category, s, i === 0))
     .join("\n");
   return `<nav class="sub-tabs">${subTabs}</nav>\n<div class="sub-contents">${panels}</div>`;
@@ -833,6 +851,10 @@ export function renderHtml(
   }
   .article-title a { color: var(--fg); text-decoration: none; }
   .article-title a:hover { color: var(--link); text-decoration: underline; }
+  .article-authors { color: var(--muted); font-size: 0.76rem; font-style: italic; margin: 0 0 0.35rem; }
+  .article-code { margin: 0 0 0.35rem; }
+  .code-link { display: inline-block; background: var(--card); color: var(--link); font-size: 0.78rem; font-weight: 500; padding: 2px 8px; border-radius: 4px; text-decoration: none; border: 1px solid var(--rule); }
+  .code-link:hover { background: var(--link); color: #fff; }
   .article-meta { color: var(--muted); font-size: 0.76rem; margin: 0 0 0.35rem; }
   .article-stats {
     color: var(--muted);

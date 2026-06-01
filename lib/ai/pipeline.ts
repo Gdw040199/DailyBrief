@@ -194,6 +194,7 @@ export async function generateDailyReport(
     source: a.source,
     category: a.category,
     excerpt: (a.excerpt ?? "").slice(0, 200),
+    summary: a.summary ?? "",
     published: a.publishedAt?.toISOString() ?? "",
   }));
   const userPayloadJson = JSON.stringify(userPayload);

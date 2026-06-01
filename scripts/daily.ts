@@ -195,8 +195,12 @@ async function enrichArxivPapers(articles: ArticleInput[]): Promise<void> {
     const s = summaries.get(a.url);
     if (s) a.summary = s;
     // Store classification in meta for rendering
+    // Format: "category" or "category|codeUrl"
     const cls = selected.find((p) => p.url === a.url);
-    if (cls) a.meta = cls.category;
+    if (cls) {
+      a.meta = cls.codeUrl ? `${cls.category}|${cls.codeUrl}` : cls.category;
+      if (cls.codeUrl) a.codeUrl = cls.codeUrl;
+    }
   }
 
   // Remove papers that weren't selected
@@ -312,7 +316,7 @@ async function main() {
     console.log(`[daily] wrote ${base}.{json,html,articles.json}`);
   }
 
-  await sendDailyEmail(date, report);
+  await sendDailyEmail({ report, date });
 
   console.log(`[daily] done.`);
 }

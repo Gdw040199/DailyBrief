@@ -64,6 +64,17 @@ export interface RawArticle {
   /**
    * Structured one-line metadata to display above the excerpt — currently
    * used by GitHub Trending for "Language · ★stars · forks · stars today".
+   * For arXiv papers, stores classification category (e.g. "motion").
    */
   meta?: string;
+  /**
+   * Author list. Currently populated by the arXiv fetcher from RSS
+   * `<dc:creator>` tags. Displayed as a subtle line below the title.
+   */
+  authors?: string;
+  /**
+   * Code repository URL (GitHub/GitLab). Populated by the arXiv
+   * classification pipeline when the abstract mentions a code link.
+   */
+  codeUrl?: string;
 }

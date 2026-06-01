@@ -1,34 +1,92 @@
-import type { DailyReport } from "./ai/pipeline";
+/**
+ * Email notification via Resend API (zero-dependency, REST only).
+ *
+ * Triggered at the end of scripts/daily.ts when EMAIL_TO is set.
+ * Environment variables:
+ *   RESEND_API_KEY  — required
+ *   EMAIL_TO        — recipient (comma-separated for multiple)
+ *   EMAIL_FROM      — sender (default: onboarding@resend.dev)
+ *   REPORT_BASE_URL — base URL for the "View Full Report" link
+ */
+
+import type { DailyReport } from "./ai/pipeline.js";
+
+// ----- i18n strings -----
+
+interface EmailStrings {
+  subject: (date: string) => string;
+  brand: string;
+  viewReport: string;
+  reportLink: (url: string) => string;
+  overview: string;
+  techSection: string;
+  politicsSection: string;
+  editorNote: (note: string) => string;
+  keywordsLabel: string;
+  footer: string;
+  emptyBriefs: string;
+}
+
+const STRINGS: Record<"zh" | "en", EmailStrings> = {
+  zh: {
+    subject: (date) => `每日简报 · ${date}`,
+    brand: "每日简报",
+    viewReport: "📄 查看完整报告",
+    reportLink: (url) => `查看完整报告：${url}`,
+    overview: "今日总览",
+    techSection: "--- 技术动态 ---",
+    politicsSection: "--- 时政观察 ---",
+    editorNote: (note) => `编辑短评：${note}`,
+    keywordsLabel: "关键词：",
+    footer: "内容均来自原媒体，本站仅作摘要整理与回链。",
+    emptyBriefs: "（无）",
+  },
+  en: {
+    subject: (date) => `Daily Brief · ${date}`,
+    brand: "Daily Brief",
+    viewReport: "📄 View Full Report",
+    reportLink: (url) => `View full report: ${url}`,
+    overview: "Today's Overview",
+    techSection: "--- Tech Updates ---",
+    politicsSection: "--- World News ---",
+    editorNote: (note) => `Editor's Note: ${note}`,
+    keywordsLabel: "Keywords: ",
+    footer: "All content from original media. This site only summarizes and links back.",
+    emptyBriefs: "(none)",
+  },
+};
+
+// ----- public API -----
+
+export interface SendEmailOptions {
+  report: DailyReport;
+  date: string; // e.g. "2026-05-28"
+}
 
 /**
- * Send a daily brief summary email via Resend API.
- *
- * Gated by EMAIL_TO — if unset, the function returns silently.
- * Failures are non-fatal (logged only) so the pipeline is never aborted.
- *
- * Resend free plan: 100 emails/day, no credit card needed.
- * Sign up → get API key → verify sender domain (or use onboarding@resend.dev).
+ * Send the daily report email via Resend.
+ * No-op when RESEND_API_KEY or EMAIL_TO is missing.
  */
-export async function sendDailyEmail(
-  date: string,
-  report: DailyReport,
-): Promise<void> {
-  const to = process.env.EMAIL_TO;
-  if (!to) return; // not configured — skip silently
-
+export async function sendDailyEmail({
+  report,
+  date,
+}: SendEmailOptions): Promise<void> {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
-    console.warn(
-      "[email] EMAIL_TO is set but RESEND_API_KEY is missing — skipping",
-    );
+    console.warn("[email] RESEND_API_KEY not set — skipping email");
+    return;
+  }
+  const to = process.env.EMAIL_TO;
+  if (!to) {
+    console.warn("[email] EMAIL_TO not set — skipping email");
     return;
   }
 
-  const from = process.env.EMAIL_FROM ?? "DailyBrief <onboarding@resend.dev>";
-
-  // Build report URL from env (e.g. https://user.github.io/repo)
-  // Links to the index page which lists all reports
+  const locale = (process.env.REPORT_LOCALE ?? "zh") as "zh" | "en";
+  const S = STRINGS[locale];
   const reportUrl = process.env.REPORT_BASE_URL?.replace(/\/+$/, "") || undefined;
+
+  const from = process.env.EMAIL_FROM || "DailyBrief <onboarding@resend.dev>";
 
   try {
     const res = await fetch("https://api.resend.com/emails", {
@@ -39,144 +97,192 @@ export async function sendDailyEmail(
       },
       body: JSON.stringify({
         from,
-        to: [to],
-        subject: `每日简报 · ${date}`,
-        text: buildPlainText(date, report, reportUrl),
-        html: buildHtml(date, report, reportUrl),
+        to: to.split(",").map((s) => s.trim()),
+        subject: S.subject(date),
+        text: buildPlainText(report, date, reportUrl, S),
+        html: buildHtml(report, date, reportUrl, S),
       }),
     });
-
     if (!res.ok) {
       const body = await res.text();
       throw new Error(`Resend API ${res.status}: ${body}`);
     }
-
-    const data = (await res.json()) as { id?: string };
-    console.log(`[daily] email sent to ${to} (${data.id ?? "ok"})`);
-  } catch (e) {
-    const msg = e instanceof Error ? e.message : String(e);
-    console.warn(`[daily] email failed: ${msg}`);
+    console.log("[email] notification sent to", to);
+  } catch (err) {
+    // Email failure is non-fatal — log and continue
+    console.warn(
+      "[email] failed:",
+      err instanceof Error ? err.message : String(err),
+    );
   }
 }
 
-// ----- content builders -----
+// ----- plain-text body -----
 
 function buildPlainText(
-  date: string,
   report: DailyReport,
-  reportUrl?: string,
+  date: string,
+  reportUrl: string | undefined,
+  S: EmailStrings,
 ): string {
   const lines: string[] = [];
-  lines.push(`每日简报 · ${date}`);
+
+  lines.push(`${S.brand} · ${date}`);
   lines.push("=".repeat(40));
-  if (reportUrl) lines.push(`\n查看完整报告：${reportUrl}\n`);
-  if (report.hero_headline) lines.push(`\n${report.hero_headline}\n`);
-  if (report.daily_overview) lines.push(report.daily_overview);
-  if (report.tech_briefs.length > 0) {
-    lines.push("\n--- 技术动态 ---");
-    for (const b of report.tech_briefs) {
-      lines.push(`• [${b.importance}/10] ${b.title} — ${b.source}`);
-      lines.push(`  ${b.summary}`);
-    }
+  lines.push("");
+
+  if (reportUrl) lines.push(S.reportLink(reportUrl));
+  lines.push("");
+
+  if (report.daily_overview) {
+    lines.push(`【${S.overview}】`);
+    lines.push(report.daily_overview);
+    lines.push("");
   }
-  if (report.politics_briefs.length > 0) {
-    lines.push("\n--- 时政观察 ---");
-    for (const b of report.politics_briefs) {
-      lines.push(`• [${b.importance}/10] ${b.title} — ${b.source}`);
-      lines.push(`  ${b.summary}`);
-    }
+
+  // --- Tech ---
+  lines.push(S.techSection);
+  if (report.tech_briefs.length === 0) {
+    lines.push(S.emptyBriefs);
   }
-  if (report.editor_note) lines.push(`\n编辑短评：${report.editor_note}`);
-  if (report.keywords.length > 0)
-    lines.push(`关键词：${report.keywords.map((k) => `#${k}`).join(" ")}`);
+  for (const b of report.tech_briefs) {
+    lines.push(`• ${b.title} [${b.importance}/10]`);
+    lines.push(`  ${b.source} — ${b.summary}`);
+    lines.push(`  ${b.url}`);
+    lines.push("");
+  }
+
+  // --- Politics ---
+  lines.push(S.politicsSection);
+  if (report.politics_briefs.length === 0) {
+    lines.push(S.emptyBriefs);
+  }
+  for (const b of report.politics_briefs) {
+    lines.push(`• ${b.title} [${b.importance}/10]`);
+    lines.push(`  ${b.source} — ${b.summary}`);
+    lines.push(`  ${b.url}`);
+    lines.push("");
+  }
+
+  if (report.editor_note) {
+    lines.push(S.editorNote(report.editor_note));
+    lines.push("");
+  }
+
+  if (report.keywords.length > 0) {
+    lines.push(`${S.keywordsLabel}${report.keywords.join(" · ")}`);
+  }
+
   return lines.join("\n");
 }
 
+// ----- HTML body -----
+
 function buildHtml(
-  date: string,
   report: DailyReport,
-  reportUrl?: string,
+  date: string,
+  reportUrl: string | undefined,
+  S: EmailStrings,
 ): string {
-  const esc = (s: string) =>
-    s
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
+  const briefCard = (b: (typeof report.tech_briefs)[number]) => `
+    <tr>
+      <td style="padding:12px 0;border-bottom:1px solid #e5e5e5;">
+        <a href="${escUrl(b.url)}" style="color:#1a1a1a;font-weight:600;text-decoration:none;font-size:15px;">${escHtml(b.title)}</a>
+        <span style="display:inline-block;background:#f0f0f0;color:#555;font-size:11px;padding:1px 6px;border-radius:3px;margin-left:6px;">${b.importance}/10</span>
+        <p style="margin:4px 0 0;color:#666;font-size:13px;">${escHtml(b.source)} — ${escHtml(b.summary)}</p>
+      </td>
+    </tr>`;
 
-  const briefCard = (b: {
-    title: string;
-    source: string;
-    summary: string;
-    importance: number;
-    url: string;
-  }) =>
-    `<div style="padding:12px 16px;border:1px solid #e4e4e7;border-radius:8px;margin-bottom:8px">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
-        <a href="${esc(b.url)}" style="font-weight:600;color:#18181b;text-decoration:none;font-size:15px">${esc(b.title)}</a>
-        <span style="font-size:12px;color:#71717a;background:#f4f4f5;padding:2px 8px;border-radius:999px">${b.importance}/10</span>
-      </div>
-      <div style="font-size:12px;color:#71717a;margin-bottom:4px">${esc(b.source)}</div>
-      <p style="margin:0;font-size:14px;color:#3f3f46;line-height:1.6">${esc(b.summary)}</p>
-    </div>`;
-
-  const section = (
-    title: string,
-    briefs: Array<{
-      title: string;
-      source: string;
-      summary: string;
-      importance: number;
-      url: string;
-    }>,
-  ) =>
+  const section = (heading: string, briefs: typeof report.tech_briefs) =>
     briefs.length === 0
       ? ""
-      : `<h2 style="font-size:16px;font-weight:600;margin:20px 0 10px;padding-bottom:6px;border-bottom:1px solid #e4e4e7">${title}</h2>
-         ${briefs.map(briefCard).join("\n")}`;
+      : `
+    <tr><td style="padding:20px 0 8px;">
+      <h2 style="margin:0;font-size:16px;color:#1a1a1a;border-bottom:2px solid #e5e5e5;padding-bottom:6px;">${heading}</h2>
+    </td></tr>
+    ${briefs.map(briefCard).join("")}`;
 
   const keywordsHtml =
-    report.keywords.length > 0
-      ? `<div style="margin:16px 0;display:flex;flex-wrap:wrap;gap:6px">
-          ${report.keywords.map((k) => `<span style="background:#f4f4f5;color:#3f3f46;padding:4px 12px;border-radius:999px;font-size:13px">#${esc(k)}</span>`).join("")}
-         </div>`
-      : "";
+    report.keywords.length === 0
+      ? ""
+      : `<tr><td style="padding:16px 0 0;">
+           <p style="margin:0;color:#888;font-size:12px;">${S.keywordsLabel}${report.keywords.map((k) => `<span style="display:inline-block;background:#f0f0f0;padding:2px 8px;border-radius:10px;margin:2px 4px;font-size:12px;">${escHtml(k)}</span>`).join("")}</p>
+         </td></tr>`;
 
   return `<!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
-<body style="margin:0;padding:0;background:#fafaf9;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif">
-<div style="max-width:600px;margin:0 auto;padding:24px 16px">
-  <div style="margin-bottom:16px">
-    <div style="font-size:12px;text-transform:uppercase;letter-spacing:0.15em;color:#71717a;font-weight:500">每日简报</div>
-    <h1 style="font-size:24px;font-weight:700;margin:4px 0 16px;color:#18181b">${esc(date)}</h1>
-  </div>
+<body style="margin:0;padding:0;background:#fafafa;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#fafafa;padding:24px 0;">
+<tr><td align="center">
+<table width="600" cellpadding="0" cellspacing="0" style="background:#fff;border-radius:8px;overflow:hidden;">
 
-  ${reportUrl ? `<a href="${esc(reportUrl)}" style="display:inline-block;padding:10px 20px;background:#18181b;color:#fafaf9;text-decoration:none;border-radius:6px;font-size:14px;font-weight:500;margin-bottom:16px">📄 查看完整报告</a>` : ""}
+  <!-- Header -->
+  <tr><td style="background:#1a1a1a;padding:24px 32px;">
+    <h1 style="margin:0;color:#fff;font-size:20px;letter-spacing:0.04em;">${S.brand}</h1>
+    <p style="margin:6px 0 0;color:#999;font-size:13px;">${escHtml(date)}</p>
+  </td></tr>
 
-  ${report.hero_headline ? `<div style="background:linear-gradient(135deg,#fafaf9,#f4f4f5);border:1px solid #e4e4e7;border-left:4px solid #18181b;padding:16px 20px;border-radius:8px;margin-bottom:16px">
-    <p style="margin:0;font-size:18px;font-weight:600;color:#18181b;line-height:1.5">${esc(report.hero_headline)}</p>
-  </div>` : ""}
+  <!-- Report link -->
+  ${
+    reportUrl
+      ? `<tr><td style="padding:20px 32px 0;">
+    <a href="${escUrl(reportUrl)}" style="display:inline-block;background:#2563eb;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-size:14px;font-weight:500;">${S.viewReport}</a>
+  </td></tr>`
+      : ""
+  }
 
-  ${report.daily_overview ? `<div style="padding:12px 16px;background:#f4f4f5;border-radius:8px;border-left:3px solid #71717a;margin-bottom:16px">
-    <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.15em;color:#71717a;font-weight:500;margin-bottom:6px">今日总览</div>
-    <p style="margin:0;font-size:14px;color:#3f3f46;line-height:1.7">${esc(report.daily_overview)}</p>
-  </div>` : ""}
+  <!-- Overview -->
+  ${
+    report.daily_overview
+      ? `<tr><td style="padding:20px 32px 0;">
+    <h2 style="margin:0 0 8px;font-size:15px;color:#1a1a1a;">${S.overview}</h2>
+    <p style="margin:0;color:#444;font-size:14px;line-height:1.65;">${escHtml(report.daily_overview)}</p>
+  </td></tr>`
+      : ""
+  }
 
-  ${section("技术动态", report.tech_briefs)}
-  ${section("时政观察", report.politics_briefs)}
+  <!-- Briefs -->
+  <tr><td style="padding:8px 32px 0;">
+    <table width="100%" cellpadding="0" cellspacing="0">
+      ${section(S.techSection.replace(/---/g, "").trim(), report.tech_briefs)}
+      ${section(S.politicsSection.replace(/---/g, "").trim(), report.politics_briefs)}
+    </table>
+  </td></tr>
 
-  ${report.editor_note ? `<div style="padding:12px 16px;background:#f4f4f5;border-radius:8px;border-left:3px solid #71717a;margin:16px 0">
-    <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.15em;color:#71717a;font-weight:500;margin-bottom:6px">编辑短评</div>
-    <p style="margin:0;font-size:14px;color:#18181b;line-height:1.7">${esc(report.editor_note)}</p>
-  </div>` : ""}
+  <!-- Editor note -->
+  ${
+    report.editor_note
+      ? `<tr><td style="padding:20px 32px 0;">
+    <h2 style="margin:0 0 6px;font-size:15px;color:#1a1a1a;">${S.editorNote("").replace("：", "").replace(":", "").replace("Editor's Note", "Editor's Note")}</h2>
+    <p style="margin:0;color:#444;font-size:14px;line-height:1.6;font-style:italic;">${escHtml(report.editor_note)}</p>
+  </td></tr>`
+      : ""
+  }
 
-  ${keywordsHtml}
+  <!-- Keywords -->
+  <tr><td style="padding:16px 32px 0;">${keywordsHtml}</td></tr>
 
-  <div style="margin-top:24px;padding-top:12px;border-top:1px solid #e4e4e7;color:#71717a;font-size:12px">
-    内容均来自原媒体，本站仅作摘要整理与回链。
-  </div>
-</div>
+  <!-- Footer -->
+  <tr><td style="padding:24px 32px;">
+    <p style="margin:0;color:#aaa;font-size:11px;line-height:1.5;">${S.footer}</p>
+  </td></tr>
+
+</table>
+</td></tr>
+</table>
 </body>
 </html>`;
+}
+
+function escHtml(s: string): string {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function escUrl(u: string): string {
+  return u.replace(/"/g, "%22");
 }
