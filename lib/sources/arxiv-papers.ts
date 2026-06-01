@@ -32,14 +32,9 @@ export async function fetchArxivPapers(
   }
 
   const entries = parseOAIEntries(raw);
-  const keywordList = (keywords ?? []).map((k) => k.toLowerCase());
 
+  // No keyword pre-filter — LLM classification handles relevance filtering
   return entries
-    .filter((e) => {
-      if (keywordList.length === 0) return true;
-      const haystack = [e.title, e.abstract].join(" ").toLowerCase();
-      return keywordList.some((kw) => haystack.includes(kw));
-    })
     .slice(0, limit)
     .map((e) => ({
       sourceId,
