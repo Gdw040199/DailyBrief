@@ -42,6 +42,8 @@ export async function fetchArxivPapers(
     "segmentation", "detection", "recognition", "synthesis", "rendering",
     "animation", "scene", "object", "human", "robot", "action", "camera",
     "depth", "point cloud", "mesh", "gaussian", "nerf", "avatar",
+    "pose", "tracking", "reconstruction", "editing", "captioning",
+    "grounding", "reasoning", "understanding", "perception", "mapping",
   ];
 
   const filtered = entries.filter((e) => {
