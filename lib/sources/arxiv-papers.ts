@@ -8,7 +8,7 @@ import type { RawArticle } from "./types";
 export async function fetchArxivPapers(
   sourceId: string,
   keywords?: string[],
-  limit = 15,
+  limit = 200,
 ): Promise<RawArticle[]> {
   // Use OAI-PMH to get recent cs (Computer Science) papers
   const today = new Date().toISOString().slice(0, 10);

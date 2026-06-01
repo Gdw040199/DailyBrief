@@ -365,3 +365,124 @@ export async function enrichTrendingPapersSummaries(
   }));
   return runEnrichment(payload, PROMPTS.papers, "papers summaries");
 }
+
+// ----- arXiv paper classification -----
+
+export interface ClassifiedPaper {
+  url: string;
+  category: "motion" | "video" | "world-model" | "cv-other" | "irrelevant";
+  relevance: number; // 1-10
+}
+
+const ARXIV_CLASSIFY_PROMPT_ZH = `你是一名 CV / 多模态方向的研究助理，负责对 arXiv 论文进行分类和筛选。
+
+输入：论文列表，每篇有 url、title、excerpt（摘要前 300 字）。
+
+分类规则（按优先级）：
+  - "motion"：Human Motion Generation、动作生成、HOI（Human-Object Interaction）、HSI（Human-Scene Interaction）、HHI（Human-Human Interaction）、手势生成、表情生成、motion capture、motion diffusion、locomotion
+  - "video"：Video Generation/Model/Diffusion、text-to-video、image-to-video、video prediction、video synthesis、video editing
+  - "world-model"：World Model、World Simulator、环境模型、4D generation、scene generation、neural rendering
+  - "cv-other"：其他计算机视觉论文（不属于以上三类，但仍然是好的 CV 论文）
+  - "irrelevant"：与 CV / 多模态无关的论文（纯 NLP、纯理论、纯系统等）
+
+任务：
+  1. 对每篇论文分类（motion / video / world-model / cv-other / irrelevant）
+  2. 给出相关性评分 1-10（10 = 最相关，1 = 勉强相关）
+  3. 按相关性降序排列
+  4. 过滤掉 irrelevant 的论文
+
+输出严格 JSON 对象，不要 markdown：
+{
+  "papers": [
+    { "url": "<精确 url>", "category": "motion", "relevance": 9 },
+    ...
+  ]
+}`;
+
+const ARXIV_CLASSIFY_PROMPT_EN = `You are a research assistant for CV / multimodal learning, classifying arXiv papers.
+
+Input: paper list, each with url, title, excerpt (first 300 chars of abstract).
+
+Classification rules (by priority):
+  - "motion": Human Motion Generation, action generation, HOI (Human-Object Interaction), HSI (Human-Scene Interaction), HHI (Human-Human Interaction), gesture generation, facial expression, motion capture, motion diffusion, locomotion
+  - "video": Video Generation/Model/Diffusion, text-to-video, image-to-video, video prediction, video synthesis, video editing
+  - "world-model": World Model, World Simulator, environment model, 4D generation, scene generation, neural rendering
+  - "cv-other": other CV papers (not in the above 3 categories, but still good CV work)
+  - "irrelevant": papers unrelated to CV / multimodal (pure NLP, pure theory, pure systems, etc.)
+
+Task:
+  1. Classify each paper (motion / video / world-model / cv-other / irrelevant)
+  2. Assign relevance score 1-10 (10 = most relevant, 1 = barely relevant)
+  3. Sort by relevance descending
+  4. Filter out irrelevant papers
+
+Output STRICTLY a JSON object, no markdown:
+{
+  "papers": [
+    { "url": "<exact url>", "category": "motion", "relevance": 9 },
+    ...
+  ]
+}`;
+
+/**
+ * Classify arXiv papers into research directions using LLM.
+ * Returns classified papers sorted by relevance, excluding irrelevant ones.
+ */
+export async function classifyArxivPapers(
+  items: EnrichInput[],
+): Promise<ClassifiedPaper[]> {
+  if (items.length === 0) return [];
+
+  const systemPrompt =
+    REPORT_LOCALE === "en" ? ARXIV_CLASSIFY_PROMPT_EN : ARXIV_CLASSIFY_PROMPT_ZH;
+
+  const payload = items.map((it) => ({
+    url: it.url,
+    title: it.title,
+    excerpt: (it.excerpt ?? "").slice(0, 300),
+  }));
+
+  const langHeader =
+    REPORT_LOCALE === "en"
+      ? "**Output language: ENGLISH ONLY.**"
+      : "**输出语言：仅中文。**";
+
+  const userPrompt = [
+    langHeader,
+    "",
+    `Candidate papers (${payload.length} entries, JSON array):`,
+    JSON.stringify(payload),
+    "",
+    'Output {"papers": [{"url": ..., "category": ..., "relevance": ...}, ...]}',
+  ].join("\n");
+
+  try {
+    const { text } = await runLlm({
+      systemPrompt,
+      userPrompt,
+      timeoutMs: 180_000,
+    });
+    const cleaned = extractJson(text);
+
+    let parsed: { papers?: ClassifiedPaper[] };
+    try {
+      parsed = JSON.parse(cleaned);
+    } catch {
+      parsed = JSON.parse(jsonrepair(cleaned));
+    }
+
+    const results = (parsed.papers ?? []).filter(
+      (p) => p.url && p.category && p.category !== "irrelevant",
+    );
+
+    console.log(
+      `[daily] arxiv classification: ${results.length}/${items.length} relevant`,
+    );
+
+    return results;
+  } catch (e) {
+    const msg = e instanceof Error ? e.message : String(e);
+    console.warn(`[daily] arxiv classification failed: ${msg}`);
+    return [];
+  }
+}

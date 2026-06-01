@@ -15,6 +15,7 @@ import {
   enrichGithubTrendingSummaries,
   enrichTrendingPapersSummaries,
   enrichXViralSummaries,
+  classifyArxivPapers,
 } from "../lib/ai/enrich";
 import {
   groupRaw,
@@ -130,27 +131,83 @@ async function enrichTrendingPapers(articles: ArticleInput[]): Promise<void> {
 }
 
 /**
- * arXiv papers enrichment — reuses the trending-papers prompt (same
- * problem/method/result framing). Caps to display limit.
+ * arXiv papers enrichment — classify into 3 research directions + broad CV,
+ * then select top papers per direction and enrich them.
+ *
+ * Directions:
+ *   - Human Motion Generation: 10 papers
+ *   - Video Models: 10 papers
+ *   - World Models: 10 papers
+ *   - Broad CV: 5 papers
+ *   Total: 35 papers
  */
 async function enrichArxivPapers(articles: ArticleInput[]): Promise<void> {
-  const papers = articles
-    .filter((a) => a.sourceId === "arxiv-papers")
-    .slice(0, 15);
-  if (papers.length === 0) return;
+  const allPapers = articles.filter((a) => a.sourceId === "arxiv-papers");
+  if (allPapers.length === 0) return;
+
   console.log(
-    `[daily] enriching ${papers.length} arxiv papers with ${REPORT_LOCALE} summaries…`,
+    `[daily] classifying ${allPapers.length} arxiv papers into research directions…`,
   );
   const t0 = Date.now();
-  const summaries = await enrichTrendingPapersSummaries(
-    papers.map((a) => ({ url: a.url, title: a.title, excerpt: a.excerpt })),
+
+  // Step 1: Classify papers using LLM
+  const classified = await classifyArxivPapers(
+    allPapers.map((a) => ({ url: a.url, title: a.title, excerpt: a.excerpt })),
   );
-  for (const a of papers) {
+
+  // Step 2: Select top papers per direction
+  const byCategory = {
+    motion: classified.filter((p) => p.category === "motion").slice(0, 10),
+    video: classified.filter((p) => p.category === "video").slice(0, 10),
+    "world-model": classified.filter((p) => p.category === "world-model").slice(0, 10),
+    "cv-other": classified.filter((p) => p.category === "cv-other").slice(0, 5),
+  };
+
+  const selected = [
+    ...byCategory.motion,
+    ...byCategory.video,
+    ...byCategory["world-model"],
+    ...byCategory["cv-other"],
+  ];
+
+  console.log(
+    `[daily] arxiv selection: motion=${byCategory.motion.length}, video=${byCategory.video.length}, world-model=${byCategory["world-model"].length}, cv-other=${byCategory["cv-other"].length}`,
+  );
+
+  if (selected.length === 0) {
+    console.log("[daily] no relevant arxiv papers found, skipping enrichment");
+    return;
+  }
+
+  // Step 3: Enrich selected papers
+  console.log(
+    `[daily] enriching ${selected.length} arxiv papers with ${REPORT_LOCALE} summaries…`,
+  );
+  const selectedUrls = new Set(selected.map((p) => p.url));
+  const papersToEnrich = allPapers.filter((a) => selectedUrls.has(a.url));
+
+  const summaries = await enrichTrendingPapersSummaries(
+    papersToEnrich.map((a) => ({ url: a.url, title: a.title, excerpt: a.excerpt })),
+  );
+
+  // Apply summaries and category tags
+  for (const a of papersToEnrich) {
     const s = summaries.get(a.url);
     if (s) a.summary = s;
+    // Store classification in meta for rendering
+    const cls = selected.find((p) => p.url === a.url);
+    if (cls) a.meta = cls.category;
   }
+
+  // Remove papers that weren't selected
+  const unselected = allPapers.filter((a) => !selectedUrls.has(a.url));
+  for (const a of unselected) {
+    const idx = articles.indexOf(a);
+    if (idx >= 0) articles.splice(idx, 1);
+  }
+
   console.log(
-    `[daily] enrichment done in ${((Date.now() - t0) / 1000).toFixed(1)}s, matched ${summaries.size}/${papers.length}`,
+    `[daily] arxiv enrichment done in ${((Date.now() - t0) / 1000).toFixed(1)}s, matched ${summaries.size}/${papersToEnrich.length}`,
   );
 }
 

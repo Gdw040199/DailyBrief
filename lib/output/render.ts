@@ -129,7 +129,10 @@ const SOURCE_DISPLAY_LIMITS: Record<string, number> = {
   "tech:github-trending": 20,
   "tech:x-viral": 20,
   "tech:trending-papers": 20,
-  "tech:arxiv-papers": 15,
+  "tech:arxiv-motion": 10,
+  "tech:arxiv-video": 10,
+  "tech:arxiv-world-model": 10,
+  "tech:arxiv-cv-other": 5,
 };
 
 /**
@@ -306,8 +309,40 @@ export function groupRaw(
 
       const limit = displayLimitFor(cat, subId);
       const sources: SourceGroup[] = [];
-      for (const [id, b] of buckets[cat].entries()) {
-        if (subcatOf.get(id) === subId) sources.push(toSourceGroup(id, b, limit));
+
+      // Special handling: split arxiv-papers by research direction (meta field)
+      if (subId === "arxiv-papers") {
+        const arxivBucket = buckets[cat].get("arxiv-papers");
+        if (arxivBucket && arxivBucket.items.length > 0) {
+          const byDir: Record<string, ArticleInput[]> = {
+            motion: [],
+            video: [],
+            "world-model": [],
+            "cv-other": [],
+          };
+          for (const a of arxivBucket.items) {
+            const dir = (a.meta as string) || "cv-other";
+            if (byDir[dir]) byDir[dir].push(a);
+          }
+          const dirLabels: Record<string, string> = {
+            motion: "Human Motion",
+            video: "Video Models",
+            "world-model": "World Models",
+            "cv-other": "CV Highlights",
+          };
+          for (const [dir, items] of Object.entries(byDir)) {
+            if (items.length === 0) continue;
+            sources.push({
+              sourceId: `arxiv-${dir}`,
+              sourceName: dirLabels[dir] ?? dir,
+              items: items.slice(0, limit),
+            });
+          }
+        }
+      } else {
+        for (const [id, b] of buckets[cat].entries()) {
+          if (subcatOf.get(id) === subId) sources.push(toSourceGroup(id, b, limit));
+        }
       }
       if (sources.length === 0) continue;
       subs.push({
