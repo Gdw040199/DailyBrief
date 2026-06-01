@@ -471,9 +471,15 @@ export async function classifyArxivPapers(
       parsed = JSON.parse(jsonrepair(cleaned));
     }
 
-    const results = (parsed.papers ?? []).filter(
-      (p) => p.url && p.category && p.category !== "irrelevant",
-    );
+    const VALID_CATEGORIES = new Set(["motion", "video", "world-model", "cv-other"]);
+
+    const results = (parsed.papers ?? [])
+      .filter((p) => p.url && p.category && p.category !== "irrelevant")
+      .map((p) => ({
+        ...p,
+        // Normalize category: map invalid values to "cv-other"
+        category: VALID_CATEGORIES.has(p.category) ? p.category : "cv-other",
+      }));
 
     console.log(
       `[daily] arxiv classification: ${results.length}/${items.length} relevant`,
