@@ -64,6 +64,26 @@ sources.config.json   # SINGLE SOURCE OF TRUTH for the source registry
 
 `[date]` defaults to today in `REPORT_TZ`. Output is `daily_reports/<date>/<date>.html` + `<date>.json` + `<date>-articles.json` (note the hyphen in the articles cache filename); add `<date>.md` if `OUTPUT_MARKDOWN=true`.
 
+## Git push (this fork)
+
+This repo's `origin` uses an **SSH deploy key** — do not push via HTTPS (local git may have a dead `http.proxy` that breaks it).
+
+- Remote: `git@github.com-dailybrief:Gdw040199/DailyBrief.git`
+- SSH Host alias: `github.com-dailybrief` (in `~/.ssh/config`)
+- Private key: `~/.ssh/dailybrief_deploy_ed25519` (GitHub Deploy Key with write access)
+
+When the user asks to push / update the remote:
+
+```bash
+git status
+git log --oneline origin/main..HEAD   # confirm unpushed commits
+git push origin main                  # SSH — no proxy workaround needed
+```
+
+If push fails with `Permission denied (publickey)`: the deploy key is missing or lacks write access — tell the user to check https://github.com/Gdw040199/DailyBrief/settings/keys (must enable **Allow write access**).
+
+Do **not** modify git proxy config. Do **not** commit private keys or key contents into the repo.
+
 ## Adding a source
 
 1. Edit `sources.config.json` — append an entry. Fields: `id` (unique), `name`, `type` (`rss`/`api`/`scrape`), `url`, `category` (`tech`/`finance`/`politics`), optional `subcategory`, `enabled`, `useCurl`, `lang`, `locales`, `notes`.

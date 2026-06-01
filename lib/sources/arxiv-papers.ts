@@ -33,8 +33,25 @@ export async function fetchArxivPapers(
 
   const entries = parseOAIEntries(raw);
 
-  // No keyword pre-filter — LLM classification handles relevance filtering
-  return entries
+  // Broad pre-filter to reduce noise — keeps papers likely relevant to
+  // CV / multimodal / video / motion / world models.
+  // LLM classification does the precise filtering later.
+  const BROAD_KEYWORDS = [
+    "video", "image", "visual", "motion", "3d", "4d", "generation",
+    "diffusion", "neural", "learn", "model", "network", "transformer",
+    "segmentation", "detection", "recognition", "synthesis", "rendering",
+    "animation", "scene", "object", "human", "robot", "action", "camera",
+    "depth", "point cloud", "mesh", "gaussian", "nerf", "avatar",
+  ];
+
+  const filtered = entries.filter((e) => {
+    const haystack = [e.title, e.abstract].join(" ").toLowerCase();
+    return BROAD_KEYWORDS.some((kw) => haystack.includes(kw));
+  });
+
+  console.log(`[arxiv-papers] ${entries.length} total, ${filtered.length} after broad filter`);
+
+  return filtered
     .slice(0, limit)
     .map((e) => ({
       sourceId,
