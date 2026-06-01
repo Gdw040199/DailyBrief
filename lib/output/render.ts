@@ -489,6 +489,66 @@ function renderRawCategoryPanel(
   return `<nav class="sub-tabs">${subTabs}</nav>\n<div class="sub-contents">${panels}</div>`;
 }
 
+/** Direction color map for the summary dots */
+const DIR_COLORS: Record<string, string> = {
+  motion: "var(--dir-motion)",
+  video: "var(--dir-video)",
+  "world-model": "var(--dir-world)",
+  "cv-other": "var(--dir-cv)",
+};
+const DIR_LABELS: Record<string, string> = {
+  motion: "Human Motion",
+  video: "Video Models",
+  "world-model": "World Models",
+  "cv-other": "CV Highlights",
+};
+
+/** Render the numbered direction summary rows (MiMo blog style) */
+function renderDirectionSummary(subs: SubGroup[]): string {
+  // Find the arxiv-papers sub-group
+  const arxivSub = subs.find((s) => s.id === "arxiv-papers");
+  if (!arxivSub) return "";
+
+  // Collect direction counts from source groups
+  const dirs: Array<{ id: string; label: string; count: number; color: string }> = [];
+  for (const src of arxivSub.sources) {
+    const dirId = src.sourceId.replace("arxiv-", "");
+    if (DIR_LABELS[dirId]) {
+      dirs.push({
+        id: dirId,
+        label: DIR_LABELS[dirId],
+        count: src.items.length,
+        color: DIR_COLORS[dirId] || "var(--muted)",
+      });
+    }
+  }
+
+  if (dirs.length === 0) return "";
+
+  const totalPapers = dirs.reduce((n, d) => n + d.count, 0);
+  const headerText = REPORT_LOCALE === "en"
+    ? `Today's Research Directions · ${totalPapers} papers`
+    : `今日研究方向 · ${totalPapers} 篇论文`;
+
+  const rows = dirs
+    .map((d, i) => {
+      const idx = String(i + 1).padStart(2, "0");
+      return `<div class="dir-row" onclick="document.querySelector('[data-sub=arxiv-papers]')?.click()">
+    <span class="dir-index">${idx}</span>
+    <span class="dir-dot" style="background:${d.color}"></span>
+    <span class="dir-name">${escapeHtml(d.label)}</span>
+    <span class="dir-count">${d.count} papers</span>
+    <span class="dir-arrow">→</span>
+  </div>`;
+    })
+    .join("\n");
+
+  return `<div class="dir-summary">
+  <div class="dir-summary-title">${headerText}</div>
+  ${rows}
+</div>`;
+}
+
 // ----- top-level renderer -----
 
 export function renderHtml(
@@ -513,135 +573,147 @@ export function renderHtml(
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${STR.siteTitle} · ${date}</title>
 <style>
+  /* ===== MiMo-inspired dark theme ===== */
   :root {
-    --bg: #fafaf9;
-    --bg-elevated: #ffffff;
-    --fg: #18181b;
-    --fg-soft: #3f3f46;
+    --bg: #000000;
+    --bg-elevated: #0a0a0a;
+    --fg: #fafafa;
+    --fg-soft: #d4d4d8;
     --muted: #71717a;
-    --rule: #e4e4e7;
-    --card: #f4f4f5;
-    --link: #1d4ed8;
-    --accent: #18181b;
-    --accent-fg: #fafaf9;
-    --rank-high-bg: #fee2e2;
-    --rank-high-fg: #991b1b;
-    --rank-mid-bg: #fef3c7;
-    --rank-mid-fg: #92400e;
-    --rank-low-bg: #e0e7ff;
-    --rank-low-fg: #3730a3;
-    --hero-grad-from: #fafaf9;
-    --hero-grad-to: #f4f4f5;
+    --rule: #27272a;
+    --card: #111111;
+    --card-hover: #1a1a1a;
+    --link: #93c5fd;
+    --accent: #fafafa;
+    --accent-fg: #000000;
+    --rank-high-bg: rgba(239,68,68,0.15);
+    --rank-high-fg: #fca5a5;
+    --rank-mid-bg: rgba(245,158,11,0.15);
+    --rank-mid-fg: #fcd34d;
+    --rank-low-bg: rgba(99,102,241,0.15);
+    --rank-low-fg: #a5b4fc;
+    --dir-motion: #60a5fa;
+    --dir-video: #a78bfa;
+    --dir-world: #34d399;
+    --dir-cv: #fbbf24;
   }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0a0a0a;
-      --bg-elevated: #18181b;
-      --fg: #fafafa;
-      --fg-soft: #d4d4d8;
-      --muted: #a1a1aa;
-      --rule: #27272a;
-      --card: #18181b;
-      --link: #93c5fd;
-      --accent: #fafafa;
-      --accent-fg: #0a0a0a;
-      --rank-high-bg: rgba(239,68,68,0.18);
-      --rank-high-fg: #fca5a5;
-      --rank-mid-bg: rgba(245,158,11,0.18);
-      --rank-mid-fg: #fcd34d;
-      --rank-low-bg: rgba(99,102,241,0.18);
-      --rank-low-fg: #a5b4fc;
-      --hero-grad-from: #18181b;
-      --hero-grad-to: #0a0a0a;
-    }
-  }
-  * { box-sizing: border-box; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
-    margin: 0;
     background: var(--bg);
     color: var(--fg);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
       "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-  main { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+  main { max-width: 880px; margin: 0 auto; padding: 3rem 2rem 5rem; }
 
-  /* ===== header ===== */
-  header.report-header { margin-bottom: 1.25rem; }
+  /* ===== header — MiMo hero style ===== */
+  header.report-header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--rule);
+  }
   .eyebrow {
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.25em;
     color: var(--muted);
     font-weight: 500;
+    display: block;
+    margin-bottom: 0.6rem;
   }
   h1.report-title {
-    font-size: 2.2rem;
+    font-size: 3.2rem;
     font-weight: 700;
-    margin: 0.4rem 0 1.2rem;
-    letter-spacing: -0.02em;
-    line-height: 1.1;
+    margin: 0 0 0.6rem;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    color: var(--fg);
+  }
+  .report-date {
+    font-size: 1rem;
+    color: var(--muted);
+    font-weight: 400;
+    letter-spacing: 0.02em;
   }
   .archive-link {
     display: inline-block;
-    margin-bottom: 1rem;
-    font-size: 0.85rem;
+    margin-top: 1rem;
+    font-size: 0.82rem;
     color: var(--muted);
     text-decoration: none;
-    border-bottom: 1px dashed var(--rule);
-    padding-bottom: 1px;
+    transition: color 0.15s;
   }
-  .archive-link:hover { color: var(--accent); border-bottom-style: solid; }
-  .hero-card {
-    background: linear-gradient(135deg, var(--hero-grad-from) 0%, var(--hero-grad-to) 100%);
-    border: 1px solid var(--rule);
-    border-left: 4px solid var(--accent);
-    padding: 1rem 1.4rem;
-    border-radius: 0.6rem;
+  .archive-link:hover { color: var(--fg); }
+
+  /* ===== direction summary — numbered rows (MiMo blog style) ===== */
+  .dir-summary {
+    margin: 0 0 2.5rem;
   }
-  .hero-eyebrow {
+  .dir-summary-title {
     font-size: 0.7rem;
-    letter-spacing: 0.2em;
     text-transform: uppercase;
+    letter-spacing: 0.25em;
     color: var(--muted);
     font-weight: 500;
+    margin-bottom: 1rem;
   }
-  .hero-headline {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin: 0.35rem 0 0;
-    line-height: 1.45;
+  .dir-row {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--rule);
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .dir-row:hover { background: var(--bg-elevated); }
+  .dir-row:last-child { border-bottom: none; }
+  .dir-index {
+    font-size: 0.75rem;
+    color: var(--muted);
+    font-weight: 500;
+    min-width: 1.8rem;
+    font-feature-settings: "tnum";
+  }
+  .dir-name {
+    font-size: 0.95rem;
+    font-weight: 500;
     color: var(--fg);
+    flex: 1;
   }
-  .overview-card {
-    margin: 0.7rem 0 0;
-    padding: 0.7rem 1.1rem;
-    background: var(--card);
-    border-radius: 0.5rem;
-    border-left: 3px solid var(--muted);
+  .dir-count {
+    font-size: 0.82rem;
+    color: var(--muted);
+    font-feature-settings: "tnum";
   }
-  .overview-card .eyebrow { display: block; margin-bottom: 0.3rem; }
-  .overview-text {
-    margin: 0;
-    font-size: 0.88rem;
-    line-height: 1.65;
-    color: var(--fg-soft);
+  .dir-arrow {
+    font-size: 0.85rem;
+    color: var(--muted);
+    transition: transform 0.15s;
+  }
+  .dir-row:hover .dir-arrow { transform: translateX(3px); }
+  .dir-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
   }
 
-  /* ===== primary tabs ===== */
+  /* ===== primary tabs — minimal ===== */
   .tabs {
     display: flex;
-    gap: 0.25rem;
-    margin: 1.25rem 0 0.75rem;
+    gap: 0;
+    margin: 0 0 2rem;
     border-bottom: 1px solid var(--rule);
-    flex-wrap: wrap;
   }
   .tab {
     background: none;
     border: none;
-    padding: 0.7rem 1.1rem;
-    font-size: 0.95rem;
+    padding: 0.8rem 1.4rem;
+    font-size: 0.88rem;
     font-weight: 500;
     color: var(--muted);
     cursor: pointer;
@@ -649,81 +721,104 @@ export function renderHtml(
     margin-bottom: -1px;
     font-family: inherit;
     transition: color 0.15s;
+    letter-spacing: 0.02em;
   }
   .tab:hover { color: var(--fg); }
   .tab.active {
     color: var(--fg);
-    border-bottom-color: var(--accent);
+    border-bottom-color: var(--fg);
   }
   .tab .count {
-    font-size: 0.72rem;
+    font-size: 0.68rem;
     color: var(--muted);
-    margin-left: 0.4rem;
+    margin-left: 0.5rem;
     font-weight: 400;
   }
   .panel { display: none; }
   .panel.active { display: block; }
 
-  /* ===== digest (AI 简报) — compact ===== */
-  .digest-category { margin-bottom: 1.1rem; }
+  /* ===== section headers ===== */
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.8rem;
+    margin: 0 0 1.5rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .section-title {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--muted);
+    font-weight: 500;
+    margin: 0;
+  }
+  .section-count {
+    font-size: 0.68rem;
+    color: var(--muted);
+    font-feature-settings: "tnum";
+  }
+
+  /* ===== digest briefs — card grid ===== */
+  .digest-category { margin-bottom: 2rem; }
   .category-header {
     display: flex;
     align-items: baseline;
     gap: 0.55rem;
-    margin: 0 0 0.55rem;
-    padding-bottom: 0.35rem;
+    margin: 0 0 1rem;
+    padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--rule);
   }
   .category-title {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--fg);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-weight: 500;
+    color: var(--muted);
     margin: 0;
-    letter-spacing: 0.05em;
   }
   .category-count {
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     color: var(--muted);
-    background: var(--card);
-    padding: 0.12rem 0.45rem;
-    border-radius: 999px;
+    font-feature-settings: "tnum";
   }
   .brief-list {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0.5rem;
+    gap: 0.75rem;
   }
   @media (min-width: 720px) {
     .brief-list { grid-template-columns: 1fr 1fr; }
   }
   .brief {
-    background: var(--bg-elevated);
+    background: var(--card);
     border: 1px solid var(--rule);
     border-radius: 0.5rem;
-    padding: 0.7rem 0.95rem;
-    transition: border-color 0.15s, transform 0.15s;
+    padding: 1rem 1.2rem;
+    transition: border-color 0.15s, background 0.15s;
   }
   .brief:hover {
     border-color: var(--muted);
-    transform: translateY(-1px);
+    background: var(--card-hover);
   }
   .brief-head {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 0.6rem;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.4rem;
   }
   .brief-source {
-    font-size: 0.72rem;
+    font-size: 0.68rem;
     color: var(--muted);
     text-transform: uppercase;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.1em;
     font-weight: 500;
   }
   .brief-rank {
-    font-size: 0.7rem;
-    padding: 0.12rem 0.5rem;
+    font-size: 0.65rem;
+    padding: 0.1rem 0.5rem;
     border-radius: 999px;
     font-weight: 600;
     flex-shrink: 0;
@@ -732,56 +827,58 @@ export function renderHtml(
   .brief-rank.mid  { background: var(--rank-mid-bg);  color: var(--rank-mid-fg); }
   .brief-rank.low  { background: var(--rank-low-bg);  color: var(--rank-low-fg); }
   .brief-title {
-    font-size: 0.98rem;
+    font-size: 0.95rem;
     font-weight: 600;
-    margin: 0 0 0.3rem;
-    line-height: 1.35;
+    margin: 0 0 0.4rem;
+    line-height: 1.4;
   }
   .brief-title a { color: var(--fg); text-decoration: none; }
-  .brief-title a:hover { color: var(--link); text-decoration: underline; }
+  .brief-title a:hover { color: var(--link); }
   .brief-summary {
     margin: 0;
     color: var(--fg-soft);
-    font-size: 0.86rem;
-    line-height: 1.55;
+    font-size: 0.82rem;
+    line-height: 1.6;
   }
 
+  /* ===== editor card ===== */
   .editor-card {
     background: var(--card);
-    border-left: 3px solid var(--muted);
-    border-radius: 0.5rem;
-    padding: 1rem 1.3rem;
-    margin: 1.5rem 0 1.2rem;
+    border-left: 2px solid var(--muted);
+    border-radius: 0 0.4rem 0.4rem 0;
+    padding: 1.2rem 1.5rem;
+    margin: 2rem 0;
   }
-  .editor-card .eyebrow { display: block; margin-bottom: 0.4rem; }
+  .editor-card .eyebrow { display: block; margin-bottom: 0.5rem; }
   .editor-text {
     margin: 0;
-    font-size: 0.95rem;
-    line-height: 1.7;
-    color: var(--fg);
+    font-size: 0.9rem;
+    line-height: 1.75;
+    color: var(--fg-soft);
   }
-  .keywords { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.5rem; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.5rem 0; }
   .keyword {
     background: var(--card);
     color: var(--fg-soft);
-    padding: 0.25rem 0.7rem;
-    border-radius: 999px;
-    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.3rem;
+    font-size: 0.78rem;
+    border: 1px solid var(--rule);
   }
 
-  /* ===== L2 sub-tabs ===== */
+  /* ===== L2 sub-tabs — pill style ===== */
   .sub-tabs {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.4rem;
-    margin: 1rem 0;
+    gap: 0.5rem;
+    margin: 0 0 1.5rem;
   }
   .sub-tab {
     background: var(--card);
-    border: 1px solid transparent;
-    padding: 0.5rem 1.05rem;
-    border-radius: 0.5rem;
-    font-size: 0.9rem;
+    border: 1px solid var(--rule);
+    padding: 0.45rem 1rem;
+    border-radius: 0.4rem;
+    font-size: 0.82rem;
     font-weight: 500;
     color: var(--fg-soft);
     cursor: pointer;
@@ -790,12 +887,13 @@ export function renderHtml(
   }
   .sub-tab:hover { border-color: var(--muted); color: var(--fg); }
   .sub-tab.active {
-    background: var(--accent);
-    color: var(--accent-fg);
+    background: var(--fg);
+    color: var(--bg);
+    border-color: var(--fg);
   }
   .sub-tab .count {
-    font-size: 0.7rem;
-    opacity: 0.75;
+    font-size: 0.65rem;
+    opacity: 0.7;
     margin-left: 0.4rem;
     font-weight: 400;
   }
@@ -806,17 +904,17 @@ export function renderHtml(
   .source-tabs {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.35rem;
-    margin: 0.9rem 0 1.3rem;
-    padding-bottom: 0.7rem;
+    gap: 0.4rem;
+    margin: 0 0 1.5rem;
+    padding-bottom: 1rem;
     border-bottom: 1px solid var(--rule);
   }
   .source-tab {
     background: none;
     border: 1px solid var(--rule);
-    padding: 0.35rem 0.85rem;
-    border-radius: 999px;
-    font-size: 0.83rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.3rem;
+    font-size: 0.78rem;
     color: var(--fg-soft);
     cursor: pointer;
     font-family: inherit;
@@ -829,78 +927,95 @@ export function renderHtml(
     border-color: var(--fg);
   }
   .source-tab .count {
-    font-size: 0.7rem;
-    opacity: 0.75;
+    font-size: 0.65rem;
+    opacity: 0.7;
     margin-left: 0.3rem;
   }
   .source-content { display: none; }
   .source-content.active { display: block; }
 
-  /* ===== article cards in raw panels ===== */
+  /* ===== article cards — clean dark ===== */
   .article {
-    padding: 1rem 0;
+    padding: 1.2rem 0;
     border-bottom: 1px solid var(--rule);
   }
   .article:first-child { padding-top: 0; }
   .article:last-child { border-bottom: none; }
   .article-title {
     font-size: 1rem;
-    margin: 0 0 0.3rem;
-    font-weight: 500;
+    margin: 0 0 0.35rem;
+    font-weight: 600;
     line-height: 1.45;
   }
   .article-title a { color: var(--fg); text-decoration: none; }
-  .article-title a:hover { color: var(--link); text-decoration: underline; }
-  .article-authors { color: var(--muted); font-size: 0.76rem; font-style: italic; margin: 0 0 0.35rem; }
-  .article-code { margin: 0 0 0.35rem; }
-  .code-link { display: inline-block; background: var(--card); color: var(--link); font-size: 0.78rem; font-weight: 500; padding: 2px 8px; border-radius: 4px; text-decoration: none; border: 1px solid var(--rule); }
-  .code-link:hover { background: var(--link); color: #fff; }
-  .article-meta { color: var(--muted); font-size: 0.76rem; margin: 0 0 0.35rem; }
+  .article-title a:hover { color: var(--link); }
+  .article-authors {
+    color: var(--muted);
+    font-size: 0.75rem;
+    margin: 0 0 0.4rem;
+    font-weight: 400;
+  }
+  .article-code { margin: 0 0 0.4rem; }
+  .code-link {
+    display: inline-block;
+    background: var(--card);
+    color: var(--link);
+    font-size: 0.72rem;
+    font-weight: 500;
+    padding: 0.15rem 0.6rem;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    border: 1px solid var(--rule);
+    transition: all 0.15s;
+  }
+  .code-link:hover { background: var(--link); color: #000; border-color: var(--link); }
+  .article-meta { color: var(--muted); font-size: 0.72rem; margin: 0 0 0.4rem; }
   .article-stats {
     color: var(--muted);
-    font-size: 0.8rem;
-    margin: 0 0 0.4rem;
+    font-size: 0.78rem;
+    margin: 0 0 0.5rem;
     font-feature-settings: "tnum";
   }
   .article-excerpt {
     margin: 0;
     color: var(--fg-soft);
-    font-size: 0.9rem;
-    line-height: 1.6;
+    font-size: 0.88rem;
+    line-height: 1.7;
   }
   .article-summary {
-    margin: 0.55rem 0 0;
-    padding: 0.6rem 0.85rem;
+    margin: 0.7rem 0 0;
+    padding: 0.7rem 1rem;
     background: var(--card);
     border-left: 2px solid var(--link);
-    border-radius: 0.3rem;
-    font-size: 0.9rem;
-    line-height: 1.6;
-    color: var(--fg);
+    border-radius: 0 0.3rem 0.3rem 0;
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--fg-soft);
   }
   .summary-label {
     display: inline-block;
-    font-size: 0.68rem;
+    font-size: 0.62rem;
     color: var(--link);
-    margin-right: 0.4rem;
+    margin-right: 0.5rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
   }
 
   .empty {
     color: var(--muted);
     text-align: center;
-    padding: 2rem 0;
-    font-size: 0.9rem;
+    padding: 3rem 0;
+    font-size: 0.88rem;
   }
 
   footer {
-    margin-top: 2.5rem;
+    margin-top: 3rem;
     border-top: 1px solid var(--rule);
-    padding-top: 1.1rem;
+    padding-top: 1.5rem;
     color: var(--muted);
-    font-size: 0.82rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
   }
 </style>
 </head>
@@ -908,9 +1023,12 @@ export function renderHtml(
 <main>
   <header class="report-header">
     <span class="eyebrow">${STR.siteTitle}</span>
-    <h1 class="report-title">${date}</h1>
-    ${process.env.WEB_MODE === "true" ? `<a class="archive-link" href="../archive.html">${STR.archiveLink}</a>` : ""}
+    <h1 class="report-title">${REPORT_LOCALE === "en" ? "Daily Research Brief" : "每日研究简报"}</h1>
+    <span class="report-date">${date}</span>
+    ${process.env.WEB_MODE === "true" ? `<br><a class="archive-link" href="../archive.html">${STR.archiveLink}</a>` : ""}
   </header>
+
+  ${renderDirectionSummary(raw.tech)}
 
   <nav class="tabs" role="tablist">
     <button class="tab active" data-tab="tech">${CATEGORY_LABELS.tech}<span class="count">${counts.tech}</span></button>
