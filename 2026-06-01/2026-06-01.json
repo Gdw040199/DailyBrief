@@ -1,73 +1,75 @@
 {
-  "hero_headline": "美伊冲突升级，Anthropic获$965B估值",
-  "daily_overview": "中东紧张局势持续升温：美国与伊朗在霍尔木兹海峡附近交火，科威特遭导弹袭击；以色列下令空袭贝鲁特南郊真主党据点。南海方向，中菲在黄岩岛对峙加剧。科技方面，Anthropic完成650亿美元融资，估值达9650亿美元并发布Opus 4.8；NVIDIA推出首个开源物理AI全模态模型Cosmos 3；OpenAI发布生物防御平台Rosalind；DeepMind启动亚太加速器计划。AI产业融资与产品更新密集，资本对AI前景保持高度热情。",
+  "hero_headline": "美伊互袭升级，伊朗袭击科威特美军基地",
+  "daily_overview": "中东局势骤然升级：美国与伊朗相互发动军事打击，伊朗向科威特美军基地及霍尔木兹海峡发射导弹，科威特谴责“反复袭击”，国际社会呼吁克制。中国解放军和海警在黄岩岛附近巡逻，菲防长回应称面临严重威胁。科技领域，Anthropic以9650亿美元估值完成650亿美元融资并发布Opus 4.8模型；OpenAI推出Rosalind生物防御平台助力公共卫生；波士顿儿童医院利用AI诊断40余例罕见病；英伟达开源首个物理AI大模型Cosmos 3；Google DeepMind启动亚太环境风险加速器。AI资本与创新势头强劲，但军事化应用风险同步上升。",
   "tech_briefs": [
     {
-      "title": "Anthropic获$65B融资估值$965B，发布Opus 4.8",
+      "title": "Anthropic获650亿美元融资，发布Opus 4.8",
       "url": "https://news.smol.ai/issues/26-05-28-anthropic-series-h/",
       "source": "Smol AI News",
-      "summary": "Anthropic完成Series H融资65亿美元，估值9650亿美元，年收入超470亿美元；同步推出Opus 4.8模型和Dynamic Workflows，性能提升但部分基准出现倒退。（多家报道）",
+      "summary": "Anthropic完成650亿美元H轮融资，估值达9650亿美元，同步推出模型Opus 4.8和Dynamic Workflows（多家报道）。",
       "importance": 10
     },
     {
-      "title": "NVIDIA发布开源物理AI全模态模型Cosmos 3",
-      "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
-      "source": "Hugging Face Blog",
-      "summary": "NVIDIA推出Cosmos 3，首个开源全模态模型，用于物理AI推理与行动，支持机器人、自动驾驶等领域的环境理解与决策。",
+      "title": "OpenAI推出Rosalind生物防御平台",
+      "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
+      "source": "OpenAI News",
+      "summary": "OpenAI启动Rosalind Biodefense，为认证开发者和美国政府提供GPT-Rosalind，助力生物防御和公共卫生。",
+      "importance": 9
+    },
+    {
+      "title": "波士顿儿童医院用AI诊断40余种罕见病",
+      "url": "https://openai.com/index/boston-childrens-hospital",
+      "source": "OpenAI News",
+      "summary": "波士顿儿童医院应用OpenAI技术改善患者护理，减少运营负担，成功诊断超过40例罕见病。",
       "importance": 8
     },
     {
-      "title": "OpenAI推出Rosalind Biodefense加强生物防御",
-      "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
-      "source": "OpenAI News",
-      "summary": "OpenAI发布Rosalind Biodefense，为受信开发者和美国政府提供GPT-Rosalind，用于生物防御、公共卫生及大流行应急。",
-      "importance": 7
+      "title": "英伟达发布首个开源物理AI大模型Cosmos 3",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
+      "source": "Hugging Face Blog",
+      "summary": "NVIDIA推出Cosmos 3，首个开源的物理AI全模态模型，支持物理推理和行动，加速机器人等领域发展。",
+      "importance": 8
     },
     {
-      "title": "DeepMind启动亚太加速器应对环境风险",
+      "title": "Google DeepMind在亚太启动环境风险加速器",
       "url": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks/",
       "source": "DeepMind Blog",
-      "summary": "Google DeepMind宣布在亚太启动加速器计划，支持初创企业利用AI应对环境风险，推动可持续发展。",
-      "importance": 6
-    },
-    {
-      "title": "波士顿儿童医院利用AI诊断罕见疾病",
-      "url": "https://openai.com/index/boston-childrens-hospital",
-      "source": "OpenAI News",
-      "summary": "波士顿儿童医院采用OpenAI技术辅助诊疗，已成功诊断40余种罕见病，减少医生文书负担，提升诊疗效率。",
+      "summary": "Google DeepMind启动亚太加速器项目，利用AI技术应对环境风险，支持区域可持续发展。",
       "importance": 7
     }
   ],
   "politics_briefs": [
     {
-      "title": "美国称打击伊朗雷达站，科威特报告导弹袭击",
-      "url": "https://www.bbc.com/news/articles/crlpy8n7pr6o?at_medium=RSS&at_campaign=rss",
+      "title": "美伊互袭军事目标，科威特遭导弹袭击",
+      "url": "https://www.bbc.com/news/articles/crlpy8n7pr6o?traffic_source=rss",
       "source": "BBC World",
-      "summary": "美伊围绕霍尔木兹海峡交火，美中央司令部称对伊朗南部进行自卫打击，科威特指责伊朗袭击其境内目标。（多家报道）",
+      "summary": "美国称打击伊朗雷达站，伊朗袭击科威特美军基地及霍尔木兹海峡，中东紧张升级（多家报道）。",
       "importance": 10
     },
     {
-      "title": "以色列总理下令空袭贝鲁特南郊真主党据点",
-      "url": "https://www.bbc.com/news/articles/c4g419e2xlvo?at_medium=RSS&at_campaign=rss",
+      "title": "法国海军拦截涉嫌违反制裁的俄罗斯油轮",
+      "url": "https://www.bbc.com/news/articles/cn8pwgej1gxo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "summary": "内塔尼亚胡宣布将打击真主党控制的达希耶地区，以回应针对以色列平民的袭击，冲突面临升级风险。",
-      "importance": 9
+      "summary": "法国海军在英方支持下于周日拦截一艘俄罗斯油轮，马克龙证实此举为执行制裁。",
+      "importance": 8
     },
     {
-      "title": "菲防长警告中国，中方开始在黄岩岛附近巡逻",
+      "title": "中国在黄岩岛附近巡逻，菲防长发警告",
       "url": "https://www.dw.com/zh/菲防长发出威胁警告-中国开始在黄岩岛附近巡逻/a-77363306?maca=chi-rss-chi-all-1127-rdf",
       "source": "DW 中文",
-      "summary": "中国海警与解放军在黄岩岛附近海域巡逻，菲律宾防长称面临「严重威胁」，此前美菲刚举行联合海上演习。",
-      "importance": 7
+      "summary": "中国海警和解放军在黄岩岛附近海域巡逻，菲律宾防长此前指面临严重威胁，两国海权摩擦持续。",
+      "importance": 8
     }
   ],
-  "editor_note": "地缘风险与AI热潮并行，军事冲突与资本狂欢交织，世界格局在动荡中加速重构。",
+  "editor_note": "中东冲突骤然升温，外交对话仍是平息动荡的根本出路。AI领域的资本狂欢与技术创新同步展开，但伦理风险与军事化应用值得警惕。",
   "keywords": [
     "美伊冲突",
+    "伊朗",
+    "科威特",
+    "黄岩岛",
+    "AI融资",
     "Anthropic",
-    "NVIDIA Cosmos 3",
-    "OpenAI Rosalind",
-    "DeepMind加速器",
-    "南海局势"
+    "生物防御",
+    "物理AI"
   ]
 }

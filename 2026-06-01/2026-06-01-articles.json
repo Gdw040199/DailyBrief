@@ -6,160 +6,160 @@
       "title": "harry0703/MoneyPrinterTurbo",
       "url": "https://github.com/harry0703/MoneyPrinterTurbo",
       "excerpt": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
-      "meta": "Python · ★ 76,112 · 🍴 10,809 · 📈 1,937 stars today",
+      "meta": "Python · ★ 76,153 · 🍴 10,820 · 📈 1,937 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "利用AI大模型一键生成高清短视频的工具。用户只需输入主题或文案，即可自动化创作视频，适合内容创作者、营销人员快速产出短视频素材。基于大语言模型和视频合成技术。"
+      "summary": "利用AI大模型一键生成高清短视频，面向内容创作者和营销人员，快速制作短视频内容。"
     },
     {
       "sourceId": "github-trending",
       "title": "microsoft/markitdown",
       "url": "https://github.com/microsoft/markitdown",
       "excerpt": "Python tool for converting files and office documents to Markdown.",
-      "meta": "Python · ★ 136,437 · 🍴 9,307 · 📈 2,798 stars today",
+      "meta": "Python · ★ 136,465 · 🍴 9,313 · 📈 2,798 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "Python工具，能将各类文件和Office文档（如Word、Excel、PPT）转换为Markdown格式。解决了文档格式统一问题，适用于数据迁移、内容整理、文档处理等场景，开发者可轻松集成。"
+      "summary": "Python工具，将各类文件和Office文档转换为Markdown格式，适合需要批量处理文档为结构化文本的开发者。"
     },
     {
       "sourceId": "github-trending",
       "title": "D4Vinci/Scrapling",
       "url": "https://github.com/D4Vinci/Scrapling",
       "excerpt": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
-      "meta": "Python · ★ 57,389 · 🍴 5,574 · 📈 606 stars today",
+      "meta": "Python · ★ 57,400 · 🍴 5,575 · 📈 606 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "自适应网页抓取框架，支持从单次请求到全站大规模爬取。自动处理反爬、动态内容、分页等难题，适用于数据采集、内容聚合、监控等场景，开发者可用它快速构建稳定爬虫。"
+      "summary": "自适应Web爬虫框架，支持从单次请求到全规模爬取，提供反检测和智能解析功能，用于数据采集场景。"
     },
     {
       "sourceId": "github-trending",
       "title": "nesquena/hermes-webui",
       "url": "https://github.com/nesquena/hermes-webui",
       "excerpt": "Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!",
-      "meta": "Python · ★ 10,378 · 🍴 1,407 · 📈 357 stars today",
+      "meta": "Python · ★ 10,386 · 🍴 1,409 · 📈 357 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "Hermes Agent的Web界面，让你通过浏览器或手机直接使用Hermes Agent。无需安装客户端，随时随地与AI代理交互，适合远程操作、移动办公等场景。"
+      "summary": "Hermes Agent的Web界面，支持通过浏览器或手机操控AI代理，提供便捷的远程交互方式。"
     },
     {
       "sourceId": "github-trending",
       "title": "EveryInc/compound-engineering-plugin",
       "url": "https://github.com/EveryInc/compound-engineering-plugin",
       "excerpt": "Official Compound Engineering plugin for Claude Code, Codex, Cursor, and more",
-      "meta": "TypeScript · ★ 18,906 · 🍴 1,421 · 📈 251 stars today",
+      "meta": "TypeScript · ★ 18,914 · 🍴 1,421 · 📈 251 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "官方Compound Engineering插件，支持Claude Code、Codex、Cursor等AI编程工具。提供复合工程能力，帮助开发者更高效地构建复杂软件系统，适合需要多工具协同的开发团队。"
+      "summary": "为Claude Code、Codex、Cursor等AI编程工具设计的官方插件，集成Compound Engineering能力，优化代码生成与协作。"
     },
     {
       "sourceId": "github-trending",
       "title": "github/docs",
       "url": "https://github.com/github/docs",
       "excerpt": "The open-source repo for docs.github.com",
-      "meta": "TypeScript · ★ 19,828 · 🍴 67,302 · 📈 27 stars today",
+      "meta": "TypeScript · ★ 19,829 · 🍴 67,302 · 📈 27 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "GitHub官方文档的开源仓库，包含GitHub使用指南、API参考、安全配置等全部内容。任何人都可参与贡献，用于学习平台功能、排查问题或定制内部文档。"
+      "summary": "GitHub官方文档的开源仓库，社区可贡献翻译、修正或新增内容，改进开发者文档体验。"
     },
     {
       "sourceId": "github-trending",
       "title": "OpenBMB/VoxCPM",
       "url": "https://github.com/OpenBMB/VoxCPM",
       "excerpt": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
-      "meta": "Python · ★ 23,911 · 🍴 2,753 · 📈 635 stars today",
+      "meta": "Python · ★ 23,922 · 🍴 2,755 · 📈 635 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "无Tokenizer的多语言文本转语音（TTS）模型，支持语音生成、创意语音设计和真实语音克隆。面向AI语音助手、内容创作、无障碍辅助等场景，提供高质量、多语种的语音合成。"
+      "summary": "无Tokenizer的多语言TTS模型，支持创意声音设计与真实感语音克隆，适用于语音合成和内容创作。"
     },
     {
       "sourceId": "github-trending",
       "title": "revfactory/harness",
       "url": "https://github.com/revfactory/harness",
       "excerpt": "A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use.",
-      "meta": "HTML · ★ 4,889 · 🍴 670 · 📈 323 stars today",
+      "meta": "HTML · ★ 4,897 · 🍴 671 · 📈 323 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "元技能框架，用于设计特定领域的AI代理团队、定义专业智能体并生成它们所需的技能。帮助开发者快速搭建多智能协作系统，适用于复杂任务编排、自动化工作流等场景。"
+      "summary": "元技能框架，用于设计领域专属的Agent团队、定义专用Agent并生成其技能，适合构建复杂多Agent系统。"
     },
     {
       "sourceId": "github-trending",
       "title": "FareedKhan-dev/train-llm-from-scratch",
       "url": "https://github.com/FareedKhan-dev/train-llm-from-scratch",
       "excerpt": "A straightforward method for training your LLM, from downloading data to generating text.",
-      "meta": "Jupyter Notebook · ★ 3,357 · 🍴 482 · 📈 626 stars today",
+      "meta": "Jupyter Notebook · ★ 3,362 · 🍴 482 · 📈 626 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "完整的LLM训练教程，从数据下载到文本生成逐步讲解。适合想亲手训练大语言模型的开发者和研究者，提供简化方法，降低入门门槛。"
+      "summary": "从数据下载到文本生成的LLM训练教程，提供简洁的实践方法，适合想从头理解大语言模型训练的开发者。"
     },
     {
       "sourceId": "github-trending",
       "title": "supermemoryai/supermemory",
       "url": "https://github.com/supermemoryai/supermemory",
       "excerpt": "Memory engine and app that is extremely fast, scalable. The Memory API for the AI era.",
-      "meta": "TypeScript · ★ 23,602 · 🍴 2,125 · 📈 264 stars today",
+      "meta": "TypeScript · ★ 23,612 · 🍴 2,125 · 📈 264 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "高性能、可扩展的记忆引擎和API，专为AI应用设计。提供超快速的记忆存储与检索能力，支持长程上下文管理，适用于聊天历史、用户画像、知识库等场景。"
+      "summary": "超快、可扩展的内存引擎与应用，为AI系统提供持久化记忆API，适用于需要长期上下文记忆的智能应用。"
     },
     {
       "sourceId": "github-trending",
       "title": "Crosstalk-Solutions/project-nomad",
       "url": "https://github.com/Crosstalk-Solutions/project-nomad",
       "excerpt": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.",
-      "meta": "TypeScript · ★ 27,898 · 🍴 2,721 · 📈 374 stars today",
+      "meta": "TypeScript · ★ 27,903 · 🍴 2,721 · 📈 374 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "离线生存计算机，内置关键工具、知识库和AI能力，无需网络即可运行。适用于灾害响应、偏远地区作业、隐私敏感场景，提供自包含的AI支持系统。"
+      "summary": "自包含、离线的生存计算机，集成关键工具、知识库和AI，适合灾难恢复、偏远地区或无网络环境使用。"
     },
     {
       "sourceId": "github-trending",
       "title": "a5c-ai/babysitter",
       "url": "https://github.com/a5c-ai/babysitter",
       "excerpt": "Babysitter enforces obedience on agentic workforces and enables them to manage extremely complex tasks and workflows through deterministic, hallucination-free self-orchestration",
-      "meta": "JavaScript · ★ 1,124 · 🍴 69 · 📈 58 stars today",
+      "meta": "JavaScript · ★ 1,135 · 🍴 71 · 📈 58 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "代理编排框架，通过确定性、无幻觉的自我编排，管理复杂任务和工作流。确保多个AI代理服从规则、协同执行，适合银行、医疗等高风险场景的自动化决策。"
+      "summary": "AI代理工作流编排引擎，通过确定性自编排避免幻觉，强制执行复杂任务管理，适合需要可靠多步骤自动化的场景。"
     },
     {
       "sourceId": "github-trending",
       "title": "anthropics/claude-code",
       "url": "https://github.com/anthropics/claude-code",
       "excerpt": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
-      "meta": "Python · ★ 129,204 · 🍴 21,026 · 📈 489 stars today",
+      "meta": "Python · ★ 129,211 · 🍴 21,028 · 📈 489 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "终端中的代理性编码工具，能理解整个代码库、执行日常任务、解释复杂代码并处理Git工作流。开发者可用它加速编码、排查问题、自动化重复操作。"
+      "summary": "终端中的代理式编码工具，理解代码库，自动执行重复任务、解释复杂代码并处理Git工作流，提升开发效率。"
     },
     {
       "sourceId": "github-trending",
       "title": "nicobailon/pi-subagents",
       "url": "https://github.com/nicobailon/pi-subagents",
       "excerpt": "Pi extension for async subagent delegation with truncation, artifacts, and session sharing",
-      "meta": "TypeScript · ★ 1,955 · 🍴 264 · 📈 69 stars today",
+      "meta": "TypeScript · ★ 1,957 · 🍴 264 · 📈 69 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "Pi平台的异步子代理委托扩展，支持智能体间截断、工件传递和会话共享。用于构建可并行的多步AI任务，提高响应速度与资源利用率。"
+      "summary": "Pi框架的扩展，支持异步子Agent委派，包含截断、工件和会话共享功能，用于构建模块化多Agent系统。"
     },
     {
       "sourceId": "github-trending",
       "title": "emmabostian/developer-portfolios",
       "url": "https://github.com/emmabostian/developer-portfolios",
       "excerpt": "A list of developer portfolios for your inspiration",
-      "meta": "Python · ★ 23,638 · 🍴 4,633 · 📈 73 stars today",
+      "meta": "Python · ★ 23,641 · 🍴 4,633 · 📈 73 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "开发者个人作品集网站列表，收录了众多优秀案例供参考。适合想要打造或改进自己作品集的程序员，从中获取设计灵感、布局技巧与技术实现思路。"
+      "summary": "汇集开发者个人作品集案例，供参考与灵感，适合想打造或优化个人展示页面的程序员。"
     },
     {
       "sourceId": "github-trending",
       "title": "codecrafters-io/build-your-own-x",
       "url": "https://github.com/codecrafters-io/build-your-own-x",
       "excerpt": "Master programming by recreating your favorite technologies from scratch.",
-      "meta": "Markdown · ★ 509,826 · 🍴 48,352 · 📈 1,158 stars today",
+      "meta": "Markdown · ★ 509,836 · 🍴 48,353 · 📈 1,158 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "经典编程项目合集，教你从零复现各种技术（如数据库、HTTP服务器、Git等）。适合想深入理解底层原理的开发者，通过动手实践掌握核心技术。"
+      "summary": "通过从零复现数据库、编译器、HTTP服务器等技术来掌握编程，面向想深入理解底层原理的开发者。"
     },
     {
       "sourceId": "openai-news",
@@ -169,7 +169,7 @@
       "publishedAt": "2026-05-29T12:00:00.000Z",
       "category": "tech",
       "source": "OpenAI News",
-      "summary": "波士顿儿童医院利用OpenAI技术提升患者护理、减轻运营负担，并已帮助诊断40多种罕见疾病。"
+      "summary": "波士顿儿童医院利用OpenAI技术改善患者护理，减少运营负担，并帮助诊断超过40例罕见疾病。"
     },
     {
       "sourceId": "openai-news",
@@ -179,7 +179,7 @@
       "publishedAt": "2026-05-29T12:00:00.000Z",
       "category": "tech",
       "source": "OpenAI News",
-      "summary": "Braintrust工程师使用Codex结合GPT-5.5，将客户需求快速转化为代码，加速实验与开发流程。"
+      "summary": "Braintrust工程师使用Codex结合GPT-5.5，将客户需求转化为代码，加速实验与开发。"
     },
     {
       "sourceId": "openai-news",
@@ -189,7 +189,7 @@
       "publishedAt": "2026-05-29T03:00:00.000Z",
       "category": "tech",
       "source": "OpenAI News",
-      "summary": "OpenAI推出Rosalind Biodefense项目，为经过审查的开发者与美国政府合作伙伴提供GPT-Rosalind访问权限，以推进生物防御、公共卫生与大流行病防范。"
+      "summary": "OpenAI推出Rosalind Biodefense，向经审查的开发者及美国政府合作伙伴扩大GPT-Rosalind的访问，以推进生物防御、公共卫生与防范大流行病。"
     },
     {
       "sourceId": "openai-news",
@@ -199,7 +199,7 @@
       "publishedAt": "2026-05-29T00:00:00.000Z",
       "category": "tech",
       "source": "OpenAI News",
-      "summary": "OpenAI发布第三方AI评估指南，涵盖评估前沿系统的模型能力、安全防护及有效性的方法。"
+      "summary": "OpenAI发布第三方AI评估指南，涵盖如何评估前沿系统的模型能力、安全防护和有效性。"
     },
     {
       "sourceId": "openai-news",
@@ -209,7 +209,7 @@
       "publishedAt": "2026-05-28T12:00:00.000Z",
       "category": "tech",
       "source": "OpenAI News",
-      "summary": "Endava利用OpenAI Codex构建自主代理型组织，将需求分析时间从数周缩短至数小时，加速软件交付。"
+      "summary": "Endava利用Codex构建代理型组织，将需求分析从数周缩短至数小时，加速软件交付。"
     },
     {
       "sourceId": "openai-news",
@@ -714,7 +714,7 @@
       "publishedAt": "2026-06-01T04:44:55.000Z",
       "category": "tech",
       "source": "Hugging Face Blog",
-      "summary": "NVIDIA推出开源全能模型Cosmos 3，号称首个面向物理AI推理与行动的开放模型。"
+      "summary": "NVIDIA发布Cosmos 3，这是首个开源全能模型，专为物理AI的推理与行动设计。"
     },
     {
       "sourceId": "huggingface-blog",
@@ -724,7 +724,7 @@
       "publishedAt": "2026-05-29T00:00:00.000Z",
       "category": "tech",
       "source": "Hugging Face Blog",
-      "summary": "Hugging Face博客发布PyTorch性能分析系列（一）：torch.profiler初学者指南。"
+      "summary": "Hugging Face发布PyTorch性能分析教程第一部分，介绍torch.profiler的基本使用方法，适合初学者。"
     },
     {
       "sourceId": "huggingface-blog",
@@ -984,10 +984,10 @@
       "url": "https://huggingface.co/papers/2605.31264",
       "excerpt": "LLM agents are increasingly expected not only to complete isolated tasks, but also to carry bounded representations of human expertise, judgment, and interaction style. Building such person-grounded agents remains difficult because actionable knowledge associated with a person or role is usually emb",
       "publishedAt": "2026-05-29T00:00:00.000Z",
-      "meta": "👍 55",
+      "meta": "👍 56",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出COLLEAGUE.SKILL方法，通过专家知识蒸馏自动生成AI技能。核心技术是将人类专长和交互风格编码为可操作知识，使LLM代理具备角色化能力。避免了手工设计技能，提升代理对人类意图的表达与泛化能力。"
+      "summary": "提出COLLEAGUE.SKILL，通过专家知识蒸馏自动生成AI技能，使LLM agent携带人类专业知识、判断和互动风格，解决构建人格化agent时知识获取困难的问题。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -998,7 +998,7 @@
       "meta": "👍 47",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "通过构建最小对比图像对，分析视觉-语言模型（VLM）是否具备结构化3D空间理解。发现模型依赖图像中的统计捷径而非真实深度推理，揭示了空间表示的表层性，为提升VLM空间能力提供诊断框架。"
+      "summary": "提出表示级分析框架，构建最小对比对来探究VLM的空间表征，揭示模型依赖“远大近小”等统计捷径而非结构化3D理解。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1009,7 +1009,7 @@
       "meta": "👍 29",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出LongTraceRL，用搜索代理轨迹和基于量规的奖励进行强化学习，提升长上下文推理能力。解决RLVR方法在低置信度场景下难以定位与整合关键信息的问题，在长文本推理任务上取得显著改进。"
+      "summary": "提出LongTraceRL，利用搜索agent轨迹和评定量表奖励学习长上下文推理，解决LLM在大量干扰信息中定位并整合关键信息的困难。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1020,7 +1020,7 @@
       "meta": "👍 23",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出Function2Scene，将功能规格（如活动、物理需求）直接转换为3D室内布局。不同于常见物体级提示，该方法从空间使用方式出发生成场景，更好地匹配真实室内设计中对功能的考量。"
+      "summary": "提出Function2Scene，从活动、人体需求等功能规范生成3D室内布局，比传统基于物体提示的方法更符合实际设计需求。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1031,7 +1031,7 @@
       "meta": "👍 21",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出任务聚焦记忆机制，为多模态代理构建长期记忆。核心挑战在于决定什么信息值得存储。通过聚焦记忆强化任务相关经验的保留，提升代理在持续学习与跨会话推理中的表现。"
+      "summary": "提出任务聚焦记忆方法，让多模态agent根据任务需求选择性记忆关键经验，而非仅追求准确性和保真度，实现更有效的长期学习和持续适应。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1042,7 +1042,7 @@
       "meta": "👍 17",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出Xetrieval，从机制层面解释稠密检索为何赋予高相关性分数。通过分析嵌入空间的内部表示，揭示词法匹配之外的深层信号，避免表面解释（如后验文本理由），为检索模型可解释性提供新方法。"
+      "summary": "提出Xetrieval，对密集检索进行机制性解释，通过分析高维嵌入揭示相关分数分配原理，超越传统词汇匹配等表面信号。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1053,7 +1053,7 @@
       "meta": "👍 16",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "探索让LLM自主设计数据工程流程，用于模型专业领域适配。无需人工编排，让LLM自动生成和处理高质量领域数据。实验证明该方法在多个专业任务上提升了模型性能，优于人类设计的工作流。"
+      "summary": "探索自主Agentic数据工程，让LLM agent自动为专业领域生成高质量数据，减少对人工设计工作流的依赖，提升模型在特定领域的适应能力。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1064,7 +1064,7 @@
       "meta": "👍 14",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出GUI-RobustEval基准和鲁棒驱动轨迹合成方法，解决GUI代理从自身错误恢复能力弱的问题。通过合成包含错误的轨迹数据训练代理，显著提升其在真实部署中的容错与恢复性能。"
+      "summary": "提出GUI-RobustEval基准和鲁棒性驱动轨迹合成方法，评估并提升GUI agent从自身操作错误中恢复的能力，弥合评估与数据层面的差距。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1075,7 +1075,7 @@
       "meta": "👍 13",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出dMoE，将可学习块专家融入扩散大语言模型（dLLM）的MoE架构。解决dLLM与MoE扩展时专家分化不足的问题。无需改变解码范式，提升模型容量与分布式效率，在多个语言任务上取得更好效果。"
+      "summary": "提出dMoE，在扩散大语言模型（dLLM）中引入可学习块专家，替代固定专家分配，提升MoE架构在dLLM中的扩展性和性能。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1086,7 +1086,7 @@
       "meta": "👍 13",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "针对LLM代理在本地工具环境中面临的后门攻击（Trojan Backdoors），提出防御框架。利用代理持久化控制机制，检测和阻断恶意注入，保障文件读写、工具调用等操作的安全性，提升代理系统的鲁棒性。"
+      "summary": "针对LLM agent在本地工作空间易受木马后门攻击的问题，提出从提示注入到持久控制的防御方法，保护agent harness免受持久控制。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1097,7 +1097,7 @@
       "meta": "👍 13",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出LongDS-Bench，测试长时序多轮数据分析中代理的迭代推理能力。现有基准多为短交互任务，该基准包含长跨度、多轮分析场景，揭示代理在跟踪演化分析上下文方面的失败模式。"
+      "summary": "提出LongDS-Bench，用于长视距、多轮数据分析的基准，测试agent在长期上下文追踪分析演化上下文的能力，揭示现有模型在此场景下的失败。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1105,10 +1105,10 @@
       "url": "https://huggingface.co/papers/2605.31029",
       "excerpt": "Video-language models can process only a limited number of frames, making frame selection a key bottleneck for efficient video captioning. Most captioning pipelines still rely on uniform sampling, which is computationally cheap but agnostic to visual content. Adaptive frame sampling has recently eme",
       "publishedAt": "2026-05-29T00:00:00.000Z",
-      "meta": "👍 9",
+      "meta": "👍 10",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出PEEK，基于高效知识蒸馏的关键帧选择方法。为视频字幕任务自适应挑选信息帧，替代传统均匀采样。通过蒸馏教师模型知识，在保持准确性的同时大幅减少处理帧数，提升视频语言模型效率。"
+      "summary": "提出PEEK，通过高效知识蒸馏自适应选择视频关键帧，替代均匀采样用于视频字幕生成，在降低计算成本的同时提升生成质量。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1119,7 +1119,7 @@
       "meta": "👍 8",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出DynaFLIP，利用三模态（视觉、语言、动作）动态信息引导机器人感知表示学习。解决传统视觉编码器忽略运动信息的问题，在机器人操作任务上显著提升对动作相关场景的理解与抓取成功率。"
+      "summary": "提出DynaFLIP，通过三模态（视觉、语言、动力学）引导表示学习，使机器人感知捕获动作相关动态信息，提升下游操作策略的鲁棒性。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1127,10 +1127,10 @@
       "url": "https://huggingface.co/papers/2605.29796",
       "excerpt": "Agentic search enables LLMs to solve complex multi-hop questions through iterative reasoning and external search. Despite the effectiveness, these systems often suffer from a critical limitation in practice: agents fail to recognize their own knowledge boundaries, blindly triggering searches when in",
       "publishedAt": "2026-05-28T00:00:00.000Z",
-      "meta": "👍 6",
+      "meta": "👍 7",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出SAAS，基于自我意识的强化学习缓解代理搜索中的过度搜索问题。让LLM识别自身知识边界，在不需要时主动停止搜索。在多跳问答任务上减少无效查询，同时保持高准确率。"
+      "summary": "提出SAAS，自感知强化学习方法，让agent识别自身知识边界并避免在agent搜索中盲目搜索，有效缓解过度搜索问题。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1141,7 +1141,7 @@
       "meta": "👍 6",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出REPOT（可恢复程序式思维），通过确定性重放检查点修复单次生成中的无效动作。在程序输出遇到第一个无效转换时自动回滚并修正，无需完全重写，显著提升程序式推理的可靠性与执行成功率。"
+      "summary": "提出RePoT（可恢复程序式思维），通过确定性验证重放和检查点修复，使单次PoT轨迹在遇到无效动作时可恢复，提升鲁棒性。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1152,7 +1152,7 @@
       "meta": "👍 5",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出PANDO，通过在线技能蒸馏使多模态网络代理边推理边积累效率。无需增加推理计算量，代理能持续从历史经验中学习高效策略，在WebAgent任务上实现同等性能下更少的步骤与更低的资源消耗。"
+      "summary": "提出PANDO，通过在线技能蒸馏让多模态web agent随经验积累变得更高效，无需增加推理时计算如搜索或验证器，实现经验驱动的持续改进。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1163,7 +1163,7 @@
       "meta": "👍 4",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出OpenSkillEval，自动审计开源技能生态对LLM代理下游任务的影响。系统评估不同技能组合、模型架构对真实任务性能的作用，发现技能质量参差不齐，为代理开发者提供技能选择与质量监控指南。"
+      "summary": "提出OpenSkillEval，自动审计开源LLM agent技能生态系统的质量和效果，帮助理解不同模型对技能执行的影响，保障技能可用性。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1174,7 +1174,7 @@
       "meta": "👍 4",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出反思性提示调优（Reflective Prompt Tuning），让LLM通过函数调用自我优化提示。无需更新参数，模型根据历史交互反思并调整提示格式与内容，在指令跟随和多步推理任务上提升稳定性和效果。"
+      "summary": "提出反思提示调优，利用语言模型函数调用能力自动优化提示设计，减少人工调优工作，提升对格式和措辞变化的鲁棒性。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1185,7 +1185,18 @@
       "meta": "👍 4",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出CONF-KV，利用模型每步解码的置信度信号进行KV缓存逐出。结合混合精度存储，优先保留低置信度token的键值对。相比静态窗口或注意力策略，在长序列场景中降低显存占用并维持生成质量。"
+      "summary": "提出CONF-KV，利用模型每个解码步骤的置信度信号进行KV缓存淘汰，结合混合精度存储，在长视界推理中显著减少GPU内存占用并加速。"
+    },
+    {
+      "sourceId": "huggingface-papers",
+      "title": "DecMem: Towards Minute-Long Consistent World Generation with Decoupled Memory",
+      "url": "https://huggingface.co/papers/2605.31336",
+      "excerpt": "Recent advances in video generative models have promoted rapid progress in controllable world models. However, maintaining fine-grained spatio-temporal consistency under long-horizon reasoning remains a key challenge. In this work, we move beyond explicit 3D memory and coarse frame-level implicit mo",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "meta": "👍 3",
+      "category": "tech",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出DecMem，通过解耦记忆机制实现分钟级一致的世界生成，超越显式3D记忆和粗粒度隐式记忆，保持细粒度时空一致性。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1195,8 +1206,7 @@
       "publishedAt": "2026-05-29T00:00:00.000Z",
       "meta": "👍 3",
       "category": "tech",
-      "source": "HuggingFace Trending Papers",
-      "summary": "提出线性缩放视频VLM架构，替换传统的时空自注意力，使计算量随帧数线性增长而非二次。结合高效编码策略，在不牺牲长视频理解准确性的前提下大幅降低延迟与计算成本。"
+      "source": "HuggingFace Trending Papers"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1205,16 +1215,6 @@
       "excerpt": "Connector-based video unified models have demonstrated strong capability in instruction-grounded video synthesis, but integrating a large high-fidelity generator into the unified training loop is computationally prohibitive, limiting achievable visual quality. We therefore propose Lumos-Nexus, a tra",
       "publishedAt": "2026-05-29T00:00:00.000Z",
       "meta": "👍 2",
-      "category": "tech",
-      "source": "HuggingFace Trending Papers"
-    },
-    {
-      "sourceId": "huggingface-papers",
-      "title": "DecMem: Towards Minute-Long Consistent World Generation with Decoupled Memory",
-      "url": "https://huggingface.co/papers/2605.31336",
-      "excerpt": "Recent advances in video generative models have promoted rapid progress in controllable world models. However, maintaining fine-grained spatio-temporal consistency under long-horizon reasoning remains a key challenge. In this work, we move beyond explicit 3D memory and coarse frame-level implicit mo",
-      "publishedAt": "2026-05-29T00:00:00.000Z",
-      "meta": "👍 1",
       "category": "tech",
       "source": "HuggingFace Trending Papers"
     },
@@ -1300,36 +1300,14 @@
     },
     {
       "sourceId": "arxiv-papers",
-      "title": "Target-Agnostic Calibration under Distribution Shift with Frequency-Aware Gradient Rectification",
-      "url": "https://arxiv.org/abs/2508.19830",
-      "excerpt": "Real-world model deployments inevitably encounter distribution shifts, rendering the confidence estimates of deep neural networks highly unreliable, posing severe risks in safety-critical applications. Existing methods improve calibration via training-time regularization or post-hoc adjustment, but ",
-      "publishedAt": "2026-05-29T00:00:00.000Z",
-      "category": "tech",
-      "meta": "cs.CV, cs.AI",
-      "source": "arXiv Papers",
-      "summary": "提出频率感知梯度修正方法，在分布漂移下实现目标无关的模型校准，无需目标标签即可显著改善深度神经网络置信度估计的可靠性。"
-    },
-    {
-      "sourceId": "arxiv-papers",
       "title": "PostCam: Camera-Controllable Novel-View Video Generation with Query-Shared Cross-Attention",
       "url": "https://arxiv.org/abs/2511.17185",
       "excerpt": "We propose PostCam, a streamlined framework for novel-view video generation that achieves superior detail preservation and precise camera trajectory editing in dynamic scenes. Current methods often struggle with a trade-off between pose-based control, which lacks visual detail, and rendering-based g",
       "publishedAt": "2026-05-29T00:00:00.000Z",
       "category": "tech",
-      "meta": "cs.CV",
+      "meta": "video",
       "source": "arXiv Papers",
-      "summary": "提出PostCam框架，采用查询共享交叉注意力，实现动态场景中细节保留和精确相机轨迹编辑的新视角视频生成，克服了姿态控制与渲染方法间的权衡。"
-    },
-    {
-      "sourceId": "arxiv-papers",
-      "title": "FEM-Bench: A Structured Scientific Reasoning Benchmark for Evaluating Code-Generating LLMs",
-      "url": "https://arxiv.org/abs/2512.20732",
-      "excerpt": "As LLMs advance their reasoning capabilities about the physical world, the absence of rigorous benchmarks for evaluating their ability to generate scientifically valid physical models has become a critical gap. Computational mechanics, which develops and applies mathematical models and numerical met",
-      "publishedAt": "2026-05-29T00:00:00.000Z",
-      "category": "tech",
-      "meta": "cs.AI",
-      "source": "arXiv Papers",
-      "summary": "提出FEM-Bench基准，基于计算力学（有限元方法）评估代码生成LLMs生成科学有效物理模型的能力，填补了物理世界推理评估的空白。"
+      "summary": "PostCam提出新视角视频生成框架，采用Query-Shared Cross-Attention机制，在动态场景中同时保持细节丰富与精确相机轨迹编辑，克服姿态控制缺乏细节与渲染方法慢的权衡。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1338,9 +1316,9 @@
       "excerpt": "Embodied systems experience the world as &#39;a symphony of flows&#39;: a combination of many continuous streams of sensory input coupled to self-motion, interwoven with the dynamics of external objects. These sensory streams and the underlying dynamics of the world obey smooth, time-parameterized s",
       "publishedAt": "2026-05-28T00:00:00.000Z",
       "category": "tech",
-      "meta": "cs.AI, cs.CV",
+      "meta": "world-model",
       "source": "arXiv Papers",
-      "summary": "提出流等变世界模型，利用流等变性处理连续感官流与物体动力学，在部分可观测动态环境中引入记忆机制以提升状态推理能力。"
+      "summary": "Flow Equivariant World Models将世界建模为平滑时间参数化流，利用流等变性构建记忆，处理部分观测动态环境中自运动与外部物体耦合的感知流，提升鲁棒性。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1349,9 +1327,9 @@
       "excerpt": "To achieve real-time interactive video generation, current methods distill pretrained bidirectional video diffusion models into few-step autoregressive (AR) models, facing an architectural gap when full attention is replaced by causal attention. However, existing approaches do not bridge this gap th",
       "publishedAt": "2026-05-29T00:00:00.000Z",
       "category": "tech",
-      "meta": "cs.CV",
+      "meta": "video",
       "source": "arXiv Papers",
-      "summary": "提出Causal Forcing方法，弥合自回归扩散蒸馏中全注意力到因果注意力的架构差距，实现高质量、少步的实时交互式视频生成。"
+      "summary": "Causal Forcing通过因果强制蒸馏策略，弥合双向视频扩散模型蒸馏为少步自回归模型时全注意力与因果注意力的架构差距，实现高质量实时交互视频生成。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1360,9 +1338,9 @@
       "excerpt": "World Models (WMs) offer a promising mechanism for post-training Vision-Language-Action (VLA) policies by providing dynamics priors that improve generalization under task and scene variation. However, most WM-based post-training methods rely on pixel-space supervision, making policies sensitive to v",
       "publishedAt": "2026-05-29T00:00:00.000Z",
       "category": "tech",
-      "meta": "cs.CV",
+      "meta": "world-model",
       "source": "arXiv Papers",
-      "summary": "提出World2Act框架，从世界模型动力学中学习潜在动作后训练，避免像素空间监督，增强VLA策略在任务和场景变化下的泛化性。"
+      "summary": "World2Act提出基于世界模型动力学的潜在动作后训练方法，使VLA策略在潜在空间中学习，摆脱像素级监督，提升任务与场景变化下的泛化能力。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1371,9 +1349,9 @@
       "excerpt": "General-purpose world models promise scalable policy evaluation, optimization, and planning, yet achieving the required level of robustness remains challenging. Unlike policy learning which primarily focuses on optimal actions, a world model needs to be reliable over a vast space of suboptimal actio",
       "publishedAt": "2026-05-29T00:00:00.000Z",
       "category": "tech",
-      "meta": "cs.AI",
+      "meta": "world-model",
       "source": "arXiv Papers",
-      "summary": "提出World Action Verifier，利用前向-逆向不对称性自我改进世界模型，提升对次优动作空间的鲁棒性，从而支持更可靠的策略评估与规划。"
+      "summary": "World Action Verifier利用前向-反向不对称性，让世界模型在次优动作空间中自我改进，提升对大规模动作空间的鲁棒性，优于仅关注最优策略的方法。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1382,9 +1360,9 @@
       "excerpt": "Recovering camera parameters from images and rendering scenes from novel viewpoints have been treated as separate tasks in computer vision and graphics. This separation breaks down when image coverage is sparse or poses are ambiguous, since each task depends on what the other produces. We propose Ra",
       "publishedAt": "2026-05-29T00:00:00.000Z",
       "category": "tech",
-      "meta": "cs.CV, cs.AI",
+      "meta": "video",
       "source": "arXiv Papers",
-      "summary": "提出Rays as Pixels方法，联合学习视频与相机轨迹分布，将光线视为像素，解决稀疏覆盖和姿态模糊下的相机参数恢复与新视角渲染问题。"
+      "summary": "Rays as Pixels将光线视为像素，联合学习视频与相机轨迹的分布，统一相机参数恢复与新视角渲染，有效处理稀疏覆盖或位姿模糊场景。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1393,9 +1371,9 @@
       "excerpt": "Real-time interactive video generation requires low-latency, streaming, and controllable rollout. Existing autoregressive (AR) diffusion distillation methods have achieved strong results in the chunk-wise 4-step regime by distilling bidirectional base models into few-step AR students, but they remai",
       "publishedAt": "2026-05-29T00:00:00.000Z",
       "category": "tech",
-      "meta": "cs.CV",
+      "meta": "video",
       "source": "arXiv Papers",
-      "summary": "提出Causal Forcing++，可扩展的少步自回归扩散蒸馏方法，进一步优化实时交互式视频生成的低延迟、流式可控性。"
+      "summary": "Causal Forcing++扩展了因果强制蒸馏策略，在少步自回归扩散蒸馏中实现可扩展的实时交互视频生成，支持低延迟、流式输出和可控展开。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1404,9 +1382,9 @@
       "excerpt": "Text-to-video (T2V) generation has rapidly progressed in visual fidelity, yet its ability to faithfully represent multiple cultures within a single prompt remains underexplored. We introduce MAVEN, a multi-agent prompt refinement framework designed to improve cultural fidelity in both mono-cultural ",
       "publishedAt": "2026-05-29T00:00:00.000Z",
       "category": "tech",
-      "meta": "cs.CV, cs.AI",
+      "meta": "video",
       "source": "arXiv Papers",
-      "summary": "提出MAVEN多智能体提示精炼框架，提升文本到视频生成中单文化与多文化场景的文化保真度，促进跨文化视觉生成。"
+      "summary": "MAVEN提出多智能体提示优化框架，通过智能体协作提升文本到视频生成中文化忠实度，支持单文化和多文化提示，弥补现有T2V模型文化表示不足。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1415,9 +1393,9 @@
       "excerpt": "Modern action-conditioned video world models achieve strong short-horizon visual realism, yet remain unreliable on rare, interaction-critical transitions that dominate downstream planning and policy performance. Because passive demonstration data systematically under-samples these high-impact regime",
       "publishedAt": "2026-05-29T00:00:00.000Z",
       "category": "tech",
-      "meta": "cs.AI",
+      "meta": "world-model",
       "source": "arXiv Papers",
-      "summary": "提出PROWL优先遗憾驱动优化，聚焦世界模型学习中稀有但关键的状态转移，显著提升下游规划和策略性能。"
+      "summary": "PROWL采用优先遗憾驱动优化，让世界模型重点关注被动演示数据中稀少的交互关键转换，显著提升下游规划与策略性能。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1426,9 +1404,9 @@
       "excerpt": "Video world models can generate realistic futures from a single instruction, but they often fail to track the same physical points consistently across time. As a result, the generated videos appear plausible, yet lack the physical grounding required for reliable action execution, such as robot manip",
       "publishedAt": "2026-05-28T00:00:00.000Z",
       "category": "tech",
-      "meta": "cs.CV",
+      "meta": "world-model",
       "source": "arXiv Papers",
-      "summary": "提出GEM-4D几何增强视频世界模型，通过一致物理点跟踪解决生成视频缺乏物理基础的问题，提升机器人操作可靠性。"
+      "summary": "GEM-4D引入几何增强机制，使视频世界模型在时间上一致跟踪物理点，生成的未来视频具有物理根基，提升机器人操作任务的可靠性。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1437,31 +1415,174 @@
       "excerpt": "Self-supervised online traversability estimation enables robots to continuously learn from unlabeled open-world experiences and adapt their navigation behavior toward safe and efficient trajectories. Existing approaches either rely on handcrafted proprioceptive traversability scores, limiting robot-",
       "publishedAt": "2026-05-29T00:00:00.000Z",
       "category": "tech",
-      "meta": "cs.CV",
+      "meta": "cv-other",
       "source": "arXiv Papers",
-      "summary": "提出自监督在线机器人无关可通行性估计方法，从未标注开放世界体验中学习安全高效轨迹，无需机器人特定标定。"
+      "summary": "提出自监督在线穿越性估计方法，不依赖机器人型号，从无标签开放世界经验中持续学习，适应性地规划安全高效导航轨迹。"
     },
     {
       "sourceId": "arxiv-papers",
-      "title": "When LLM Reward Design Fails: Diagnostic-Driven Refinement for Sparse Structured RL",
-      "url": "https://arxiv.org/abs/2605.28918",
-      "excerpt": "For sparse, structured reinforcement-learning tasks with semantic reward-function interfaces, LLM-generated reward shaping is better framed as debugging than one-shot generation. We study PPO-trained agents using MiniGrid as core evaluation and MuJoCo as boundary stress test. Our audit finds two dom",
-      "publishedAt": "2026-05-27T00:00:00.000Z",
-      "category": "tech",
-      "meta": "cs.AI",
-      "source": "arXiv Papers",
-      "summary": "将LLM奖励设计视为调试过程，提出诊断驱动精炼方法，识别并修复稀疏结构化RL中的主导失败模式，通过MiniGrid和MuJoCo验证。"
-    },
-    {
-      "sourceId": "arxiv-papers",
-      "title": "DTG-Restore: Training-Free Diffusion Refinement for Generative Video Super-Resolution",
-      "url": "https://arxiv.org/abs/2605.30431",
-      "excerpt": "Recent progress in video diffusion models has enabled remarkable generative fidelity, yet leveraging these priors for restoration remains limited by the strong coupling between conditional and unconditional branches in standard classifier-free guidance. We introduce a training-free framework that en",
+      "title": "Dex2HOI: Dexterous Bimanual Two-Object Interaction Generation",
+      "url": "https://arxiv.org/abs/2605.30444",
+      "excerpt": "Recent advances in 4D Human-Object Interaction (HOI) generation have enabled increasingly realistic motion synthesis, particularly for single-object manipulation. Yet current research overlooks an inherent property of human behavior: people naturally coordinate both hands and manipulate multiple obj",
       "publishedAt": "2026-05-28T00:00:00.000Z",
       "category": "tech",
-      "meta": "cs.CV",
+      "meta": "motion",
       "source": "arXiv Papers",
-      "summary": "提出DTG-Restore框架，无需训练的扩散精炼方法解耦条件与非条件分支，提升生成式视频超分辨率的保真度。"
+      "summary": "Dex2HOI生成灵巧双手同时操作两个物体的4D人体-物体交互运动，捕捉双手协调与物体间关系，超越单物体操作局限。"
+    },
+    {
+      "sourceId": "arxiv-papers",
+      "title": "OmniMem: Scalable and Adaptive Memory Retrieval for Long Video Generation",
+      "url": "https://arxiv.org/abs/2605.30519",
+      "excerpt": "Autoregressive (AR) video generation extends videos by producing latent chunks sequentially, but scaling to long videos requires repeated access to a growing historical KV cache. Existing methods reduce this cost by truncating the KV cache or compressing it into implicit memory, but both lose explic",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
+      "category": "tech",
+      "meta": "video",
+      "source": "arXiv Papers",
+      "summary": "OmniMem设计可扩展自适应记忆检索机制，在长视频自回归生成中高效管理历史KV缓存，保留显式细节，支持长时间一致性。"
+    },
+    {
+      "sourceId": "arxiv-papers",
+      "title": "Physically Viable World Models: A Case for Query-Conditioned Embodied AI",
+      "url": "https://arxiv.org/abs/2605.30542",
+      "excerpt": "World models for embodied AI must be physically viable: constructed to answer intervention queries by representing the physical structure governing action outcomes, rather than merely predicting future observations. Existing observation-predictive world models can produce visually plausible but phys",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
+      "category": "tech",
+      "meta": "world-model",
+      "source": "arXiv Papers",
+      "summary": "Physically Viable World Models强调世界模型应回答干预查询，表示行动结果的物理结构，而非仅预测观测，提升具身AI的物理可行性。"
+    },
+    {
+      "sourceId": "arxiv-papers",
+      "title": "CameraNoise: Enabling Faithful Camera Control in Video Diffusion through Geometry-Flow-Guided Noise Warping",
+      "url": "https://arxiv.org/abs/2605.30774",
+      "excerpt": "Precise camera pose control is critical for video diffusion, yet maintaining geometric consistency remains a challenge. Existing methods that directly inject numerical camera parameters into the diffusion backbone often fail to bridge the gap between abstract coordinates and visual content, leading ",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "category": "tech",
+      "meta": "video",
+      "source": "arXiv Papers",
+      "summary": "CameraNoise采用几何流引导的噪声扭曲，将相机控制嵌入扩散过程，解决数值参数注入与视觉内容之间的鸿沟，实现精确几何一致的新视角生成。"
+    },
+    {
+      "sourceId": "arxiv-papers",
+      "title": "Robust Dreamer: Deviation-Aware Latent Gaussian Memory for Action-Controlled AR Video Generation",
+      "url": "https://arxiv.org/abs/2605.30855",
+      "excerpt": "Frame-wise action-controlled image-to-video generation is a promising paradigm for interactive world simulation, where each control signal should elicit an immediate visual response. However, maintaining visual fidelity and 3D consistency over long autoregressive rollouts remains challenging. Existi",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "category": "tech",
+      "meta": "video",
+      "source": "arXiv Papers",
+      "summary": "Robust Dreamer引入偏差感知潜在高斯记忆，在帧级动作控制的自回归视频生成中维持视觉保真度与3D一致性，支持长程交互世界模拟。"
+    },
+    {
+      "sourceId": "arxiv-papers",
+      "title": "PatchWorld: Gradient-Free Optimization of Executable World Models",
+      "url": "https://arxiv.org/abs/2605.30880",
+      "excerpt": "Text-agent environments are typically modeled as partially observable Markov decision processes (POMDPs), assuming that the simulator&#39;s latent state and transition dynamics are hidden from the agent. Yet little work has examined whether executable code can be induced to serve as a world model fo",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "category": "tech",
+      "meta": "world-model",
+      "source": "arXiv Papers",
+      "summary": "PatchWorld采用无梯度优化，从文本智能体经验中归纳可执行代码作为世界模型，揭示环境隐藏状态与转移动力学，提升交互理解。"
+    },
+    {
+      "sourceId": "arxiv-papers",
+      "title": "MultiAct: Text-to-Motion Generation from Composite Text via Tailored Attention Guidance",
+      "url": "https://arxiv.org/abs/2605.30925",
+      "excerpt": "Text-to-motion generation has progressed rapidly in recent years, offering an expressive interface for animation and human-computer interaction. However, current models remain brittle when handling prompts that describe multiple actions occurring at the same time. Rather than realizing all component",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "category": "tech",
+      "meta": "motion",
+      "source": "arXiv Papers",
+      "summary": "MultiAct采用定制注意力引导，从描述同时多动作的复合文本生成人体运动，解决现有模型无法忠实表达所有成分动作的问题。"
+    },
+    {
+      "sourceId": "arxiv-papers",
+      "title": "SlotMemory: Object-Centric KV Memory for Streaming Long-Video Generation",
+      "url": "https://arxiv.org/abs/2605.31033",
+      "excerpt": "Streaming video generation models typically rely on temporal-centric memory, which organizes historical context as raw frames, chunk segments, or unclustered tokens. This organization frequently leads to identity drift and semantic inconsistency when entities exit the frame or during interactive pro",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "category": "tech",
+      "meta": "video",
+      "source": "arXiv Papers",
+      "summary": "SlotMemory将KV缓存组织为对象中心记忆，在流式长视频生成中维护实体身份与语义一致性，克服时域记忆导致的身份漂移问题。"
+    },
+    {
+      "sourceId": "arxiv-papers",
+      "title": "LVSA: Training-Free Sparse Attention for Long Video Diffusion",
+      "url": "https://arxiv.org/abs/2605.31057",
+      "excerpt": "Dense self-attention is the compute and quality bottleneck of long-video diffusion inference: cost grows quadratically with the sequence length, and beyond the training horizon the model converges to near-static output, that is, &#34;frozen&#34; repetitive video. State of the art approaches are eith",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "category": "tech",
+      "meta": "video",
+      "source": "arXiv Papers",
+      "summary": "LVSA提出无训练稀疏注意力机制，降低长视频扩散推理的二次复杂度，避免超过训练长度时的冻结重复输出，实现高效长视频生成。"
+    },
+    {
+      "sourceId": "arxiv-papers",
+      "title": "SWIM: Single-Instance Whole-Body Imitation for swiMming",
+      "url": "https://arxiv.org/abs/2605.31120",
+      "excerpt": "We propose a new method for synthesizing physically-based swimming motions. Physically-based character animation aims to generate physically valid, controllable, and natural-looking motions which can respond to unexpected disturbances, where one dictating factor of difficulty is the complexity of th",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "category": "tech",
+      "meta": "motion",
+      "source": "arXiv Papers",
+      "summary": "SWIM提出单实例全身模仿方法，合成基于物理的游泳动作，生成物理有效、可控且能响应干扰的自然水中运动。"
+    },
+    {
+      "sourceId": "arxiv-papers",
+      "title": "Light Interaction: Training-Free Inference Acceleration for Interactive Video World Models",
+      "url": "https://arxiv.org/abs/2605.31158",
+      "excerpt": "Interactive video world models generate video chunk by chunk in response to user-controlled camera movements, enabling applications such as real-time game simulation, virtual scene navigation, and embodied AI training. However, scaling to long interactive trajectories is prohibitively expensive due ",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "category": "tech",
+      "meta": "world-model",
+      "source": "arXiv Papers",
+      "summary": "Light Interaction实现无训练推理加速，通过优化计算路径降低交互式视频世界模型的长轨迹生成成本，支持实时游戏模拟与虚拟导航。"
+    },
+    {
+      "sourceId": "arxiv-papers",
+      "title": "DeMaVLA: A Vision-Language-Action Foundation Model for Generalizable Deformable Manipulation",
+      "url": "https://arxiv.org/abs/2605.31286",
+      "excerpt": "Real-world household robots require Vision-Language-Action (VLA) foundation models that can acquire reusable manipulation skills across diverse objects, task conditions, and household environments. Deformable-object folding is a representative challenge, requiring robots to handle clothing items fro",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "category": "tech",
+      "meta": "cv-other",
+      "source": "arXiv Papers",
+      "summary": "DeMaVLA提出视觉-语言-动作基础模型，专注于可变形物体操作，通过跨多样物体与环境学习可复用技能，实现衣物折叠等任务泛化。"
+    },
+    {
+      "sourceId": "arxiv-papers",
+      "title": "TokTalk: Expressive Real-time Facial Animation from Audio-LLM Tokens",
+      "url": "https://arxiv.org/abs/2605.31294",
+      "excerpt": "Recent advances in Audio-LLMs like GPT-4o have ushered in an era of conversational interaction with language models. Conversational avatars however, still seem robotic in facial expression and conversational flow, in part due to sequential stages of speech recognition, text generation, turn-based te",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "category": "tech",
+      "meta": "motion",
+      "source": "arXiv Papers",
+      "summary": "TokTalk从音频-LLM token直接生成实时面部动画，跳过语音识别与文本生成等顺序阶段，实现更自然的对话表情与交流节奏。"
+    },
+    {
+      "sourceId": "arxiv-papers",
+      "title": "DecMem: Towards Minute-Long Consistent World Generation with Decoupled Memory",
+      "url": "https://arxiv.org/abs/2605.31336",
+      "excerpt": "Recent advances in video generative models have promoted rapid progress in controllable world models. However, maintaining fine-grained spatio-temporal consistency under long-horizon reasoning remains a key challenge. In this work, we move beyond explicit 3D memory and coarse frame-level implicit mo",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "category": "tech",
+      "meta": "world-model",
+      "source": "arXiv Papers",
+      "summary": "DecMem提出解耦记忆架构，在分钟级可控世界生成中维持精细时空一致性，超越显式3D记忆与粗粒度隐式记忆的局限。"
+    },
+    {
+      "sourceId": "arxiv-papers",
+      "title": "Dreaming Of Others: Latent Teammate Modeling In World Models For Multi-Agent Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2605.31361",
+      "excerpt": "In cooperative multi-agent reinforcement learning (MARL), agents must coordinate with partners whose internal policies and intentions are not directly observable. While world models such as Dreamer have demonstrated strong generalization and sample efficiency in single-agent settings, their applicat",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "category": "tech",
+      "meta": "world-model",
+      "source": "arXiv Papers",
+      "summary": "Dreaming Of Others将潜在队友建模引入世界模型，使智能体推断不可观测的队友策略与意图，提升多智能体强化学习中的合作协调与样本效率。"
     },
     {
       "sourceId": "tldr-ai",
@@ -1471,7 +1592,7 @@
       "publishedAt": "2026-05-29T00:00:00.000Z",
       "category": "tech",
       "source": "TLDR AI",
-      "summary": "TLDR AI日报：Anthropic发布Opus 4.8，估值达9650亿美元；微软推出新的编码模型。"
+      "summary": "TLDR AI今日摘要：Anthropic发布Opus 4.8并获得9650亿美元估值，微软推出新编程模型。"
     },
     {
       "sourceId": "tldr-ai",
@@ -1652,7 +1773,7 @@
       "publishedAt": "2026-05-29T05:44:39.000Z",
       "category": "tech",
       "source": "Smol AI News",
-      "summary": "Anthropic发布Claude Opus 4.8，改进有限且基准测试结果不一：协作与编码行为提升，但文档解析有所退步；平台更新包括对话中系统指令增强。"
+      "summary": "Anthropic发布Claude Opus 4.8，带来渐进式改进，合作与编码表现更好，但文档解析略有倒退；平台新增对话中系统指令功能。"
     },
     {
       "sourceId": "smol-ai-news",
@@ -1923,7 +2044,7 @@
       "publishedAt": "2026-05-30T01:57:15.000Z",
       "category": "tech",
       "source": "Latent Space",
-      "summary": "Latent Space的AI新闻简报指出当日消息较少，主要介绍新的AI工程工作流(AIE WF)重点。"
+      "summary": "Latent Space报道AI新闻，聚焦创始人及前线部署工程师，并强调AIE工作流的重点。"
     },
     {
       "sourceId": "latent-space",
@@ -1933,7 +2054,7 @@
       "publishedAt": "2026-05-29T02:07:24.000Z",
       "category": "tech",
       "source": "Latent Space",
-      "summary": "Anthropic以9650亿美元估值完成H轮融资，并发布Claude Opus 4.8及Dynamic Workflows/ultracode功能。"
+      "summary": "Anthropic完成9650亿美元H轮融资，并发布Opus 4.8及动态工作流/超代码功能，被认为取得全面胜利。"
     },
     {
       "sourceId": "latent-space",
@@ -1943,7 +2064,7 @@
       "publishedAt": "2026-05-28T18:41:24.000Z",
       "category": "tech",
       "source": "Latent Space",
-      "summary": "Cognition与OpenInspect讨论异步代理时代：Devin完成80%的代码提交，实现规范到PR工作流、完整虚拟机、智能体记忆等功能。"
+      "summary": "Latent Space访谈Cognition的Walden Yan和OpenInspect的Cole Murray，讨论异步代理时代，涉及80% Devin提交、需求到PR工作流、全虚拟机及代理记忆。"
     },
     {
       "sourceId": "latent-space",
@@ -1953,7 +2074,7 @@
       "publishedAt": "2026-05-28T07:26:09.000Z",
       "category": "tech",
       "source": "Latent Space",
-      "summary": "Cognition以260亿美元估值完成10亿美元D轮融资，称编程市场总规模无限。"
+      "summary": "Cognition以260亿美元估值完成10亿美元D轮融资，认为编程是一个无上限的市场。"
     },
     {
       "sourceId": "latent-space",
@@ -2107,7 +2228,7 @@
       "publishedAt": "2026-05-29T10:00:00.000Z",
       "category": "tech",
       "source": "MIT Tech Review AI",
-      "summary": "教皇利奥十四世发布AI通谕《Magnifica Humanitas》，强调技术绝非中立，呼吁技术专家和政策制定者勇敢行动。"
+      "summary": "教皇利奥十四发布关于人工智能的通谕《Magnifica Humanitas》，指出“技术从不是中立的”，呼吁人们以勇气行动应对AI时代。"
     },
     {
       "sourceId": "mit-tech-review-ai",
@@ -2117,7 +2238,7 @@
       "publishedAt": "2026-05-28T09:51:11.000Z",
       "category": "tech",
       "source": "MIT Tech Review AI",
-      "summary": "MIT科技评论AI炒作指数：毕业季AI遭嘘。前谷歌CEO埃里克·施密特在亚利桑那大学演讲时呼吁毕业生塑造AI，却遭全场喝倒彩。"
+      "summary": "MIT Tech Review的AI炒作指数显示，毕业生对AI持负面态度。前谷歌CEO Eric Schmidt在亚利桑那大学毕业典礼演讲时遭遇一片嘘声。"
     },
     {
       "sourceId": "mit-tech-review-ai",
@@ -2199,7 +2320,7 @@
       "publishedAt": "2026-06-01T09:32:04.000Z",
       "category": "politics",
       "source": "BBC World",
-      "summary": "美国称打击了伊朗雷达站，伊朗与美国在霍尔木兹海峡附近相互发动打击。科威特谴责伊朗的“反复”攻击。"
+      "summary": "美国称打击伊朗雷达站，伊朗与美国在霍尔木兹海峡附近互有打击。科威特谴责伊朗反复攻击。"
     },
     {
       "sourceId": "bbc-world",
@@ -2218,7 +2339,7 @@
       "publishedAt": "2026-06-01T09:28:35.000Z",
       "category": "politics",
       "source": "BBC World",
-      "summary": "以色列总理内塔尼亚胡下令打击贝鲁特郊区，目标为真主党据点达希耶，以回应针对以色列平民的攻击。"
+      "summary": "以色列总理内塔尼亚胡下令打击贝鲁特郊区，称真主党据点达希耶将成为目标，以回应针对以色列平民的袭击。"
     },
     {
       "sourceId": "bbc-world",
@@ -2233,20 +2354,21 @@
       "sourceId": "bbc-world",
       "title": "Five patients recover from Ebola in DR Congo and leave hospital",
       "url": "https://www.bbc.com/news/articles/cz928xq588no?at_medium=RSS&at_campaign=rss",
-      "excerpt": "The four nurses - three men and a woman - received certificates to celebrate their recoveries.",
+      "excerpt": "Those infected can get better and officials stress that people should seek medical help if they have symptoms.",
       "publishedAt": "2026-06-01T09:56:24.000Z",
       "category": "politics",
       "source": "BBC World",
-      "summary": "刚果（金）五名埃博拉患者康复出院，包括四名护士（三男一女），他们获颁康复证书。"
+      "summary": "刚果民主共和国五名埃博拉患者康复出院。官员强调感染者可好转，出现症状应及时就医。"
     },
     {
       "sourceId": "bbc-world",
-      "title": "Colombia presidential runoff pits leftist senator against pro-Trump rival",
-      "url": "https://www.bbc.com/news/articles/c1w2xvwq8g9o?at_medium=RSS&at_campaign=rss",
-      "excerpt": "Left-wing senator Iván Cepeda will face Trump admirer Abelardo de la Espriella at the final ballot on 21 June.",
-      "publishedAt": "2026-06-01T01:53:03.000Z",
+      "title": "France intercepts sanctioned Russian oil tanker, Macron says",
+      "url": "https://www.bbc.com/news/articles/cn8pwgej1gxo?at_medium=RSS&at_campaign=rss",
+      "excerpt": "The French Navy conducted the operation with the support of allies including the UK on Sunday.",
+      "publishedAt": "2026-06-01T10:02:02.000Z",
       "category": "politics",
-      "source": "BBC World"
+      "source": "BBC World",
+      "summary": "法国总统马克龙称，法国海军在包括英国在内的盟友支持下，周日拦截了一艘受制裁的俄罗斯油轮。"
     },
     {
       "sourceId": "bbc-world",
@@ -2272,6 +2394,15 @@
       "url": "https://www.bbc.com/news/articles/cn0pngz2rego?at_medium=RSS&at_campaign=rss",
       "excerpt": "Prime Minister Abiy Ahmed's party is expected to dominate the election as conflicts overshadow the vote.",
       "publishedAt": "2026-06-01T04:36:30.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Colombia presidential runoff pits leftist senator against pro-Trump rival",
+      "url": "https://www.bbc.com/news/articles/c1w2xvwq8g9o?at_medium=RSS&at_campaign=rss",
+      "excerpt": "Left-wing senator Iván Cepeda will face Trump admirer Abelardo de la Espriella at the final ballot on 21 June.",
+      "publishedAt": "2026-06-01T01:53:03.000Z",
       "category": "politics",
       "source": "BBC World"
     },
@@ -2452,15 +2583,6 @@
       "url": "https://www.bbc.com/news/videos/cj4p7vwxr05o?at_medium=RSS&at_campaign=rss",
       "excerpt": "Fans set a new world record for the largest gathering of people dressed as Marilyn Monroe to celebrate what would have been the legendary actress’ centenary.",
       "publishedAt": "2026-06-01T06:28:52.000Z",
-      "category": "politics",
-      "source": "BBC World"
-    },
-    {
-      "sourceId": "bbc-world",
-      "title": "Between celebration and confrontation: Paris after PSG victory",
-      "url": "https://www.bbc.com/news/videos/czr2zzyrgdxo?at_medium=RSS&at_campaign=rss",
-      "excerpt": "Nearly 800 people were arrested after clashes with police following the Champions League final.",
-      "publishedAt": "2026-05-31T20:38:19.000Z",
       "category": "politics",
       "source": "BBC World"
     },
@@ -2694,10 +2816,10 @@
       "title": "Middle East crisis live: Kuwait reports missile and drone attack as Trump claims war will ‘all work out well’",
       "url": "https://www.theguardian.com/world/live/2026/jun/01/iran-war-live-news-updates-kuwait-missile-drone-attack-us-strikes-iran-radar-sites",
       "excerpt": "Kuwaiti state media report sirens sounding across the country as US president hits out at ‘chirping’ critics and says they should ‘sit back and relax’ European leaders condemn Israel’s deepening incursion into Lebanon The exchange of strikes between the US and Iran reflects the fragility of the curr",
-      "publishedAt": "2026-06-01T09:40:27.000Z",
+      "publishedAt": "2026-06-01T10:05:12.000Z",
       "category": "politics",
       "source": "The Guardian",
-      "summary": "科威特报告遭导弹和无人机袭击，美国对伊朗雷达站实施打击。特朗普称战争“一切都会好”，欧洲领导人谴责以色列深入黎巴嫩。"
+      "summary": "科威特全国警报响起，特朗普称战争一切都会好。欧洲领导人谴责以色列深入黎巴嫩，美伊互相打击持续。"
     },
     {
       "sourceId": "guardian-world",
@@ -2707,7 +2829,7 @@
       "publishedAt": "2026-06-01T09:13:02.000Z",
       "category": "politics",
       "source": "The Guardian",
-      "summary": "伊朗称袭击了科威特美军基地，以回应美国周末对伊朗防空系统的打击。双方在霍尔木兹海峡附近继续交火。"
+      "summary": "伊朗在美国打击其防空设施后，袭击了科威特一处美军基地及霍尔木兹海峡附近目标。美伊最新交火持续，和平谈判仍在进行。"
     },
     {
       "sourceId": "guardian-world",
@@ -2741,10 +2863,10 @@
       "title": "Iran War Live Updates: U.S. and Iran Exchange New Attacks",
       "url": "https://www.nytimes.com/live/2026/06/01/world/iran-war-us-trump-israel-lebanon",
       "excerpt": "U.S. Central Command said it conducted a round of “self-defense strikes” on military targets in southern Iran over the weekend. Kuwait, which hosts U.S. military bases, accused Iran of attacking it.",
-      "publishedAt": "2026-06-01T09:40:49.000Z",
+      "publishedAt": "2026-06-01T10:14:49.000Z",
       "category": "politics",
       "source": "NYT World",
-      "summary": "美国中央司令部称周末对伊朗南部军事目标实施“自卫打击”，伊朗随后还击。科威特指责伊朗对其发动攻击。"
+      "summary": "美国中央司令部称上周末对伊朗南部军事目标进行自卫打击；科威特指责伊朗袭击其境内美军基地。"
     },
     {
       "sourceId": "nyt-world",
@@ -2763,7 +2885,7 @@
       "publishedAt": "2026-06-01T09:15:14.000Z",
       "category": "politics",
       "source": "NYT World",
-      "summary": "乌克兰总统泽连斯基的前助手安德烈·叶尔马克被控贪污数百万美元，并咨询算命师做政治决策，目前正在众筹保释金。"
+      "summary": "乌克兰总统泽连斯基前助手安德烈·耶尔马克被控贪污数百万美元并咨询算命先生决策，目前正在众筹保释金。"
     },
     {
       "sourceId": "nyt-world",
@@ -2773,7 +2895,7 @@
       "publishedAt": "2026-06-01T09:01:10.000Z",
       "category": "politics",
       "source": "NYT World",
-      "summary": "委内瑞拉库马纳曾是经济明珠，生产丰田兰德酷路泽并出口食品，如今公共服务崩溃，陷入危机。"
+      "summary": "委内瑞拉库马纳曾是经济中心，生产丰田陆地巡洋舰并向南美出口食品。如今公共服务崩溃，濒临灾难。"
     },
     {
       "sourceId": "nyt-world",
@@ -2818,8 +2940,7 @@
       "excerpt": "The candidate, Abelardo de la Espriella, will face a senator from the left-wing party of the outgoing president, Gustavo Petro, in a June runoff.",
       "publishedAt": "2026-06-01T08:54:07.000Z",
       "category": "politics",
-      "source": "NYT World",
-      "summary": "哥伦比亚总统选举进入决选，候选人阿韦拉尔多·德·拉·埃斯普里利亚将对阵即将离任总统古斯塔沃·佩特罗所属左翼政党的参议员。"
+      "source": "NYT World"
     },
     {
       "sourceId": "nyt-world",
@@ -2870,11 +2991,11 @@
       "sourceId": "nyt-world",
       "title": "Starmer Braces for Release of More Files About Mandelson and Epstein",
       "url": "https://www.nytimes.com/2026/06/01/world/europe/mandelson-files-epstein-starmer-uk.html",
-      "excerpt": "The British government is to publish a second batch of documents about Prime Minister Keir Starmer’s appointment of Peter Mandelson as U.S. ambassador.",
-      "publishedAt": "2026-06-01T09:52:20.000Z",
+      "excerpt": "A second batch of documents about the former U.S. ambassador Peter Mandelson, who was fired over his links to Jeffrey Epstein, could create more problems for Prime Minister Keir Starmer.",
+      "publishedAt": "2026-06-01T10:19:50.000Z",
       "category": "politics",
       "source": "NYT World",
-      "summary": "英国政府将公布第二批文件，涉及首相基尔·斯塔默任命彼得·曼德尔森为美国大使一事，以及曼德尔森与爱泼斯坦的关系。"
+      "summary": "英国首相斯塔默面临更多关于前美国大使曼德尔森与爱泼斯坦关系的文件公开，可能引发新麻烦。"
     },
     {
       "sourceId": "nyt-world",
@@ -2884,7 +3005,7 @@
       "publishedAt": "2026-06-01T09:21:17.000Z",
       "category": "politics",
       "source": "NYT World",
-      "summary": "黎巴嫩政府长期希望解除真主党武装，伊朗战争爆发前曾出现进展迹象，但最终未能实现。"
+      "summary": "黎巴嫩政府长期希望真主党解除武装，伊朗战争爆发前曾出现进展迹象，但最终未实现。"
     },
     {
       "sourceId": "nyt-world",
@@ -2894,17 +3015,17 @@
       "publishedAt": "2026-06-01T09:00:42.000Z",
       "category": "politics",
       "source": "NYT World",
-      "summary": "记者西蒙·罗梅罗从委内瑞拉首都加拉加斯驾车前往库马纳，沿途目睹多个军事检查站，显示政府持续存在。"
+      "summary": "记者西蒙·罗梅罗驾车从加拉加斯到库马纳，沿途展示委内瑞拉政权沿海设立的多个军事检查站，凸显国家控制。"
     },
     {
       "sourceId": "nyt-world",
       "title": "Here’s the latest.",
       "url": "https://www.nytimes.com/live/2026/06/01/world/iran-war-us-trump-israel-lebanon/heres-the-latest",
       "excerpt": "",
-      "publishedAt": "2026-06-01T09:16:59.000Z",
+      "publishedAt": "2026-06-01T10:14:48.000Z",
       "category": "politics",
       "source": "NYT World",
-      "summary": "暂无详细信息。"
+      "summary": "最新消息更新，详情待后续报道。"
     },
     {
       "sourceId": "nyt-world",
@@ -2914,7 +3035,7 @@
       "publishedAt": "2026-06-01T08:54:26.000Z",
       "category": "politics",
       "source": "NYT World",
-      "summary": "美军称周末对伊朗南部实施“自卫打击”，伊朗称已打击一军事基地作为报复。"
+      "summary": "美军称上周末对伊朗南部更多军事目标实施自卫打击；伊朗军方称为报复美军打击，攻击了一处军事基地。"
     },
     {
       "sourceId": "nyt-world",
@@ -3383,7 +3504,7 @@
       "publishedAt": "2026-06-01T09:14:58.000Z",
       "category": "politics",
       "source": "Al Jazeera",
-      "summary": "极端正统犹太教示威者冲击以色列警察局。"
+      "summary": "极端正统派犹太示威者冲击以色列警察局。"
     },
     {
       "sourceId": "aljazeera",
