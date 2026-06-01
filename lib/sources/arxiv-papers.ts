@@ -16,12 +16,28 @@ export async function fetchArxivPapers(
   // Search cs.CV (Computer Vision), cs.GR (Graphics), cs.AI (AI), and cs.MM (Multimedia)
   const searchQuery = "cat:cs.CV+OR+cat:cs.GR+OR+cat:cs.AI+OR+cat:cs.MM";
   const url =
-    `http://export.arxiv.org/api/query?search_query=${searchQuery}` +
+    `https://export.arxiv.org/api/query?search_query=${searchQuery}` +
     `&sortBy=submittedDate&sortOrder=descending&max_results=60`;
 
-  const raw = await curlFetch(url, {
-    "User-Agent": "DailyBriefBot/1.0",
-  }, 30);
+  // arXiv API can be slow — retry up to 3 times with 60s timeout each
+  let raw = "";
+  let lastError: unknown;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      raw = await curlFetch(url, {
+        "User-Agent": "DailyBriefBot/1.0",
+      }, 60);
+      break;
+    } catch (e) {
+      lastError = e;
+      console.error(`[arxiv-papers] attempt ${attempt}/3 failed:`, (e as Error).message);
+      if (attempt < 3) await new Promise(r => setTimeout(r, 5000));
+    }
+  }
+  if (!raw) {
+    console.error("[arxiv-papers] all attempts failed, skipping");
+    return [];
+  }
 
   const entries = parseAtomEntries(raw);
   const keywordList = (keywords ?? []).map((k) => k.toLowerCase());
