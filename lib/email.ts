@@ -27,10 +27,8 @@ export async function sendDailyEmail(
   const from = process.env.EMAIL_FROM ?? "DailyBrief <onboarding@resend.dev>";
 
   // Build report URL from env (e.g. https://user.github.io/repo)
-  const baseUrl = process.env.REPORT_BASE_URL?.replace(/\/+$/, "");
-  const reportUrl = baseUrl
-    ? `${baseUrl}/daily_reports/${date}/${date}.html`
-    : undefined;
+  // Links to the index page which lists all reports
+  const reportUrl = process.env.REPORT_BASE_URL?.replace(/\/+$/, "") || undefined;
 
   try {
     const res = await fetch("https://api.resend.com/emails", {
