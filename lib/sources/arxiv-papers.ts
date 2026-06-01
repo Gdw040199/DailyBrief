@@ -2,36 +2,30 @@ import { curlFetch } from "./curl-fetch";
 import type { RawArticle } from "./types";
 
 /**
- * Fetch recent arXiv papers from cs.CV and cs.MM categories,
- * optionally filtered by keywords. Uses the arXiv Atom API.
- *
- * The arXiv API returns Atom XML — we parse with regex to avoid
- * adding an XML parsing dependency.
+ * Fetch recent arXiv papers using the OAI-PMH endpoint.
+ * More reliable than the search API which often rate-limits.
  */
 export async function fetchArxivPapers(
   sourceId: string,
   keywords?: string[],
-  limit = 30,
+  limit = 15,
 ): Promise<RawArticle[]> {
-  // Search cs.CV (Computer Vision), cs.GR (Graphics), cs.AI (AI), and cs.MM (Multimedia)
-  const searchQuery = "cat:cs.CV+OR+cat:cs.GR+OR+cat:cs.AI+OR+cat:cs.MM";
-  const url =
-    `https://export.arxiv.org/api/query?search_query=${searchQuery}` +
-    `&sortBy=submittedDate&sortOrder=descending&max_results=60`;
+  // Use OAI-PMH to get recent cs (Computer Science) papers
+  const today = new Date().toISOString().slice(0, 10);
+  const url = `https://export.arxiv.org/oai2?verb=ListRecords&set=cs&from=${today}&metadataPrefix=arXiv`;
 
-  // arXiv API can be slow — retry up to 3 times with 60s timeout each
   let raw = "";
   let lastError: unknown;
   for (let attempt = 1; attempt <= 3; attempt++) {
     try {
       raw = await curlFetch(url, {
-        "User-Agent": "DailyBriefBot/1.0",
-      }, 60);
+        "User-Agent": "DailyBriefBot/1.0 (academic research digest)",
+      }, 90);
       break;
     } catch (e) {
       lastError = e;
       console.error(`[arxiv-papers] attempt ${attempt}/3 failed:`, (e as Error).message);
-      if (attempt < 3) await new Promise(r => setTimeout(r, 5000));
+      if (attempt < 3) await new Promise((r) => setTimeout(r, 10000));
     }
   }
   if (!raw) {
@@ -39,78 +33,71 @@ export async function fetchArxivPapers(
     return [];
   }
 
-  const entries = parseAtomEntries(raw);
+  const entries = parseOAIEntries(raw);
   const keywordList = (keywords ?? []).map((k) => k.toLowerCase());
 
   return entries
     .filter((e) => {
       if (keywordList.length === 0) return true;
-      const haystack = [e.title, e.summary].join(" ").toLowerCase();
+      const haystack = [e.title, e.abstract].join(" ").toLowerCase();
       return keywordList.some((kw) => haystack.includes(kw));
     })
     .slice(0, limit)
     .map((e) => ({
       sourceId,
       title: e.title,
-      url: e.url,
-      excerpt: e.summary.slice(0, 300),
-      publishedAt: e.published ? new Date(e.published) : undefined,
+      url: `https://arxiv.org/abs/${e.id}`,
+      excerpt: e.abstract.slice(0, 300),
+      publishedAt: e.created ? new Date(e.created) : undefined,
       category: "tech" as const,
       meta: e.categories.length > 0 ? e.categories.join(", ") : undefined,
     }));
 }
 
-interface AtomEntry {
+interface OAIEntry {
+  id: string;
   title: string;
-  url: string;
-  summary: string;
-  published: string;
+  abstract: string;
+  created: string;
   categories: string[];
 }
 
 /**
- * Parse arXiv Atom XML entries with regex. The format is well-structured:
- * <entry>
- *   <id>http://arxiv.org/abs/2505.12345v1</id>
- *   <title>...</title>
- *   <summary>...</summary>
- *   <published>2025-05-30T...</published>
- *   <category term="cs.CV" />
- *   ...
- * </entry>
+ * Parse OAI-PMH XML entries for arXiv papers.
  */
-function parseAtomEntries(xml: string): AtomEntry[] {
-  const entries: AtomEntry[] = [];
-  // Split on <entry> tags
-  const entryBlocks = xml.split(/<entry>/g).slice(1); // skip preamble
+function parseOAIEntries(xml: string): OAIEntry[] {
+  const entries: OAIEntry[] = [];
+  // Split on <record> tags
+  const blocks = xml.split(/<record>/g).slice(1);
 
-  for (const block of entryBlocks) {
-    const endIdx = block.indexOf("</entry>");
+  for (const block of blocks) {
+    const endIdx = block.indexOf("</record>");
     const content = endIdx >= 0 ? block.slice(0, endIdx) : block;
+
+    // Only include papers with cs.CV, cs.GR, cs.AI, cs.MM categories
+    const catMatch = content.match(/<categories>([^<]+)<\/categories>/);
+    if (!catMatch) continue;
+
+    const allCats = catMatch[1].trim().split(/\s+/);
+    const relevantCats = allCats.filter((c) =>
+      ["cs.CV", "cs.GR", "cs.AI", "cs.MM"].includes(c),
+    );
+    if (relevantCats.length === 0) continue;
 
     // Extract fields
     const id = extractTag(content, "id") ?? "";
     const title = normalizeWhitespace(extractTag(content, "title") ?? "");
-    const summary = normalizeWhitespace(extractTag(content, "summary") ?? "");
-    const published = extractTag(content, "published") ?? "";
+    const abstract = normalizeWhitespace(extractTag(content, "abstract") ?? "");
+    const created = extractTag(content, "created") ?? "";
 
-    // Extract all category terms
-    const categories: string[] = [];
-    const catRegex = /<category\s+term="([^"]+)"/g;
-    let catMatch: RegExpExecArray | null;
-    while ((catMatch = catRegex.exec(content)) !== null) {
-      categories.push(catMatch[1]);
-    }
-
-    // Use the abstract URL (not the API URL) as the article link
-    // Prefer <link> with type="text/html", fallback to the id URL
-    const htmlLink = content.match(
-      /<link[^>]*type="text\/html"[^>]*href="([^"]+)"/,
-    )?.[1];
-    const url = htmlLink ?? id.replace("http://", "https://");
-
-    if (title && url) {
-      entries.push({ title, url, summary, published, categories });
+    if (id && title) {
+      entries.push({
+        id,
+        title,
+        abstract,
+        created,
+        categories: relevantCats,
+      });
     }
   }
 
@@ -118,13 +105,6 @@ function parseAtomEntries(xml: string): AtomEntry[] {
 }
 
 function extractTag(xml: string, tag: string): string | undefined {
-  // Handle CDATA: <tag><![CDATA[content]]></tag>
-  const cdataMatch = xml.match(
-    new RegExp(`<${tag}[^>]*>\\s*<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>\\s*</${tag}>`),
-  );
-  if (cdataMatch) return cdataMatch[1];
-
-  // Regular: <tag>content</tag>
   const match = xml.match(
     new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`),
   );
