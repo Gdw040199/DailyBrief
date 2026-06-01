@@ -1,75 +1,75 @@
 {
-  "hero_headline": "Anthropic融资$65B估值$965B",
-  "daily_overview": "AI领域再掀巨浪：Anthropic完成65亿美元融资，估值逼近万亿美元，并发布Opus 4.8模型，性能有升有降。同时，NVIDIA开源物理AI模型Cosmos 3，OpenAI合作医院诊断罕见病，Google DeepMind启动亚太环境加速器。地缘政治方面，美伊在霍尔木兹海峡交火，美军空袭伊朗雷达站；哥伦比亚总统选举进入第二轮，右翼候选人领先；菲律宾警告中国在黄岩岛巡逻，南海紧张持续。市场对AI投资热情不减，但中东与亚太安全风险需警惕。",
+  "hero_headline": "美伊冲突升级 NVIDIA发布首个开源物理AI模型",
+  "daily_overview": "今日地缘政治紧张持续：美伊在霍尔木兹海峡再次交火，局势面临升级风险；哥伦比亚总统大选进入决选阶段；菲律宾与中国在黄岩岛附近巡逻对峙。技术领域，NVIDIA开源了首个物理AI模型Cosmos 3，推动具身智能研究；Anthropic完成650亿美元融资、估值逼近万亿，并发布Opus 4.8；OpenAI推出生物防御工具Rosalind；波士顿儿童医院利用AI诊断罕见病取得突破。整体看，AI商业化与开源并进，全球安全格局变动加速。",
   "tech_briefs": [
     {
-      "title": "Anthropic获$65B融资 发布Opus 4.8模型",
-      "url": "https://news.smol.ai/issues/26-05-28-anthropic-series-h/",
-      "source": "Smol AI News",
-      "summary": "Anthropic宣布$65B Series H融资，估值$965B，并发布Opus 4.8模型及Dynamic Workflows，性能有所提升但部分基准出现回落。（多家报道）",
-      "importance": 10
-    },
-    {
-      "title": "NVIDIA发布开源物理AI模型Cosmos 3",
+      "title": "NVIDIA开源物理AI基础模型Cosmos 3",
       "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
       "source": "Hugging Face Blog",
-      "summary": "首个开源物理AI全模态模型，能进行物理推理与行动规划，将加速机器人、自动驾驶等领域研究。",
-      "importance": 9
-    },
-    {
-      "title": "OpenAI技术助波士顿儿童医院诊断罕见病",
-      "url": "https://openai.com/index/boston-childrens-hospital",
-      "source": "OpenAI News",
-      "summary": "利用OpenAI模型分析病历，已帮助诊断40多例罕见病，减轻医护人员文书负担。",
+      "summary": "NVIDIA发布Cosmos 3，首个开放物理AI多模态模型，支持物理世界推理与动作，为具身智能、机器人、自动驾驶等领域提供基础研究平台。",
       "importance": 8
     },
     {
-      "title": "DeepMind启动亚太环境风险AI加速器",
-      "url": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks/",
-      "source": "DeepMind Blog",
-      "summary": "宣布在亚太地区启动加速器计划，支持初创企业用AI应对洪水、火灾等环境风险。",
+      "title": "Anthropic完成650亿美元融资并发布Opus 4.8",
+      "url": "https://news.smol.ai/issues/26-05-28-anthropic-series-h/",
+      "source": "Smol AI News",
+      "summary": "Anthropic获得65亿美元H轮融资，估值达9650亿美元，同时发布旗舰模型Opus 4.8及动态工作流功能（多家报道）。",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI推出生物防御框架Rosalind",
+      "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
+      "source": "OpenAI News",
+      "summary": "OpenAI启动Rosalind生物防御项目，向经审核的开发者及美国政府合作伙伴提供GPT-Rosalind访问权限，用于生物防御、公共卫生及大流行病应对。",
       "importance": 7
     },
     {
-      "title": "微软开源文件转Markdown工具Markitdown",
-      "url": "https://github.com/microsoft/markitdown",
-      "source": "GitHub Trending",
-      "summary": "Python工具，可将Office文档、PDF等转为Markdown格式，提升内容处理效率。",
+      "title": "波士顿儿童医院利用AI诊断罕见病",
+      "url": "https://openai.com/index/boston-childrens-hospital",
+      "source": "OpenAI News",
+      "summary": "波士顿儿童医院运用OpenAI技术辅助诊断40余种罕见病，减轻医护人员负担，提升诊疗效率与患者护理质量。",
+      "importance": 7
+    },
+    {
+      "title": "DeepMind利用AI加速逆转细胞衰老研究",
+      "url": "https://deepmind.google/blog/fast-tracking-genetic-leads-to-reverse-cellular-aging/",
+      "source": "DeepMind Blog",
+      "summary": "生物学家借助DeepMind Co-Scientist平台发现可成功逆转人类细胞衰老的新型遗传因子，为抗衰老药物开发提供新线索。",
       "importance": 6
     }
   ],
   "politics_briefs": [
     {
-      "title": "美国空袭伊朗雷达站 科威特报告导弹袭击",
+      "title": "美伊在霍尔木兹海峡再交火",
       "url": "https://www.bbc.com/news/articles/crlpy8n7pr6o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "summary": "美国称打击了伊朗在霍尔木兹海峡附近的雷达站，科威特报告遭导弹和无人机攻击，局势紧张。（多家报道）",
-      "importance": 10
-    },
-    {
-      "title": "哥伦比亚总统选举将进入第二轮投票",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/1/aje-onl-nf_sv_colombia-heads-to-presidential-runoff-010626?traffic_source=rss",
-      "source": "Al Jazeera",
-      "summary": "首轮投票中右翼候选人德·拉·埃斯普列利亚领先，将与左翼候选人塞佩达在6月21日对决。（多家报道）",
+      "summary": "伊朗与美国在霍尔木兹海峡附近实施新一轮军事打击，为一周内第三次交火，地区紧张局势进一步升级。",
       "importance": 9
     },
     {
-      "title": "菲律宾防长警告 中国开始在黄岩岛附近巡逻",
+      "title": "哥伦比亚总统大选进入决选阶段",
+      "url": "https://www.nytimes.com/2026/05/31/world/americas/colombia-election-president-candidates.html",
+      "source": "NYT World",
+      "summary": "哥伦比亚总统选举首轮投票后，右翼候选人埃斯普列利亚领先，将与左翼候选人塞佩达在6月21日进行决选（多家报道）。",
+      "importance": 8
+    },
+    {
+      "title": "中国在黄岩岛附近巡逻 菲律宾防长警告",
       "url": "https://www.dw.com/zh/菲防长发出威胁警告-中国开始在黄岩岛附近巡逻/a-77363306?maca=chi-rss-chi-all-1127-rdf",
       "source": "DW 中文",
-      "summary": "中国海警开始在黄岩岛附近巡逻，此前菲方称面临严重威胁，中美关系缓和未减少南海紧张。",
-      "importance": 8
+      "summary": "中国人民解放军和海警在黄岩岛附近海域巡逻，菲律宾防长称面临严重威胁，此前美菲刚举行联合海上演习。",
+      "importance": 7
     }
   ],
-  "editor_note": "今日科技融资与地缘冲突同步升温，AI产业估值再创新高，中东与南海紧张局势提醒投资人需关注风险平衡。",
+  "editor_note": "地缘政治风险频发，南海与中东局势微妙；AI领域开源与资本热潮并行，需关注技术伦理与安全监管。",
   "keywords": [
-    "Anthropic",
-    "Opus 4.8",
+    "霍尔木兹海峡",
     "美伊冲突",
+    "NVIDIA Cosmos 3",
+    "Anthropic融资",
     "哥伦比亚大选",
-    "南海",
-    "NVIDIA Cosmos",
     "AI诊断",
-    "地缘政治"
+    "生物防御",
+    "黄岩岛"
   ]
 }
