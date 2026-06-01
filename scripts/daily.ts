@@ -316,7 +316,7 @@ async function main() {
     console.log(`[daily] wrote ${base}.{json,html,articles.json}`);
   }
 
-  await sendDailyEmail({ report, date });
+  await sendDailyEmail(date, report);
 
   console.log(`[daily] done.`);
 }
