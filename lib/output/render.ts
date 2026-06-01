@@ -503,49 +503,47 @@ const DIR_LABELS: Record<string, string> = {
   "cv-other": "CV Highlights",
 };
 
-/** Render the numbered direction summary rows (MiMo blog style) */
+/** Render the numbered direction summary rows — MiMo blog/position row exact style */
 function renderDirectionSummary(subs: SubGroup[]): string {
-  // Find the arxiv-papers sub-group
   const arxivSub = subs.find((s) => s.id === "arxiv-papers");
   if (!arxivSub) return "";
 
-  // Collect direction counts from source groups
-  const dirs: Array<{ id: string; label: string; count: number; color: string }> = [];
+  const dirs: Array<{ id: string; label: string; count: number; desc: string }> = [];
   for (const src of arxivSub.sources) {
     const dirId = src.sourceId.replace("arxiv-", "");
     if (DIR_LABELS[dirId]) {
-      dirs.push({
-        id: dirId,
-        label: DIR_LABELS[dirId],
-        count: src.items.length,
-        color: DIR_COLORS[dirId] || "var(--muted)",
-      });
+      const descMap: Record<string, string> = {
+        motion: REPORT_LOCALE === "en" ? "Human motion generation, synthesis, pose estimation" : "人体动作生成、合成、姿态估计",
+        video: REPORT_LOCALE === "en" ? "Video generation, diffusion, understanding" : "视频生成、扩散模型、理解",
+        "world-model": REPORT_LOCALE === "en" ? "World models, neural rendering, 4D generation" : "世界模型、神经渲染、4D 生成",
+        "cv-other": REPORT_LOCALE === "en" ? "Other notable computer vision papers" : "其他值得关注的 CV 论文",
+      };
+      dirs.push({ id: dirId, label: DIR_LABELS[dirId], count: src.items.length, desc: descMap[dirId] || "" });
     }
   }
-
   if (dirs.length === 0) return "";
 
   const totalPapers = dirs.reduce((n, d) => n + d.count, 0);
-  const headerText = REPORT_LOCALE === "en"
-    ? `Today's Research Directions · ${totalPapers} papers`
-    : `今日研究方向 · ${totalPapers} 篇论文`;
+  const sectionTitle = REPORT_LOCALE === "en" ? "Today's Directions" : "今日研究方向";
+  const sectionDesc = REPORT_LOCALE === "en"
+    ? `${totalPapers} papers across ${dirs.length} research directions.`
+    : `共 ${totalPapers} 篇论文，覆盖 ${dirs.length} 个研究方向。`;
 
-  const rows = dirs
-    .map((d, i) => {
-      const idx = String(i + 1).padStart(2, "0");
-      return `<div class="dir-row" onclick="document.querySelector('[data-sub=arxiv-papers]')?.click()">
-    <span class="dir-index">${idx}</span>
-    <span class="dir-dot" style="background:${d.color}"></span>
-    <span class="dir-name">${escapeHtml(d.label)}</span>
-    <span class="dir-count">${d.count} papers</span>
-    <span class="dir-arrow">→</span>
-  </div>`;
-    })
-    .join("\n");
+  const rows = dirs.map((d, i) => {
+    const idx = String(i + 1).padStart(2, "0");
+    return `<div class="dir-row" onclick="document.querySelector('[data-sub=arxiv-papers]')?.click()">
+  <div class="dir-index"><span>${idx}</span></div>
+  <div class="dir-info"><h3>${escapeHtml(d.label)}</h3><p>${d.count} papers · ${escapeHtml(d.desc)}</p></div>
+  <div class="dir-arrow"><span>→</span></div>
+</div>`;
+  }).join("\n");
 
-  return `<div class="dir-summary">
-  <div class="dir-summary-title">${headerText}</div>
-  ${rows}
+  return `<div class="section-header-row">
+  <div class="section-header-title"><h2>${sectionTitle}</h2></div>
+  <div class="section-header-desc"><p>${sectionDesc}</p></div>
+</div>
+<div class="dir-list">
+${rows}
 </div>`;
 }
 
@@ -573,14 +571,14 @@ export function renderHtml(
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${STR.siteTitle} · ${date}</title>
 <style>
-  /* ===== MiMo-inspired dark theme — full effects ===== */
+  /* ===== MiMo exact style clone ===== */
   :root {
     --bg: #000000;
     --bg-elevated: #0a0a0a;
     --fg: #fafafa;
     --fg-soft: #a1a1aa;
     --muted: #52525b;
-    --rule: #1a1a1a;
+    --rule: #27272a;
     --card: #0a0a0a;
     --card-hover: #141414;
     --link: #93c5fd;
@@ -610,14 +608,17 @@ export function renderHtml(
   }
   main { max-width: 880px; margin: 0 auto; padding: 0 2rem 5rem; }
 
-  /* ===== MiMo animated text pattern background ===== */
-  @keyframes mimo-scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
+  /* ===== Hero — MiMo flip card + text pattern ===== */
+  @keyframes scroll-left { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  @keyframes scroll-right { 0% { transform: translateX(-50%); } 100% { transform: translateX(0); } }
+  @keyframes fade-in { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
+
   .hero-section {
     position: relative;
-    padding: 6rem 0 4rem;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     border-bottom: 1px solid var(--rule);
     margin-bottom: 3rem;
@@ -628,49 +629,54 @@ export function renderHtml(
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 0;
-    opacity: 0.04;
+    overflow: hidden;
+    opacity: 0.035;
     pointer-events: none;
-    z-index: 0;
   }
   .pattern-row {
     display: flex;
     white-space: nowrap;
-    animation: mimo-scroll 30s linear infinite;
-    font-size: 1.1rem;
-    font-weight: 700;
-    letter-spacing: 0.5em;
-    color: var(--fg);
-    line-height: 2.2;
+    will-change: transform;
   }
-  .pattern-row:nth-child(even) { animation-direction: reverse; animation-duration: 35s; }
-  .pattern-text { padding: 0 1.5rem; }
+  .pattern-row:nth-child(odd) { animation: scroll-left 40s linear infinite; }
+  .pattern-row:nth-child(even) { animation: scroll-right 45s linear infinite; }
+  .pattern-text {
+    padding: 0 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.6em;
+    color: var(--fg);
+    line-height: 2.4;
+    flex-shrink: 0;
+  }
   .hero-content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
+    text-align: center;
+    animation: fade-in 0.8s ease-out;
   }
   .hero-eyebrow {
     font-size: 0.7rem;
     text-transform: uppercase;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.35em;
     color: var(--muted);
     font-weight: 500;
     display: block;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
   }
   .hero-title {
-    font-size: 4rem;
+    font-size: 3.8rem;
     font-weight: 700;
-    margin: 0 0 0.8rem;
-    letter-spacing: -0.04em;
-    line-height: 1;
+    margin: 0 0 0.6rem;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
     color: var(--fg);
   }
   .hero-date {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: var(--muted);
     font-weight: 400;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     display: block;
     margin-bottom: 1.5rem;
   }
@@ -684,74 +690,76 @@ export function renderHtml(
   }
   .hero-link:hover { color: var(--fg); }
 
-  /* ===== direction summary — MiMo blog/experience row style ===== */
-  .dir-section { margin: 0 0 3rem; }
-  .dir-section-title {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
-    color: var(--muted);
-    font-weight: 500;
-    margin-bottom: 1.5rem;
+  /* ===== Section header — MiMo style ===== */
+  .section-header-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 0 0 2rem;
   }
+  .section-header-title h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    letter-spacing: -0.02em;
+    color: var(--fg);
+  }
+  .section-header-desc p {
+    font-size: 0.88rem;
+    color: var(--fg-soft);
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  /* ===== Direction rows — MiMo blog/position row exact style ===== */
+  .dir-list { margin: 0 0 3rem; }
   .dir-row {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
-    padding: 1.1rem 0;
+    padding: 1rem 0;
     border-bottom: 1px solid var(--rule);
     cursor: pointer;
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.2s;
     text-decoration: none;
     color: inherit;
+    gap: 1.5rem;
   }
-  .dir-row:hover {
-    background: var(--bg-elevated);
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-  .dir-row:last-child { border-bottom: none; }
-  .dir-index {
+  .dir-row:first-child { border-top: 1px solid var(--rule); }
+  .dir-row:hover { background: var(--bg-elevated); }
+  .dir-index span {
     font-size: 0.75rem;
     color: var(--muted);
     font-weight: 500;
-    min-width: 2rem;
     font-feature-settings: "tnum";
     transition: color 0.2s;
   }
-  .dir-row:hover .dir-index { color: var(--fg-soft); }
-  .dir-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    transition: transform 0.2s;
-  }
-  .dir-row:hover .dir-dot { transform: scale(1.3); }
-  .dir-name {
-    font-size: 1.05rem;
-    font-weight: 500;
+  .dir-row:hover .dir-index span { color: var(--fg); }
+  .dir-info { flex: 1; }
+  .dir-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
     color: var(--fg);
-    flex: 1;
     transition: color 0.2s;
   }
-  .dir-row:hover .dir-name { color: #ffffff; }
-  .dir-count {
+  .dir-row:hover .dir-info h3 { color: #ffffff; }
+  .dir-info p {
     font-size: 0.82rem;
     color: var(--muted);
-    font-feature-settings: "tnum";
+    margin: 0.15rem 0 0;
     transition: color 0.2s;
   }
-  .dir-row:hover .dir-count { color: var(--fg-soft); }
+  .dir-row:hover .dir-info p { color: var(--fg-soft); }
   .dir-arrow {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--muted);
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-block;
+    flex-shrink: 0;
   }
-  .dir-row:hover .dir-arrow { transform: translateX(6px); color: var(--fg); }
+  .dir-row:hover .dir-arrow { transform: translateX(5px); color: var(--fg); }
 
-  /* ===== primary tabs ===== */
+  /* ===== Primary tabs ===== */
   .tabs {
     display: flex;
     gap: 0;
@@ -762,7 +770,7 @@ export function renderHtml(
     background: none;
     border: none;
     padding: 0.9rem 1.6rem;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     font-weight: 500;
     color: var(--muted);
     cursor: pointer;
@@ -770,125 +778,100 @@ export function renderHtml(
     margin-bottom: -1px;
     font-family: inherit;
     transition: all 0.2s;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
   }
   .tab:hover { color: var(--fg-soft); }
   .tab.active { color: var(--fg); border-bottom-color: var(--fg); }
-  .tab .count {
-    font-size: 0.65rem;
-    color: var(--muted);
-    margin-left: 0.6rem;
-    font-weight: 400;
-  }
+  .tab .count { font-size: 0.62rem; color: var(--muted); margin-left: 0.6rem; }
   .panel { display: none; }
   .panel.active { display: block; }
 
-  /* ===== sub-tabs — MiMo pill style ===== */
-  .sub-tabs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    margin: 0 0 2rem;
-  }
+  /* ===== Sub-tabs ===== */
+  .sub-tabs { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0 0 2rem; }
   .sub-tab {
     background: transparent;
     border: 1px solid var(--rule);
     padding: 0.5rem 1.1rem;
     border-radius: 0.35rem;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     font-weight: 500;
     color: var(--fg-soft);
     cursor: pointer;
     font-family: inherit;
     transition: all 0.2s;
-    letter-spacing: 0.02em;
   }
   .sub-tab:hover { border-color: var(--muted); color: var(--fg); background: var(--card); }
   .sub-tab.active { background: var(--fg); color: var(--bg); border-color: var(--fg); }
-  .sub-tab .count { font-size: 0.6rem; opacity: 0.6; margin-left: 0.5rem; }
+  .sub-tab .count { font-size: 0.58rem; opacity: 0.6; margin-left: 0.5rem; }
   .sub-content { display: none; }
   .sub-content.active { display: block; }
 
-  /* ===== source-tabs ===== */
+  /* ===== Source tabs ===== */
   .source-tabs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 0 0 2rem;
-    padding-bottom: 1.2rem;
+    display: flex; flex-wrap: wrap; gap: 0.5rem;
+    margin: 0 0 2rem; padding-bottom: 1.2rem;
     border-bottom: 1px solid var(--rule);
   }
   .source-tab {
-    background: none;
-    border: 1px solid var(--rule);
-    padding: 0.35rem 0.9rem;
-    border-radius: 0.3rem;
-    font-size: 0.75rem;
-    color: var(--fg-soft);
-    cursor: pointer;
-    font-family: inherit;
-    transition: all 0.2s;
+    background: none; border: 1px solid var(--rule);
+    padding: 0.35rem 0.9rem; border-radius: 0.3rem;
+    font-size: 0.72rem; color: var(--fg-soft);
+    cursor: pointer; font-family: inherit; transition: all 0.2s;
   }
   .source-tab:hover { border-color: var(--muted); color: var(--fg); }
   .source-tab.active { background: var(--fg); color: var(--bg); border-color: var(--fg); }
-  .source-tab .count { font-size: 0.6rem; opacity: 0.6; margin-left: 0.3rem; }
+  .source-tab .count { font-size: 0.58rem; opacity: 0.6; margin-left: 0.3rem; }
   .source-content { display: none; }
   .source-content.active { display: block; }
 
-  /* ===== digest briefs — card grid ===== */
+  /* ===== Brief cards — MiMo card style with overlay ===== */
   .digest-category { margin-bottom: 2.5rem; }
   .category-header {
-    display: flex;
-    align-items: baseline;
-    gap: 0.6rem;
-    margin: 0 0 1.2rem;
-    padding-bottom: 0.6rem;
+    display: flex; align-items: baseline; gap: 0.6rem;
+    margin: 0 0 1.2rem; padding-bottom: 0.6rem;
     border-bottom: 1px solid var(--rule);
   }
   .category-title {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
-    font-weight: 500;
-    color: var(--muted);
-    margin: 0;
+    font-size: 0.7rem; text-transform: uppercase;
+    letter-spacing: 0.3em; font-weight: 500; color: var(--muted); margin: 0;
   }
-  .category-count { font-size: 0.65rem; color: var(--muted); font-feature-settings: "tnum"; }
+  .category-count { font-size: 0.62rem; color: var(--muted); }
   .brief-list { display: grid; grid-template-columns: 1fr; gap: 0.8rem; }
   @media (min-width: 720px) { .brief-list { grid-template-columns: 1fr 1fr; } }
   .brief {
     background: var(--card);
     border: 1px solid var(--rule);
     border-radius: 0.5rem;
-    padding: 1.1rem 1.3rem;
+    padding: 1.2rem 1.4rem;
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
   }
-  .brief::before {
+  .brief::after {
     content: "";
     position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--link), transparent);
+    bottom: 0; left: 0; right: 0;
+    height: 60%;
+    background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+    pointer-events: none;
     opacity: 0;
     transition: opacity 0.3s;
   }
   .brief:hover { border-color: #333; background: var(--card-hover); transform: translateY(-2px); }
-  .brief:hover::before { opacity: 1; }
-  .brief-head { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; margin-bottom: 0.5rem; }
-  .brief-source { font-size: 0.65rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.12em; font-weight: 500; }
-  .brief-rank { font-size: 0.62rem; padding: 0.1rem 0.5rem; border-radius: 999px; font-weight: 600; flex-shrink: 0; }
+  .brief:hover::after { opacity: 1; }
+  .brief-head { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; margin-bottom: 0.5rem; position: relative; z-index: 1; }
+  .brief-source { font-size: 0.62rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 500; }
+  .brief-rank { font-size: 0.6rem; padding: 0.08rem 0.5rem; border-radius: 999px; font-weight: 600; flex-shrink: 0; }
   .brief-rank.high { background: var(--rank-high-bg); color: var(--rank-high-fg); }
   .brief-rank.mid { background: var(--rank-mid-bg); color: var(--rank-mid-fg); }
   .brief-rank.low { background: var(--rank-low-bg); color: var(--rank-low-fg); }
-  .brief-title { font-size: 0.95rem; font-weight: 600; margin: 0 0 0.5rem; line-height: 1.4; }
+  .brief-title { font-size: 0.95rem; font-weight: 600; margin: 0 0 0.5rem; line-height: 1.4; position: relative; z-index: 1; }
   .brief-title a { color: var(--fg); text-decoration: none; transition: color 0.2s; }
   .brief-title a:hover { color: var(--link); }
-  .brief-summary { margin: 0; color: var(--fg-soft); font-size: 0.82rem; line-height: 1.65; }
+  .brief-summary { margin: 0; color: var(--fg-soft); font-size: 0.82rem; line-height: 1.65; position: relative; z-index: 1; }
 
-  /* ===== editor card ===== */
+  /* ===== Editor card ===== */
   .editor-card {
     background: var(--card);
     border-left: 2px solid var(--muted);
@@ -897,96 +880,71 @@ export function renderHtml(
     margin: 2.5rem 0;
   }
   .editor-card .eyebrow { display: block; margin-bottom: 0.6rem; }
-  .editor-text { margin: 0; font-size: 0.9rem; line-height: 1.8; color: var(--fg-soft); }
+  .editor-text { margin: 0; font-size: 0.88rem; line-height: 1.8; color: var(--fg-soft); }
   .keywords { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 2rem 0; }
   .keyword {
-    background: transparent;
-    color: var(--fg-soft);
-    padding: 0.35rem 0.9rem;
-    border-radius: 0.3rem;
-    font-size: 0.75rem;
-    border: 1px solid var(--rule);
+    background: transparent; color: var(--fg-soft);
+    padding: 0.35rem 0.9rem; border-radius: 0.3rem;
+    font-size: 0.72rem; border: 1px solid var(--rule);
     transition: all 0.2s;
-    letter-spacing: 0.02em;
   }
   .keyword:hover { border-color: var(--muted); color: var(--fg); }
 
-  /* ===== article cards — MiMo experience/blog row style ===== */
+  /* ===== Article rows — MiMo blog row style ===== */
   .article {
-    padding: 1.3rem 0;
+    padding: 1.2rem 0;
     border-bottom: 1px solid var(--rule);
     transition: all 0.2s;
   }
   .article:first-child { padding-top: 0; }
   .article:last-child { border-bottom: none; }
   .article:hover { padding-left: 0.3rem; }
-  .article-title {
-    font-size: 1rem;
-    margin: 0 0 0.4rem;
-    font-weight: 600;
-    line-height: 1.45;
-  }
+  .article-title { font-size: 1rem; margin: 0 0 0.35rem; font-weight: 600; line-height: 1.45; }
   .article-title a { color: var(--fg); text-decoration: none; transition: color 0.2s; }
   .article-title a:hover { color: var(--link); }
-  .article-authors { color: var(--muted); font-size: 0.75rem; margin: 0 0 0.4rem; }
-  .article-code { margin: 0 0 0.4rem; }
+  .article-authors { color: var(--muted); font-size: 0.72rem; margin: 0 0 0.35rem; }
+  .article-code { margin: 0 0 0.35rem; }
   .code-link {
-    display: inline-block;
-    background: transparent;
-    color: var(--link);
-    font-size: 0.72rem;
-    font-weight: 500;
-    padding: 0.15rem 0.65rem;
-    border-radius: 0.3rem;
-    text-decoration: none;
-    border: 1px solid var(--link);
+    display: inline-block; background: transparent; color: var(--link);
+    font-size: 0.7rem; font-weight: 500; padding: 0.12rem 0.6rem;
+    border-radius: 0.3rem; text-decoration: none; border: 1px solid var(--link);
     transition: all 0.2s;
-    letter-spacing: 0.02em;
   }
   .code-link:hover { background: var(--link); color: #000; }
-  .article-meta { color: var(--muted); font-size: 0.72rem; margin: 0 0 0.4rem; }
-  .article-stats { color: var(--muted); font-size: 0.78rem; margin: 0 0 0.5rem; font-feature-settings: "tnum"; }
+  .article-meta { color: var(--muted); font-size: 0.7rem; margin: 0 0 0.35rem; }
+  .article-stats { color: var(--muted); font-size: 0.75rem; margin: 0 0 0.5rem; font-feature-settings: "tnum"; }
   .article-excerpt { margin: 0; color: var(--fg-soft); font-size: 0.88rem; line-height: 1.75; }
   .article-summary {
-    margin: 0.8rem 0 0;
-    padding: 0.8rem 1.1rem;
-    background: var(--card);
-    border-left: 2px solid var(--link);
+    margin: 0.7rem 0 0; padding: 0.8rem 1.1rem;
+    background: var(--card); border-left: 2px solid var(--link);
     border-radius: 0 0.4rem 0.4rem 0;
-    font-size: 0.85rem;
-    line-height: 1.75;
-    color: var(--fg-soft);
+    font-size: 0.82rem; line-height: 1.75; color: var(--fg-soft);
   }
   .summary-label {
-    display: inline-block;
-    font-size: 0.6rem;
-    color: var(--link);
-    margin-right: 0.5rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
+    display: inline-block; font-size: 0.58rem; color: var(--link);
+    margin-right: 0.5rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.15em;
   }
-
   .empty { color: var(--muted); text-align: center; padding: 4rem 0; font-size: 0.88rem; }
 
-  /* ===== footer ===== */
-  footer {
+  /* ===== Footer — MiMo style ===== */
+  .mimo-footer {
     margin-top: 4rem;
+    padding: 2rem 0;
     border-top: 1px solid var(--rule);
-    padding-top: 2rem;
-    color: var(--muted);
-    font-size: 0.75rem;
-    letter-spacing: 0.05em;
     text-align: center;
+    font-size: 0.72rem;
+    color: var(--muted);
+    letter-spacing: 0.05em;
   }
 </style>
 </head>
 <body>
 <main>
-  <!-- MiMo-style hero with animated text pattern -->
+  <!-- MiMo hero: text pattern background + centered title -->
   <div class="hero-section">
     <div class="hero-pattern" aria-hidden="true">
-      ${Array.from({ length: 12 }, () => `<div class="pattern-row">${Array.from({ length: 20 }, () => `<span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;B R I E F</span>`).join("")}</div>`).join("")}
+      ${Array.from({ length: 14 }, () => `<div class="pattern-row">${Array.from({ length: 25 }, () => `<span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F</span>`).join("")}</div>`).join("")}
     </div>
     <div class="hero-content">
       <span class="hero-eyebrow">${STR.siteTitle}</span>
@@ -996,6 +954,7 @@ export function renderHtml(
     </div>
   </div>
 
+  <!-- Direction summary — MiMo blog/position row style -->
   ${renderDirectionSummary(raw.tech)}
 
   <nav class="tabs" role="tablist">
@@ -1010,7 +969,7 @@ export function renderHtml(
     ${renderRawCategoryPanel("politics", raw.politics)}
   </section>
 
-  <footer>${STR.footer}</footer>
+  <div class="mimo-footer">${STR.footer}</div>
 </main>
 <script>
   document.querySelectorAll('.tabs > .tab').forEach(function (btn) {
