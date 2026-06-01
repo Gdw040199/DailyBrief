@@ -1,67 +1,68 @@
 {
-  "hero_headline": "美伊互袭升级 中东局势急剧恶化",
-  "daily_overview": "今日中东局势急剧恶化，美国空袭伊朗军事设施，伊朗以导弹袭击驻科威特美军，以色列同步轰炸贝鲁特南部，多方对抗令停火前景渺茫。科技方面，Anthropic以9650亿美元估值完成650亿美元融资，发布Opus 4.8和Dynamic Workflows，巩固AI领军地位；英伟达推出开源物理AI模型Cosmos 3；OpenAI披露与波士顿儿童医院合作，用AI诊断40余种罕见病；DeepMind科学家利用AI发现逆转细胞衰老的新因子，展现AI在生物医学的突破潜力。",
+  "hero_headline": "美伊冲突升级 以色列空袭贝鲁特郊区",
+  "daily_overview": "中东局势急剧恶化，美伊互攻不断，以色列总理下令轰炸贝鲁特郊区真主党据点，停火希望渺茫，油价飙升。技术方面，Anthropic以9650亿美元估值完成650亿美元H轮融资并发布Opus 4.8模型，AI资本热潮不减；OpenAI在医疗领域突破，帮助诊断罕见病并推出生物防御工具；NVIDIA发布首个开源全模态物理AI模型Cosmos 3；前沿研究关注知识蒸馏与角色化代理生成。军事冲突与技术巨头大幅融资共同主导今日新闻版面。",
   "tech_briefs": [
     {
-      "title": "Anthropic获650亿融资 估值9650亿",
+      "title": "Anthropic完成9650亿美元H轮融资 发布Opus 4.8",
       "url": "https://news.smol.ai/issues/26-05-28-anthropic-series-h/",
       "source": "Smol AI News",
-      "summary": "Anthropic宣布完成650亿美元H轮融资，估值达9650亿美元，同时推出Opus 4.8模型和Dynamic Workflows，多项基准表现出增量提升。（多家报道）",
+      "summary": "Anthropic以9650亿美元估值完成650亿美元H轮融资，同步发布Opus 4.8与动态工作流，模型合作与编码能力增强但文档解析有退步。（多家报道）",
       "importance": 10
     },
     {
-      "title": "英伟达发布开源物理AI模型Cosmos 3",
-      "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
-      "source": "Hugging Face Blog",
-      "summary": "英伟达推出Cosmos 3，首个面向物理AI推理与行动的开源全能模型，旨在加速机器人、自动驾驶等领域的物理理解能力。",
+      "title": "OpenAI助力罕见病诊断与生物防御",
+      "url": "https://openai.com/index/boston-childrens-hospital",
+      "source": "OpenAI News",
+      "summary": "波士顿儿童医院利用OpenAI技术诊断超40种罕见病；同时OpenAI推出Rosalind Biodefense项目，向美政府开放GPT-Rosalind用于生物安全与流行病防范。（多家报道）",
       "importance": 9
     },
     {
-      "title": "波士顿儿童医院利用AI诊断罕见病超40例",
-      "url": "https://openai.com/index/boston-childrens-hospital",
-      "source": "OpenAI News",
-      "summary": "波士顿儿童医院借助OpenAI技术提升诊疗效率，成功诊断40余例罕见病，并减轻医生文书负担。",
+      "title": "NVIDIA发布首个开源全模态模型Cosmos 3",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
+      "source": "Hugging Face Blog",
+      "summary": "NVIDIA推出Cosmos 3，称其为首个开源全模态模型，专为物理世界AI推理与行动设计，可处理并理解多模态物理场景。",
       "importance": 8
     },
     {
-      "title": "AI助力发现逆转细胞衰老新因子",
-      "url": "https://deepmind.google/blog/fast-tracking-genetic-leads-to-reverse-cellular-aging/",
-      "source": "DeepMind Blog",
-      "summary": "生物学家使用DeepMind Co-Scientist系统快速筛选基因靶点，发现可成功逆转人类细胞衰老的新因子，为抗衰老研究开辟新途径。",
-      "importance": 8
+      "title": "AI研究：知识蒸馏与角色化技能生成",
+      "url": "https://huggingface.co/papers/2605.31264",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出COLLEAGUE.SKILL框架，通过专家知识蒸馏自动生成AI技能，使LLM代理具备人类专长与判断风格，缓解角色化构建瓶颈。",
+      "importance": 7
     }
   ],
   "politics_briefs": [
     {
-      "title": "美伊互袭升级 以色列轰炸贝鲁特",
-      "url": "https://www.nytimes.com/live/2026/06/01/world/iran-war-us-trump-israel-lebanon",
-      "source": "NYT World",
-      "summary": "美国空袭伊朗Qeshm岛等军事目标，伊朗以导弹袭击驻科威特美军，以色列总理内塔尼亚胡下令轰炸贝鲁特南部真主党据点，多国呼吁停火。（多家报道）",
+      "title": "美伊互攻停火摇摆 以色列轰炸贝鲁特郊区",
+      "url": "https://www.bbc.com/news/articles/c4g419e2xlvo",
+      "source": "BBC World",
+      "summary": "美国与伊朗相互打击军事目标，停火岌岌可危；以色列总理下令轰炸贝鲁特郊区真主党据点，冲突升级，油价因伊朗可能退出和谈飙升。（多家报道）",
       "importance": 10
     },
     {
-      "title": "菲律宾与越南升级外交伙伴关系应对南海紧张",
-      "url": "https://thediplomat.com/2026/06/philippines-vietnam-upgrade-diplomatic-partnership-amid-maritime-tensions-with-china/",
-      "source": "The Diplomat",
-      "summary": "菲律宾总统马科斯称维持南海和平稳定、航行自由「不可谈判」，与越南提升伙伴关系以应对中国海上活动。",
-      "importance": 7
+      "title": "欧委会拟对华采取更强硬贸易措施",
+      "url": "https://www.dw.com/zh/对中国采取更强硬措施？欧委会将首先寻求欧盟各国支持/a-77380374",
+      "source": "DW 中文",
+      "summary": "欧委会称欧盟与中国贸易关系「不可持续」，计划制定新保护措施，但需先争取德国等成员国支持，中方已发出警告。",
+      "importance": 8
     },
     {
-      "title": "刚果埃博拉确诊病例达282例 尚无有效疫苗",
-      "url": "https://www.npr.org/2026/06/01/g-s1-125143/ebola-updates",
-      "source": "NPR World",
-      "summary": "刚果民主共和国埃博拉疫情持续，确诊282例，死亡超千疑似，所涉毒株无批准疗法或疫苗。",
+      "title": "菲越升级外交伙伴关系 强调南海航行自由",
+      "url": "https://thediplomat.com/2026/06/philippines-vietnam-upgrade-diplomatic-partnership-amid-maritime-tensions-with-china/",
+      "source": "The Diplomat",
+      "summary": "菲律宾总统小马科斯表示维护南海和平稳定与航行自由「不可谈判」，两国升级伙伴关系以应对海上紧张局势。",
       "importance": 7
     }
   ],
-  "editor_note": "中东冲突骤然激化令全球紧张，科技巨头的巨额融资则凸显AI赛道持续升温。地缘风险与技术创新并行，投资者需警惕黑天鹅事件。",
+  "editor_note": "中东战火重燃与AI资本狂潮同日占据头条，技术乐观主义与地缘裂痕形成鲜明对比。",
   "keywords": [
     "美伊冲突",
-    "中东局势",
-    "Anthropic融资",
-    "英伟达Cosmos 3",
-    "AI医学诊断",
-    "南海紧张",
-    "刚果埃博拉"
+    "以色列",
+    "黎巴嫩",
+    "Anthropic",
+    "OpenAI",
+    "NVIDIA Cosmos 3",
+    "AI 融资",
+    "欧盟对华"
   ]
 }

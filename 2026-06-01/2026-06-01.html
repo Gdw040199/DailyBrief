@@ -343,6 +343,10 @@
   }
   .article-title a { color: var(--fg); text-decoration: none; }
   .article-title a:hover { color: var(--link); text-decoration: underline; }
+  .article-authors { color: var(--muted); font-size: 0.76rem; font-style: italic; margin: 0 0 0.35rem; }
+  .article-code { margin: 0 0 0.35rem; }
+  .code-link { display: inline-block; background: var(--card); color: var(--link); font-size: 0.78rem; font-weight: 500; padding: 2px 8px; border-radius: 4px; text-decoration: none; border: 1px solid var(--rule); }
+  .code-link:hover { background: var(--link); color: #fff; }
   .article-meta { color: var(--muted); font-size: 0.76rem; margin: 0 0 0.35rem; }
   .article-stats {
     color: var(--muted);
@@ -406,129 +410,163 @@
   </nav>
 
   <section class="panel active" data-panel="tech">
-    <nav class="sub-tabs"><button class="sub-tab active" data-sub="github-trending" data-cat="tech">GitHub Trending<span class="count">17</span></button><button class="sub-tab" data-sub="arxiv-papers" data-cat="tech">arXiv 论文<span class="count">35</span></button><button class="sub-tab" data-sub="trending-papers" data-cat="tech">热门论文<span class="count">20</span></button><button class="sub-tab" data-sub="x-viral" data-cat="tech">X 推文<span class="count">0</span></button><button class="sub-tab" data-sub="ai-news" data-cat="tech">AI 媒体<span class="count">15</span></button></nav>
+    <nav class="sub-tabs"><button class="sub-tab active" data-sub="github-trending" data-cat="tech">GitHub Trending<span class="count">17</span></button><button class="sub-tab" data-sub="arxiv-papers" data-cat="tech">arXiv 论文<span class="count">35</span></button><button class="sub-tab" data-sub="trending-papers" data-cat="tech">热门论文<span class="count">20</span></button><button class="sub-tab" data-sub="ai-news" data-cat="tech">AI 媒体<span class="count">15</span></button></nav>
 <div class="sub-contents"><div class="sub-content active" data-sub-content="github-trending" data-cat="tech">
     
     <div class="source-contents">
       <div class="source-content active" data-source-content="github-trending" data-sub="github-trending" data-cat="tech">
     <article class="article">
   <h3 class="article-title"><a href="https://github.com/microsoft/markitdown" target="_blank" rel="noopener noreferrer">microsoft/markitdown</a></h3>
-  <p class="article-stats">Python · ★ 136,973 · 🍴 9,339 · 📈 3,086 stars today</p>
+  
+  
+  <p class="article-stats">Python · ★ 137,252 · 🍴 9,367 · 📈 3,086 stars today</p>
   
   <p class="article-excerpt">Python tool for converting files and office documents to Markdown.</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 微软出品的Python工具，将各类文件（Office文档、PDF等）转换为Markdown格式，适合需要批量文档格式转换的开发者和知识管理场景。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Python 库，可将各种文件（如 Office 文档、PDF、图片等）自动转换为 Markdown 格式。适合开发者或需要统一文档格式的场景，在 LLM 预处理或多源内容整合中非常实用。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://github.com/nesquena/hermes-webui" target="_blank" rel="noopener noreferrer">nesquena/hermes-webui</a></h3>
-  <p class="article-stats">Python · ★ 10,586 · 🍴 1,422 · 📈 984 stars today</p>
+  
+  
+  <p class="article-stats">Python · ★ 10,710 · 🍴 1,428 · 📈 984 stars today</p>
   
   <p class="article-excerpt">Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> Hermes Agent的Web界面，支持通过浏览器或手机使用智能体，提供最佳交互体验，适用于随时随地调用AI代理的场景。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 为 Hermes Agent 设计的 Web 界面，支持从浏览器或手机访问和使用代理。提供更便捷的交互方式，适合远程控制或移动端操作智能代理的场景。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://github.com/supermemoryai/supermemory" target="_blank" rel="noopener noreferrer">supermemoryai/supermemory</a></h3>
-  <p class="article-stats">TypeScript · ★ 23,724 · 🍴 2,129 · 📈 660 stars today</p>
+  
+  
+  <p class="article-stats">TypeScript · ★ 23,772 · 🍴 2,136 · 📈 660 stars today</p>
   
   <p class="article-excerpt">Memory engine and app that is extremely fast, scalable. The Memory API for the AI era.</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 超高速、可扩展的记忆引擎与应用，专为AI时代设计的记忆API，帮助开发者构建持久化上下文和个性化记忆服务。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 高性能、可扩展的记忆引擎与 API，专为 AI 时代的记忆管理设计。可作为应用的记忆层，存储和检索对话历史、用户偏好等上下文信息，适用于需要长期记忆的智能助手。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" rel="noopener noreferrer">harry0703/MoneyPrinterTurbo</a></h3>
-  <p class="article-stats">Python · ★ 76,416 · 🍴 10,846 · 📈 3,325 stars today</p>
+  
+  
+  <p class="article-stats">Python · ★ 76,512 · 🍴 10,860 · 📈 3,325 stars today</p>
   
   <p class="article-excerpt">利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 利用AI大模型一键生成高清短视频的工具，支持自动化脚本和模板，适合内容创作者快速批量生产营销或娱乐视频。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 利用 AI 大模型一键生成高清短视频。用户只需输入文案或主题，自动合成配音、字幕和画面，适合自媒体、营销等快速产出短视频的场景。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://github.com/D4Vinci/Scrapling" target="_blank" rel="noopener noreferrer">D4Vinci/Scrapling</a></h3>
-  <p class="article-stats">Python · ★ 57,578 · 🍴 5,589 · 📈 1,475 stars today</p>
+  
+  
+  <p class="article-stats">Python · ★ 57,662 · 🍴 5,602 · 📈 1,475 stars today</p>
   
   <p class="article-excerpt">🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 自适应Web爬虫框架，支持从单次请求到大规模爬取的全流程，自动处理反爬、渲染等复杂情况，适用于数据采集场景。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 自适应 Web 抓取框架，支持从单次请求到全站爬取的全流程。自动处理反爬、解析和数据提取，适合需要大规模采集网页数据的开发者和数据科学家。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://github.com/pbakaus/impeccable" target="_blank" rel="noopener noreferrer">pbakaus/impeccable</a></h3>
-  <p class="article-stats">JavaScript · ★ 32,313 · 🍴 1,764 · 📈 317 stars today</p>
+  
+  
+  <p class="article-stats">JavaScript · ★ 32,395 · 🍴 1,767 · 📈 317 stars today</p>
   
   <p class="article-excerpt">The design language that makes your AI harness better at design.</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 一种设计语言，帮助AI增强工具提升设计能力，提供统一的样式和组件规范，适用于AI驱动的设计系统开发。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 一套设计语言系统，旨在提升 AI 工具的设计质量。提供统一的设计规范、组件和模式，帮助开发者快速构建美观且一致的 AI 应用界面。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://github.com/p-e-w/heretic" target="_blank" rel="noopener noreferrer">p-e-w/heretic</a></h3>
-  <p class="article-stats">Python · ★ 22,903 · 🍴 2,453 · 📈 241 stars today</p>
+  
+  
+  <p class="article-stats">Python · ★ 22,928 · 🍴 2,454 · 📈 241 stars today</p>
   
   <p class="article-excerpt">Fully automatic censorship removal for language models</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 全自动语言模型审查移除工具，自动检测并移除模型输出中的敏感过滤，适用于AI研究者和需要无审查输出的场景。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 全自动净化工具，可去除语言模型中的审查内容。适用于希望减少输出限制或进行特殊内容分析的研究者，但需注意合规使用。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://github.com/EveryInc/compound-engineering-plugin" target="_blank" rel="noopener noreferrer">EveryInc/compound-engineering-plugin</a></h3>
-  <p class="article-stats">TypeScript · ★ 18,971 · 🍴 1,422 · 📈 428 stars today</p>
+  
+  
+  <p class="article-stats">TypeScript · ★ 18,997 · 🍴 1,422 · 📈 428 stars today</p>
   
   <p class="article-excerpt">Official Compound Engineering plugin for Claude Code, Codex, Cursor, and more</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> Compound Engineering官方插件，支持Claude Code、Codex、Cursor等编码助手，提供复合工程能力，适用于复杂AI编程工作流。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Compound Engineering 官方插件，支持 Claude Code、Codex、Cursor 等编码工具。将复合工程方法论集成到 IDE 中，帮助开发者更高效地构建和迭代 AI 系统。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://github.com/TauricResearch/TradingAgents" target="_blank" rel="noopener noreferrer">TauricResearch/TradingAgents</a></h3>
-  <p class="article-stats">Python · ★ 81,478 · 🍴 15,845 · 📈 284 stars today</p>
+  
+  
+  <p class="article-stats">Python · ★ 81,536 · 🍴 15,855 · 📈 284 stars today</p>
   
   <p class="article-excerpt">TradingAgents: Multi-Agents LLM Financial Trading Framework</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 基于多智能体LLM的金融交易框架，通过多个AI代理协同决策，适用于量化交易策略研究和自动化交易场景。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 基于多智能体 LLM 的金融交易框架。通过多个 AI 代理协同分析市场数据、制定策略并执行交易，适合量化交易研究和自动化投资场景。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://github.com/revfactory/harness" target="_blank" rel="noopener noreferrer">revfactory/harness</a></h3>
-  <p class="article-stats">HTML · ★ 4,969 · 🍴 677 · 📈 527 stars today</p>
+  
+  
+  <p class="article-stats">HTML · ★ 4,993 · 🍴 679 · 📈 527 stars today</p>
   
   <p class="article-excerpt">A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use.</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 元技能工具，用于设计领域特定代理团队、定义专业代理并生成其使用的技能，适合构建复杂多智能体系统的开发者。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 一种元技能框架，可设计特定领域的代理团队、定义专业代理并生成它们所需的技能。适合构建复杂 AI 工作流或多代理协作系统。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://github.com/godotengine/godot" target="_blank" rel="noopener noreferrer">godotengine/godot</a></h3>
-  <p class="article-stats">C++ · ★ 111,502 · 🍴 25,497 · 📈 56 stars today</p>
+  
+  
+  <p class="article-stats">C++ · ★ 111,517 · 🍴 25,497 · 📈 56 stars today</p>
   
   <p class="article-excerpt">Godot Engine – Multi-platform 2D and 3D game engine</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 跨平台2D/3D游戏引擎，支持多种语言脚本，开源免费，适用于独立游戏开发者、教育及商业游戏制作场景。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Godot 引擎，跨平台 2D/3D 游戏引擎，使用自研脚本语言和场景系统。开源免费，支持导出至桌面、移动和 Web，适合独立开发者和团队制作游戏。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://github.com/can1357/oh-my-pi" target="_blank" rel="noopener noreferrer">can1357/oh-my-pi</a></h3>
-  <p class="article-stats">TypeScript · ★ 9,303 · 🍴 753 · 📈 333 stars today</p>
+  
+  
+  <p class="article-stats">TypeScript · ★ 9,327 · 🍴 754 · 📈 333 stars today</p>
   
   <p class="article-excerpt">⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 终端AI编码代理，支持哈希锚定编辑、优化工具链、LSP、Python、浏览器、子代理等功能，适用于命令行高效开发。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 终端 AI 编码代理，支持哈希锚定编辑、优化工具集、LSP、Python、浏览器、子代理等功能。为程序员提供智能编码辅助和自动化操作。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://github.com/OpenBMB/VoxCPM" target="_blank" rel="noopener noreferrer">OpenBMB/VoxCPM</a></h3>
-  <p class="article-stats">Python · ★ 24,010 · 🍴 2,766 · 📈 880 stars today</p>
+  
+  
+  <p class="article-stats">Python · ★ 24,050 · 🍴 2,769 · 📈 880 stars today</p>
   
   <p class="article-excerpt">VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 无分词器TTS模型，支持多语言语音生成、创意声音设计及逼真语音克隆，适用于语音助手、内容创作等场景。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> VoxCPM2 是无 tokenizer 的多语言语音生成 TTS 系统，支持创造性语音设计和逼真语音克隆。适合需要多语言、高质量合成语音的场景。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://github.com/FareedKhan-dev/train-llm-from-scratch" target="_blank" rel="noopener noreferrer">FareedKhan-dev/train-llm-from-scratch</a></h3>
-  <p class="article-stats">Jupyter Notebook · ★ 3,455 · 🍴 490 · 📈 860 stars today</p>
+  
+  
+  <p class="article-stats">Jupyter Notebook · ★ 3,504 · 🍴 494 · 📈 860 stars today</p>
   
   <p class="article-excerpt">A straightforward method for training your LLM, from downloading data to generating text.</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 从零训练LLM的简明教程，涵盖数据下载到文本生成的全流程，适合想深入理解大语言模型训练原理的学习者。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 一套简洁的 LLM 从头训练方法，覆盖数据下载到文本生成的完整流程。适合教育研究或希望理解 LLM 底层机制的开发者。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://github.com/stefan-jansen/machine-learning-for-trading" target="_blank" rel="noopener noreferrer">stefan-jansen/machine-learning-for-trading</a></h3>
-  <p class="article-stats">Jupyter Notebook · ★ 17,618 · 🍴 5,171 · 📈 82 stars today</p>
+  
+  
+  <p class="article-stats">Jupyter Notebook · ★ 17,650 · 🍴 5,172 · 📈 82 stars today</p>
   
   <p class="article-excerpt">Code for Machine Learning for Algorithmic Trading, 2nd edition.</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 《机器学习算法交易》第二版配套代码，提供完整示例和实现，适用于金融从业者学习ML在交易中的应用。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 《Machine Learning for Algorithmic Trading》第二版的配套代码。提供机器学习在量化交易中的实践示例，适合金融从业者和量化研究者。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://github.com/dmtrKovalenko/fff" target="_blank" rel="noopener noreferrer">dmtrKovalenko/fff</a></h3>
-  <p class="article-stats">Rust · ★ 7,011 · 🍴 297 · 📈 121 stars today</p>
+  
+  
+  <p class="article-stats">Rust · ★ 7,030 · 🍴 297 · 📈 121 stars today</p>
   
   <p class="article-excerpt">The fastest and the most accurate file search toolkit for AI agents, Neovim, Rust, C, and NodeJS</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 最快最准的文件搜索工具包，支持AI代理、Neovim、Rust、C和NodeJS，适用于需要高效文件检索的开发和自动化场景。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 最快的文件搜索工具包，支持 AI 代理、Neovim、Rust、C、NodeJS 等环境。提供极速的文件查找能力，适合需要高效文件索引的应用场景。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://github.com/codecrafters-io/build-your-own-x" target="_blank" rel="noopener noreferrer">codecrafters-io/build-your-own-x</a></h3>
-  <p class="article-stats">Markdown · ★ 509,975 · 🍴 48,365 · 📈 1,194 stars today</p>
+  
+  
+  <p class="article-stats">Markdown · ★ 510,046 · 🍴 48,368 · 📈 1,194 stars today</p>
   
   <p class="article-excerpt">Master programming by recreating your favorite technologies from scratch.</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 通过从零复现热门技术（数据库、Git、Docker等）来掌握编程，提供逐步指南和挑战，适合进阶学习者和工程实践者。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 通过从零开始复现经典技术（如数据库、Git、Docker 等）来掌握编程的教程集合。适合想深入理解底层原理的开发者进行动手实践。</p>
 </article>
   </div>
     </div>
@@ -539,254 +577,324 @@
       <div class="source-content active" data-source-content="arxiv-motion" data-sub="arxiv-papers" data-cat="tech">
     <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.30444" target="_blank" rel="noopener noreferrer">Dex2HOI: Dexterous Bimanual Two-Object Interaction Generation</a></h3>
+  <p class="article-authors">Chrysa Pratikaki, Pablo Ruiz-Ponce, Jiankang Deng, Stefanos Zafeiriou, Rolandos Alexandros Potamias</p>
+  
   <p class="article-stats">motion</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Recent advances in 4D Human-Object Interaction (HOI) generation have enabled increasingly realistic motion synthesis, particularly for single-object manipulation. Yet current research overlooks an inherent property of human behavior: people naturally coordinate both hands and manipulate multiple obj</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 现有4D人-物交互生成多限于单物体操作，提出Dex2HOI方法，生成双手同时操作两个物体的精细动作，协调双手与多物体间的自然交互，提升真实感。</p>
-</article>
-<article class="article">
-  <h3 class="article-title"><a href="https://arxiv.org/abs/2605.30784" target="_blank" rel="noopener noreferrer">Text-guided Feature Disentanglement for Cross-modal Gait Recognition</a></h3>
-  <p class="article-stats">motion</p>
-  <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Gait recognition is a biometric technique that identifies individuals based on their walking patterns, offering advantages in long-range, non-intrusive scenarios. However, real-world scenarios often involve heterogeneous sensing modalities such as LiDAR and RGB cameras, making LiDAR-Camera Cross-mod</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对LiDAR与RGB跨模态步态识别，提出文本引导特征解耦方法，利用文本信息分离模态无关的身份特征，提升异构传感器下的识别性能。</p>
+  <p class="article-excerpt">Recent advances in 4D Human-Object Interaction (HOI) generation have enabled increasingly realistic motion synthesis, particularly for single-object manipulation. Yet current research overlooks an inherent property of human behavior: people naturally coordinate both hands and manipulate multiple objects simultaneously. To address this gap, we present Dex2HOI, a unified diffusion model for single- and two-object HOI synthesis from text. At its core, Dex2HOI employs a Dual-Stream Diffusion approach, where each object is processed in a dedicated interaction stream and coordinated through bidirectional cross-attention. To synthesize the final motion, we introduce a Motion Fusion Network integrated with novel hand-relative object representations and contact-aware conditioning applied across the whole sequence. By sampling the diffusion process autoregressively over prefix-conditioned windows, Dex2HOI generates arbitrarily long sequences at real-time speed omitting redundant test-time optimization, achieving up to x540 inference speed-up over prior state-of-the-art methods. Extensive evaluation on both single- and two-object benchmarks demonstrates state-of-the-art quantitative results, marking a step beyond conventional single-object HOI generation and toward expressive multi-object manipulation. Code and models will be released upon acceptance.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出Dex2HOI，生成双手同时操作两个物体的4D人-物交互运动，突破单物体操纵局限，捕捉双手协调和物体间交互。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.30925" target="_blank" rel="noopener noreferrer">MultiAct: Text-to-Motion Generation from Composite Text via Tailored Attention Guidance</a></h3>
+  <p class="article-authors">Nathan Sala, Ofir Abramovich, Ariel Shamir, Daniel Cohen-Or, Andreas Aristidou, Sigal Raab</p>
+  
   <p class="article-stats">motion</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Text-to-motion generation has progressed rapidly in recent years, offering an expressive interface for animation and human-computer interaction. However, current models remain brittle when handling prompts that describe multiple actions occurring at the same time. Rather than realizing all component</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 文本到运动生成模型难以处理同时发生的多个动作，提出MultiAct，通过定制注意力引导机制，从复合文本中生成包含多个动作的连贯人体运动。</p>
+  <p class="article-excerpt">Text-to-motion generation has progressed rapidly in recent years, offering an expressive interface for animation and human-computer interaction. However, current models remain brittle when handling prompts that describe multiple actions occurring at the same time. Rather than realizing all components of a composite description, models frequently prioritize a single dominant action and neglect the rest, leading to incomplete or ambiguous motion. We present MultiAct, an unpaired, inference-time framework for compositional text-to-motion synthesis that operates directly on pretrained motion generators without retraining or architectural modification. Our method counteracts semantic collapse by adaptively amplifying cross-attention scores associated with underrepresented prompt components. We note that effective modulation depends on prompt-specific choices, such as which tokens and layers to target, and introduce a lightweight auxiliary decision scheme that determines the most effective attention-strengthening parametrization. Extensive quantitative and qualitative evaluations demonstrate that MultiAct consistently outperforms existing baselines on composite prompts, achieving improved semantic coverage while preserving motion realism. Project page: https://natsala13.github.io/multiact.github.io.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出MultiAct，通过定制注意力引导实现复合文本描述的多动作同时生成，解决现有文本到运动模型对多动作提示处理脆弱的问题。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.30969" target="_blank" rel="noopener noreferrer">Omni-Supervised Motion Editing: Balancing Change and Invariance through Positive-Negative Learning</a></h3>
+  <p class="article-authors">Zhenwu Shi, Jingyu Gong, Peiwei Wang, Xingzan Wang, Tianwen Qian, Wenxi Li, Yuan Fang, Jiao Xie, Lizhuang Ma, Shaohui Lin</p>
+  
   <p class="article-stats">motion</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Text-based human motion editing aims to modify existing motion sequences according to natural language instructions while maintaining the consistency of the original motion. Existing diffusion-based approaches often rely on heuristic similarity cues or coarse global conditioning, leading to motion d</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 文本驱动人体运动编辑需保持原运动不变性，提出正负学习框架（Omni-Supervised），利用正样本和负样本平衡变化与不变，避免运动退化。</p>
+  <p class="article-excerpt">Text-based human motion editing aims to modify existing motion sequences according to natural language instructions while maintaining the consistency of the original motion. Existing diffusion-based approaches often rely on heuristic similarity cues or coarse global conditioning, leading to motion distortion and suboptimal semantic alignment. The key challenge lies in balancing change (i.e. precisely editing target regions) and invariance (i.e. preserving unedited parts). To handle such challenge, we propose an Omni-Supervised Positive-Negative Learning framework, named OmniME. Our method integrates three complementary components: (1) retrospective feature supervision that enforces coarse-to-fine consistency across transformer layers,(2) motion preservation mechanism that focuses on subtle variations according to the source-target similarity, and (3) triplet-based semantic alignment that strengthens text-motion correspondence. Together, these components form a unified supervision paradigm that balances change and invariance. Extensive experiments on the MotionFix and STANCE Adjustment datasets demonstrate that OmniME achieves state-of-the-art performance in editing alignment, validating the effectiveness of our unified learning framework. Our source codes and models have been released at: https://github.com/rocket-ycyer/OmniME.git</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出全监督运动编辑方法，通过正负学习平衡文本指令下的变化与不变性，避免现有扩散方法依赖启发式相似度导致动作失真。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.31115" target="_blank" rel="noopener noreferrer">Polyphony: Diffusion-based Dual-Hand Action Segmentation with Alternating Vision Transformer and Semantic Conditioning</a></h3>
+  <p class="article-authors">Hao Zheng, Hu Wang, Tiantian Zheng, Prajjwal Bhattarai, Tuka Alhanai</p>
+  
   <p class="article-stats">motion</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Dual-hand action segmentation, densely predicting actions for both hands from untrimmed videos, is essential for understanding complex bimanual activities. However, it poses several unique challenges: complex inter-hand dependencies, visual asymmetry between hands, representation conflicts where the</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 双手动作分割面临手间依赖和视觉不对称挑战，提出Polyphony，基于扩散模型和交替Vision Transformer，结合语义条件，从无修剪视频中密集预测双手动作。</p>
+  <p class="article-excerpt">Dual-hand action segmentation, densely predicting actions for both hands from untrimmed videos, is essential for understanding complex bimanual activities. However, it poses several unique challenges: complex inter-hand dependencies, visual asymmetry between hands, representation conflicts where the dominant hand monopolizes gradients, and semantic ambiguity in fine-grained actions. We propose Polyphony, a three-stage method to address these challenges through: (1) an Alternating Dual-Hand Vision Transformer that alternates training between left- and right-hand mini-batches to ensure balanced gradient contributions from both hands while sharing a spatio-temporal encoder; (2) Semantic Feature Conditioning that aligns visual features with structured, compositional action descriptions to enhance discrimination of semantically similar actions; and (3) Diffusion-Based Segmentation with cross-hand feature fusion for inter-hand coordination and adaptive loss weighting for balancing performance. Polyphony achieves state-of-the-art on both dual-hand datasets (HA-ViD, ATTACH) with improvements up to 16.8 points, and on the single-stream Breakfast dataset (82.5%), outperforming the prior best method that uses a 12x larger backbone. Notably, our unified model with a single shared backbone surpasses baselines requiring separate per-hand models. Code is at https://github.com/x-labs-xyz/Polyphony-Dual-hand-Action-Segmentation.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出Polyphony，基于扩散的双手动作分割方法，结合交替Vision Transformer与语义条件，解决双手间依赖、视觉不对称及表示冲突。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.31294" target="_blank" rel="noopener noreferrer">TokTalk: Expressive Real-time Facial Animation from Audio-LLM Tokens</a></h3>
+  <p class="article-authors">Qingcheng Zhao, Yifang Pan, Karan Singh</p>
+  
   <p class="article-stats">motion</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Recent advances in Audio-LLMs like GPT-4o have ushered in an era of conversational interaction with language models. Conversational avatars however, still seem robotic in facial expression and conversational flow, in part due to sequential stages of speech recognition, text generation, turn-based te</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 对话式头像面部表情不自然，提出TokTalk，直接从音频-LLM令牌生成富有表现力的实时面部动画，跳过多阶段流水线，实现更自然的对话流和表情。</p>
+  <p class="article-excerpt">Recent advances in Audio-LLMs like GPT-4o have ushered in an era of conversational interaction with language models. Conversational avatars however, still seem robotic in facial expression and conversational flow, in part due to sequential stages of speech recognition, text generation, turn-based text response, speech synthesis, and audio driven facial animation. Based on our insight that audio-tokens produced by current Audio-LLMs carry sufficient information to reconstruct a plausible facial performance, we present TokTalk, a system that directly outputs expressive facial animation in real-time from streaming audio-tokens. We construct a novel audio-token to 3D facial motion dataset, on which TokTalk is trained using a Chunk-based Conditional Flow Matching model. A lightweight adaptation strategy allows our trained model to seamlessly connect to any token-based Audio-LLM at minimal computational overhead. Our chunk-based processing further enables parametric trade-off between latency and facial quality, shown through ablation studies. We further show that the real-time performance of TokTalk is comparable in latency to prior art solutions, and significantly favorable (via a perceptual study) in terms of quality, expressivity and control of the 3D facial performance. We showcase TokTalk&#39;s flexibility using a chatbot Avatar, a voice-driven user Avatar, and an animation Director&#39;s interface, as diverse audio-visual face applications.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出TokTalk，直接从Audio-LLM token生成富有表现力的实时面部动画，绕开语音识别-文本生成-动画的级联流程，提升交互自然度。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.31551" target="_blank" rel="noopener noreferrer">SMART: SMPLest-X Mesh Adaptation and RAFT Tracking for Soccer Pose Estimation</a></h3>
+  <p class="article-authors">Parthsarthi Rawat</p>
+  
   <p class="article-stats">motion</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">We present our approach to the FIFA Skeletal Tracking Challenge 2026, which requires estimating 3D world-space poses of soccer players from broadcast video. Our method finetunes SMPLest-X (ViT-H, 687 M parameters) via a stratified clip split, multi-task depth supervision, and broadcast augmentation,</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对FIFA骨骼追踪挑战，提出SMART方法，微调SMPLest-X（ViT-H），采用分层片段划分、多任务深度监督和广播数据增强，结合RAFT跟踪实现3D世界空间足球运动员姿态估计。</p>
+  <p class="article-excerpt">We present our approach to the FIFA Skeletal Tracking Challenge 2026, which requires estimating 3D world-space poses of soccer players from broadcast video. Our method finetunes SMPLest-X (ViT-H, 687 M parameters) via a stratified clip split, multi-task depth supervision, and broadcast augmentation, paired with a RAFT dense optical flow camera tracker, foot-plane anchoring, and two-pass temporal smoothing. Against the FIFA baseline score of 1.053 on the validation set, SMART achieves 0.647, a 38.6% improvement; on the held-out test set, SMART scores 0.593 (Global MPJPE: 0.324 m, Local MPJPE: 0.054 m).</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对足球运动员3D姿态估计，微调SMPLest-X（ViT-H）模型，采用分层片段拆分、多任务深度监督和广播增强，在FIFA挑战赛中取得效果。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.31589" target="_blank" rel="noopener noreferrer">Recognizing Co-Speech Gestures in-the-Wild</a></h3>
+  <p class="article-authors">Sindhu B Hegde, K R Prajwal, Andrew Zisserman</p>
+  
   <p class="article-stats">motion</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">While humans naturally gesture during speech, only a sparse subset of these movements are visually depictive and semantically linked to specific spoken words. Current multimodal models struggle to capture these semantic co-speech gestures, heavily bottlenecked by a lack of precisely annotated traini</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 人类说话时仅少数手势有语义，当前多模态模型缺乏精细标注。提出方法检测和识别自然场景中的语义伴随手势，突破标注瓶颈，提升对语义手势的识别能力。</p>
+  <p class="article-excerpt">While humans naturally gesture during speech, only a sparse subset of these movements are visually depictive and semantically linked to specific spoken words. Current multimodal models struggle to capture these semantic co-speech gestures, heavily bottlenecked by a lack of precisely annotated training data. To address this, we introduce the Gesture Recognition in the Wild (GRW) dataset, the first large-scale benchmark designed to map unconstrained human gestures to specific words with frame-accurate temporal boundaries. Comprising 156,688 manually annotated video clips, GRW spans a highly diverse 150-word taxonomy of physical actions, spatial descriptors, and abstract concepts. We leverage GRW to train video models to (a) classify gestures as semantic or not, (b) recognize the word corresponding to a co-speech gesture, and (c) temporally localize the gesture. We also use GRW to establish benchmarks for these three tasks.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出在自然场景中识别与话语语义相关的协同手势，针对标注数据稀缺问题，设计多模态模型以捕捉稀疏但有语义的手势。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2507.11075" target="_blank" rel="noopener noreferrer">Joint angle based learning to refine kinematic human pose estimation</a></h3>
+  <p class="article-authors">Chang Peng, Yifei Zhou, Haoqiang Ren, Shiqing Huang, Chuangye Chen, Jianming Yang, Bao Yang, Huifeng Xi, Zhenyu Jiang</p>
+  
   <p class="article-stats">motion</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Marker-free human pose estimation (HPE) has found increasing applications in various fields. Current HPE suffers from occasional errors in keypoint recognition and random fluctuation in keypoint trajectories when analyzing kinematic human poses. The performance of existing deep learning-based models</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 无标记人体姿态估计存在关键点误差和轨迹波动，提出基于关节角度学习的精化方法，利用运动学约束优化关键点位置，减少随机波动，提升时序一致性。</p>
+  <p class="article-excerpt">Marker-free human pose estimation (HPE) has found increasing applications in various fields. Current HPE suffers from occasional errors in keypoint recognition and random fluctuation in keypoint trajectories when analyzing kinematic human poses. The performance of existing deep learning-based models for HPE refinement is considerably limited by inaccurate training datasets in which the keypoints are manually annotated. This paper proposed a novel method to overcome the difficulty, in which the key techniques include: (i) A robust joint angle-based description of kinematic human poses; (ii) Approximating temporal variation of joint angles using high order Fourier series to get reliable &quot;ground truth&quot;; (iii) A bidirectional recurrent network is designed as a post-processing module to refine the estimation of single image-based HPE models. Trained with the high-quality dataset constructed using our method, the network demonstrates outstanding performance to correct wrongly recognized joints and smooth their spatiotemporal trajectories. Tests show that joint angle-based refinement (JAR) outperforms the state-of-the-art HPE refinement network in challenging cases like figure skating and breaking. JAR also demonstrates great potential to rectify existing datasets.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出基于关节角度的学习策略，精细化运动学人体姿态估计，减少关键点识别误差和轨迹随机波动，提升深度模型时序稳定性。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2601.22412" target="_blank" rel="noopener noreferrer">Calibrated Uncertainty for Trustworthy Clinical Gait Analysis Using Probabilistic Multiview Markerless Motion Capture</a></h3>
+  <p class="article-authors">Seth Donahue, Irina Djuraskovic, Kunal Shah, Fabian Sinz, Ross Chafetz, R. James Cotton</p>
+  
   <p class="article-stats">motion</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Video-based human movement analysis holds potential for movement assessment in clinical practice and research. However, the clinical implementation and trust of multi-view markerless motion capture (MMMC) require that, in addition to being accurate, these systems produce reliable confidence interval</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 视频无标记运动捕获用于临床需可靠置信区间，提出概率多视图方法，在输出步态参数的同时提供校准的不确定性估计，增强临床信任度。</p>
+  <p class="article-excerpt">Video-based human movement analysis holds potential for movement assessment in clinical practice and research. However, the clinical implementation and trust of multi-view markerless motion capture (MMMC) require that, in addition to being accurate, these systems produce reliable confidence intervals to indicate how accurate they are for any individual. Building on our prior work utilizing variational inference to estimate joint angle posterior distributions, this study evaluates the calibration and reliability of a probabilistic MMMC method. We analyzed data from 68 participants across two institutions, validating the model against an instrumented walkway and standard marker-based motion capture. We measured the calibration of the confidence intervals using the Expected Calibration Error (ECE). The model demonstrated reliable calibration, yielding ECE values generally &amp;lt; 0.1 for both step and stride length and bias-corrected gait kinematics. We observed a median step and stride length error of ~16 mm and ~12 mm respectively, with median bias-corrected kinematic errors ranging from 1.5 to 3.8 degrees across lower extremity joints. Consistent with the calibrated ECE, the magnitude of the model&#39;s predicted uncertainty correlated strongly with observed error measures. These findings indicate that, as designed, the probabilistic model reconstruction quantifies epistemic uncertainty, allowing it to identify unreliable outputs without the need for concurrent ground-truth instrumentation.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出校准不确定度用于可信临床步态分析，利用概率多视角无标记动作捕捉，在提供准确关节位置的同时输出可靠置信区间，增强临床信任度。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2605.20992" target="_blank" rel="noopener noreferrer">CHOIR: Contact-aware 4D Hand-Object Interaction Reconstruction</a></h3>
+  <p class="article-authors">Hao Xu, Yilin Liu, Yinqiao Wang, Chi-Wing Fu, Niloy J. Mitra</p>
+  
+  <p class="article-stats">motion</p>
+  <p class="article-meta">06/01 12:00</p>
+  <p class="article-excerpt">We ask whether everyday open-world monocular videos can be turned into reusable 4D interaction primitives: articulated hand motion, object shape with 6D pose over time, and the when/where of contact. Such a capability would enable scalable mining of real interactions and, beyond reconstruction, support scene-aware synthesis and planning. However, reconstructing hand-object interaction (HOI) from challenging monocular videos remains difficult: methods often assume known objects or curated scenes, and separately estimated hands and objects easily become misaligned under clutter, occlusion, and unseen object geometries. Targeting this setting, we present CHOIR, a Contact-aware HOI Reconstruction framework for a monocular camera, using contact as an explicit coupling signal between hands and objects. CHOIR first initializes a coarse, contact-agnostic 4D HOI sequence from open-world visual priors. It then introduces a generative HOI spatial rectification module to predict ray-depth corrections and rectify hand-object relative placement, then derive initial per-frame contact correspondences on the rectified geometry. Last, a contact-aware joint optimization with dynamically updated contact constraints enforces geometric, temporal, and contact consistency. Experiments on controlled and challenging videos show that CHOIR improves object reconstruction, physical plausibility, and temporal consistency over state-of-the-art methods.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出CHOIR，从开放世界单目视频重建接触感知4D手-物体交互，输出手部运动、物体6D位姿及时空接触信息，支持可复用的交互基元挖掘。</p>
 </article>
   </div>
 <div class="source-content" data-source-content="arxiv-video" data-sub="arxiv-papers" data-cat="tech">
     <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.30409" target="_blank" rel="noopener noreferrer">SANA-Streaming: Real-time Streaming Video Editing with Hybrid Diffusion Transformer</a></h3>
+  <p class="article-authors">Yuyang Zhao, Yicheng Pan, Qiyuan He, Jincheng Yu, Junsong Chen, Tian Ye, Haozhe Liu, Enze Xie, Song Han</p>
+  
   <p class="article-stats">video</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Real-time streaming video-to-video editing (V2V) is critical for interactive applications such as live broadcasting and gaming, yet it remains a formidable challenge due to the stringent requirements for temporal consistency and inference throughput. In this paper, we present SANA-Streaming, a syste</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 面向实时流式视频编辑需时序一致性和高吞吐量的挑战，提出SANA-Streaming系统，采用混合Diffusion Transformer架构，实现实时的视频到视频编辑，在直播等应用中保持时序一致。</p>
+  <p class="article-excerpt">Real-time streaming video-to-video editing (V2V) is critical for interactive applications such as live broadcasting and gaming, yet it remains a formidable challenge due to the stringent requirements for temporal consistency and inference throughput. In this paper, we present SANA-Streaming, a system-algorithm co-designed framework for high-resolution, real-time streaming video editing on consumer GPUs, with the following three core designs: (1) Hybrid Diffusion Transformer architecture introduces softmax attention in part of the blocks to improve local modeling capabilities while preserving the efficiency of linear layers. (2) Cycle-Reverse Regularization is a novel training strategy that enforces semantic consistency by predicting source frames from generated content via flow matching, improving temporal consistency without requiring paired long edited videos. (3) Efficient System Co-design combines fused GDN kernels and Mixed-Precision Quantization (MPQ) optimized for the NVIDIA Blackwell (RTX 5090) architecture. By profiling real-world throughput, our MPQ maximizes Tensor Core utilization while maintaining generation quality. The resulting system achieves real-time 1280 x 704 resolution editing at 24 end-to-end FPS on a single RTX 5090 GPU, with the DiT core running at 58 FPS. Experimental results demonstrate that our co-design approach significantly outperforms existing SOTA methods in both temporal coherence and system throughput.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出SANA-Streaming，一种基于混合扩散Transformer的实时流式视频编辑系统，通过优化时序一致性和推理吞吐量，实现直播级视频到视频编辑。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.30431" target="_blank" rel="noopener noreferrer">DTG-Restore: Training-Free Diffusion Refinement for Generative Video Super-Resolution</a></h3>
+  <p class="article-authors">Hidir Yesiltepe, Koutilya PNVR, Gaurav Pathak, Navaneeth Bodla, Bharat Singh, Pinar Yanardag, Jinrong Xie</p>
+  
   <p class="article-stats">video</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Recent progress in video diffusion models has enabled remarkable generative fidelity, yet leveraging these priors for restoration remains limited by the strong coupling between conditional and unconditional branches in standard classifier-free guidance. We introduce a training-free framework that en</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对视频扩散模型在超分辨率中条件与无条件分支耦合导致先验利用受限的问题，提出无训练精化框架DTG-Restore，通过解耦引导实现高质量视频超分辨率，无需额外训练。</p>
+  <p class="article-excerpt">Recent progress in video diffusion models has enabled remarkable generative fidelity, yet leveraging these priors for restoration remains limited by the strong coupling between conditional and unconditional branches in standard classifier-free guidance. We introduce a training-free framework that enhances distorted and low-resolution videos by decoupling these signals in time. Our proposed Decoupled Time Guidance (DTG) evaluates the unconditional branch at a cleaner diffusion timestep, providing a lookahead prior that preserves geometry while suppressing replication of warped content. This temporal bias is annealed throughout sampling, allowing the model to transition from structure correction to detail refinement without retraining. Combined with any off-the-shelf restoration module in a plug-and-play manner, our approach improves perceptual coherence and restores plausible structure in AIgenerated and real-world videos alike. To facilitate evaluation, we curate GenWarp480, a benchmark of 4,400 distorted 480p videos synthesized from diverse text-to-video models. GenWarp480 focuses on characteristic generative degradations such as warped faces, body misalignments, and spatial artifacts, providing a purpose-built testbed for assessing robustness to generative errors. Extensive experiments demonstrate that our method achieves significant improvements in structural fidelity and temporal stability without any model training.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出DTG-Restore，一种免训练的视频超分辨率框架，通过解耦条件与无条件分支，利用视频扩散先验进行生成式精细化，无需重新训练。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.30519" target="_blank" rel="noopener noreferrer">OmniMem: Scalable and Adaptive Memory Retrieval for Long Video Generation</a></h3>
+  <p class="article-authors">Lin Zhao, Yushu Wu, Yifan Gong, Yanzhi Wang, Pu Zhao</p>
+  
   <p class="article-stats">video</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Autoregressive (AR) video generation extends videos by producing latent chunks sequentially, but scaling to long videos requires repeated access to a growing historical KV cache. Existing methods reduce this cost by truncating the KV cache or compressing it into implicit memory, but both lose explic</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 自回归视频生成中长序列历史KV缓存增长问题，提出OmniMem可扩展自适应记忆检索机制，平衡历史信息的显式存储与压缩，提升长视频生成的一致性与效率。</p>
+  <p class="article-excerpt">Autoregressive (AR) video generation extends videos by producing latent chunks sequentially, but scaling to long videos requires repeated access to a growing historical KV cache. Existing methods reduce this cost by truncating the KV cache or compressing it into implicit memory, but both lose explicit access to query-relevant historical details. We propose OmniMem, an explicit full-range memory retrieval framework that performs sparse KV retrieval over the historical cache. To make this practical for chunk-based AR video generation, OmniMem addresses two issues: (i) local bias in sparse KV selection and (ii) Union Explosion in memory access. Adaptive Window Exclusion removes local-window blocks from the selection candidates when sufficient long-range history is available, preserving the sparse budget for informative long-range retrieval. Query-Shared KV Selection reduces cross-query diversity, while Per-Head Scattered KV Access avoids expanding head-specific selections into a large selected KV buffer. This allows each attention head to retrieve non-contiguous KV blocks according to its own selection pattern. Experiments on long-video generation show that OmniMem improves Dynamic Degree by 52.3% and preserves strong consistency over strong baselines, while maintaining comparable memory usage.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出OmniMem，一种可扩展自适应记忆检索方法，用于长视频生成，通过显式KV缓存管理替代截断或隐式压缩，在保持历史细节的同时降低开销。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.30689" target="_blank" rel="noopener noreferrer">ConTrans: Learning Text-enhanced Local-global Temporal Representations for Zero-shot Temporal Action Localization</a></h3>
+  <p class="article-authors">Kanchan Keisham, Thenukan Pathmanathan, Thangarajah Akilan</p>
+  
   <p class="article-stats">video</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Zero-shot Temporal Action Localization (ZS-TAL) aims to detect and locate previously unseen actions in untrimmed videos. However, existing approaches primarily focus on modeling long-range contextual information, often neglecting the critical relative-offset-based local correlations between video fr</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 零样本时序动作定位中现有方法忽略局部相对偏移相关性，提出ConTrans，学习文本增强的局部-全局时序表征，通过建模局部帧间关系提升未见动作的检测和定位能力。</p>
+  <p class="article-excerpt">Zero-shot Temporal Action Localization (ZS-TAL) aims to detect and locate previously unseen actions in untrimmed videos. However, existing approaches primarily focus on modeling long-range contextual information, often neglecting the critical relative-offset-based local correlations between video frames. Furthermore, their performance is hindered by limited feature representation capabilities due to the shallow nature of their network architectures. In this paper, we address these limitations by introducing a novel local-global multi-scale feature representation module. We propose a novel multi-scale encoder architecture, termed ConTrans, that integrates convolutional (Conv) inductive biases with transformer Self-attention to jointly capture fine-grained local dependencies and long-range global context, leading to more comprehensive feature representations than existing methods. Experimental evaluations on the ActivityNet-1.3 and THUMOS14 datasets demonstrate that ConTrans significantly outperforms existing methods, establishing a new benchmark for ZS-TAL.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出ConTrans，通过文本增强的局部-全局时序表示学习，用于零样本时序动作定位，弥补现有方法对局部帧间相对偏移建模的不足。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.30742" target="_blank" rel="noopener noreferrer">Annotations Are Not All You Need: A Cross-modal Knowledge Transfer Network for Unsupervised Temporal Sentence Grounding</a></h3>
+  <p class="article-authors">Xiang Fang, Daizong Liu, Wanlong Fang, Pan Zhou, Yu Cheng, Keke Tang, Kai Zou</p>
+  
   <p class="article-stats">video</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">This paper addresses the task of temporal sentence grounding (TSG). Although many respectable works have made decent achievements in this important topic, they severely rely on massive expensive video-query paired annotations, which require a tremendous amount of human effort to collect in real-worl</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对时序语句定位依赖大量视频-查询标注的问题，提出跨模态知识迁移网络，在无监督设置下利用跨模态信息对齐视频和文本，降低标注成本。</p>
+  <p class="article-excerpt">This paper addresses the task of temporal sentence grounding (TSG). Although many respectable works have made decent achievements in this important topic, they severely rely on massive expensive video-query paired annotations, which require a tremendous amount of human effort to collect in real-world applications. To this end, in this paper, we target a more practical but challenging TSG setting: unsupervised temporal sentence grounding, where both paired video-query and segment boundary annotations are unavailable during the network training. Considering that some other cross-modal tasks provide many easily available yet cheap labels, we tend to collect and transfer their simple cross-modal alignment knowledge into our complex scenarios: 1) We first explore the entity-aware object-guided appearance knowledge from the paired Image-Noun task, and adapt them into each independent video frame; 2) Then, we extract the event-aware action representation from the paired Video-Verb task, and further refine the action representation into more practical but complicated real-world cases by a newly proposed copy-paste approach; 3) By modulating and transferring both appearance and action knowledge into our challenging unsupervised task, our model can directly utilize this general knowledge to correlate videos and queries, and accurately retrieve the relevant segment without training. Extensive experiments on two challenging datasets (ActivityNet Captions and Charades-STA) show our effectiveness, outperforming existing unsupervised methods and even competitively beating supervised works.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出跨模态知识迁移网络，解决无监督时序句子定位任务，避免昂贵的视频-查询配对标注，利用跨模态知识迁移实现定位。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.30750" target="_blank" rel="noopener noreferrer">SLAP: The Semantic Least Action Principle for Variational Video-Language Modeling</a></h3>
+  <p class="article-authors">Xiang Fang, Wanlong Fang</p>
+  
   <p class="article-stats">video</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">In the era of Large Video-Language Models (LVLMs), the computational necessity of sparse frame sampling creates a fundamental ``temporal gap&#39;&#39;, rendering models blind to critical causal transitions. Existing solutions relying on generative hallucination (e.g., latent diffusion) or autoregressive ext</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对大视频语言模型稀疏帧采样导致时序盲区，提出语义最小作用原理（SLAP），通过变分建模捕获关键因果转变，弥合时序差距，无需生成式幻觉或外推。</p>
+  <p class="article-excerpt">In the era of Large Video-Language Models (LVLMs), the computational necessity of sparse frame sampling creates a fundamental ``temporal gap&#39;&#39;, rendering models blind to critical causal transitions. Existing solutions relying on generative hallucination (e.g., latent diffusion) or autoregressive extrapolation often fail to maintain semantic consistency over long horizons, suffering from object vanishing and energetic instability. We propose a paradigm shift from probabilistic generation to variational mechanics with the \textbf{Semantic Least Action Principle (SLAP)}. Drawing a rigorous isomorphism between classical mechanics and semantic dynamics, we model the latent video trajectory as a path on a Riemannian manifold governed by a Semantic Lagrangian. By formulating the interpolation task as a Boundary Value Problem (BVP) solved via the discrete Euler-Lagrange equations, SLAP naturally enforces object persistence without pixel-level rendering. Extensive experiments show the effectiveness of our proposed SLAP.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出语义最小作用原理SLAP，用于视频-语言建模，通过变分框架弥补稀疏帧采样导致的时序因果盲区，替代生成式填补或外推。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.30774" target="_blank" rel="noopener noreferrer">CameraNoise: Enabling Faithful Camera Control in Video Diffusion through Geometry-Flow-Guided Noise Warping</a></h3>
+  <p class="article-authors">Haoyu Zhao, Jiaxi Gu, Haoran Chen, Qingping Zheng, Yeying Jin, Hongyi Yang, Junqi Cheng, Yuang Zhang, Zenghui Lu, Huan Yu, Jie Jiang, Peng Shu, Zuxuan Wu, Yu-Gang Jiang</p>
+  
   <p class="article-stats">video</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Precise camera pose control is critical for video diffusion, yet maintaining geometric consistency remains a challenge. Existing methods that directly inject numerical camera parameters into the diffusion backbone often fail to bridge the gap between abstract coordinates and visual content, leading </p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 视频扩散中精确相机控制难，提出CameraNoise，通过几何流引导噪声扭曲将相机运动映射到噪声空间，而非直接注入数值参数，提升几何一致性和视觉保真度。</p>
+  <p class="article-excerpt">Precise camera pose control is critical for video diffusion, yet maintaining geometric consistency remains a challenge. Existing methods that directly inject numerical camera parameters into the diffusion backbone often fail to bridge the gap between abstract coordinates and visual content, leading to structural distortions. To address this issue, we propose CameraNoise, a flow-to-noise warping method that encodes camera motion into a temporally coherent stochastic representation. Unlike conventional conditioning, CameraNoise embeds camera poses directly into the noise space. This decouples motion from scene appearance while faithfully preserving trajectory dynamics. Specifically, we introduce a novel Geometry-guided Reprojection Flow and a noise warping algorithm, which jointly preserve the Gaussian prior of diffusion and ensure consistent noise propagation under camera transformations. By integrating CameraNoise into the diffusion process, our framework delivers stable, high-fidelity videos. Extensive experiments demonstrate that our approach significantly outperforms prior methods in both visual quality and trajectory faithfulness. The project page and code are available at: https://gulucaptain.github.io/CameraNoise/.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出CameraNoise，通过几何流引导的噪声扭曲实现视频扩散中精确相机控制，桥接抽象坐标与视觉内容的差距，提升几何一致性。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.30855" target="_blank" rel="noopener noreferrer">Robust Dreamer: Deviation-Aware Latent Gaussian Memory for Action-Controlled AR Video Generation</a></h3>
+  <p class="article-authors">Hanlin Chen, Jiaxin Wei, Xibin Song, Yifu Wang, Steve Wang, Hongdong Li, Pan Ji, Gim Hee Lee</p>
+  
   <p class="article-stats">video</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Frame-wise action-controlled image-to-video generation is a promising paradigm for interactive world simulation, where each control signal should elicit an immediate visual response. However, maintaining visual fidelity and 3D consistency over long autoregressive rollouts remains challenging. Existi</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对交互式世界模型中动作控制的长时间AR生成视觉保真度与3D一致性挑战，提出偏差感知潜高斯记忆（Robust Dreamer），在自回归生成中维持时序一致性和视觉质量。</p>
+  <p class="article-excerpt">Frame-wise action-controlled image-to-video generation is a promising paradigm for interactive world simulation, where each control signal should elicit an immediate visual response. However, maintaining visual fidelity and 3D consistency over long autoregressive rollouts remains challenging. Existing 3D-aware methods often suffer from catastrophic drift due to two impediments: information loss from \textit{Latent--RGB Cycling}, where generated latents are repeatedly decoded to RGB and re-encoded for future conditioning, and the training--inference gap induced by the \textit{error-free hypothesis}, where clean training memory fails to match prediction-corrupted inference memory. To address these challenges, we present \textbf{Robust Dreamer}, a memory-augmented framework built around how to design 3D memory and how to use it robustly. First, we introduce \textbf{Latent Gaussian Memory}, which anchors diffusion latents inherited from the generation process to Gaussian primitives and recalls them via latent-space Gaussian splatting. This provides dense, geometry-aware, view-aligned conditioning while avoiding accumulated degradation from repeated VAE conversion. Second, we propose \textbf{Deviation Learning with Dynamic Deviation Archive}, which synthesizes rollout-induced latent deviations through a one-step approximation, stores them by autoregressive stage and denoising timestamp, and injects them into historical memory during training. This exposes the generator to realistic corrupted memory states and teaches internal correction before inference. Experiments on ScanNet, DL3DV, and OmniWorldGame demonstrate state-of-the-art long-horizon performance.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出Robust Dreamer，采用偏差感知隐式高斯记忆用于动作可控自回归视频生成，在长期生成中保持视觉保真度和3D一致性。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.31029" target="_blank" rel="noopener noreferrer">PEEK: Picking Essential frames via Efficient Knowledge distillation</a></h3>
+  <p class="article-authors">Killian Steunou, Anas Filali Razzouki, Khalil Guetari, Moun\^im A. El-Yacoubi, Yannis Tevissen</p>
+  
   <p class="article-stats">video</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Video-language models can process only a limited number of frames, making frame selection a key bottleneck for efficient video captioning. Most captioning pipelines still rely on uniform sampling, which is computationally cheap but agnostic to visual content. Adaptive frame sampling has recently eme</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 视频字幕生成中帧选择是关键瓶颈，提出PEEK，通过高效知识蒸馏自适应选取关键帧，替代均匀采样，提升字幕质量且计算高效。</p>
+  <p class="article-excerpt">Video-language models can process only a limited number of frames, making frame selection a key bottleneck for efficient video captioning. Most captioning pipelines still rely on uniform sampling, which is computationally cheap but agnostic to visual content. Adaptive frame sampling has recently emerged as a promising approach for selecting the most informative frames from a video; however, existing methods remain computationally expensive. We introduce PEEK, an efficient dynamic frame sampling method that distills caption-conditioned frame relevance rankings from a stronger teacher model into a lightweight temporal model that operates only on visual content. We find that, overall, on ActivityNet Captions and MSR-VTT, our method outperforms state-of-the-art methods across all evaluated downstream vision language models, especially when only one or two frames are selected for captioning, obtaining the best CIDEr for most frame budgets. On ActivityNet Captions, PEEK is particularly strong, winning 14 out of 16 configurations. Zero-shot evaluation on MSR-VTT shows that our model transfers best at low frame budgets, while results at four and eight frames are more mixed as temporal coverage and visual diversity become increasingly competitive. Compared with recent adaptive baselines, PEEK is both more accurate in the low-budget regime and more efficient: it adds only $5.2\%$ to the captioning time, compared with $65.4\%$ for CSTA and $211.9\%$ for MaxInfo. We release our code and pre-trained checkpoint at https://github.com/momentslab/peek.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出PEEK，通过高效知识蒸馏选取视频关键帧，用于视频字幕生成，替代均匀采样，在降低计算量的同时提升内容相关性。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.31033" target="_blank" rel="noopener noreferrer">SlotMemory: Object-Centric KV Memory for Streaming Long-Video Generation</a></h3>
+  <p class="article-authors">Weijia Dou, Hui Li, Jiahao Cui, Lei Zhou, Jingdong Wang, Siyu Zhu</p>
+  
   <p class="article-stats">video</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Streaming video generation models typically rely on temporal-centric memory, which organizes historical context as raw frames, chunk segments, or unclustered tokens. This organization frequently leads to identity drift and semantic inconsistency when entities exit the frame or during interactive pro</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 流式视频生成中身份漂移和语义不一致，提出SlotMemory，以物体为中心的KV记忆，将历史上下文组织为物体槽，保持实体身份一致性，适合交互生成。</p>
+  <p class="article-excerpt">Streaming video generation models typically rely on temporal-centric memory, which organizes historical context as raw frames, chunk segments, or unclustered tokens. This organization frequently leads to identity drift and semantic inconsistency when entities exit the frame or during interactive prompt transitions. To address these limitations, we propose SlotMemory, an object-centric Key-Value memory mechanism for streaming video diffusion. Our approach shifts the memory abstraction from &quot;when&quot; an event occurred to &quot;what&quot; is being represented by decomposing the transformer&#39;s key-value manifold into discrete, reusable semantic slots. By utilizing these slots as routing addresses to index and store high-fidelity key-value tokens, we enable entity-level persistence and prompt-aware retrieval across long horizons. Evaluated on 60-second interactive narratives using the Wan2.1-T2V-1.3B backbone, SlotMemory achieves a state-of-the-art quality score of 81.61 and a 22.8 percent relative improvement in dynamic consistency over the strongest existing streaming baseline. Our results demonstrate that structured semantic representation, rather than raw temporal capacity, is the essential primitive for persistent long-form video synthesis. Our codes and checkpoints are available at https://tj12323.github.io/SlotMemory/.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出SlotMemory，基于物体中心的KV记忆用于流式长视频生成，以物体级token组织历史上下文，缓解实体身份漂移和语义不一致。</p>
 </article>
   </div>
 <div class="source-content" data-source-content="arxiv-world-model" data-sub="arxiv-papers" data-cat="tech">
     <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.30705" target="_blank" rel="noopener noreferrer">Equivariant Latent Alignment via Flow Matching under Group Symmetries</a></h3>
+  <p class="article-authors">Sunghyun Kim, Jaehoon Hahm, Jeongwoo Shin, Joonseok Lee</p>
+  
   <p class="article-stats">world-model</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Geometry-aware generative models and novel view synthesis approaches have shown strong potential in visual fidelity and consistency. In parallel, equivariant representation learning has emerged as a powerful framework for constructing latent spaces where analytically known group transformations coul</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出基于流匹配的等变潜空间对齐方法，利用群对称性将分析性变换映射到潜空间，实现几何一致的生成和新视角合成，提升视觉保真度与一致性。</p>
-</article>
-<article class="article">
-  <h3 class="article-title"><a href="https://arxiv.org/abs/2605.30819" target="_blank" rel="noopener noreferrer">Function2Scene: 3D Indoor Scene Layout from Functional Specifications</a></h3>
-  <p class="article-stats">world-model</p>
-  <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Most text-driven 3D indoor scene synthesis methods generate rooms from object-centric prompts, asking what furniture should be placed rather than how the space is used. Yet in real interior design, a layout is judged by how well it supports its occupants, e.g., their activities and physical needs. W</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 现有文本驱动3D场景合成以物体为中心忽略功能，提出Function2Scene，从功能规范（活动、人体需求）生成室内布局，直接优化空间对活动的支持性。</p>
+  <p class="article-excerpt">Geometry-aware generative models and novel view synthesis approaches have shown strong potential in visual fidelity and consistency. In parallel, equivariant representation learning has emerged as a powerful framework for constructing latent spaces where analytically known group transformations could act directly, capturing geometric structure in data and enhancing both interpretability and generalization in novel view synthesis. However, we identify that existing approaches often suffer from latent misalignment, a discrepancy between the intended group action and the actually required transformations in the latent space. Consequently, the learned latents often fail to consistently preserve the equivariant relations imposed by the underlying group symmetry. To address this, we propose Residual Latent Flow, a flow-based framework that corrects the misaligned latents, thereby improving compliance with the underlying equivariance relation. Our comprehensive experiments show that our method significantly reduces latent misalignment and improves novel view synthesis quality, under rotation groups SO(n).</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出基于流匹配的等变隐空间对齐方法，在群对称约束下对齐表示，用于几何感知生成和新视角合成，保持结构一致性。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.30863" target="_blank" rel="noopener noreferrer">DSD-GS: Dynamic-Static Decomposition of Gaussian Splatting for Efficient and High-Fidelity Dynamic Scene Reconstruction</a></h3>
+  <p class="article-authors">Youngtae Han, Sung-hwan Han, Youngmin Yi</p>
+  
   <p class="article-stats">world-model</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Dynamic scene reconstruction and novel view synthesis are fundamental to next-generation visual intelligence applications such as virtual reality, robotics, and digital twins. However, high-fidelity reconstruction of complex, time-varying scenes from arbitrary viewpoints remains a significant challe</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出DSD-GS，将动态场景分解为静态和动态成分，分别用高斯泼溅表示，实现高效高保真的动态场景重建和新视角合成，适用于VR、机器人等。</p>
+  <p class="article-excerpt">Dynamic scene reconstruction and novel view synthesis are fundamental to next-generation visual intelligence applications such as virtual reality, robotics, and digital twins. However, high-fidelity reconstruction of complex, time-varying scenes from arbitrary viewpoints remains a significant challenge. Existing dynamic 3DGS methods suffer from computational inefficiency, since they model all Gaussians as dynamic components. While recent decomposition-based approaches address this issue, they still struggle with degraded reconstruction quality and prolonged training time. To mitigate these limitations, we propose a novel dynamic reconstruction framework built upon an efficient static-dynamic decomposition strategy using a Feed-Forward Gaussian Splatting encoder and an optical flow model. By eliminating redundant computations on static regions, our method achieves state-of-the-art performance, outperforming existing baselines across rendering quality, training and rendering speed, and storage efficiency. Notably, on the Neural 3D dataset, our framework requires only 10 minutes for training and achieves a rendering speed of over 700 FPS on a single NVIDIA RTX 5090 GPU at resolution of 1352x1014. Furthermore, our decomposition strategy eliminates the need for COLMAP preprocessing and enables deterministic initialization, thereby enhancing both efficiency and reproducibility.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出DSD-GS，动态-静态分解的高斯泼溅方法，用于高效高保真动态场景重建，分离运动与静态部分以提升渲染效率和新视角合成质量。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.30987" target="_blank" rel="noopener noreferrer">Benchmarking Single-Step Inpainting Methods for Multi-Object 3D Gaussian Splatting Scenes</a></h3>
+  <p class="article-authors">Finn Dr\&quot;oge, Cecilia Curreli, Abhishek Saroha, Daniel Cremers</p>
+  
   <p class="article-stats">world-model</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">The tasks of object removal and inpainting 3D Gaussian Splatting (3DGS) scenes face challenges such as 3D consistency across camera views. In comparing 2D inpainters and their suitability for the 3D domain, we find that reconstruction-based inpainters outperform generative diffusion models in 3D con</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 评估3D高斯泼溅场景中对象移除和修复方法，发现基于重建的修复器在3D一致性上优于生成扩散模型，为多视图修复提供了基准。</p>
-</article>
-<article class="article">
-  <h3 class="article-title"><a href="https://arxiv.org/abs/2605.31116" target="_blank" rel="noopener noreferrer">NTR: Neural Token Reconstruction for Scene Token Bottleneck in End-to-End Driving</a></h3>
-  <p class="article-stats">world-model</p>
-  <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Recent perception-free end-to-end (E2E) autonomous driving methods bypass explicit perception outputs by compressing dense image patch tokens into compact scene tokens for downstream trajectory generation and scoring. While these scene tokens form a compact visual bottleneck for the planner, they re</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 端到端自动驾驶中场景令牌瓶颈导致视觉信息丢失，提出NTR（神经令牌重建），通过重建丢失的视觉细节来充实场景令牌，提升下游轨迹规划性能。</p>
+  <p class="article-excerpt">The tasks of object removal and inpainting 3D Gaussian Splatting (3DGS) scenes face challenges such as 3D consistency across camera views. In comparing 2D inpainters and their suitability for the 3D domain, we find that reconstruction-based inpainters outperform generative diffusion models in 3D consistency. Integrating these 2D inpainters into different single-step methods for creating and finetuning 3DGS scenes, our results indicate that initializing the scene from scratch produces higher quality results than finetuning the existing scene. Using a state-of-the-art generative 2D inpainter, we create a straightforward baseline to underline the importance of object removal before inpainting in the 3D setting. Since 360{\deg} datasets rarely include real-world ground truths, and challenging occlusion scenarios are equally sparse, we introduce a novel multi-object scene with recorded ground truth data and many views with object occlusions.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 基准测试单步修复方法用于多物体3D高斯泼溅场景物体移除，发现基于重建的修复器在3D一致性上优于生成式扩散模型。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.31124" target="_blank" rel="noopener noreferrer">QVGGT: Post-Training Quantized Visual Geometry Grounded Transformer</a></h3>
+  <p class="article-authors">Zhizhen Pan, Hesong Wang, Huan Wang</p>
+  
   <p class="article-stats">world-model</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Estimating 3D attributes directly from images has advanced rapidly with the Visual Geometry Grounded Transformer (VGGT), which predicts camera parameters, depth maps, and point clouds in a single forward pass. However, its 1.2B-parameter scale severely limits deployment on resource-constrained platf</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> Visual Geometry Grounded Transformer（VGGT）参数达1.2B，难以部署。提出QVGGT，采用后训练量化，大幅降低模型大小和推理延迟，同时保持3D属性估计精度。</p>
-</article>
-<article class="article">
-  <h3 class="article-title"><a href="https://arxiv.org/abs/2605.31158" target="_blank" rel="noopener noreferrer">Light Interaction: Training-Free Inference Acceleration for Interactive Video World Models</a></h3>
-  <p class="article-stats">world-model</p>
-  <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Interactive video world models generate video chunk by chunk in response to user-controlled camera movements, enabling applications such as real-time game simulation, virtual scene navigation, and embodied AI training. However, scaling to long interactive trajectories is prohibitively expensive due </p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 交互式视频世界模型生成长轨迹计算昂贵，提出Light Interaction无训练推理加速方法，通过减轻冗余计算，在不重新训练下显著加速用户控制下的视频生成。</p>
+  <p class="article-excerpt">Estimating 3D attributes directly from images has advanced rapidly with the Visual Geometry Grounded Transformer (VGGT), which predicts camera parameters, depth maps, and point clouds in a single forward pass. However, its 1.2B-parameter scale severely limits deployment on resource-constrained platforms such as UAVs and mobile AR devices. To address this limitation, we introduce QVGGT, a tailored quantization framework designed to compress VGGT. Our approach starts from the observation that transformer blocks within VGGT exhibit heterogeneous sensitivity to quantization. We thus analyze per-block quantization sensitivity and propose a selective mixed-precision strategy that allocates higher precision to the most fragile transformer blocks. To address the amplification of quantization error caused by high-variance camera and register tokens, we further introduce token filtering with camera information compensation, which removes these outliers from activation calibration and restores their geometric cues using a PCA-derived global compensation token. Finally, we develop a task-aware scale search mechanism that evaluates candidate quantization scales not only through layer reconstruction but also through multi-head supervision and cross-head geometric consistency among camera poses, depth maps, and point maps. Extensive experiments on multiple geometry perception benchmarks demonstrate that QVGGT achieves near-lossless W4A16 quantization, preserving the accuracy of all 3D prediction heads while delivering 3$\sim$4.9$\times$ memory reduction and up to 2.8$\times$ real hardware speedup over FP32. Our approach makes high-fidelity 3D perception feasible on edge devices, enabling practical deployment of feed-forward 3D reconstruction models in real-world constrained environments.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出QVGGT，对Visual Geometry Grounded Transformer（VGGT）进行后训练量化，将1.2B参数模型压缩以适配资源受限平台，保持3D估计精度。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.31336" target="_blank" rel="noopener noreferrer">DecMem: Towards Minute-Long Consistent World Generation with Decoupled Memory</a></h3>
+  <p class="article-authors">Zhenhao Yang, Xiaoshi Wu, Zhengyao Lv, Xiaoyu Shi, Xintao Wang, Pengfei Wan, Kun Gai, Kwan-Yee K. Wong</p>
+  
   <p class="article-stats">world-model</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Recent advances in video generative models have promoted rapid progress in controllable world models. However, maintaining fine-grained spatio-temporal consistency under long-horizon reasoning remains a key challenge. In this work, we move beyond explicit 3D memory and coarse frame-level implicit mo</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 长期一致性仍是世界模型挑战，提出DecMem解耦记忆机制，结合显式3D记忆和隐式时序记忆，实现分钟级长视频生成中的细粒度时空一致性。</p>
+  <p class="article-excerpt">Recent advances in video generative models have promoted rapid progress in controllable world models. However, maintaining fine-grained spatio-temporal consistency under long-horizon reasoning remains a key challenge. In this work, we move beyond explicit 3D memory and coarse frame-level implicit modeling, and propose a fine-grained, learnable, and scalable memory for consistent world generation. We first identify two fundamental limitations of na\&quot;ive learnable memory architectures in long-horizon extrapolation, namely computational inefficiency and attention dispersion. Through a systematic analysis of attention dispersion, we propose DecMem, a decoupled memory architecture that employs Sparse Global Memory for efficient fine-grained access to global history and Anchored Local Memory for stable and high-quality extrapolation. Extensive experiments demonstrate that DecMem significantly outperforms current state-of-the-art methods. By ensuring precise and efficient long-term memory and achieving superior extrapolation capabilities, DecMem enables minute-level controllable long video generation with high fidelity and consistency.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出DecMem，通过解耦记忆实现分钟级一致的世界生成，结合显式3D记忆和隐式帧级记忆，维持长期时空一致性。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.31419" target="_blank" rel="noopener noreferrer">Triangle Splatting SLAM</a></h3>
+  <p class="article-authors">Nicholas Fry (Software Performance Optimisation Group, Imperial College London, Department of Computing, Imperial College London), Eric Dexheimer (Department of Computing, Imperial College London), Kirill Mazur (Department of Computing, Imperial College London), Paul H. J. Kelly (Software Performance Optimisation Group, Imperial College London, Department of Computing, Imperial College London), Andrew J. Davison (Department of Computing, Imperial College London)</p>
+  
   <p class="article-stats">world-model</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">We present a dense RGB-D SLAM system using differentiable triangles as the 3D map representation. While 3D Gaussian Splatting has emerged as the leading method for novel-view synthesis, triangles remain the standard primitive for traditional rendering hardware, game engines, and downstream tasks req</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出使用可微三角形作为3D地图表示的密集RGB-D SLAM系统，三角形是渲染和游戏引擎标准图元，相比高斯泼溅更利于下游任务，实现高效新视角合成和定位。</p>
+  <p class="article-excerpt">We present a dense RGB-D SLAM system using differentiable triangles as the 3D map representation. While 3D Gaussian Splatting has emerged as the leading method for novel-view synthesis, triangles remain the standard primitive for traditional rendering hardware, game engines, and downstream tasks requiring explicit geometry such as simulation, collision, and editing. Recent offline methods have demonstrated that an unstructured &#39;triangle soup&#39; can be optimised into a photorealistic mesh via Delaunay triangulation across a set of posed images. Building upon this insight, we present the first dense SLAM system to employ Triangle Splatting to perform both tracking and mapping through online differentiable rendering of a triangle soup. The map can be converted into a connected mesh on-the-fly via restricted Delaunay triangulation, enabling new online capabilities such as mesh deformation and collision checking. On Replica and TUM-RGBD, our system outperforms baselines on 3D geometry, matches the camera-tracking accuracy, and enables online mesh-based scene editing.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出Triangle Splatting SLAM，以可微三角形为3D地图表示的RGB-D SLAM系统，兼容传统渲染管线与游戏引擎，实现高保真稠密建图。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.31466" target="_blank" rel="noopener noreferrer">VolFill: Single-View Amodal 3D Scene Reconstruction with Volumetric Flow Matching</a></h3>
+  <p class="article-authors">Tuan Duc Ngo, Chuang Gan, Evangelos Kalogerakis</p>
+  
   <p class="article-stats">world-model</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Reconstructing the complete geometry of a scene from a single RGB image remains challenging - especially when inferring hidden structures where visual evidence is incomplete. We introduce VolFill, a generative framework that predicts the 3D structure of the complete scene rather than relying on trad</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 单张图像重建完整几何（含隐藏结构）极具挑战，提出VolFill基于体积流匹配的生成框架，预测完整场景3D结构，无需传统几何先验，能推理被遮挡部分。</p>
+  <p class="article-excerpt">Reconstructing the complete geometry of a scene from a single RGB image remains challenging - especially when inferring hidden structures where visual evidence is incomplete. We introduce VolFill, a generative framework that predicts the 3D structure of the complete scene rather than relying on traditional pixel-aligned regression. Our method utilizes a hybrid 3D VAE to compress sparse truncated unsigned distance function grids into a compact latent space, paired with a latent Diffusion Transformer that denoises this representation to recover the complete scene. We condition the generation on geometry foundation models, leveraging rich spatial priors for robust reasoning. Unlike existing methods limited by per-ray constraints or unstructured point-cloud queries, VolFill provides a structured representation that supports direct surface extraction and occupancy queries at scale. Extensive experiments on the SCRREAM and NRGB-D datasets demonstrate that our approach significantly outperforms current baselines, providing a robust foundation for holistic spatial understanding.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出VolFill，一种基于体素流匹配的生成式框架，从单张RGB图像重建完整场景几何，包括隐式结构，突破传统补全方法的局限性。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2605.31534" target="_blank" rel="noopener noreferrer">Feature-Optimized Vision for Adaptive 3D Scene Reconstruction</a></h3>
+  <p class="article-authors">Eric Liang</p>
+  
+  <p class="article-stats">world-model</p>
+  <p class="article-meta">06/01 12:00</p>
+  <p class="article-excerpt">Three-dimensional scene reconstruction depends on local image evidence that is both visually discriminative and geometrically useful. Fixed feature thresholds and uniform feature budgets are easy to deploy, but they can waste computation on repeated texture, low-parallax regions, or unstable points. This paper proposes an adaptive feature-optimized vision front end for 3D reconstruction. The method scores candidate features by texture, repeatability, distinctiveness, expected triangulation angle, and spatial coverage, then allocates a per-view feature budget to maximize useful tracks under a fixed reconstruction pipeline. A small synthetic multi-view prototype evaluates four selection policies across corridor, facade, object-table, and cluttered scenes. Compared with random, texture-only, and uniform-grid baselines, the adaptive policy obtains the best quality-aware completeness and the lowest aggregate reconstruction RMSE while preserving broad image coverage. The result is not a replacement for modern learned matching or neural reconstruction systems; it is a modular front-end policy that can make classical and learned 3D pipelines more deliberate about which visual evidence they spend compute on.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出特征优化视觉用于自适应3D场景重建，通过动态调整特征阈值和预算，避免在重复纹理或低視差区域浪费计算，提升重建效率。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2605.31535" target="_blank" rel="noopener noreferrer">RayDer: Scalable Self-Supervised Novel View Synthesis from Real-World Video</a></h3>
+  <p class="article-authors">Ulrich Prestel, Stefan Andreas Baumann, Nick Stracke, Bj\&quot;orn Ommer</p>
+  
+  <p class="article-stats">world-model</p>
+  <p class="article-meta">06/01 12:00</p>
+  <p class="article-excerpt">Self-supervised novel view synthesis (NVS) remains challenging to scale, despite the abundance of video data, largely due to the brittleness of training on realistic videos and the hard-to-predict scaling behavior of multi-network system designs. We introduce RayDer, a unified, feed-forward transformer that consolidates camera estimation, scene reconstruction, and rendering into a single backbone, turning self-supervised NVS into a well-posed single-model scaling problem. A minimal dynamic state, treated as a nuisance factor, absorbs time-varying content and enables stable training on unconstrained real-world video. Importantly, RayDer keeps static-scene NVS as its target task: dynamic content is leveraged purely as scalable supervision, not reconstructed as in dynamic-scene (4D) NVS. Across multiple model sizes and orders of magnitude in data, RayDer exhibits clean power-law scaling with data and compute, and outperforms static-scene data mixtures. On a large number of benchmarks, RayDer achieves strong zero-shot open-set performance competitive with state-of-the-art supervised approaches. Project Page: https://compvis.github.io/rayder</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出RayDer，统一的端到端Transformer用于自监督新视角合成，直接从真实世界视频训练，解决现有多网络系统部署脆弱性，实现可扩展推理。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2605.31577" target="_blank" rel="noopener noreferrer">SurGe: Improved Surface Geometry in Point Maps</a></h3>
+  <p class="article-authors">Karim Knaebel, Gonzalo Martin Garcia, Christian Schmidt, Ilya Fradlin, Lucas Nunes, Daan de Geus, Bastian Leibe</p>
+  
+  <p class="article-stats">world-model</p>
+  <p class="article-meta">06/01 12:00</p>
+  <p class="article-excerpt">Recent feedforward 3D reconstruction methods predict point maps and estimate global 3D geometry remarkably well. However, their predictions still exhibit inaccurate local surface geometry, which is clearly visible qualitatively but only weakly reflected in common metrics. To make these errors more explicit in evaluation, we introduce a point map normal metric that evaluates the local surface orientation induced by neighboring 3D predictions. To reduce these errors, we propose two complementary components: a point gradient matching loss that supervises depth-normalized 3D finite differences, and a Neighborhood Attention Decoder (NAD) that progressively upsamples features and uses Neighborhood Attention for local feature mixing. Across eight zero-shot monocular geometry benchmarks, our model, SurGe, achieves the best average rank for global point map AbsRel and consistently improves local point map and point map normal evaluations.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 改善前馈3D重建方法中预测点云的局部表面几何，提出SurGe，通过新指标和优化策略提升局部形状精度，弥补现有评价指标的不足。</p>
 </article>
   </div>
 <div class="source-content" data-source-content="arxiv-cv-other" data-sub="arxiv-papers" data-cat="tech">
     <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.30380" target="_blank" rel="noopener noreferrer">Lightweight SAR Ship Detection via Contrastive Distillation</a></h3>
+  <p class="article-authors">Surendar Devasundaram, Saber Latibari Banafsheh, Abhijit Mahalanobis</p>
+  
   <p class="article-stats">cv-other</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Deep convolutional and transformer-based detectors achieve strong performance for SAR ship detection but are often computationally prohibitive for real-time or onboard deployment. Lightweight models offer improved efficiency yet struggle to capture the complex structural relationships inherent in SA</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对SAR舰船检测中深度模型计算量大、轻量模型结构关系捕获不足的问题，提出对比蒸馏方法，将教师网络的结构知识通过对比学习蒸馏至轻量学生网络，实现高效检测并保持高精度。</p>
+  <p class="article-excerpt">Deep convolutional and transformer-based detectors achieve strong performance for SAR ship detection but are often computationally prohibitive for real-time or onboard deployment. Lightweight models offer improved efficiency yet struggle to capture the complex structural relationships inherent in SAR backscatter. Most existing SAR knowledge-distillation approaches rely on feature or logit matching, which enforces localized activation similarity while neglecting the geometric relationships among object representations. We propose a Structured Unified Relational knowledGE distillation framework for SAR Ship detection (SURGE) that transfers relational geometry from a powerful teacher detector to a compact student detector using a contrastive InfoNCE objective in a shared projection embedding space. To the best of our knowledge, this work presents the first transformer-based SAR ship detector knowledge distillation framework in SAR domain. The framework is architecture-agnostic in the sense that it provides a common region-level distillation interface for two-stage, one-stage and transformer-based detectors without modifying their deployed architectures. Experiments on the SSDD and HRSID benchmarks demonstrate that the proposed method yields substantial improvements for two-stage detectors, achieving up to 6.2 mAP and 8.0 AP75 gains over baseline student and even surpassing teacher performance</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对SAR舰船检测中深度模型计算开销大的问题，提出基于对比蒸馏的轻量检测方法，在保持结构关系捕捉能力的同时大幅降低推理成本，适用于实时或星上部署。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.30437" target="_blank" rel="noopener noreferrer">Mitigating Content Shift and Hallucination in GenAI Image Editing via Structural Refinement</a></h3>
+  <p class="article-authors">Luxi Zhao, Michael S. Brown</p>
+  
   <p class="article-stats">cv-other</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Generative AI (GenAI) image editors, such as Nano Banana, produce visually compelling results for retouching tasks, enabling non-experts to edit images through text prompts alone. However, the generative nature of these models often introduces spatial misalignment, texture distortion, and content ha</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 生成式AI图像编辑常产生空间错位和幻觉，提出结构精化方法，显式约束编辑区域的结构一致性，减少内容偏移和纹理失真，提升文本驱动编辑的保真度。</p>
+  <p class="article-excerpt">Generative AI (GenAI) image editors, such as Nano Banana, produce visually compelling results for retouching tasks, enabling non-experts to edit images through text prompts alone. However, the generative nature of these models often introduces spatial misalignment, texture distortion, and content hallucination, all of which are detrimental to downstream workflows that require pixel-level fidelity. We identify a problem setting we call &quot;structure-preserving GenAI fusion&quot; for black-box GenAI image retouching: retain the perceptual enhancements of a GenAI output while enforcing structural faithfulness to the original input image. To address this problem, we propose a post-processing framework that fuses an input image with its GenAI-enhanced counterpart by first establishing coarse spatial and photometric correspondences, then performing a fusion stage that transfers desired enhancements while suppressing hallucinated content. In the absence of direct prior work in this setting, we evaluate our framework against representative methods from photorealistic style transfer and image fusion. Our experiments demonstrate that our method better preserves aesthetic quality while maintaining pixel-level structural consistency and the input resolution.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对GenAI图像编辑中的内容偏移与幻觉问题，提出结构精细化方法，通过空间对齐与纹理校正，减轻生成模型导致的伪影和内容错误。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.30467" target="_blank" rel="noopener noreferrer">Clustering Guided Domain-Specific Pretrained Foundation Model Very High-Resolution Arctic Remote Sensing</a></h3>
+  <p class="article-authors">Amal S. Perera, Chandi Witharana, Elias Manos, Michael Pimenta, Anna K. Liljedahl</p>
+  
   <p class="article-stats">cv-other</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">This study introduces a novel Arctic-focused remote sensing foundation model (RSFM) by combining diversity-aware regional-scale image curation with masked autoencoder (MAE) self-supervised pretraining of a Vision Transformer (ViT) encoder for very-high-spatial-resolution (VHSR) satellite image analy</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对北极高分辨率遥感图像分析，提出结合聚类引导的领域特定预训练基础模型，采用多样性感知图像筛选与掩码自编码器（MAE）在Vision Transformer上自监督预训练，提升北极场景理解能力。</p>
+  <p class="article-excerpt">This study introduces a novel Arctic-focused remote sensing foundation model (RSFM) by combining diversity-aware regional-scale image curation with masked autoencoder (MAE) self-supervised pretraining of a Vision Transformer (ViT) encoder for very-high-spatial-resolution (VHSR) satellite image analysis. Spectral and acquisition-metadata descriptors were used in a scalable affinity-propagation clustering workflow to select approximately 3 million chips from 267 TB of Vantor VHSR imagery This curation strategy was designed to reduce oversampling of visually repetitive or low-information areas while preserving broad scene diversity across the study domain. We pretrained a ViT-Large encoder on the curated corpus using a domain-adapted MAE reconstruction objective, producing Arctic-specific transformer weights for downstream feature mapping. The pretrained encoder was integrated into an existing location-aware detection and segmentation framework and evaluated across four hand-labeled Arctic datasets. Compared to ImageNet-initialized ViT-Large baseline, Arctic MAE pretraining produced consistent improvements in foreground mean F1 scores of 0.87, 0.72, 0.93, and 0.87, for infrastructure, IWP, RTS, and TCNs, with approximately 5-8 percentage increase. The proposed model also outperformed Prithvi-EO-2.0 in all downstream comparisons, with the smallest gain corresponding to at least a 15 percentage improvement mean F1, suggesting that domain-specific self-supervised pretraining on curated Arctic VHSR imagery provides more transferable representations for fine-scale Arctic mapping than a general-purpose Earth observation foundation model. These results demonstrate that optimizing the pretraining data distribution at regional scale, while keeping the architecture and MAE objective fixed, can produce a reusable Arctic-domain encoder for multiple VHSR remote sensing applications.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 面向北极地区极高分遥感影像，提出分簇引导的领域专用基础模型，结合多样性感知的区域训练集和MAE自监督预训练ViT编码器，提升区域分析性能。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.30510" target="_blank" rel="noopener noreferrer">A Novel Global Context-aware Deep Neural Network for Enhanced Brain Tumor Segmentation using Magnetic Resonance Images</a></h3>
+  <p class="article-authors">Sourjya Mukherjee, Ananya Bhattacharjee, R. Murugan</p>
+  
   <p class="article-stats">cv-other</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Brain cancer&#39;s severity necessitates precise brain tumor segmentation, which is crucial for effective brain tumor diagnosis. Manual identification, burdened by high costs, labor, and error risks, highlights the need for automated methods. In this study, we introduce the Global Context-aware Squeeze </p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对脑肿瘤分割，提出全局上下文感知Squeeze-and-Excitation网络，利用MRI图像增强分割精度，通过全局上下文建模自动精确分割肿瘤区域，减少人工标注依赖。</p>
+  <p class="article-excerpt">Brain cancer&#39;s severity necessitates precise brain tumor segmentation, which is crucial for effective brain tumor diagnosis. Manual identification, burdened by high costs, labor, and error risks, highlights the need for automated methods. In this study, we introduce the Global Context-aware Squeeze and Excite Residual UNet (GCSER-UNet), which facilitates a fusion of spatial and channel-wise attention and thus enhances the model&#39;s capacity to capture intricate spatial dependencies and contextual information. GCSER-UNet efficiently extracts tumor segments from multimodal MRI slices, delivering exceptional performance. Evaluations on benchmark databases exhibit its superiority, achieving a notable 94 percent dice score on the TCGA LGG dataset, surpassing the state-of-the-art dice score of 91.8 percent. In the BraTS 2020 dataset, the proposed GCSER-UNet ensemble approach yielded dice scores of 95 percent, 92 percent, and 90 percent for the tumor regions - Whole Tumor (W), Tumor Core (T), and Enhancing Tumor (E), respectively. The current state-of-the-art dice scores were 94 percent, 93 percent, and 88 percent. These compelling outcomes highlight the efficacy of GCSER-UNet in precise brain tumor segmentation and thus can aid neurologists in effective brain cancer management and treatment planning.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出全局上下文感知Squeeze-and-Excitation深度神经网络，用于MRI脑肿瘤分割，通过捕获全局上下文提升分割精度。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://arxiv.org/abs/2605.30544" target="_blank" rel="noopener noreferrer">On-Device Generative AI for GDPR-Compliant Visual Monitoring: Natural Language Alerts from Local Object Detection</a></h3>
+  <p class="article-authors">Gudrun Schappacher-Tilp, Nicoletta Kaehling, Jan Kornberger, Egon Teiniker</p>
+  
   <p class="article-stats">cv-other</p>
   <p class="article-meta">06/01 12:00</p>
-  <p class="article-excerpt">Visual monitoring systems that rely on cloud-based AI inference expose raw image data to external services, creating fundamental tensions with the data-minimisation principle of the General Data Protection Regulation (GDPR). This paper presents a proof-of-concept privacy-by-design pipeline that reso</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对云AI视觉监控违反GDPR数据最小化原则，提出设备端隐私保护流程，将目标检测和自然语言警报生成部署在本地，仅输出文本警报，避免原始图像外传。</p>
+  <p class="article-excerpt">Visual monitoring systems that rely on cloud-based AI inference expose raw image data to external services, creating fundamental tensions with the data-minimisation principle of the General Data Protection Regulation (GDPR). This paper presents a proof-of-concept privacy-by-design pipeline that resolves this tension by confining all inference entirely to the edge device. A YOLOv5n-seg model compiled for a Hailo-8L AI accelerator delivers real-time object detection on a Raspberry Pi 5, from which raw pixel buffers are immediately discarded after inference. A stateful trigger engine forwards minimal JSON event payloads to a locally hosted instance of Phi-3 Mini (3.8B parameters, Q4_0 quantisation), which synthesises one-to-two sentence natural-language alerts for a human operator. No image data crosses the network boundary at any point; only the generated text alert is transmitted. We describe the full system architecture and implementation, report measured inference latency and resource utilisation on the target hardware, and present representative generated alerts. The results demonstrate that combining a dedicated neural-network accelerator with an on-device large language model on a single-board computer is not only feasible but produces practically deployable, human-readable monitoring output while aligning with GDPR Art. 5(1)(c) by design.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出符合GDPR隐私设计原则的设备端视觉监控管线，本地执行目标检测并生成自然语言警报，避免原始图像上传至云端。</p>
 </article>
   </div>
     </div>
@@ -797,152 +905,184 @@
       <div class="source-content active" data-source-content="huggingface-papers" data-sub="trending-papers" data-cat="tech">
     <article class="article">
   <h3 class="article-title"><a href="https://huggingface.co/papers/2605.29307" target="_blank" rel="noopener noreferrer">GrepSeek: Training Search Agents for Direct Corpus Interaction</a></h3>
-  <p class="article-stats">👍 63</p>
+  
+  
+  <p class="article-stats">👍 68</p>
   <p class="article-meta">05/28 08:00</p>
   <p class="article-excerpt">Large Language Model (LLM) search agents have shown strong promise for knowledge-intensive language tasks through multiple rounds of reasoning and information retrieval. Most existing systems access information using a retriever that takes a keyword or natural language query and returns a ranked lis</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> GrepSeek训练LLM搜索代理直接与语料库交互，替代传统检索器返回排名列表的方式，通过多轮推理和直接搜索操作提升知识密集型任务性能。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出GrepSeek，训练LLM搜索代理直接与语料库交互，取代传统排名检索范式。通过多轮推理与直接模式匹配，提升知识密集型任务的表现。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://huggingface.co/papers/2605.31264" target="_blank" rel="noopener noreferrer">COLLEAGUE.SKILL: Automated AI Skill Generation via Expert Knowledge Distillation</a></h3>
-  <p class="article-stats">👍 61</p>
+  
+  
+  <p class="article-stats">👍 66</p>
   <p class="article-meta">05/29 08:00</p>
   <p class="article-excerpt">LLM agents are increasingly expected not only to complete isolated tasks, but also to carry bounded representations of human expertise, judgment, and interaction style. Building such person-grounded agents remains difficult because actionable knowledge associated with a person or role is usually emb</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> COLLEAGUE.SKILL通过专家知识蒸馏自动生成AI技能，使LLM代理承载人类专业知识、判断和交互风格，解决人工构建接地于人代理的困难。</p>
-</article>
-<article class="article">
-  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.31584" target="_blank" rel="noopener noreferrer">LongTraceRL: Learning Long-Context Reasoning from Search Agent Trajectories with Rubric Rewards</a></h3>
-  <p class="article-stats">👍 31</p>
-  <p class="article-meta">05/29 08:00</p>
-  <p class="article-excerpt">Long-context reasoning remains a central challenge for large language models, which often fail to locate and integrate key information in extensive distracting content. Reinforcement learning with verifiable rewards (RLVR) has shown promise for this task, yet existing methods are limited by low-conf</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> LongTraceRL利用搜索代理轨迹和「Rubric奖励」进行强化学习，解决大语言模型长上下文推理中难以定位和整合关键信息的问题，超越现有RLVR方法。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出COLLEAGUE.SKILL，通过专家知识蒸馏自动生成AI技能，使LLM代理具备人类专长、判断与交互风格。缓解构建角色化代理的知识瓶颈。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://huggingface.co/papers/2605.31159" target="_blank" rel="noopener noreferrer">Trust-Region Behavior Blending for On-Policy Distillation</a></h3>
-  <p class="article-stats">👍 29</p>
+  
+  
+  <p class="article-stats">👍 42</p>
   <p class="article-meta">05/29 08:00</p>
   <p class="article-excerpt">On-policy distillation (OPD) trains a student on prefixes sampled from its own policy while matching a stronger teacher. This addresses the prefix mismatch of offline distillation, but early student rollouts can still be poor, placing teacher supervision on weak or low-quality prefixes. We propose T</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> Trust-Region Behavior Blending（信任域行为混合）改进在线蒸馏，通过约束学生rollout与教师行为的一致性，缓解早期低质量前缀导致的监督弱化问题。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出Trust-Region Behavior Blending，在在线策略蒸馏中通过信任区域混合教师和学生行为，缓解学生早期低质量前缀导致的监督偏移问题。</p>
 </article>
 <article class="article">
-  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.31075" target="_blank" rel="noopener noreferrer">Task-Focused Memorization for Multimodal Agents</a></h3>
-  <p class="article-stats">👍 23</p>
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.31584" target="_blank" rel="noopener noreferrer">LongTraceRL: Learning Long-Context Reasoning from Search Agent Trajectories with Rubric Rewards</a></h3>
+  
+  
+  <p class="article-stats">👍 31</p>
   <p class="article-meta">05/29 08:00</p>
-  <p class="article-excerpt">Long-term memory is essential for multimodal agents to build coherent experience, accumulate world knowledge, and achieve continual learning. However, constructing effective memory goes beyond memory module design and basic requirements such as accuracy and fidelity; the key challenge lies in determ</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> Task-Focused Memorization提出任务导向的记忆机制，使多模态代理能根据当前目标决定存储和检索哪些经验，而非仅追求准确性和保真度。</p>
-</article>
-<article class="article">
-  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.30819" target="_blank" rel="noopener noreferrer">Function2Scene: 3D Indoor Scene Layout from Functional Specifications</a></h3>
-  <p class="article-stats">👍 23</p>
-  <p class="article-meta">05/29 08:00</p>
-  <p class="article-excerpt">Most text-driven 3D indoor scene synthesis methods generate rooms from object-centric prompts, asking what furniture should be placed rather than how the space is used. Yet in real interior design, a layout is judged by how well it supports its occupants, e.g., their activities and physical needs. W</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> Function2Scene从功能规格（如活动、物理需求）生成3D室内布局，而非仅靠对象提示，使布局更能支持居住者实际使用。</p>
+  <p class="article-excerpt">Long-context reasoning remains a central challenge for large language models, which often fail to locate and integrate key information in extensive distracting content. Reinforcement learning with verifiable rewards (RLVR) has shown promise for this task, yet existing methods are limited by low-conf</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出LongTraceRL，利用搜索代理轨迹与评分规则奖励（Rubric Rewards）进行强化学习，提升长上下文推理中关键信息定位与整合能力。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://huggingface.co/papers/2605.31268" target="_blank" rel="noopener noreferrer">Mellum2 Technical Report</a></h3>
-  <p class="article-stats">👍 20</p>
+  
+  
+  <p class="article-stats">👍 28</p>
   <p class="article-meta">05/29 08:00</p>
   <p class="article-excerpt">We present Mellum 2, an open-weight 12B-parameter Mixture-of-Experts (MoE) language model with 2.5B active parameters per token. Mellum 2 is a general-purpose language model specialized in software engineering, spanning code generation and editing, debugging, multi-step reasoning, tool use and funct</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> Mellum2是一个12B参数的MoE开源语言模型（2.5B活跃参数），专精软件工程，覆盖代码生成、编辑、调试、多步推理和工具使用。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Mellum2 是一款开源12B参数MoE语言模型（每token仅2.5B激活），专注软件工程任务，涵盖代码生成、编辑、调试、多步推理与工具调用。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.30819" target="_blank" rel="noopener noreferrer">Function2Scene: 3D Indoor Scene Layout from Functional Specifications</a></h3>
+  
+  
+  <p class="article-stats">👍 25</p>
+  <p class="article-meta">05/29 08:00</p>
+  <p class="article-excerpt">Most text-driven 3D indoor scene synthesis methods generate rooms from object-centric prompts, asking what furniture should be placed rather than how the space is used. Yet in real interior design, a layout is judged by how well it supports its occupants, e.g., their activities and physical needs. W</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出Function2Scene，从功能规格（如活动与物理需求）生成3D室内布局，而非仅基于家具提示。提升布局对空间用途的支撑性评估。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.31075" target="_blank" rel="noopener noreferrer">Task-Focused Memorization for Multimodal Agents</a></h3>
+  
+  
+  <p class="article-stats">👍 23</p>
+  <p class="article-meta">05/29 08:00</p>
+  <p class="article-excerpt">Long-term memory is essential for multimodal agents to build coherent experience, accumulate world knowledge, and achieve continual learning. However, constructing effective memory goes beyond memory module design and basic requirements such as accuracy and fidelity; the key challenge lies in determ</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出Task-Focused Memorization，指导多模态代理根据任务需求选择性存储经验，实现连贯体验与世界知识积累，超越简单准确率要求。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://huggingface.co/papers/2605.30407" target="_blank" rel="noopener noreferrer">Exploring Autonomous Agentic Data Engineering for Model Specialization</a></h3>
+  
+  
   <p class="article-stats">👍 17</p>
   <p class="article-meta">05/28 08:00</p>
   <p class="article-excerpt">Large Language Models (LLMs) have demonstrated strong performance on general tasks, while often struggling to adapt to specialized domains without high-quality domain-specific data. Existing LLM-based data curation methods primarily rely on human-designed workflows, leaving it unexamined whether LLM</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 探索自主智能体数据工程，让LLM自动生成领域特定数据用于模型专业化，无需人工设计数据流程，展示LLM在数据工程中的自主能力。</p>
-</article>
-<article class="article">
-  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.30876" target="_blank" rel="noopener noreferrer">dMoE: dLLMs with Learnable Block Experts</a></h3>
-  <p class="article-stats">👍 15</p>
-  <p class="article-meta">05/29 08:00</p>
-  <p class="article-excerpt">Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive models, offering competitive performance while naturally supporting parallel decoding. However, as dLLMs are increasingly integrated with Mixture-of-Experts (MoE) architectures to scale model c</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> dMoE将扩散语言模型与MoE结合，引入可学习的块专家（Learnable Block Experts），在保持并行解码优势的同时扩展模型容量。</p>
-</article>
-<article class="article">
-  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.29796" target="_blank" rel="noopener noreferrer">SAAS: Self-Aware Reinforcement Learning for Over-Search Mitigation in Agentic Search</a></h3>
-  <p class="article-stats">👍 14</p>
-  <p class="article-meta">05/28 08:00</p>
-  <p class="article-excerpt">Agentic search enables LLMs to solve complex multi-hop questions through iterative reasoning and external search. Despite the effectiveness, these systems often suffer from a critical limitation in practice: agents fail to recognize their own knowledge boundaries, blindly triggering searches when in</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> SAAS（Self-Aware RL）通过自我意识强化学习缓解代理搜索中的过度搜索问题，使模型在知识边界内推理，避免盲目触发外部检索。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 探索自主Agent数据工程，让LLM代理自主设计并执行数据 curation 流程，生成高质量领域特定数据，实现模型专业化，减少人工干预。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://huggingface.co/papers/2605.31029" target="_blank" rel="noopener noreferrer">PEEK: Picking Essential frames via Efficient Knowledge distillation</a></h3>
-  <p class="article-stats">👍 14</p>
+  
+  
+  <p class="article-stats">👍 15</p>
   <p class="article-meta">05/29 08:00</p>
   <p class="article-excerpt">Video-language models can process only a limited number of frames, making frame selection a key bottleneck for efficient video captioning. Most captioning pipelines still rely on uniform sampling, which is computationally cheap but agnostic to visual content. Adaptive frame sampling has recently eme</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> PEEK通过高效知识蒸馏选择视频中的关键帧，替代均匀采样，在有限帧数下提升视频字幕生成质量，降低计算开销。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出PEEK，通过高效知识蒸馏从视频中挑选关键帧，替代均匀采样，提升视频字幕效率与准确性，同时降低计算开销。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.30876" target="_blank" rel="noopener noreferrer">dMoE: dLLMs with Learnable Block Experts</a></h3>
+  
+  
+  <p class="article-stats">👍 15</p>
+  <p class="article-meta">05/29 08:00</p>
+  <p class="article-excerpt">Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive models, offering competitive performance while naturally supporting parallel decoding. However, as dLLMs are increasingly integrated with Mixture-of-Experts (MoE) architectures to scale model c</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出dMoE，在扩散语言模型中引入可学习块专家，解决MoE架构与dLLM结合时的训练与推理难题，同时支持并行解码。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.29796" target="_blank" rel="noopener noreferrer">SAAS: Self-Aware Reinforcement Learning for Over-Search Mitigation in Agentic Search</a></h3>
+  
+  
+  <p class="article-stats">👍 14</p>
+  <p class="article-meta">05/28 08:00</p>
+  <p class="article-excerpt">Agentic search enables LLMs to solve complex multi-hop questions through iterative reasoning and external search. Despite the effectiveness, these systems often suffer from a critical limitation in practice: agents fail to recognize their own knowledge boundaries, blindly triggering searches when in</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出SAAS，通过自我感知强化学习让代理识别自身知识边界，减少不必要的搜索，缓解代理搜索中的过度搜索问题。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://huggingface.co/papers/2605.29447" target="_blank" rel="noopener noreferrer">Recovering Policy-Induced Errors: Benchmarking and Trajectory Synthesis for Robust GUI Agents</a></h3>
+  
+  
   <p class="article-stats">👍 14</p>
   <p class="article-meta">05/28 08:00</p>
   <p class="article-excerpt">While GUI agents have advanced rapidly, they often lack the robustness to recover from their own errors, hindering real-world deployment. To bridge this gap at both the evaluation and data levels, we introduce GUI-RobustEval and propose Robustness-driven Trajectory Synthesis. GUI-RobustEval contains</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> GUI-RobustEval基准评估GUI代理的错误恢复能力，并提出鲁棒轨迹合成方法生成多样失败-恢复轨迹，提升代理的鲁棒性。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 引入GUI-RobustEval基准与鲁棒性驱动的轨迹合成方法，提升GUI代理从自身错误中恢复的能力，促进实际部署稳健性。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://huggingface.co/papers/2605.31042" target="_blank" rel="noopener noreferrer">From Prompt Injection to Persistent Control: Defending Agentic Harness Against Trojan Backdoors</a></h3>
+  
+  
   <p class="article-stats">👍 13</p>
   <p class="article-meta">05/29 08:00</p>
   <p class="article-excerpt">LLM agents are evolving from conversational chatbots to operational tools in real-world workspaces. In local agentic harnesses, an LLM can read and write files, call tools, and reuse workspace state across sessions. While such capabilities enhance utility, they also expose a new attack surface for a</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对本地代理式工具中LLM可读写文件、调用工具等能力引入的特洛伊木马后门攻击面，提出防御方法实现从提示注入到持久控制的防护。</p>
-</article>
-<article class="article">
-  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.30434" target="_blank" rel="noopener noreferrer">LongDS-Bench: On the Failure of Long-Horizon Agentic Data Analysis</a></h3>
-  <p class="article-stats">👍 13</p>
-  <p class="article-meta">05/28 08:00</p>
-  <p class="article-excerpt">Real-world data analysis is inherently iterative, yet existing benchmarks mostly evaluate isolated or short interactive tasks, leaving agents&#39; ability to track evolving analytical context over long horizons untested. We introduce LongDS, a benchmark for long-horizon, multi-turn data analysis where a</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> LongDS-Bench引入长时域多轮数据分析基准，测试代理在迭代分析中追踪演变上下文的能力，揭示现有代理在长周期任务中的失败模式。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对本地代理框架中木马后门攻击（从提示注入到持久控制），提出防御策略，保护LLM代理在读写文件、调用工具等操作中的安全性。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://huggingface.co/papers/2605.31336" target="_blank" rel="noopener noreferrer">DecMem: Towards Minute-Long Consistent World Generation with Decoupled Memory</a></h3>
-  <p class="article-stats">👍 5</p>
+  
+  
+  <p class="article-stats">👍 7</p>
   <p class="article-meta">05/29 08:00</p>
   <p class="article-excerpt">Recent advances in video generative models have promoted rapid progress in controllable world models. However, maintaining fine-grained spatio-temporal consistency under long-horizon reasoning remains a key challenge. In this work, we move beyond explicit 3D memory and coarse frame-level implicit mo</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> DecMem提出解耦记忆机制，将显式3D记忆与粗粒度帧级隐式记忆分离，实现分钟级长视频生成中细粒度时空一致性。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出DecMem，采用解耦记忆机制实现分钟级一致的世界生成，在长时间推理中保持细粒度时空一致性，超越显式3D记忆与粗帧级方法。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://huggingface.co/papers/2605.31598" target="_blank" rel="noopener noreferrer">Linear Scaling Video VLMs for Long Video Understanding</a></h3>
+  
+  
   <p class="article-stats">👍 5</p>
   <p class="article-meta">05/29 08:00</p>
   <p class="article-excerpt">Video vision-language models (VLMs) are increasingly used in long-horizon and streaming settings, yet most video encoders still rely on spatiotemporal self-attention, causing compute and latency to grow quadratically with the number of frames. Existing efficiency methods improve scalability but ofte</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出线性缩放视频VLM，替代二次复杂度的时空自注意力，在长视频理解中大幅降低计算和延迟，同时保持性能。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出线性复杂度视频视觉语言模型，解决长视频理解中自注意力计算量随帧数二次增长的问题，同时保持性能。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://huggingface.co/papers/2605.23657" target="_blank" rel="noopener noreferrer">OpenSkillEval: Automatically Auditing the Open Skill Ecosystem for LLM Agents</a></h3>
+  
+  
   <p class="article-stats">👍 4</p>
   <p class="article-meta">05/28 08:00</p>
   <p class="article-excerpt">Skills, i.e., structured workflow instructions distilled for large language models (LLMs), are becoming an increasingly important mechanism for improving agent performance on real-world downstream tasks. However, as the open-source skill ecosystem rapidly expands, it remains unclear how different mo</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> OpenSkillEval自动审计开源技能生态，评估不同LLM在结构化工作流指令上的表现，揭示模型与技能间的匹配差异。</p>
-</article>
-<article class="article">
-  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.21781" target="_blank" rel="noopener noreferrer">Reflective Prompt Tuning through Language Model Function-Calling</a></h3>
-  <p class="article-stats">👍 4</p>
-  <p class="article-meta">05/20 08:00</p>
-  <p class="article-excerpt">Large language models (LLMs) have become increasingly capable of following instructions and complex reasoning, making prompting a flexible interface for adapting models without parameter updates. Yet prompt design remains labor-intensive and highly sensitive to formatting, phrasing, and instruction </p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> Reflective Prompt Tuning通过语言模型函数调用自动迭代优化提示，无需参数更新，降低人工设计提示的敏感性和劳动强度。</p>
-</article>
-<article class="article">
-  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.21625" target="_blank" rel="noopener noreferrer">Flat-Pack Bench: Evaluating Spatio-Temporal Understanding in Large Vision-Language Models through Furniture Assembly</a></h3>
-  <p class="article-stats">👍 3</p>
-  <p class="article-meta">05/20 08:00</p>
-  <p class="article-excerpt">The emergence of Large Vision-Language Models (LVLMs) has significantly advanced video understanding capabilities. However, existing benchmarks focus predominantly on coarse-grained tasks such as action segmentation, classification, captioning, and retrieval. Furthermore, these benchmarks often rely</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> Flat-Pack Bench通过家具组装任务评估大型视觉语言模型（LVLM）的细粒度时空理解能力，弥补现有粗粒度基准的不足。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出OpenSkillEval，自动审计开源技能生态系统中不同LLM代理的技能质量，评估结构化工作流指令对下游任务的提升效果。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://huggingface.co/papers/2605.31503" target="_blank" rel="noopener noreferrer">How can embedding models bind concepts?</a></h3>
-  <p class="article-stats">👍 2</p>
+  
+  
+  <p class="article-stats">👍 3</p>
   <p class="article-meta">05/29 08:00</p>
   <p class="article-excerpt">Humans easily determine which color belongs to which shape in multi-object scenes, an ability known as concept binding. Vision-language embedding models such as CLIP struggle with binding: they recognize individual concepts but fail to represent which concepts form which objects. Although CLIP behav</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 研究CLIP等嵌入模型的概念绑定能力，分析其在多物体场景中无法正确匹配颜色与形状的原因，并提出改进方向。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 研究视觉语言嵌入模型（如CLIP）的概念绑定能力，揭示其无法区分多物体场景中各属性-对象组合的根源，并探索提升绑定效果的路径。</p>
 </article>
-  </div>
-    </div>
-  </div>
-<div class="sub-content" data-sub-content="x-viral" data-cat="tech">
-    
-    <div class="source-contents">
-      <div class="source-content active" data-source-content="attentionvc-ai" data-sub="x-viral" data-cat="tech">
-    <p class="empty">该源今日无内容。</p>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.21625" target="_blank" rel="noopener noreferrer">Flat-Pack Bench: Evaluating Spatio-Temporal Understanding in Large Vision-Language Models through Furniture Assembly</a></h3>
+  
+  
+  <p class="article-stats">👍 3</p>
+  <p class="article-meta">05/20 08:00</p>
+  <p class="article-excerpt">The emergence of Large Vision-Language Models (LVLMs) has significantly advanced video understanding capabilities. However, existing benchmarks focus predominantly on coarse-grained tasks such as action segmentation, classification, captioning, and retrieval. Furthermore, these benchmarks often rely</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出Flat-Pack Bench，利用家具组装任务精细化评估大视觉语言模型的时空理解能力，弥补现有基准在细粒度动作推理上的不足。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.28992" target="_blank" rel="noopener noreferrer">FRAPPE: Full Input, Residual Output Autoencoding with Projection Pursuit Encoder</a></h3>
+  
+  
+  <p class="article-stats">👍 3</p>
+  <p class="article-meta">05/27 08:00</p>
+  <p class="article-excerpt">Media compression standards have reached a plateau in terms of the rate-distortion-complexity trade-off, limiting the ability to offload expensive AI perception to the cloud in applications like robotics, wearables, and remote sensing. DNN-based codecs improve compression efficiency, but at a cost: </p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出FRAPPE，采用全输入残差输出自编码与投影追踪编码器，在保持高压缩效率的同时降低复杂度，适用于机器人、可穿戴等云端卸载场景。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2605.30011" target="_blank" rel="noopener noreferrer">VisualThink-VLA: Visual Intermediate Reasoning for Effective and Low-Latency Vision-Language-Action Policies</a></h3>
+  
+  
+  <p class="article-stats">👍 2</p>
+  <p class="article-meta">05/28 08:00</p>
+  <p class="article-excerpt">Recent work has begun to equip vision-language-action (VLA) policies with explicit intermediate reasoning. In embodied control, however, textual chain-of-thought is a poor fit: irrelevant or weakly textual information can interfere with action prediction, while autoregressive text decoding adds too </p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出VisualThink-VLA，用视觉中间推理替代文本思维链，实现低延迟且有效的视觉-语言-动作策略，避免文本解码干扰动作预测。</p>
+</article>
   </div>
     </div>
   </div>
@@ -951,109 +1091,139 @@
     <div class="source-contents">
       <div class="source-content active" data-source-content="_merged" data-sub="ai-news" data-cat="tech">
     <article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption" target="_blank" rel="noopener noreferrer">Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic</a></h3>
+  
+  
+  
+  <p class="article-meta">Hugging Face Blog · 06/01 21:51</p>
+  
+  <p class="article-summary"><span class="summary-label">中文介绍</span> IBM研究指出，企业大规模采用AI的关键在于智能体逻辑，而非仅依赖大语言模型。</p>
+</article>
+<article class="article">
   <h3 class="article-title"><a href="https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai" target="_blank" rel="noopener noreferrer">Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action</a></h3>
+  
+  
   
   <p class="article-meta">Hugging Face Blog · 06/01 12:44</p>
   
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 英伟达推出Cosmos 3，这是首个面向物理AI推理与行动的开放全模态模型，旨在推动机器人和具身智能等物理智能领域的发展。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> NVIDIA发布Cosmos 3，号称首个开源全模态模型，专为物理世界的AI推理与行动设计。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://tldr.tech/ai/2026-06-01" target="_blank" rel="noopener noreferrer">Copilot super app leaks 🤖, Minimax M3 ➕, Nvidia N1X ⚡️</a></h3>
   
+  
+  
   <p class="article-meta">TLDR AI · 06/01 08:00</p>
   
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 据TLDR AI报道，Copilot超级应用泄露，Minimax发布M3模型，英伟达推出N1X芯片，成为当日AI领域三大热点。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> TLDR AI简报：Copilot超级应用泄漏、Minimax M3和Nvidia N1X芯片等最新动态。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://www.latent.space/p/ainews-founders-and-forward-deployed" target="_blank" rel="noopener noreferrer">[AINews] Founders and Forward Deployed Engineers</a></h3>
   
+  
+  
   <p class="article-meta">Latent Space · 05/30 09:57</p>
   <p class="article-excerpt">a quiet day lets us highlight the new AIE WF focuses</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> AI新闻相对平静，Latent Space重点介绍了AI工程工作流的全新关注点，强调创始人和前向部署工程师的角色。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Latent Space的AI新闻简报：在相对平静的一天，重点介绍了新的AIE工作流关注点。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://openai.com/index/boston-childrens-hospital" target="_blank" rel="noopener noreferrer">Boston Children’s uses AI to unlock new diagnoses</a></h3>
   
+  
+  
   <p class="article-meta">OpenAI News · 05/29 20:00</p>
   <p class="article-excerpt">Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases.</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 波士顿儿童医院利用OpenAI技术改善患者护理、降低运营负担，并成功帮助诊断超过40种罕见疾病病例。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 波士顿儿童医院利用OpenAI技术改善患者护理、减轻运营负担，并已帮助诊断超过40种罕见疾病病例。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://openai.com/index/braintrust" target="_blank" rel="noopener noreferrer">How Braintrust turns customer requests into code with Codex</a></h3>
   
+  
+  
   <p class="article-meta">OpenAI News · 05/29 20:00</p>
   <p class="article-excerpt">How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster.</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> Braintrust公司工程师利用OpenAI Codex和GPT-5.5，将客户请求快速转化为代码，大幅加速实验和开发效率。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Braintrust工程师使用Codex结合GPT-5.5，将客户请求快速转化为代码，加速实验和开发。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://www.technologyreview.com/2026/05/29/1138107/how-the-popes-magnifica-humanitas-offers-a-template-for-individuals-to-meet-the-ai-moment/" target="_blank" rel="noopener noreferrer">How the Pope’s Magnifica Humanitas offers a template for individuals to meet the AI moment</a></h3>
   
+  
+  
   <p class="article-meta">MIT Tech Review AI · 05/29 18:00</p>
   <p class="article-excerpt">Pope Leo XIV’s new encyclical on artificial intelligence includes a statement that warrants serious attention from technologists and policymakers: “Technology is never neutral.” Magnifica Humanitas (“Magnificent Humanity”) is a clarion call to all people to act with courage and solidarity as we ente</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> 教皇利奥十四世发布人工智能通谕《崇高人性》，指出“技术绝非中性”，呼吁所有人以勇气和智慧主动应对AI时代的挑战。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 教皇利奥十四世发布关于人工智能的通谕《崇高人性》，提出“技术绝非中立”，呼吁以勇气和信念应对AI时代。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://news.smol.ai/issues/26-05-29-not-much/" target="_blank" rel="noopener noreferrer">not much happened today</a></h3>
   
+  
+  
   <p class="article-meta">Smol AI News · 05/29 13:44</p>
   <p class="article-excerpt">**Anthropic** rolled out **Claude Opus 4.8**, which shows incremental improvements but mixed benchmark results, including better cooperation and coding behavior but some regressions in document parsing. Platform updates include mid-conversation system instructions enhancing long agent sessions, thou</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> Anthropic发布Claude Opus 4.8，模型在合作与编码能力上有所提升，但文档解析出现回退；平台新增对话中途修改系统指令功能。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Anthropic发布Claude Opus 4.8，带来合作与编码能力增强，但文档解析有退步；平台新增对话中系统指令功能。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense" target="_blank" rel="noopener noreferrer">Strengthening societal resilience with Rosalind Biodefense</a></h3>
   
+  
+  
   <p class="article-meta">OpenAI News · 05/29 11:00</p>
   <p class="article-excerpt">OpenAI launches Rosalind Biodefense, expanding trusted access to GPT-Rosalind for vetted developers and U.S. government partners advancing biodefense, public health, and pandemic preparedness through frontier AI.</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> OpenAI启动Rosalind生物防御计划，向经过审查的开发者及美国政府合作方提供GPT-Rosalind访问权限，用于生物防御、公共卫生和流行病防范。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> OpenAI推出Rosalind Biodefense项目，向开发者及美国政府伙伴提供GPT-Rosalind访问权限，推进生物防御与流行病防范。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://www.latent.space/p/ainews-anthropic-raises-965b-series" target="_blank" rel="noopener noreferrer">[AINews] Anthropic raises $965B Series H, releases Opus 4.8 and Dynamic Workflows/ultracode</a></h3>
   
+  
+  
   <p class="article-meta">Latent Space · 05/29 10:07</p>
   <p class="article-excerpt">Total Anthropic victory!</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> Anthropic完成9650亿美元H轮融资，同时推出Claude Opus 4.8模型以及Dynamic Workflows/Ultracode工具，进一步巩固其AI领域领先地位。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Anthropic完成9650亿美元H轮融资，并发布Opus 4.8及动态工作流/Ultracode功能。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://openai.com/index/trustworthy-third-party-evaluations-foundations" target="_blank" rel="noopener noreferrer">A shared playbook for trustworthy third party evaluations</a></h3>
   
+  
+  
   <p class="article-meta">OpenAI News · 05/29 08:00</p>
   <p class="article-excerpt">OpenAI shares guidance on third-party AI evaluations, covering how to assess model capabilities, safeguards, and validity for frontier systems.</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> OpenAI发布第三方AI评估共享指南，涵盖如何评估前沿系统的模型能力、安全防护措施和结果有效性，为行业提供标准化参考。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> OpenAI发布第三方AI评估指南，涵盖如何评估前沿系统的模型能力、安全防护和有效性。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://huggingface.co/blog/torch-profiler" target="_blank" rel="noopener noreferrer">Profiling in PyTorch (Part 1): A Beginner&#39;s Guide to torch.profiler</a></h3>
   
+  
+  
   <p class="article-meta">Hugging Face Blog · 05/29 08:00</p>
   
-  <p class="article-summary"><span class="summary-label">中文介绍</span> Hugging Face博客发布PyTorch性能分析系列教程第一部分，详细介绍torch.profiler的基本使用方法，帮助开发者优化模型性能。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Hugging Face博客发布PyTorch性能分析入门教程，介绍torch.profiler的基本用法。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://tldr.tech/ai/2026-05-29" target="_blank" rel="noopener noreferrer">Opus 4.8 🧠, Anthropic at $965B 💰, Microsoft’s coding model 👨‍💻</a></h3>
   
+  
+  
   <p class="article-meta">TLDR AI · 05/29 08:00</p>
   
-  <p class="article-summary"><span class="summary-label">中文介绍</span> Anthropic发布Opus 4.8模型并估值达9650亿美元，同时微软推出新的编程模型，成为当日AI领域两大焦点。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> TLDR AI简报：Anthropic发布Opus 4.8，公司估值达9650亿美元；微软推出新编程模型。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://www.latent.space/p/cognition" target="_blank" rel="noopener noreferrer">The Age of Async Agents — Cognition&#39;s Walden Yan &amp; OpenInspect&#39;s Cole Murray</a></h3>
   
+  
+  
   <p class="article-meta">Latent Space · 05/29 02:41</p>
   <p class="article-excerpt">80% Devin Commits, Spec-to-PR Workflows, Full VMs, Agent Memory, and PMs Shipping Code</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> Cognition的Walden Yan与OpenInspect的Cole Murray讨论异步智能体时代，包括Devin贡献占80%、Spec-to-PR工作流、完整虚拟机、智能体记忆及产品经理直接发布代码等趋势。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Latent Space对话Cognition与OpenInspect创始人，讨论异步智能体时代，涉及Devin提交占比80%、规格到PR工作流等话题。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://openai.com/index/endava" target="_blank" rel="noopener noreferrer">How Endava builds an agentic organization with Codex</a></h3>
   
+  
+  
   <p class="article-meta">OpenAI News · 05/28 20:00</p>
   <p class="article-excerpt">Learn how Endava uses Codex to build an agentic organization, accelerating software delivery and reducing requirements analysis from weeks to hours.</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> Endava利用OpenAI Codex构建智能体组织，将软件需求分析从数周缩短至数小时，显著加速交付流程。</p>
-</article>
-<article class="article">
-  <h3 class="article-title"><a href="https://www.technologyreview.com/2026/05/28/1138053/the-ai-hype-index-ai-gets-booed-in-graduation-season/" target="_blank" rel="noopener noreferrer">The AI Hype Index: AI gets booed in graduation season</a></h3>
-  
-  <p class="article-meta">MIT Tech Review AI · 05/28 17:51</p>
-  <p class="article-excerpt">It is one thing to say AI will change the world. It is another to expect the class of 2026 to applaud it. In fact, when former Google CEO Eric Schmidt told University of Arizona graduates that their task is to help shape AI, he was met with a resounding chorus of boos. “I can…</p>
-  <p class="article-summary"><span class="summary-label">中文介绍</span> AI热潮指数显示，2026届毕业生对AI持怀疑态度；前谷歌CEO埃里克·施密特在亚利桑那大学演讲呼吁塑造AI时，遭全场嘘声。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Endava借助OpenAI Codex构建智能体组织，将软件交付加速，需求分析时间从数周缩短至数小时。</p>
 </article>
   </div>
     </div>
@@ -1065,109 +1235,139 @@
     <div class="source-contents">
       <div class="source-content active" data-source-content="_merged" data-sub="world" data-cat="politics">
     <article class="article">
-  <h3 class="article-title"><a href="https://www.theguardian.com/world/live/2026/jun/01/iran-war-live-news-updates-kuwait-missile-drone-attack-us-strikes-iran-radar-sites" target="_blank" rel="noopener noreferrer">Middle East crisis live: Israel targets southern Beirut as Kuwait condemns Iranian missile and drone attack</a></h3>
+  <h3 class="article-title"><a href="https://www.theguardian.com/australia-news/2026/jun/02/linda-reynolds-repays-travel-allowance-family-reunion-partner-melbourne-ntwnfb" target="_blank" rel="noopener noreferrer">Linda Reynolds repays nearly $9,000 after partner billed taxpayers to visit son in Melbourne</a></h3>
   
-  <p class="article-meta">The Guardian · 06/01 21:19</p>
-  <p class="article-excerpt">Strikes undermine efforts towards de-escalating conflict, says Kuwait, as US president hits out at ‘chirping’ critics and says they should ‘sit back and relax’ Netanyahu orders Israeli bombing of southern Lebanon Iran targets American bases in region The exchange of strikes between the US and Iran r</p>
-  <p class="article-summary"><span class="summary-label">中文摘要</span> 科威特谴责伊朗导弹和无人机袭击，称其破坏缓和局势的努力。以色列总理内塔尼亚胡下令轰炸黎巴嫩南部，目标包括贝鲁特南郊。伊朗则攻击了美军基地。</p>
+  
+  
+  <p class="article-meta">The Guardian · 06/01 23:00</p>
+  <p class="article-excerpt">Former Liberal senator initially labelled ruling by parliamentary expenses authority ‘patently ridiculous’, saying visits were necessary Get our breaking news email, free app or daily news podcast Former Liberal senator Linda Reynolds has paid back nearly $8,800 in parliamentary expenses after her p</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 前自由党参议员琳达·雷诺兹（Linda Reynolds）偿还了近8800澳元议会旅行津贴，起因是其伴侣将探访墨尔本儿子的费用计入纳税人账单。她此前称相关裁决“公然荒谬”。</p>
 </article>
 <article class="article">
-  <h3 class="article-title"><a href="https://www.bbc.com/news/articles/crlpy8n7pr6o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">US says it struck Iranian radar sites as Iran targets American forces in Kuwait</a></h3>
+  <h3 class="article-title"><a href="https://www.theguardian.com/australia-news/2026/jun/02/property-prices-budget-negative-gearing-capital-gains-investors" target="_blank" rel="noopener noreferrer">Property prices may drop but it’s decades of policy failure, not the budget, to blame</a></h3>
   
-  <p class="article-meta">BBC World · 06/01 21:12</p>
-  <p class="article-excerpt">Iran and the US say they have carried out fresh strikes around the Strait of Hormuz, with Kuwait condemning &quot;repeated&quot; Iranian attacks.</p>
-  <p class="article-summary"><span class="summary-label">中文摘要</span> 美国称打击了伊朗雷达站，而伊朗攻击了驻科威特美军。双方在霍尔木兹海峡附近发生新的交火，科威特谴责伊朗“反复”攻击。</p>
+  
+  
+  <p class="article-meta">The Guardian · 06/01 23:00</p>
+  <p class="article-excerpt">Instead of relying on tax-enhanced speculation, investors must now look at established properties based on actual profitability – leaving space for first home buyers Get our breaking news email, free app or daily news podcast For decades, Australia’s property market has been defined by relentless pr</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 分析指出，澳大利亚房价可能下跌，但根源是数十年的政策失误而非预算。投资者不再依赖税收优惠投机，需基于实际盈利能力评估房产，为首房买家让出空间。</p>
 </article>
 <article class="article">
-  <h3 class="article-title"><a href="https://www.nytimes.com/live/2026/06/01/world/iran-war-us-trump-israel-lebanon" target="_blank" rel="noopener noreferrer">Iran War Live Updates: U.S. Military Says Iran Targeted American Forces in Kuwait</a></h3>
+  <h3 class="article-title"><a href="https://www.nytimes.com/live/2026/06/01/world/iran-war-us-trump-israel-lebanon" target="_blank" rel="noopener noreferrer">Iran War Live Updates: Cease-Fire Wavers as U.S. and Iran Trade Attacks and Israel Threatens Beirut</a></h3>
   
-  <p class="article-meta">NYT World · 06/01 21:09</p>
-  <p class="article-excerpt">The U.S. military intercepted two Iranian missiles early Monday and no American personnel were harmed, Central Command said. The attacks threatened to further complicate talks to end the war.</p>
-  <p class="article-summary"><span class="summary-label">中文摘要</span> 美军中央司令部称，周一早些时候拦截了两枚伊朗导弹，无美军人员伤亡。此次攻击使结束战争的谈判复杂化。</p>
+  
+  
+  <p class="article-meta">NYT World · 06/01 22:55</p>
+  <p class="article-excerpt">Israel issued an evacuation order for the suburbs of Lebanon’s capital. Oil prices spiked after an unconfirmed report that Iran would stop participating in peace talks.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 美伊互相攻击，停火岌岌可危。以色列对贝鲁特郊区发布疏散令。未经证实的消息称伊朗可能退出和谈，导致油价飙升。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://www.nytimes.com/live/2026/06/01/world/iran-war-us-trump-israel-lebanon/heres-the-latest" target="_blank" rel="noopener noreferrer">Here’s the latest.</a></h3>
   
-  <p class="article-meta">NYT World · 06/01 21:01</p>
   
-  <p class="article-summary"><span class="summary-label">中文摘要</span> 无最新详情。</p>
+  
+  <p class="article-meta">NYT World · 06/01 22:55</p>
+  
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 伊朗战争最新动态，暂无进一步细节。</p>
 </article>
 <article class="article">
-  <h3 class="article-title"><a href="https://www.theguardian.com/politics/2026/jun/01/creative-industries-brexit-barriers-uk-actors-eu-jobs" target="_blank" rel="noopener noreferrer">‘Catastrophic for creative industries’: Brexit barriers shut UK actors out of EU jobs</a></h3>
+  <h3 class="article-title"><a href="https://www.dw.com/zh/对中国采取更强硬措施？欧委会将首先寻求欧盟各国支持/a-77380374?maca=chi-rss-chi-all-1127-rdf" target="_blank" rel="noopener noreferrer">对中国采取更强硬措施？欧委会将首先寻求欧盟各国支持</a></h3>
   
-  <p class="article-meta">The Guardian · 06/01 21:00</p>
-  <p class="article-excerpt">Casting shifts to EU talent as paperwork delays and visa limits make hiring British crews less viable From blacklists for UK passport holders to being asked to work illegally while on holiday, the plethora of extra costs and red tape thrown up post-Brexit are restricting opportunities for British ac</p>
-  <p class="article-summary"><span class="summary-label">中文摘要</span> 英国脱欧后的文书延误和签证限制使英国演员难以在欧盟获得工作，选角转向欧盟人才。英国护照持有者面临黑名单、非法工作等困境，创意产业遭受打击。</p>
+  
+  
+  <p class="article-meta">DW 中文 · 06/01 22:53</p>
+  <p class="article-excerpt">欧委会在上周五的磋商后表示，欧盟当前与中国的贸易和投资关系“不可持续”，需要采取果断和一致的措施。然而，若要制定新的贸易保护措施，欧委会必须得到德国及其它欧盟国家的支持。北京方面已立即发出警告。</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 欧委会认为欧盟与中国贸易关系“不可持续”，计划采取更强硬措施，但需先争取德国等欧盟成员国支持。北京已发出警告。</p>
 </article>
 <article class="article">
-  <h3 class="article-title"><a href="https://www.aljazeera.com/features/2026/6/1/how-the-world-failed-ryan-and-yaman?traffic_source=rss" target="_blank" rel="noopener noreferrer">How the world failed Ryan and Yaman</a></h3>
+  <h3 class="article-title"><a href="https://www.theguardian.com/world/live/2026/jun/01/iran-war-live-news-updates-kuwait-missile-drone-attack-us-strikes-iran-radar-sites" target="_blank" rel="noopener noreferrer">Middle East crisis live: Iran says no more peace talks with US until Israel stops its operations</a></h3>
   
-  <p class="article-meta">Al Jazeera · 06/01 20:58</p>
-  <p class="article-excerpt">An Israeli strike killed my children. What pains me is not just their loss but also the normalisation of their murder.</p>
-  <p class="article-summary"><span class="summary-label">中文摘要</span> 一名父亲控诉以色列袭击夺走了他的孩子，并痛心于其谋杀被正常化。标题指世界辜负了瑞安和亚曼。</p>
+  
+  
+  <p class="article-meta">The Guardian · 06/01 22:50</p>
+  <p class="article-excerpt">Report from the IRGC-linked Tasnim news agency says talks on hold until Israel stops operations in Lebanon and Gaza Netanyahu orders Israeli bombing of southern Lebanon Iran targets American bases in region The exchange of strikes between the US and Iran reflects the fragility of the current ceasefi</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 伊朗宣布在以色列停止黎巴嫩和加沙行动前，不再与美国进行和谈。内塔尼亚胡下令轰炸黎巴嫩南部，伊朗打击美国军事基地，中东危机升级。</p>
 </article>
 <article class="article">
-  <h3 class="article-title"><a href="https://www.nytimes.com/2026/06/01/world/middleeast/syria-war-crimes-trial-austria.html" target="_blank" rel="noopener noreferrer">Syrian Officers Who Hid in Plain Sight Face War Crime Charges in Austria</a></h3>
+  <h3 class="article-title"><a href="https://www.nytimes.com/2026/06/01/world/europe/mandelson-files-epstein-starmer-uk.html" target="_blank" rel="noopener noreferrer">UK Releases More Files About Mandelson, Ex-Diplomat With Ties to Epstein</a></h3>
   
-  <p class="article-meta">NYT World · 06/01 20:56</p>
-  <p class="article-excerpt">The trial, Austria’s first against Assad regime officials, will be a rare chance for Syrian witnesses to confront two men they have accused of torture.</p>
-  <p class="article-summary"><span class="summary-label">中文摘要</span> 奥地利首次审判叙利亚阿萨德政权官员，两名被控实施酷刑的军官出庭。叙利亚证人将有机会面对面指控。</p>
+  
+  
+  <p class="article-meta">NYT World · 06/01 22:49</p>
+  <p class="article-excerpt">Peter Mandelson, who was fired over his links to Jeffrey Epstein, made the claim in a letter that was revealed in more than a thousand pages of documents released on Monday.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 英国公布逾千页文件，涉及曾因与爱泼斯坦关联被解职的外交官彼得·曼德尔森（Peter Mandelson）。他在文件中提出相关主张。</p>
 </article>
 <article class="article">
-  <h3 class="article-title"><a href="https://www.nytimes.com/2026/06/01/world/asia/myanmar-explosion-blast-warehouse-deaths.html" target="_blank" rel="noopener noreferrer">Dozens Killed as Explosion Flattens Rebel-Held Village in Myanmar</a></h3>
+  <h3 class="article-title"><a href="https://www.theguardian.com/world/2026/jun/01/trump-admirer-abelardo-de-la-espriella-election-win-blow-to-colombia-conservatives" target="_blank" rel="noopener noreferrer">Trump admirer’s surprise first-round win is a blow to Colombia’s traditional conservatives</a></h3>
   
-  <p class="article-meta">NYT World · 06/01 20:55</p>
-  <p class="article-excerpt">The local authorities said the cause was an accident at a warehouse that held explosives for mining operations.</p>
-  <p class="article-summary"><span class="summary-label">中文摘要</span> 缅甸一个由反叛武装控制的村庄发生爆炸，数十人死亡。当地官方称系存放采矿炸药的仓库事故。</p>
+  
+  
+  <p class="article-meta">The Guardian · 06/01 22:44</p>
+  <p class="article-excerpt">Success of far-right presidential candidate, Abelardo de la Espriella, suggests some voters are ‘fed up with politics’ The far-right lawyer Abelardo de la Espriella and the leftwing senator Iván Cepeda have just under three weeks to compete for the roughly 3.6m votes that did not go to either of the</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 哥伦比亚极右翼候选人、特朗普崇拜者阿贝拉尔多·德·拉·埃斯普列利亚（Abelardo de la Espriella）在首轮意外胜出，冲击传统保守派。他将与左翼参议员伊万·塞佩达（Iván Cepeda）争夺约360万剩余选票。</p>
 </article>
 <article class="article">
-  <h3 class="article-title"><a href="https://www.nytimes.com/2026/06/01/world/middleeast/us-strikes-iran-goruk-qeshm.html" target="_blank" rel="noopener noreferrer">U.S. Says It Hit More Military Targets in Southern Iran</a></h3>
+  <h3 class="article-title"><a href="https://www.nytimes.com/2026/06/01/world/europe/uk-hasan-piker-cenk-uygur-visa-israel.html" target="_blank" rel="noopener noreferrer">Britain Denies Entry to Hasan Piker and Cenk Uygur</a></h3>
   
-  <p class="article-meta">NYT World · 06/01 20:52</p>
-  <p class="article-excerpt">The U.S. military said it had carried out strikes over the weekend and had intercepted an Iranian missile attack on American forces in Kuwait.</p>
-  <p class="article-summary"><span class="summary-label">中文摘要</span> 美军称周末打击了伊朗南部更多军事目标，并拦截了伊朗对驻科威特美军的导弹攻击。</p>
+  
+  
+  <p class="article-meta">NYT World · 06/01 22:43</p>
+  <p class="article-excerpt">The authorities did not say why they had barred Cenk Uygur and Hasan Piker, who have popular social media channels, but said their presence “may not be conducive to the public good.”</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 英国拒绝社交媒体名人哈桑·皮克尔（Hasan Piker）和塞恩克·乌伊古尔（Cenk Uygur）入境，未说明具体原因，仅称其存在“可能不利于公共利益”。</p>
 </article>
 <article class="article">
-  <h3 class="article-title"><a href="https://www.nytimes.com/2026/05/31/world/americas/colombia-election-president-candidates.html" target="_blank" rel="noopener noreferrer">Colombia Presidential Election Heads to a Runoff</a></h3>
+  <h3 class="article-title"><a href="https://www.bbc.com/news/articles/cn0pngz2rego?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Voting suspended in parts of Ethiopia over security concerns</a></h3>
   
-  <p class="article-meta">NYT World · 06/01 20:46</p>
-  <p class="article-excerpt">The candidate, Abelardo de la Espriella, will face a senator from the left-wing party of the outgoing president, Gustavo Petro, in a June runoff.</p>
-  <p class="article-summary"><span class="summary-label">中文摘要</span> 哥伦比亚总统选举进入第二轮。候选人阿韦拉多·德·拉·埃斯普里埃利亚将在6月与即将卸任总统古斯塔沃·佩特罗所属左翼政党的一名参议员对决。</p>
+  
+  
+  <p class="article-meta">BBC World · 06/01 22:35</p>
+  <p class="article-excerpt">Prime Minister Abiy Ahmed&#39;s party is expected to dominate the election as conflicts overshadow the vote.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 埃塞俄比亚部分地区因安全担忧暂停投票。总理阿比·艾哈迈德的政党预计将主导选举，冲突阴影笼罩。</p>
 </article>
 <article class="article">
-  <h3 class="article-title"><a href="https://www.aljazeera.com/opinions/2026/6/1/ukraines-forcibly-transferred-children-must-not-be-a-bargaining-chip?traffic_source=rss" target="_blank" rel="noopener noreferrer">Ukraine’s forcibly transferred children must not be a bargaining chip</a></h3>
+  <h3 class="article-title"><a href="https://www.aljazeera.com/features/2026/6/1/egypts-new-monorail-offers-a-modern-ride-but-cairo-is-still-not-convinced?traffic_source=rss" target="_blank" rel="noopener noreferrer">Egypt’s new monorail offers a modern ride, but Cairo is still not convinced</a></h3>
   
-  <p class="article-meta">Al Jazeera · 06/01 20:39</p>
-  <p class="article-excerpt">Russia must face more pressure to fulfil its legal obligations to return the Ukrainian children.</p>
-  <p class="article-summary"><span class="summary-label">中文摘要</span> 文章呼吁对俄罗斯施加更大压力，使其履行法律义务归还被强行转移的乌克兰儿童，指出这些孩子不应成为谈判筹码。</p>
+  
+  
+  <p class="article-meta">Al Jazeera · 06/01 22:30</p>
+  <p class="article-excerpt">Cairo&#39;s East Nile monorail opened to passengers this month as a flagship of Egypt&#39;s infrastructure ambitions.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 埃及开罗东尼罗河单轨铁路本月投入运营，被视为该国基础设施雄心的旗舰项目，但民众仍持怀疑态度。</p>
 </article>
 <article class="article">
-  <h3 class="article-title"><a href="https://www.dw.com/zh/德语媒体：中国应该转让技术换取市场准入/a-77378325?maca=chi-rss-chi-all-1127-rdf" target="_blank" rel="noopener noreferrer">德语媒体：中国应该转让技术换取市场准入</a></h3>
+  <h3 class="article-title"><a href="https://www.aljazeera.com/video/newsfeed/2026/6/1/sacked-arsenal-staffer-doesnt-regret-speaking-out-for-palestine?traffic_source=rss" target="_blank" rel="noopener noreferrer">Sacked Arsenal staffer doesn’t regret speaking out for Palestine</a></h3>
   
-  <p class="article-meta">DW 中文 · 06/01 20:36</p>
-  <p class="article-excerpt">欧盟委员会认为同中国的贸易与投资关系“不可持续”，但在采取怎样有效措施上各方存在分歧。有德媒认为，配额和关税已无法阻止中国的科技进步，现在到了以市场换取技术转让的时候了。</p>
-  <p class="article-summary"><span class="summary-label">中文摘要</span> 欧盟委员会认为中欧贸易投资关系“不可持续”。有德媒建议，配额和关税已难阻中国科技进步，应以市场准入换取中国技术转让。</p>
+  
+  
+  <p class="article-meta">Al Jazeera · 06/01 22:23</p>
+  <p class="article-excerpt">Mark Bonnick is suing Arsenal football club for unfair dismissal, saying he was sacked for supporting Palestine.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 阿森纳俱乐部前员工马克·邦尼克（Mark Bonnick）因支持巴勒斯坦而被解雇，他起诉俱乐部不当解雇，并称不后悔发声。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.aljazeera.com/video/newsfeed/2026/6/1/huge-explosion-at-malta-fireworks-factory?traffic_source=rss" target="_blank" rel="noopener noreferrer">Huge explosion at Malta fireworks factory</a></h3>
+  
+  
+  
+  <p class="article-meta">Al Jazeera · 06/01 22:23</p>
+  <p class="article-excerpt">A large explosion has torn through a fireworks factory in northern Malta, damaging buildings several kilometres away.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 马耳他北部一家烟花工厂发生巨大爆炸，冲击波损坏数公里外的建筑物。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.nytimes.com/2026/06/01/world/canada/canada-alberta-separation-referendum-vote.html" target="_blank" rel="noopener noreferrer">Alberta’s Movement to Separate from Canada Gets Its Moment</a></h3>
+  
+  
+  
+  <p class="article-meta">NYT World · 06/01 22:21</p>
+  <p class="article-excerpt">In October, Albertans will get to say if they want to stay in Canada, or hold a referendum to leave. Will it settle the matter, or deepen the rift?</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 加拿大阿尔伯塔省分离运动迎来关键节点，10月居民将投票决定是否留加或举行独立公投，此举可能加深分裂。</p>
 </article>
 <article class="article">
   <h3 class="article-title"><a href="https://www.bbc.com/news/articles/c4g419e2xlvo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Israel PM orders strikes on Beirut suburbs as Hezbollah conflict escalates</a></h3>
   
-  <p class="article-meta">BBC World · 06/01 20:32</p>
+  
+  
+  <p class="article-meta">BBC World · 06/01 22:13</p>
   <p class="article-excerpt">Benjamin Netanyahu says the Hezbollah stronghold of Dahieh will be targeted in response to attacks on Israeli civilians.</p>
-  <p class="article-summary"><span class="summary-label">中文摘要</span> 以色列总理内塔尼亚胡下令打击贝鲁特南郊达希耶地区，该地区是真主党据点，以回应针对以色列平民的攻击。</p>
-</article>
-<article class="article">
-  <h3 class="article-title"><a href="https://www.aljazeera.com/video/newsfeed/2026/6/1/residents-flee-beiruts-southern-suburbs-as-israel-orders-strikes?traffic_source=rss" target="_blank" rel="noopener noreferrer">Residents flee Beirut’s southern suburbs as Israel orders strikes</a></h3>
-  
-  <p class="article-meta">Al Jazeera · 06/01 20:22</p>
-  <p class="article-excerpt">Videos show gridlocked traffic in the southern suburbs of Beirut as residents rushed to evacuate the Dahiyeh area.</p>
-  <p class="article-summary"><span class="summary-label">中文摘要</span> 视频显示，贝鲁特南郊居民在以色列下令打击后紧急撤离达希耶地区，交通严重拥堵。</p>
-</article>
-<article class="article">
-  <h3 class="article-title"><a href="https://www.nytimes.com/2026/06/01/world/europe/mandelson-files-epstein-starmer-uk.html" target="_blank" rel="noopener noreferrer">Starmer Braces for More Files About Mandelson, Ex-Diplomat With Ties to Epstein</a></h3>
-  
-  <p class="article-meta">NYT World · 06/01 20:04</p>
-  <p class="article-excerpt">A second batch of documents about the former U.S. ambassador Peter Mandelson, who was fired over his links to Jeffrey Epstein, could create more problems for Prime Minister Keir Starmer.</p>
-  <p class="article-summary"><span class="summary-label">中文摘要</span> 英国首相斯塔默面临更多关于前美国大使彼得·曼德尔森的文件，曼德尔森因与杰弗里·爱泼斯坦的关系被解职，新文件可能带来更多麻烦。</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 以色列总理内塔尼亚胡下令轰炸贝鲁特郊区真主党据点达希耶（Dahieh），以回应针对以平民的攻击，冲突升级。</p>
 </article>
   </div>
     </div>
