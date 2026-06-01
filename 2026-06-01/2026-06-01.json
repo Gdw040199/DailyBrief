@@ -1,75 +1,73 @@
 {
-  "hero_headline": "美伊中东交火 科威特遭导弹袭击",
-  "daily_overview": "中东紧张局势急剧升级：美国对伊朗雷达设施实施打击，伊朗以导弹和无人机回击并波及科威特，以色列同时下令轰炸贝鲁特，多线冲突交织。科技领域，Anthropic以9650亿美元估值完成650亿美元融资并发布Opus 4.8模型，OpenAI在医疗诊断与生物防御方面取得突破，英伟达推出开源物理AI模型Cosmos 3。地缘博弈与技术跃进并行，全球安全与创新格局面临双重考验。",
+  "hero_headline": "美伊冲突升级，Anthropic获$965B估值",
+  "daily_overview": "中东紧张局势持续升温：美国与伊朗在霍尔木兹海峡附近交火，科威特遭导弹袭击；以色列下令空袭贝鲁特南郊真主党据点。南海方向，中菲在黄岩岛对峙加剧。科技方面，Anthropic完成650亿美元融资，估值达9650亿美元并发布Opus 4.8；NVIDIA推出首个开源物理AI全模态模型Cosmos 3；OpenAI发布生物防御平台Rosalind；DeepMind启动亚太加速器计划。AI产业融资与产品更新密集，资本对AI前景保持高度热情。",
   "tech_briefs": [
     {
-      "title": "Anthropic完成650亿融资 估值达9650亿",
+      "title": "Anthropic获$65B融资估值$965B，发布Opus 4.8",
       "url": "https://news.smol.ai/issues/26-05-28-anthropic-series-h/",
       "source": "Smol AI News",
-      "summary": "Anthropic宣布650亿美元H轮融资，估值达9650亿美元，同时发布Claude Opus 4.8模型与Dynamic Workflows功能，创下AI企业融资新纪录。（多家报道）",
-      "importance": 9
+      "summary": "Anthropic完成Series H融资65亿美元，估值9650亿美元，年收入超470亿美元；同步推出Opus 4.8模型和Dynamic Workflows，性能提升但部分基准出现倒退。（多家报道）",
+      "importance": 10
     },
     {
-      "title": "波士顿儿童医院用AI诊断40余例罕见病",
-      "url": "https://openai.com/index/boston-childrens-hospital",
-      "source": "OpenAI News",
-      "summary": "波士顿儿童医院利用OpenAI技术提升诊疗效率，成功识别40余例罕见病，减少医生操作负担，改善患者预后。",
-      "importance": 8
-    },
-    {
-      "title": "英伟达发布开源物理AI模型Cosmos 3",
+      "title": "NVIDIA发布开源物理AI全模态模型Cosmos 3",
       "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
       "source": "Hugging Face Blog",
-      "summary": "英伟达推出Cosmos 3，首个面向物理AI推理与行动的开源全模态模型，旨在加速机器人与自动驾驶研究。",
+      "summary": "NVIDIA推出Cosmos 3，首个开源全模态模型，用于物理AI推理与行动，支持机器人、自动驾驶等领域的环境理解与决策。",
       "importance": 8
     },
     {
-      "title": "OpenAI推出Rosalind生物防御平台",
+      "title": "OpenAI推出Rosalind Biodefense加强生物防御",
       "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
       "source": "OpenAI News",
-      "summary": "OpenAI扩展GPT-Rosalind访问权限，与开发者及美国政府合作，用于生物防御、公共卫生与大流行准备。",
+      "summary": "OpenAI发布Rosalind Biodefense，为受信开发者和美国政府提供GPT-Rosalind，用于生物防御、公共卫生及大流行应急。",
       "importance": 7
     },
     {
-      "title": "微软开源文件转Markdown工具Markitdown",
-      "url": "https://github.com/microsoft/markitdown",
-      "source": "GitHub Trending",
-      "summary": "微软发布Python工具Markitdown，可将Word、PDF等办公文档转换为Markdown格式，简化文档处理流程。",
+      "title": "DeepMind启动亚太加速器应对环境风险",
+      "url": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks/",
+      "source": "DeepMind Blog",
+      "summary": "Google DeepMind宣布在亚太启动加速器计划，支持初创企业利用AI应对环境风险，推动可持续发展。",
       "importance": 6
+    },
+    {
+      "title": "波士顿儿童医院利用AI诊断罕见疾病",
+      "url": "https://openai.com/index/boston-childrens-hospital",
+      "source": "OpenAI News",
+      "summary": "波士顿儿童医院采用OpenAI技术辅助诊疗，已成功诊断40余种罕见病，减少医生文书负担，提升诊疗效率。",
+      "importance": 7
     }
   ],
   "politics_briefs": [
     {
-      "title": "美伊互袭 科威特遇袭 以军轰炸贝鲁特",
+      "title": "美国称打击伊朗雷达站，科威特报告导弹袭击",
       "url": "https://www.bbc.com/news/articles/crlpy8n7pr6o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "summary": "美国打击伊朗雷达设施，伊朗以导弹无人机回击并波及科威特，以色列下令轰炸贝鲁特，中东多线冲突升级。（多家报道）",
+      "summary": "美伊围绕霍尔木兹海峡交火，美中央司令部称对伊朗南部进行自卫打击，科威特指责伊朗袭击其境内目标。（多家报道）",
       "importance": 10
     },
     {
-      "title": "中国在黄岩岛巡逻 菲律宾发出警告",
-      "url": "https://www.dw.com/zh/菲防长发出威胁警告-中国开始在黄岩岛附近巡逻/a-77363306?maca=chi-rss-chi-all-1127-rdf",
-      "source": "DW 中文",
-      "summary": "中国海警与解放军在黄岩岛海域巡逻，菲律宾联合美军演习后称面临严重威胁，南海紧张再度升温。",
-      "importance": 7
+      "title": "以色列总理下令空袭贝鲁特南郊真主党据点",
+      "url": "https://www.bbc.com/news/articles/c4g419e2xlvo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "内塔尼亚胡宣布将打击真主党控制的达希耶地区，以回应针对以色列平民的袭击，冲突面临升级风险。",
+      "importance": 9
     },
     {
-      "title": "泽连斯基前助手被控贪污巨款并请算命师",
-      "url": "https://www.nytimes.com/2026/06/01/world/europe/ukraine-corruption-yermak-zelensky.html",
-      "source": "NYT World",
-      "summary": "乌克兰总统办公室主任Yermak被指控贪污数百万美元并咨询政治算命，反映战时政府内部治理危机。",
+      "title": "菲防长警告中国，中方开始在黄岩岛附近巡逻",
+      "url": "https://www.dw.com/zh/菲防长发出威胁警告-中国开始在黄岩岛附近巡逻/a-77363306?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "中国海警与解放军在黄岩岛附近海域巡逻，菲律宾防长称面临「严重威胁」，此前美菲刚举行联合海上演习。",
       "importance": 7
     }
   ],
-  "editor_note": "中东多线冲突加剧全球安全不确定性，科技巨头融资与开源动作则延续AI投入热潮。地缘与技术走势均需持续关注。",
+  "editor_note": "地缘风险与AI热潮并行，军事冲突与资本狂欢交织，世界格局在动荡中加速重构。",
   "keywords": [
     "美伊冲突",
-    "中东局势",
     "Anthropic",
-    "AI模型",
-    "医疗AI",
-    "南海",
-    "乌克兰",
-    "开源工具"
+    "NVIDIA Cosmos 3",
+    "OpenAI Rosalind",
+    "DeepMind加速器",
+    "南海局势"
   ]
 }
