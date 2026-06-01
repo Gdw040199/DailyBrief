@@ -15,7 +15,6 @@ export async function fetchArxivPapers(
   const url = `https://export.arxiv.org/oai2?verb=ListRecords&set=cs&from=${today}&metadataPrefix=arXiv`;
 
   let raw = "";
-  let lastError: unknown;
   for (let attempt = 1; attempt <= 3; attempt++) {
     try {
       raw = await curlFetch(url, {
@@ -23,7 +22,6 @@ export async function fetchArxivPapers(
       }, 90);
       break;
     } catch (e) {
-      lastError = e;
       console.error(`[arxiv-papers] attempt ${attempt}/3 failed:`, (e as Error).message);
       if (attempt < 3) await new Promise((r) => setTimeout(r, 10000));
     }
@@ -64,6 +62,7 @@ interface OAIEntry {
 
 /**
  * Parse OAI-PMH XML entries for arXiv papers.
+ * Extracts <id> from within <arXiv> metadata block only.
  */
 function parseOAIEntries(xml: string): OAIEntry[] {
   const entries: OAIEntry[] = [];
@@ -73,6 +72,10 @@ function parseOAIEntries(xml: string): OAIEntry[] {
   for (const block of blocks) {
     const endIdx = block.indexOf("</record>");
     const content = endIdx >= 0 ? block.slice(0, endIdx) : block;
+
+    // Extract the <arXiv> metadata block
+    const arxivBlock = content.match(/<arXiv[^>]*>([\s\S]*?)<\/arXiv>/)?.[1];
+    if (!arxivBlock) continue;
 
     // Only include papers with cs.CV, cs.GR, cs.AI, cs.MM categories
     const catMatch = content.match(/<categories>([^<]+)<\/categories>/);
@@ -84,11 +87,11 @@ function parseOAIEntries(xml: string): OAIEntry[] {
     );
     if (relevantCats.length === 0) continue;
 
-    // Extract fields
-    const id = extractTag(content, "id") ?? "";
-    const title = normalizeWhitespace(extractTag(content, "title") ?? "");
-    const abstract = normalizeWhitespace(extractTag(content, "abstract") ?? "");
-    const created = extractTag(content, "created") ?? "";
+    // Extract fields from the arXiv metadata block
+    const id = extractTag(arxivBlock, "id") ?? "";
+    const title = normalizeWhitespace(extractTag(arxivBlock, "title") ?? "");
+    const abstract = normalizeWhitespace(extractTag(arxivBlock, "abstract") ?? "");
+    const created = extractTag(arxivBlock, "created") ?? "";
 
     if (id && title) {
       entries.push({
