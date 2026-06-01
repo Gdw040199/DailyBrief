@@ -1,68 +1,75 @@
 {
-  "hero_headline": "中东冲突升级：以色列空袭贝鲁特，美伊互攻",
-  "daily_overview": "今日全球焦点集中在中东：以色列总理内塔尼亚胡下令对贝鲁特南郊发动空袭，回应真主党攻击，同时美伊相互打击军事目标，科威特谴责伊朗导弹和无人机袭击，紧张局势升级。科技领域，Anthropic宣布以9650亿美元估值完成650亿美元H轮融资并发布Claude Opus 4.8模型，NVIDIA开源物理AI模型Cosmos 3，波士顿儿童医院利用OpenAI技术诊断罕见病超40例，微软推出文件转Markdown工具。",
+  "hero_headline": "以色列下令打击贝鲁特，美伊交火中东升级",
+  "daily_overview": "中东局势骤然升级：以色列对贝鲁特南部下达疏散令，美国军方对伊朗境内目标实施打击，伊朗向科威特美军基地发射导弹。科技领域，Anthropic以9650亿美元估值完成650亿美元融资并发布Opus 4.8模型，英伟达推出开源物理AI模型Cosmos 3，波士顿儿童医院借助AI诊断40余种罕见病。OpenAI推出生物防御平台，微软开源文档转Markdown工具。地区冲突与资本热潮并行。",
   "tech_briefs": [
     {
-      "title": "Anthropic完成650亿美元融资，估值9650亿，发布Opus 4.8",
+      "title": "Anthropic完成650亿美元融资并发布Opus 4.8",
       "url": "https://news.smol.ai/issues/26-05-28-anthropic-series-h/",
       "source": "Smol AI News",
-      "summary": "Anthropic获650亿美元H轮融资，估值9650亿，年收入超470亿；同时发布Claude Opus 4.8，改进协作与编码能力，但部分基准有退化。（多家报道）",
+      "summary": "Anthropic以9650亿美元估值获65亿美元融资，同期发布Claude Opus 4.8与Dynamic Workflows，性能小幅提升但部分基准有波动。（多家报道）",
       "importance": 10
     },
     {
-      "title": "NVIDIA开源物理AI全景模型Cosmos 3",
+      "title": "英伟达发布开源物理AI模型Cosmos 3",
       "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
       "source": "Hugging Face Blog",
-      "summary": "NVIDIA发布Cosmos 3，首个开源全模态模型，用于物理世界的推理与行动，支持机器人等实体AI应用。",
+      "summary": "NVIDIA推出首个开放全模态模型Cosmos 3，专门用于物理世界的感知、推理与行动，旨在加速具身智能和仿真应用。",
       "importance": 9
     },
     {
-      "title": "波士顿儿童医院使用OpenAI技术诊断40余种罕见病",
+      "title": "波士顿儿童医院借助AI诊断40余种罕见病",
       "url": "https://openai.com/index/boston-childrens-hospital",
       "source": "OpenAI News",
-      "summary": "波士顿儿童医院利用OpenAI模型提高诊疗效率，成功识别40多例罕见病案例，减轻运营负担。",
+      "summary": "波士顿儿童医院利用OpenAI技术改善患者护理，减少行政负担，并成功诊断40余种罕见病病例。",
       "importance": 8
     },
     {
-      "title": "微软开源Markitdown：文件与文档转Markdown工具",
+      "title": "OpenAI推出生物防御平台Rosalind",
+      "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
+      "source": "OpenAI News",
+      "summary": "OpenAI发布Rosalind Biodefense，为受信任开发者与美国政府合作伙伴提供GPT-Rosalind访问权限，用于生物防御、公共卫生与大流行病应对。",
+      "importance": 7
+    },
+    {
+      "title": "微软开源文档转Markdown工具MarkItDown",
       "url": "https://github.com/microsoft/markitdown",
       "source": "GitHub Trending",
-      "summary": "微软发布Python工具Markitdown，可将多种办公文档和文件转换为Markdown格式，便于AI管道处理。",
-      "importance": 7
+      "summary": "微软发布Python工具MarkItDown，可将各类办公文档及文件格式转换为Markdown，便于AI处理与内容整理。",
+      "importance": 6
     }
   ],
   "politics_briefs": [
     {
-      "title": "以色列空袭贝鲁特南郊，中东冲突加剧",
-      "url": "https://www.bbc.com/news/articles/c4g419e2xlvo",
+      "title": "以色列下令打击贝鲁特南部，美伊交火持续",
+      "url": "https://www.bbc.com/news/articles/c4g419e2xlvo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "summary": "内塔尼亚胡下令打击真主党据点Dahieh，回应以色列平民遇袭。同时美国对伊朗南部军事目标实施打击，科威特谴责伊朗袭击其领土。（多家报道）",
+      "summary": "以色列总理内塔尼亚胡下令打击贝鲁特南郊达希耶，回应平民遇袭；美国军方对伊朗境内目标实施打击，伊朗向科威特美军发射导弹，地区局势急剧恶化。（多家报道）",
       "importance": 10
     },
     {
-      "title": "哥伦比亚总统选举进入决选",
-      "url": "https://www.nytimes.com/2026/05/31/world/americas/colombia-election-president-candidates.html",
-      "source": "NYT World",
-      "summary": "候选人Abelardo de la Espriella将与现任总统所属左翼党派议员进行6月决选。",
-      "importance": 7
+      "title": "菲律宾与越南升级外交关系，应对南海紧张",
+      "url": "https://thediplomat.com/2026/06/philippines-vietnam-upgrade-diplomatic-partnership-amid-maritime-tensions-with-china/",
+      "source": "The Diplomat",
+      "summary": "两国总统宣布将伙伴关系升级，强调维护南海和平与航行自由对双方不可妥协。",
+      "importance": 8
     },
     {
-      "title": "刚果（金）埃博拉确诊病例达282例",
-      "url": "https://www.npr.org/2026/06/01/g-s1-125143/ebola-updates",
-      "source": "NPR World",
-      "summary": "疫情集中在伊图里省，超1000例疑似病例，所用病毒亚型无获批疫苗或治疗药物。",
-      "importance": 8
+      "title": "法国在英方协助下扣押俄罗斯油轮",
+      "url": "https://www.bbc.com/news/articles/cn8pwgej1gxo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "法国周日扣押一艘受制裁的俄罗斯油轮，英国直升机提供支援，英国国防部证实。",
+      "importance": 7
     }
   ],
-  "editor_note": "中东局势持续升温，各方需克制避免全面冲突；科技巨头融资与开源模型活跃，AI赋能医疗等场景值得关注。",
+  "editor_note": "中东战火重燃，美伊直接交火令地区濒临失控；Anthropic天价融资与英伟达开源模型则显示科技界仍在高速奔跑。",
   "keywords": [
     "中东冲突",
-    "以色列空袭",
-    "美伊互攻",
+    "伊朗",
+    "以色列",
     "Anthropic融资",
-    "Claude Opus 4.8",
+    "Opus 4.8",
     "NVIDIA Cosmos 3",
-    "波士顿儿童医院",
-    "埃博拉疫情"
+    "物理AI",
+    "美伊交火"
   ]
 }
