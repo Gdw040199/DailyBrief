@@ -1,67 +1,68 @@
 {
-  "hero_headline": "美伊互攻致中东战火再燃",
-  "daily_overview": "今日科技领域：Anthropic以9650亿美元估值完成650亿美元融资，并发布Claude Opus 4.8模型，性能小幅提升；NVIDIA推出开源物理AI模型Cosmos 3，驱动机器人等实体智能；波士顿儿童医院利用OpenAI技术成功诊断超40例罕见病。政治方面：美国与伊朗周末互相发动军事袭击，以色列同时轰炸黎巴嫩南部，中东冲突全面升级；哥伦比亚总统选举进入第二轮；刚果（金）埃博拉疫情确诊282例，5名患者康复。全球焦点集中于中东局势与AI产业新动向。",
+  "hero_headline": "中东冲突升级：以色列空袭贝鲁特，美伊互攻",
+  "daily_overview": "今日全球焦点集中在中东：以色列总理内塔尼亚胡下令对贝鲁特南郊发动空袭，回应真主党攻击，同时美伊相互打击军事目标，科威特谴责伊朗导弹和无人机袭击，紧张局势升级。科技领域，Anthropic宣布以9650亿美元估值完成650亿美元H轮融资并发布Claude Opus 4.8模型，NVIDIA开源物理AI模型Cosmos 3，波士顿儿童医院利用OpenAI技术诊断罕见病超40例，微软推出文件转Markdown工具。",
   "tech_briefs": [
     {
-      "title": "Anthropic估值9650亿 融资650亿发布Opus 4.8",
+      "title": "Anthropic完成650亿美元融资，估值9650亿，发布Opus 4.8",
       "url": "https://news.smol.ai/issues/26-05-28-anthropic-series-h/",
       "source": "Smol AI News",
-      "summary": "人工智能公司Anthropic完成H轮650亿美元融资，估值达9650亿美元；同时推出Claude Opus 4.8模型，在合作与编码行为上有所改进。（多家报道）",
+      "summary": "Anthropic获650亿美元H轮融资，估值9650亿，年收入超470亿；同时发布Claude Opus 4.8，改进协作与编码能力，但部分基准有退化。（多家报道）",
       "importance": 10
     },
     {
-      "title": "NVIDIA推出首个开源物理AI全方位模型Cosmos 3",
+      "title": "NVIDIA开源物理AI全景模型Cosmos 3",
       "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
       "source": "Hugging Face Blog",
-      "summary": "NVIDIA发布Cosmos 3，面向物理世界推理与行动的开源全方位模型，旨在驱动机器人等实体智能，减少对标注数据依赖。",
+      "summary": "NVIDIA发布Cosmos 3，首个开源全模态模型，用于物理世界的推理与行动，支持机器人等实体AI应用。",
       "importance": 9
     },
     {
-      "title": "波士顿儿童医院用AI解锁40余种罕见病诊断",
+      "title": "波士顿儿童医院使用OpenAI技术诊断40余种罕见病",
       "url": "https://openai.com/index/boston-childrens-hospital",
       "source": "OpenAI News",
-      "summary": "该医院利用OpenAI技术辅助诊断超过40例罕见病，减轻医生负担，改善患者护理流程。",
+      "summary": "波士顿儿童医院利用OpenAI模型提高诊疗效率，成功识别40多例罕见病案例，减轻运营负担。",
       "importance": 8
     },
     {
-      "title": "前沿模型企业IT基准得分不足50%",
-      "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
-      "source": "Hugging Face Blog",
-      "summary": "IBM与Artificial Analysis发布ITBench-AA基准，测试前沿AI模型在企业IT任务上表现均低于50%，揭示实际应用能力差距。",
+      "title": "微软开源Markitdown：文件与文档转Markdown工具",
+      "url": "https://github.com/microsoft/markitdown",
+      "source": "GitHub Trending",
+      "summary": "微软发布Python工具Markitdown，可将多种办公文档和文件转换为Markdown格式，便于AI管道处理。",
       "importance": 7
     }
   ],
   "politics_briefs": [
     {
-      "title": "中东危机升级：美伊互攻 以色列轰炸贝鲁特",
-      "url": "https://www.theguardian.com/world/live/2026/jun/01/iran-war-live-news-updates-kuwait-missile-drone-attack-us-strikes-iran-radar-sites",
-      "source": "The Guardian",
-      "summary": "美国周末对伊朗军事目标实施打击，以色列同时对黎巴嫩南部发动空袭；科威特谴责伊朗导弹攻击。停战努力受挫。（多家报道）",
+      "title": "以色列空袭贝鲁特南郊，中东冲突加剧",
+      "url": "https://www.bbc.com/news/articles/c4g419e2xlvo",
+      "source": "BBC World",
+      "summary": "内塔尼亚胡下令打击真主党据点Dahieh，回应以色列平民遇袭。同时美国对伊朗南部军事目标实施打击，科威特谴责伊朗袭击其领土。（多家报道）",
       "importance": 10
     },
     {
-      "title": "哥伦比亚总统选举进入第二轮",
+      "title": "哥伦比亚总统选举进入决选",
       "url": "https://www.nytimes.com/2026/05/31/world/americas/colombia-election-president-candidates.html",
       "source": "NYT World",
-      "summary": "总统佩特罗党派候选人阿夫里尔将与埃斯普里埃利亚在6月决出胜负，选情胶着。",
-      "importance": 8
+      "summary": "候选人Abelardo de la Espriella将与现任总统所属左翼党派议员进行6月决选。",
+      "importance": 7
     },
     {
-      "title": "刚果埃博拉确诊病例达282例 已有5人康复",
+      "title": "刚果（金）埃博拉确诊病例达282例",
       "url": "https://www.npr.org/2026/06/01/g-s1-125143/ebola-updates",
       "source": "NPR World",
-      "summary": "刚果（金）伊图里省埃博拉疫情持续，确诊282例，5名患者康复出院。该毒株尚无获得批准的疗法或疫苗。（多家报道）",
-      "importance": 7
+      "summary": "疫情集中在伊图里省，超1000例疑似病例，所用病毒亚型无获批疫苗或治疗药物。",
+      "importance": 8
     }
   ],
-  "editor_note": "中东冲突重新升级为全球安全焦点，AI融资规模令人瞩目但需警惕泡沫风险。科技与地缘政治交汇加剧不确定性。",
+  "editor_note": "中东局势持续升温，各方需克制避免全面冲突；科技巨头融资与开源模型活跃，AI赋能医疗等场景值得关注。",
   "keywords": [
-    "美伊冲突",
-    "中东",
-    "Anthropic",
-    "NVIDIA Cosmos",
-    "人工智能",
-    "哥伦比亚选举",
-    "埃博拉"
+    "中东冲突",
+    "以色列空袭",
+    "美伊互攻",
+    "Anthropic融资",
+    "Claude Opus 4.8",
+    "NVIDIA Cosmos 3",
+    "波士顿儿童医院",
+    "埃博拉疫情"
   ]
 }
