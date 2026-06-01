@@ -6,50 +6,50 @@
       "title": "harry0703/MoneyPrinterTurbo",
       "url": "https://github.com/harry0703/MoneyPrinterTurbo",
       "excerpt": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
-      "meta": "Python · ★ 75,579 · 🍴 10,738 · 📈 1,937 stars today",
+      "meta": "Python · ★ 75,602 · 🍴 10,740 · 📈 1,937 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "基于AI大模型，一键生成高清短视频。降低视频制作门槛，适合营销和内容创作者快速产出高质量短视频。"
+      "summary": "利用AI大模型一键生成高清短视频，用户只需输入主题或文案，即可自动完成视频制作。适合内容创作者、营销人员快速产出短视频素材，无需视频编辑技能。"
     },
     {
       "sourceId": "github-trending",
       "title": "microsoft/markitdown",
       "url": "https://github.com/microsoft/markitdown",
       "excerpt": "Python tool for converting files and office documents to Markdown.",
-      "meta": "Python · ★ 136,006 · 🍴 9,280 · 📈 2,798 stars today",
+      "meta": "Python · ★ 136,034 · 🍴 9,281 · 📈 2,798 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "Python工具，将Office文档、网页等各类文件转换为Markdown格式。方便内容迁移与文档处理，适合开发者和文档撰写者使用。"
+      "summary": "Python工具，可将各类文件及Office文档转换为Markdown格式。适用于文档处理、数据迁移、内容归档等场景，简化格式转换流程。"
     },
     {
       "sourceId": "github-trending",
       "title": "D4Vinci/Scrapling",
       "url": "https://github.com/D4Vinci/Scrapling",
       "excerpt": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
-      "meta": "Python · ★ 57,173 · 🍴 5,548 · 📈 606 stars today",
+      "meta": "Python · ★ 57,188 · 🍴 5,550 · 📈 606 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "自适应Web爬虫框架，从单次请求到全站爬取均可处理。简化爬虫开发流程，适合数据采集工程师快速构建稳定爬虫。"
+      "summary": "自适应Web爬虫框架，支持从单次请求到全站爬取的多种模式。采用智能解析策略，自动处理反爬机制，适合数据采集和网站抓取任务。"
     },
     {
       "sourceId": "github-trending",
       "title": "nesquena/hermes-webui",
       "url": "https://github.com/nesquena/hermes-webui",
       "excerpt": "Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!",
-      "meta": "Python · ★ 10,279 · 🍴 1,395 · 📈 357 stars today",
+      "meta": "Python · ★ 10,284 · 🍴 1,395 · 📈 357 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "Hermes Agent的Web界面，可从浏览器或手机端使用Agent。提供便捷的远程交互方式，适合随时随地的AI代理控制。"
+      "summary": "Hermes Agent的Web界面，可在手机或电脑上使用。提供便捷的交互体验，方便用户随时随地调用AI助手功能。"
     },
     {
       "sourceId": "github-trending",
       "title": "EveryInc/compound-engineering-plugin",
       "url": "https://github.com/EveryInc/compound-engineering-plugin",
       "excerpt": "Official Compound Engineering plugin for Claude Code, Codex, Cursor, and more",
-      "meta": "TypeScript · ★ 18,848 · 🍴 1,416 · 📈 251 stars today",
+      "meta": "TypeScript · ★ 18,850 · 🍴 1,416 · 📈 251 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "官方复合工程插件，集成Claude Code、Codex、Cursor等AI编程工具。增强AI辅助编码能力，适合使用多种AI助手的开发者。"
+      "summary": "Compound Engineering的官方插件，支持Claude Code、Codex、Cursor等工具。帮助开发者将复合工程方法融入AI编程工作流，提升代码质量。"
     },
     {
       "sourceId": "github-trending",
@@ -59,97 +59,97 @@
       "meta": "TypeScript · ★ 19,805 · 🍴 67,295 · 📈 27 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "GitHub官方文档的开源仓库，包含平台使用指南、API参考等。社区可贡献改进，适合所有GitHub用户查阅与协作。"
+      "summary": "GitHub官方文档的开源仓库，包含GitHub平台所有功能的使用指南和开发参考。社区可参与贡献，适合开发者、运维人员查阅。"
     },
     {
       "sourceId": "github-trending",
       "title": "OpenBMB/VoxCPM",
       "url": "https://github.com/OpenBMB/VoxCPM",
       "excerpt": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
-      "meta": "Python · ★ 23,803 · 🍴 2,742 · 📈 635 stars today",
+      "meta": "Python · ★ 23,815 · 🍴 2,745 · 📈 635 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "VoxCPM2实现无tokenizer的多语言语音合成（TTS），支持创意语音设计与真实音色克隆。适合语音生成应用与AI配音开发。"
+      "summary": "无Tokenizer的TTS模型VoxCPM2，支持多语言语音生成、创意声音设计和高保真语音克隆。适合语音合成、虚拟主播、语音助手等场景。"
     },
     {
       "sourceId": "github-trending",
       "title": "revfactory/harness",
       "url": "https://github.com/revfactory/harness",
       "excerpt": "A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use.",
-      "meta": "HTML · ★ 4,813 · 🍴 661 · 📈 323 stars today",
+      "meta": "HTML · ★ 4,820 · 🍴 661 · 📈 323 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "元技能框架，设计领域特定的AI智能体团队，自动定义专业Agent及其技能。适合构建复杂AI协作系统的开发者。"
+      "summary": "元技能框架，可设计领域特定智能体团队、定义专用Agent并生成所需技能。适合需要构建多Agent协作系统的开发者，简化编排过程。"
     },
     {
       "sourceId": "github-trending",
       "title": "FareedKhan-dev/train-llm-from-scratch",
       "url": "https://github.com/FareedKhan-dev/train-llm-from-scratch",
       "excerpt": "A straightforward method for training your LLM, from downloading data to generating text.",
-      "meta": "Jupyter Notebook · ★ 3,238 · 🍴 471 · 📈 626 stars today",
+      "meta": "Jupyter Notebook · ★ 3,243 · 🍴 471 · 📈 626 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "从头训练LLM的完整方法，涵盖数据下载、预处理到文本生成。简化自训练流程，适合希望定制语言模型的研究者。"
+      "summary": "从零训练大型语言模型的完整教程，涵盖数据下载到文本生成全流程。采用清晰且直接的方法，适合想深入理解LLM训练机制的开发者。"
     },
     {
       "sourceId": "github-trending",
       "title": "supermemoryai/supermemory",
       "url": "https://github.com/supermemoryai/supermemory",
       "excerpt": "Memory engine and app that is extremely fast, scalable. The Memory API for the AI era.",
-      "meta": "TypeScript · ★ 23,538 · 🍴 2,121 · 📈 264 stars today",
+      "meta": "TypeScript · ★ 23,541 · 🍴 2,121 · 📈 264 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "高性能、可扩展的记忆引擎，为AI应用提供持久化上下文API。适合需要长期记忆的聊天机器人、个性化助手等场景。"
+      "summary": "超高速、可扩展的记忆引擎及应用，为AI时代提供记忆API。支持大规模上下文管理，适合聊天机器人、个性化推荐等需要持久记忆的场景。"
     },
     {
       "sourceId": "github-trending",
       "title": "Crosstalk-Solutions/project-nomad",
       "url": "https://github.com/Crosstalk-Solutions/project-nomad",
       "excerpt": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.",
-      "meta": "TypeScript · ★ 27,844 · 🍴 2,717 · 📈 374 stars today",
+      "meta": "TypeScript · ★ 27,847 · 🍴 2,717 · 📈 374 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "Project N.O.M.A.D是自包含的离线生存计算机，集成关键工具、知识和AI。保障在无网络环境下的信息与通信，适用于应急和偏远地区。"
+      "summary": "自包含离线生存计算机，集成关键工具、知识库和AI，可在无网络环境下运行。适合野外探险、紧急救援、偏远地区办公等场景。"
     },
     {
       "sourceId": "github-trending",
       "title": "anthropics/claude-code",
       "url": "https://github.com/anthropics/claude-code",
       "excerpt": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
-      "meta": "Python · ★ 129,133 · 🍴 21,015 · 📈 489 stars today",
+      "meta": "Python · ★ 129,140 · 🍴 21,015 · 📈 489 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "Anthropic推出的终端代理编码工具，理解代码库，自动执行例行任务、解释复杂代码、处理Git工作流。提升开发者编码效率。"
+      "summary": "Claude Code是终端中的智能编码工具，能理解代码库、执行日常任务、解释复杂代码并处理Git工作流。帮助开发者提升编码效率。"
     },
     {
       "sourceId": "github-trending",
       "title": "nicobailon/pi-subagents",
       "url": "https://github.com/nicobailon/pi-subagents",
       "excerpt": "Pi extension for async subagent delegation with truncation, artifacts, and session sharing",
-      "meta": "TypeScript · ★ 1,931 · 🍴 264 · 📈 69 stars today",
+      "meta": "TypeScript · ★ 1,934 · 🍴 264 · 📈 69 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "Pi框架扩展，实现异步子Agent委派，支持截断、工件与会话共享。灵活构建模块化AI代理系统，适合复杂任务分解。"
+      "summary": "Pi扩展，支持异步子Agent委托、截断、工件和会话共享。适合需要并行任务分解与协作的AI工作流，提升系统效率。"
     },
     {
       "sourceId": "github-trending",
       "title": "emmabostian/developer-portfolios",
       "url": "https://github.com/emmabostian/developer-portfolios",
       "excerpt": "A list of developer portfolios for your inspiration",
-      "meta": "Python · ★ 23,557 · 🍴 4,628 · 📈 73 stars today",
+      "meta": "Python · ★ 23,561 · 🍴 4,628 · 📈 73 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "收录大量开发者个人作品集网站，提供设计灵感和布局参考。适合程序员打造专业作品集时的灵感来源。"
+      "summary": "开发者个人作品集网站列表，收录大量优秀案例供灵感借鉴。适合开发者、设计师参考设计风格和技术实现。"
     },
     {
       "sourceId": "github-trending",
       "title": "codecrafters-io/build-your-own-x",
       "url": "https://github.com/codecrafters-io/build-your-own-x",
       "excerpt": "Master programming by recreating your favorite technologies from scratch.",
-      "meta": "Markdown · ★ 509,684 · 🍴 48,342 · 📈 1,158 stars today",
+      "meta": "Markdown · ★ 509,689 · 🍴 48,343 · 📈 1,158 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "通过从零重建数据库、HTTP服务器、Redis等热门技术，深入理解编程本质。适合想通过实战掌握系统设计的开发者。"
+      "summary": "通过从零重建流行技术（如数据库、Git、Redis等）来掌握编程。每个项目附带详细步骤说明，适合想深入理解原理的开发者。"
     },
     {
       "sourceId": "openai-news",
@@ -159,7 +159,7 @@
       "publishedAt": "2026-05-29T12:00:00.000Z",
       "category": "tech",
       "source": "OpenAI News",
-      "summary": "波士顿儿童医院使用OpenAI技术改善患者护理、减少运营负担，并帮助诊断了超过40种罕见病病例。"
+      "summary": "波士顿儿童医院利用OpenAI技术提升诊疗效率，已辅助诊断40余种罕见病例，减轻医护负担。"
     },
     {
       "sourceId": "openai-news",
@@ -169,7 +169,7 @@
       "publishedAt": "2026-05-29T12:00:00.000Z",
       "category": "tech",
       "source": "OpenAI News",
-      "summary": "Braintrust工程师利用OpenAI Codex与GPT-5.5，将客户需求转化为代码，加速实验与开发流程。"
+      "summary": "Braintrust借助OpenAI Codex与GPT-5.5将客户需求转化为代码，提升实验与开发效率。"
     },
     {
       "sourceId": "openai-news",
@@ -179,7 +179,7 @@
       "publishedAt": "2026-05-29T03:00:00.000Z",
       "category": "tech",
       "source": "OpenAI News",
-      "summary": "OpenAI推出Rosalind Biodefense项目，向经过审查的开发者及美国政府合作伙伴开放GPT-Rosalind，推动生物防御、公共卫生与大流行病防范。"
+      "summary": "OpenAI推出Rosalind Biodefense，向合格开发者及美国政府合作方开放GPT-Rosalind，助力生物防御、公共卫生与大流行病准备。"
     },
     {
       "sourceId": "openai-news",
@@ -189,7 +189,7 @@
       "publishedAt": "2026-05-29T00:00:00.000Z",
       "category": "tech",
       "source": "OpenAI News",
-      "summary": "OpenAI发布关于第三方AI评估的指南，涵盖如何评估前沿模型的能力、安全防护措施及有效性。"
+      "summary": "OpenAI公布第三方AI评估框架，指导评估前沿模型的能力、安全防护与有效性。"
     },
     {
       "sourceId": "openai-news",
@@ -199,7 +199,7 @@
       "publishedAt": "2026-05-28T12:00:00.000Z",
       "category": "tech",
       "source": "OpenAI News",
-      "summary": "Endava利用OpenAI Codex构建智能化组织，加速软件交付，将需求分析从数周缩短至数小时。"
+      "summary": "Endava借助OpenAI Codex构建智能体式组织，将需求分析时间从数周缩短至数小时，加速软件交付。"
     },
     {
       "sourceId": "openai-news",
@@ -704,7 +704,7 @@
       "publishedAt": "2026-06-01T04:44:55.000Z",
       "category": "tech",
       "source": "Hugging Face Blog",
-      "summary": "NVIDIA发布Cosmos 3，这是首个开放的全能模型，旨在用于物理AI领域的推理与行动。"
+      "summary": "NVIDIA发布Cosmos 3，首个面向物理AI推理与行动的开源全模态模型。"
     },
     {
       "sourceId": "huggingface-blog",
@@ -714,7 +714,7 @@
       "publishedAt": "2026-05-29T00:00:00.000Z",
       "category": "tech",
       "source": "Hugging Face Blog",
-      "summary": "Hugging Face博客发布PyTorch性能分析教程系列第一篇，介绍torch.profiler的基本使用方法。"
+      "summary": "PyTorch官方发布torch.profiler使用指南（第一部分），帮助初学者掌握模型性能分析工具。"
     },
     {
       "sourceId": "huggingface-blog",
@@ -977,7 +977,7 @@
       "meta": "👍 45",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出表示级分析框架，探究VLM空间推理是源于结构化三维理解还是自然图像统计捷径，通过最小对比构造揭示模型内部空间表征本质，为评估真实空间能力提供新视角。"
+      "summary": "VLM在空间推理基准上表现优异，但未必反映结构化3D理解。本文引入表征级分析框架，构建最小空间感知测试集，揭示模型多依赖统计捷径而非真3D表示。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -985,10 +985,10 @@
       "url": "https://huggingface.co/papers/2605.31264",
       "excerpt": "LLM agents are increasingly expected not only to complete isolated tasks, but also to carry bounded representations of human expertise, judgment, and interaction style. Building such person-grounded agents remains difficult because actionable knowledge associated with a person or role is usually emb",
       "publishedAt": "2026-05-29T00:00:00.000Z",
-      "meta": "👍 43",
+      "meta": "👍 44",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "COLLEAGUE.SKILL通过专家知识蒸馏自动生成AI技能，使LLM agent承载人类专家的可操作知识、判断与交互风格，降低构建个性化agent的门槛。"
+      "summary": "现有LLM agent难以承载人类专业知识与交互风格。提出COLLEAGUE.SKILL，通过专家知识蒸馏自动生成AI技能，使agent更贴近真实角色需求。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -999,7 +999,7 @@
       "meta": "👍 28",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "LongTraceRL利用搜索agent轨迹与评分奖励进行强化学习，提升LLM在长上下文中定位和整合关键信息的能力，解决现有RLVR方法置信度不足的问题。"
+      "summary": "长上下文推理中模型易遗漏关键信息，RLVR受限于低置信度奖励。提出LongTraceRL，从搜索agent轨迹中学习，并采用rubric奖励进行强化学习，显著提升定位与整合能力。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1010,7 +1010,7 @@
       "meta": "👍 28",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "EarlyTom早期token压缩方法，在Video-LLM处理视频时提前压缩视觉token，兼顾速度与理解质量，缓解大量token导致的部署效率瓶颈。"
+      "summary": "Video-LLM处理海量视觉token导致推理效率低。提出EarlyTom，在早期阶段进行token压缩，大幅降低计算量，同时保持视频理解性能，加速实际部署。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1021,7 +1021,7 @@
       "meta": "👍 23",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "Function2Scene从功能规范生成三维室内场景布局，考虑 occupants 的活动与物理需求，而非仅列举家具，推动功能性室内设计生成。"
+      "summary": "现有室内场景合成强调家具种类而非空间使用方式。提出Function2Scene，根据功能规格（如活动需求）生成3D室内布局，更好地支持 occupants 的实际活动。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1032,7 +1032,7 @@
       "meta": "👍 19",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出任务聚焦记忆，解决多模态agent长期记忆中“记忆什么”的核心挑战，超越基本准确性要求，实现连贯经验积累与持续学习。"
+      "summary": "多模态agent的长期记忆不仅是存储准确，更需决定记住哪些信息。提出任务导向的记忆机制，聚焦与当前任务相关的经验，提升连续学习效率。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1043,7 +1043,7 @@
       "meta": "👍 17",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "Xetrieval从机制层面解释密集检索，揭示高维嵌入中相关性分数的决策过程，超越词法匹配或事后文本解释，提供更透明的检索决策解释。"
+      "summary": "密集检索的决策源于不透明的高维嵌入，现有解释仅关注词汇匹配等表面信号。提出Xetrieval，通过对嵌入空间的机制性分析，揭示检索模型真正依赖的特征。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1054,7 +1054,7 @@
       "meta": "👍 14",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "探索自主Agent式数据工程用于模型专业化，让LLM自主构建领域特定数据，减少对人工工作流依赖，提升领域适配能力。"
+      "summary": "LLM因缺少高质量领域数据而难以专业化。本文探索让LLM自主设计数据筛选流程，通过agentic数据工程自动生成并选择领域相关数据，无需人工干预。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1065,7 +1065,7 @@
       "meta": "👍 13",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出GUI-RobustEval基准与鲁棒性驱动轨迹合成方法，评估并增强GUI agent的自我纠错能力，通过合成含错误恢复的轨迹数据提升部署鲁棒性。"
+      "summary": "GUI agent在真实部署中难以从自身错误中恢复。提出GUI-RobustEval评测基准和鲁棒性轨迹合成方法，通过增强错误恢复能力提升agent鲁棒性。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1076,7 +1076,7 @@
       "meta": "👍 13",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "LongDS-Bench提出长视野多轮迭代数据分析基准，评估agent跟踪演化分析上下文的能力，揭示现有方法在长周期数据分析中的失败模式。"
+      "summary": "现有数据分析基准仅评估短交互，忽略了agent跟踪长期分析上下文的能力。提出LongDS-Bench，包含多轮迭代分析任务，揭示agent在长时域中的失败模式。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1087,7 +1087,7 @@
       "meta": "👍 12",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "揭示LLM agent harness面临的后门攻击风险，攻击者可利用持久化控制绕过提示注入防御，提出相应防御机制保护工具调用与工作空间状态。"
+      "summary": "本地agentic harness中LLM可跨会话复用工作区状态，暴露了持久化后门攻击面。本文提出防御框架，针对trojan后门进行检测与防护，保障agent安全。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1098,7 +1098,7 @@
       "meta": "👍 10",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "dMoE提出可学习块专家架构，将扩散大语言模型与混合专家高效集成，在保持并行解码优势的同时提升模型容量与性能。"
+      "summary": "扩散LLM (dLLM) 结合MoE架构扩展模型容量时面临专家分配不均衡等问题。提出dMoE，引入可学习的块专家，提升dLLM在并行解码下的性能和效率。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1109,7 +1109,7 @@
       "meta": "👍 10",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "PRISM多维度基准评估LLM作为科学审稿人的能力，从识别科学漏洞、批判性思维等维度对比人类审稿人，为自动化同行评审提供标准化评测。"
+      "summary": "LLM自动审稿系统的质量尚未被充分评估。提出PRISM多维度基准，从科学性、完整性等维度对比LLM与人类审稿人，系统衡量自动审稿的优劣。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1120,7 +1120,7 @@
       "meta": "👍 8",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "DynaFLIP通过三模态动力学引导表示学习，将运动理解融入机器人感知编码器，提升机器人操作中动作相关场景的感知能力。"
+      "summary": "机器人操作感知需保留动作相关信息，但现有预训练编码器聚焦静态识别。提出DynaFLIP，结合视觉、语言和动力学三模态，引导表示学习，提升下游操作策略效果。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1131,7 +1131,7 @@
       "meta": "👍 6",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "RePoT通过确定性验证回放与检查点修复，使程序式思维链遇到无效动作时可恢复，保证规划轨迹的鲁棒性。"
+      "summary": "Program-of-Thought (PoT) 的一次性生成中单个无效动作即导致轨迹失败。提出RePoT，通过确定性验证回放和检查点修复，在遇到无效转移时恢复，增强鲁棒性。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1142,7 +1142,7 @@
       "meta": "👍 5",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "PANDO通过在线技能蒸馏，让多模态web agent随经验积累更高效，减少对rollout搜索等推理时计算的依赖。"
+      "summary": "现有多模态web agent依赖大量推理时计算。提出PANDO，通过在线技能蒸馏，让agent在积累经验过程中不断优化自身技能，从而逐步提升效率。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1153,7 +1153,7 @@
       "meta": "👍 4",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "OpenSkillEval自动审计开放技能生态系统，评估不同模型与技能组合对LLM agent下游任务性能的影响，提供可量化的方法与基准。"
+      "summary": "开源技能生态系统快速扩张但缺乏质量评估。提出OpenSkillEval，自动审计不同模型下技能的实际表现，帮助用户选择可靠技能。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1164,7 +1164,7 @@
       "meta": "👍 4",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "通过语言模型函数调用实现反思式提示调优，自动优化提示格式与指令，减少人工调整成本，提升LLM指令遵循与推理表现。"
+      "summary": "提示设计耗时且对表述敏感。提出反射式提示调优，通过语言模型函数调用机制，让模型自动优化自身提示，提升指令遵循效果。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1175,7 +1175,7 @@
       "meta": "👍 4",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "CONF-KV利用每步解码的模型置信度信号，提出置信度感知的KV缓存驱逐与混合精度存储，降低长序列推理的GPU内存占用并保持生成质量。"
+      "summary": "长序列LLM推理中KV缓存成为显存瓶颈。提出CONF-KV，利用模型每步的置信度信号进行缓存驱逐，并采用混合精度存储，在降低显存占用的同时保持生成质量。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1186,7 +1186,7 @@
       "meta": "👍 4",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "CoHyDE通过LLM重写器与稠密编码器的迭代协同训练，弥合用户口语查询与API技术词汇间的语义鸿沟，提升大规模工具检索准确率。"
+      "summary": "工具检索面临用户查询与API词汇不匹配的瓶颈。提出CoHyDE，迭代联合训练LLM查询重写器和密集编码器，缩小语义鸿沟，提升检索准确率。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1296,7 +1296,7 @@
       "publishedAt": "2026-05-29T00:00:00.000Z",
       "category": "tech",
       "source": "TLDR AI",
-      "summary": "TLDR AI简报汇总：Anthropic发布Opus 4.8并估值9650亿美元，微软推出新编程模型。"
+      "summary": "Anthropic发布Opus 4.8并估值9650亿美元，微软推出新的编码模型。"
     },
     {
       "sourceId": "tldr-ai",
@@ -1477,7 +1477,7 @@
       "publishedAt": "2026-05-29T05:44:39.000Z",
       "category": "tech",
       "source": "Smol AI News",
-      "summary": "Anthropic发布Claude Opus 4.8，带来协作与编码行为改进，但基准测试结果参差不齐，文档解析出现退化。平台还增加对话中系统指令功能。"
+      "summary": "Anthropic推出Claude Opus 4.8，协作与编码能力提升，但文档解析出现退步；平台新增对话中修改系统指令功能。"
     },
     {
       "sourceId": "smol-ai-news",
@@ -1748,7 +1748,7 @@
       "publishedAt": "2026-05-30T01:57:15.000Z",
       "category": "tech",
       "source": "Latent Space",
-      "summary": "Latent Space简报指出当日新闻较少，重点突出了AI工程领域的新关注点。"
+      "summary": "今日新闻较少，重点介绍AIE工作流聚焦内容，主要涉及创始人及前向部署工程师。"
     },
     {
       "sourceId": "latent-space",
@@ -1758,7 +1758,7 @@
       "publishedAt": "2026-05-29T02:07:24.000Z",
       "category": "tech",
       "source": "Latent Space",
-      "summary": "Anthropic完成9650亿美元H轮融资，并发布Claude Opus 4.8及动态工作流/超代码功能。"
+      "summary": "Anthropic完成9650亿美元H轮融资，并发布Claude Opus 4.8及动态工作流/超编码功能。"
     },
     {
       "sourceId": "latent-space",
@@ -1768,7 +1768,7 @@
       "publishedAt": "2026-05-28T18:41:24.000Z",
       "category": "tech",
       "source": "Latent Space",
-      "summary": "Cognition与OpenInspect探讨异步智能体时代，包括Devin提交占比80%、从规格到PR的工作流、完整虚拟机、智能体记忆及产品经理直接交付代码。"
+      "summary": "Cognition公司Walden Yan与OpenInspect的Cole Murray讨论异步智能体时代，涉及Devin提交量占八成、从规范到PR的工作流、完整虚拟机、智能体记忆及产品经理编写代码。"
     },
     {
       "sourceId": "latent-space",
@@ -1778,7 +1778,7 @@
       "publishedAt": "2026-05-28T07:26:09.000Z",
       "category": "tech",
       "source": "Latent Space",
-      "summary": "Cognition以260亿美元估值完成10亿美元D轮融资，评论认为编程市场是一个没有上限的潜在市场。"
+      "summary": "Cognition以260亿美元估值完成10亿美元D轮融资，称编程市场总规模无上限。"
     },
     {
       "sourceId": "latent-space",
@@ -1932,7 +1932,7 @@
       "publishedAt": "2026-05-29T10:00:00.000Z",
       "category": "tech",
       "source": "MIT Tech Review AI",
-      "summary": "教皇利奥十四世发布关于人工智能的通谕《Magnifica Humanitas》，强调“技术绝非中立”，呼吁人们勇敢应对AI时代。"
+      "summary": "教皇利奥十四世发布通谕《Magnifica Humanitas》，强调「技术绝非中性」，呼吁科技与政策制定者以勇气和智慧应对人工智能时代。"
     },
     {
       "sourceId": "mit-tech-review-ai",
@@ -1942,7 +1942,7 @@
       "publishedAt": "2026-05-28T09:51:11.000Z",
       "category": "tech",
       "source": "MIT Tech Review AI",
-      "summary": "MIT Tech Review的AI炒作指数显示，前谷歌CEO埃里克·施密特在亚利桑那大学演讲呼吁毕业生塑造AI，却遭到全场嘘声，反映公众对AI的怀疑。"
+      "summary": "2026届毕业生对AI表现冷淡，前谷歌CEO埃里克·施密特在亚利桑那大学毕业演讲中呼吁学生塑造AI时遭一片嘘声。"
     },
     {
       "sourceId": "mit-tech-review-ai",
@@ -2024,7 +2024,7 @@
       "publishedAt": "2026-06-01T06:47:24.000Z",
       "category": "politics",
       "source": "BBC World",
-      "summary": "美国称打击了伊朗雷达站点；科威特报告遭导弹和无人机袭击。这是双方一周内第三次升级。"
+      "summary": "美国称打击伊朗雷达站点，科威特报告导弹和无人机袭击。一周内美伊在霍尔木兹海峡附近第三次升级冲突。"
     },
     {
       "sourceId": "bbc-world",
@@ -2061,7 +2061,7 @@
       "publishedAt": "2026-06-01T06:23:59.000Z",
       "category": "politics",
       "source": "BBC World",
-      "summary": "缅甸反叛武装控制的村庄发生巨大爆炸，造成数十人死亡。叛军称爆炸由靠近中国边境的采矿用炸药引起。"
+      "summary": "缅甸一处反叛武装控制的村庄发生巨大爆炸，致数十人死亡。叛军称爆炸系靠近中国边境的采矿炸药引发。"
     },
     {
       "sourceId": "bbc-world",
@@ -2269,7 +2269,7 @@
       "publishedAt": "2026-06-01T06:28:52.000Z",
       "category": "politics",
       "source": "BBC World",
-      "summary": "粉丝们聚集庆祝玛丽莲·梦露诞辰100周年，创造了最多人装扮成梦露的世界纪录。"
+      "summary": "玛丽莲·梦露模仿者齐聚洛杉矶庆祝其百年诞辰，创下最大规模模仿者聚集的世界纪录。"
     },
     {
       "sourceId": "bbc-world",
@@ -2297,7 +2297,7 @@
       "publishedAt": "2026-06-01T06:00:09.000Z",
       "category": "politics",
       "source": "The Guardian",
-      "summary": "研究显示，2025年加利福尼亚、加拿大、韩国和欧洲等地发生“特大火灾”，但全球燃烧面积因非洲农耕变化而减少。"
+      "summary": "研究显示2025年野火在加州、加拿大、韩国、欧洲等富裕地区造成严重破坏，但全球烧毁面积因非洲农耕方式改变而下降。"
     },
     {
       "sourceId": "guardian-world",
@@ -2388,7 +2388,7 @@
       "publishedAt": "2026-06-01T07:17:53.000Z",
       "category": "politics",
       "source": "The Guardian",
-      "summary": "台风“蔷蜜”逼近日本冲绳等地，带来强风暴雨；欧洲则遭遇高温，西班牙气温可能达40°C。"
+      "summary": "台风「蔷蜜」威胁日本冲绳及东南部，带来强风暴雨；同时欧洲遭遇热浪，西班牙气温或达40°C。"
     },
     {
       "sourceId": "guardian-world",
@@ -2434,7 +2434,7 @@
       "publishedAt": "2026-06-01T07:29:23.000Z",
       "category": "politics",
       "source": "The Guardian",
-      "summary": "澳大利亚实时新闻：Hastie称房价下跌对近期购房者可能不是“那么令人鼓舞”；一名13岁少年涉嫌策划对昆士兰一所学校的袭击。"
+      "summary": "澳大利亚新闻直播：参议员Hastie称房价下跌对近期买家可能并非「完全令人鼓舞」；一名13岁少年涉嫌策划袭击昆士兰学校，已被逮捕。"
     },
     {
       "sourceId": "guardian-world",
@@ -2444,7 +2444,7 @@
       "publishedAt": "2026-06-01T07:25:33.000Z",
       "category": "politics",
       "source": "The Guardian",
-      "summary": "澳大利亚财长吉姆·查默斯表示，拍卖成功率降至54.5%的新低，这对首次购房者可能是“好事”。"
+      "summary": "澳大利亚财长Jim Chalmers表示，拍卖成交率走低对首次购房者可能是「好事」。5月最后一个周六拍卖成交率仅54.5%，创年内新低。"
     },
     {
       "sourceId": "guardian-world",
@@ -2526,7 +2526,7 @@
       "publishedAt": "2026-06-01T07:11:00.000Z",
       "category": "politics",
       "source": "The Guardian",
-      "summary": "中东危机：科威特报告遭导弹和无人机袭击，美国对伊朗雷达站点实施打击；特朗普称战争会“一切顺利”。"
+      "summary": "中东危机持续：科威特报告遭导弹和无人机袭击，引发防空警报。美国总统特朗普称战争将「一切顺利」，并批评反对者。"
     },
     {
       "sourceId": "guardian-world",
@@ -2572,7 +2572,7 @@
       "publishedAt": "2026-06-01T07:14:30.000Z",
       "category": "politics",
       "source": "NYT World",
-      "summary": "奥地利首次对叙利亚阿萨德政权官员进行战争罪审判，两名被控酷刑的男子将面对叙利亚证人的指证。"
+      "summary": "奥地利首次审判叙利亚阿萨德政权官员，两名被控酷刑的军官面临战争罪指控。叙利亚证人将罕见地直面被告。"
     },
     {
       "sourceId": "nyt-world",
@@ -2591,7 +2591,7 @@
       "publishedAt": "2026-06-01T06:00:38.000Z",
       "category": "politics",
       "source": "NYT World",
-      "summary": "台湾批评中国以“毫无根据的借口”驱逐《纽约时报》记者，称这表明北京是“麻烦制造者”。"
+      "summary": "台湾政府批评中国以「莫须有借口」驱逐《纽约时报》记者，称此举显示北京是「麻烦制造者」。"
     },
     {
       "sourceId": "nyt-world",
@@ -2610,7 +2610,7 @@
       "publishedAt": "2026-06-01T07:04:49.000Z",
       "category": "politics",
       "source": "NYT World",
-      "summary": "哥伦比亚总统选举进入决选，候选人阿韦拉多·德·拉·埃斯普里亚将面对即将离任总统古斯塔沃·佩特罗的左翼政党参议员。"
+      "summary": "哥伦比亚总统选举进入第二轮投票，候选人Abelardo de la Espriella将与左翼参议员Iván Cepeda（现任总统Petro盟友）在6月展开对决。"
     },
     {
       "sourceId": "nyt-world",
@@ -2701,7 +2701,7 @@
       "publishedAt": "2026-06-01T06:52:02.000Z",
       "category": "politics",
       "source": "NYT World",
-      "summary": "美国军方称在周末对伊朗南部进行了“自卫打击”，打击了更多军事目标；伊朗军方称已针对美军基地进行报复。"
+      "summary": "美国军方称周末在伊朗南部实施「自卫打击」，攻击了更多军事目标；伊朗军方称已报复攻击美军基地。"
     },
     {
       "sourceId": "nyt-world",
@@ -2855,7 +2855,7 @@
       "publishedAt": "2026-06-01T06:02:25.000Z",
       "category": "politics",
       "source": "NPR World",
-      "summary": "哥伦比亚总统选举第一轮投票中，强硬派候选人阿韦拉多·德·拉·埃斯普里亚领先，将与佩特罗盟友伊万·塞佩达进入决选。"
+      "summary": "哥伦比亚总统选举首轮中，强硬派候选人Abelardo de la Espriella领先，将与Petro盟友Iván Cepeda在6月第二轮对决。"
     },
     {
       "sourceId": "npr-world",
@@ -2865,7 +2865,7 @@
       "publishedAt": "2026-06-01T05:53:00.000Z",
       "category": "politics",
       "source": "NPR World",
-      "summary": "美国轰炸伊朗雷达和无人机控制站点；伊朗周末击落美军MQ-1“捕食者”无人机；科威特防空部队开火拦截。"
+      "summary": "美军轰炸伊朗雷达和无人机控制站点，以回应伊朗击落美军MQ-1无人机。科威特防空系统周一开火拦截导弹和无人机。"
     },
     {
       "sourceId": "npr-world",
@@ -3208,7 +3208,7 @@
       "publishedAt": "2026-06-01T06:18:08.000Z",
       "category": "politics",
       "source": "Al Jazeera",
-      "summary": "哥伦比亚选举进入紧张之夜，第一轮投票后，德·拉·埃斯普里亚与塞佩达将在6月21日决选。"
+      "summary": "哥伦比亚总统选举进入第二轮，定于6月21日举行。首轮投票后，de la Espriella与Cepeda得票接近，竞争激烈。"
     },
     {
       "sourceId": "aljazeera",
