@@ -1,68 +1,67 @@
 {
-  "hero_headline": "伊朗导弹袭击科威特美军基地，中东危机加深",
-  "daily_overview": "中东战火重燃：伊朗于6月1日凌晨向科威特美军基地发射导弹，美军随后打击伊朗在霍尔木兹海峡的军事设施；以色列同步下令空袭贝鲁特南郊真主党据点，地区多线冲突升级。技术领域，Anthropic以9650亿美元估值完成650亿美元融资，并发布Claude Opus 4.8模型；OpenAI启动罗莎琳德生物防御计划，并展示波士顿儿童医院AI诊断罕见病突破；NVIDIA开源物理AI模型Cosmos 3，加速机器人决策研究。同日，欧盟对华贸易争议升温，德媒建议以技术转让换市场准入。科技投资热度不减，但地缘风险骤然上升。",
+  "hero_headline": "美伊互袭升级 中东局势急剧恶化",
+  "daily_overview": "今日中东局势急剧恶化，美国空袭伊朗军事设施，伊朗以导弹袭击驻科威特美军，以色列同步轰炸贝鲁特南部，多方对抗令停火前景渺茫。科技方面，Anthropic以9650亿美元估值完成650亿美元融资，发布Opus 4.8和Dynamic Workflows，巩固AI领军地位；英伟达推出开源物理AI模型Cosmos 3；OpenAI披露与波士顿儿童医院合作，用AI诊断40余种罕见病；DeepMind科学家利用AI发现逆转细胞衰老的新因子，展现AI在生物医学的突破潜力。",
   "tech_briefs": [
     {
-      "title": "Anthropic完成650亿美元融资并发布Claude Opus 4.8",
+      "title": "Anthropic获650亿融资 估值9650亿",
       "url": "https://news.smol.ai/issues/26-05-28-anthropic-series-h/",
       "source": "Smol AI News",
-      "summary": "Anthropic在H轮融资中以9650亿美元估值募集650亿美元，同期推出Claude Opus 4.8，改进协作与编程能力，但部分基准测试出现倒退。（多家报道）",
+      "summary": "Anthropic宣布完成650亿美元H轮融资，估值达9650亿美元，同时推出Opus 4.8模型和Dynamic Workflows，多项基准表现出增量提升。（多家报道）",
       "importance": 10
     },
     {
-      "title": "OpenAI推出罗莎琳德生物防御平台",
-      "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
-      "source": "OpenAI News",
-      "summary": "OpenAI发布罗莎琳德生物防御平台，向经审核的开发者和美国政府机构提供GPT-Rosalind模型访问，用于生物防御、公共卫生和流行病防范。",
+      "title": "英伟达发布开源物理AI模型Cosmos 3",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
+      "source": "Hugging Face Blog",
+      "summary": "英伟达推出Cosmos 3，首个面向物理AI推理与行动的开源全能模型，旨在加速机器人、自动驾驶等领域的物理理解能力。",
       "importance": 9
     },
     {
-      "title": "波士顿儿童医院用AI解锁罕见病诊断",
+      "title": "波士顿儿童医院利用AI诊断罕见病超40例",
       "url": "https://openai.com/index/boston-childrens-hospital",
       "source": "OpenAI News",
-      "summary": "波士顿儿童医院利用OpenAI技术改善患者护理，减少运营负担，并帮助诊断超过40例罕见疾病案例。",
+      "summary": "波士顿儿童医院借助OpenAI技术提升诊疗效率，成功诊断40余例罕见病，并减轻医生文书负担。",
       "importance": 8
     },
     {
-      "title": "NVIDIA发布开源物理AI模型Cosmos 3",
-      "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
-      "source": "Hugging Face Blog",
-      "summary": "NVIDIA推出Cosmos 3，首个面向物理AI推理与行动的开源全能模型，能够理解物理世界并生成动作，用于机器人、自动驾驶等领域。",
+      "title": "AI助力发现逆转细胞衰老新因子",
+      "url": "https://deepmind.google/blog/fast-tracking-genetic-leads-to-reverse-cellular-aging/",
+      "source": "DeepMind Blog",
+      "summary": "生物学家使用DeepMind Co-Scientist系统快速筛选基因靶点，发现可成功逆转人类细胞衰老的新因子，为抗衰老研究开辟新途径。",
       "importance": 8
     }
   ],
   "politics_briefs": [
     {
-      "title": "伊朗导弹袭美军基地，美以联合打击伊朗和黎巴嫩目标",
+      "title": "美伊互袭升级 以色列轰炸贝鲁特",
       "url": "https://www.nytimes.com/live/2026/06/01/world/iran-war-us-trump-israel-lebanon",
       "source": "NYT World",
-      "summary": "伊朗发射导弹袭击科威特美军基地，美中央司令部称拦截两枚导弹。美军随后打击伊朗在霍尔木兹海峡的军事目标。以色列空袭贝鲁特南郊，真主党地区紧张加剧。（多家报道）",
+      "summary": "美国空袭伊朗Qeshm岛等军事目标，伊朗以导弹袭击驻科威特美军，以色列总理内塔尼亚胡下令轰炸贝鲁特南部真主党据点，多国呼吁停火。（多家报道）",
       "importance": 10
     },
     {
-      "title": "法国在英国协助下扣押受制裁俄罗斯油轮",
-      "url": "https://www.bbc.com/news/articles/cn8pwgej1gxo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "summary": "法国在马赛附近海域扣押一艘受欧盟制裁的俄罗斯油轮，英国直升机提供支援。法方称此举旨在执行制裁并削弱俄罗斯战争资金。",
+      "title": "菲律宾与越南升级外交伙伴关系应对南海紧张",
+      "url": "https://thediplomat.com/2026/06/philippines-vietnam-upgrade-diplomatic-partnership-amid-maritime-tensions-with-china/",
+      "source": "The Diplomat",
+      "summary": "菲律宾总统马科斯称维持南海和平稳定、航行自由「不可谈判」，与越南提升伙伴关系以应对中国海上活动。",
       "importance": 7
     },
     {
-      "title": "德媒建议欧盟以技术转让要求换取中国开放市场",
-      "url": "https://www.dw.com/zh/德语媒体：中国应该转让技术换取市场准入/a-77378325?maca=chi-rss-chi-all-1127-rdf",
-      "source": "DW 中文",
-      "summary": "欧盟委员会称对华贸易关系\"不可持续\"，部分德媒建议以配额与关税已无法阻挡中国科技进步，应转向以市场准入换取技术转让。",
-      "importance": 6
+      "title": "刚果埃博拉确诊病例达282例 尚无有效疫苗",
+      "url": "https://www.npr.org/2026/06/01/g-s1-125143/ebola-updates",
+      "source": "NPR World",
+      "summary": "刚果民主共和国埃博拉疫情持续，确诊282例，死亡超千疑似，所涉毒株无批准疗法或疫苗。",
+      "importance": 7
     }
   ],
-  "editor_note": "一日之内，中东多线交火与AI领域天价融资并存，科技乐观主义与地缘现实主义形成鲜明对比，决策者需平衡发展与安全。",
+  "editor_note": "中东冲突骤然激化令全球紧张，科技巨头的巨额融资则凸显AI赛道持续升温。地缘风险与技术创新并行，投资者需警惕黑天鹅事件。",
   "keywords": [
-    "伊朗导弹袭击",
-    "美军反击",
-    "以色列空袭",
+    "美伊冲突",
+    "中东局势",
     "Anthropic融资",
-    "Claude Opus 4.8",
-    "OpenAI罗莎琳德",
-    "NVIDIA Cosmos 3",
-    "欧盟对华贸易"
+    "英伟达Cosmos 3",
+    "AI医学诊断",
+    "南海紧张",
+    "刚果埃博拉"
   ]
 }
