@@ -1,75 +1,68 @@
 {
-  "hero_headline": "美伊冲突升级，以色列威胁贝鲁特",
-  "daily_overview": "今日科技领域迎重大融资与技术突破：Anthropic完成9650亿美元H轮融资并发布Opus 4.8；波士顿儿童医院利用AI诊断40余种罕见病；Nvidia推出首个开放物理AI全能模型Cosmos 3。时政方面，中东局势骤然紧张：美伊互相攻击，以色列威胁贝鲁特南部，伊朗据报暂停谈判；欧盟委员会称对华贸易关系不可持续，将寻求成员国支持新措施；印度总理莫迪会见缅甸军政府领导人，接触政策引发争议。全球地缘政治与技术演进相互交织，不确定性加剧。",
+  "hero_headline": "美伊冲突升级 伊朗暂停和平谈判",
+  "daily_overview": "今日时政焦点为美伊冲突骤然升级，美国空袭伊朗雷达站，伊朗袭击科威特美军基地并宣布暂停所有和平谈判，中东局势急剧恶化。以色列同时扩大在黎巴嫩南部的占领，地区冲突外溢风险加剧。技术领域，Anthropic完成650亿美元H轮融资、估值达9650亿美元并发布Opus 4.8模型；波士顿儿童医院利用AI确诊超40种罕见病；JetBrains推出12B参数代码生成模型Mellum2；NVIDIA发布开源物理AI模型Cosmos3。AI工具与基础模型迭代加速，应用场景持续拓宽。",
   "tech_briefs": [
     {
-      "title": "Anthropic完成9650亿美元H轮融资，发布Opus 4.8",
+      "title": "Anthropic获650亿美元融资 发布Opus 4.8",
       "url": "https://news.smol.ai/issues/26-05-28-anthropic-series-h/",
       "source": "Smol AI News",
-      "summary": "Anthropic宣布融资650亿美元，估值9650亿美元，同时发布Claude Opus 4.8，并推出动态工作流功能。（多家报道）",
-      "importance": 10
-    },
-    {
-      "title": "微软开源文档转Markdown工具",
-      "url": "https://github.com/microsoft/markitdown",
-      "source": "GitHub Trending",
-      "summary": "微软开源Python工具MarkItDown，可批量将文件和Office文档转换为Markdown，方便内容迁移与知识管理。",
-      "importance": 7
-    },
-    {
-      "title": "波士顿儿童医院用AI诊断40余种罕见病",
-      "url": "https://openai.com/index/boston-childrens-hospital",
-      "source": "OpenAI News",
-      "summary": "波士顿儿童医院借助OpenAI技术诊断超过40种罕见病，减轻运营负担，改善患者护理。",
+      "summary": "Anthropic完成650亿美元H轮融资，估值达9650亿美元，同时发布Opus 4.8模型，改进协作与编码能力，文档解析出现回退。（多家报道）",
       "importance": 9
     },
     {
-      "title": "Nvidia发布开放物理AI全能模型Cosmos 3",
-      "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
-      "source": "Hugging Face Blog",
-      "summary": "Nvidia推出首个面向物理AI推理与动作的开放全能模型，推动具身智能发展。",
+      "title": "波士顿儿童医院用AI确诊40余种罕见病",
+      "url": "https://openai.com/index/boston-childrens-hospital",
+      "source": "OpenAI News",
+      "summary": "波士顿儿童医院利用OpenAI技术改善患者护理、减轻运营负担，并帮助确诊超过40种罕见疾病。",
       "importance": 8
     },
     {
-      "title": "IBM研究：企业AI规模化依赖智能体逻辑",
-      "url": "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption",
+      "title": "JetBrains发布12B参数代码生成模型Mellum2",
+      "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
       "source": "Hugging Face Blog",
-      "summary": "IBM Research探讨企业采用AI的关键在于智能体逻辑，而非仅依赖LLM，强调Agentic AI可扩展性。",
+      "summary": "Mellum2为12B参数的混合专家模型，2.5B活跃参数，专注软件工程任务，包括代码生成、编辑、调试等，开源通用。（多家报道）",
       "importance": 7
+    },
+    {
+      "title": "NVIDIA发布开源物理AI模型Cosmos 3",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
+      "source": "Hugging Face Blog",
+      "summary": "NVIDIA推出Cosmos 3，首个面向物理AI推理与行动的开源全模态模型，旨在推动机器人等物理世界应用。",
+      "importance": 8
     }
   ],
   "politics_briefs": [
     {
-      "title": "美伊冲突升级，以色列威胁贝鲁特",
-      "url": "https://www.nytimes.com/live/2026/06/01/world/iran-war-us-trump-israel-lebanon",
-      "source": "NYT World",
-      "summary": "美国与伊朗相互攻击，以色列向贝鲁特南部真主党据点发布撤离令，伊朗据报将暂停与美国谈判。（多家报道）",
+      "title": "美伊相互打击 伊朗暂停所有和平谈判",
+      "url": "https://www.theguardian.com/world/live/2026/jun/01/iran-war-live-news-updates-kuwait-missile-drone-attack-us-strikes-iran-radar-sites",
+      "source": "The Guardian",
+      "summary": "美国空袭伊朗雷达站，伊朗袭击科威特美军基地。伊朗以以色列在黎巴嫩行动为由暂停所有和平谈判，指责美以违反停火。（多家报道）",
       "importance": 10
     },
     {
-      "title": "欧委会称对华贸易关系不可持续，寻求各国支持",
-      "url": "https://www.dw.com/zh/对中国采取更强硬措施？欧委会将首先寻求欧盟各国支持/a-77380374?maca=chi-rss-chi-all-1127-rdf",
-      "source": "DW 中文",
-      "summary": "欧委会表示欧盟与中国贸易投资关系不可持续，将寻求德国等欧盟国家支持出台新保护措施，北京已发出警告。",
-      "importance": 8
+      "title": "以色列扩大黎南部占领 发布贝鲁特疏散令",
+      "url": "https://www.bbc.com/news/articles/c4g419e2xlvo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "以色列总理内塔尼亚胡下令轰炸黎巴嫩首都南郊真主党据点，并占领更多黎南部土地，冲突持续升级。（多家报道）",
+      "importance": 9
     },
     {
-      "title": "印度总理莫迪会见缅甸军政府领导人",
-      "url": "https://www.aljazeera.com/news/2026/6/1/indian-pm-modi-meets-myanmar-military-govt-leader-in-new-delhi?traffic_source=rss",
-      "source": "Al Jazeera",
-      "summary": "印度总理莫迪在新德里会见缅甸军政府领导人敏昂莱，缅甸反对派批评此举，印度称接触是最佳途径。",
+      "title": "欧盟称对华贸易关系不可持续 寻求成员国支持",
+      "url": "https://www.dw.com/zh/对中国采取更强硬措施？欧委会将首先寻求欧盟各国支持/a-77380374?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "欧委会表示欧盟与中国当前的贸易和投资关系「不可持续」，需采取果断措施，但制定新保护措施须获德国等国支持，北京已发出警告。",
       "importance": 7
     }
   ],
-  "editor_note": "科技巨头估值飙升，AI医疗落地加速；中东战火重燃，大国博弈加剧多变格局。",
+  "editor_note": "美伊冲突加剧中东动荡，技术领域融资与模型发布高频。AI医疗与代码生成落地值得跟踪，但需注意技术伦理与安全。",
   "keywords": [
     "美伊冲突",
+    "AI",
+    "中东局势",
     "Anthropic",
-    "Claude Opus 4.8",
-    "AI诊断",
-    "Nvidia Cosmos",
-    "欧盟对华",
-    "缅甸",
-    "OpenAI"
+    "代码生成",
+    "物理AI",
+    "罕见病诊断",
+    "欧盟对华"
   ]
 }
