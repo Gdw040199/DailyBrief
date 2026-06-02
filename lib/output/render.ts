@@ -520,7 +520,9 @@ function renderDeadlines(): string {
     { name: "ICCV 2027", date: "2027-03-08", url: "https://iccv2027.thecvf.com/" },
     { name: "NeurIPS 2026", date: "2026-05-22", url: "https://neurips.cc/Conferences/2026" },
     { name: "ICML 2027", date: "2027-01-31", url: "https://icml.cc/Conferences/2027" },
+    { name: "ICLR 2027", date: "2026-10-01", url: "https://iclr.cc/Conferences/2027" },
     { name: "AAAI 2027", date: "2026-08-15", url: "https://aaai.org/conference/aaai/aaai-27/" },
+    { name: "ACM MM 2026", date: "2026-04-15", url: "https://acmmm2026.org/" },
   ];
 
   const upcoming = deadlines
