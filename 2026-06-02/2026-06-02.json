@@ -1,74 +1,75 @@
 {
-  "hero_headline": "俄大规模袭击乌克兰致13死 中东冲突持续",
-  "daily_overview": "今日地缘政治聚焦俄对乌大规模导弹无人机袭击致13死，中东冲突持续，特朗普宣称以方与真主党同意停火但内塔尼亚胡否认。美国对巴西加征25%关税，欧委会寻求成员国支持对中国更强硬措施。技术方面，英伟达发布开源全模态模型Cosmos 3及Nemotron 3 Ultra，引领AI开源潮流；OpenAI启动密歇根州1吉瓦数据中心，前沿模型与Codex登陆AWS；JetBrains推出12B参数MoE模型Mellum2。此外，微软发布MarkItDown文档转换工具，Anthropic估值近万亿计划上市。AI生态扩张与地缘紧张并存。",
+  "hero_headline": "俄乌中东战火不断 科技界迎NVIDIA开源模型",
+  "daily_overview": "今日技术与时局均现重大信号。科技方面，NVIDIA发布全球首个开源全能感知模型Cosmos 3及5500亿参数的Nemotron 3 Ultra，引发行业震动；OpenAI推进基础设施，前沿模型上架AWS，并于密歇根州启动1GW数据中心。时政方面，黎以冲突未因美国停火提议而平息，俄军对乌克兰发动大规模无人机与导弹袭击，特朗普宣布对巴西加征25%关税令贸易局势再添变数。全球安全与经济格局面临深刻调整。",
   "tech_briefs": [
     {
-      "title": "英伟达发布开源全模态模型Cosmos 3",
+      "title": "NVIDIA发布开源全能模型Cosmos 3及Nemotron 3 Ultra",
       "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
       "source": "Hugging Face Blog",
-      "summary": "英伟达推出Cosmos 3，首个面向物理AI推理与行动的开源全模态模型，同时发布Nemotron 3 Ultra（5500亿参数）开放权重模型，性能优异。（多家报道）",
+      "summary": "NVIDIA推出Cosmos 3（首个开源全能感知模型，统一语言、图像、视频、音频和动作，采用混合Transformer）和Nemotron 3 Ultra（5500亿参数开放权重模型）。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "OpenAI前沿模型上架AWS并拓展数据中心",
+      "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
+      "source": "OpenAI News",
+      "summary": "OpenAI前沿模型与Codex在AWS上线，企业可经既有环境使用；同时于密歇根启动1GW数据中心项目；并重申AI政策立场支持审慎监管。（多家报道）",
       "importance": 9
     },
     {
-      "title": "OpenAI启动密歇根州1吉瓦数据中心",
-      "url": "https://openai.com/index/stargate-michigan-data-center",
-      "source": "OpenAI News",
-      "summary": "OpenAI在密歇根州启动Stargate项目下的1吉瓦数据中心建设，旨在扩展AI基础设施、创造就业并支持社区。",
-      "importance": 8
-    },
-    {
-      "title": "OpenAI前沿模型与Codex登陆AWS",
-      "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
-      "source": "OpenAI News",
-      "summary": "OpenAI前沿模型及Codex现已通过AWS全面可用，企业可在现有AWS环境中使用，加速AI应用开发。",
-      "importance": 8
-    },
-    {
-      "title": "JetBrains推出12B参数MoE模型Mellum2",
+      "title": "JetBrains发布120亿参数混合专家模型Mellum2",
       "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
       "source": "Hugging Face Blog",
-      "summary": "JetBrains推出Mellum2，采用混合专家（MoE）架构，参数量12B，面向代码理解等任务。",
+      "summary": "JetBrains发布Mellum2，120亿参数混合专家模型，旨在提升编码辅助与软件开发效率。",
       "importance": 7
     },
     {
-      "title": "微软发布文档转Markdown工具MarkItDown",
+      "title": "微软开源Markitdown：文档转Markdown工具",
       "url": "https://github.com/microsoft/markitdown",
       "source": "GitHub Trending",
-      "summary": "Python工具，将Office文档（Word、Excel、PDF等）转换为Markdown，解决文档格式迁移问题，适合开发者与知识管理。",
+      "summary": "Python工具，可将Office文档（Word、Excel、PDF）批量转换为Markdown格式，简化内容迁移与预处理流程。",
       "importance": 6
+    },
+    {
+      "title": "韩语网页浏览智能体基准K-BrowseComp发布",
+      "url": "https://huggingface.co/papers/2606.02404",
+      "source": "HuggingFace Trending Papers",
+      "summary": "针对韩语语境，提出含400个任务的网页浏览智能体基准K-BrowseComp，评估模型在韩国网站上的导航与信息检索能力，填补韩语评测空白。",
+      "importance": 7
     }
   ],
   "politics_briefs": [
     {
-      "title": "俄罗斯大规模袭击乌克兰致至少13死",
-      "url": "https://www.bbc.com/news/articles/c5y8nq8ljqwo?at_medium=RSS&at_campaign=rss",
+      "title": "黎以冲突持续 尽管接受美国停火计划",
+      "url": "https://www.bbc.com/news/articles/c202rxp1z15o",
       "source": "BBC World",
-      "summary": "俄罗斯对乌克兰多城市发动大规模导弹和无人机袭击，造成至少13人死亡，救援仍在进行。（多家报道）",
+      "summary": "尽管以色列和真主党接受美国提出的部分停火计划，黎巴嫩境内冲突仍在继续；特朗普施压以色列避免打击贝鲁特。（多家报道）",
       "importance": 10
     },
     {
-      "title": "中东冲突持续 特朗普推动停火未果",
-      "url": "https://www.theguardian.com/world/live/2026/jun/02/iran-us-israel-lebanon-trump-netanyahu-hezbollah-beirut-hormuz-talks-oil-latest-news-updates",
-      "source": "The Guardian",
-      "summary": "尽管特朗普宣称已说服以色列和真主党停止攻击，但黎巴嫩冲突仍在继续，双方接受美国部分停火计划但战斗未止。（多家报道）",
-      "importance": 9
+      "title": "俄军大规模空袭乌克兰致至少13人死亡",
+      "url": "https://www.bbc.com/news/articles/c5y8nq8ljqwo",
+      "source": "BBC World",
+      "summary": "俄军一夜发射656架无人机和73枚导弹袭击乌克兰多个城市，造成至少13人死亡，救援仍在进行。（多家报道）",
+      "importance": 10
     },
     {
-      "title": "特朗普政府对巴西加征25%关税",
+      "title": "特朗普对巴西加征25%关税 援引301调查",
       "url": "https://www.nytimes.com/2026/06/02/business/trump-tariffs-brazil.html",
       "source": "NYT World",
-      "summary": "美国以贸易不公平为由对巴西加征25%关税，标志着其通过301调查重建关税议程的最新行动。",
+      "summary": "特朗普政府以不公平贸易为由，宣布对巴西加征25%关税，为通过301调查重建关税议程的最新行动。",
       "importance": 8
     }
   ],
-  "editor_note": "今日技术亮点为英伟达开源全模态模型，时局聚焦俄乌冲突与中东僵局。重大技术发布与地缘紧张并存，政策博弈持续。",
+  "editor_note": "今日科技亮点集中于NVIDIA开源全能模型与OpenAI基础设施布局，时局方面黎以和俄乌冲突持续升温，全球安全形势趋于紧张。",
   "keywords": [
-    "俄乌冲突",
-    "中东局势",
-    "英伟达",
-    "OpenAI",
-    "AI开源",
-    "美国关税",
-    "JetBrains"
+    "NVIDIA Cosmos 3",
+    "OpenAI AWS",
+    "黎以冲突",
+    "俄乌战争",
+    "特朗普关税",
+    "AI开源模型",
+    "Mellum2",
+    "Markitdown"
   ]
 }
