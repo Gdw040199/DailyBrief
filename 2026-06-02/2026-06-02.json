@@ -1,75 +1,68 @@
 {
-  "hero_headline": "俄大规模空袭乌克兰致至少11人死",
-  "daily_overview": "技术领域，英伟达开源全模态世界模型Cosmos3，OpenAI在密歇根启动1GW数据中心并扩展AWS合作；JetBrains发布Mellum2 MoE模型，微软推出Markitdown文档转换工具。地缘方面，俄军对乌克兰多城市发动大规模袭击，造成至少11人死亡；以色列与真主党接受美部分停火计划但冲突持续；澳大利亚工党内部质疑Aukus核潜艇协议。AI商业消息，Anthropic计划今年在美上市。整体呈现技术突破与地缘紧张并存的格局。",
+  "hero_headline": "NVIDIA连发三款AI模型 开源全模态Cosmos 3",
+  "daily_overview": "今日技术界迎来重磅发布：NVIDIA推出开源全模态模型Cosmos 3、5500亿参数Nemotron 3 Ultra及RTX Spark，OpenAI将前沿模型与Codex部署至AWS，JetBrains发布120亿参数混合专家模型Mellum2。AI政策层面，OpenAI阐述支持审慎监管，Pope发布AI通谕强调技术非中立。政治方面，俄罗斯大规模导弹袭击乌克兰致至少10死，中东局势暂缓但仍存变数，以色列与真主党接受局部停火但冲突持续；欧盟寻求成员国支持对华更强硬贸易措施。Anthropic估值近万亿拟公开售股引发市场关注。",
   "tech_briefs": [
     {
-      "title": "英伟达开源全模态世界模型Cosmos3",
+      "title": "NVIDIA连发Cosmos 3、Nemotron 3 Ultra及RTX Spark",
       "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
       "source": "Hugging Face Blog",
-      "summary": "英伟达推出Cosmos3，首个用于物理AI推理与行动的开源全模态模型，混合Transformer架构统一语言、图像、视频、音频和动作。（多家报道）",
-      "importance": 9
+      "summary": "NVIDIA推出开源全模态模型Cosmos 3（融合语言、图像、视频、音频与动作）、5500亿参数Nemotron 3 Ultra（开源权重）及RTX Spark，CEO黄仁勋称取得重大胜利。（多家报道）",
+      "importance": 10
     },
     {
-      "title": "OpenAI在密歇根启动1GW数据中心",
-      "url": "https://openai.com/index/stargate-michigan-data-center",
-      "source": "OpenAI News",
-      "summary": "OpenAI作为Stargate计划一部分，在密歇根启动1GW数据中心项目，旨在扩大AI基础设施并创造就业。",
+      "title": "JetBrains推出120亿参数混合专家模型Mellum2",
+      "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
+      "source": "Hugging Face Blog",
+      "summary": "JetBrains发布Mellum2，一个120亿参数的混合专家模型，面向效率与性能。",
       "importance": 8
     },
     {
-      "title": "OpenAI前沿模型与Codex在AWS全面可用",
+      "title": "OpenAI前沿模型及Codex正式登陆AWS",
       "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
       "source": "OpenAI News",
-      "summary": "OpenAI前沿模型和Codex现已在AWS上全面可用，企业可通过熟悉的AWS环境快速使用OpenAI能力。",
-      "importance": 7
+      "summary": "OpenAI前沿模型和Codex现已在AWS全面可用，企业可通过AWS环境与采购流程使用OpenAI构建应用，加快评估速度。",
+      "importance": 9
     },
     {
-      "title": "JetBrains发布Mellum2 MoE模型",
-      "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
-      "source": "Hugging Face Blog",
-      "summary": "JetBrains发布Mellum2，一个120亿参数的混合专家（MoE）模型，针对代码和开发任务优化。",
-      "importance": 6
-    },
-    {
-      "title": "微软开源文件转Markdown工具Markitdown",
+      "title": "Microsoft开源Markitdown：办公文档一键转Markdown",
       "url": "https://github.com/microsoft/markitdown",
       "source": "GitHub Trending",
-      "summary": "Python工具，可将各类Office文档和文件转换为Markdown格式，适用于批量文档归档和文本处理。",
-      "importance": 5
+      "summary": "Python工具可将Word、Excel、PDF等办公文档及网页、图片转换为Markdown格式，满足数据预处理、内容迁移等需求。",
+      "importance": 7
     }
   ],
   "politics_briefs": [
     {
-      "title": "俄军大规模空袭乌克兰多城市致十余人死亡",
+      "title": "俄罗斯导弹无人机大规模袭击乌克兰 至少10人死亡",
       "url": "https://www.bbc.com/news/articles/c5y8nq8ljqwo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "summary": "俄罗斯对乌克兰基辅等多城市发动大规模袭击，造成至少11人死亡，多栋住宅楼被击中，多名民众被困废墟。（多家报道）",
+      "summary": "俄罗斯对乌克兰多个城市发动导弹和无人机袭击，基辅八个区受损，至少10人死亡，救援工作持续。（多家报道）",
       "importance": 10
     },
     {
-      "title": "以色列与真主党接受美部分停火计划但冲突持续",
+      "title": "以色列与真主党接受美方局部停火 边境冲突仍在持续",
       "url": "https://www.nytimes.com/live/2026/06/01/world/iran-war-us-trump-israel-lebanon",
       "source": "NYT World",
-      "summary": "在紧张一天后，以色列和伊朗各自撤回威胁。特朗普称以真主党已同意互不攻击，但内塔尼亚胡与黎巴嫩停火谈判保持距离；黎巴嫩冲突仍在继续。（多家报道）",
+      "summary": "特朗普称促成以色列与真主党互不攻击，但内塔尼亚胡淡化停火谈判，黎巴嫩境内冲突持续，分析指对伊朗和平进程关键。（多家报道）",
       "importance": 9
     },
     {
-      "title": "澳大利亚工党议员质疑Aukus协议将交付二手潜艇",
-      "url": "https://www.theguardian.com/world/2026/jun/02/aukus-submarines-subs-secondhand-labor-ed-husic-response",
-      "source": "The Guardian",
-      "summary": "澳大利亚工党前座议员Ed Husic批评价值3680亿美元的Aukus核潜艇协议，称其并非承诺的协议，将交付二手潜艇，引发内部分歧。",
-      "importance": 7
+      "title": "欧委会称对华贸易关系不可持续 将寻求成员国支持",
+      "url": "https://www.dw.com/zh/对中国采取更强硬措施？欧委会将首先寻求欧盟各国支持/a-77380374?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "欧盟委员会认为与中国的贸易和投资关系“不可持续”，需要采取果断措施，但须获德国等成员国支持，北京已发出警告。",
+      "importance": 8
     }
   ],
-  "editor_note": "AI领域开源模型与基础设施并行扩张，英伟达与OpenAI同步发力；地缘冲突持续，俄乌与中东局势仍是全球关注焦点。",
+  "editor_note": "AI领域开源与商业双轮驱动，地缘政治冲突持续，全球治理与安全格局面临复杂挑战。",
   "keywords": [
-    "英伟达",
-    "Cosmos3",
-    "OpenAI",
-    "乌克兰",
-    "俄罗斯",
-    "以色列",
-    "Anthropic",
-    "Aukus"
+    "NVIDIA",
+    "Cosmos 3",
+    "俄罗斯袭击乌克兰",
+    "中东停火",
+    "Anthropic估值万亿",
+    "AI开源",
+    "OpenAI AWS",
+    "欧委会对华贸易"
   ]
 }
