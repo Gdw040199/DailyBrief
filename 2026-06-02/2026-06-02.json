@@ -1,0 +1,75 @@
+{
+  "hero_headline": "俄罗斯大规模袭击乌克兰致至少10死",
+  "daily_overview": "技术领域 NVIDIA 发布开源全模态模型 Cosmos 3 及 Nemotron 3 Ultra，黄仁勋称重大胜利；OpenAI 前沿模型登陆 AWS，企业可快速部署；微软推出 Markitdown 工具，简化文档转 Markdown 流程；JetBrains 发布 12B 参数 MoE 模型 Mellum2。时政方面，俄罗斯对乌克兰多座城市发动大规模导弹袭击，至少10人死亡；以色列与伊朗局势紧张后缓和，但黎巴嫩冲突仍在持续；欧盟计划对中国采取更强硬贸易措施，寻求成员国支持。地缘政治与技术博弈同步升温。",
+  "tech_briefs": [
+    {
+      "title": "NVIDIA 发布 Cosmos 3 全模态开源模型",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
+      "source": "Hugging Face Blog",
+      "summary": "NVIDIA 发布 Cosmos 3 全模态模型、Nemotron 3 Ultra 550B 参数模型及 RTX Spark，引领开源 AI。黄仁勋称重大胜利。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "OpenAI 前沿模型及 Codex 在 AWS 普遍可用",
+      "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
+      "source": "OpenAI News",
+      "summary": "OpenAI 前沿模型及 Codex 现已在 AWS 上普遍可用，企业可通过熟悉的 AWS 环境使用 OpenAI，加速从评估到部署。",
+      "importance": 9
+    },
+    {
+      "title": "微软推出 Markitdown 文档转 Markdown 工具",
+      "url": "https://github.com/microsoft/markitdown",
+      "source": "GitHub Trending",
+      "summary": "Python 工具，将各类文件及 Office 文档转换为 Markdown。解决文档格式转 Markdown 难题，适合开发者批量处理。",
+      "importance": 7
+    },
+    {
+      "title": "JetBrains 发布 12B MoE 模型 Mellum2",
+      "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
+      "source": "Hugging Face Blog",
+      "summary": "JetBrains 发布 Mellum2，一个 12B 参数的混合专家（MoE）模型，面向开发者场景。",
+      "importance": 8
+    },
+    {
+      "title": "IBM：企业 AI 规模化取决于智能体逻辑",
+      "url": "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption",
+      "source": "Hugging Face Blog",
+      "summary": "IBM 研究认为，企业规模化采用 AI 的关键在于智能体逻辑（Agent Logic），而非仅依赖大语言模型。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "俄罗斯对乌克兰多城大规模袭击致至少10死",
+      "url": "https://www.bbc.com/news/articles/c5y8nq8ljqwo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "俄罗斯对乌克兰多座城市发动大规模导弹袭击，至少10人死亡。基辅市长称两栋高层公寓被击中，担心有人被困废墟。",
+      "importance": 10
+    },
+    {
+      "title": "以色列与伊朗局势暂缓，黎巴嫩冲突持续",
+      "url": "https://www.nytimes.com/live/2026/06/01/world/iran-war-us-trump-israel-lebanon",
+      "source": "NYT World",
+      "summary": "以色列和伊朗在紧张后各退一步。特朗普称以色列和真主党同意不攻击对方；伊朗暂停与美国谈判；黎巴嫩冲突仍在继续。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "欧盟拟对中国采取更强硬贸易措施",
+      "url": "https://www.dw.com/zh/对中国采取更强硬措施？欧委会将首先寻求欧盟各国支持/a-77380374?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "欧委会称欧盟与中国的贸易和投资关系不可持续，需要果断措施，但必须得到德国及其他欧盟国家支持。北京已警告。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "AI 大模型与地缘政治同步升温，NVIDIA 开源推动行业，中东局势反复，欧美对华态度趋紧，需关注技术脱钩与安全风险。",
+  "keywords": [
+    "NVIDIA Cosmos 3",
+    "俄罗斯袭击乌克兰",
+    "以色列伊朗局势",
+    "欧盟对华",
+    "OpenAI AWS",
+    "开源AI",
+    "中东局势",
+    "AI安全"
+  ]
+}
