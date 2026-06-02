@@ -42,7 +42,8 @@ type LabWatchState = {
 };
 
 const WATCHLIST_PATH = "lab-watchlist.json";
-const STATE_PATH = "lab-watch-state.json";
+/** Lives under daily_reports/ so gh-pages restore persists fingerprints in CI */
+const STATE_PATH = path.join("daily_reports", ".lab-watch-state.json");
 
 const FETCH_HEADERS: Record<string, string> = {
   "User-Agent":
