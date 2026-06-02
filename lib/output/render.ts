@@ -490,27 +490,6 @@ function renderRawCategoryPanel(
 }
 
 /** Direction color map for the summary dots */
-const DIR_COLORS: Record<string, string> = {
-  motion: "var(--dir-motion)",
-  video: "var(--dir-video)",
-  "world-model": "var(--dir-world)",
-  "cv-other": "var(--dir-cv)",
-};
-const DIR_LABELS: Record<string, string> = {
-  motion: "Human Motion",
-  video: "Video Models",
-  "world-model": "World Models",
-  "cv-other": "CV Highlights",
-};
-
-/** Get paper count for a specific direction */
-function getDirectionCount(subs: SubGroup[], dir: string): number {
-  const arxivSub = subs.find((s) => s.id === "arxiv-papers");
-  if (!arxivSub) return 0;
-  const src = arxivSub.sources.find((s) => s.sourceId === `arxiv-${dir}`);
-  return src ? src.items.length : 0;
-}
-
 /** Render conference deadlines section */
 function renderDeadlines(): string {
   const now = new Date();
@@ -553,44 +532,6 @@ function renderDeadlines(): string {
   return `<div class="deadlines-section">
   <div class="section-label">${label}</div>
   ${rows}
-</div>`;
-}
-
-/** Render the numbered direction summary rows — MiMo blog row exact style */
-function renderDirectionSummary(subs: SubGroup[]): string {
-  const arxivSub = subs.find((s) => s.id === "arxiv-papers");
-  if (!arxivSub) return "";
-
-  const dirs: Array<{ id: string; label: string; count: number; desc: string }> = [];
-  for (const src of arxivSub.sources) {
-    const dirId = src.sourceId.replace("arxiv-", "");
-    if (DIR_LABELS[dirId]) {
-      const descMap: Record<string, string> = {
-        motion: REPORT_LOCALE === "en" ? "Human motion generation, synthesis, pose estimation" : "人体动作生成、合成、姿态估计",
-        video: REPORT_LOCALE === "en" ? "Video generation, diffusion, understanding" : "视频生成、扩散模型、理解",
-        "world-model": REPORT_LOCALE === "en" ? "World models, neural rendering, 4D generation" : "世界模型、神经渲染、4D 生成",
-        "cv-other": REPORT_LOCALE === "en" ? "Other notable computer vision papers" : "其他值得关注的 CV 论文",
-      };
-      dirs.push({ id: dirId, label: DIR_LABELS[dirId], count: src.items.length, desc: descMap[dirId] || "" });
-    }
-  }
-  if (dirs.length === 0) return "";
-
-  const totalPapers = dirs.reduce((n, d) => n + d.count, 0);
-  const sectionLabel = REPORT_LOCALE === "en" ? "Today's Directions" : "今日研究方向";
-
-  const rows = dirs.map((d, i) => {
-    const idx = String(i + 1).padStart(2, "0");
-    return `<div class="dir-row" onclick="document.querySelector('[data-sub=arxiv-papers]')?.click()">
-  <span class="dir-num">${idx}</span>
-  <span class="dir-title">${escapeHtml(d.label)}</span>
-  <span class="dir-meta">${d.count} papers</span>
-</div>`;
-  }).join("\n");
-
-  return `<div class="section-label">${sectionLabel} · ${totalPapers} papers</div>
-<div class="dir-list">
-${rows}
 </div>`;
 }
 
@@ -719,37 +660,6 @@ export function renderHtml(
     text-transform: uppercase; font-weight: 500;
     font-family: Inter, sans-serif;
     margin-bottom: 3.5rem;
-  }
-
-  /* ===== Direction rows — MiMo blog row exact ===== */
-  .dir-list { margin: 0 0 4rem; }
-  .dir-row {
-    display: flex; align-items: baseline; gap: 1.5rem;
-    padding: 1.3rem 0;
-    border-top: 1px solid rgba(255,255,255,0.055);
-    cursor: pointer; transition: all 0.2s;
-    text-decoration: none; color: inherit;
-  }
-  .dir-row:last-child { border-bottom: 1px solid rgba(255,255,255,0.055); }
-  .dir-row:hover { padding-left: 1rem; }
-  .dir-num {
-    color: rgba(255,255,255,0.14);
-    font-size: 0.7rem; font-weight: 700;
-    letter-spacing: 0.1em; flex-shrink: 0;
-    font-family: Inter, sans-serif;
-  }
-  .dir-title {
-    flex: 1;
-    color: rgba(255,255,255,0.62);
-    font-size: 0.93rem; line-height: 1.5;
-    font-family: Inter, 'Noto Sans SC', sans-serif;
-    font-weight: 400; transition: color 0.2s;
-  }
-  .dir-row:hover .dir-title { color: rgba(255,255,255,0.92); }
-  .dir-meta {
-    color: rgba(255,255,255,0.18);
-    font-size: 0.72rem; flex-shrink: 0;
-    font-family: Inter, sans-serif; letter-spacing: 0.04em;
   }
 
   /* ===== Primary tabs ===== */
@@ -981,135 +891,6 @@ export function renderHtml(
     letter-spacing: 0.04em;
   }
 
-  /* ===== Research Direction Cards — MiMo Products style ===== */
-  .directions-section {
-    padding: 6rem 2rem;
-    border-top: 1px solid rgba(255,255,255,0.05);
-    max-width: 860px; margin: 0 auto;
-  }
-  .direction-grid {
-    display: grid; grid-template-columns: 1fr;
-    gap: 1px; background: rgba(255,255,255,0.05);
-  }
-  @media (min-width: 720px) { .direction-grid { grid-template-columns: 1fr 1fr 1fr; } }
-  .direction-card {
-    position: relative; padding: 2.5rem;
-    background: #0a0a0a; cursor: pointer;
-    transition: all 0.3s;
-  }
-  .direction-card:hover { background: #141414; }
-  .direction-card-num {
-    color: rgba(255,255,255,0.08);
-    font-size: 0.7rem; font-weight: 700;
-    letter-spacing: 0.15em; margin-bottom: 2rem;
-    font-family: Inter, sans-serif;
-  }
-  .direction-card-name {
-    color: #fff; font-size: 1.15rem; font-weight: 600;
-    letter-spacing: -0.01em; line-height: 1.3;
-    margin-bottom: 0.4rem;
-    font-family: Inter, 'Noto Sans SC', sans-serif;
-  }
-  .direction-card-tagline {
-    color: rgba(255,255,255,0.45);
-    font-size: 0.875rem; line-height: 1.65;
-    margin-bottom: 1.2rem;
-    font-family: Inter, 'Noto Sans SC', sans-serif;
-    font-weight: 400;
-  }
-  .direction-card-desc {
-    color: rgba(255,255,255,0.28);
-    font-size: 0.8rem; line-height: 1.8;
-    margin-bottom: 1.5rem;
-    font-family: Inter, 'Noto Sans SC', sans-serif;
-    font-weight: 300;
-  }
-  .direction-card-tags {
-    display: flex; flex-wrap: wrap; gap: 0.4rem;
-  }
-  .direction-tag {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.07);
-    color: rgba(255,255,255,0.32);
-    font-size: 0.65rem; padding: 0.2rem 0.5rem;
-    border-radius: 2px; letter-spacing: 0.06em;
-    font-family: Inter, sans-serif;
-  }
-  .direction-card-arrow {
-    position: absolute; bottom: 2rem; right: 2rem;
-    color: rgba(255,255,255,0.08);
-    font-size: 1rem; transition: all 0.3s;
-  }
-  .direction-card:hover .direction-card-arrow {
-    color: rgba(255,255,255,0.5); transform: translateX(4px);
-  }
-  .direction-card-badge {
-    background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.1);
-    color: rgba(255,255,255,0.5);
-    font-size: 0.58rem; padding: 0.12rem 0.4rem;
-    border-radius: 2px; letter-spacing: 0.08em;
-    text-transform: uppercase; margin-left: 0.6rem;
-    font-family: Inter, sans-serif; display: inline-block;
-    vertical-align: middle;
-  }
-
-  /* ===== Quick Actions — MiMo QuickAccess style ===== */
-  .quick-section {
-    padding: 6rem 2rem;
-    border-top: 1px solid rgba(255,255,255,0.05);
-    max-width: 860px; margin: 0 auto;
-  }
-  .quick-grid {
-    display: grid; grid-template-columns: 1fr;
-    gap: 1px; background: rgba(255,255,255,0.05);
-  }
-  @media (min-width: 720px) { .quick-grid { grid-template-columns: 1fr 1fr; } }
-  .quick-card {
-    position: relative; padding: 2.5rem;
-    background: #0a0a0a; cursor: pointer;
-    transition: all 0.3s; text-decoration: none; color: inherit;
-    display: block;
-  }
-  .quick-card:hover { background: #141414; }
-  .quick-card-num {
-    color: rgba(255,255,255,0.07);
-    font-size: 4.5rem; font-weight: 800;
-    line-height: 1; margin-bottom: 1.5rem;
-    font-family: Inter, sans-serif;
-    letter-spacing: -0.04em;
-  }
-  .quick-card-title {
-    color: #fff; font-size: 1.3rem; font-weight: 600;
-    letter-spacing: -0.01em; margin-bottom: 0.4rem;
-    font-family: Inter, 'Noto Sans SC', sans-serif;
-  }
-  .quick-card-subtitle {
-    color: rgba(255,255,255,0.28);
-    font-size: 0.75rem; letter-spacing: 0.06em;
-    margin-bottom: 1.5rem;
-    font-family: Inter, sans-serif;
-  }
-  .quick-card-desc {
-    color: rgba(255,255,255,0.42);
-    font-size: 0.875rem; line-height: 1.75;
-    margin-bottom: 2rem;
-    font-family: Inter, 'Noto Sans SC', sans-serif;
-    font-weight: 300;
-  }
-  .quick-card-cta {
-    display: flex; align-items: center; gap: 0.5rem;
-    color: rgba(255,255,255,0.4);
-    font-size: 0.875rem;
-    font-family: Inter, sans-serif;
-    transition: all 0.2s;
-  }
-  .quick-card:hover .quick-card-cta { color: rgba(255,255,255,0.9); }
-  .quick-card-cta-arrow {
-    transition: transform 0.2s;
-  }
-  .quick-card:hover .quick-card-cta-arrow { transform: translateX(4px); }
-
   /* ===== Conference Deadlines — MiMo Careers style ===== */
   .deadlines-section {
     padding: 6rem 2rem;
@@ -1178,91 +959,7 @@ export function renderHtml(
   <div class="scroll-indicator"></div>
 </div>
 
-<!-- Research Direction Cards — MiMo Products style -->
-<div class="directions-section">
-  <div class="section-label">${REPORT_LOCALE === "en" ? "Research Directions" : "研究方向"}</div>
-  <div class="direction-grid">
-    <div class="direction-card" onclick="scrollToDirection('motion')">
-      <div class="direction-card-num">01</div>
-      <div style="display:flex;align-items:flex-start;gap:0.5rem;margin-bottom:0.4rem">
-        <h3 class="direction-card-name">${REPORT_LOCALE === "en" ? "Human Motion" : "人体动作"}</h3>
-        <span class="direction-card-badge">${getDirectionCount(raw.tech, "motion")} papers</span>
-      </div>
-      <p class="direction-card-tagline">${REPORT_LOCALE === "en" ? "Motion generation, synthesis, and understanding." : "动作生成、合成与理解。"}</p>
-      <p class="direction-card-desc">${REPORT_LOCALE === "en" ? "Text-to-motion, motion diffusion, human-object interaction, gesture generation, pose estimation, and physics-based animation." : "文本到动作、动作扩散、人机交互、手势生成、姿态估计与物理动画。"}</p>
-      <div class="direction-card-tags">
-        <span class="direction-tag">Motion Diffusion</span>
-        <span class="direction-tag">Text-to-Motion</span>
-        <span class="direction-tag">HOI</span>
-        <span class="direction-tag">Pose</span>
-      </div>
-      <div class="direction-card-arrow">→</div>
-    </div>
-    <div class="direction-card" onclick="scrollToDirection('video')">
-      <div class="direction-card-num">02</div>
-      <div style="display:flex;align-items:flex-start;gap:0.5rem;margin-bottom:0.4rem">
-        <h3 class="direction-card-name">${REPORT_LOCALE === "en" ? "Video Models" : "视频模型"}</h3>
-        <span class="direction-card-badge">${getDirectionCount(raw.tech, "video")} papers</span>
-      </div>
-      <p class="direction-card-tagline">${REPORT_LOCALE === "en" ? "Video generation, diffusion, and understanding." : "视频生成、扩散与理解。"}</p>
-      <p class="direction-card-desc">${REPORT_LOCALE === "en" ? "Text-to-video, image-to-video, video prediction, video editing, video transformers, and frame interpolation." : "文本到视频、图像到视频、视频预测、视频编辑、视频 Transformer 与帧插值。"}</p>
-      <div class="direction-card-tags">
-        <span class="direction-tag">Text-to-Video</span>
-        <span class="direction-tag">Video Diffusion</span>
-        <span class="direction-tag">Editing</span>
-      </div>
-      <div class="direction-card-arrow">→</div>
-    </div>
-    <div class="direction-card" onclick="scrollToDirection('world-model')">
-      <div class="direction-card-num">03</div>
-      <div style="display:flex;align-items:flex-start;gap:0.5rem;margin-bottom:0.4rem">
-        <h3 class="direction-card-name">${REPORT_LOCALE === "en" ? "World Models" : "世界模型"}</h3>
-        <span class="direction-card-badge">${getDirectionCount(raw.tech, "world-model")} papers</span>
-      </div>
-      <p class="direction-card-tagline">${REPORT_LOCALE === "en" ? "World simulation, neural rendering, and 4D generation." : "世界模拟、神经渲染与 4D 生成。"}</p>
-      <p class="direction-card-desc">${REPORT_LOCALE === "en" ? "World simulators, 3D Gaussian Splatting, NeRF, scene reconstruction, view synthesis, and novel view generation." : "世界模拟器、3D Gaussian Splatting、NeRF、场景重建、视角合成与新视角生成。"}</p>
-      <div class="direction-card-tags">
-        <span class="direction-tag">3DGS</span>
-        <span class="direction-tag">NeRF</span>
-        <span class="direction-tag">4D Gen</span>
-        <span class="direction-tag">Scene</span>
-      </div>
-      <div class="direction-card-arrow">→</div>
-    </div>
-  </div>
-</div>
-
-<!-- Quick Actions — MiMo QuickAccess style -->
-<div class="quick-section">
-  <div class="section-label">${REPORT_LOCALE === "en" ? "Quick Access" : "快速访问"}</div>
-  <div class="quick-grid">
-    <a class="quick-card" href="${process.env.REPORT_BASE_URL ? process.env.REPORT_BASE_URL.replace(/\/+$/, "") + "/daily_reports/" + date + "/" + date + ".html" : "#"}">
-      <div class="quick-card-num">01</div>
-      <h3 class="quick-card-title">${REPORT_LOCALE === "en" ? "Today's Report" : "今日报告"}</h3>
-      <div class="quick-card-subtitle">${REPORT_LOCALE === "en" ? "Latest daily research brief" : "最新每日研究简报"}</div>
-      <p class="quick-card-desc">${REPORT_LOCALE === "en" ? "View the complete report with all papers, summaries, and AI-generated insights for today." : "查看今日完整报告，包含所有论文、摘要和 AI 生成的分析。"}</p>
-      <div class="quick-card-cta">
-        <span>${REPORT_LOCALE === "en" ? "View Report" : "查看报告"}</span>
-        <span class="quick-card-cta-arrow">→</span>
-      </div>
-    </a>
-    <a class="quick-card" href="${process.env.REPORT_BASE_URL ? process.env.REPORT_BASE_URL.replace(/\/+$/, "") + "/archive.html" : "#"}">
-      <div class="quick-card-num">02</div>
-      <h3 class="quick-card-title">${REPORT_LOCALE === "en" ? "Archive" : "历史归档"}</h3>
-      <div class="quick-card-subtitle">${REPORT_LOCALE === "en" ? "All past reports" : "所有历史报告"}</div>
-      <p class="quick-card-desc">${REPORT_LOCALE === "en" ? "Browse past daily briefs. Track research trends and discover papers you may have missed." : "浏览历史每日简报，追踪研究趋势，发现可能错过的论文。"}</p>
-      <div class="quick-card-cta">
-        <span>${REPORT_LOCALE === "en" ? "Browse Archive" : "浏览归档"}</span>
-        <span class="quick-card-cta-arrow">→</span>
-      </div>
-    </a>
-  </div>
-</div>
-
 <main>
-  <!-- Direction summary — MiMo blog row style -->
-  ${renderDirectionSummary(raw.tech)}
-
   <nav class="tabs" role="tablist">
     <button class="tab active" data-tab="tech">${CATEGORY_LABELS.tech}<span class="count">${counts.tech}</span></button>
     <button class="tab" data-tab="politics">${CATEGORY_LABELS.politics}<span class="count">${counts.politics}</span></button>
