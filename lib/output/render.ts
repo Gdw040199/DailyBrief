@@ -35,7 +35,15 @@ const TEXTS_ZH = {
   mdEditorNote: "编辑短评",
   mdTodayKeywords: "今日关键词",
   mdImportance: "重要度",
-  archiveLink: "← 历史归档",
+  archiveLink: "历史归档",
+  arxivSectionLabel: "研究方向",
+  arxivMotionName: "Human Motion",
+  arxivMotionTag: "人体动作生成、理解与控制",
+  arxivVideoName: "Video Models",
+  arxivVideoTag: "视频生成、编辑与理解",
+  arxivWorldName: "World Models",
+  arxivWorldTag: "世界模型与物理仿真",
+  arxivBrowse: "浏览论文",
 };
 
 const TEXTS_EN: typeof TEXTS_ZH = {
@@ -60,10 +68,67 @@ const TEXTS_EN: typeof TEXTS_ZH = {
   mdEditorNote: "Editor's Note",
   mdTodayKeywords: "Keywords",
   mdImportance: "Importance",
-  archiveLink: "← Archive",
+  archiveLink: "Archive",
+  arxivSectionLabel: "Research Directions",
+  arxivMotionName: "Human Motion",
+  arxivMotionTag: "Motion generation, understanding & control",
+  arxivVideoName: "Video Models",
+  arxivVideoTag: "Video generation, editing & understanding",
+  arxivWorldName: "World Models",
+  arxivWorldTag: "World models & physical simulation",
+  arxivBrowse: "Browse papers",
 };
 
 const STR = REPORT_LOCALE === "en" ? TEXTS_EN : TEXTS_ZH;
+
+/** Three primary arXiv research directions (excludes CV Highlights bucket). */
+const ARXIV_DIRECTIONS = [
+  {
+    id: "motion",
+    num: "01",
+    name: STR.arxivMotionName,
+    tagline: STR.arxivMotionTag,
+  },
+  {
+    id: "video",
+    num: "02",
+    name: STR.arxivVideoName,
+    tagline: STR.arxivVideoTag,
+  },
+  {
+    id: "world-model",
+    num: "03",
+    name: STR.arxivWorldName,
+    tagline: STR.arxivWorldTag,
+  },
+] as const;
+
+type ArxivDirectionTile = {
+  id: string;
+  num: string;
+  name: string;
+  tagline: string;
+  count: number;
+};
+
+function getArxivDirectionTiles(raw: RawByCategory): ArxivDirectionTile[] {
+  const sub = raw.tech.find((s) => s.id === "arxiv-papers");
+  if (!sub) return [];
+  const bySourceId = new Map(sub.sources.map((s) => [s.sourceId, s]));
+  const tiles: ArxivDirectionTile[] = [];
+  for (const dir of ARXIV_DIRECTIONS) {
+    const src = bySourceId.get(`arxiv-${dir.id}`);
+    if (!src || src.items.length === 0) continue;
+    tiles.push({
+      id: dir.id,
+      num: dir.num,
+      name: src.sourceName || dir.name,
+      tagline: dir.tagline,
+      count: src.items.length,
+    });
+  }
+  return tiles;
+}
 
 // ----- types -----
 
@@ -432,7 +497,11 @@ function renderSourceContent(
   isActive: boolean,
 ): string {
   const showSource = source.merged === true;
-  return `<div class="source-content${isActive ? " active" : ""}" data-source-content="${escapeHtml(source.sourceId)}" data-sub="${escapeHtml(subId)}" data-cat="${category}">
+  const scrollId =
+    source.sourceId.startsWith("arxiv-")
+      ? ` id="${escapeHtml(source.sourceId)}"`
+      : "";
+  return `<div class="source-content${isActive ? " active" : ""}"${scrollId} data-source-content="${escapeHtml(source.sourceId)}" data-sub="${escapeHtml(subId)}" data-cat="${category}">
     ${source.items.length === 0 ? `<p class="empty">${STR.emptySource}</p>` : source.items.map((a) => renderArticleHtml(a, showSource)).join("\n")}
   </div>`;
 }
@@ -500,6 +569,49 @@ function renderAboutSection(report: DailyReport): string {
     <p class="about-text">${escapeHtml(overview)}</p>
   </div>
 </section>`;
+}
+
+/** MiMo Products-style cards → jump to arXiv direction tabs */
+function renderArxivDirectionsSection(tiles: ArxivDirectionTile[]): string {
+  if (tiles.length === 0) return "";
+
+  const cards = tiles
+    .map(
+      (t) => `<button type="button" class="arxiv-card" data-arxiv-dir="${escapeHtml(t.id)}">
+  <span class="arxiv-num">${t.num}</span>
+  <h3 class="arxiv-name">${escapeHtml(t.name)}</h3>
+  <p class="arxiv-tagline">${escapeHtml(t.tagline)}</p>
+  <span class="arxiv-count">${t.count} ${REPORT_LOCALE === "en" ? "papers" : "篇"}</span>
+  <span class="arxiv-cta">${STR.arxivBrowse} <span class="arxiv-arrow">→</span></span>
+</button>`,
+    )
+    .join("\n");
+
+  return `<section class="arxiv-section" id="arxiv-directions">
+  <div class="arxiv-inner">
+    <div class="section-label">${STR.arxivSectionLabel}</div>
+    <div class="arxiv-grid">${cards}</div>
+  </div>
+</section>`;
+}
+
+function renderNavTechLink(tiles: ArxivDirectionTile[]): string {
+  const label = CATEGORY_LABELS.tech;
+  if (tiles.length === 0) {
+    return `<a class="nav-link" href="#content" data-nav-tab="tech">${label}</a>`;
+  }
+
+  const flyout = tiles
+    .map(
+      (t) =>
+        `<button type="button" class="nav-flyout-link" data-arxiv-dir="${escapeHtml(t.id)}" role="menuitem"><span class="nav-flyout-num">${t.num}</span><span class="nav-flyout-name">${escapeHtml(t.name)}</span><span class="nav-flyout-count">${t.count}</span></button>`,
+    )
+    .join("");
+
+  return `<div class="nav-group">
+  <a class="nav-link nav-link-parent" href="#content" data-nav-tab="tech">${label}</a>
+  <div class="nav-flyout" role="menu">${flyout}</div>
+</div>`;
 }
 
 /** Render conference deadlines section */
@@ -586,6 +698,7 @@ export function renderHtml(
     ).join("");
     return `<div class="pattern-row" style="animation:${anim} ${dur}s linear infinite">${spans}</div>`;
   }).join("");
+  const arxivTiles = getArxivDirectionTiles(raw);
 
   return `<!doctype html>
 <html lang="${REPORT_LOCALE === "en" ? "en" : "zh-CN"}">
@@ -641,6 +754,49 @@ export function renderHtml(
     font-family: Inter, 'Noto Sans SC', sans-serif;
   }
   .nav-link:hover { color: rgba(255,255,255,0.9); }
+  .nav-group { position: relative; }
+  .nav-flyout {
+    position: absolute; top: calc(100% + 0.6rem); left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    min-width: 13.5rem;
+    padding: 0.35rem 0;
+    background: rgba(14,14,14,0.96);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 2px;
+    opacity: 0; visibility: hidden;
+    transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+    pointer-events: none;
+  }
+  .nav-group:hover .nav-flyout,
+  .nav-group:focus-within .nav-flyout {
+    opacity: 1; visibility: visible;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+  }
+  .nav-flyout-link {
+    display: flex; align-items: center; gap: 0.65rem;
+    width: 100%; padding: 0.55rem 1rem;
+    background: none; border: none; cursor: pointer;
+    text-align: left; font-family: Inter, 'Noto Sans SC', sans-serif;
+    color: rgba(255,255,255,0.55); font-size: 0.78rem;
+    transition: background 0.15s, color 0.15s;
+  }
+  .nav-flyout-link:hover {
+    background: rgba(255,255,255,0.04);
+    color: rgba(255,255,255,0.92);
+  }
+  .nav-flyout-num {
+    color: rgba(255,255,255,0.18);
+    font-size: 0.62rem; font-weight: 700;
+    letter-spacing: 0.1em; flex-shrink: 0;
+    font-family: Inter, sans-serif;
+  }
+  .nav-flyout-name { flex: 1; }
+  .nav-flyout-count {
+    color: rgba(255,255,255,0.22);
+    font-size: 0.62rem; flex-shrink: 0;
+    font-family: Inter, sans-serif;
+  }
   @media (max-width: 600px) {
     .top-nav { padding: 0.75rem 1.25rem; }
     .nav-links { gap: 1rem; }
@@ -702,13 +858,6 @@ export function renderHtml(
     font-size: 0.85rem; letter-spacing: 0.08em;
     font-family: Inter, sans-serif;
   }
-  .hero-link {
-    display: inline-block; margin-top: 1.5rem;
-    color: rgba(255,255,255,0.35); font-size: 0.78rem;
-    text-decoration: none; letter-spacing: 0.05em;
-    transition: color 0.2s;
-  }
-  .hero-link:hover { color: rgba(255,255,255,0.7); }
   .scroll-indicator {
     position: absolute; left: 50%; bottom: 4rem;
     transform: translateX(-50%);
@@ -728,6 +877,70 @@ export function renderHtml(
     font-family: Inter, 'Noto Sans SC', sans-serif;
     font-weight: 300; margin: 0;
   }
+
+  /* ===== arXiv directions — MiMo Products grid ===== */
+  .arxiv-section {
+    padding: 6rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .arxiv-inner { max-width: 960px; margin: 0 auto; }
+  .arxiv-grid {
+    display: grid; grid-template-columns: 1fr;
+    gap: 1px; background: rgba(255,255,255,0.05);
+  }
+  @media (min-width: 768px) {
+    .arxiv-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  .arxiv-card {
+    position: relative;
+    display: flex; flex-direction: column; align-items: flex-start;
+    text-align: left;
+    background: #0a0a0a;
+    padding: 2.25rem;
+    border: none; cursor: pointer;
+    font-family: inherit;
+    transition: background 0.3s;
+  }
+  .arxiv-card:hover { background: #161616; }
+  .arxiv-card:hover .arxiv-arrow { transform: translateX(4px); }
+  .arxiv-card:hover .arxiv-cta { color: rgba(255,255,255,0.85); }
+  .arxiv-num {
+    color: rgba(255,255,255,0.12);
+    font-size: 0.7rem; letter-spacing: 0.15em;
+    font-weight: 700; margin-bottom: 2.5rem;
+    font-family: Inter, sans-serif;
+  }
+  .arxiv-name {
+    color: #fff; font-size: 1.15rem; font-weight: 600;
+    letter-spacing: -0.01em; line-height: 1.3;
+    margin: 0 0 0.75rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .arxiv-tagline {
+    color: rgba(255,255,255,0.45);
+    font-size: 0.875rem; line-height: 1.65;
+    margin: 0 0 1.5rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    font-weight: 400;
+  }
+  .arxiv-count {
+    color: rgba(255,255,255,0.22);
+    font-size: 0.68rem; letter-spacing: 0.06em;
+    margin-bottom: 2rem;
+    font-family: Inter, sans-serif;
+  }
+  .arxiv-cta {
+    margin-top: auto;
+    color: rgba(255,255,255,0.38);
+    font-size: 0.875rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    transition: color 0.2s;
+  }
+  .arxiv-arrow {
+    display: inline-block;
+    transition: transform 0.2s;
+  }
+  .source-content[id] { scroll-margin-top: 5rem; }
 
   /* ===== Section labels — MiMo uppercase style ===== */
   .section-label {
@@ -945,7 +1158,8 @@ export function renderHtml(
     flex-shrink: 0; transition: color 0.2s, transform 0.2s;
   }
   .tab:focus-visible, .sub-tab:focus-visible, .source-tab:focus-visible,
-  .nav-link:focus-visible, .deadline-row:focus-visible {
+  .nav-link:focus-visible, .deadline-row:focus-visible,
+  .arxiv-card:focus-visible, .nav-flyout-link:focus-visible {
     outline: 2px solid rgba(255,255,255,0.4);
     outline-offset: 2px;
   }
@@ -956,9 +1170,9 @@ export function renderHtml(
 <nav class="top-nav">
   <span class="nav-logo">DailyBrief</span>
   <div class="nav-links">
-    <a class="nav-link" href="#content" data-nav-tab="tech">${CATEGORY_LABELS.tech}</a>
+    ${renderNavTechLink(arxivTiles)}
     <a class="nav-link" href="#content" data-nav-tab="politics">${CATEGORY_LABELS.politics}</a>
-    ${process.env.WEB_MODE === "true" ? `<a class="nav-link" href="../archive.html">${STR.archiveLink}</a>` : ""}
+    ${process.env.WEB_MODE === "true" ? `<a class="nav-link nav-link-archive" href="../archive.html">${STR.archiveLink}</a>` : ""}
   </div>
 </nav>
 
@@ -971,12 +1185,12 @@ export function renderHtml(
     <h1 class="hero-title">${escapeHtml(heroTitle)}</h1>
     <p class="${heroSubtitleClass}">${escapeHtml(heroSubtitle)}</p>
     ${REPORT_LOCALE === "en" ? `<span class="hero-date">${date}</span>` : ""}
-    ${process.env.WEB_MODE === "true" ? `<a class="hero-link" href="../archive.html">${STR.archiveLink}</a>` : ""}
   </div>
   <div class="scroll-indicator"></div>
 </div>
 
 ${renderAboutSection(report)}
+${renderArxivDirectionsSection(arxivTiles)}
 
 <main id="content">
   <div class="section-label content-label">${contentLabel}</div>
@@ -1012,6 +1226,32 @@ ${renderDeadlines()}
       p.classList.toggle('active', p.dataset.panel === target);
     });
   }
+
+  function scrollToArxivDirection(dir) {
+    activateTab('tech');
+    var panel = document.querySelector('.panel[data-panel="tech"]');
+    if (!panel) return;
+    var subBtn = panel.querySelector('[data-sub="arxiv-papers"]');
+    if (subBtn) subBtn.click();
+    var srcId = 'arxiv-' + dir;
+    var dirBtn = panel.querySelector('[data-source="' + srcId + '"]');
+    if (dirBtn) dirBtn.click();
+    setTimeout(function () {
+      var el = document.getElementById(srcId);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      else {
+        var main = document.getElementById('content');
+        if (main) main.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
+  }
+
+  document.querySelectorAll('[data-arxiv-dir]').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      scrollToArxivDirection(el.dataset.arxivDir);
+    });
+  });
 
   document.querySelectorAll('[data-nav-tab]').forEach(function (link) {
     link.addEventListener('click', function (e) {
