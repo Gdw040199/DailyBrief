@@ -186,5 +186,5 @@ Common:
 - Don't add `process.exit(1)` deep in a fetcher; let `daily.ts`'s per-source try/catch handle it
 - Don't bypass `runLlm` (lib/ai/llm.ts) by importing a specific backend directly — that defeats the LLM_BACKEND switch and pins call sites to one provider
 - Don't change the default backend silently; if user has Max subscription they almost certainly want `claude-cli` to keep using it. Switching to API costs them money
-- Don't put AI-generated digest fields (hero_headline, editor_note, keywords) back into the HTML view — they're intentionally hidden. Still generated and live in `<date>.json` and `<date>.md` for archive
+- Don't put full AI digest briefs (tech_briefs / politics_briefs / editor_note / keywords) back into the HTML view — they're intentionally hidden. Still generated and live in `<date>.json` and `<date>.md` for archive. **Do** surface `hero_headline` in the Hero and `daily_overview` in the About section — that's the narrative bridge, not the full digest.
 - Don't add Playwright / Puppeteer dependencies casually — project uses curl + JSON APIs to stay light

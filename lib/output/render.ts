@@ -410,7 +410,7 @@ function renderArticleHtml(a: ArticleInput, showSource = false): string {
   const authors = a.authors ? escapeHtml(a.authors) : "";
   // Code repository link (stored by arXiv enrichment)
   const codeUrl = a.codeUrl;
-  const codeLink = codeUrl ? `<a class="code-link" href="${escapeHtml(codeUrl)}" target="_blank" rel="noopener noreferrer">📦 Code</a>` : "";
+  const codeLink = codeUrl ? `<a class="code-link" href="${escapeHtml(codeUrl)}" target="_blank" rel="noopener noreferrer">Code →</a>` : "";
   // News-style summary label for politics, project-intro style for GH/tech.
   const newsy = a.category === "politics";
   const summaryLabel = newsy ? STR.summaryLabelNews : STR.summaryLabelIntro;
@@ -489,7 +489,19 @@ function renderRawCategoryPanel(
   return `<nav class="sub-tabs">${subTabs}</nav>\n<div class="sub-contents">${panels}</div>`;
 }
 
-/** Direction color map for the summary dots */
+/** MiMo About-style overview block between Hero and content tabs */
+function renderAboutSection(report: DailyReport): string {
+  const overview = report.daily_overview?.trim();
+  if (!overview) return "";
+
+  return `<section class="about-section" id="about">
+  <div class="about-inner">
+    <div class="section-label">${STR.mdTodayOverview}</div>
+    <p class="about-text">${escapeHtml(overview)}</p>
+  </div>
+</section>`;
+}
+
 /** Render conference deadlines section */
 function renderDeadlines(): string {
   const now = new Date();
@@ -521,12 +533,13 @@ function renderDeadlines(): string {
     const badgeText = days <= 30
       ? (REPORT_LOCALE === "en" ? `${days}d left` : `剩余 ${days} 天`)
       : (REPORT_LOCALE === "en" ? `${days}d` : `${days} 天`);
-    return `<div class="deadline-row">
+    return `<a class="deadline-row" href="${escapeHtml(d.url)}" target="_blank" rel="noopener noreferrer">
   <span class="deadline-num">${idx}</span>
   <div class="deadline-info"><span class="deadline-name">${escapeHtml(d.name)}</span></div>
   <span class="deadline-meta">${d.date}</span>
   <span class="deadline-badge ${badgeClass}">${badgeText}</span>
-</div>`;
+  <span class="deadline-arrow" aria-hidden="true">→</span>
+</a>`;
   }).join("\n");
 
   return `<div class="deadlines-section">
@@ -552,12 +565,37 @@ export function renderHtml(
     politics: sumItems(raw.politics),
   };
 
+  const heroTitle =
+    report.hero_headline?.trim() ||
+    (REPORT_LOCALE === "en" ? "Daily Research Brief" : "每日研究简报");
+  const heroSubtitle =
+    REPORT_LOCALE === "en"
+      ? "Daily Brief"
+      : date;
+  const heroSubtitleClass =
+    REPORT_LOCALE === "en" ? "hero-subtitle hero-subtitle-en" : "hero-subtitle hero-subtitle-zh";
+  const contentLabel =
+    REPORT_LOCALE === "en" ? "Content" : "内容";
+  const patternRows = Array.from({ length: 24 }, (_, i) => {
+    const anim = i % 2 === 0 ? "mimoScrollLeft" : "mimoScrollRight";
+    const dur = (22 + i * 1.8).toFixed(1);
+    const spans = Array.from(
+      { length: 20 },
+      () =>
+        `<span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span>`,
+    ).join("");
+    return `<div class="pattern-row" style="animation:${anim} ${dur}s linear infinite">${spans}</div>`;
+  }).join("");
+
   return `<!doctype html>
 <html lang="${REPORT_LOCALE === "en" ? "en" : "zh-CN"}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${STR.siteTitle} · ${date}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
   /* ===== MiMo Figma exact clone ===== */
   @keyframes mimoScrollLeft { from { transform: translateX(0); } to { transform: translateX(-50%); } }
@@ -574,7 +612,13 @@ export function renderHtml(
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
   }
-  main { max-width: 860px; margin: 0 auto; padding: 0 2rem 6rem; }
+  main#content {
+    max-width: 860px; margin: 0 auto;
+    padding: 6rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    scroll-margin-top: 4.5rem;
+  }
+  .content-label { margin-bottom: 2.5rem; }
 
   /* ===== Nav — fixed blur ===== */
   .top-nav {
@@ -587,14 +631,21 @@ export function renderHtml(
   }
   .nav-logo {
     font-weight: 800; font-size: 1.35rem; color: #fff;
-    letter-spacing: 0.07em; font-family: Inter, sans-serif;
+    letter-spacing: 0.06em;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
   }
-  .nav-links { display: flex; align-items: center; gap: 2rem; }
+  .nav-links { display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; }
   .nav-link {
     color: rgba(255,255,255,0.55); font-size: 0.875rem; font-weight: 400;
     text-decoration: none; transition: color 0.2s;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
   }
   .nav-link:hover { color: rgba(255,255,255,0.9); }
+  @media (max-width: 600px) {
+    .top-nav { padding: 0.75rem 1.25rem; }
+    .nav-links { gap: 1rem; }
+    .nav-link { font-size: 0.78rem; }
+  }
 
   /* ===== Hero — 100vh + animated text pattern ===== */
   .hero-section {
@@ -614,8 +665,10 @@ export function renderHtml(
     letter-spacing: 0.55em; line-height: 3.6rem;
     font-family: Inter, sans-serif;
   }
-  .pattern-row:nth-child(odd) { animation: mimoScrollLeft 22s linear infinite; }
-  .pattern-row:nth-child(even) { animation: mimoScrollRight 24s linear infinite; }
+  @media (prefers-reduced-motion: reduce) {
+    .pattern-row { animation: none !important; }
+    html { scroll-behavior: auto; }
+  }
   .pattern-text { padding: 0 1.5rem; }
   .hero-content {
     position: relative; z-index: 2; text-align: center;
@@ -630,9 +683,19 @@ export function renderHtml(
   .hero-subtitle {
     color: rgba(255,255,255,0.38);
     font-size: clamp(0.9rem, 2vw, 1.2rem);
-    font-weight: 400; letter-spacing: 0.4em;
-    text-transform: uppercase; font-family: Inter, sans-serif;
-    margin-bottom: 2rem;
+    font-weight: 400;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    margin-bottom: 0.5rem;
+  }
+  .hero-subtitle-en {
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    font-family: Inter, sans-serif;
+  }
+  .hero-subtitle-zh {
+    letter-spacing: 0.08em;
+    color: rgba(255,255,255,0.28);
+    font-size: 0.9rem;
   }
   .hero-date {
     color: rgba(255,255,255,0.25);
@@ -650,7 +713,20 @@ export function renderHtml(
     position: absolute; left: 50%; bottom: 4rem;
     transform: translateX(-50%);
     width: 1px; height: 3rem;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.3), transparent);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent);
+  }
+
+  /* ===== About — MiMo About section ===== */
+  .about-section {
+    padding: 6rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .about-inner { max-width: 768px; margin: 0 auto; }
+  .about-text {
+    color: rgba(255,255,255,0.72);
+    font-size: 1.08rem; line-height: 1.9;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    font-weight: 300; margin: 0;
   }
 
   /* ===== Section labels — MiMo uppercase style ===== */
@@ -675,7 +751,7 @@ export function renderHtml(
     color: rgba(255,255,255,0.35);
     cursor: pointer;
     border-bottom: 2px solid transparent;
-    margin-bottom: -1px; font-family: Inter, sans-serif;
+    margin-bottom: -1px; font-family: Inter, 'Noto Sans SC', sans-serif;
     transition: all 0.2s;
     letter-spacing: 0.1em; text-transform: uppercase;
   }
@@ -693,7 +769,7 @@ export function renderHtml(
     padding: 0.5rem 1.1rem; border-radius: 2px;
     font-size: 0.75rem; font-weight: 500;
     color: rgba(255,255,255,0.45);
-    cursor: pointer; font-family: Inter, sans-serif;
+    cursor: pointer; font-family: Inter, 'Noto Sans SC', sans-serif;
     transition: all 0.2s; letter-spacing: 0.03em;
   }
   .sub-tab:hover { border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.03); }
@@ -702,113 +778,29 @@ export function renderHtml(
   .sub-content { display: none; }
   .sub-content.active { display: block; }
 
-  /* ===== Source tabs ===== */
+  /* ===== Source tabs — text-only L3 filters ===== */
   .source-tabs {
     display: flex; flex-wrap: wrap; gap: 0.4rem;
     margin: 0 0 2rem; padding-bottom: 1.5rem;
     border-bottom: 1px solid rgba(255,255,255,0.055);
   }
   .source-tab {
-    background: none; border: 1px solid rgba(255,255,255,0.08);
-    padding: 0.3rem 0.8rem; border-radius: 2px;
-    font-size: 0.7rem; color: rgba(255,255,255,0.4);
-    cursor: pointer; font-family: Inter, sans-serif;
+    background: none; border: none;
+    padding: 0.3rem 0.6rem; border-radius: 2px;
+    font-size: 0.7rem; color: rgba(255,255,255,0.35);
+    cursor: pointer; font-family: Inter, 'Noto Sans SC', sans-serif;
     transition: all 0.2s;
+    border-bottom: 1px solid transparent;
   }
-  .source-tab:hover { border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.7); }
-  .source-tab.active { background: #fff; color: #0a0a0a; border-color: #fff; }
+  .source-tab:hover { color: rgba(255,255,255,0.65); }
+  .source-tab.active {
+    color: rgba(255,255,255,0.9);
+    border-bottom-color: rgba(255,255,255,0.35);
+    background: none;
+  }
   .source-tab .count { font-size: 0.55rem; opacity: 0.5; margin-left: 0.3rem; }
   .source-content { display: none; }
   .source-content.active { display: block; }
-
-  /* ===== Brief cards — MiMo product card style ===== */
-  .digest-category { margin-bottom: 3rem; }
-  .category-header {
-    display: flex; align-items: baseline; gap: 0.6rem;
-    margin: 0 0 1.5rem; padding-bottom: 0.8rem;
-    border-bottom: 1px solid rgba(255,255,255,0.055);
-  }
-  .category-title {
-    color: rgba(255,255,255,0.25);
-    font-size: 0.7rem; text-transform: uppercase;
-    letter-spacing: 0.2em; font-weight: 500; margin: 0;
-    font-family: Inter, sans-serif;
-  }
-  .category-count { color: rgba(255,255,255,0.18); font-size: 0.62rem; }
-  .brief-list {
-    display: grid; grid-template-columns: 1fr;
-    gap: 1px; background: rgba(255,255,255,0.05);
-  }
-  @media (min-width: 720px) { .brief-list { grid-template-columns: 1fr 1fr; } }
-  .brief {
-    background: #0a0a0a;
-    padding: 1.8rem;
-    transition: all 0.3s;
-    position: relative;
-  }
-  .brief:hover { background: #141414; }
-  .brief-head { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; margin-bottom: 0.6rem; }
-  .brief-source {
-    color: rgba(255,255,255,0.18);
-    font-size: 0.62rem; text-transform: uppercase;
-    letter-spacing: 0.15em; font-weight: 700;
-    font-family: Inter, sans-serif;
-  }
-  .brief-rank {
-    font-size: 0.58rem; padding: 0.08rem 0.45rem;
-    border-radius: 2px; font-weight: 600; flex-shrink: 0;
-    font-family: Inter, sans-serif;
-  }
-  .brief-rank.high { background: rgba(239,68,68,0.12); color: #fca5a5; }
-  .brief-rank.mid { background: rgba(245,158,11,0.12); color: #fcd34d; }
-  .brief-rank.low { background: rgba(99,102,241,0.12); color: #a5b4fc; }
-  .brief-title {
-    font-size: 1.05rem; font-weight: 600;
-    margin: 0 0 0.6rem; line-height: 1.35;
-    letter-spacing: -0.01em;
-    font-family: Inter, 'Noto Sans SC', sans-serif;
-  }
-  .brief-title a { color: #fff; text-decoration: none; transition: color 0.2s; }
-  .brief-title a:hover { color: rgba(255,255,255,0.7); }
-  .brief-summary {
-    margin: 0;
-    color: rgba(255,255,255,0.45);
-    font-size: 0.82rem; line-height: 1.65;
-    font-family: Inter, 'Noto Sans SC', sans-serif;
-    font-weight: 300;
-  }
-  .brief-arrow {
-    position: absolute; bottom: 1.5rem; right: 1.5rem;
-    color: rgba(255,255,255,0.08);
-    font-size: 1rem; transition: all 0.3s;
-  }
-  .brief:hover .brief-arrow { color: rgba(255,255,255,0.5); transform: translateX(4px); }
-
-  /* ===== Editor card ===== */
-  .editor-card {
-    background: #111;
-    border-left: 2px solid rgba(255,255,255,0.15);
-    border-radius: 0 2px 2px 0;
-    padding: 1.8rem 2rem;
-    margin: 3rem 0;
-  }
-  .editor-card .eyebrow { display: block; margin-bottom: 0.8rem; }
-  .editor-text {
-    margin: 0; font-size: 0.88rem; line-height: 1.85;
-    color: rgba(255,255,255,0.55);
-    font-family: Inter, 'Noto Sans SC', sans-serif;
-    font-weight: 300;
-  }
-  .keywords { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 2.5rem 0; }
-  .keyword {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.06);
-    color: rgba(255,255,255,0.32);
-    padding: 0.35rem 0.85rem; border-radius: 2px;
-    font-size: 0.7rem; font-family: Inter, sans-serif;
-    transition: all 0.2s; letter-spacing: 0.04em;
-  }
-  .keyword:hover { border-color: rgba(255,255,255,0.15); color: rgba(255,255,255,0.6); }
 
   /* ===== Article rows — MiMo blog row style ===== */
   .article {
@@ -817,7 +809,8 @@ export function renderHtml(
     transition: all 0.2s;
   }
   .article:first-child { border-top: none; }
-  .article:hover { padding-left: 0.5rem; }
+  .article:hover { padding-left: 1rem; }
+  .article:hover .article-title a { color: rgba(255,255,255,0.95); }
   .article-title {
     font-size: 0.95rem; margin: 0 0 0.35rem;
     font-weight: 500; line-height: 1.5;
@@ -844,10 +837,10 @@ export function renderHtml(
   .article-meta { color: rgba(255,255,255,0.18); font-size: 0.68rem; margin: 0 0 0.35rem; }
   .article-stats { color: rgba(255,255,255,0.18); font-size: 0.72rem; margin: 0 0 0.5rem; }
   .article-excerpt {
-    margin: 0; color: rgba(255,255,255,0.42);
+    margin: 0; color: rgba(255,255,255,0.48);
     font-size: 0.85rem; line-height: 1.75;
     font-family: Inter, 'Noto Sans SC', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
   }
   .article-summary {
     margin: 0.8rem 0 0; padding: 0.9rem 1.2rem;
@@ -877,13 +870,25 @@ export function renderHtml(
   /* ===== Footer — MiMo style ===== */
   .mimo-footer {
     display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 1rem;
     padding: 2.5rem 2rem;
     border-top: 1px solid rgba(255,255,255,0.05);
     max-width: 860px; margin: 0 auto;
   }
   .footer-logo {
     font-weight: 800; font-size: 1.25rem; color: #fff;
-    letter-spacing: 0.07em; font-family: Inter, sans-serif;
+    letter-spacing: 0.06em;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .footer-right {
+    display: flex; flex-direction: column; align-items: flex-end;
+    gap: 0.35rem; text-align: right;
+  }
+  .footer-disclaimer {
+    color: rgba(255,255,255,0.22);
+    font-size: 0.68rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    letter-spacing: 0.02em; max-width: 28rem;
   }
   .footer-copy {
     color: rgba(255,255,255,0.2);
@@ -902,9 +907,11 @@ export function renderHtml(
     padding: 1.3rem 0;
     border-top: 1px solid rgba(255,255,255,0.055);
     transition: all 0.2s;
+    text-decoration: none; color: inherit;
   }
-  .deadline-row:last-child { border-bottom: 1px solid rgba(255,255,255,0.055); }
+  .deadline-row:last-of-type { border-bottom: 1px solid rgba(255,255,255,0.055); }
   .deadline-row:hover { padding-left: 1rem; }
+  .deadline-row:hover .deadline-arrow { color: rgba(255,255,255,0.6); transform: translateX(4px); }
   .deadline-num {
     color: rgba(255,255,255,0.14);
     font-size: 0.7rem; font-weight: 700;
@@ -928,10 +935,20 @@ export function renderHtml(
     font-size: 0.6rem; padding: 0.1rem 0.4rem;
     border-radius: 2px; font-weight: 600;
     font-family: Inter, sans-serif;
+    border: 1px solid rgba(255,255,255,0.08);
   }
-  .deadline-badge.soon { background: rgba(239,68,68,0.12); color: #fca5a5; }
-  .deadline-badge.upcoming { background: rgba(245,158,11,0.12); color: #fcd34d; }
-  .deadline-badge.later { background: rgba(99,102,241,0.12); color: #a5b4fc; }
+  .deadline-badge.soon { background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.78); }
+  .deadline-badge.upcoming { background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.55); }
+  .deadline-badge.later { background: rgba(255,255,255,0.03); color: rgba(255,255,255,0.35); }
+  .deadline-arrow {
+    color: rgba(255,255,255,0.15); font-size: 1rem;
+    flex-shrink: 0; transition: color 0.2s, transform 0.2s;
+  }
+  .tab:focus-visible, .sub-tab:focus-visible, .source-tab:focus-visible,
+  .nav-link:focus-visible, .deadline-row:focus-visible {
+    outline: 2px solid rgba(255,255,255,0.4);
+    outline-offset: 2px;
+  }
 </style>
 </head>
 <body>
@@ -939,8 +956,8 @@ export function renderHtml(
 <nav class="top-nav">
   <span class="nav-logo">DailyBrief</span>
   <div class="nav-links">
-    <a class="nav-link" href="#">${CATEGORY_LABELS.tech}</a>
-    <a class="nav-link" href="#">${CATEGORY_LABELS.politics}</a>
+    <a class="nav-link" href="#content" data-nav-tab="tech">${CATEGORY_LABELS.tech}</a>
+    <a class="nav-link" href="#content" data-nav-tab="politics">${CATEGORY_LABELS.politics}</a>
     ${process.env.WEB_MODE === "true" ? `<a class="nav-link" href="../archive.html">${STR.archiveLink}</a>` : ""}
   </div>
 </nav>
@@ -948,18 +965,21 @@ export function renderHtml(
 <!-- Hero — 100vh with animated text pattern -->
 <div class="hero-section">
   <div class="hero-pattern" aria-hidden="true">
-    ${Array.from({ length: 24 }, () => `<div class="pattern-row">${Array.from({ length: 20 }, () => `<span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span>`).join("")}</div>`).join("")}
+    ${patternRows}
   </div>
   <div class="hero-content">
-    <h1 class="hero-title">${REPORT_LOCALE === "en" ? "Daily Research Brief" : "每日研究简报"}</h1>
-    <p class="hero-subtitle">${STR.siteTitle}</p>
-    <span class="hero-date">${date}</span>
+    <h1 class="hero-title">${escapeHtml(heroTitle)}</h1>
+    <p class="${heroSubtitleClass}">${escapeHtml(heroSubtitle)}</p>
+    ${REPORT_LOCALE === "en" ? `<span class="hero-date">${date}</span>` : ""}
     ${process.env.WEB_MODE === "true" ? `<a class="hero-link" href="../archive.html">${STR.archiveLink}</a>` : ""}
   </div>
   <div class="scroll-indicator"></div>
 </div>
 
-<main>
+${renderAboutSection(report)}
+
+<main id="content">
+  <div class="section-label content-label">${contentLabel}</div>
   <nav class="tabs" role="tablist">
     <button class="tab active" data-tab="tech">${CATEGORY_LABELS.tech}<span class="count">${counts.tech}</span></button>
     <button class="tab" data-tab="politics">${CATEGORY_LABELS.politics}<span class="count">${counts.politics}</span></button>
@@ -978,42 +998,33 @@ ${renderDeadlines()}
 
 <footer class="mimo-footer">
   <span class="footer-logo">DailyBrief</span>
-  <span class="footer-copy">${STR.footer}</span>
+  <div class="footer-right">
+    <span class="footer-disclaimer">${STR.footer}</span>
+    <span class="footer-copy">© ${date.slice(0, 4)} DailyBrief</span>
+  </div>
 </footer>
 <script>
-  // Direction card click → scroll to arXiv section + activate tab
-  function scrollToDirection(dir) {
-    // 1. Activate the tech tab
+  function activateTab(target) {
     document.querySelectorAll('.tabs > .tab').forEach(function (b) {
-      b.classList.toggle('active', b.dataset.tab === 'tech');
+      b.classList.toggle('active', b.dataset.tab === target);
     });
     document.querySelectorAll('.panel').forEach(function (p) {
-      p.classList.toggle('active', p.dataset.panel === 'tech');
+      p.classList.toggle('active', p.dataset.panel === target);
     });
-    // 2. Activate the arxiv-papers sub-tab
-    var arxivBtn = document.querySelector('[data-sub="arxiv-papers"]');
-    if (arxivBtn) {
-      arxivBtn.click();
-      // 3. Activate the specific direction source-tab
-      var dirBtn = document.querySelector('[data-source="arxiv-' + dir + '"]');
-      if (dirBtn) dirBtn.click();
-      // 4. Scroll to the arxiv section
-      setTimeout(function () {
-        arxivBtn.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 100);
-    }
   }
 
-  // Tab switching
+  document.querySelectorAll('[data-nav-tab]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      activateTab(link.dataset.navTab);
+      var main = document.getElementById('content');
+      if (main) main.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
   document.querySelectorAll('.tabs > .tab').forEach(function (btn) {
     btn.addEventListener('click', function () {
-      var target = btn.dataset.tab;
-      document.querySelectorAll('.tabs > .tab').forEach(function (b) {
-        b.classList.toggle('active', b === btn);
-      });
-      document.querySelectorAll('.panel').forEach(function (p) {
-        p.classList.toggle('active', p.dataset.panel === target);
-      });
+      activateTab(btn.dataset.tab);
     });
   });
   document.querySelectorAll('.sub-tab').forEach(function (btn) {
