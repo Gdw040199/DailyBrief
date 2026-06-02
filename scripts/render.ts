@@ -4,6 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 import type { ArticleInput, DailyReport } from "../lib/ai/pipeline";
+import type { LabWatchResult } from "../lib/lab-watch";
 import { groupRaw, renderHtml, renderMarkdown } from "../lib/output/render";
 import { sources } from "../lib/sources/registry";
 import { todayKey } from "../lib/utils";
@@ -42,11 +43,21 @@ function loadArticles(date: string): ArticleInput[] {
     articles: Array<
       Omit<ArticleInput, "publishedAt"> & { publishedAt?: string }
     >;
+    labWatch?: LabWatchResult[];
   };
   return data.articles.map((a) => ({
     ...a,
     publishedAt: a.publishedAt ? new Date(a.publishedAt) : undefined,
   }));
+}
+
+function loadLabWatch(date: string): LabWatchResult[] {
+  const file = path.join(OUTPUT_DIR, date, `${date}-articles.json`);
+  if (!fs.existsSync(file)) return [];
+  const data = JSON.parse(fs.readFileSync(file, "utf8")) as {
+    labWatch?: LabWatchResult[];
+  };
+  return data.labWatch ?? [];
 }
 
 async function main() {
@@ -55,13 +66,14 @@ async function main() {
 
   const report = loadReport(date);
   const articles = loadArticles(date);
+  const labWatch = loadLabWatch(date);
   console.log(`[render] loaded ${articles.length} articles + report`);
 
   const raw = groupRaw(articles, sources);
   const dateDir = path.join(OUTPUT_DIR, date);
   fs.mkdirSync(dateDir, { recursive: true });
   const base = path.join(dateDir, date);
-  fs.writeFileSync(`${base}.html`, renderHtml(report, raw, date), "utf8");
+  fs.writeFileSync(`${base}.html`, renderHtml(report, raw, date, labWatch), "utf8");
   if (process.env.OUTPUT_MARKDOWN === "true") {
     fs.writeFileSync(`${base}.md`, renderMarkdown(report, date), "utf8");
     console.log(`[render] wrote ${base}.{html,md}`);

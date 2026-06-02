@@ -12,7 +12,8 @@
     "sources:check": "tsx scripts/sources.ts check",
     "deploy": "node scripts/deploy.mjs",
     "build-site": "node scripts/build-site.mjs",
-    "open": "node scripts/open-report.mjs"
+    "open": "node scripts/open-report.mjs",
+    "lab-watch": "tsx scripts/lab-watch.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.96.0",

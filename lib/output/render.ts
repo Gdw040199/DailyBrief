@@ -3,6 +3,8 @@ import type {
   BriefItem,
   DailyReport,
 } from "../ai/pipeline";
+import type { LabWatchResult } from "../lab-watch";
+import { labWatchUiStrings } from "../lab-watch";
 import { REPORT_LOCALE } from "../sources/registry";
 import { getReportTz } from "../utils";
 import type { Category, SourceDef } from "../sources/types";
@@ -571,6 +573,67 @@ function renderAboutSection(report: DailyReport): string {
 </section>`;
 }
 
+/** MiMo Blog-style rows — lab homepage change alerts */
+function renderLabWatchSection(results: LabWatchResult[]): string {
+  if (results.length === 0) return "";
+  const L = labWatchUiStrings();
+  const updated = results.filter((r) => r.status === "updated");
+  const rest = results.filter((r) => r.status !== "updated");
+
+  const row = (
+    r: LabWatchResult,
+    idx: string,
+    isUpdated: boolean,
+  ) => {
+    const statusClass = isUpdated
+      ? "lab-row-updated"
+      : r.status === "error"
+        ? "lab-row-error"
+        : "lab-row-quiet";
+    const badge =
+      r.status === "updated"
+        ? L.updated
+        : r.status === "error"
+          ? L.error
+          : L.unchanged;
+    const detail =
+      r.status === "error"
+        ? escapeHtml(r.error ?? L.error)
+        : escapeHtml(r.headline || "—");
+    return `<a class="lab-row ${statusClass}" href="${escapeHtml(r.url)}" target="_blank" rel="noopener noreferrer">
+  <span class="lab-num">${idx}</span>
+  <span class="lab-name">${escapeHtml(r.name)}</span>
+  <span class="lab-detail">${detail}</span>
+  <span class="lab-badge">${badge}</span>
+  <span class="lab-arrow" aria-hidden="true">→</span>
+</a>`;
+  };
+
+  const rows: string[] = [];
+  let n = 0;
+  for (const r of updated) {
+    n += 1;
+    rows.push(row(r, String(n).padStart(2, "0"), true));
+  }
+  for (const r of rest) {
+    n += 1;
+    rows.push(row(r, String(n).padStart(2, "0"), false));
+  }
+
+  const summary =
+    updated.length > 0
+      ? `${updated.length} ${L.updated.toLowerCase()}`
+      : L.emptyUpdates;
+
+  return `<section class="lab-watch-section" id="lab-watch">
+  <div class="lab-watch-inner">
+    <div class="section-label">${L.sectionLabel}</div>
+    <p class="lab-watch-summary">${escapeHtml(summary)}</p>
+    <div class="lab-watch-list">${rows.join("\n")}</div>
+  </div>
+</section>`;
+}
+
 /** MiMo Products-style cards → jump to arXiv direction tabs */
 function renderArxivDirectionsSection(tiles: ArxivDirectionTile[]): string {
   if (tiles.length === 0) return "";
@@ -666,6 +729,7 @@ export function renderHtml(
   report: DailyReport,
   raw: RawByCategory,
   date: string,
+  labWatch: LabWatchResult[] = [],
 ): string {
   const sumItems = (subs: SubGroup[]) =>
     subs.reduce(
@@ -942,6 +1006,74 @@ export function renderHtml(
   }
   .source-content[id] { scroll-margin-top: 5rem; }
 
+  /* ===== Lab watch — MiMo Blog rows ===== */
+  .lab-watch-section {
+    padding: 6rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .lab-watch-inner { max-width: 860px; margin: 0 auto; }
+  .lab-watch-summary {
+    color: rgba(255,255,255,0.35);
+    font-size: 0.85rem;
+    margin: -2.5rem 0 2rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .lab-watch-list { display: flex; flex-direction: column; }
+  .lab-row {
+    display: flex; align-items: baseline; gap: 1.25rem;
+    padding: 1.2rem 0;
+    border-top: 1px solid rgba(255,255,255,0.055);
+    text-decoration: none; color: inherit;
+    transition: padding-left 0.2s, background 0.2s;
+  }
+  .lab-row:last-child { border-bottom: 1px solid rgba(255,255,255,0.055); }
+  .lab-row:hover { padding-left: 0.75rem; }
+  .lab-row-updated:hover .lab-name { color: rgba(255,255,255,0.95); }
+  .lab-row-updated .lab-name { color: rgba(255,255,255,0.82); }
+  .lab-row-updated .lab-badge {
+    background: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.85);
+    border-color: rgba(255,255,255,0.15);
+  }
+  .lab-row-quiet .lab-name { color: rgba(255,255,255,0.42); }
+  .lab-row-quiet .lab-detail { color: rgba(255,255,255,0.22); }
+  .lab-row-error .lab-detail { color: rgba(255,255,255,0.45); }
+  .lab-num {
+    color: rgba(255,255,255,0.14);
+    font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.1em; flex-shrink: 0;
+    font-family: Inter, sans-serif;
+  }
+  .lab-name {
+    font-size: 0.93rem; line-height: 1.45;
+    flex-shrink: 0; min-width: 11rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    transition: color 0.2s;
+  }
+  .lab-detail {
+    flex: 1; font-size: 0.82rem; line-height: 1.5;
+    color: rgba(255,255,255,0.48);
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .lab-badge {
+    font-size: 0.58rem; padding: 0.12rem 0.45rem;
+    border-radius: 2px; font-weight: 600;
+    border: 1px solid rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.3);
+    flex-shrink: 0; font-family: Inter, sans-serif;
+    letter-spacing: 0.04em;
+  }
+  .lab-arrow {
+    color: rgba(255,255,255,0.15); font-size: 1rem;
+    flex-shrink: 0; transition: color 0.2s, transform 0.2s;
+  }
+  .lab-row:hover .lab-arrow { color: rgba(255,255,255,0.55); transform: translateX(4px); }
+  @media (max-width: 640px) {
+    .lab-row { flex-wrap: wrap; gap: 0.4rem 1rem; }
+    .lab-name { min-width: 0; flex: 1 1 100%; }
+    .lab-detail { flex: 1 1 100%; order: 3; }
+  }
+
   /* ===== Section labels — MiMo uppercase style ===== */
   .section-label {
     color: rgba(255,255,255,0.25);
@@ -1159,7 +1291,8 @@ export function renderHtml(
   }
   .tab:focus-visible, .sub-tab:focus-visible, .source-tab:focus-visible,
   .nav-link:focus-visible, .deadline-row:focus-visible,
-  .arxiv-card:focus-visible, .nav-flyout-link:focus-visible {
+  .arxiv-card:focus-visible, .nav-flyout-link:focus-visible,
+  .lab-row:focus-visible {
     outline: 2px solid rgba(255,255,255,0.4);
     outline-offset: 2px;
   }
@@ -1190,6 +1323,7 @@ export function renderHtml(
 </div>
 
 ${renderAboutSection(report)}
+${renderLabWatchSection(labWatch)}
 ${renderArxivDirectionsSection(arxivTiles)}
 
 <main id="content">

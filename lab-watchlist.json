@@ -1,0 +1,23 @@
+[
+  {
+    "id": "yuexin-ma",
+    "name": "Yuexin Ma · ShanghaiTech",
+    "url": "http://yuexinma.me/",
+    "enabled": true,
+    "notes": "New Events section — 4DVLab / embodied AI / CV"
+  },
+  {
+    "id": "chi-zhang",
+    "name": "Chi Zhang · Westlake AGI Lab",
+    "url": "https://icoz69.github.io/",
+    "enabled": true,
+    "notes": "News section — generative AI / world model / 3D"
+  },
+  {
+    "id": "yaohui-wang",
+    "name": "Yaohui Wang · Shanghai AI Lab",
+    "url": "https://wyhsirius.github.io/",
+    "enabled": true,
+    "notes": "News section — video generation / LaVie / AnimateDiff"
+  }
+]

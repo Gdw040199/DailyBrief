@@ -24,6 +24,7 @@ import {
   renderHtml,
   renderMarkdown,
 } from "../lib/output/render";
+import { checkLabWatchlist, type LabWatchResult } from "../lib/lab-watch";
 import { todayKey } from "../lib/utils";
 import { sendDailyEmail } from "../lib/email";
 
@@ -295,6 +296,11 @@ async function main() {
   const { report } = await generateDailyReport(articles);
   console.log(`[daily] digest ready in ${((Date.now() - t0) / 1000).toFixed(1)}s`);
 
+  console.log(`[daily] checking lab homepages…`);
+  const labWatch = await checkLabWatchlist();
+  const labUpdates = labWatch.filter((r) => r.status === "updated").length;
+  console.log(`[daily] lab watch: ${labUpdates} update(s) / ${labWatch.length} monitored`);
+
   const dateDir = path.join(OUTPUT_DIR, date);
   fs.mkdirSync(dateDir, { recursive: true });
   const base = path.join(dateDir, date);
@@ -305,10 +311,10 @@ async function main() {
   // re-fetching or re-calling the LLM.
   fs.writeFileSync(
     `${base}-articles.json`,
-    JSON.stringify({ date, articles }, null, 2),
+    JSON.stringify({ date, articles, labWatch }, null, 2),
     "utf8",
   );
-  fs.writeFileSync(`${base}.html`, renderHtml(report, raw, date), "utf8");
+  fs.writeFileSync(`${base}.html`, renderHtml(report, raw, date, labWatch), "utf8");
   if (process.env.OUTPUT_MARKDOWN === "true") {
     fs.writeFileSync(`${base}.md`, renderMarkdown(report, date), "utf8");
     console.log(`[daily] wrote ${base}.{json,html,md,articles.json}`);
