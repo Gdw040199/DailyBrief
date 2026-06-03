@@ -1,0 +1,75 @@
+{
+  "hero_headline": "美伊对峙升级 美军击中伊朗方向油轮",
+  "daily_overview": "今日地缘冲突密集：美军在霍尔木兹海峡发射导弹击中一艘试图驶往伊朗的油轮，美伊对峙急剧升级；英国外相访华，强调与中国接触而非抵制，同时承认在俄乌等问题上存在分歧；欧盟通过移民政策改革，加大遣返和境外拘留中心建设。科技方面，Anthropic提交IPO文件，OpenAI登陆AWS，Perplexity公开搜索代码；英伟达推出Cosmos 3等模型；GitHub披露对智能体压力下的平台规划；Travelers保险公司全国部署AI理赔助手；微软开源文档转Markdown工具Markitdown。",
+  "tech_briefs": [
+    {
+      "title": "Anthropic IPO、OpenAI上AWS、Perplexity开源",
+      "url": "https://tldr.tech/ai/2026-06-02",
+      "source": "TLDR AI",
+      "summary": "Anthropic提交IPO文件，OpenAI登录AWS平台，Perplexity公开搜索代码。三家AI头部企业同日释放重要动态。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "英伟达发布Cosmos 3、Nemotron 3 Ultra和RTX Spark",
+      "url": "https://www.latent.space/p/ainews-nvidia-cosmos-3-nemotron-3",
+      "source": "Latent Space",
+      "summary": "英伟达发布Cosmos 3全模态世界模型、Nemotron 3 Ultra和RTX Spark，CEO黄仁勋称取得重大胜利。",
+      "importance": 8
+    },
+    {
+      "title": "Travelers全国部署AI理赔助手",
+      "url": "https://openai.com/index/travelers",
+      "source": "OpenAI News",
+      "summary": "Travelers保险公司基于OpenAI构建AI理赔助手，全国范围提供全天候索赔指导和运营扩展。",
+      "importance": 7
+    },
+    {
+      "title": "GitHub公布应对智能体压力的平台计划",
+      "url": "https://www.latent.space/p/github",
+      "source": "Latent Space",
+      "summary": "GitHub以Copilot开创AI编码时代，智能体编码爆炸式增长对平台造成压力，公司公布应对计划。",
+      "importance": 7
+    },
+    {
+      "title": "Headroom：压缩LLM输入的token节省工具",
+      "url": "https://github.com/chopratejas/headroom",
+      "source": "GitHub Trending",
+      "summary": "Headroom可在将日志、文件等送入LLM前压缩，减少60-95% token且答案不变，提供库、代理和MCP服务器三种方式。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美伊霍尔木兹海峡对峙 美军导弹击中油轮",
+      "url": "https://www.theguardian.com/world/2026/jun/03/us-fires-missile-tanker-strait-of-hormuz",
+      "source": "The Guardian",
+      "summary": "美军在霍尔木兹海峡发射地狱火导弹击中一艘悬挂博茨瓦纳国旗的空载油轮，指控其试图突破封锁驶往伊朗，并称伊朗已攻击科威特和巴林。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "英国外相访华：需要与中国保持接触",
+      "url": "https://www.dw.com/zh/英国外相访华：我们需要与中国保持接触，而非一概抵制/a-77392150?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "英国外交大臣库珀访华参与第十一次中英战略对话，为回暖的中英关系辩护，同时承认在俄乌等问题上存在分歧。",
+      "importance": 8
+    },
+    {
+      "title": "欧盟达成移民改革协议 加强遣返与海外拘留",
+      "url": "https://www.npr.org/2026/06/02/nx-s1-5844100/eu-migration-deal",
+      "source": "NPR World",
+      "summary": "欧盟推进移民政策改革，旨在加大遣返力度并在境外建设拘留中心，批评者称其类似特朗普移民策略。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "今日头条聚焦美伊军事对峙升级，地缘风险陡增；科技界IPO与开放模型齐头并进，AI竞赛仍在加速。",
+  "keywords": [
+    "美伊对峙",
+    "霍尔木兹海峡",
+    "Anthropic IPO",
+    "英伟达Cosmos 3",
+    "英国外相访华",
+    "欧盟移民改革",
+    "AI理赔助手",
+    "GitHub智能体"
+  ]
+}
