@@ -1,0 +1,75 @@
+{
+  "hero_headline": "真主党拒停火 泽连斯基促和谈",
+  "daily_overview": "中东局势再度紧张，真主党拒绝美国斡旋的黎以停火协议，以色列继续对黎巴嫩发动攻击；乌克兰总统泽连斯基致信普京，呼吁在第三国举行面对面谈判。技术领域，微软发布MAI-Thinking-1推理模型（35B MoE），OpenAI为ChatGPT推出新记忆系统，AI在开发工具、文档压缩等场景持续演进。五眼联盟指控中国借招聘平台招募线人，中国予以否认；此外，刚果埃博拉疫情因民众不信任而防控受阻，红树林生态系统意外恢复。全球在人工智能与地缘政治的交织中加速变化。",
+  "tech_briefs": [
+    {
+      "title": "微软发布MAI-Thinking-1推理模型",
+      "url": "https://news.smol.ai/issues/26-06-02-msft-mai-2/",
+      "source": "Smol AI News",
+      "summary": "微软发布MAI-Thinking-1（35B MoE），256K上下文，AIME 2025达97%，超越Sonnet 4.6；同日公开技术报告。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI为ChatGPT推出记忆系统",
+      "url": "https://openai.com/index/chatgpt-memory-dreaming",
+      "source": "OpenAI News",
+      "summary": "ChatGPT推出新记忆系统Dreaming，能在对话中记住用户偏好并保持上下文相关性，提升个性化体验。",
+      "importance": 8
+    },
+    {
+      "title": "法院面临AI生成诉讼浪潮",
+      "url": "https://www.technologyreview.com/2026/06/04/1138391/courts-coping-ai-lawsuits/",
+      "source": "MIT Tech Review AI",
+      "summary": "科罗拉多联邦法官表示每天处理大量AI生成的法律文件，许多案件由无律师当事人提交，法院正应对诉讼泛滥。",
+      "importance": 7
+    },
+    {
+      "title": "Headroom压缩LLM输入token高达95%",
+      "url": "https://github.com/chopratejas/headroom",
+      "source": "GitHub Trending",
+      "summary": "开源工具Headroom在工具输出、日志、文件到达LLM前压缩，减少60-95% token且不影响答案质量，支持库和MCP服务器集成。",
+      "importance": 7
+    },
+    {
+      "title": "PaddleOCR支持100+语言文本提取",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "source": "GitHub Trending",
+      "summary": "百度开源OCR工具PaddleOCR可将PDF或图片文字转为结构化数据，支持100+语言，桥接图像与LLM系统。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "真主党拒绝黎以停火协议 斥为投降",
+      "url": "https://www.nytimes.com/live/2026/06/04/world/iran-war-trump-israel-lebanon",
+      "source": "NYT World",
+      "summary": "真主党领导人拒绝美国斡旋的黎以停火协议，称协议是「投降」；以色列继续攻击黎巴嫩，一名联黎维和人员死亡。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "泽连斯基致信普京呼吁面对面和谈",
+      "url": "https://www.theguardian.com/world/2026/jun/04/zelenskyy-calls-for-face-to-face-negotiations-letter-putin-ukraine-russia-trump",
+      "source": "The Guardian",
+      "summary": "乌克兰总统泽连斯基致信普京，提议在第三国举行面对面谈判；特朗普表示双方都需作出妥协。",
+      "importance": 9
+    },
+    {
+      "title": "五眼联盟警告中国借招聘平台招募线人",
+      "url": "https://www.dw.com/zh/五眼联盟：中国特工借招聘平台招募线人-中国：恶意诽谤/a-77424097?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "五眼联盟安全机构称中国情报部门通过职业社交平台和招聘网站招募线人获取敏感信息；中国外交部回应称「恶意诽谤」。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "地缘冲突与AI创新并行，和平谈判与科技竞速均需冷静与智慧，防止误判与双刃剑效应。",
+  "keywords": [
+    "中东局势",
+    "乌克兰和谈",
+    "真主党",
+    "五眼联盟",
+    "AI推理模型",
+    "ChatGPT记忆",
+    "Token压缩",
+    "红树林恢复"
+  ]
+}
