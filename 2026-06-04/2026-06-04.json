@@ -1,0 +1,75 @@
+{
+  "hero_headline": "美众院通过战争权力决议 限制总统对伊朗动武",
+  "daily_overview": "中东局势持续紧张：美国众议院以215-208票通过战争权力决议，要求停止对伊朗军事行动，被视为对特朗普政府的明确制衡；以色列与黎巴嫩在美方斡旋下同意更新停火协议，真主党须完全停止火力；科威特国际机场遭伊朗无人机袭击，致至少1死60伤。技术领域同样密集：OpenAI发布GPT-Rosalind新能力，深化生命科学AI应用；微软Build大会推出MAI-Thinking-1模型，35B MoE参数配合256K上下文，性能领先；GitHub上Headroom等AI压缩工具降低API成本；同时AI安全治理蓝图与Agent框架动态工作流加速进化，世界模型与多模态语言模型融合研究取得进展。技术与地缘政治博弈成为当日两大主线。",
+  "tech_briefs": [
+    {
+      "title": "GPT-Rosalind增强生命科学研究能力",
+      "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
+      "source": "OpenAI News",
+      "summary": "OpenAI推出GPT-Rosalind新功能，增强生物学推理、药物化学、基因组学分析和实验工作流，推动生命科学研究。",
+      "importance": 9
+    },
+    {
+      "title": "微软发布MAI-Thinking-1模型 35B MoE 256K上下文",
+      "url": "https://news.smol.ai/issues/26-06-02-msft-mai-2/",
+      "source": "Smol AI News",
+      "summary": "微软在Build大会上推出MAI-Thinking-1，35B参数MoE模型，支持256K上下文，AIME 2025达97%，在人类偏好测试中超越Sonnet 4.6。",
+      "importance": 8
+    },
+    {
+      "title": "Headroom：LLM前压缩工具 减少60-95% token",
+      "url": "https://github.com/chopratejas/headroom",
+      "source": "GitHub Trending",
+      "summary": "在LLM之前压缩工具输出、日志、文件和RAG块，减少60-95%的token消耗而不改变答案。提供库、代理和MCP服务器，降低API成本。",
+      "importance": 6
+    },
+    {
+      "title": "世界模型与多模态语言模型互补推理研究",
+      "url": "https://huggingface.co/papers/2606.03603",
+      "source": "HuggingFace Trending Papers",
+      "summary": "融合世界模型的具体视觉推演与多模态大模型的抽象推理能力，实现从静态观测互补预测未来，提升动态场景理解与规划。",
+      "importance": 7
+    },
+    {
+      "title": "OpenAI发布前沿AI民主治理蓝图",
+      "url": "https://openai.com/index/frontier-safety-blueprint",
+      "source": "OpenAI News",
+      "summary": "OpenAI为美国提出前沿AI治理联邦框架，涵盖安全、韧性和国家安全，推动民主治理设计。",
+      "importance": 8
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美众院通过战争权力决议 限制总统对伊朗动武",
+      "url": "https://www.bbc.com/news/articles/cj6pldg39deo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "美国众议院以215-208票通过法案要求停止对伊朗军事行动，4名共和党议员倒戈支持民主党，此前三次类似尝试未通过。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "以色列与黎巴嫩同意更新停火协议",
+      "url": "https://www.nytimes.com/live/2026/06/03/world/iran-war-trump-israel-lebanon",
+      "source": "NYT World",
+      "summary": "美国斡旋下，以色列与黎巴嫩同意更新停火，要求伊朗支持的真主党完全停止火力，此前停火基本被无视。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "科威特机场遭伊朗无人机袭击 至少1死60伤",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/3/kuwait-releases-cctv-footage-of-deadly-iranian-strike-on-airport?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "科威特公布监控显示伊朗无人机袭击科威特国际机场，致至少1人死亡、60多人受伤。伊朗方面未予承认。（多家报道）",
+      "importance": 7
+    }
+  ],
+  "editor_note": "中东紧张局势促使美国国会出手限制总统军事权力，AI领域则同时涌现性能突破与治理探索，技术与地缘政治博弈并进。",
+  "keywords": [
+    "美伊冲突",
+    "战争权力决议",
+    "以色列",
+    "黎巴嫩停火",
+    "GPT-Rosalind",
+    "微软MAI",
+    "AI治理",
+    "中东局势"
+  ]
+}
