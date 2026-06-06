@@ -1,0 +1,75 @@
+{
+  "hero_headline": "普京拒绝泽连斯基会面 重申乌克兰战争目标",
+  "daily_overview": "技术领域，NVIDIA发布完全开源550B混合专家模型Nemotron 3 Ultra，OpenAI推出ChatGPT记忆系统「Dreaming」，Meta AI客服被曝安全漏洞遭黑客利用。时政方面，普京在圣彼得堡论坛上拒绝与泽连斯基会面并重申战争目标；以色列空袭黎巴嫩南部，数千人逃离家园；一名夏尔巴向导在珠峰失踪六天后奇迹获救。全球AI安全与地缘对抗持续升温。",
+  "tech_briefs": [
+    {
+      "title": "NVIDIA发布开源550B混合专家模型Nemotron 3 Ultra",
+      "url": "https://news.smol.ai/issues/26-06-04-not-much/",
+      "source": "Smol AI News",
+      "summary": "NVIDIA发布Nemotron 3 Ultra，完全开源550B混合专家模型（55B活跃参数），支持1M上下文，针对长时代理任务优化，实现5倍加速与30%成本降低。",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI推出ChatGPT「Dreaming」记忆系统",
+      "url": "https://openai.com/index/chatgpt-memory-dreaming",
+      "source": "OpenAI News",
+      "summary": "OpenAI为ChatGPT新增记忆系统「Dreaming」，能更好记住用户偏好，保持对话上下文持续相关，提升个性化体验。",
+      "importance": 8
+    },
+    {
+      "title": "Meta AI客服被利用窃取Instagram账户",
+      "url": "https://www.technologyreview.com/2026/06/05/1138437/the-meta-hack-shows-theres-more-to-ai-security-than-mythos/",
+      "source": "MIT Tech Review AI",
+      "summary": "攻击者利用Meta AI客服助手，要求将账户链接至其控制的邮箱，AI即执行操作，成功窃取Instagram账户，暴露AI安全漏洞。",
+      "importance": 9
+    },
+    {
+      "title": "Code2LoRA：超网络生成代码模型LoRA适配器",
+      "url": "https://huggingface.co/papers/2606.06492",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出Code2LoRA方法，利用超网络为代码语言模型按仓库生成LoRA适配器，免去昂贵微调，适应软件演化，支持轻量级部署。",
+      "importance": 7
+    },
+    {
+      "title": "Headroom：压缩LLM输入节省60-95% Token",
+      "url": "https://github.com/chopratejas/headroom",
+      "source": "GitHub Trending",
+      "summary": "Headroom在工具输出、日志、文件进入LLM前进行压缩，减少60-95% token数且保持答案质量，提供库、代理和MCP服务器三种使用方式，降低大模型调用成本。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "普京拒绝泽连斯基会面 重申乌克兰战争目标",
+      "url": "https://www.theguardian.com/world/2026/jun/05/putin-rejects-zelenskyys-offer-to-meet-and-reaffirms-ukraine-war-aims",
+      "source": "The Guardian",
+      "summary": "普京在圣彼得堡论坛上拒绝泽连斯基公开信中的会面邀请，称其「无礼」，并重申俄方战争目标不变；泽连斯基于6月4日致信呼吁直接谈判结束战争。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "以色列空袭黎巴嫩南部 下令撤离九个村庄",
+      "url": "https://www.theguardian.com/world/2026/jun/05/israel-strikes-southern-lebanon-evacuations-nine-villages",
+      "source": "The Guardian",
+      "summary": "以色列对黎巴嫩南部发动空袭，并强制撤离九个村庄，数千人流离失所；此前一天真主党拒绝停火提议。",
+      "importance": 9
+    },
+    {
+      "title": "夏尔巴向导珠峰失踪六天后获救",
+      "url": "https://www.nytimes.com/2026/06/05/world/asia/missing-sherpa-mount-everest-found.html",
+      "source": "NYT World",
+      "summary": "57岁夏尔巴向导Dawa Sherpa在珠峰失踪近一周，靠吃巧克力与嚼冰存活，6月4日被清理人员发现并获救，家属批评搜寻不及时。（多家报道）",
+      "importance": 7
+    }
+  ],
+  "editor_note": "当日技术热点集中于AI安全漏洞与开源大模型迭代，时政方面乌战和谈僵局和中东冲突持续升级，全球局势未见缓和。",
+  "keywords": [
+    "普京",
+    "泽连斯基",
+    "乌克兰",
+    "以色列",
+    "黎巴嫩",
+    "NVIDIA",
+    "ChatGPT",
+    "AI安全"
+  ]
+}
