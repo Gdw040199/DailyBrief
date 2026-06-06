@@ -1,0 +1,75 @@
+{
+  "hero_headline": "美伊冲突升级 美军打击伊朗雷达站",
+  "daily_overview": "今日，美伊冲突骤然升级，美军打击伊朗雷达站，伊朗报复袭击科威特和巴林美军基地，中东局势急剧紧张。同时，以色列间谍威胁级别被五角大楼提升至「严重」，中东多线角力加剧。技术领域，OpenAI推出ChatGPT「Dreaming」记忆系统，增强跨对话上下文；Anthropic模型泄露与递归自我改进技术取得进展；Meta AI客服代理被黑客利用窃取账号，凸显AI安全短板；NVIDIA发布Nemotron 3 Ultra开源模型，性能显著提升；学界提出Code2LoRA方法，优化代码模型适应性。法国前第一夫人贝尔纳黛特·希拉克去世，享年93岁。",
+  "tech_briefs": [
+    {
+      "title": "ChatGPT推出「Dreaming」记忆系统",
+      "url": "https://openai.com/index/chatgpt-memory-dreaming",
+      "source": "OpenAI News",
+      "summary": "ChatGPT推出新记忆系统「Dreaming」，可记住用户偏好，在跨对话中保持上下文新鲜和相关，增强个性化体验。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "Anthropic模型泄露及递归自我改进技术进展",
+      "url": "https://news.smol.ai/issues/26-06-05-not-much/",
+      "source": "Smol AI News",
+      "summary": "Anthropic的Oceanus模型泄露，Claude Mythos与Opus系列引发不同反应；Sakana AI推出递归自我改进（RSI）技术，实现自我提升。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "Meta AI客服代理被黑客利用窃取Instagram账号",
+      "url": "https://www.technologyreview.com/2026/06/05/1138437/the-meta-hack-shows-theres-more-to-ai-security-than-mythos/",
+      "source": "MIT Tech Review AI",
+      "summary": "攻击者利用Meta的AI客服代理，通过简单指令将Instagram账户链接到攻击者控制邮箱，暴露AI安全漏洞。",
+      "importance": 10
+    },
+    {
+      "title": "NVIDIA发布Nemotron 3 Ultra开源模型",
+      "url": "https://news.smol.ai/issues/26-06-04-not-much/",
+      "source": "Smol AI News",
+      "summary": "NVIDIA发布Nemotron 3 Ultra，550B参数MoE，55B活跃参数，支持1M上下文，针对长时代理任务优化，速度提升5倍、成本降低30%。",
+      "importance": 8
+    },
+    {
+      "title": "Code2LoRA：超网络生成适配器优化代码语言模型",
+      "url": "https://huggingface.co/papers/2606.06492",
+      "source": "HuggingFace Trending Papers",
+      "summary": "针对代码语言模型在软件演化中的适配问题，提出Code2LoRA，利用超网络为每个仓库生成轻量LoRA适配器，避免全量微调与检索，实现高效代码适配。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美伊冲突升级 美军打击伊朗雷达站",
+      "url": "https://www.dw.com/zh/美军打击伊朗雷达站-伊朗袭击美军基地/a-77445792?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "美军对伊朗海岸雷达站实施打击，伊朗对科威特和巴林美军基地进行报复性进攻，双方停战谈判再次面临困难。",
+      "importance": 10
+    },
+    {
+      "title": "五角大楼将以色列间谍威胁级别提升至「严重」",
+      "url": "https://www.aljazeera.com/news/2026/6/6/pentagon-said-to-raise-threat-level-on-israel-spying-to-critical?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "五角大楼报告担忧在美以与伊朗战争及停火谈判期间，以色列间谍活动增加，将威胁级别提升至「严重」。",
+      "importance": 9
+    },
+    {
+      "title": "法国前第一夫人贝尔纳黛特·希拉克去世",
+      "url": "https://www.theguardian.com/world/2026/jun/06/bernadette-chirac-former-first-lady-france-dies",
+      "source": "The Guardian",
+      "summary": "法国前第一夫人、前总统雅克·希拉克遗孀贝尔纳黛特·希拉克去世，享年93岁。她是幕后坚定操作者，以慈善工作闻名。（多家报道）",
+      "importance": 8
+    }
+  ],
+  "editor_note": "美伊冲突骤然升级，AI安全漏洞频现，全球地缘与技术双重风险加剧，各国需警惕军事与信息安全「双线」压力。",
+  "keywords": [
+    "美伊冲突",
+    "AI安全",
+    "ChatGPT记忆系统",
+    "Anthropic模型泄露",
+    "NVIDIA Nemotron",
+    "以色列间谍威胁",
+    "贝尔纳黛特·希拉克去世",
+    "开源AI记忆"
+  ]
+}
