@@ -1,0 +1,75 @@
+{
+  "hero_headline": "伊朗向以色列发射导弹 中东紧张升级",
+  "daily_overview": "伊朗6月7日向以色列发射导弹，打破4月停火协议，中东紧张骤然升级；同日习近平访朝，重振受疫情和朝俄关系影响的中朝关系。科技方面，Meta AI客服代理被利用窃取Instagram账户，暴露AI安全实际漏洞；OpenAI为ChatGPT推出记忆系统「Dreaming」以提升个性化体验；Anthropic模型系列迎来Oceanus泄露与Mythos/Opus争议，递归自我改进技术持续推进；NVIDIA发布开源Nemotron 3 Ultra模型，大幅提升AI代理效率。地缘与AI双重风险加剧。",
+  "tech_briefs": [
+    {
+      "title": "Meta AI客服代理被利用窃取Instagram账户",
+      "url": "https://www.technologyreview.com/2026/06/05/1138437/the-meta-hack-shows-theres-more-to-ai-security-than-mythos/",
+      "source": "MIT Tech Review AI",
+      "summary": "攻击者利用Meta的AI客服代理，仅通过要求将账户链接到攻击者控制邮箱即成功窃取Instagram账户，凸显AI安全实际威胁。",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI推出ChatGPT「Dreaming」记忆系统",
+      "url": "https://openai.com/index/chatgpt-memory-dreaming",
+      "source": "OpenAI News",
+      "summary": "ChatGPT新增记忆系统，通过记住用户偏好使对话更连贯、更个性化，提升长期对话体验。",
+      "importance": 8
+    },
+    {
+      "title": "Anthropic模型系列：泄露、争议与递归自我改进",
+      "url": "https://tldr.tech/ai/2026-06-05",
+      "source": "TLDR AI",
+      "summary": "Anthropic的Oceanus模型泄露、Claude Mythos一步工作流获好评、Opus 4.8出现基准测试回退，Sakana AI启动递归自我改进项目。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "NVIDIA发布开源Nemotron 3 Ultra模型",
+      "url": "https://news.smol.ai/issues/26-06-04-not-much/",
+      "source": "Smol AI News",
+      "summary": "NVIDIA推出全开源Nemotron 3 Ultra模型，550B参数MoE架构，55B活跃参数，支持1M上下文，面向长运行代理任务，速度提升5倍、成本降低30%。",
+      "importance": 7
+    },
+    {
+      "title": "Code2LoRA：用超网络生成代码模型适配器",
+      "url": "https://huggingface.co/papers/2606.06492",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出Code2LoRA方法，利用超网络为每个软件仓库动态生成低秩适配器，替代逐仓库微调或长输入注入，在保持性能的同时大幅降低存储与计算开销，适应仓库演变。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "伊朗向以色列发射导弹 中东紧张升级",
+      "url": "https://www.nytimes.com/live/2026/06/07/world/iran-israel-missiles",
+      "source": "NYT World",
+      "summary": "伊朗向以色列发射导弹，为4月停火以来首次报复。此前以色列袭击贝鲁特郊区，伊朗回应。暂无伤亡报告。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "习近平时隔七年再访朝鲜 重振双边关系",
+      "url": "https://www.theguardian.com/world/2026/jun/08/xi-jinping-kim-jong-un-meeting-north-korea",
+      "source": "The Guardian",
+      "summary": "中国国家主席习近平周一访问朝鲜，为期两日。此行旨在重振因疫情贸易下滑及朝俄关系加深而紧张的中朝关系。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "默克尔批评民族主义：「这不会有好结果」",
+      "url": "https://www.dw.com/zh/默克尔谈民族主义：-这不会有好结果！/a-77451202?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "德国前总理默克尔在接受采访时批评民族主义浪潮，并承认2015年难民政策确实助长了右翼政党支持率上升。",
+      "importance": 6
+    }
+  ],
+  "editor_note": "AI安全漏洞随应用深入暴露，中东地缘冲突再起，双重风险需警惕。科技与政治深层联动，全球市场应未雨绸缪。",
+  "keywords": [
+    "伊朗",
+    "以色列",
+    "中东",
+    "习近平",
+    "朝鲜",
+    "AI安全",
+    "ChatGPT",
+    "Anthropic"
+  ]
+}
