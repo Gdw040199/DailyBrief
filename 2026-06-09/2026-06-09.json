@@ -1,0 +1,75 @@
+{
+  "hero_headline": "以伊冲突暂缓 特朗普调停收效",
+  "daily_overview": "今日地缘风险持续主导全球议程：以色列与伊朗在特朗普电话斡旋下暂停攻击，双方均保留恢复权利，霍尔木兹海峡关闭隐患未消。美国中期选举初选在四州展开，特朗普提名争议人物布兰奇为司法部长。科技层面，OpenAI确认秘密提交IPO注册文件，上市进程加速；Meta AI客服系统被曝安全漏洞致账号被盗；开源社区涌现多个高性能AI工具，包括自托管agent及向量索引，环境模拟与长视频理解研究取得新进展。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI秘密提交IPO注册声明",
+      "url": "https://openai.com/index/openai-submits-confidential-s-1",
+      "source": "OpenAI News",
+      "summary": "OpenAI确认已向美国证券交易委员会秘密提交S-1注册声明草案，尚未确定后续行动时间，上市进程启动。",
+      "importance": 9
+    },
+    {
+      "title": "Meta AI客服被利用窃取Instagram账号",
+      "url": "https://www.technologyreview.com/2026/06/05/1138437/the-meta-hack-shows-theres-more-to-ai-security-than-mythos/",
+      "source": "MIT Tech Review AI",
+      "summary": "攻击者利用Meta AI客服代理，要求其将用户账户链接到攻击者控制的邮箱，从而盗取Instagram账号，暴露AI安全盲点。",
+      "importance": 8
+    },
+    {
+      "title": "Hermes Agent开源自托管agent发布",
+      "url": "https://x.com/Mnilax/status/2063697740526399833",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "Nous Research推出不依赖IDE、后台持续运行的agent，附17条prompt模板，可实现在睡眠时自动执行工作流。",
+      "importance": 7
+    },
+    {
+      "title": "turbovec：基于TurboQuant的高性能向量索引",
+      "url": "https://github.com/RyanCodrai/turbovec",
+      "source": "GitHub Trending",
+      "summary": "用Rust编写并供Python绑定的向量索引，针对快速检索优化，适合语义搜索、推荐系统等AI场景。",
+      "importance": 6
+    },
+    {
+      "title": "NVIDIA发布Nemotron 3.5内容安全模型",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+      "source": "Hugging Face Blog",
+      "summary": "可定制多模态安全方案，适用于全球企业AI部署，填补内容审核模型空白。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "以色列与伊朗冲突暂缓 特朗普调停成关键",
+      "url": "https://www.nytimes.com/live/2026/06/08/world/iran-israel-lebanon-attacks",
+      "source": "NYT World",
+      "summary": "以色列在与特朗普通电话后暂停对伊朗打击，内塔尼亚胡称“火力暂停”。伊朗也停止攻击，双方均警告准备恢复行动。分析称冲突考验特朗普控制力，或增强德黑兰谈判筹码。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "美国四州举行中期选举初选投票",
+      "url": "https://www.aljazeera.com/news/2026/6/8/maines-platner-faces-test-as-four-us-states-hold-midterm-primary-votes?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "缅因、内华达、南卡罗来纳和北达科他四州举行初选，其中缅因州候选人普拉特纳面临关键考验。",
+      "importance": 7
+    },
+    {
+      "title": "特朗普提名托德·布兰奇为司法部长",
+      "url": "https://www.aljazeera.com/news/2026/6/8/trump-nominates-todd-blanche-as-attorney-general-setting-up-senate-fight?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "现任代理司法部长布兰奇被提名为正式司法部长，他因爱泼斯坦文件和1月6日事件面临争议，此提名将引发参议院确认斗争。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "中东停火为谈判留出空间，但双方戒心未消。AI安全与上市进程齐头并进，监管与商业加速博弈。",
+  "keywords": [
+    "以色列",
+    "伊朗",
+    "特朗普",
+    "OpenAI",
+    "IPO",
+    "AI安全",
+    "美国中期选举",
+    "司法部长"
+  ]
+}
