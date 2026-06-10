@@ -1,0 +1,68 @@
+{
+  "hero_headline": "美军对伊朗发动打击回应直升机被击落",
+  "daily_overview": "今日技术焦点：Google DeepMind推出Gemini 3.5 Live Translate，实现接近实时的自然语音翻译；OpenAI Codex助力Nextdoor与Notion提升开发效率；DeepMind发布Gemma 4 12B无编码器多模态模型；Latent Space推出FrontierCode基准评估代码质量。时政方面：美军因直升机被击落对伊朗发动自卫打击，伊朗誓言报复，中东局势骤然紧张；中国国家主席习近平访问平壤，与金正恩同意加强战略关系，中方实际承认朝鲜拥核；澳大利亚联合西方盟友制裁约旦河西岸极端定居者，应对暴力行为。",
+  "tech_briefs": [
+    {
+      "title": "Gemini 3.5 Live Translate 提供近实时自然语音翻译",
+      "url": "https://deepmind.google/blog/fluid-natural-voice-translation-with-gemini-35-live-translate/",
+      "source": "DeepMind Blog",
+      "summary": "Google DeepMind推出Gemini 3.5 Live Translate，集成至Google AI Studio、Google翻译和Google Meet，实现接近实时的自然语音翻译。",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI Codex 助力 Nextdoor 突破开发限制",
+      "url": "https://openai.com/index/nextdoor",
+      "source": "OpenAI News",
+      "summary": "Nextdoor工程师利用Codex与GPT-5.5调查难复现问题、跨平台构建应用，聚焦产品成果，突破开发限制。",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind 发布 Gemma 4 12B 无编码器多模态模型",
+      "url": "https://deepmind.google/blog/introducing-gemma-4-12b-a-unified-encoder-free-multimodal-model/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind发布Gemma 4 12B，这是一个统一的无编码器多模态模型，可处理文本、图像等多种输入。",
+      "importance": 8
+    },
+    {
+      "title": "Latent Space 推出 FrontierCode 基准评估代码质量",
+      "url": "https://www.latent.space/p/ainews-frontiercode-benchmarking",
+      "source": "Latent Space",
+      "summary": "Latent Space推出FrontierCode基准测试，旨在区分高质量代码与低质量代码，推动代码标准提升。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美军对伊朗发动打击回应直升机被击落",
+      "url": "https://www.bbc.com/news/articles/cze9359gglyo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "美国总统特朗普称伊朗部队在霍尔木兹海峡击落美军阿帕奇直升机，美军随后对伊朗发动自卫打击，伊朗誓言报复。黎巴嫩卫生部称以色列袭击已致3666人死亡。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "习近平与金正恩同意加强战略关系",
+      "url": "https://thediplomat.com/2026/06/xi-and-kim-agree-to-strengthen-strategic-relationship-with-socialist-principles/",
+      "source": "The Diplomat",
+      "summary": "习近平出访平壤，与金正恩同意加强战略关系，中方实际上承认朝鲜为拥核国家。",
+      "importance": 8
+    },
+    {
+      "title": "澳大利亚宣布制裁约旦河西岸极端定居者",
+      "url": "https://www.theguardian.com/australia-news/live/2026/jun/10/australia-news-live-penny-wong-sanctions-west-bank-settlers-australian-politics-high-court-israel-palestine-settlers-immigration-ntwnfb",
+      "source": "The Guardian",
+      "summary": "澳大利亚外长黄英贤宣布与西方盟友联合制裁约旦河西岸极端主义定居者，回应针对巴勒斯坦平民的暴力。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "美伊冲突骤然升级，中东局势再添变数；AI领域多模态与代码能力持续突破，技术迭代加速。需关注地缘风险与AI治理平衡。",
+  "keywords": [
+    "美伊冲突",
+    "AI语音翻译",
+    "Codex",
+    "Gemma 4",
+    "FrontierCode",
+    "中朝关系",
+    "澳大利亚制裁",
+    "多模态模型"
+  ]
+}
