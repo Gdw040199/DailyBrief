@@ -1,0 +1,75 @@
+{
+  "hero_headline": "美伊冲突升级：美军连续两日打击伊朗",
+  "daily_overview": "技术领域，Anthropic发布Claude Fable 5引发争议，DeepMind推出DiffusionGemma与Gemini 3.5实时翻译，GitHub上agent-skills与Cohere North Mini Code拓展AI代理能力。时政方面，美军对伊朗连续空袭，谈判陷入僵局；加拿大立法禁止16岁以下使用社交媒体；法国邀请中国参加G7视频会议。OpenAI报告指中国影响操作干预AI辩论。AI迭代加速，地缘风险不减，全球治理面临新挑战。",
+  "tech_briefs": [
+    {
+      "title": "Claude Fable 5发布引争议",
+      "url": "https://www.latent.space/p/ainews-anthropic-claude-fable-5-mythos",
+      "source": "Latent Space",
+      "summary": "Anthropic推出Mythos级模型Claude Fable 5，因存在争议的使用条款而受到质疑。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind发布DiffusionGemma 4倍加速",
+      "url": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind发布DiffusionGemma，实现文本生成速度提升4倍。",
+      "importance": 8
+    },
+    {
+      "title": "Gemini 3.5 Live Translate实现实时语音翻译",
+      "url": "https://deepmind.google/blog/fluid-natural-voice-translation-with-gemini-35-live-translate/",
+      "source": "DeepMind Blog",
+      "summary": "Gemini 3.5 Live Translate为Google AI Studio、谷歌翻译和Google Meet带来近乎实时的自然语音翻译。",
+      "importance": 7
+    },
+    {
+      "title": "GitHub项目agent-skills提供AI编码代理技能库",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "source": "GitHub Trending",
+      "summary": "为AI编码代理提供生产级工程技能库，涵盖代码质量、测试、安全等最佳实践，提升代码生成可靠性。",
+      "importance": 6
+    },
+    {
+      "title": "Cohere推出面向开发者模型North Mini Code",
+      "url": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code",
+      "source": "Hugging Face Blog",
+      "summary": "Cohere Labs推出North Mini Code，是其首款面向开发者的模型，适用于代码生成任务。",
+      "importance": 5
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美对伊朗发动第二轮空袭，谈判陷僵局",
+      "url": "https://www.nytimes.com/live/2026/06/10/world/iran-war-trump-us",
+      "source": "NYT World",
+      "summary": "美军对伊朗发动连续两日空袭，特朗普称谈判进展太慢，伊朗誓言报复。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "加拿大推出法案禁止16岁以下使用社交媒体",
+      "url": "https://www.aljazeera.com/economy/2026/6/10/canada-introduces-bill-to-ban-social-media-for-children-under-16?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "加拿大提出法案，禁止16岁以下青少年使用社交媒体，并要求数字平台加强安全标准。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "马克龙邀中国参加G7视频会议",
+      "url": "https://www.dw.com/zh/g7峰会前向北京示好？马克龙邀中国参加视频会/a-77489427?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "法国总统马克龙将在G7峰会前与中国等新兴国家举行视频会议，讨论全球经济失衡问题。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "今日科技界见证Claude Fable 5争议与DeepMind加速创新，地缘冲突加剧，全球治理挑战凸显。",
+  "keywords": [
+    "美伊冲突",
+    "Claude Fable 5",
+    "DiffusionGemma",
+    "Gemini 3.5",
+    "加拿大社交媒体禁令",
+    "G7视频会议",
+    "AI代理技能库",
+    "人机混合"
+  ]
+}
