@@ -1,0 +1,75 @@
+{
+  "hero_headline": "特朗普称美伊和平协议即将签署 取消空袭",
+  "daily_overview": "今日全球聚焦中东和平进程：特朗普声称美伊协议已‘批准’并取消新一轮空袭，但伊朗阻止油轮穿越霍尔木兹海峡，局势仍存变数；2026年世界杯在墨西哥盛大开幕，揭幕战墨西哥获胜。科技方面，Apple推出macOS Linux容器工具，OpenAI收购Ona扩展Codex，DeepMind发布DiffusionGemma提速4倍，并联合出资千万美元研究多代理安全，Anthropic发布Claude Fable 5模型，AI安全与自主交互成为焦点。",
+  "tech_briefs": [
+    {
+      "title": "Apple推出macOS Linux容器工具",
+      "url": "https://github.com/apple/container",
+      "source": "GitHub Trending",
+      "summary": "Apple推出的macOS工具，使用Swift编写并针对Apple silicon优化，通过轻量级虚拟机在Mac上创建和运行Linux容器，适合开发者在本地测试或部署Linux环境。",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI收购Ona扩展Codex云环境",
+      "url": "https://openai.com/index/openai-to-acquire-ona",
+      "source": "OpenAI News",
+      "summary": "OpenAI计划收购Ona，通过安全持久的云环境扩展Codex，支持企业工作流中的长期AI代理。",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind发布DiffusionGemma文本生成提速4倍",
+      "url": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind发布DiffusionGemma，文本生成速度提升4倍。",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind联合出资千万美元研究多代理AI安全",
+      "url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
+      "source": "DeepMind Blog",
+      "summary": "Google DeepMind与合作伙伴宣布投入1000万美元资助多代理安全研究，其研究总监Rohin Shah警告百万代理交互的潜在风险。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "Anthropic发布Claude Fable 5模型",
+      "url": "https://www.latent.space/p/ainews-anthropic-claude-fable-5-mythos",
+      "source": "Latent Space",
+      "summary": "Anthropic正式发布Claude Fable 5（Mythos级模型），拥有高级推理能力，但伴随有争议的使用政策；另有Claude Opus 4.8用于敏感查询。（多家报道）",
+      "importance": 9
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "特朗普声称美伊和平协议接近 取消新空袭",
+      "url": "https://www.nytimes.com/live/2026/06/11/world/iran-war-trump-us-israel",
+      "source": "NYT World",
+      "summary": "美国总统特朗普声称美伊和平谈判取得进展，协议「已批准」，取消下一波空袭计划；但伊朗阻止油轮穿越霍尔木兹海峡，局势依然紧张。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "2026年世界杯在墨西哥开幕 揭幕战墨西哥获胜",
+      "url": "https://www.bbc.com/news/articles/c2ly928xz8go?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "2026年世界杯在墨西哥城阿兹特克体育场开幕，夏奇拉等明星献艺，场外出现零星抗议。揭幕战中墨西哥2-0获胜，基尼奥内斯和希门尼斯进球。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "马克龙呼吁中美欧协调贸易失衡 中方副总理与会",
+      "url": "https://www.dw.com/zh/马克龙呼吁协调解决贸易失衡-中方与会/a-77509349",
+      "source": "DW 中文",
+      "summary": "法国总统马克龙在G7峰会前夕主持视频会议，呼吁中国、美国、欧洲共同协调解决国际贸易失衡问题。中国副总理张国清参会。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "当美伊和谈曙光与世界杯狂欢同日上演，科技巨头则在竞相定义AI的下一个安全边界。全球注意力在多条战线分散，地缘与技术的交织愈发紧密。",
+  "keywords": [
+    "伊朗",
+    "特朗普",
+    "和平协议",
+    "世界杯",
+    "墨西哥",
+    "AI多代理安全",
+    "Apple容器",
+    "Claude"
+  ]
+}
