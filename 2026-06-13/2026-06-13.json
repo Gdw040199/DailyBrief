@@ -1,0 +1,75 @@
+{
+  "hero_headline": "马斯克成全球首位万亿富翁 SpaceX上市",
+  "daily_overview": "今日技术领域多线并进：Google DeepMind发布DiffusionGemma模型实现4倍文本生成速度提升，同时联合资助1000万美元研究数百万AI智能体交互风险；Anthropic推出Claude Fable 5与Mythos 5模型引发政策争议；Cursor在生产中运行数千递归代理训练下一代Composer。开源项目agent-skills为编码代理提供生产级技能模板。时政方面，埃隆·马斯克以1.11万亿美元净资产登顶全球首位万亿富翁，旗下SpaceX在纳斯达克上市估值2.2万亿美元；伊朗称结束冲突协议即将敲定，霍尔木兹海峡有望重开；Palantir在瑞士诉讼中23项指控22项被驳回，凸显科技公司与监管博弈。整体呈现技术加速落地与地缘政治角力的双重态势。",
+  "tech_briefs": [
+    {
+      "title": "DeepMind发布DiffusionGemma，文本生成速度提升4倍",
+      "url": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/",
+      "source": "DeepMind Blog",
+      "summary": "Google DeepMind发布DiffusionGemma模型，文本生成速度提升4倍，为自回归模型提供高效替代方案。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind担忧数百万AI智能体交互风险，资助千万美元安全研究",
+      "url": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/",
+      "source": "MIT Tech Review AI",
+      "summary": "DeepMind资助研究数百万AI智能体在线交互的潜在危险，并联合合作伙伴宣布1000万美元多智能体安全研究资助计划。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "Anthropic发布Claude Fable 5与Mythos 5模型",
+      "url": "https://news.smol.ai/issues/26-06-09-anthropic-claude-fable-5/",
+      "source": "Smol AI News",
+      "summary": "Anthropic发布Claude Fable 5（通用可用）和Claude Mythos 5（受限访问），敏感查询回退至Opus 4.8，引发关于使用政策的争议。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "Cursor运行数千递归代理训练Composer",
+      "url": "https://x.com/leerob/status/2065469795529588940",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "Cursor运行数千AI代理执行研究任务以训练下一代Composer，遇到问题自动通过Slack或PagerDuty通知人类，展示递归代理系统的生产应用。",
+      "importance": 8
+    },
+    {
+      "title": "开源项目agent-skills为AI编码代理提供生产级技能模板",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "source": "GitHub Trending",
+      "summary": "项目包含一系列验证过的指令和提示模板，帮助AI编码代理在代码编写、调试、重构中更稳定可靠，可集成至Cline、CodeGPT等工具。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "马斯克成全球首位万亿富翁，SpaceX上市",
+      "url": "https://www.bbc.com/news/articles/c4gypy3wwl7o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "据彭博富豪榜，埃隆·马斯克净资产达1.11万亿美元，成为全球首位万亿富翁。SpaceX在纳斯达克上市，估值2.2万亿美元。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "伊朗称协议将结束冲突并重开霍尔木兹海峡",
+      "url": "https://www.bbc.com/news/articles/c39y02x98k8o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "伊朗外长表示结束所有战线战争包括黎巴嫩，但不会放弃核计划。美国、伊朗及巴基斯坦称协议即将最终敲定，将促成霍尔木兹海峡重新开放。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "Palantir在瑞士败诉，23项诉讼中22项被驳回",
+      "url": "https://www.theguardian.com/technology/2026/jun/13/palantir-loses-legal-challenge-to-force-swiss-magazine-to-publish-rejoinders",
+      "source": "The Guardian",
+      "summary": "美国数据分析公司Palantir要求瑞士杂志刊登回应文章的诉讼中，23项有22项被驳回，涉及瑞士政府拒绝该公司服务的报道。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "AI安全研究获注资，国际政治博弈持续；全球经济与地缘风险并存，需关注技术治理与外交突破的交叉影响。",
+  "keywords": [
+    "万亿富翁",
+    "SpaceX",
+    "伊朗协议",
+    "多智能体安全",
+    "DiffusionGemma",
+    "Claude Fable 5",
+    "递归代理",
+    "Palantir败诉"
+  ]
+}
