@@ -1,0 +1,75 @@
+{
+  "hero_headline": "Anthropic新模型因安全风险受限发布",
+  "daily_overview": "今日科技领域，Anthropic发布Claude Fable 5与Mythos 5模型，但因安全隐患被限制公开发布，凸显AI安全审查趋严；Google DeepMind推出DiffusionGemma加速文本生成，并资助多智能体交互安全研究；OpenAI开设AI实用技能课程；MiniMax提出稀疏注意力机制实现百万级token高效处理。时政方面，黎以冲突致黎巴嫩超3700人死亡，以色列空袭村庄致14人遇难；加拿大安大略省惨烈车祸致5名儿童死亡；欧盟将于周一启动乌克兰与摩尔多瓦入盟首轮谈判。",
+  "tech_briefs": [
+    {
+      "title": "Anthropic Fable 5 / Mythos 5 因安全风险被限制发布",
+      "url": "https://www.latent.space/p/ainews-fable-and-mythos-officially",
+      "source": "Latent Space",
+      "summary": "Anthropic发布Claude Fable 5和Mythos 5模型，但因被认为过于危险而限制公开发布，敏感查询回退至Opus 4.8。三文合并来源，引发AI安全广泛讨论。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind推出DiffusionGemma，文本生成提速4倍",
+      "url": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/",
+      "source": "DeepMind Blog",
+      "summary": "Google DeepMind发布DiffusionGemma，基于扩散模型实现文本生成速度提升4倍，为LLM推理效率带来重大突破。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI开设AI Academy课程，培养实用AI技能",
+      "url": "https://openai.com/index/academy-courses-applying-ai-at-work",
+      "source": "OpenAI News",
+      "summary": "OpenAI推出三门Academy课程，帮助用户掌握实用AI技能、创建可重复工作流以及在日常工作应用AI智能体。",
+      "importance": 7
+    },
+    {
+      "title": "DeepMind资助多智能体AI安全研究，担忧百万智能体交互风险",
+      "url": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/",
+      "source": "MIT Tech Review AI",
+      "summary": "Google DeepMind资助多智能体安全研究，并拨款1000万美元。AGI安全负责人警告数百万AI智能体在线交互可能带来新威胁。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "MiniMax稀疏注意力实现百万级token高效处理",
+      "url": "https://huggingface.co/papers/2606.13392",
+      "source": "HuggingFace Trending Papers",
+      "summary": "MiniMax提出稀疏注意力机制，解决超长上下文下softmax注意力的二次计算成本，使LLM高效处理百万级token，大幅降低计算开销。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "黎以冲突致黎巴嫩超3700人死亡，以色列空袭村庄14人遇难",
+      "url": "https://www.npr.org/2026/06/13/nx-s1-5848614/a-lebanon-towns-grief-in-the-aftermath-of-a-deadly-israeli-airstrike",
+      "source": "NPR World",
+      "summary": "黎以冲突已致黎巴嫩超3700人死亡。上月以色列空袭黎南部村庄，造成14人遇难，包括10名妇女儿童。",
+      "importance": 9
+    },
+    {
+      "title": "加拿大安大略省车祸致5名儿童死亡",
+      "url": "https://www.nytimes.com/2026/06/13/world/canada/five-children-killed-crash-ontario-canada.html",
+      "source": "NYT World",
+      "summary": "加拿大安大略省乡村地区一辆厢式货车与SUV相撞，车内5名儿童（4女1男）死亡，1名婴儿重伤。",
+      "importance": 8
+    },
+    {
+      "title": "欧盟将于周一启动乌克兰和摩尔多瓦入盟首轮谈判",
+      "url": "https://www.dw.com/zh/欧盟将启动乌克兰和摩尔多瓦首轮入盟谈判/a-77537180?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "欧盟将于6月16日启动与乌克兰和摩尔多瓦入盟谈判的首轮磋商，两国须先证明其司法和行政体系符合欧盟标准。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "AI安全从警告走向实质限制，多智能体时代风险需未雨绸缪；中东战火未歇，欧洲扩大进程持续，全球治理面临新考验。",
+  "keywords": [
+    "AI安全",
+    "Anthropic",
+    "多智能体",
+    "DiffusionGemma",
+    "欧盟入盟",
+    "黎以冲突",
+    "加拿大车祸",
+    "MiniMax"
+  ]
+}
