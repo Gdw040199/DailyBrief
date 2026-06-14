@@ -1,0 +1,68 @@
+{
+  "hero_headline": "美伊达成60天停火协议 霍尔木兹海峡将重开",
+  "daily_overview": "今日，美国与伊朗宣布达成60天停火协议并开放霍尔木兹海峡，中东紧张局势显著缓和。G7峰会前夕，法国埃维昂爆发抗议冲突。科技领域，OpenAI推出Academy课程推动AI技能普及；DeepMind发布DiffusionGemma实现4倍文本生成加速，并投入1000万美元研究多代理AI安全；Anthropic新模型因安全风险受限发布；MiniMax提出稀疏注意力机制支持百万级token上下文。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI推出Academy实用AI课程",
+      "url": "https://openai.com/index/academy-courses-applying-ai-at-work",
+      "source": "OpenAI News",
+      "summary": "OpenAI推出三门Academy课程，帮助用户构建AI技能、创建可重复工作流并在工作中应用AI代理。",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind发布DiffusionGemma加速文本生成",
+      "url": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind推出DiffusionGemma，通过扩散模型实现4倍文本生成加速，提升效率。",
+      "importance": 8
+    },
+    {
+      "title": "Anthropic新模型因安全考量受限发布",
+      "url": "https://news.smol.ai/issues/26-06-09-anthropic-claude-fable-5/",
+      "source": "Smol AI News",
+      "summary": "Anthropic发布Claude Fable 5（公开发布）和Mythos 5（受限访问），后者因危险性过高未能全面发布，引发AI安全边界讨论。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind资助多代理AI安全研究",
+      "url": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/",
+      "source": "MIT Tech Review AI",
+      "summary": "Google DeepMind宣布1000万美元研究资金，关注数百万AI代理在线交互的潜在危险，AGI安全负责人Rohin Shah表达担忧。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "MiniMax提出稀疏注意力支持超长上下文",
+      "url": "https://huggingface.co/papers/2606.13392",
+      "source": "HuggingFace Trending Papers",
+      "summary": "MiniMax提出稀疏注意力机制，通过近似方法降低计算复杂度，使LLM能联合关注百万级token，适用于agentic工作流等场景。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美伊宣布60天停火协议并开放霍尔木兹海峡",
+      "url": "https://www.nytimes.com/live/2026/06/14/world/iran-war-trump-us",
+      "source": "NYT World",
+      "summary": "美国总统特朗普与伊朗达成60天停火协议，解除对霍尔木兹海峡的封锁，核问题留待后续。多国欢迎协议。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "G7峰会前夕抗议者与警方冲突",
+      "url": "https://www.bbc.com/news/videos/crkvek3dnrgo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "瑞士警方在G7峰会前用水炮和催泪瓦斯驱散反G7抗议者，局势紧张。峰会还将讨论中国挑战。（多家报道）",
+      "importance": 7
+    }
+  ],
+  "editor_note": "美伊停火缓和地缘风险，但核问题谈判仍存变量；AI安全关注多代理交互，模型发布需更审慎。",
+  "keywords": [
+    "美伊停火",
+    "霍尔木兹海峡",
+    "G7峰会",
+    "AI安全",
+    "Anthropic",
+    "DeepMind",
+    "DiffusionGemma",
+    "多代理系统"
+  ]
+}
