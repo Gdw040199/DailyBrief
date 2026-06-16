@@ -1,0 +1,75 @@
+{
+  "hero_headline": "英吉利海峡俄军舰警告射击英国游艇",
+  "daily_overview": "今日技术前沿：OpenAI推出部署模拟方法，利用真实对话数据预测AI模型行为以提升安全性；DeepMind与英国政府合作，拟用AI加速住房规划决策。GitHub Trending上freeCodeCamp开源课程持续更新。时政方面：英吉利海峡发生俄军舰对英国游艇警告射击事件，英国政府已展开调查；伊朗核谈判定于周五重启，特朗普表示希望结束战争；巴西法院判定博尔索纳罗之子煽动美国干预。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI推出部署模拟预测AI行为",
+      "url": "https://openai.com/index/deployment-simulation",
+      "source": "OpenAI News",
+      "summary": "OpenAI发布Deployment Simulation方法，利用真实对话数据预测模型部署前行为，提升安全性和评估准确性。",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind与英国政府合作用AI加速建房决策",
+      "url": "https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning/",
+      "source": "DeepMind Blog",
+      "summary": "英国政府与Google DeepMind合作构建AI原型，旨在加快住房建设审批与规划效率。",
+      "importance": 8
+    },
+    {
+      "title": "freeCodeCamp开源代码库持续更新",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "source": "GitHub Trending",
+      "summary": "freeCodeCamp的开源代码库免费提供编程与计算机科学课程，适合零基础到进阶学习。",
+      "importance": 7
+    },
+    {
+      "title": "Geometric Action Model提升机器人空间推理",
+      "url": "https://huggingface.co/papers/2606.17046",
+      "source": "HuggingFace Trending Papers",
+      "summary": "GAM模型在3D物理世界中显式建模物体、相机与机器人动作的几何关系，在指令跟随和空间推理任务上取得更高成功率。",
+      "importance": 8
+    },
+    {
+      "title": "DreamX-World 1.0通用交互式世界模型发布",
+      "url": "https://huggingface.co/papers/2606.16993",
+      "source": "HuggingFace Trending Papers",
+      "summary": "DreamX-World 1.0支持文本/图像到视频的长时序可控生成，具备相机导航、区域重访等交互能力，使用合成数据与对抗训练保证质量。",
+      "importance": 8
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "英吉利海峡俄军舰警告射击英国游艇",
+      "url": "https://www.bbc.com/news/videos/cevldxgklxko?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "一对英国退休夫妇的游艇在英吉利海峡遭俄罗斯军舰警告射击，英国政府已展开调查。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "伊朗核谈判周五重启 特朗普盼结束战争",
+      "url": "https://www.nytimes.com/live/2026/06/16/world/iran-war-trump-us-deal",
+      "source": "NYT World",
+      "summary": "美国与伊朗就核武器与制裁减免展开新谈判，伊朗外长宣布周五启动，特朗普表示希望结束战争。",
+      "importance": 9
+    },
+    {
+      "title": "巴西法院判定博尔索纳罗之子煽动美国干预",
+      "url": "https://www.aljazeera.com/news/2026/6/16/brazilian-court-convicts-eduardo-bolsonaro-of-courting-us-interference?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "巴西法院判定Eduardo Bolsonaro煽动美国干预其父亲涉政变案，美方对巴西商品加税并制裁相关法官。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "AI加速决策效率，但安全与地缘风险同步上升。技术开放协作与治理边界需更审慎平衡。",
+  "keywords": [
+    "英吉利海峡",
+    "俄军舰",
+    "伊朗核谈判",
+    "OpenAI",
+    "DeepMind",
+    "世界模型",
+    "G7峰会",
+    "地缘风险"
+  ]
+}
