@@ -1,0 +1,68 @@
+{
+  "hero_headline": "美解除伊朗港口封锁 开启60天终谈",
+  "daily_overview": "今日地缘焦点：美国解除对伊朗港口封锁并启动60天最终协议谈判，伊朗随后宣布将对霍尔木兹海峡征收海事费。尼日尔最大机场遭袭致35人死亡，美国防长赫格塞思再次批评北约盟友。科技领域，OpenAI连发动向：GPT-5.5 Instant提升健康咨询能力，AI模型辅助诊断罕见儿童疾病；Midjourney推出Medical产品实现器官扫描；开源模型Kimi K2.6以300并行代理展现低成本高性能自改进能力。",
+  "tech_briefs": [
+    {
+      "title": "Midjourney推出医疗扫描产品",
+      "url": "https://www.latent.space/p/ainews-midjourney-medical-scan-your",
+      "source": "Latent Space",
+      "summary": "Midjourney推出第二款产品Midjourney Medical，可实现器官扫描，称如同站上体重秤般便捷。",
+      "importance": 8
+    },
+    {
+      "title": "GPT-5.5 Instant提升健康咨询能力",
+      "url": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
+      "source": "OpenAI News",
+      "summary": "GPT-5.5 Instant通过更强推理和医生评估，提升ChatGPT在健康与保健回复的准确度和清晰度。",
+      "importance": 7
+    },
+    {
+      "title": "AI辅助诊断罕见儿童遗传病",
+      "url": "https://openai.com/index/diagnose-rare-childhood-diseases",
+      "source": "OpenAI News",
+      "summary": "研究人员使用OpenAI推理模型在先前未解病例中识别出18个新诊断，助力罕见病识别。",
+      "importance": 8
+    },
+    {
+      "title": "开源模型Kimi K2.6展示低成本自改进",
+      "url": "https://x.com/0xMovez/status/2067291911468044494",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "单prompt驱动300个并行代理、4000步协调，研究任务表现超越付费模型5倍，展示高效智能体协作。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美国解除伊朗港口封锁 伊朗拟征霍尔木兹海峡费",
+      "url": "https://www.bbc.com/news/articles/c8r2eejdd35o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "美国解除对伊朗港口的封锁，伊朗宣布60天后将对霍尔木兹海峡征收海事费，双方进入最终协议谈判阶段。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "尼日尔最大机场遭袭35人死亡",
+      "url": "https://www.bbc.com/news/articles/cdx7krkdqeno?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "枪手袭击尼日尔最大机场造成35人死亡。该国正与伊斯兰武装叛乱斗争，今年1月同一机场曾遭袭击。",
+      "importance": 8
+    },
+    {
+      "title": "美国防长再批北约盟友是「纸老虎」",
+      "url": "https://www.npr.org/2026/06/18/nx-s1-5862847/secretary-of-defense-hegseth-scolds-nato-allies-again",
+      "source": "NPR World",
+      "summary": "美国防长皮特·赫格塞思再次批评北约盟友是「纸老虎」，启动对驻欧美军的六个月审查，敦促欧洲主导自身防务。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "伊朗谈判窗口与AI创新齐进：医疗与智能体技术加速突破，地缘博弈考验全球治理韧性。",
+  "keywords": [
+    "伊朗",
+    "霍尔木兹海峡",
+    "OpenAI",
+    "Midjourney",
+    "Kimi",
+    "尼日尔",
+    "北约",
+    "AI诊断"
+  ]
+}
