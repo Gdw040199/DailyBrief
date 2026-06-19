@@ -1,0 +1,75 @@
+{
+  "hero_headline": "GPT-5.6发布在即，开源GLM-5.2与Subquadratic突破引关注",
+  "daily_overview": "今日AI领域消息密集：GPT-5.6即将于周二发布，同时开源模型GLM-5.2通过社区「氛围检查」、被视作前沿突破；初创公司Subquadratic声称解决LLM数学瓶颈但受质疑。时政方面，意大利总理梅洛尼与特朗普公开翻脸，指责对方编造「乞求合影」故事，美欧关系再蒙阴影；中东方面，以色列与真主党同意重启停火，但黎巴嫩成为美伊协议薄弱环节。",
+  "tech_briefs": [
+    {
+      "title": "GPT-5.6周二发布，Claude Code与Perplexity更新",
+      "url": "https://tldr.tech/ai/2026-06-19",
+      "source": "TLDR AI",
+      "summary": "GPT-5.6将于周二发布，Claude Code新增工件功能，Perplexity推出「大脑」记忆功能。",
+      "importance": 9
+    },
+    {
+      "title": "GLM-5.2通过社区「氛围检查」，开源模型成前沿焦点",
+      "url": "https://www.latent.space/p/ainews-glm-gpt-glm-52-passes-vibe",
+      "source": "Latent Space",
+      "summary": "GLM-5.2通过多方氛围检查，开源模型故事进入真正前沿；Z.ai预测Open Fable将于12月发布。",
+      "importance": 8
+    },
+    {
+      "title": "初创公司Subquadratic声称解决LLM数学瓶颈，遭质疑",
+      "url": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/",
+      "source": "MIT Tech Review AI",
+      "summary": "迈阿密AI初创公司Subquadratic宣布解决困扰LLM近十年的数学瓶颈，但细节模糊，许多人持怀疑态度。",
+      "importance": 8
+    },
+    {
+      "title": "DeusData/codebase-memory-mcp：高性能代码智能MCP服务器",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "source": "GitHub Trending",
+      "summary": "将代码库索引为持久知识图谱，支持158种语言，毫秒级查询，平均减少99% token。适合快速理解代码库并集成到LLM工作流。",
+      "importance": 7
+    },
+    {
+      "title": "S-Agent：空间工具使用驱动物理世界推理",
+      "url": "https://huggingface.co/papers/2606.20515",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出空间工具使用智能体范式，通过与环境交互突破静态视觉限制，提升3D空间智能体的理解与决策能力。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "梅洛尼与特朗普口角升级：称其编造「乞求合影」故事",
+      "url": "https://www.bbc.com/news/articles/c20y1ygn707o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "意大利总理梅洛尼指责特朗普编造她「乞求」合影的故事，外长取消访美行程，双方因伊朗战争立场分歧关系恶化。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "以色列与真主党同意重启停火，美伊和谈暂缓",
+      "url": "https://www.theguardian.com/world/2026/jun/19/israel-hezbollah-renew-ceasefire-lebanon-us-iran-agreement",
+      "source": "The Guardian",
+      "summary": "在暴力冲突后，以色列与真主党同意恢复脆弱停火，美国与伊朗在瑞士的有关和平协议落实会议因此取消。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "波兰因军队单位名称取消泽连斯基最高荣誉",
+      "url": "https://www.bbc.com/news/articles/cr7xzg3dmj8o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "波兰取消乌克兰总统泽连斯基的最高荣誉，理由是乌军队单位名称与二战关联。乌克兰谴责此举为「战略错误」且「不尊重」。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "AI模型迭代加速，开源与闭源竞争白热化；地缘政治中，盟友关系因战争立场出现裂痕，中东停火依然脆弱。",
+  "keywords": [
+    "GPT-5.6",
+    "GLM-5.2",
+    "Subquadratic",
+    "梅洛尼-特朗普",
+    "以色列-真主党停火",
+    "人工智能",
+    "地缘政治",
+    "开源模型"
+  ]
+}
