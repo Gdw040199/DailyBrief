@@ -1,0 +1,68 @@
+{
+  "hero_headline": "伊朗关闭霍尔木兹海峡，美伊瑞士谈判在即",
+  "daily_overview": "今日，地缘政治紧张局势升级，伊朗宣布关闭霍尔木兹海峡以回应以色列在黎巴嫩的行动，美国军方否认其说法，副总统万斯赴瑞士与伊朗代表团进行核问题与黎巴嫩战事谈判。科技领域，智谱发布开源模型GLM-5.2，在代码与网页设计上媲美GPT-5.5及Opus 4.8，标志着开源模型迈入前沿；OpenAI为ChatGPT企业版推出新支出控制与用量分析，并预告GPT-5.6将于周二发布。此外，以色列空袭加沙致6人死亡，包括一名半岛电视台摄像师；H5N1禽流感抵达澳大利亚引发野生动物紧急警告。",
+  "tech_briefs": [
+    {
+      "title": "GLM-5.2：开源模型崛起，媲美GPT-5.5",
+      "url": "https://news.smol.ai/issues/26-06-19-not-much/",
+      "source": "Smol AI News",
+      "summary": "智谱GLM-5.2成为领先开源权重模型，在软件工程与网页设计上媲美Opus 4.8和GPT-5.5，通过IndexShare稀疏注意力实现百万Token推理。开源模型在竞争、本地部署和微调中展现战略重要性。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "GPT-5.6即将发布，OpenAI更新企业版",
+      "url": "https://tldr.tech/ai/2026-06-19",
+      "source": "TLDR AI",
+      "summary": "GPT-5.6将于周二发布；同时OpenAI推出ChatGPT企业版新支出控制与用量分析，帮助组织管理成本；GPT-5.5 Instant改进了健康咨询回答。",
+      "importance": 8
+    },
+    {
+      "title": "Subquadratic声称突破LLM数学瓶颈",
+      "url": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/",
+      "source": "MIT Tech Review AI",
+      "summary": "迈阿密初创公司Subquadratic声称解决了限制LLM近十年的数学瓶颈，但细节不足，遭学界质疑。",
+      "importance": 7
+    },
+    {
+      "title": "OpenAI推理模型助力罕见病诊断",
+      "url": "https://openai.com/index/diagnose-rare-childhood-diseases",
+      "source": "OpenAI News",
+      "summary": "研究人员使用OpenAI推理模型在之前未解决的儿科病例中发现了18个新诊断，帮助诊断罕见遗传病。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "伊朗关闭霍尔木兹海峡，美伊谈判在即",
+      "url": "https://www.bbc.com/news/articles/cwyekkwm1mmo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "伊朗因以色列在黎巴嫩的攻击宣布关闭霍尔木兹海峡，美国军方否认其说法。美国副总统万斯赴瑞士与伊朗代表团会谈，优先讨论核问题与黎巴嫩战事。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "以色列空袭加沙致6死，包括半岛电视台摄像师",
+      "url": "https://www.bbc.com/news/articles/c4gy26p6pwzo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "以色列空袭加沙致6人死亡，包括半岛电视台摄像师Ahmed Wishah。以军指控其为哈马斯狙击手行动者，但未提供证据；另有一黎巴嫩环保人士在以色列袭击中丧生。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "英国脱欧公投十年，民众后悔情绪上升",
+      "url": "https://www.dw.com/zh/英国脱欧公投十年-欧盟还会愿意-复合-吗？/a-77638082?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "距英国脱欧公投十年，多数英国人认为脱离欧盟是错误，但受地缘政治与欧盟自身调整影响，双方真正复合仍有距离。",
+      "importance": 5
+    }
+  ],
+  "editor_note": "霍尔木兹海峡博弈加剧全球能源与安全风险，开源模型GLM-5.2的突破则预示AI话语权转移，市场与技术双重变局中需冷静观察。",
+  "keywords": [
+    "霍尔木兹海峡",
+    "美伊谈判",
+    "GLM-5.2",
+    "GPT-5.6",
+    "开源模型",
+    "加沙冲突",
+    "禽流感",
+    "阿尔茨海默病视网膜模型"
+  ]
+}
