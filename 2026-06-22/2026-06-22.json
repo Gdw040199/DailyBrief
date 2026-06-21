@@ -1,0 +1,68 @@
+{
+  "hero_headline": "美伊谈判首日分歧 哥伦比亚极右翼胜选",
+  "daily_overview": "今日全球科技与政治态势同步升温。技术领域，三星在全球部署ChatGPT Enterprise与Codex，标志企业级AI进入大规模落地阶段；GPT-5.6正式发布，Claude Artifacts与Perplexity Brain等工具同步更新；智谱开源模型GLM-5.2凭借百万token推理能力媲美顶级闭源模型；与此同时，初创公司Subquadratic声称破解LLM数学瓶颈，但因细节不足引广泛质疑。地缘政治方面，美伊在瑞士谈判首日即现分歧，伊朗要求以结束黎巴嫩战争为前提，特朗普再次发出威胁；哥伦比亚极右翼律师阿贝拉尔多获特朗普支持赢得总统决选，左翼指控计票违规；此外，黎巴嫩知名环保人士死于以色列空袭，加剧地区紧张。",
+  "tech_briefs": [
+    {
+      "title": "三星全球部署ChatGPT Enterprise与Codex",
+      "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+      "source": "OpenAI News",
+      "summary": "三星电子在全球员工中部署ChatGPT Enterprise和Codex，这是OpenAI最大企业AI部署之一。",
+      "importance": 8
+    },
+    {
+      "title": "GPT-5.6发布，Claude Artifacts与Perplexity Brain上线",
+      "url": "https://tldr.tech/ai/2026-06-19",
+      "source": "TLDR AI",
+      "summary": "GPT-5.6于本周二发布；Claude Code推出Artifacts功能；Perplexity推出Brain记忆功能。",
+      "importance": 7
+    },
+    {
+      "title": "GLM-5.2开源模型支持百万token推理",
+      "url": "https://news.smol.ai/issues/26-06-18-not-much/",
+      "source": "Smol AI News",
+      "summary": "智谱GLM-5.2采用IndexShare稀疏注意力，实现百万token高效推理，性能媲美GPT-5.5和Opus 4.8，但缺乏视觉支持。",
+      "importance": 7
+    },
+    {
+      "title": "创业公司声称解决LLM数学瓶颈，细节不足引质疑",
+      "url": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/",
+      "source": "MIT Tech Review AI",
+      "summary": "迈阿密AI初创公司Subquadratic声称解决困扰大语言模型近十年的数学瓶颈，但细节不足，引发质疑。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美伊谈判首日分歧，特朗普再威胁伊朗",
+      "url": "https://www.bbc.com/news/articles/cwy0q41v1lzo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "美伊在瑞士谈判首日出现分歧，伊朗要求结束黎巴嫩战争为条件；特朗普再次威胁伊朗，副总统万斯称谈判取得进展。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "极右翼百万富翁赢得哥伦比亚总统大选",
+      "url": "https://www.theguardian.com/world/2026/jun/21/far-right-millionaire-abelardo-de-la-espriella-wins-colombia-presidential-runoff",
+      "source": "The Guardian",
+      "summary": "极右翼律师阿贝拉尔多·德拉埃斯普里埃拉赢得哥伦比亚总统决选，获特朗普支持；左翼对手指控计票违规。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "黎巴嫩著名环保人士死于以色列空袭",
+      "url": "https://www.npr.org/2026/06/21/nx-s1-5865705/lebanon-turtle-conservationist-killed-israeli-airstrike",
+      "source": "NPR World",
+      "summary": "黎巴嫩环保人士Mona Khalil因以色列空袭击中其住所，伤重不治。她曾推动保护南黎巴嫩海龟栖息地。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "科技领域企业级AI落地加速，开源模型竞争力提升，但突破技术瓶颈还需透明验证；政治方面美伊谈判与拉美右翼胜利凸显地缘格局变动。",
+  "keywords": [
+    "AI部署",
+    "GPT-5.6",
+    "GLM-5.2",
+    "LLM瓶颈",
+    "美伊谈判",
+    "哥伦比亚大选",
+    "开源模型",
+    "地缘政治"
+  ]
+}
