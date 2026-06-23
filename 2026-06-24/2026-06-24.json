@@ -1,0 +1,75 @@
+{
+  "hero_headline": "美伊核谈判现分歧：特朗普称伊朗同意核查遭否认",
+  "daily_overview": "今日科技前沿：GPT-5 Pro在免疫学领域取得突破，助力科学家破解三年未解之谜；OpenAI推出GPT-5.5 Cyber安全模型，专注自动化补丁生成；ASML发布4亿美元巨型光刻机，巩固芯片制造未来；中国团队GLM-5.2开放模型性能比肩顶级闭源模型，降低成本70%；SpaceX年营收达280亿美元，彰显其算力云服务潜力。地缘政治方面：美伊核谈判出现重大分歧，特朗普称伊朗同意核查而伊朗否认，同时美国暂缓石油制裁；德国铁路因IT故障导致全国瘫痪，暴露基础设施脆弱性；中国航母福建号通过台湾海峡，加剧台海局势紧张。",
+  "tech_briefs": [
+    {
+      "title": "GPT-5 Pro助免疫学家破译三年谜题",
+      "url": "https://openai.com/index/gpt-5-immunology-mystery",
+      "source": "OpenAI News",
+      "summary": "GPT-5 Pro帮助免疫学家解开T细胞行为谜题，有望推动癌症和自身免疫疾病研究。",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI推出GPT-5.5 Cyber专注网络安全闭环补丁",
+      "url": "https://news.smol.ai/issues/26-06-22-not-much/",
+      "source": "Smol AI News",
+      "summary": "OpenAI扩展Daybreak计划，发布GPT-5.5-Cyber模型，已扫描超3000万次代码提交，覆盖cURL、Python等主要项目，引发政策讨论。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "ASML巨型光刻机重超150吨，推动芯片制造",
+      "url": "https://www.technologyreview.com/2026/06/23/1138837/asml-400-million-dollar-machine-powering-future-of-chipmaking/",
+      "source": "MIT Tech Review AI",
+      "summary": "ASML价值4亿美元的EUV光刻机尺寸堪比双层巴士，重150吨，采用精密铝材和数千管线，将支撑未来芯片制造。",
+      "importance": 8
+    },
+    {
+      "title": "GLM-5.2开放模型性能媲美GPT-5.5，成本低70%",
+      "url": "https://x.com/philipkiely/status/2069212319746506968",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "中国团队GLM-5.2成为重要开放模型，性能与GPT 5.5和Opus 4.8相当，但成本低70-80%，已构建全球最快API。",
+      "importance": 7
+    },
+    {
+      "title": "SpaceX已成年营收280亿美元Neocloud",
+      "url": "https://www.latent.space/p/ainews-spacex-is-already-a-28byr",
+      "source": "Latent Space",
+      "summary": "据数据平台Jamin Ball，SpaceX成为年营收280亿美元的“新云”（Neocloud）服务商，展示其算力基础设施野心。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美伊核谈判现分歧，美国暂缓伊朗石油制裁",
+      "url": "https://www.nytimes.com/live/2026/06/23/world/iran-us-trump-lebanon",
+      "source": "NYT World",
+      "summary": "特朗普称伊朗已同意最高级别核查，伊朗官员否认；与此同时美国暂时解除对伊石油制裁以推动谈判。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "德国铁路因IT故障全国瘫痪",
+      "url": "https://www.bbc.co.uk/news/articles/crm0ek4z7ggo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "德国铁路公司Deutsche Bahn因全国性IT中断，暂停所有列车服务，铁路网络全面瘫痪。",
+      "importance": 8
+    },
+    {
+      "title": "中国航母福建号通过台湾海峡",
+      "url": "https://www.dw.com/zh/台湾-备战操演-之际-中国航母-福建号-通过台湾海峡/a-77677782?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "台北方面称，中国最先进航母福建号周二通过台湾海峡，为4月以来首次，正值台军举行“立即备战操演”。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "今日AI深入科研与安全领域，地缘政治博弈与基础设施风险并存，需关注技术自主与全球合作。",
+  "keywords": [
+    "美伊核谈判",
+    "德国铁路IT故障",
+    "GPT-5",
+    "GPT-5.5 Cyber",
+    "ASML光刻机",
+    "GLM-5.2",
+    "中国福建号",
+    "AI安全"
+  ]
+}
