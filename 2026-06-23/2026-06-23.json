@@ -1,0 +1,75 @@
+{
+  "hero_headline": "美放松对伊石油制裁 伊朗否认核检查承诺",
+  "daily_overview": "今日技术领域，OpenAI推出Daybreak安全工具与开源维护者支持计划，引发行业关注；开源智能体视频制作系统OpenMontage发布，集成500+智能体技能；GLM-5.2开源模型竞争GPT-5.5，GPT-5.6即将更新；Subquadratic声称突破LLM数学瓶颈，细节待考。时政方面，美国放松对伊朗石油制裁，但伊朗否认核检查新承诺，核问题仍存变数；古巴宣布中国式经济改革，居民谨慎支持；德国养老金委员会提议最早64岁退休。各方在AI安全治理与开源模型竞争上持续加码，美伊核问题的微妙互动也需关注后续进展。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI推出Daybreak安全工具与开源支持计划",
+      "url": "https://openai.com/index/daybreak-securing-the-world",
+      "source": "OpenAI News",
+      "summary": "OpenAI推出Daybreak系列工具（含Codex Security和GPT-5.5-Cyber），并启动Patch the Planet计划帮助开源维护者修复漏洞（多家报道）。",
+      "importance": 9
+    },
+    {
+      "title": "全球首个开源智能体视频制作系统OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "source": "GitHub Trending",
+      "summary": "开源智能体视频制作系统，含12条流水线、52个工具和500+代理技能，可将AI编码助手转化为完整视频制作工作室。",
+      "importance": 8
+    },
+    {
+      "title": "GLM-5.2开源模型竞争GPT-5.5，GPT-5.6即将发布",
+      "url": "https://news.smol.ai/issues/26-06-19-not-much/",
+      "source": "Smol AI News",
+      "summary": "GLM-5.2成为领先开源编码模型，与Opus 4.8和GPT-5.5竞争，凸显开源模型战略价值；GPT-5.6将于周二发布（多家报道）。",
+      "importance": 9
+    },
+    {
+      "title": "初创公司Subquadratic称突破LLM数学瓶颈",
+      "url": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/",
+      "source": "MIT Tech Review AI",
+      "summary": "迈阿密AI初创公司Subquadratic声称解决阻碍大语言模型近十年的数学瓶颈，但细节不详引发质疑。",
+      "importance": 8
+    },
+    {
+      "title": "百度发布PP-OCRv6多语言OCR模型",
+      "url": "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6",
+      "source": "Hugging Face Blog",
+      "summary": "模型参数量150万至3450万，支持50种语言，已在Hugging Face发布。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美放松对伊石油制裁 伊朗否认核检查新承诺",
+      "url": "https://www.bbc.com/news/articles/c3vy3nr63gxo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "美国放松对伊朗石油制裁。副总统万斯称伊朗同意接受核检查，但伊朗外交部否认作出新承诺（多家报道）。",
+      "importance": 10
+    },
+    {
+      "title": "古巴宣布经济改革 居民谨慎支持",
+      "url": "https://www.dw.com/zh/中国式-经济改革：古巴人怎么说？/a-77661580?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "古巴政府扩大私人企业与吸引外资，居民谨慎支持，期望成为更开放的社会主义。",
+      "importance": 7
+    },
+    {
+      "title": "德国养老金委员会提议最早64岁退休",
+      "url": "https://www.dw.com/zh/德国养老金改革：专家组提议最早64岁退休并领取减扣养老金/a-77661600?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "专家组建议允许最早64岁退休并领取减扣养老金，以应对人口老龄化压力。",
+      "importance": 6
+    }
+  ],
+  "editor_note": "AI安全与开源模型竞争持续加码，美伊核问题的微妙互动也需关注后续进展，各方博弈趋于复杂。",
+  "keywords": [
+    "美伊核问题",
+    "伊朗制裁",
+    "OpenAI Daybreak",
+    "OpenMontage",
+    "GLM-5.2",
+    "古巴改革",
+    "德国养老金",
+    "AI安全"
+  ]
+}
