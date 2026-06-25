@@ -1,0 +1,75 @@
+{
+  "hero_headline": "委内瑞拉7.1级强震致建筑倒塌伤亡惨重",
+  "daily_overview": "今日全球焦点：委内瑞拉连续强震造成重大伤亡，加拉斯加大量建筑倒塌，国际社会紧急关注。科技领域多线并进：OpenAI与Broadcom推出专为大语言模型推理优化的Jalapeño芯片；Google DeepMind发布Gemini 3.5 Flash，内置计算机使用功能，AI代理能力迈向产品化；Anthropic推出Claude Tag，将AI智能体嵌入Slack实现多用户异步协作。此外，NatureBench基准评估AI编码代理的科学复现能力，开源视频制作系统OpenMontage也引发关注。时政方面，西欧遭遇创纪录热浪，法国确诊首例埃博拉，伊朗核检查议题出现分歧。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI与Broadcom联合推出Jalapeño推理芯片",
+      "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+      "source": "OpenAI News",
+      "summary": "OpenAI与Broadcom发布定制AI芯片Jalapeño，专为大语言模型推理优化，旨在提升性能、效率和扩展性，为AI系统提供更强算力基础。",
+      "importance": 9
+    },
+    {
+      "title": "Gemini 3.5 Flash新增计算机使用功能",
+      "url": "https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/",
+      "source": "DeepMind Blog",
+      "summary": "Google DeepMind发布Gemini 3.5 Flash，内置计算机使用工具可直接操控桌面应用，性能超越此前独立版，标志AI代理交互从实验走向产品化。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "Anthropic推出Claude Tag：Slack异步AI代理",
+      "url": "https://news.smol.ai/issues/26-06-23-not-much/",
+      "source": "Smol AI News",
+      "summary": "Anthropic发布Claude Tag，Slack原生集成，支持异步团队协作委托，定位为“多人、异步、主动”工作流层，与单机同步的Claude Code形成互补。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "NatureBench：评估AI编码代理能否复现Nature论文SOTA",
+      "url": "https://huggingface.co/papers/2606.24530",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出NatureBench跨学科基准，包含90个来自Nature系列论文的任务，基于NatureGym自动化流水线，评估AI编码代理能否复现甚至超越已发表SOTA，覆盖真实科学问题。",
+      "importance": 7
+    },
+    {
+      "title": "OpenMontage：开源智能体视频制作系统",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "source": "GitHub Trending",
+      "summary": "首个开源agentic视频制作系统，集成12条流水线、52个工具和500+智能体技能，可将AI编码助手转变为完整视频工作室，适合需要自动化视频制作的开发者或创作者。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "委内瑞拉连续强震致重大伤亡，加拉斯加建筑倒塌",
+      "url": "https://www.nytimes.com/live/2026/06/24/world/venezuela-earthquake/earthquake-venezuela",
+      "source": "NYT World",
+      "summary": "委内瑞拉24日发生7.1级地震，随后连续强震导致首都加拉斯加大量房屋倒塌，美国地质调查局称可能造成大量伤亡，邻国哥伦比亚亦有震感。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "西欧遭遇创纪录热浪，法国西班牙等发红色预警",
+      "url": "https://www.bbc.co.uk/news/articles/c78y4102n1zo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "热浪席卷西欧，法国、英国、西班牙出现创纪录高温，数千万人受影响，多地发布红色高温预警，瑞士卢塞恩甚至出现热带天气。",
+      "importance": 8
+    },
+    {
+      "title": "法国确认首例埃博拉病例，曾前往刚果民主共和国",
+      "url": "https://www.nytimes.com/2026/06/24/world/europe/ebola-france.html",
+      "source": "NYT World",
+      "summary": "法国卫生部门确认首例埃博拉感染，患者为一名曾前往刚果民主共和国的医生，当前公众风险较低，但引发国际警惕。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "AI芯片与代理能力快速迭代，极端天气与地缘风险同步加剧，多领域变化交织需持续关注。",
+  "keywords": [
+    "委内瑞拉地震",
+    "Jalapeño芯片",
+    "Gemini 3.5 Flash",
+    "Claude Tag",
+    "西欧热浪",
+    "埃博拉",
+    "NatureBench",
+    "AI代理"
+  ]
+}
