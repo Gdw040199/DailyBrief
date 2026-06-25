@@ -1,0 +1,74 @@
+{
+  "hero_headline": "委内瑞拉连续强震致188人遇难",
+  "daily_overview": "今日头条聚焦委内瑞拉连续强震，已致至少188人死亡、1500余人受伤，搜救工作刻不容缓，人道危机加剧。科技方面，OpenAI与Broadcom联合发布首款自研推理芯片Jalapeño，旨在优化大模型推理效率；Google DeepMind在Gemini 3.5 Flash中引入计算机使用功能，扩展AI代理能力；此外，AI智能体研究、零售业AI变革及多项前沿论文发布。时政方面，澳洲九号电视网主播卡尔·斯特凡诺维奇因言论争议离职，欧盟媒体呼吁对中国汇率政策施压。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI与Broadcom推出AI推理芯片Jalapeño",
+      "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+      "source": "OpenAI News",
+      "summary": "OpenAI与Broadcom联合推出专为大语言模型推理优化的定制芯片Jalapeño，配备216GB HBM3E内存，设计周期9个月，旨在提升性能并降低成本。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "Google在Gemini 3.5 Flash中加入计算机使用功能",
+      "url": "https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/",
+      "source": "DeepMind Blog",
+      "summary": "Google DeepMind在Gemini 3.5 Flash中内置计算机控制能力，使AI代理能直接操作界面，在代理任务上达到最佳表现，扩展应用边界。",
+      "importance": 8
+    },
+    {
+      "title": "DESIGN.md：让AI代理理解设计系统的规范",
+      "url": "https://github.com/google-labs-code/design.md",
+      "source": "GitHub Trending",
+      "summary": "DESIGN.md是一种描述视觉身份的新型格式规范，让AI编码代理持久化、结构化地理解设计系统，确保生成界面的一致性，适合前端团队集成到AI辅助开发流程。",
+      "importance": 7
+    },
+    {
+      "title": "AI智能体如何改变工作方式",
+      "url": "https://openai.com/index/how-agents-are-transforming-work",
+      "source": "OpenAI News",
+      "summary": "OpenAI发布研究论文，展示AI智能体通过执行更长、更复杂的任务来提升各岗位生产力，为AI在工作中深度应用提供实证。",
+      "importance": 8
+    },
+    {
+      "title": "MVTrack4Gen：从单目视频生成新视角的4D视频",
+      "url": "https://huggingface.co/papers/2606.26087",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出MVTrack4Gen，利用多视角点追踪作为几何监督，从单目参考视频生成沿目标相机轨迹的新视角视频，增强几何一致性和运动保真度，优于基于显式3D的方法。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "委内瑞拉连续地震致188死1500伤",
+      "url": "https://www.nytimes.com/live/2026/06/25/world/venezuela-earthquake",
+      "source": "NYT World",
+      "summary": "委内瑞拉连续强震已致188人死亡、1500余人受伤，港口城市拉瓜伊拉数百人被困废墟。联合国称双震将加深人道危机，救援工作紧迫。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "澳洲主播卡尔因言论立场被九号电视网解约",
+      "url": "https://www.theguardian.com/australia-news/live/2026/jun/26/australia-news-live-pat-conroy-defence-labor-karl-stefanovic-nine-moira-deeming-matthew-guy-liberals-victoria-coalition-tax-reform-ntwnfb",
+      "source": "The Guardian",
+      "summary": "九号电视网宣布主播卡尔·斯特凡诺维奇立即离职，称其无法继续主持《今日》节目。斯特凡诺维奇回应称其播客涉及言论自由。总理阿尔巴尼斯表示言语确实重要。",
+      "importance": 5
+    },
+    {
+      "title": "欧盟媒体指人民币汇率被压低应反击",
+      "url": "https://www.dw.com/zh/德语媒体：欧盟应对中国的汇率政策进行反击/a-77711926?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "《商报》评论称人民币汇率长期被人为压低，给德国和欧盟造成严重损失，欧盟应采取措施。《法兰克福汇报》称德国总理默茨主张重启广场协定促使人民币升值。",
+      "importance": 6
+    }
+  ],
+  "editor_note": "委内瑞拉地震警示自然灾难叠加政治经济困境的脆弱性；OpenAI自研芯片标志AI产业垂直整合加速，竞争格局再变。",
+  "keywords": [
+    "委内瑞拉地震",
+    "AI推理芯片",
+    "Gemini计算机使用",
+    "AI智能体",
+    "DESIGN.md",
+    "澳洲主播离职",
+    "欧盟汇率"
+  ]
+}
