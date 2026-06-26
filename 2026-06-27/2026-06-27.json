@@ -1,0 +1,75 @@
+{
+  "hero_headline": "委内瑞拉强震死亡人数升至920人",
+  "daily_overview": "委内瑞拉强震造成严重伤亡，死亡人数升至920人，美国承诺提供援助并派遣救援队。中东局势持续紧张，美军打击伊朗军事设施回应货船遭袭；以色列与黎巴嫩在美国斡旋下签署框架协议。科技领域迎来多项重磅更新：OpenAI预览GPT-5.6 Sol模型并联合博通推出定制推理芯片Jalapeño；Google DeepMind为Gemini 3.5 Flash增加计算机使用功能；隐私通讯项目SimpleX和视觉量化方法ViQ等前沿技术也引发关注。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI预览GPT-5.6 Sol模型",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol",
+      "source": "OpenAI News",
+      "summary": "OpenAI预览下一代模型GPT-5.6 Sol，在编程、科学和网络安全方面能力更强，并配备最先进的安全堆栈。",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI与博通推出定制AI推理芯片Jalapeño",
+      "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+      "source": "OpenAI News",
+      "summary": "OpenAI与Broadcom联合推出用于LLM推理的定制芯片Jalapeño，设计周期仅9个月，旨在提升性能和效率。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "Gemini 3.5 Flash新增计算机使用功能",
+      "url": "https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/",
+      "source": "DeepMind Blog",
+      "summary": "Google DeepMind为Gemini 3.5 Flash模型新增计算机使用功能，支持操作界面交互。",
+      "importance": 7
+    },
+    {
+      "title": "SimpleX：无标识符隐私通讯网络",
+      "url": "https://github.com/simplex-chat/simplex-chat",
+      "source": "GitHub Trending",
+      "summary": "去中心化即时通讯网络，无需手机号或用户标识，100%隐私设计，支持iOS、Android和桌面端，可替代传统IM工具。",
+      "importance": 6
+    },
+    {
+      "title": "ViQ：任意分辨率文本对齐视觉量化",
+      "url": "https://huggingface.co/papers/2606.27313",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出文本对齐的视觉量化表示方法，支持任意分辨率离散图像表示，实现统一多模态建模，优于现有方案。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "委内瑞拉强震致920人遇难，国际救援抵达",
+      "url": "https://www.bbc.co.uk/news/articles/c39y79g7gzko?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "委内瑞拉地震死亡人数升至920人，数百人仍被困，美国承诺援助并派遣救援队和设备。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "美军打击伊朗导弹和无人机设施",
+      "url": "https://www.bbc.co.uk/news/articles/ckg590wqxwpo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "美国中央司令部打击伊朗导弹和无人机储存设施及沿海雷达，回应此前伊朗对货船的无人机攻击。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "以色列与黎巴嫩签署框架协议",
+      "url": "https://www.bbc.co.uk/news/articles/cg5315n1v5go?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "在美国斡旋下，以色列与黎巴嫩签署框架协议，真主党未参与。此前停火期间仍几乎每天发生跨境交火。（多家报道）",
+      "importance": 8
+    }
+  ],
+  "editor_note": "AI技术加速发展之际，自然灾害与地缘冲突提醒我们，技术红利需与人道主义、和平进程平衡发展。",
+  "keywords": [
+    "委内瑞拉地震",
+    "美国打击伊朗",
+    "以色列黎巴嫩协议",
+    "OpenAI GPT-5.6",
+    "Jalapeño芯片",
+    "Gemini计算机使用",
+    "SimpleX隐私通讯",
+    "ViQ视觉量化"
+  ]
+}
