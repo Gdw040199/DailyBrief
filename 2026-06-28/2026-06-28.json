@@ -1,0 +1,75 @@
+{
+  "hero_headline": "委内瑞拉双震1400人遇难 国际救援持续",
+  "daily_overview": "今日时政焦点：委内瑞拉北部双震级地震造成逾1400人死亡，搜救窗口持续收窄，家属呼救与国际救援并行；美伊在霍尔木兹海峡连续冲突，停火协议面临考验；以色列空袭黎巴嫩南部致1死，真主党谴责新协议。技术方面：OpenAI发布GPT-5.6旗舰Sol及中低端版本，因美国政府限制仅对可信合作伙伴开放；DeepMind推出Gemini 3.5 Flash桌面操控功能；自主AI代理在Polymarket预测市场占比超30%，标志其成为主流策略；开源社区涌现无标识通讯网络SimpleX及基于Claude Code的价值投资研究框架，隐私与金融AI双线推进。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI预览GPT-5.6三个版本受限发布",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol",
+      "source": "OpenAI News",
+      "summary": "OpenAI预览GPT-5.6旗舰Sol、中端Terra和低成本Luna，官方宣称编码、科学、网络安全能力增强，受美国政府限制仅向可信合作伙伴开放（多家报道）。",
+      "importance": 9
+    },
+    {
+      "title": "Gemini 3.5 Flash可直接操控桌面软件",
+      "url": "https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind推出Gemini 3.5 Flash的计算机使用功能，允许模型直接操作桌面应用程序，进一步扩展AI代理能力。",
+      "importance": 8
+    },
+    {
+      "title": "自主AI代理主导Polymarket交易",
+      "url": "https://x.com/Oracle__Market/status/2070933680810590685",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "2026年自主AI代理已成为预测市场主流策略，Polymarket超30%活动来自算法和AI钱包，官方代理启动交易自动化（多家报道）。",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI与博通发布LLM推理芯片Jalapeño",
+      "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+      "source": "OpenAI News",
+      "summary": "OpenAI与Broadcom联合推出专为LLM推理优化的定制AI芯片Jalapeño，旨在提升性能、效率和扩展能力。",
+      "importance": 7
+    },
+    {
+      "title": "SimpleX：首个无标识隐私通讯网络",
+      "url": "https://github.com/simplex-chat/simplex-chat",
+      "source": "GitHub Trending",
+      "summary": "首个无需任何用户标识的即时通讯网络，100%隐私设计，支持iOS、Android和桌面端，通过去中心化架构实现无身份追踪通信，替代传统IM服务。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "委内瑞拉双震死亡超1400 搜救进入关键期",
+      "url": "https://www.nytimes.com/live/2026/06/27/world/venezuela-earthquake",
+      "source": "NYT World",
+      "summary": "委内瑞拉北部发生双震级地震，死亡人数超1400，近7万人失联，家属在被埋建筑旁呼救，国际救援队加入，搜救窗口持续收窄（多家报道）。",
+      "importance": 10
+    },
+    {
+      "title": "美伊连续空袭 霍尔木兹海峡停火受考验",
+      "url": "https://www.aljazeera.com/news/2026/6/27/us-launches-second-night-of-strikes-against-iran-after-ship-struck-by-drone?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "美国对伊朗发动连续第二晚空袭，此前疑似伊朗无人机在霍尔木兹海峡击中商船，美伊停火协议面临破裂风险（多家报道）。",
+      "importance": 9
+    },
+    {
+      "title": "以色列空袭黎巴嫩南部 真主党谴责新协议",
+      "url": "https://www.bbc.co.uk/news/articles/cx2kpn0eeweo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "以色列对黎巴嫩南部发动空袭致至少1人死亡，此前一天黎以签署框架协议，真主党予以谴责，地区局势再添变数。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "AI模型迭代加速，但全球多地点冲突与自然灾害警示：技术进步需与和平稳定同步。各方应更关注安全与治理。",
+  "keywords": [
+    "委内瑞拉地震",
+    "GPT-5.6",
+    "美伊冲突",
+    "AI代理",
+    "Gemini",
+    "开源",
+    "自动驾驶",
+    "预测市场"
+  ]
+}
