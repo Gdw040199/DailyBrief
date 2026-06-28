@@ -1,0 +1,75 @@
+{
+  "hero_headline": "OpenAI发布GPT-5.6三款分层模型",
+  "daily_overview": "技术领域，OpenAI推出GPT-5.6三款模型（Sol、Terra、Luna），受美国政府限制仅向可信合作伙伴开放；DeepMind发布Gemini 3.5 Flash计算机使用功能；Jalapeño推理芯片与上下文世界建模论文同步发布，AI智能体研究显示生产力持续提升。时政方面，美伊冲突持续，伊朗声称袭击美军基地，特朗普指责伊朗违反协议；委内瑞拉双震后救援进入关键窗口期，幸存者机会减少；欧洲热浪致逾千人死亡，德国创41.7℃纪录，WHO警告准备不足。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI发布GPT-5.6 Sol/Terra/Luna三款模型",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol",
+      "source": "OpenAI News",
+      "summary": "OpenAI预览下一代模型GPT-5.6的三个变体，旗舰版Sol具备增强的编码与安全能力，中端Terra和低成本Luna同期发布。受美国政府限制，仅向可信合作伙伴开放。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "DeepMind推出Gemini 3.5 Flash计算机使用功能",
+      "url": "https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind在Gemini 3.5 Flash中引入计算机使用功能，允许模型直接操控计算机界面执行任务，拓展AI代理应用边界。",
+      "importance": 8
+    },
+    {
+      "title": "上下文世界建模实现机器人鲁棒控制",
+      "url": "https://huggingface.co/papers/2606.26025",
+      "source": "HuggingFace Trending Papers",
+      "summary": "针对VLA模型在视角或形态变化时泛化失败，提出上下文世界建模方法，将系统配置作为隐变量，通过上下文学习实现无需重新训练的鲁棒控制。",
+      "importance": 7
+    },
+    {
+      "title": "OpenAI与Broadcom发布LLM推理专用芯片Jalapeño",
+      "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+      "source": "OpenAI News",
+      "summary": "OpenAI与Broadcom联合推出定制AI芯片Jalapeño，专为大语言模型推理设计，旨在提升性能与能效，降低推理成本。",
+      "importance": 8
+    },
+    {
+      "title": "AI重塑零售业：后台决策成关键",
+      "url": "https://www.technologyreview.com/2026/06/25/1137848/repositioning-retail-for-the-ai-era/",
+      "source": "MIT Tech Review AI",
+      "summary": "MIT Tech Review分析AI对零售业的变革，最大影响体现在后台产品搜索排名决策，而非消费者可见的虚拟试穿或聊天机器人，零售商需重新定位。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美伊相互攻击，中东局势持续紧张",
+      "url": "https://www.nytimes.com/live/2026/06/28/world/us-iran-strikes-hormuz",
+      "source": "NYT World",
+      "summary": "美国与伊朗连续第四天爆发军事冲突，伊朗声称袭击了巴林美军基地和科威特空军基地，特朗普指责伊朗违反框架协议。海湾局势再度紧张。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "委内瑞拉双震后救援进入关键窗口期",
+      "url": "https://www.bbc.co.uk/news/articles/cr47dvywvy5o",
+      "source": "BBC World",
+      "summary": "委内瑞拉沿海发生双震三天多后，两名被困男孩被救出，但救援面临混乱和延误，寻找幸存者的机会逐渐减少。救援人员要求静默以探测生命迹象。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "欧洲热浪已致逾千人死亡，德国创41.7°C记录",
+      "url": "https://www.bbc.co.uk/news/articles/cn4d2vv935lo",
+      "source": "BBC World",
+      "summary": "WHO称欧洲热浪已致至少1300人死亡，德国创下41.7°C历史新高。法国死亡率激增，WHO警告欧洲应对高温准备不足。（多家报道）",
+      "importance": 8
+    }
+  ],
+  "editor_note": "AI发布受限与地缘冲突交织，技术安全与地缘政治博弈持续升级。委内瑞拉地震和欧洲热浪凸显气候与灾害应对紧迫性。",
+  "keywords": [
+    "GPT-5.6",
+    "美伊冲突",
+    "委内瑞拉地震",
+    "欧洲热浪",
+    "AI智能体",
+    "Gemini计算机使用",
+    "Jalapeño芯片",
+    "OpenAI"
+  ]
+}
