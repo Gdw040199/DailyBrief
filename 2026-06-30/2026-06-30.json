@@ -1,0 +1,75 @@
+{
+  "hero_headline": "OpenAI 预览 GPT-5.6 Sol 三款模型",
+  "daily_overview": "OpenAI 发布 GPT-5.6 Sol、Terra、Luna 三款变体，强化网络安全与编程能力，但仅限受信任合作伙伴。AI 代理在预测市场交易占比超30%，Gartner 称 2026 年为 AI 转折年。惠普与 OpenAI 达成战略合作。时政方面，美伊计划在卡塔尔举行新会谈；委内瑞拉地震致数百人死亡，超100名被驱逐美国人酒店坍塌失踪；德国发生罕见枪击致6死。",
+  "tech_briefs": [
+    {
+      "title": "GPT-5.6 Sol、Terra、Luna 三款模型预览",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol",
+      "source": "OpenAI News",
+      "summary": "OpenAI 发布三款变体，旗舰 Sol 增强网络安全与编程能力，中档 Terra 和低成本 Luna。受美国限制仅向受信任合作伙伴开放。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "ORACLE 官方 AI 代理在 Polymarket 交易",
+      "url": "https://x.com/OracleAiTrading/status/2071656563786268932",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "ORACLE 推出正式 AI 代理参与预测市场。2026 年自主 AI 代理成为最有效策略，超 30% Polymarket 活动来自算法和 AI 钱包。",
+      "importance": 8
+    },
+    {
+      "title": "惠普与 OpenAI 启动 Frontier 战略合作",
+      "url": "https://openai.com/index/hp-frontier-partnership",
+      "source": "OpenAI News",
+      "summary": "惠普公司扩大与 OpenAI 的 Frontier 合作，将 AI 部署于客户体验、软件开发和企业运营。",
+      "importance": 7
+    },
+    {
+      "title": "OpenAI 发布欧盟 AI 就业影响图谱",
+      "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+      "source": "OpenAI News",
+      "summary": "报告绘制 AI 对欧盟就业的影响，指出哪些职业面临自动化、增长或工作流程变化。",
+      "importance": 6
+    },
+    {
+      "title": "GBC：基于梯度的多智能体连接优化方法",
+      "url": "https://huggingface.co/papers/2606.28187",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出 GBC 方法，通过可微通信通道实现细粒度信用分配，缓解多智能体系统协调失败，在多种任务中显著提升整体性能。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美伊计划在卡塔尔举行新会谈",
+      "url": "https://www.nytimes.com/live/2026/06/29/world/hormuz-us-iran-strikes",
+      "source": "NYT World",
+      "summary": "特朗普称美伊将于周二在卡塔尔会谈，此前双方周末互相打击。伊朗未确认会谈，但表示与卡塔尔磋商仍在继续。",
+      "importance": 9
+    },
+    {
+      "title": "委内瑞拉地震致百名被驱逐美国人失踪",
+      "url": "https://www.theguardian.com/world/2026/jun/29/venezuela-hotel-collapse-earthquake",
+      "source": "The Guardian",
+      "summary": "委内瑞拉拉瓜伊拉地震，超100名刚被美国驱逐出境者所住酒店倒塌，多人失踪，搜救工作正在进行。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "德国发生罕见枪击致6名员工死亡",
+      "url": "https://www.nytimes.com/2026/06/29/world/europe/germany-shooting-stade.html",
+      "source": "NYT World",
+      "summary": "一名45岁男子因幼女监护权纠纷在青少年设施开枪，6名员工死亡，无儿童受伤。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "AI 产业加速迭代，但安全监管与伦理挑战同步浮现；地缘冲突与自然灾难考验国际合作与应急能力。",
+  "keywords": [
+    "GPT-5.6",
+    "AI代理",
+    "惠普合作",
+    "美伊会谈",
+    "委内瑞拉地震",
+    "德国枪击",
+    "预测市场",
+    "AI就业"
+  ]
+}
