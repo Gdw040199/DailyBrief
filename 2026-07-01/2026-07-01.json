@@ -1,0 +1,68 @@
+{
+  "hero_headline": "美国最高法院就出生公民权与跨性别运动员禁令裁决",
+  "daily_overview": "今日科技领域，Anthropic发布Claude Science旗舰产品，专为科研工作者提供AI辅助；OpenAI公布ChatGPT采用率持续增长，并推出GeneBench-Pro基准评估AI在基因组学中的表现；研究团队发表Agents-A1模型，以35B参数实现万亿参数级性能。政治方面，美国最高法院在同一天就出生公民权和跨性别运动员参赛禁令作出重大裁决，影响深远；中国宣布2950亿美元AI计划，旨在将AI融入各行业并保护就业；委内瑞拉地震救援紧张进行，美委政治角力升温。",
+  "tech_briefs": [
+    {
+      "title": "Anthropic推出旗舰产品Claude Science支持科研",
+      "url": "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/",
+      "source": "MIT Tech Review AI",
+      "summary": "Anthropic发布Claude Science，旨在为科学研究者提供AI支持，类似Claude Code对软件工程的支持。面向制药、生物技术等领域。",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI数据显示ChatGPT全球采用率持续增长",
+      "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+      "source": "OpenAI News",
+      "summary": "OpenAI Signals数据显示ChatGPT使用频率提高，功能探索增加，跨地区和语言增长。",
+      "importance": 8
+    },
+    {
+      "title": "35B参数Agent模型Agents-A1达到万亿参数级性能",
+      "url": "https://huggingface.co/papers/2606.30616",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出Agents-A1，35B MoE agent模型通过扩展agent horizon而非增加参数，达到万亿参数级性能，证明长程决策能力关键。",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI发布GeneBench-Pro基准评估AI科研性能",
+      "url": "https://openai.com/index/introducing-genebench-pro",
+      "source": "OpenAI News",
+      "summary": "GeneBench-Pro使用复杂真实数据集，测试AI在基因组学、生物学及科学研究中的性能。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美国最高法院就出生公民权与跨性别运动员禁令作出裁决",
+      "url": "https://www.bbc.co.uk/news/articles/c4gyqeqe8xyo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "最高法院在庭期最后一天就出生公民权作出裁决，同时维持跨性别运动员参赛禁令，特朗普称胜，LGBT组织称心碎（多家报道）。",
+      "importance": 9
+    },
+    {
+      "title": "中国公布2950亿美元AI计划以保障就业并推高科技股",
+      "url": "https://www.nytimes.com/2026/06/30/world/china-ai-jobs-birthright-hormuz.html",
+      "source": "NYT World",
+      "summary": "中国计划将AI嵌入各行业并出台2950亿美元AI数据中心战略，将排除外企，推动国内高科技股上涨（多家报道）。",
+      "importance": 8
+    },
+    {
+      "title": "委内瑞拉地震救援持续，美委关系因马查多引发争议",
+      "url": "https://www.nytimes.com/2026/06/30/world/americas/trump-machado-venezuela-rift.html",
+      "source": "NYT World",
+      "summary": "一名三岁儿童震后六天获救，但美国官员批评反对派领袖马查多返回救援为政治噱头，分散精力（多家报道）。",
+      "importance": 6
+    }
+  ],
+  "editor_note": "当日AI产品化与司法裁决并行推进，Claude Science和最高法院裁决均彰显技术与社会治理的交织。",
+  "keywords": [
+    "Claude Science",
+    "ChatGPT",
+    "Agents-A1",
+    "GeneBench-Pro",
+    "美国最高法院",
+    "出生公民权",
+    "中国AI计划",
+    "委内瑞拉地震"
+  ]
+}
