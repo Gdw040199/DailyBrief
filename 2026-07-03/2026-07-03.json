@@ -1,0 +1,75 @@
+{
+  "hero_headline": "俄最大规模空袭基辅致27死",
+  "daily_overview": "俄乌冲突再升级，俄军对基辅发动迄今最大规模导弹与无人机袭击，至少27人死亡，引发国际社会强烈谴责。德国副总理克林拜尔表示将采取更强硬对华路线，欧盟内部对华战略分歧扩大。科技方面，Anthropic重新启用Claude Fable 5模型，Google发布多项模型升级，开源社区涌现AI渗透测试工具及MoE服务优化论文。委内瑞拉地震八天后成功救出一名幸存者，带来一线希望。当日新闻显示全球地缘博弈与技术演进同时加速。",
+  "tech_briefs": [
+    {
+      "title": "Anthropic重新启用Claude Fable 5模型",
+      "url": "https://news.smol.ai/issues/26-07-01-not-much/",
+      "source": "Smol AI News",
+      "summary": "Anthropic更新网络安全过滤后重新上线Claude Fable 5，部分请求转向Opus 4.8。Cursor、Devin等工具已适配，社区涌现使用教程（多家报道）。",
+      "importance": 8
+    },
+    {
+      "title": "Google发布多项AI模型升级",
+      "url": "https://deepmind.google/blog/start-building-with-nano-banana-2-lite-and-gemini-omni-flash/",
+      "source": "DeepMind Blog",
+      "summary": "Google推出Nano Banana 2 Lite和Gemini Omni Flash供开发者构建，Gemini 3.5 Flash新增计算机使用能力（多家报道）。",
+      "importance": 7
+    },
+    {
+      "title": "开源AI渗透测试工具Strix发布",
+      "url": "https://github.com/usestrix/strix",
+      "source": "GitHub Trending",
+      "summary": "Strix利用AI自动发现和修复Web应用及API漏洞，模拟攻击路径，适合安全工程师进行安全性评估。",
+      "importance": 7
+    },
+    {
+      "title": "ELDR路由策略提升MoE模型服务效率",
+      "url": "https://huggingface.co/papers/2607.00466",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出专家局部性感知的路由策略，显著降低PD分离式MoE服务的解码时延，提升大模型服务效率。",
+      "importance": 6
+    },
+    {
+      "title": "新基准评估AI agent记忆谄媚问题",
+      "url": "https://huggingface.co/papers/2607.01071",
+      "source": "HuggingFace Trending Papers",
+      "summary": "MemSyco-Bench评测发现记忆检索可能导致AI过度迎合用户真实性降低，并提出缓解策略。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "俄罗斯对基辅发动最大规模空袭致27死",
+      "url": "https://www.bbc.co.uk/news/articles/c4gyv05gk4do?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "俄军向基辅发射大量导弹和无人机，造成至少27人死亡，为冲突爆发以来最严重袭击之一。分析认为冲突显示大国军事局限（多家报道）。",
+      "importance": 10
+    },
+    {
+      "title": "德国副总理称将对华采取更强硬路线",
+      "url": "https://www.dw.com/zh/德副总理：对华采取-更有力路线/a-77805260?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "德国副总理克林拜尔表示将采取更有力的对华路线，总理默茨强调依赖性是相互的。",
+      "importance": 7
+    },
+    {
+      "title": "委内瑞拉地震8天后救出幸存者",
+      "url": "https://www.nytimes.com/2026/07/02/world/americas/venezuela-earthquake-survivor.html",
+      "source": "NYT World",
+      "summary": "一名44岁保安在地震后第八天从倒塌地下室被活着救出，在不断上升的死亡人数中带来一丝希望。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "俄乌战事再升级引发人道关切，AI领域创新活跃但安全与真实性挑战并存。全球地缘博弈与技术进步相互交织，需保持冷静观察。",
+  "keywords": [
+    "俄乌冲突",
+    "基辅空袭",
+    "德国对华",
+    "Claude Fable 5",
+    "Google Gemini",
+    "Strix",
+    "MoE优化",
+    "委内瑞拉地震"
+  ]
+}
