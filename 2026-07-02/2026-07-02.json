@@ -1,0 +1,75 @@
+{
+  "hero_headline": "乌克兰基辅遭俄大规模导弹袭击",
+  "daily_overview": "今日技术领域，OpenAI报告ChatGPT全球采用率持续攀升；Anthropic推出旗舰产品Claude Science支持科研；DeepMind发布Nano Banana 2 Lite及Gemini Omni Flash；Hugging Face与Cerebras合作将Gemma 4引入实时语音AI；开源多Agent平台agency-agents登上GitHub热榜。时政方面，乌克兰基辅遭俄大规模导弹袭击，泽连斯基预警成真；澳大利亚独立议员警告民主面临「温水煮青蛙」风险；特朗普去年收入22亿美元创总统纪录，引发利益冲突争议。",
+  "tech_briefs": [
+    {
+      "title": "ChatGPT全球采用率持续攀升",
+      "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+      "source": "OpenAI News",
+      "summary": "OpenAI发布新数据显示ChatGPT全球采用率增长，用户使用频率和探索能力提升，推动跨区域增长。",
+      "importance": 9
+    },
+    {
+      "title": "Anthropic发布旗舰产品Claude Science",
+      "url": "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/",
+      "source": "MIT Tech Review AI",
+      "summary": "Anthropic推出Claude Science，旨在为科学研究提供支持，面向制药、生物科技等领域。",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind发布Nano Banana 2 Lite与Gemini Omni Flash",
+      "url": "https://deepmind.google/blog/start-building-with-nano-banana-2-lite-and-gemini-omni-flash/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind宣布推出Nano Banana 2 Lite和Gemini Omni Flash，开发者可基于这些模型开始构建应用。",
+      "importance": 8
+    },
+    {
+      "title": "Hugging Face与Cerebras合作推进实时语音AI",
+      "url": "https://huggingface.co/blog/cerebras-gemma4-voice-ai",
+      "source": "Hugging Face Blog",
+      "summary": "Hugging Face与Cerebras合作，将Gemma 4模型引入实时语音AI领域。",
+      "importance": 8
+    },
+    {
+      "title": "开源多Agent协作平台agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "source": "GitHub Trending",
+      "summary": "多AI Agent协作平台，集成前端开发、社区运营等不同专长Agent，每条Agent拥有独特个性与流程，帮助用户一站式完成复杂任务。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "乌克兰基辅遭俄大规模导弹袭击",
+      "url": "https://www.nytimes.com/2026/07/01/world/europe/ukraine-kyiv-russia-attack.html",
+      "source": "NYT World",
+      "summary": "乌克兰总统泽连斯基此前警告俄罗斯准备对基辅发动大规模打击，随后基辅发生爆炸。",
+      "importance": 10
+    },
+    {
+      "title": "澳大利亚独立议员警告民主面临风险",
+      "url": "https://www.theguardian.com/australia-news/live/2026/jul/02/australia-politics-live-defence-aukus-conroy-national-press-club-anthony-albanese-labor-question-time-angus-taylor-coalition-tax-reform-one-nation-pauline-hanson-ntwnfb",
+      "source": "The Guardian",
+      "summary": "独立议员警告民主面临「温水煮青蛙」风险，工党推动修改议会投票规则。托尼·伯克表示试图乘船进入昆士兰北部的一群人已被驱逐。",
+      "importance": 8
+    },
+    {
+      "title": "特朗普去年收入22亿美元创纪录",
+      "url": "https://www.bbc.co.uk/news/articles/c70yk07vq0po?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "历史学家称，特朗普去年收入22亿美元，创总统收入纪录，模糊了利益冲突界限。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "AI竞争白热化，科研与商业应用齐头并进；乌克兰战火持续升级，全球地缘政治风险加剧，需警惕技术垄断与安全威胁。",
+  "keywords": [
+    "乌克兰基辅爆炸",
+    "俄罗斯导弹袭击",
+    "ChatGPT",
+    "Claude Science",
+    "DeepMind",
+    "Gemma 4",
+    "澳大利亚民主",
+    "特朗普收入"
+  ]
+}
