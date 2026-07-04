@@ -1,75 +1,68 @@
 {
-  "hero_headline": "普京视察战场誓言夺取更多乌克兰领土",
-  "daily_overview": "今日俄乌冲突持续升级，普京亲赴前线并誓言扩大战果，乌方称其旨在提振士气。伊朗举行为期六天的最高领袖哈梅内伊悼念，仪式充满政治信号，意在巩固国内控制与区域影响力。委内瑞拉强震导致医疗系统瘫痪，遗体露天辨认，人道危机恶化。技术方面，开源AI渗透测试工具Strix上线，助力开发安全；DeepMind携手电影公司A24探索AI叙事可能；学界发布甲骨文识别新方法及医学图像增强框架，推动文化遗产与医疗诊断研究。此外，长程AI代理记忆评估框架AgenticSTS发布，为可控AI评估提供新范式。",
+  "hero_headline": "伊朗为最高领袖哈梅内伊举行为期六天葬礼",
+  "daily_overview": "今日全球聚焦伊朗为已故最高领袖哈梅内伊举行为期六天葬礼，遗体将途经多个什叶派圣地，数万人参与，成为区域政治重大事件。技术领域，开源AI渗透测试工具Strix受开发者关注，能自动发现Web应用漏洞。OpenAI发布数据表明ChatGPT全球采用持续扩大。Google DeepMind与电影公司A24达成首次研究合作。Meta推出Watermelon项目，Anthropic与三星在芯片领域合作，自动研究进入实际应用阶段。多项AI代理评估基准发布，聚焦长程推理与企业应用迁移。",
   "tech_briefs": [
     {
-      "title": "开源AI渗透测试工具Strix发布",
+      "title": "Strix：开源AI渗透测试工具自动修复Web漏洞",
       "url": "https://github.com/usestrix/strix",
       "source": "GitHub Trending",
-      "summary": "开源AI渗透测试工具，自动发现并修复应用漏洞。基于AI模拟攻击路径，生成修复建议。适合安全工程师和开发团队在CI/CD流水线中集成，提升应用安全防护能力。",
+      "summary": "Strix 是开源AI渗透测试工具，能自动发现并修复Web应用漏洞。适合安全工程师和开发者集成到CI/CD管道，持续评估应用安全状态。",
       "importance": 8
     },
     {
-      "title": "DeepMind与A24合作探索AI电影叙事",
-      "url": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership/",
-      "source": "DeepMind Blog",
-      "summary": "Google DeepMind与影视公司A24宣布首次研究合作，探索AI在电影制作与叙事领域的应用。",
+      "title": "ChatGPT全球采用持续扩大，用户探索更多功能",
+      "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+      "source": "OpenAI News",
+      "summary": "OpenAI新发布的数据显示，ChatGPT在全球范围采用持续增长，用户使用频率提高，探索更多能力，推动各区域和语言的增长。",
       "importance": 7
     },
     {
-      "title": "新内存测试床AgenticSTS评估长程LLM代理",
-      "url": "https://huggingface.co/papers/2607.02255",
-      "source": "HuggingFace Trending Papers",
-      "summary": "提出AgenticSTS有限记忆测试床，用于评估长时程LLM agent的记忆合同。通过限制可访问上下文避免杂乱混合，实现公平、可控的记忆效果评估。",
-      "importance": 6
+      "title": "Google DeepMind与A24宣布首次AI电影研究合作",
+      "url": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership/",
+      "source": "DeepMind Blog",
+      "summary": "Google DeepMind与电影公司A24宣布首次研究合作，探索人工智能与电影创作的结合。",
+      "importance": 7
     },
     {
-      "title": "多尺度注意力提升甲骨文拓片识别",
-      "url": "https://arxiv.org/abs/2607.00057",
-      "source": "arXiv Papers",
-      "summary": "提出多尺度层级注意力（Multi-Scale Layer Attention）以提升甲骨文拓片识别，应对其字形复杂、不规则及退化问题，无需依赖专家手工分析。",
-      "importance": 5
-    },
-    {
-      "title": "扩散模型联合增强与分割医学图像",
-      "url": "https://arxiv.org/abs/2607.00058",
-      "source": "arXiv Papers",
-      "summary": "提出基于扩散模型的共生信息交互框架，联合增强与分割医学图像（MRI/CT/超声），在低质量输入下同时提升视觉效果与分割精度。",
-      "importance": 6
+      "title": "AI行业周报：Watermelon、Anthropic合作及代理评估进展",
+      "url": "https://tldr.tech/ai/2026-07-03",
+      "source": "TLDR AI",
+      "summary": "Meta发布Watermelon项目，Anthropic与三星在芯片领域合作，自动研究进入实际应用阶段。Fullstack Code Arena扩展了编码代理评估，涵盖数据库、API密钥和部署；LangChain发布LangSmith统一追踪和OpenWiki自动文档生成。（多家报道）",
+      "importance": 8
     }
   ],
   "politics_briefs": [
     {
-      "title": "伊朗举行最高领袖哈梅内伊六天悼念仪式",
+      "title": "伊朗为最高领袖哈梅内伊举行为期六天葬礼",
       "url": "https://www.bbc.co.uk/news/articles/cx2k4k7jqeno?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "summary": "伊朗为已故最高领袖哈梅内伊举行六天悼念，遗体停放在德黑兰Grand Mosalla，仪式充满政治象征与权力信号，意在向整个地区释放影响力。（多家报道）",
+      "summary": "伊朗开始为2月遇袭身亡的最高领袖哈梅内伊举行公开悼念。遗体从周五起在德黑兰大穆萨拉清真寺停放，随后进行数日葬礼，途经什叶派圣地，预计数百万人参与。（多家报道）",
       "importance": 9
     },
     {
-      "title": "普京视察乌克兰战场誓言夺取更多领土",
-      "url": "https://www.nytimes.com/2026/07/03/world/europe/putin-ukraine-donbas-battlefield-visit.html",
-      "source": "NYT World",
-      "summary": "俄罗斯总统普京视察战场，誓言夺取更多乌克兰领土，指责乌克兰“虚構成就”，称其领导人为“演员”。",
-      "importance": 9
-    },
-    {
-      "title": "委内瑞拉地震致服务崩溃 遗体露天辨认",
-      "url": "https://www.bbc.co.uk/news/articles/c20y2p9qqqko?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "summary": "委内瑞拉强震导致当地服务崩溃，遇难者遗体被置于户外或帐篷中供家属辨认，家属悲痛不已。（多家报道）",
+      "title": "特朗普称共产主义为“致命威胁”",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/4/trump-calls-communism-a-mortal-threat-at-us-250th-birthday-event?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "特朗普在美国250周年诞辰活动上称共产主义是“致命威胁”。",
       "importance": 7
+    },
+    {
+      "title": "以色列政界人士称已准备在加沙建设定居点",
+      "url": "https://www.aljazeera.com/news/2026/7/4/could-israel-really-build-settlements-in-gaza?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "加沙经历种族灭绝战争和饥荒后，以色列主要政界人士表示已准备好在该地区建设定居点。",
+      "importance": 8
     }
   ],
-  "editor_note": "普京战场誓言加剧冲突不确定性；伊朗悼念仪式是权力再生产。AI在安全、医疗和文化领域持续渗透，开源与跨界合作值得关注，需兼顾伦理与效能。",
+  "editor_note": "伊朗最高领袖葬礼牵动中东神经，AI领域开源工具与跨界合作持续升温，全球技术格局加速重塑。",
   "keywords": [
-    "普京",
-    "乌克兰冲突",
-    "伊朗悼念",
-    "委内瑞拉地震",
-    "AI安全工具",
-    "DeepMind-A24合作",
-    "甲骨文识别",
-    "医学图像增强"
+    "伊朗",
+    "哈梅内伊",
+    "AI安全",
+    "Strix",
+    "ChatGPT",
+    "Google DeepMind",
+    "特朗普",
+    "加沙"
   ]
 }
