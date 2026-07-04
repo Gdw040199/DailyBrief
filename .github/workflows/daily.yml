@@ -47,6 +47,8 @@ on:
 
 permissions:
   contents: write  # needed to push to gh-pages branch
+  pages: write     # needed to deploy to GitHub Pages
+  id-token: write  # needed for OIDC authentication
 
 concurrency:
   group: daily-brief
@@ -182,6 +184,9 @@ jobs:
     if: needs.gate.outputs.should-run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 25
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -245,7 +250,7 @@ jobs:
       - name: Build static site (index + archive)
         run: npm run build-site
 
-      - name: Publish to gh-pages
+      - name: Persist reports to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -253,3 +258,12 @@ jobs:
           publish_branch: gh-pages
           keep_files: false  # we restored everything above, so a clean publish is fine
           commit_message: 'daily: report for ${{ github.run_id }}'
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./daily_reports
+
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
