@@ -1,75 +1,75 @@
 {
-  "hero_headline": "伊朗全国哀悼哈梅内伊，美伊僵局持续",
-  "daily_overview": "技术领域，开源AI渗透测试工具Strix在GitHub上引发关注；Google DeepMind与电影公司A24宣布研究合作，探索AI与创意产业融合；Hugging Face联合Cerebras推出Gemma 4实时语音AI；OpenAI发布Codex插件，使其可集成到Claude Code中进行代码审查。此外，AgenticSTS与EvoPolicyGym等论文为自主智能体评估提供新方法。时政方面，伊朗为最高领袖哈梅内伊举行六天殡葬活动，百万人预计涌向街头；委内瑞拉地震应急不力遭批评，代总统归咎「宣传」；伊朗坚持对霍尔木兹海峡船只收费，美伊谈判未解；波兰总理警告未来数月面临俄罗斯威胁。",
+  "hero_headline": "普京视察战场誓言夺取更多乌克兰领土",
+  "daily_overview": "今日俄乌冲突持续升级，普京亲赴前线并誓言扩大战果，乌方称其旨在提振士气。伊朗举行为期六天的最高领袖哈梅内伊悼念，仪式充满政治信号，意在巩固国内控制与区域影响力。委内瑞拉强震导致医疗系统瘫痪，遗体露天辨认，人道危机恶化。技术方面，开源AI渗透测试工具Strix上线，助力开发安全；DeepMind携手电影公司A24探索AI叙事可能；学界发布甲骨文识别新方法及医学图像增强框架，推动文化遗产与医疗诊断研究。此外，长程AI代理记忆评估框架AgenticSTS发布，为可控AI评估提供新范式。",
   "tech_briefs": [
     {
       "title": "开源AI渗透测试工具Strix发布",
       "url": "https://github.com/usestrix/strix",
       "source": "GitHub Trending",
-      "summary": "开源AI渗透测试工具，自动扫描并修复Web/API应用漏洞。集成机器学习模型识别安全弱点，适合安全团队在开发流程中持续检测，减少人工审计成本。",
+      "summary": "开源AI渗透测试工具，自动发现并修复应用漏洞。基于AI模拟攻击路径，生成修复建议。适合安全工程师和开发团队在CI/CD流水线中集成，提升应用安全防护能力。",
       "importance": 8
     },
     {
-      "title": "Google DeepMind与A24宣布影视AI研究合作",
+      "title": "DeepMind与A24合作探索AI电影叙事",
       "url": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership/",
       "source": "DeepMind Blog",
-      "summary": "Google DeepMind与电影制作公司A24宣布首次研究合作，探索AI与创意产业的结合。",
+      "summary": "Google DeepMind与影视公司A24宣布首次研究合作，探索AI在电影制作与叙事领域的应用。",
       "importance": 7
     },
     {
-      "title": "Hugging Face与Cerebras推出Gemma 4实时语音AI",
-      "url": "https://huggingface.co/blog/cerebras-gemma4-voice-ai",
-      "source": "Hugging Face Blog",
-      "summary": "Hugging Face与Cerebras联合将Gemma 4模型应用于实时语音AI，推进语音交互能力。",
-      "importance": 7
+      "title": "新内存测试床AgenticSTS评估长程LLM代理",
+      "url": "https://huggingface.co/papers/2607.02255",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出AgenticSTS有限记忆测试床，用于评估长时程LLM agent的记忆合同。通过限制可访问上下文避免杂乱混合，实现公平、可控的记忆效果评估。",
+      "importance": 6
     },
     {
-      "title": "OpenAI发布Codex插件集成到Claude Code",
-      "url": "https://github.com/openai/codex-plugin-cc",
-      "source": "GitHub Trending",
-      "summary": "将OpenAI Codex集成到Claude Code的插件，可在终端中通过Codex进行代码审查或任务委托，结合两大AI编码助手的能力提升开发效率。",
-      "importance": 7
+      "title": "多尺度注意力提升甲骨文拓片识别",
+      "url": "https://arxiv.org/abs/2607.00057",
+      "source": "arXiv Papers",
+      "summary": "提出多尺度层级注意力（Multi-Scale Layer Attention）以提升甲骨文拓片识别，应对其字形复杂、不规则及退化问题，无需依赖专家手工分析。",
+      "importance": 5
     },
     {
-      "title": "Anthropic重启Fable 5并带来使用新思路",
-      "url": "https://news.smol.ai/issues/26-07-01-not-much/",
-      "source": "Smol AI News",
-      "summary": "Anthropic重新启用Claude Fable 5并更新安全措施；用户分享心得，强调提示只是地图，探索未知领域才能释放模型真正潜力（多家报道）。",
+      "title": "扩散模型联合增强与分割医学图像",
+      "url": "https://arxiv.org/abs/2607.00058",
+      "source": "arXiv Papers",
+      "summary": "提出基于扩散模型的共生信息交互框架，联合增强与分割医学图像（MRI/CT/超声），在低质量输入下同时提升视觉效果与分割精度。",
       "importance": 6
     }
   ],
   "politics_briefs": [
     {
-      "title": "伊朗为最高领袖哈梅内伊举行六天殡葬活动",
+      "title": "伊朗举行最高领袖哈梅内伊六天悼念仪式",
       "url": "https://www.bbc.co.uk/news/articles/cx2k4k7jqeno?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "summary": "伊朗开始为2月去世的最高领袖哈梅内伊举行公众哀悼，遗体在德黑兰供奉，预计数百万人参与后续葬礼（多家报道）。",
+      "summary": "伊朗为已故最高领袖哈梅内伊举行六天悼念，遗体停放在德黑兰Grand Mosalla，仪式充满政治象征与权力信号，意在向整个地区释放影响力。（多家报道）",
       "importance": 9
     },
     {
-      "title": "委内瑞拉地震致应急系统崩溃，代总统归咎「宣传」",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/3/venezuelas-rodriguez-blames-propaganda-for-quake-response-backlash-2?traffic_source=rss",
-      "source": "Al Jazeera",
-      "summary": "委内瑞拉地震导致大量遗体露天放置，代总统罗德里格斯将批评归咎于「宣传」，否认应对不力（多家报道）。",
-      "importance": 8
+      "title": "普京视察乌克兰战场誓言夺取更多领土",
+      "url": "https://www.nytimes.com/2026/07/03/world/europe/putin-ukraine-donbas-battlefield-visit.html",
+      "source": "NYT World",
+      "summary": "俄罗斯总统普京视察战场，誓言夺取更多乌克兰领土，指责乌克兰“虚構成就”，称其领导人为“演员”。",
+      "importance": 9
     },
     {
-      "title": "伊朗坚持对霍尔木兹海峡船只收费，美伊僵局持续",
-      "url": "https://www.npr.org/2026/07/03/nx-s1-5879278/irans-control-of-the-strait-of-hormuz-remains-a-powerful-bargaining-chip",
-      "source": "NPR World",
-      "summary": "尽管美国谈判，伊朗仍坚持对通过霍尔木兹海峡的船只收取通行费，该问题成为美伊战争未决议题之一。",
-      "importance": 8
+      "title": "委内瑞拉地震致服务崩溃 遗体露天辨认",
+      "url": "https://www.bbc.co.uk/news/articles/c20y2p9qqqko?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "委内瑞拉强震导致当地服务崩溃，遇难者遗体被置于户外或帐篷中供家属辨认，家属悲痛不已。（多家报道）",
+      "importance": 7
     }
   ],
-  "editor_note": "今日AI领域多项开源工具与平台更新，渗透测试与语音AI有实质进展；中东局势因伊朗哀悼与海峡收费再添变数，委内瑞拉地震人道危机持续。",
+  "editor_note": "普京战场誓言加剧冲突不确定性；伊朗悼念仪式是权力再生产。AI在安全、医疗和文化领域持续渗透，开源与跨界合作值得关注，需兼顾伦理与效能。",
   "keywords": [
-    "AI渗透测试",
-    "Gemma 4语音AI",
-    "伊朗哈梅内伊",
-    "霍尔木兹海峡",
+    "普京",
+    "乌克兰冲突",
+    "伊朗悼念",
     "委内瑞拉地震",
-    "AgenticSTS",
-    "OpenAI Codex",
-    "Fable 5"
+    "AI安全工具",
+    "DeepMind-A24合作",
+    "甲骨文识别",
+    "医学图像增强"
   ]
 }

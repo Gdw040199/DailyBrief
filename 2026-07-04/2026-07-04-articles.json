@@ -6,200 +6,190 @@
       "title": "usestrix/strix",
       "url": "https://github.com/usestrix/strix",
       "excerpt": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
-      "meta": "Python · ★ 34,565 · 🍴 3,545 · 📈 2,804 stars today",
+      "meta": "Python · ★ 34,772 · 🍴 3,558 · 📈 2,803 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "开源AI渗透测试工具，自动扫描并修复Web/API应用漏洞。集成机器学习模型识别安全弱点，适合安全团队在开发流程中持续检测，减少人工审计成本。"
+      "summary": "开源AI渗透测试工具，自动发现并修复应用漏洞。基于AI模拟攻击路径，生成修复建议。适合安全工程师和开发团队在CI/CD流水线中集成，提升应用安全防护能力。"
     },
     {
       "sourceId": "github-trending",
       "title": "openai/codex-plugin-cc",
       "url": "https://github.com/openai/codex-plugin-cc",
       "excerpt": "Use Codex from Claude Code to review code or delegate tasks.",
-      "meta": "JavaScript · ★ 23,186 · 🍴 1,402 · 📈 629 stars today",
+      "meta": "JavaScript · ★ 23,293 · 🍴 1,411 · 📈 634 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "将OpenAI Codex集成到Claude Code的插件，可在终端中通过Codex进行代码审查或任务委托，结合两大AI编码助手的能力提升开发效率。"
+      "summary": "让Claude Code能直接调用OpenAI Codex进行代码审查或任务委派。通过插件桥接两个AI编码工具，适用于需要结合不同AI能力完成复杂代码工作的场景。"
     },
     {
       "sourceId": "github-trending",
       "title": "JuliusBrussee/caveman",
       "url": "https://github.com/JuliusBrussee/caveman",
       "excerpt": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
-      "meta": "JavaScript · ★ 82,903 · 🍴 4,625 · 📈 2,851 stars today",
+      "meta": "JavaScript · ★ 83,032 · 🍴 4,633 · 📈 2,863 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "为Claude Code设计的技能，通过模仿原始人极简语言风格，可将消费的token数降低65%，特别适合在token成本敏感的场景下使用AI编码助手。"
+      "summary": "Claude Code技能，通过模仿原始人短句风格减少约65%的token消耗。在保持功能前提下大幅降低API费用，适合高频调用Claude Code的开发者和团队。"
     },
     {
       "sourceId": "github-trending",
       "title": "elastic/elasticsearch",
       "url": "https://github.com/elastic/elasticsearch",
       "excerpt": "Free and Open Source, Distributed, RESTful Search Engine",
-      "meta": "Java · ★ 77,329 · 🍴 25,923 · 📈 77 stars today",
+      "meta": "Java · ★ 77,356 · 🍴 25,933 · 📈 91 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "分布式RESTful搜索引擎，基于Lucene构建，提供全文搜索、日志分析、实时数据聚合等功能。广泛用于企业搜索、可观测性、安全分析等场景，支持水平扩展。"
+      "summary": "开源分布式RESTful搜索引擎，支持全文检索、结构化查询和分析。基于Lucene技术栈，广泛用于日志分析、网站搜索、应用监控等场景，是ELK生态的核心。"
     },
     {
       "sourceId": "github-trending",
       "title": "actions/checkout",
       "url": "https://github.com/actions/checkout",
       "excerpt": "Action for checking out a repo",
-      "meta": "TypeScript · ★ 8,259 · 🍴 2,534 · 📈 129 stars today",
+      "meta": "TypeScript · ★ 8,275 · 🍴 2,535 · 📈 129 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "GitHub Actions官方动作，用于在工作流中签出仓库代码到运行器环境。支持指定分支、路径、token等参数，是所有CI/CD流程的基础组件。"
+      "summary": "GitHub官方Action，用于在Workflow中检出仓库源码。支持指定分支、深度、路径等参数，是几乎所有GitHub Actions流水线的第一步。"
     },
     {
       "sourceId": "github-trending",
       "title": "ChromeDevTools/chrome-devtools-mcp",
       "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
       "excerpt": "Chrome DevTools for coding agents",
-      "meta": "TypeScript · ★ 45,472 · 🍴 2,953 · 📈 404 stars today",
+      "meta": "TypeScript · ★ 45,518 · 🍴 2,958 · 📈 405 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "为AI编码代理提供Chrome DevTools控制能力的MCP服务器，让智能体能直接操作浏览器进行调试、性能分析、页面操作等，加速Web自动化与测试。"
+      "summary": "通过Model Context Protocol为编码代理提供Chrome DevTools能力。AI代理可执行页面导航、元素检查、网络请求捕获等操作，适用于浏览器自动化测试与数据抓取。"
     },
     {
       "sourceId": "github-trending",
       "title": "ansible/ansible",
       "url": "https://github.com/ansible/ansible",
       "excerpt": "Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on rem",
-      "meta": "Python · ★ 69,191 · 🍴 24,107 · 📈 50 stars today",
+      "meta": "Python · ★ 69,226 · 🍴 24,109 · 📈 65 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "红帽开源的IT自动化平台，采用无代理架构和YAML清单，实现配置管理、应用部署、云编排、网络自动化等任务。运维人员通过SSH即可管理大量服务器。"
+      "summary": "极简IT自动化平台，基于SSH无代理架构实现配置管理、应用部署、任务编排。使用YAML定义Playbook，适合运维工程师批量管理服务器和网络设备。"
     },
     {
       "sourceId": "github-trending",
       "title": "facebook/astryx",
       "url": "https://github.com/facebook/astryx",
       "excerpt": "An open source design system that's fully customizable and agent ready",
-      "meta": "TypeScript · ★ 4,588 · 🍴 267 · 📈 943 stars today",
+      "meta": "TypeScript · ★ 4,726 · 🍴 276 · 📈 885 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "Meta开源的React设计系统，高度可定制且面向AI代理时代。提供一系列基础UI组件与设计令牌，支持快速搭建一致性的Web界面，尤其适配与智能体交互的界面需求。"
+      "summary": "Facebook开源设计系统，提供可定制的UI组件和模式库，并针对AI代理集成优化。前端工程师可快速构建一致界面，也适合LLM驱动的界面生成场景。"
     },
     {
       "sourceId": "github-trending",
       "title": "rommapp/romm",
       "url": "https://github.com/rommapp/romm",
       "excerpt": "A beautiful, powerful, self-hosted rom manager and player.",
-      "meta": "Python · ★ 9,798 · 🍴 473 · 📈 236 stars today",
+      "meta": "Python · ★ 9,839 · 🍴 477 · 📈 239 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "自托管的游戏ROM管理器与模拟器播放器，支持多平台游戏文件管理、元数据刮削、在线游玩。适合复古游戏爱好者搭建私有游戏库，在浏览器中直接玩经典游戏。"
+      "summary": "自托管的游戏ROM管理器和播放器，支持多种模拟器。提供美观界面、元数据刮削和在线游玩功能。适合游戏收藏爱好者搭建个人游戏库。"
     },
     {
       "sourceId": "github-trending",
       "title": "harvard-edge/cs249r_book",
       "url": "https://github.com/harvard-edge/cs249r_book",
       "excerpt": "Machine Learning Systems",
-      "meta": "Python · ★ 26,145 · 🍴 3,120 · 📈 792 stars today",
+      "meta": "Python · ★ 26,218 · 🍴 3,132 · 📈 793 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "哈佛大学CS249r课程教材《机器学习系统》，系统讲解ML系统的设计、训练、部署与优化，涵盖分布式训练、模型服务、硬件加速等工程实践，适合研究者和工程师。"
+      "summary": "哈佛大学机器学习系统课程的开源教材，覆盖训练推理、分布式部署、硬件加速等主题。适合学生和工程师系统学习ML工程实践。"
     },
     {
       "sourceId": "github-trending",
       "title": "pytorch/pytorch",
       "url": "https://github.com/pytorch/pytorch",
       "excerpt": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
-      "meta": "Python · ★ 101,424 · 🍴 28,248 · 📈 290 stars today",
+      "meta": "Python · ★ 101,451 · 🍴 28,252 · 📈 293 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "Python深度学习框架，提供张量计算与动态神经网络，支持强大的GPU加速。研究社区广泛使用，灵活易调试，适用于计算机视觉、NLP、强化学习等领域的模型开发。"
+      "summary": "Python深度学习框架，支持张量计算与动态神经网络，利用GPU加速。提供自动微分、分布式训练、TorchScript等特性，是研究和生产中最流行的框架之一。"
     },
     {
       "sourceId": "github-trending",
       "title": "apache/maven",
       "url": "https://github.com/apache/maven",
       "excerpt": "Apache Maven core",
-      "meta": "Java · ★ 5,224 · 🍴 2,901 · 📈 53 stars today",
+      "meta": "Java · ★ 5,238 · 🍴 2,901 · 📈 58 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "Apache Maven核心构建系统，基于POM（Project Object Model）管理Java项目生命周期、依赖和插件。常用于企业级Java应用的构建、打包、发布，是DevOps工具链关键组件。"
-    },
-    {
-      "sourceId": "github-trending",
-      "title": "safishamsi/graphify",
-      "url": "https://github.com/safishamsi/graphify",
-      "excerpt": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
-      "meta": "Python · ★ 77,091 · 🍴 7,634 · 📈 937 stars today",
-      "category": "tech",
-      "source": "GitHub Trending",
-      "summary": "AI编码助手技能，可将任意文件夹中的代码、SQL模式、R脚本、文档、图片等转化为可查询的知识图谱。支持Claude Code、Codex、Cursor等工具，辅助理解复杂代码库。"
+      "summary": "Apache Maven核心构建工具，基于POM（项目对象模型）管理Java项目的依赖、编译、测试和打包。广泛应用于Java企业级开发，约定优于配置。"
     },
     {
       "sourceId": "github-trending",
       "title": "anthropics/claude-code",
       "url": "https://github.com/anthropics/claude-code",
       "excerpt": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
-      "meta": "Python · ★ 135,825 · 🍴 21,855 · 📈 245 stars today",
+      "meta": "Python · ★ 135,877 · 🍴 21,861 · 📈 221 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "Anthropic推出的终端级AI编码代理，能理解整个代码库，执行代码生成、重构、调试、Git操作等任务。开发者通过对话即可完成日常开发工作流，支持上下文感知操作。"
+      "summary": "Anthropic推出的终端代理编码工具，能理解代码库、执行常规任务、解释复杂逻辑并处理Git工作流。开发者用自然语言交互，提升编程效率。"
     },
     {
       "sourceId": "github-trending",
       "title": "ogulcancelik/herdr",
       "url": "https://github.com/ogulcancelik/herdr",
       "excerpt": "agent multiplexer that lives in your terminal.",
-      "meta": "Rust · ★ 10,754 · 🍴 637 · 📈 513 stars today",
+      "meta": "Rust · ★ 10,851 · 🍴 640 · 📈 478 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "终端中的AI代理多路复用器，允许多个不同角色（如编码、调试、文档）的智能体协同工作，共享上下文，适合需要多代理协作的复杂开发场景。"
+      "summary": "终端中的AI代理多路复用器，可同时管理多个LLM代理并路由请求。适合需要对比不同模型输出或并行执行多代理任务的开发者和研究员。"
     },
     {
       "sourceId": "github-trending",
       "title": "obra/superpowers",
       "url": "https://github.com/obra/superpowers",
       "excerpt": "An agentic skills framework & software development methodology that works.",
-      "meta": "Shell · ★ 245,505 · 🍴 21,762 · 📈 1,205 stars today",
+      "meta": "Shell · ★ 245,594 · 🍴 21,775 · 📈 1,209 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "一套代理技能框架与软件开发方法论，提供结构化流程让AI代理高效完成编码任务。包括角色定义、任务分解、质量检查等，适合想要系统化利用AI开发的团队。"
+      "summary": "代理技能框架与软件开发方法论，定义如何构建、组合和编排AI代理的能力。提供可复用的技能原语，适合构建复杂AI工作流的团队。"
     },
     {
       "sourceId": "github-trending",
       "title": "agentskills/agentskills",
       "url": "https://github.com/agentskills/agentskills",
       "excerpt": "Specification and documentation for Agent Skills",
-      "meta": "Python · ★ 21,977 · 🍴 1,392 · 📈 405 stars today",
+      "meta": "Python · ★ 22,023 · 🍴 1,395 · 📈 406 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "定义Agent Skills（代理技能）的规范与文档，为AI代理的技能描述、参数、执行接口提供标准化格式。旨在促进不同代理系统之间的技能互操作性和复用。"
+      "summary": "Agent Skills的规范与文档，标准化了AI代理可对外暴露的能力描述。支持代理之间发现与调用彼此技能，促进多代理系统互操作性。"
     },
     {
       "sourceId": "github-trending",
       "title": "supabase/supabase",
       "url": "https://github.com/supabase/supabase",
       "excerpt": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
-      "meta": "TypeScript · ★ 105,457 · 🍴 12,969 · 📈 145 stars today",
+      "meta": "TypeScript · ★ 105,511 · 🍴 12,972 · 📈 169 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "开源Firebase替代品，以PostgreSQL为核心提供数据库、身份认证、实时订阅、存储和Edge Functions。开发者可快速构建Web/移动/AI应用，享受SQL的灵活性和托管便利。"
+      "summary": "基于PostgreSQL的开源开发平台，提供数据库、认证、存储、实时订阅和边缘函数。替代Firebase，适合全栈Web、移动和AI应用快速开发。"
     },
     {
       "sourceId": "github-trending",
       "title": "TencentCloud/CubeSandbox",
       "url": "https://github.com/TencentCloud/CubeSandbox",
       "excerpt": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
-      "meta": "Rust · ★ 7,161 · 🍴 591 · 📈 86 stars today",
+      "meta": "Rust · ★ 7,191 · 🍴 592 · 📈 60 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "腾讯云开源的轻量沙箱，专为AI代理执行环境设计，支持即时创建、高度隔离和并发运行。每个沙箱启动毫秒级，资源消耗低，适合运行不可信代码或LLM工具调用。"
+      "summary": "腾讯云出品的轻量级沙箱，专为AI代理设计，提供即时启动、并发执行、安全隔离的运行环境。适合在云端安全运行不可信代码或AI工具。"
     },
     {
       "sourceId": "github-trending",
       "title": "msitarzewski/agency-agents",
       "url": "https://github.com/msitarzewski/agency-agents",
       "excerpt": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
-      "meta": "Shell · ★ 126,465 · 🍴 20,526 · 📈 1,202 stars today",
+      "meta": "Shell · ★ 126,556 · 🍴 20,539 · 📈 1,208 stars today",
       "category": "tech",
       "source": "GitHub Trending",
-      "summary": "一套开箱即用的AI代理团队，包含前端开发向导、Reddit社区忍者、幽默注入器等多种专业角色。每个代理拥有独立人格和工作流，可直接用于内容生成、社区运营等任务。"
+      "summary": "一套预构建的AI代理集合，涵盖前端开发、Reddit互动、创意生成、事实核查等多个专业领域。开箱即用，适合需要快速部署多角色代理团队的场景。"
     },
     {
       "sourceId": "openai-news",
@@ -479,7 +469,7 @@
       "publishedAt": "2026-07-03T14:25:43.000Z",
       "category": "tech",
       "source": "DeepMind Blog",
-      "summary": "Google DeepMind与电影制作公司A24宣布首次研究合作，探索AI与创意产业的结合。"
+      "summary": "Google DeepMind与影视公司A24宣布首次研究合作，探索AI在电影制作与叙事领域的应用。"
     },
     {
       "sourceId": "deepmind-blog",
@@ -1014,25 +1004,25 @@
     },
     {
       "sourceId": "huggingface-papers",
-      "title": "EvoPolicyGym: Evaluating Autonomous Policy Evolution in Interactive Environments",
-      "url": "https://huggingface.co/papers/2607.02440",
-      "excerpt": "Autonomous agents are increasingly expected to improve executable policies through feedback, yet existing evaluations often collapse this process into a final score or confound it with open-ended software-engineering progress. We introduce Autonomous Policy Evolution, a controlled evaluation setting",
-      "publishedAt": "2026-07-02T00:00:00.000Z",
-      "meta": "👍 39",
-      "category": "tech",
-      "source": "HuggingFace Trending Papers",
-      "summary": "提出Autonomous Policy Evolution评估框架，用于测试智能体在交互环境中通过反馈自主改进策略的能力，区别于传统最终分数或与开放软件工程进展混淆的设置，提供受控评估场景。"
-    },
-    {
-      "sourceId": "huggingface-papers",
       "title": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
       "url": "https://huggingface.co/papers/2607.02255",
       "excerpt": "Memory for a long-horizon LLM agent is a contract about what each future decision is allowed to see. The simplest contract appends past observations, tool calls, and reflections to every prompt, which makes prior context easy to access but also turns it into a jumbled mixture in which the effect of ",
       "publishedAt": "2026-07-02T00:00:00.000Z",
-      "meta": "👍 39",
+      "meta": "👍 41",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出AgenticSTS，一个有界记忆的测试平台，用于研究长时程LLM智能体的记忆契约问题。该平台通过控制历史观测、工具调用和反思的访问方式，避免上下文混乱，便于分析记忆对决策的影响。"
+      "summary": "提出AgenticSTS，一个有限记忆测试床，用于评估长时程LLM agent的记忆合同。通过限制可访问上下文避免杂乱混合，实现公平、可控的记忆效果评估。"
+    },
+    {
+      "sourceId": "huggingface-papers",
+      "title": "EvoPolicyGym: Evaluating Autonomous Policy Evolution in Interactive Environments",
+      "url": "https://huggingface.co/papers/2607.02440",
+      "excerpt": "Autonomous agents are increasingly expected to improve executable policies through feedback, yet existing evaluations often collapse this process into a final score or confound it with open-ended software-engineering progress. We introduce Autonomous Policy Evolution, a controlled evaluation setting",
+      "publishedAt": "2026-07-02T00:00:00.000Z",
+      "meta": "👍 40",
+      "category": "tech",
+      "source": "HuggingFace Trending Papers",
+      "summary": "引入自主策略进化评估框架EvoPolicyGym，在交互环境中评估agent通过反馈改进可执行策略的能力，替代最终得分或混杂软件工程进展，提供可控评估设置。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1043,7 +1033,7 @@
       "meta": "👍 36",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出PerceptionRubrics，基于量表的评估框架，从整体语义匹配转向严格原子级审计，使用1038张高信息密度图像和对应标注，缓解多模态基准分数饱和与实际脆弱性之间的差距。"
+      "summary": "提出PerceptionRubrics评分标准评估框架，从整体语义匹配转向原子化审核，配合1038张信息密集图像，解决基准饱和与真实世界脆弱性之间的差距。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1051,10 +1041,21 @@
       "url": "https://huggingface.co/papers/2606.30562",
       "excerpt": "Hybrid attention models improve long-context efficiency by retaining only a subset of full-attention layers and replacing the remaining layers with linear attention. However, the effectiveness of Transformer-to-hybrid conversion critically depends on which layers preserve full attention. Existing hy",
       "publishedAt": "2026-06-29T00:00:00.000Z",
-      "meta": "👍 30",
+      "meta": "👍 32",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "研究将Transformer转换为混合注意力模型时的层选择问题。提出新方法确定哪些层保留完全注意力、哪些替换为线性注意力，以提升长上下文效率，优于现有混合策略。"
+      "summary": "针对Transformer转混合注意力模型时如何选择保留全注意力层的问题，提出新方法。在保留部分全注意力层的同时替换其余为线性注意力，关键取决于层选择，提升长上下文效率。"
+    },
+    {
+      "sourceId": "huggingface-papers",
+      "title": "AgenticDataBench: A Comprehensive Benchmark for Data Agents",
+      "url": "https://huggingface.co/papers/2607.01647",
+      "excerpt": "Data science aims to derive actionable insights from heterogeneous raw data, unlocking the value of the massive amounts of data generated in modern society. Automating this process is essential to reducing labor-intensive efforts for data scientists and enabling scalable data-driven applications. Re",
+      "publishedAt": "2026-07-02T00:00:00.000Z",
+      "meta": "👍 23",
+      "category": "tech",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出AgenticDataBench全面基准，评估数据科学Agent从异构原始数据中提取洞察的能力，旨在自动化数据科学流程，减少人力劳动并支持可扩展数据驱动应用。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1065,7 +1066,7 @@
       "meta": "👍 23",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "针对预填充-解码分离的MoE服务，提出ELDR路由策略，不仅考虑负载均衡，还考虑每个解码步加载不同专家权重导致的延迟差异，减少同等负载下的延迟波动。"
+      "summary": "提出ELDR专家位置感知解码路由，针对PD分离的MoE模型服务，根据每个解码步加载的专家权重位置来平衡负载并最小化延迟，优于仅负载平衡的路由方法。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1076,7 +1077,7 @@
       "meta": "👍 23",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "发布Seed2.0模型系列，面向复杂真实世界任务。通过识别用户真实需求并构建可靠的前瞻性评估系统（基于精选和抽象基准），在推理、规划和多模态理解等维度取得进步。"
+      "summary": "发布Seed2.0模型系列，基于用户真实需求构建评估系统，在复杂真实世界任务中取得进展。通过选择和抽象基准，朝着解决真实世界复杂性迈出有意义一步。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1087,7 +1088,7 @@
       "meta": "👍 22",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出非对称互变分学习方法，使多模态大模型摆脱语言空间瓶颈，在连续潜在空间中直接进行视觉推理，保留感知细节，发现隐式推理路径。"
+      "summary": "针对MLLM语言空间瓶颈导致视觉推理丢失感知细节，提出非对称互变分学习实现连续潜在推理，发现隐式推理路径，保持感知细微差别。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1098,18 +1099,7 @@
       "meta": "👍 22",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出MemSyco-Bench基准，专门评估LLM智能体记忆中的谄媚问题（即过度迎合用户）。通过构造记忆场景，量化智能体因检索历史记忆而偏离事实的倾向。"
-    },
-    {
-      "sourceId": "huggingface-papers",
-      "title": "AgenticDataBench: A Comprehensive Benchmark for Data Agents",
-      "url": "https://huggingface.co/papers/2607.01647",
-      "excerpt": "Data science aims to derive actionable insights from heterogeneous raw data, unlocking the value of the massive amounts of data generated in modern society. Automating this process is essential to reducing labor-intensive efforts for data scientists and enabling scalable data-driven applications. Re",
-      "publishedAt": "2026-07-02T00:00:00.000Z",
-      "meta": "👍 21",
-      "category": "tech",
-      "source": "HuggingFace Trending Papers",
-      "summary": "发布AgenticDataBench，面向数据科学智能体的全面基准。涵盖异构数据抽取、清洗、分析等自动化任务，降低人工成本，推动数据驱动应用的可扩展性。"
+      "summary": "提出MemSyco-Bench基准，评估LLM agent记忆导致对用户过度对齐的谄媚问题。记忆可能使agent过度顺从用户，该基准系统量化此现象。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1117,10 +1107,10 @@
       "url": "https://huggingface.co/papers/2607.02517",
       "excerpt": "We present WorldDirector, a highly controllable video world model framework designed for persistent dynamic object memory and unrestricted viewpoint exploration. Unlike existing world models that entangle physical dynamics with pixel rendering and rely on continuous visual observation to sustain mot",
       "publishedAt": "2026-07-02T00:00:00.000Z",
-      "meta": "👍 16",
+      "meta": "👍 18",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出WorldDirector，可控制视频世界模型框架，具备持久动态对象记忆和自由视角探索能力。分离物理动态与像素渲染，无需持续视觉观察即可维持运动一致性。"
+      "summary": "提出WorldDirector，高可控视频世界模型框架，具有持久动态对象记忆和自由视角探索。不同于现有模型纠缠物理与像素渲染，支持可控模拟。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1131,7 +1121,7 @@
       "meta": "👍 16",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出ASPIRE，机器人持续学习系统，通过智能体迭代探索实现自动化技能编程。处理多模态感知、物理接触动力学和失败恢复，使非专家也能编程机器人。"
+      "summary": "提出ASPIRE（Agentic Skill Programming through Iterative Robot Exploration），一个持续学习系统，通过迭代探索自动发现和编程机器人技能，应对多模态感知和物理接触动力学挑战。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1139,10 +1129,10 @@
       "url": "https://huggingface.co/papers/2606.31825",
       "excerpt": "Recent multimodal large language models have shown great promise in clinical image reasoning, but existing post-training pipelines remain predominantly outcome-centric, relying on final answer correctness or sequence-level preferences. This suffers from sparse credit assignment, making it difficult ",
       "publishedAt": "2026-06-30T00:00:00.000Z",
-      "meta": "👍 14",
+      "meta": "👍 15",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "针对医学多模态推理中的失败级联问题，提出步骤感知强化学习。不同于仅依赖最终答案的稀疏奖励，该方法对每一步推理进行细粒度反馈，提升临床图像推理的稳健性。"
+      "summary": "针对医疗多模态大模型后训练仅依赖最终答案正确性导致稀疏奖励，提出步进感知强化学习，在临床图像推理中逐步识别和纠正错误级联。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1150,10 +1140,10 @@
       "url": "https://huggingface.co/papers/2607.01874",
       "excerpt": "Skills are becoming a reusable operational layer for LLM agents, encoding SOPs, domain rules, tool workflows, scripts, and validation routines. In realistic skill repositories, overlapping skills make reliable skill-use difficult. Final verifier success is too coarse for both evaluation and training",
       "publishedAt": "2026-07-02T00:00:00.000Z",
-      "meta": "👍 12",
+      "meta": "👍 14",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出SkillCoach，自演化量表框架，用于评估和提升智能体技能使用能力。针对技能库重叠导致的误用问题，通过自动构建精细化评估指标和训练信号，优于传统最终验证器方式。"
+      "summary": "提出SkillCoach，自我进化评分标准框架，用于评估和增强LLM agent的技能使用。在重叠技能仓库中，最终验证器过于粗糙，提供细粒度评估与训练。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1161,10 +1151,10 @@
       "url": "https://huggingface.co/papers/2607.01002",
       "excerpt": "In long-context use, large language models frequently synthesize answers from the meaning of a relevant context span rather than literally copy-pasting them. Identifying which attention heads perform this synthesis matters for interpreting long-context model behavior. Yet existing detectors miss the",
       "publishedAt": "2026-07-01T00:00:00.000Z",
-      "meta": "👍 11",
+      "meta": "👍 12",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出Logit-Contribution Scoring方法，识别大语言模型中执行非字面检索的注意力头（即根据上下文含义合成答案的头），揭示长上下文行为中语义合成的内部机制。"
+      "summary": "提出logit贡献评分方法，识别大语言模型中基于意义综合而非逐字复制的非字面检索注意力头，用于解释长上下文模型行为。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1175,7 +1165,7 @@
       "meta": "👍 8",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出InstanceControl，无需实例标注的可控图像生成方法。解决ControlNet等在多实例场景中的属性混淆问题，通过隐式条件引导生成复杂多实例图像，保持属性一致性。"
+      "summary": "提出InstanceControl，无需实例标注即可实现复杂多实例场景的可控图像生成，解决ControlNet等方法中属性混淆问题。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1186,7 +1176,7 @@
       "meta": "👍 8",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出DiscoBench基准，评估搜索智能体在模棱两可查询下主动澄清的能力。现有基准假定查询完整明确，而该工作引入需多步检索和澄清的复杂信息寻找场景。"
+      "summary": "提出DiscoBench，用于评估LLM搜索agent在用户查询不完整时主动问询的澄清能力。现有基准假设查询完整，忽视现实世界歧义。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1197,7 +1187,7 @@
       "meta": "👍 8",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出状态-预测分离假说：Transformer中当前计算流同时承担预测下一token和存储状态两个角色，解耦两者可提升语言建模性能。设计了分离计算的Transformer变体进行验证。"
+      "summary": "提出状态预测分离假设：Transformer中状态存储与下一词预测分离可提升语言建模性能。设计变体实现二者解耦。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1208,7 +1198,7 @@
       "meta": "👍 7",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "发布AnyGroundBench，面向专业领域（如医学、工业）的视频定位基准。现有VLM评估仅限于日常场景的零样本测试，该基准填补了实际应用中的关键鸿沟。"
+      "summary": "提出AnyGroundBench，针对专用领域视频时空定位的基准，弥补现有零样本评估与真实世界应用之间的差距。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1219,7 +1209,7 @@
       "meta": "👍 7",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出PixelEyes，解耦感知与推理的多轮视觉推理框架。针对MLLM反复定位失败的冗余轨迹问题，分离推理步骤与视觉定位，提高精确视觉证据查找效率。"
+      "summary": "提出PixelEyes，解耦MLLM的感知与推理模块，避免多轮视觉推理中重复定位失败，实现精准的视觉证据搜索。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1230,7 +1220,7 @@
       "meta": "👍 7",
       "category": "tech",
       "source": "HuggingFace Trending Papers",
-      "summary": "提出图原生强化学习方法，用于可追踪的科学假设生成。通过概念重组和多步领域推理，使AI在材料设计中生成有效且可溯源的假设，克服LLM响应流畅但推理薄弱的问题。"
+      "summary": "提出图原生强化学习方法，通过概念重组生成可追溯的科学假设，解决LLM在材料设计问题中输出不透明且难以验证的问题。"
     },
     {
       "sourceId": "huggingface-papers",
@@ -1343,7 +1333,7 @@
       "content": "Oracle Bone Inscriptions (OBIs) recognition plays a crucial role in understanding ancient Chinese culture. However, accurately recognizing OBIs remains highly challenging due to their complex, irregular, and often degraded shapes. Traditional methods rely on expert knowledge and manual analysis, which are time-consuming and error-prone. Although deep learning has greatly advanced general image recognition, existing methods struggle to capture the fine-grained details and subtle variations inherent in OBIs, resulting in limited performance. Even most recent and effective layer attention techniques are designed to capture fine-grained dependencies through enhanced inter-layer interactions, yet they still exhibit only marginal improvements in OBIs recognition. To address these limitations, we propose Multi-Scale Layer Attention (MSLA), a novel paradigm that explicitly models both multi-scale and cross-layer feature interactions. By enriching the representation with fine-grained details across multiple spatial scales, MSLA enables more accurate and robust OBIs recognition. Extensive experiments on large-scale OBIs datasets demonstrate that MSLA consistently outperforms existing attention mechanisms while maintaining computational efficiency.",
       "authors": "Chaowen Yan, Kaishen Wang, Yong Wang, Jianlong Xiong, Tao He",
       "source": "arXiv Papers",
-      "summary": "提出多尺度层注意力（MSLA）方法识别甲骨文，通过多尺度特征提取与层级注意力机制，有效应对字形复杂、不规则及退化问题，显著提升识别准确率。"
+      "summary": "提出多尺度层级注意力（Multi-Scale Layer Attention）以提升甲骨文拓片识别，应对其字形复杂、不规则及退化问题，无需依赖专家手工分析。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1356,7 +1346,7 @@
       "content": "Image quality is critical for accurate medical diagnosis. However, MRI, CT, and ultrasound images are often of low resolution and quality due to cost constraints, complicating the visualization of key anatomical structures and lesions. While such limitations are common in practice, traditional methods treat image enhancement as a separate preprocessing step, failing to fully leverage its potential synergy with image segmentation. To address this, we propose DiSIINet (Diffusion-based Symbiotic Information Interaction Network), which is built on the principle that enhancement and segmentation should mutually reinforce each other in a unified model. Based on Denoising Diffusion Implicit Models (DDIM), DiSIINet integrates an enhancement branch and a segmentation branch. These branches interact through a novel Symbiotic Information Interaction (SII) module, which facilitates dynamic, feature-level information exchange via cross-attention during the reverse diffusion process. This design enables both tasks to iteratively improve each other. The DDIM backbone ensures high-quality output and efficient inference through deterministic sampling. Experiments on multi-modal medical datasets (MRI, CT, ultrasound) show that DiSIINet achieves significant performance improvements compared to sequential or independent enhancement and segmentation approaches. The code is available at: https://github.com/Reconsider80/DiSIINet.",
       "authors": "Ying Chen, Jinyue Li, Qiankun Li",
       "source": "arXiv Papers",
-      "summary": "提出基于扩散模型的共生信息交互框架，联合进行医学图像增强与分割。通过双任务信息互补，在低分辨率MRI/CT/超声图像上同时改善图像质量与分割精度。"
+      "summary": "提出基于扩散模型的共生信息交互框架，联合增强与分割医学图像（MRI/CT/超声），在低质量输入下同时提升视觉效果与分割精度。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1369,7 +1359,7 @@
       "content": "Multimodal large language models (MLLMs) show strong promise for clinical VQA and radiology report generation, yet inference-time hallucinations still undermine trustworthy use: models can produce fluent conclusions that conflict with imaging evidence. Existing mitigation strategies typically rely on additional training, external retrieval/knowledge bases, or multi-stage post-hoc verification, which increases cost and pipeline complexity and often generalizes poorly across models and tasks.To address this, we propose a holistic, training-free evidence-injection framework that systematically mitigates hallucinations through dual-side evidence injection. By leveraging ROI priors acquired using MedSAM in our implementation, we recalibrate the visual perception trajectory via ROI-guided activation modulation while anchoring the textual reasoning trajectory by mapping anatomical coordinates into discrete semantic tokens as verifiable external memory. Then we introduce a task-aware dynamic router to select modality-specific interventions based on task semantics, balancing perceptual grounding and linguistic fluency. We conduct systematic evaluations on 2 tasks and 5 datasets using \\texttt{LLaVA-1.5-7B}, \\texttt{LLaVA-Med-1.5-7B}, \\texttt{Qwen3-VL-8B/32B}, and \\texttt{InternVL-3.5-8B/38B}. Controlled ablations and visualizations further validate the framework, which consistently outperforms baselines across medical benchmarks, improving close-ended accuracy by up to $\\sim\\mathbf{6}\\%\\uparrow$ and reducing open-ended hallucinations by $\\sim\\mathbf{35}\\%\\downarrow$. The code has been made available on GitHub: \\href{https://github.com/Henry991115/SPRG}{\\textcolor{blue}{https://github.com/Henry991115/SPRG}}.",
       "authors": "Rui Hao, Qiankun Li, Junyuan Mao, Linghao Meng, Dirui Xie, Dayu Tan, Zhigang Zeng",
       "source": "arXiv Papers",
-      "summary": "提出感知-推理协同治理框架，将可验证的解剖证据注入医学多模态大模型（MLLM），有效缓解临床VQA和报告生成中的幻觉问题，提升可信度。"
+      "summary": "提出协同感知-推理治理方法，将可验证解剖证据引入医学多模态大模型（MLLM），减少临床VQA及报告生成中的幻觉，提升可信度。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1382,7 +1372,7 @@
       "content": "Urban-scale Visual Place Recognition (VPR) aims to identify the geographic location of a query image by matching it against a geo-tagged database. While recent methods achieve impressive performance, they overlook a serious long-tailed problem hidden in urban-scale datasets, which biases the model towards locations with abundant images and ignores less-visited areas, causing models to systematically favor frequently photographed locations while failing in sparsely covered areas. In this paper, we systematically characterize this imbalance challenge and propose Distribution-Aware Place Recognition (DAPR), a model-agnostic plug-in framework that rebalances gradient contributions across head and tail classes. Additionally, within classification-retrieval pipelines, DAPR applies a multi-scale distance search mechanism to compute per-class distributional compactness, providing complementary gains at the retrieval stage. On the large-scale SF-XL benchmark, our framework outperforms the previous classification-retrieval baseline by 18.3% on test set v1, and 6.7% on test set v2. As a plug-in module, it achieves consistent improvements across representative VPR methods on SF-XL, MSLS, and Pitts30k, demonstrating broad generalizability across different methods and benchmarks.",
       "authors": "Zhiyao Shu, Jiacheng Yang, Yang Lu, Waishan Qiu, Chuan Li, Da Chen",
       "source": "arXiv Papers",
-      "summary": "揭示城市级视觉地点识别（VPR）中的地理长尾偏差问题，提出方法缓解模型对热门地点的偏向，提升长尾区域的地点检索准确率。"
+      "summary": "揭示城市尺度视觉地点识别（VPR）中隐式的长尾地理分布问题，提出应对策略以缓解模型对高频地区的过拟合，提升在欠采样地区的检索性能。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1395,7 +1385,7 @@
       "content": "This paper explores multi-turn visual reasoning and observes that MLLMs repeatedly fail to localize the target, leading to long, redundant trajectories. We attribute this failure to the entanglement of reasoning and perception within a single model, the MLLM reasons and localizes simultaneously, and inaccurate localization triggers additional reasoning turns that bloat the trajectory. To solve this problem, we propose PixelEyes, a multi-turn visual reasoning agent that explicitly decouples reasoning from perception, i.e., the reasoner decides what to look for, while a specialized perception tool answers where it is. Specifically, PixelEyes introduces 1) Mask-guided Visual Search. A referring segmentation model is invoked to provide mask-precise localization, freeing the reasoner from the need to compensate for imprecise grounding. 2) Semantic-region Breadth-first Search (BFS). To eliminate redundant loops caused by repeatedly cropping incorrect sub-regions, we organize exploration as a breadth-first search over semantic regions. To internalize these capabilities, we construct the PixelEyes-6K dataset by resynthesizing expert trajectories from existing data. This explicitly embeds our mask-guided search and BFS logic into the model. We further introduce Pinpoint-Bench, a zero-hint visual search benchmark, i.e., no location cues are provided in the question, with instance-level masks and bounding boxes that separate localization failures from reasoning failures, enabling fine-grained analysis of failure modes such as inattentional blindness. Recent state-of-the-art MLLMs and visual reasoning agents leave large headroom on Pinpoint-Bench, demonstrating its quality and difficulty. Code and models are open-sourced.",
       "authors": "Dengxian Gong, Yuanzheng Wu, Haobo Yuan, Zhengdong Hu, Tao Zhang, Yikang Zhou, Shihao Chen, Quanzhu Niu, Kai Wang, Jason Li, Haochen Wang, Lu Qi, Shunping Ji, Ming-Hsuan Yang",
       "source": "arXiv Papers",
-      "summary": "PixelEyes将视觉推理中的感知与推理进行解耦，避免多模态大模型（MLLM）在定位目标时反复失败，有效缩短推理轨迹并提高目标定位精度。"
+      "summary": "发现多轮视觉推理中感知与推理纠缠导致目标定位失败，提出PixelEyes解耦二者，避免冗余轨迹，提升多轮定位准确率与效率。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1408,7 +1398,7 @@
       "content": "Object-centric models inspired by DETR have become the dominant paradigm for open-vocabulary video instance segmentation (OV-VIS). While recent efforts have reduced the computational cost of pixel decoding, textual modality fusion, and object decoding to make these architectures more suitable for mobile devices, real-time on-device inference at high frame rates remains an open challenge. In this paper, we introduce SegFS, a dual-stream fast-slow framework that significantly improves efficiency without sacrificing accuracy. On sparse keyframes, an open-vocabulary object-based model predicts instance-level representations. These representations are then projected back into the backbone feature space to condition a lightweight fast network, which efficiently relocalizes and segments the instances in subsequent frames. By shifting instance propagation from object decoding to feature-space conditioning, our approach decouples multimodal semantic understanding from dense mask prediction and enables efficient temporal propagation. The proposed fast branch achieves up to 14x lower latency than the mobile-oriented MOBIUS model, while maintaining competitive segmentation performance on standard OV-VIS benchmarks.",
       "authors": "Luca Barsellotti, Martin Sundermeyer, Mattia Segu, Nikita Araslanov, Muhammad Ferjad Naeem, Marcella Cornia, Yongqin Xian, Maxim Berman",
       "source": "arXiv Papers",
-      "summary": "提出双路径处理框架（Fast and Slow）用于开放词汇视频实例分割，通过快速路径进行像素解码、慢速路径进行目标解码，在保持精度的同时实现实时推理速度。"
+      "summary": "提出双路径处理框架用于开放词汇视频实例分割（OV-VIS），结合DETR类对象中心模型与快速路径，实现实时推理而不牺牲精度。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1421,7 +1411,20 @@
       "content": "Reconstructing 4D animals from monocular videos is challenging due to large inter-species variation, complex articulations, and the lack of reliable templates. Existing approaches typically rely on either strict category-specific priors that restrict generalization, or unconstrained generative models that sacrifice input fidelity. To bridge this gap, we present a progressive test-time optimization framework built on 3D Gaussian Splatting for high-fidelity 4D animal reconstruction from a single video. Our key insight is that a coarse shape prior suffices when coupled with a progressive strategy that disentangles articulated pose from non-rigid deformation. Specifically, we employ a symmetry-aware temporal encoding that exploits bilateral cues while absorbing camera estimation drift and a part-conditioned deformation mechanism guided by learnable part anchors and a learnable skinning field. Extensive experiments demonstrate that our approach generalizes robustly across diverse species, achieving superior geometric accuracy, temporal consistency, and visual fidelity compared to existing baselines, even under severe prior mismatch.",
       "authors": "Siyuan Li, Weiying Chen, Yilin Wang, Xinxin Zuo, Xingyu Li, Li Cheng",
       "source": "arXiv Papers",
-      "summary": "提出渐进式姿态引导方法，从单目视频重建4D动物模型。无需类别特定先验，通过姿态引导逐步细化，有效处理跨物种体型和姿态变化。"
+      "summary": "提出渐进式姿态引导的4D动物重建方法，从单目视频出发，无需类别特定先验，利用姿态信息逐步细化形状与运动，提升跨物种泛化。"
+    },
+    {
+      "sourceId": "arxiv-papers",
+      "title": "EgoSafetyBench: A Diagnostic Egocentric Video Benchmark for Evaluating Embodied VLMs as Runtime Safety Guards",
+      "url": "https://arxiv.org/abs/2607.00218",
+      "excerpt": "Vision-language models (VLMs) are now proposed as runtime safety guards for embodied agents in homes and factories. A deployable guard must catch genuinely unsafe situations while avoiding unnecessary intervention on routine but superficially alarming activity, a distinction that binary safety benchmarks obscure. We introduce EgoSafetyBench, an egocentric video benchmark of 1,200 robot-view scenarios annotated at half-second granularity, to evaluate VLMs as streaming guards across two tracks. The situational track (800 scenarios) spans four families, from routine and safe-but-suspicious scenes to obvious and contextual hazards. The visual-channel track (400 scenarios) targets in-scene text-a sign, sticker, or label visible in the scene-that can misrepresent the physical situation, pairing each misleading sign with a truthful version to test both whether a guard flags the text as misleading and whether the text corrupts its physical-safety judgment. Both tracks use contrastive ladders: near-identical scenarios differing only in a single visible deciding cue, so a correct call must hinge on that cue rather than the overall scene type. We evaluate ten open- and closed-source VLMs. We find that while guards reliably recognize videos containing hazards, they often miss specific hazardous moments, particularly contextual hazards. Furthermore, misleading in-scene signs degrade all tested guards: vulnerable models miss up to a third of hazards, while robust models over-intervene on safe content. Matched controls reveal that apparent safety robustness often reflects indiscriminate alarming rather than true physical reasoning.",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "category": "tech",
+      "meta": "video",
+      "content": "Vision-language models (VLMs) are now proposed as runtime safety guards for embodied agents in homes and factories. A deployable guard must catch genuinely unsafe situations while avoiding unnecessary intervention on routine but superficially alarming activity, a distinction that binary safety benchmarks obscure. We introduce EgoSafetyBench, an egocentric video benchmark of 1,200 robot-view scenarios annotated at half-second granularity, to evaluate VLMs as streaming guards across two tracks. The situational track (800 scenarios) spans four families, from routine and safe-but-suspicious scenes to obvious and contextual hazards. The visual-channel track (400 scenarios) targets in-scene text-a sign, sticker, or label visible in the scene-that can misrepresent the physical situation, pairing each misleading sign with a truthful version to test both whether a guard flags the text as misleading and whether the text corrupts its physical-safety judgment. Both tracks use contrastive ladders: near-identical scenarios differing only in a single visible deciding cue, so a correct call must hinge on that cue rather than the overall scene type. We evaluate ten open- and closed-source VLMs. We find that while guards reliably recognize videos containing hazards, they often miss specific hazardous moments, particularly contextual hazards. Furthermore, misleading in-scene signs degrade all tested guards: vulnerable models miss up to a third of hazards, while robust models over-intervene on safe content. Matched controls reveal that apparent safety robustness often reflects indiscriminate alarming rather than true physical reasoning.",
+      "authors": "Siddhant Panpatil, Arth Singh, Mijin Koo, Chaeyun Kim, Haon Park, Dasol Choi",
+      "source": "arXiv Papers",
+      "summary": "构建诊断性自我中心视频基准EgoSafetyBench，评估VLM作为具身智能安全卫士的能力，区分真正危险与常规动作，避免误报。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1434,7 +1437,7 @@
       "content": "Temporal Action Localization (TAL) typically relies on segment annotations or offline access to full videos, limiting scalability and online use. We introduce Point-Supervised Online TAL (POTAL), which localizes actions in streaming videos using only one temporal point per instance. To solve POTAL, we propose OnPoint, an offline-to-online multi-level distillation framework that transfers knowledge from a point-supervised offline teacher to an online student via (i) pseudo-segment instance distillation, (ii) class-activation sequence distillation, and (iii) anticipatory window-level distillation. We further improve robustness by incorporating the original point labels into student training and by refining anchor decoding with actionness-guided attention calibration. Experiments on five datasets show OnPoint consistently outperforms strong baselines, establishing a solid foundation for POTAL.",
       "authors": "Sakib Reza, Gauri Jagatap, Mohsen Moghaddam, Octavia Camps, Andrea Fanelli",
       "source": "arXiv Papers",
-      "summary": "提出点监督在线时序动作定位（POTAL）框架OnPoint，利用离线模型与在线模型的多级蒸馏，仅需每动作单一时间点标注即可在流式视频中实时定位动作。"
+      "summary": "提出点监督在线时序动作定位（POTAL），仅用每实例一个时间点，通过离线到在线多级蒸馏（OnPoint）在流式视频中实现高效定位。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1447,7 +1450,7 @@
       "content": "Human motion forecasting in unconstrained real-world videos remains challenging due to the ambiguity of future behaviors and the presence of noisy multimodal observations. While facial affect potentially provides complementary behavioral cues, its practical utility and mechanistic boundaries within motion forecasting frameworks remain poorly understood. In this work, we present a systematic study investigating the utility and temporal limitations of affect-conditioned forecasting in-the-wild. We establish a rigorous multimodal pipeline combining MediaPipe body pose trajectories with HSEmotion facial affect representations, and introduce the Gated Affect Transformer (GAT) to dynamically regulate cross-modal information flow. Through extensive multi-horizon evaluations under a strict subject-wise protocol, we demonstrate that naive early cross-modal concatenation consistently degrades forecasting accuracy relative to pose-only baselines. Conversely, our proposed gating mechanism stabilizes cross-modal integration by adaptively controlling the affective stream. Crucially, controlled counterfactual experiments using shuffled and randomized affect inputs reveal that the learned gate successfully suppresses unstructured cross-modal noise while remaining responsive to plausible affective signals. Furthermore, our empirical results indicate that facial affect features provide bounded, horizon-dependent predictive cues strictly within short-to-medium windows (e.g., 30 frames), whereas long-term trajectories remain predominantly governed by intrinsic kinematic continuity. Our findings provide empirical evidence that facial affect should be regarded as a complementary behavioral cue rather than a dominant driver of future motion, offering practical guidance for selective multimodal fusion in unconstrained human motion forecasting.",
       "authors": "Jingni Huang",
       "source": "arXiv Papers",
-      "summary": "提出门控情感融合方法，在人体运动预测中动态决定何时利用面部表情信息，有效处理噪声多模态观测，提升非约束视频中未来轨迹预测的准确性。"
+      "summary": "提出门控情感融合机制，将面部情感线索与人体运动预测结合，通过自适应门控抑制噪声，在非约束视频中提升未来动作预测准确性。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1460,7 +1463,7 @@
       "content": "Foundation video diffusion models are increasingly viewed as world simulators for embodied agents, yet their pretraining on internet-scale generic video leaves them poorly aligned with real-world deployment domains. We study parameter-efficient adaptation of a pretrained foundation video world model to retail scenes: when synchronized egocentric and exocentric video of the same activity are available, which viewpoint of training data produces the strongest adapted model? We introduce RetailSMV (Retail Synchronized Multi-View), a corpus of 32,105 captioned retail clips from five supermarkets with synchronized ego/exo capture from the store-staff perspective (stocking, arranging, weighing, managing supply carts, scanning at checkout), rather than the customer-centric framing of prior retail video corpora, and train three matched Low-Rank Adaptation (LoRA) configurations of Cosmos3-Nano (egocentric-only, exocentric-only, combined) under identical hyperparameters. On a 200-clip held-out test set evaluated with seven complementary metrics under a strict paired statistical protocol, exocentric-only adaptation matches or exceeds combined adaptation on six of seven point estimates and is significantly better on LPIPS, PSNR, and DreamSim, despite training on only 15,985 exocentric clips (versus 32,105 for combined). A symmetric paired comparison further shows that adding exocentric data to egocentric-only training helps while adding egocentric data to exocentric-only training hurts. The absolute adaptation gap is largest at the shortest rollout time, identifying the near-horizon prediction window as the regime in which adaptation is most beneficial.",
       "authors": "Amirreza Rouhi, Rajat Aggarwal, Parikshit Sakurikar, Anoop M. Namboodiri, Sashi P. Reddi",
       "source": "arXiv Papers",
-      "summary": "探索将预训练基础视频世界模型参数高效适配到零售场景，比较外视角与自我视角下的迁移效果，使模型更好地模拟真实零售环境。"
+      "summary": "探索在零售场景下对预训练基础视频世界模型进行参数高效适配，适应非中心（exo）与自我中心（ego）视角，保持生成质量。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1473,7 +1476,7 @@
       "content": "We present LIST3R, an instance-aware framework for long-sequence 3D reconstruction inspired by the way humans organize spatial memory around stable and recognizable objects. LIST3R organizes long-sequence reconstruction around instance anchors, using them to reconnect fragmented subsequences and consolidate local observations into a coherent global 3D scene. Given a long video, our approach partitions it into overlapping subsequences and builds a structured local instance library for each partial reconstruction, maintaining persistent trackable anchors with semantic and geometric evidence. These anchors are matched across subsequences to recover revisited regions and provide object-aware constraints for fragment alignment, producing a consistent global reconstruction. During this process, the evolving geometric evidence updates the local instance libraries and progressively organizes them into a unified global 3D instance library. Experiments on long-sequence benchmarks show that our method produces more accurate trajectories and higher-quality 3D reconstructions, highlighting the effectiveness of persistent instance anchors for organizing long-horizon 3D reconstruction. Our code is available on the project page: https://yixn965.github.io/LIST3R/.",
       "authors": "Jing Gao, Wei Wang, Feiran Wang, Yan Yan",
       "source": "arXiv Papers",
-      "summary": "LIST3R以实例锚点组织长序列3D重建，利用实例识别连接碎片化子序列，模仿人类空间记忆方式，实现长序列场景的连贯三维重建。"
+      "summary": "提出LIST3R，基于实例锚点的长序列3D重建框架，利用物体级稳定特征连接碎片化的子序列，实现大跨度场景的一致重建。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1486,7 +1489,7 @@
       "content": "Recent brain decoding studies have made substantial progress in reconstructing externally perceived visual content from neural signals. However, using electroencephalography (EEG) recordings to guide facial expression editing remains largely unexplored and poses a distinct challenge: rather than recovering what a subject sees, it requires identifying facial-action related patterns from noisy EEG signals and grounding them in localized, identity-preserving expression edits. In this paper, we investigate EEG-conditioned facial image editing for fine-grained facial action unit (AU) control and propose MindAU, a unified framework for controlling facial AU edits from EEG signals. MindAU first learns noise-robust and AU-discriminative EEG representations through temporal masked reconstruction and AU classification supervision. It then bridges the modality gap via Dual-Stream Manifold Alignment, aligning EEG features with AU-level text semantics and identity-reduced visual displacement trajectories in the multimodal space of Qwen2.5-VL. Finally, MindAU incorporates EEG-aware Multimodal Rotary Positional Embeddings, landmark-guided reference masking, and AU-aware region supervision into a multimodal diffusion-based editor for high-fidelity identity-preserving editing. We also introduce E-CAFE, a curated benchmark for EEG-Conditioned Action-Unit Facial Editing with paired EEG-face editing samples and standardized evaluation protocols. Extensive experiments demonstrate the effectiveness of MindAU and suggest its potential as a step towards future assistive expression technologies for individuals with facial neuromuscular disorders.",
       "authors": "Zhenhang Li, Xin Zhou, Hao Deng, Lijun Yin",
       "source": "arXiv Papers",
-      "summary": "MindAU通过双流流形对齐，利用EEG信号条件编辑面部动作单元（AU），实现由脑电信号驱动而非外部视觉刺激的面部表情生成。"
+      "summary": "提出MindAU，使用EEG信号引导面部动作单元编辑，通过双流流形对齐将脑电特征映射到表情空间，实现基于思维的化编辑。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1499,7 +1502,7 @@
       "content": "In the era of satellite constellations, multi-view optical satellite imagery is pivotal for Earth Observation (EO) and high-quality Digital Surface Model (DSM) reconstruction. Although feed-forward 3D foundation models have transformed computer vision, their deployment in satellite remote sensing is inherently constrained by the structural discrepancy between implicit perspective assumptions and explicit orbital pushbroom geometry. This geometric incongruity is further compounded by pronounced view-set heterogeneity. We present EO-VGGT, a framework that adapts a frozen perspective-driven model to orbital observations via explicit physical geometry embedding.First, the Geometry-Correlation Constrained Selection (GCCS) strategy prunes sub-optimal observations by balancing geometric diversity and radiometric consistency to optimize the input sequence. Second, a Sensor-Ray Encoder (SRE) parameterizes pixel-level pushbroom lines of sight derived from the Rational Function Model (RFM) into high-dimensional space-geometric tokens, reconciling the mathematical discrepancy between central projection and orbital kinematics. Third, a lightweight Ray-Pointing-Aware Adapter (RPAA) employs gated residual blocks to integrate these tokens directly into the frozen transformer backbone. Our findings underscore that integrating explicit physical geometry with optimized view selection is essential for robust feed-forward satellite 3D reconstruction.",
       "authors": "Qiyan Luo, Yingdong Pi, Lekang Wen, Jie Yang, Xiaoyu Wang, Haiming Zhang, Mi Wang",
       "source": "arXiv Papers",
-      "summary": "EO-VGGT将轨道光线条件引入3D基础模型，适配卫星多视图光学影像，实现高质量数字表面模型（DSM）重建，填补前馈3D模型在遥感领域的空白。"
+      "summary": "提出EO-VGGT，将轨道射线条件引入3D基础模型，适配卫星多视角重建，解决卫星遥感中的视角稀疏与几何不一致问题，提升DSM质量。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1512,7 +1515,46 @@
       "content": "As video corpora continue to expand in both scale and task complexity, there is increasing demand for approaches that retrieve relevant videos from large-scale corpora (inter-video reasoning) and subsequently perform fine-grained, query-conditioned tasks (intra-video reasoning) within the retrieved content, such as temporal grounding. However, existing approaches typically treat retrieval as a preprocessing step, and consequently, when the initial retrieval fails, there is no mechanism to refine the search, leading to the failure of subsequent fine-grained intra-video reasoning. Moreover, while recent agentic frameworks have advanced video understanding, they typically assume that the query-relevant video is already given, focusing exclusively on intra-video reasoning tasks. To address these limitations, we propose VideoSearch-R1, an agentic framework for iterative video retrieval and reasoning through multi-turn interaction with a video search engine. Specifically, we introduce Soft Query Refinement (SQR) to refine search query tokens in a continuous latent space rather than rewriting queries in the discrete text space, enabling more efficient and fine-grained adjustments. SQR and its reasoning process are trained using Group Relative Policy Optimization (GRPO), guided by task-level reward signals derived from retrieval and downstream tasks. Building upon this, VideoSearch-R1 achieves state-of-the-art performance across three datasets on Video Corpus Moment Retrieval (VCMR), iteratively retrieving videos from large-scale corpora, refining search queries, and performing precise query-conditioned temporal grounding within the retrieved content. Our analyses show that SQR effectively refines the original query, requiring significantly fewer generated tokens than explicit text-level query refinement. Code and model checkpoints are publicly available at mlvlab.github.io/VideoSearch-R1.",
       "authors": "Seohyun Lee, Seoung Choi, Dohwan Ko, Jongha Kim, Hyunwoo J. Kim",
       "source": "arXiv Papers",
-      "summary": "VideoSearch-R1提出迭代式视频检索与推理框架，通过软查询细化在大型视频语料库中逐步优化检索结果，并执行细粒度查询条件任务，提升视频间与视频内的联合推理能力。"
+      "summary": "提出VideoSearch-R1，通过软查询迭代优化实现大规模视频库检索与细粒度任务推理，结合视频间与视频内推理，提升检索准确度。"
+    },
+    {
+      "sourceId": "arxiv-papers",
+      "title": "Robust 3D Alignment of Generative Reconstructions via Partial Monocular Observations",
+      "url": "https://arxiv.org/abs/2607.00498",
+      "excerpt": "Aligning generative 3D reconstructions with partial monocular observations is a critical but under-explored challenge in computer vision. This task is inherently ill-posed due to severe asymmetries between noisy, sparse monocular inputs and dense generative priors, whose scale ambiguity and geometric hallucinations, combined with the lack of initial overlap, render traditional registration pipelines ineffective. To resolve these issues, we propose a training-free and interpretable geometric alignment framework that grounds generative 3D priors via a 3D similarity transformation (Sim(3)), which can recover accurate metric scale and pose. Specifically, we introduce an explicit scale factor to resolve metric ambiguity and employ a coarse-to-fine alignment strategy, leveraging geometry-aware descriptors for robust initialization and a decoupled closed-form solver for precision refinement. In addition, we introduce a Hallucination Filtering operation to effectively suppress outliers caused by hallucinated geometry. To evaluate alignment performance under these extreme conditions, we introduce GenPMOAlign--Where2Place, a rigorous benchmark specifically designed for Generative-to-Partial Monocular Observational Alignment. Experiments demonstrate that our method achieves stable and accurate registration, substantially outperforming both classical geometric pipelines and state-of-the-art learning-based baselines. Code and the benchmark will be publicly released.",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "category": "tech",
+      "meta": "world-model",
+      "content": "Aligning generative 3D reconstructions with partial monocular observations is a critical but under-explored challenge in computer vision. This task is inherently ill-posed due to severe asymmetries between noisy, sparse monocular inputs and dense generative priors, whose scale ambiguity and geometric hallucinations, combined with the lack of initial overlap, render traditional registration pipelines ineffective. To resolve these issues, we propose a training-free and interpretable geometric alignment framework that grounds generative 3D priors via a 3D similarity transformation (Sim(3)), which can recover accurate metric scale and pose. Specifically, we introduce an explicit scale factor to resolve metric ambiguity and employ a coarse-to-fine alignment strategy, leveraging geometry-aware descriptors for robust initialization and a decoupled closed-form solver for precision refinement. In addition, we introduce a Hallucination Filtering operation to effectively suppress outliers caused by hallucinated geometry. To evaluate alignment performance under these extreme conditions, we introduce GenPMOAlign--Where2Place, a rigorous benchmark specifically designed for Generative-to-Partial Monocular Observational Alignment. Experiments demonstrate that our method achieves stable and accurate registration, substantially outperforming both classical geometric pipelines and state-of-the-art learning-based baselines. Code and the benchmark will be publicly released.",
+      "authors": "Yuchen Zhang, Luanyuan Dai, Yiwei Wang, Xiwei Xu, Jianing Zhang, Johnny. r. zhang, Xianhui Meng, Yanbiao Ma, Jiayi Ma, Xiaoshuai Hao",
+      "source": "arXiv Papers",
+      "summary": "解决生成式3D重建与部分单目观测的对齐问题，提出鲁棒方法处理噪声、稀疏输入与生成先验之间的尺度歧义，提升对齐精度。"
+    },
+    {
+      "sourceId": "arxiv-papers",
+      "title": "SPECSIA: Stylization Dataset for Novel-View Enhancement in Drawing-based 3D Animation",
+      "url": "https://arxiv.org/abs/2607.00525",
+      "excerpt": "Generating animation from a single 2D drawing is challenging because the output must preserve character appearance while remaining plausible and temporally coherent under motion. Existing drawing-based 3D animation pipelines often use sample-wise 2D refinement to align animated renderings with the input image, but such optimization tends to overfit to the observed view and fails to correct projection-induced artifacts in novel views. To address this limitation, we introduce SPECSIA-15K, a paired stylization dataset containing 14,980 artifact-corrupted projection/refinement-target pairs from 1,498 3DBiCar characters. We further present DraViE (Drawing-based View Enhancement), a lightweight plug-and-play module trained with data-level priors to remove novel-view artifacts while preserving style and motion plausibility. Experiments show consistent gains in novel-view fidelity and temporal coherence with lower per-character adaptation cost than sample-wise fine-tuning.",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "category": "tech",
+      "meta": "world-model",
+      "content": "Generating animation from a single 2D drawing is challenging because the output must preserve character appearance while remaining plausible and temporally coherent under motion. Existing drawing-based 3D animation pipelines often use sample-wise 2D refinement to align animated renderings with the input image, but such optimization tends to overfit to the observed view and fails to correct projection-induced artifacts in novel views. To address this limitation, we introduce SPECSIA-15K, a paired stylization dataset containing 14,980 artifact-corrupted projection/refinement-target pairs from 1,498 3DBiCar characters. We further present DraViE (Drawing-based View Enhancement), a lightweight plug-and-play module trained with data-level priors to remove novel-view artifacts while preserving style and motion plausibility. Experiments show consistent gains in novel-view fidelity and temporal coherence with lower per-character adaptation cost than sample-wise fine-tuning.",
+      "authors": "Kyuwon Kim, Sunjae Yoon, Chang D. Yoo",
+      "source": "arXiv Papers",
+      "summary": "提出SPECSIA，风格化数据集用于基于线稿的3D动画新视角增强，通过2D风格化细化保持角色外观一致性与时间连贯性。"
+    },
+    {
+      "sourceId": "arxiv-papers",
+      "title": "ECoSim: Data Efficient Fine-Tuning for Controllable Traffic Simulation",
+      "url": "https://arxiv.org/abs/2607.00545",
+      "excerpt": "Controllable traffic simulation is critical for testing autonomous driving systems, yet existing approaches often require retraining large generative models with extensive annotated data. We introduce a lightweight control adaptation framework that enables multi-modal controllability (sketch, latent behavior codes, and text) for pretrained state-of-the-art diffusion and autoregressive traffic models. By modulating intermediate features through identity-initialized FiLM layers, our method efficiently adds new control modalities while preserving the base model's generative prior. Evaluated on Waymo Open Sim Agents Challenge, our approach demonstrates strong controllability with less than 1% of the paired control data. Through context-aware condition transfer, our framework enables counterfactual scenario generation and long-tail synthesis while maintaining stable closed-loop driving realism and safety. Our framework unlocks new possibilities for controllable traffic simulation, enabling targeted scenario generation through lightweight adaptation of pretrained generative models. Project page: https://ecosim-web.github.io/",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "category": "tech",
+      "meta": "world-model",
+      "content": "Controllable traffic simulation is critical for testing autonomous driving systems, yet existing approaches often require retraining large generative models with extensive annotated data. We introduce a lightweight control adaptation framework that enables multi-modal controllability (sketch, latent behavior codes, and text) for pretrained state-of-the-art diffusion and autoregressive traffic models. By modulating intermediate features through identity-initialized FiLM layers, our method efficiently adds new control modalities while preserving the base model's generative prior. Evaluated on Waymo Open Sim Agents Challenge, our approach demonstrates strong controllability with less than 1% of the paired control data. Through context-aware condition transfer, our framework enables counterfactual scenario generation and long-tail synthesis while maintaining stable closed-loop driving realism and safety. Our framework unlocks new possibilities for controllable traffic simulation, enabling targeted scenario generation through lightweight adaptation of pretrained generative models. Project page: https://ecosim-web.github.io/",
+      "authors": "Yu-Hsiang Chen, Wei-Jer Chang, Yi-Ting Chen, Masayoshi Tomizuka",
+      "source": "arXiv Papers",
+      "summary": "提出轻量控制适配框架ECoSim，无需重新训练大模型，仅用少量标注数据即可实现草图、潜在编码等多元控制的可控交通仿真。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1525,7 +1567,7 @@
       "content": "Gaussian Splatting has achieved significant improvements by incorporating warping-based techniques. However, such methods suffer from pixel-level inaccuracies due to uncertain geometry. This uncertainty leads to spatial misalignments in the warped images, which disrupt residual learning used in warping-based methods and fundamentally limit the gains of correction, particularly on thin structures and high-frequency details. Driven by our insight that useful visual cues are not lost but locally preserved under slight displacement, we propose Geometry-Aware Deformable Aggregation (GADA). This method introduces an iterative refinement module with deformable offsets to actively correct spatial misalignments and recover these displaced cues. Furthermore, to address the limitations of standard pipelines where visibility checks (i.e., thresholding) often discard valid pixels and multi-view warped image fusion relies on naive mean aggregation, our module is coupled with an implicit confidence weighting mechanism that selectively suppresses unreliable evidence. Consequently, our approach outperforms prior warping-based Gaussian Splatting, preserving high-frequency quality while achieving 2.13 times faster FPS.",
       "authors": "Siwoo Lim, Sunjae Yoon, Gwanhyeong Koo, Chang D. Yoo",
       "source": "arXiv Papers",
-      "summary": "GADA提出几何感知的可变形聚合方法，用于基于图像的高斯泼溅。通过处理不确定几何导致的像素级不对齐，改善扭曲图像的残差学习，提升新视图合成质量。"
+      "summary": "提出GADA，基于几何感知的可变形聚合方法用于图像到高斯泼溅，解决因几何不确定性导致的像素级错位，提升重建质量。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1538,7 +1580,7 @@
       "content": "Video anomaly understanding (VAU) relies on sparse, context-dependent cues. However, existing passive paradigms suffer from observational aliasing, where static sampling fails to disambiguate semantically distinct events. To overcome this, we propose $Anom\\text{-}\\pi$, a closed-loop framework that reconceptualizes video understanding as an active sequential decision-making process within a dynamic environment. Inspired by human video-reviewing behavior, this framework unifies internal cognitive reasoning and strategic evidence acquisition into an interleaved policy, utilizing temporal atomic operators such as local backtracking, temporal expansion, and fine-grained sampling to endow the model with perceptual proactivity. To learn such complex interaction strategies under video-level weak supervision, we design Interactive Direct Preference Optimization (iDPO) to achieve trajectory-level policy alignment, guided by an Active Evidence Inquiry (AEI) utility that balances task success, informative evidence acquisition, and interaction cost. This approach enables the agent to learn to actively disambiguate hypotheses while suppressing redundant exploration. Extensive experiments demonstrate that our framework, with only 2B parameters, achieves highly competitive performance, significantly outperforming state-of-the-art large-scale VAU models in complex scenarios.",
       "authors": "Mengjingcheng Mo, Jiaxu Leng, Xinbo Gao",
       "source": "arXiv Papers",
-      "summary": "提出Anom-π闭环框架，通过交错策略优化主动选择观察视角，解决视频异常理解中静态采样导致的观察混叠问题，提升对语义不同事件的区分能力。"
+      "summary": "提出Anom-π闭环框架，通过交错策略优化（Interleaved Policy Optimization）主动选择观测视角，解决视频异常理解中的观测模糊问题。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1551,7 +1593,7 @@
       "content": "Video anomaly detection (VAD) with multimodal large language models has shown strong potential, yet most existing methods still depend on large-scale annotations or expert-designed priors, limiting their ability to acquire anomaly knowledge with as little human intervention as possible. To address this, we propose Linguistic Relative Policy Optimization (LRPO), which distills group-relative semantic advantages from multiple reasoning trajectories into a linguistically expressed anomaly experience prior, and adapts the model by injecting this prior into the context to steer its output distribution without any parameter updates. LRPO builds two complementary experience representations: general experience captures transferable anomaly preferences across scenarios, while scenario experience models context-dependent anomaly rules for targeted refinement. To further improve the learned experience, we introduce an anomaly alignment reward that guides trajectory optimization to match human risk preferences and reinforce temporally grounded reasoning. Extensive experiments on XD-Violence, UCF-Crime, and UBnormal demonstrate that LRPO significantly outperforms existing state-of-the-art methods under tuning-free settings.",
       "authors": "Jiaxu Leng, Jiankang Zheng, Mengjingcheng Mo, Zhanjie Wu, Haosheng Chen, Ji Gan, Xinbo Gao",
       "source": "arXiv Papers",
-      "summary": "提出语言相对策略优化（LRPO）方法，使多模态大模型在视频异常检测中以最少人工干预自主学习异常知识，降低对大规模标注或专家先验的依赖。"
+      "summary": "提出语言相对策略优化（LRPO）用于视频异常推理，利用MLLM以极少人工干预获取异常知识，减少对大规模标注或专家先验的依赖。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1564,7 +1606,33 @@
       "content": "Zero-shot video temporal grounding (VTG) localizes events in untrimmed videos from natural language queries without task-specific training. Existing methods rely on frame-query feature matching, which suffices for simple events but struggles with complex multi-stage queries that require understanding temporal ordering and causal structure -- a disparity we call the reasoning gap. We propose DART (Difficulty-Adaptive Routing for Temporal Grounding), which bridges this gap by coupling difficulty-aware routing with structured reasoning in large vision-language models. A query-conditioned Determinantal Point Process (DPP) serves a dual role: selecting diverse, query-relevant keyframes as temporal evidence, and providing spectral entropy as a difficulty indicator. Simple queries are routed to a Fast path for direct prediction, while complex queries follow a Slow path with Temporal Markup Prompting, which decomposes localization into global event analysis, per-frame temporal role annotation, and boundary extraction. On Charades-STA and ActivityNet Captions, DART achieves state-of-the-art zero-shot performance across both identically distributed and multiple out-of-distribution settings, improving mIoU by up to 3.5 points over the strongest baseline while using over 7 times fewer frames. The project homepage is available at https://dart-vtg.github.io/.",
       "authors": "Zhengbo Zhang, Mark He Huang, Zhigang Tu, Ming-Hsuan Yang",
       "source": "arXiv Papers",
-      "summary": "DART提出难度自适应路由机制，针对零样本视频时序定位中简单帧-查询匹配和复杂多阶段查询采用不同推理路径，提升复杂事件定位的准确性。"
+      "summary": "提出难度自适应路由框架DART，用于零样本视频时序定位，对简单事件用帧-查询匹配，对复杂多阶段事件动态切换更精细推理路径。"
+    },
+    {
+      "sourceId": "arxiv-papers",
+      "title": "ABot-M0.5: Unified Mobility-and-Manipulation World Action Model",
+      "url": "https://arxiv.org/abs/2607.00678",
+      "excerpt": "Mobile manipulation is a key capability for general-purpose robots, yet remains challenging for current embodied learning methods. VLA policies are typically reactive and lack explicit world modeling, while existing World Action Models (WAMs) are still poorly aligned with the structure of mobile manipulation: they operate on coarse video chunks, model entangled navigation-manipulation actions, and train inverse dynamics under supervision that does not match autoregressive inference. As a result, they often miss fine-grained contact dynamics, suffer from action-distribution conflicts, and accumulate errors over long-horizon rollouts. We propose ABot-M0.5, a new WAM built on the insight that mobile manipulation requires alignment at three levels: temporal granularity, action space, and train-test consistency. To align temporal granularity, we introduce intermediate latent actions that capture local visual state transitions and serve as an bridging action space between video latents and embodiment-specific controls. To align action space, we design a dual-level Mixture-of-Transformers architecture that disentangles both modality representations and heterogeneous action subspaces such as base movement and arm manipulation. To align inference conditions, we propose the dream-forcing training strategy that progressively trains inverse dynamics on model-predicted videos, improving train-test alignment and robustness during autoregressive prediction. Experiments on challenging mobile and fine-grained manipulation benchmarks demonstrate that ABot-M0.5 achieves state-of-the-art performance in both long-horizon task success and finegrained control accuracy. These results highlight the critical importance of granularity-aligned, action-disentangled, and inference-consistent world-action modeling.",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "category": "tech",
+      "meta": "world-model",
+      "content": "Mobile manipulation is a key capability for general-purpose robots, yet remains challenging for current embodied learning methods. VLA policies are typically reactive and lack explicit world modeling, while existing World Action Models (WAMs) are still poorly aligned with the structure of mobile manipulation: they operate on coarse video chunks, model entangled navigation-manipulation actions, and train inverse dynamics under supervision that does not match autoregressive inference. As a result, they often miss fine-grained contact dynamics, suffer from action-distribution conflicts, and accumulate errors over long-horizon rollouts. We propose ABot-M0.5, a new WAM built on the insight that mobile manipulation requires alignment at three levels: temporal granularity, action space, and train-test consistency. To align temporal granularity, we introduce intermediate latent actions that capture local visual state transitions and serve as an bridging action space between video latents and embodiment-specific controls. To align action space, we design a dual-level Mixture-of-Transformers architecture that disentangles both modality representations and heterogeneous action subspaces such as base movement and arm manipulation. To align inference conditions, we propose the dream-forcing training strategy that progressively trains inverse dynamics on model-predicted videos, improving train-test alignment and robustness during autoregressive prediction. Experiments on challenging mobile and fine-grained manipulation benchmarks demonstrate that ABot-M0.5 achieves state-of-the-art performance in both long-horizon task success and finegrained control accuracy. These results highlight the critical importance of granularity-aligned, action-disentangled, and inference-consistent world-action modeling.",
+      "authors": "Ronghan Chen, Yandan Yang, Zuojin Tang, Dongjie Huo, Tong Lin, Haoning Wu, Haoyun Liu, Yuzhi Chen, Lulu Zheng, Botai Yuan, Tianlun Li, Mingxin Wang, Dekang Qi, Bin Hu, Wei Mei, Yuze Xuan, Haolong Yang, Yanqing Zhu, Mu Xu, Zhiheng Ma, Xinyuan Chang",
+      "source": "arXiv Papers",
+      "summary": "提出统一移动与操作的世界动作模型ABot-M0.5，将VLA策略与世界模型结合，针对移动机械手的结构特性进行对齐，提升变形式决策能力。"
+    },
+    {
+      "sourceId": "arxiv-papers",
+      "title": "Imprint: Online Memory Compression for Long-Horizon Egocentric QA",
+      "url": "https://arxiv.org/abs/2607.00696",
+      "excerpt": "Long-horizon egocentric question answering involves answering about events that have occurred hours or days in the past. This requires memory representations that remain both retrieval-effective and scalable over days or weeks of recording. Existing long-horizon egocentric QA methods construct memory as hierarchical textual summaries of observations. While effective for reducing memory size, summarization optimizes for descriptive compression rather than retrieval: repeated interactions are absorbed into coarse textual descriptions instead of being preserved as explicit, recurring memory units, making long-horizon evidence aggregation difficult. We propose Imprint, an interaction-centric memory framework that formulates long-horizon egocentric memory as an online memory compression problem rather than summarization. Incoming observations are first represented as structured Interaction Records and continuously organized into recurring interaction patterns. Using human memory consolidation signals of recurrence, recency, and distinctiveness, Imprint selectively retains and compresses interactions into a compact retrieval-oriented memory. We evaluate Imprint on EgoLifeQA, a seven-day egocentric benchmark containing questions that require reasoning over interactions occurring hours to days before the query. With the same LLM, Imprint improves QA accuracy from 31.0% to 35.8%, increases evidence-grounded answers by $6\\times$ compared with EgoRAG, reduces memory footprint by $2.3\\times$, and decreases retrieval latency by $11.8\\times$. These results demonstrate that memory compression provides a scalable and retrieval-effective foundation for long-horizon egocentric question answering.",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "category": "tech",
+      "meta": "video",
+      "content": "Long-horizon egocentric question answering involves answering about events that have occurred hours or days in the past. This requires memory representations that remain both retrieval-effective and scalable over days or weeks of recording. Existing long-horizon egocentric QA methods construct memory as hierarchical textual summaries of observations. While effective for reducing memory size, summarization optimizes for descriptive compression rather than retrieval: repeated interactions are absorbed into coarse textual descriptions instead of being preserved as explicit, recurring memory units, making long-horizon evidence aggregation difficult. We propose Imprint, an interaction-centric memory framework that formulates long-horizon egocentric memory as an online memory compression problem rather than summarization. Incoming observations are first represented as structured Interaction Records and continuously organized into recurring interaction patterns. Using human memory consolidation signals of recurrence, recency, and distinctiveness, Imprint selectively retains and compresses interactions into a compact retrieval-oriented memory. We evaluate Imprint on EgoLifeQA, a seven-day egocentric benchmark containing questions that require reasoning over interactions occurring hours to days before the query. With the same LLM, Imprint improves QA accuracy from 31.0% to 35.8%, increases evidence-grounded answers by $6\\times$ compared with EgoRAG, reduces memory footprint by $2.3\\times$, and decreases retrieval latency by $11.8\\times$. These results demonstrate that memory compression provides a scalable and retrieval-effective foundation for long-horizon egocentric question answering.",
+      "authors": "Kousik Das, Debaditya Roy",
+      "source": "arXiv Papers",
+      "summary": "提出Imprint，在线记忆压缩方法用于长跨度自我中心问答，通过高效存储与检索机制应对数天至数周连续记录，保持可扩展性。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1577,7 +1645,7 @@
       "content": "Autoregressive (AR) streaming models have emerged as a powerful paradigm for long video generation. However, the linearly growing Key-Value (KV) cache poses a significant bottleneck, leading to memory overload and degraded inference throughput. A common compression method is to drop redundant KV tokens, which often breaks long-range dependencies, resulting in temporal flickering and identity loss. In this paper, we propose Instance-Specific Parametric Absorption (ISPA), a novel framework that shifts the KV cache compression from discarding to distilling. The core idea is to transit a subset of layers from Full-Attention (F-Layers) to memory-efficient Local-Attention (L-Layers) by \"absorbing\" historical context into the model's weights. Specifically, during a brief warmup phase, ISPA monitors the output discrepancy between global and local attention. At the transition point, we solve a closed-form least-squares problem to compute an instance-specific weight modulation that compensates for the missing history. Experiments across architectures (1.3B to 14B) demonstrate that ISPA can remove up to 50\\% of the KV cache with near-lossless visual quality. We hope this perspective encourages future work to explore parametric memory consolidation beyond external token-level cache management for streaming generative models.",
       "authors": "Xiaomeng Fu, Jia Li, Yiming Hu, Yong Wang, Hayden Kwok-Hay So, Jiao Dai, Xiangxiang Chu, Jizhong Han",
       "source": "arXiv Papers",
-      "summary": "提出实例特定参数吸收方法解决自回归视频生成中KV缓存线性增长的内存瓶颈，通过吸收而非丢弃冗余令牌，减少内存占用并提升推理吞吐量。"
+      "summary": "提出实例特定参数吸收方法压缩自回归视频生成中的KV缓存，通过吸收冗余token降低内存开销，提升长视频生成吞吐量。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1590,20 +1658,20 @@
       "content": "Skeleton-based action recognition has achieved remarkable success by exploiting joint coordinates and their topological connections, yet prevailing methods overwhelmingly assume complete and clean skeleton inputs. In real-world deployments, such as egocentric vision, crowded surveillance, wearable devices, or edge robotics, limited field-of-view (FoV) frequently causes substantial joint visibility dropout, leading to severe performance degradation that existing models are largely unprepared to handle. To bridge this critical yet underexplored gap, we introduce PartialVisGraph, a novel hypergraph framework tailored for robust skeleton action recognition under constrained FoV. We first construct highly expressive hypergraphs by introducing learnable virtual hyperedges that form a soft incidence matrix, capturing flexible high-order dependencies beyond conventional pairwise graphs. We then propose the Single-Head Sample-Adaptive Transformer, which adaptively aggregates joint features onto hyperedges while explicitly incorporating a visibility prior. This prior selectively gates information flow, preventing occluded or out-of-view joints from corrupting reliable feature propagation. We further establish rigorous evaluation protocols with realistic FoV simulation benchmarks on NTU RGB+D 60 and 120. Extensive experiments demonstrate that PartialVisGraph consistently achieves state-of-the-art accuracy under partial visibility, with gains of up to 68.8\\% on subsets with severe FoV restrictions compared to recent strong baselines, while remaining superior on full-visibility settings. Our approach offers a principled and practical pathway toward deployable skeleton-based action understanding in unconstrained environments.",
       "authors": "Yingjie Dai, Tianyang Xu, Yanglin Deng, Xiao-Jun Wu, Josef Kittler",
       "source": "arXiv Papers",
-      "summary": "针对现实场景中骨架数据不完整的问题（如自我中心视觉、遮挡），提出受限视场下的部分骨架动作识别方法，解决完全骨架假设的局限性。"
+      "summary": "研究受限视野下部分可见骨骼的动作识别，提出适应遮挡场景的骨架识别方法，应对自我中心视觉、密集监控等非理想输入。"
     },
     {
       "sourceId": "arxiv-papers",
-      "title": "Pano2World: End-to-End 3D Generation via Unified Multi-View Sequences",
-      "url": "https://arxiv.org/abs/2607.00832",
-      "excerpt": "A single panorama captures the full visual sphere from one camera center, yet confines users to looking around in place without enabling true scene exploration. Converting a single panorama into a persistent, renderable 3D representation for free-viewpoint navigation has attracted growing interest; existing methods either adopt iterative per-view completion that propagates inpainting results to update the underlying geometry, leading to progressive error accumulation and cumbersome multi-step pipelines, or leverage the temporal consistency priors of video generation models, yet the continuous-trajectory constraint intrinsic to such models limits their flexibility in covering scenes from multiple directions simultaneously. We present Pano2World, which takes a single indoor panorama as input and directly outputs a persistent, explorable 3D Gaussian scene. Given the source panorama, Pano2World first reconstructs a coarse 3D Gaussian proxy and renders it at adaptively sampled nearby poses to obtain geometrically aligned guidance panoramas; a panoramic diffusion model then jointly denoises all target views via View-Aware Attention Routing, where each target view simultaneously receives geometric constraints from its corresponding guidance panorama and global semantic guidance from the source panorama, naturally enforcing cross-view consistency. To avoid the information loss incurred by decoding the multi-view hidden features formed during joint denoising back to the pixel domain via VAE, we introduce Latent Feature Adapter, a geometry-aware bridge module that directly distills these hidden features into a scene latent, subsequently decoded into the final 3D Gaussian scene. Experiments demonstrate that Pano2World significantly outperforms existing methods on the multi-position panoramic novel-view synthesis benchmark.",
+      "title": "GaussianFusion: Unified 3D Gaussian Representation for Multi-Modal Fusion Perception",
+      "url": "https://arxiv.org/abs/2607.00746",
+      "excerpt": "The bird's-eye view (BEV) representation enables multi-sensor features to be fused within a unified space, serving as the primary approach for achieving comprehensive 3D perception. However, the discrete grid representation of BEV leads to significant detail loss and limits feature alignment and cross-modal information interaction in multimodal fusion perception. In this work, we break from the conventional BEV paradigm and propose a new universal framework for multi-modal fusion based on 3D Gaussian representation. This approach naturally unifies multi-modal features within a shared and continuous 3D Gaussian space, effectively preserving edge and fine texture details. To achieve this, we design a novel forward-projection-based multi-modal Gaussian initialization module and a shared cross-modal Gaussian encoder that iteratively updates Gaussian properties based on an attention mechanism. GaussianFusion is inherently a task-agnostic model, with its unified Gaussian representation naturally supporting various 3D perception tasks. Extensive experiments demonstrate the generality and robustness of GaussianFusion. On the nuScenes dataset, it outperforms the 3D object detection baseline BEVFusion by 2.6 NDS. Its variant surpasses GaussFormer on 3D semantic occupancy with 1.55 mIoU improvement while using only 30% of the Gaussians and achieving a 450% speedup.",
       "publishedAt": "2026-07-03T04:00:00.000Z",
       "category": "tech",
       "meta": "world-model",
-      "content": "A single panorama captures the full visual sphere from one camera center, yet confines users to looking around in place without enabling true scene exploration. Converting a single panorama into a persistent, renderable 3D representation for free-viewpoint navigation has attracted growing interest; existing methods either adopt iterative per-view completion that propagates inpainting results to update the underlying geometry, leading to progressive error accumulation and cumbersome multi-step pipelines, or leverage the temporal consistency priors of video generation models, yet the continuous-trajectory constraint intrinsic to such models limits their flexibility in covering scenes from multiple directions simultaneously. We present Pano2World, which takes a single indoor panorama as input and directly outputs a persistent, explorable 3D Gaussian scene. Given the source panorama, Pano2World first reconstructs a coarse 3D Gaussian proxy and renders it at adaptively sampled nearby poses to obtain geometrically aligned guidance panoramas; a panoramic diffusion model then jointly denoises all target views via View-Aware Attention Routing, where each target view simultaneously receives geometric constraints from its corresponding guidance panorama and global semantic guidance from the source panorama, naturally enforcing cross-view consistency. To avoid the information loss incurred by decoding the multi-view hidden features formed during joint denoising back to the pixel domain via VAE, we introduce Latent Feature Adapter, a geometry-aware bridge module that directly distills these hidden features into a scene latent, subsequently decoded into the final 3D Gaussian scene. Experiments demonstrate that Pano2World significantly outperforms existing methods on the multi-position panoramic novel-view synthesis benchmark.",
-      "authors": "Zhenjia Li, Jinrang Jia, Yifeng Shi",
+      "content": "The bird's-eye view (BEV) representation enables multi-sensor features to be fused within a unified space, serving as the primary approach for achieving comprehensive 3D perception. However, the discrete grid representation of BEV leads to significant detail loss and limits feature alignment and cross-modal information interaction in multimodal fusion perception. In this work, we break from the conventional BEV paradigm and propose a new universal framework for multi-modal fusion based on 3D Gaussian representation. This approach naturally unifies multi-modal features within a shared and continuous 3D Gaussian space, effectively preserving edge and fine texture details. To achieve this, we design a novel forward-projection-based multi-modal Gaussian initialization module and a shared cross-modal Gaussian encoder that iteratively updates Gaussian properties based on an attention mechanism. GaussianFusion is inherently a task-agnostic model, with its unified Gaussian representation naturally supporting various 3D perception tasks. Extensive experiments demonstrate the generality and robustness of GaussianFusion. On the nuScenes dataset, it outperforms the 3D object detection baseline BEVFusion by 2.6 NDS. Its variant surpasses GaussFormer on 3D semantic occupancy with 1.55 mIoU improvement while using only 30% of the Gaussians and achieving a 450% speedup.",
+      "authors": "Xiao Zhao, Chang Liu, Mingxu Zhu, Zheyuan Zhang, Linna Song, Qingliang Luo, Chufan Guo, Kuifeng Su",
       "source": "arXiv Papers",
-      "summary": "Pano2World将单张全景图转换为统一的3D可渲染表示，支持自由视点导航。通过多视图序列端到端生成，突破全景图仅能原地观看的限制。"
+      "summary": "提出GaussianFusion，用3D高斯表示替代离散BEV网格，统一多模态传感器特征融合，提升3D感知精度的细节保持与跨模态对齐。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1616,59 +1684,20 @@
       "content": "Contrastive pre-training has propelled video-text alignment, yet models often inherit the critical limitations of their image-text predecessors like CLIP, resulting in entangled representations. These challenges are severely exacerbated by two fundamental properties in the video domain: Temporal Misalignment, where textual descriptions often correlate only to specific, constrained temporal windows, leaving other frames text-irrelevant; and Semantic Asymmetry, which dictates a sparse, bidirectional, and non-equivalent relevance between frame-level visual details and caption-level concepts. This failure persists whether captions are short and temporally disjoint, creating ambiguity, or long and detailed, fostering entanglement between static objects and their temporal evolution. In this paper, we establish theoretical conditions that enable flexible alignment between video and text representations across the temporal dimension and at varying levels of granularity. Building on these theoretical insights, we introduce MoVA, Modular Long Video-Text Alignment, which learns dual asymmetric projections: a text-side projection that adaptively selects frame-aware subspaces of the caption, and a video-side projection that disentangles text-relevant visual concepts. Our framework ensures that the model can preserve global cross-modal semantics while disentangling evolving, frame-specific concepts and scale naturally to long captions and videos. Empirical evaluations show that MoVA outperforms existing methods in multiple video-text alignment tasks, demonstrating the effectiveness of our method.",
       "authors": "Peiyuan Zhu, Shaoan Xie, Zijian Li, Yifan Shen, Namrata Deka, Harsh Shrivastava, Guangyi Chen, Kun Zhang",
       "source": "arXiv Papers",
-      "summary": "MoVA提出非对称双投影模块，解决长视频-文本对比对齐中的时间错位与语义冗余问题，相比对称模型（如CLIP）更有效地处理视频特有的复杂表征。"
+      "summary": "提出MoVA，非对称双投影模块用于长视频-文本对齐，解决CLIP继承的时域误对齐与输入冗余问题，提升对比学习表征质量。"
     },
     {
       "sourceId": "arxiv-papers",
-      "title": "TrajLoc: Trajectory-Attention Localization for Multi-Object Motion Control",
-      "url": "https://arxiv.org/abs/2607.00861",
-      "excerpt": "Controlling the motion of multiple objects in image-to-video (I2V) generation requires preserving object identities while enforcing adherence to distinct target trajectories. This becomes particularly challenging as the number of objects increases and their paths intersect or occlude one another. Existing approaches entangle multiple trajectories within a shared, dense conditioning signal, making object-level correspondence difficult to preserve in crowded scenes. We depart from this paradigm and enforce a strict, per object spatial constraint that isolates instances independently. Our method, TrajLoc, achieves this directly within the attention layers by substituting the cross-attention weights of each object token with a Gaussian heatmap centered on its target location at every frame. The same per object token interface carries trajectory and depth through a learned embedding and preserves identity by encoding first frame appearance in place of an object token. Evaluations across six datasets, featuring up to 20 simultaneously controlled objects and out of distribution real world scenes, demonstrate that our method consistently improves both visual fidelity and trajectory adherence. Applied to two architecturally distinct backbones (CogVideoX 5B and WaN 2.1 14B), our approach achieves average gains of +4.3 dB PSNR and a 51% reduction in trajectory end point error compared to the strongest baselines. Project page: https://sela-omer.github.io/traj-loc/",
+      "title": "Learning Cardiac Motion Priors for Implicit Neural Representations",
+      "url": "https://arxiv.org/abs/2607.00955",
+      "excerpt": "Implicit neural representations (INRs) are well suited to cardiac motion estimation, providing continuous, compact representations of motion fields. However, fitting an INR to each image sequence is time-consuming and sensitive to the optimisation trajectory. Learned priors can help guide optimisation towards plausible motion fields and enable faster adaptation, but learning priors for cardiac motion INRs remains under-explored. In this work, we compare four strategies for learning cardiac motion priors, including a population prior learned by joint optimisation, a consensus prior obtained by weight averaging, auto-decoders, and meta-learning. Using short-axis tagged cardiac magnetic resonance images from the UK Biobank, we evaluate their impact on tracking accuracy, motion behaviour, and adaptation trajectory. All learned priors substantially improved early adaptation performance compared with random initialisation. While the simple consensus prior was effective, auto-decoders recovered large deformations faster during early adaptation. Meta-learning achieved strong early performance and maintained the best adaptation trajectory over 50 iterations.",
       "publishedAt": "2026-07-03T04:00:00.000Z",
       "category": "tech",
-      "meta": "video",
-      "content": "Controlling the motion of multiple objects in image-to-video (I2V) generation requires preserving object identities while enforcing adherence to distinct target trajectories. This becomes particularly challenging as the number of objects increases and their paths intersect or occlude one another. Existing approaches entangle multiple trajectories within a shared, dense conditioning signal, making object-level correspondence difficult to preserve in crowded scenes. We depart from this paradigm and enforce a strict, per object spatial constraint that isolates instances independently. Our method, TrajLoc, achieves this directly within the attention layers by substituting the cross-attention weights of each object token with a Gaussian heatmap centered on its target location at every frame. The same per object token interface carries trajectory and depth through a learned embedding and preserves identity by encoding first frame appearance in place of an object token. Evaluations across six datasets, featuring up to 20 simultaneously controlled objects and out of distribution real world scenes, demonstrate that our method consistently improves both visual fidelity and trajectory adherence. Applied to two architecturally distinct backbones (CogVideoX 5B and WaN 2.1 14B), our approach achieves average gains of +4.3 dB PSNR and a 51% reduction in trajectory end point error compared to the strongest baselines. Project page: https://sela-omer.github.io/traj-loc/",
-      "authors": "Omer Sela, Inbar Huberman-Spiegelglas, Michael Rotman, Sagie Benaim, Avi Ben-Cohen",
+      "meta": "motion",
+      "content": "Implicit neural representations (INRs) are well suited to cardiac motion estimation, providing continuous, compact representations of motion fields. However, fitting an INR to each image sequence is time-consuming and sensitive to the optimisation trajectory. Learned priors can help guide optimisation towards plausible motion fields and enable faster adaptation, but learning priors for cardiac motion INRs remains under-explored. In this work, we compare four strategies for learning cardiac motion priors, including a population prior learned by joint optimisation, a consensus prior obtained by weight averaging, auto-decoders, and meta-learning. Using short-axis tagged cardiac magnetic resonance images from the UK Biobank, we evaluate their impact on tracking accuracy, motion behaviour, and adaptation trajectory. All learned priors substantially improved early adaptation performance compared with random initialisation. While the simple consensus prior was effective, auto-decoders recovered large deformations faster during early adaptation. Meta-learning achieved strong early performance and maintained the best adaptation trajectory over 50 iterations.",
+      "authors": "Andrew Bell, George Webber, Andrew P King, Steffen E Petersen, Muhummad Sohaib Nazir, Alistair Young",
       "source": "arXiv Papers",
-      "summary": "TrajLoc提出轨迹注意力定位方法，在图像到视频生成中控制多目标运动。通过轨迹注意力保持目标身份并遵循指定路径，有效处理目标增多和路径交叉遮挡。"
-    },
-    {
-      "sourceId": "arxiv-papers",
-      "title": "EFlow: Learning Evidence Flow for Long-Video Reasoning with Adaptive Reflection",
-      "url": "https://arxiv.org/abs/2607.00867",
-      "excerpt": "Long-video reasoning is fundamentally constrained by how models acquire and utilize visual evidence. Existing tool-augmented video frameworks often interleave temporal grounding and answer reasoning within a single trajectory, causing early semantic hypotheses to bias evidence localization. We term this failure mode premature semantic commitment, where biased grounding retrieves incomplete evidence and incomplete evidence further reinforces incorrect reasoning. To address this issue, we propose EFlow, an evidence-first video reasoning framework built upon Qwen3-VL. EFlow explicitly separates temporal grounding and logical reasoning through CoT for Temporal Grounding and CoT for Reasoning, enabling the model to retrieve relevant evidence before answer inference. In addition, EFlow introduces a confidence-aware reflection mechanism that re-evaluates the full video when retrieved evidence is potentially insufficient. We further construct dedicated trajectory datasets and train EFlow through supervised fine-tuning, reinforcement learning, and reinforcement fine-tuning. Extensive experiments across five video understanding benchmarks demonstrate that EFlow consistently improves long-video reasoning performance.",
-      "publishedAt": "2026-07-03T04:00:00.000Z",
-      "category": "tech",
-      "meta": "video",
-      "content": "Long-video reasoning is fundamentally constrained by how models acquire and utilize visual evidence. Existing tool-augmented video frameworks often interleave temporal grounding and answer reasoning within a single trajectory, causing early semantic hypotheses to bias evidence localization. We term this failure mode premature semantic commitment, where biased grounding retrieves incomplete evidence and incomplete evidence further reinforces incorrect reasoning. To address this issue, we propose EFlow, an evidence-first video reasoning framework built upon Qwen3-VL. EFlow explicitly separates temporal grounding and logical reasoning through CoT for Temporal Grounding and CoT for Reasoning, enabling the model to retrieve relevant evidence before answer inference. In addition, EFlow introduces a confidence-aware reflection mechanism that re-evaluates the full video when retrieved evidence is potentially insufficient. We further construct dedicated trajectory datasets and train EFlow through supervised fine-tuning, reinforcement learning, and reinforcement fine-tuning. Extensive experiments across five video understanding benchmarks demonstrate that EFlow consistently improves long-video reasoning performance.",
-      "authors": "Wenhao Zhang, Kuanwei Lin, Xuyi Yang, Wei Gao, Ge Li",
-      "source": "arXiv Papers",
-      "summary": "EFlow将长视频推理中的证据获取与答案推理解耦为证据流，通过自适应反思机制避免早期语义假设对证据定位的偏差，提升长视频问答准确性。"
-    },
-    {
-      "sourceId": "arxiv-papers",
-      "title": "Improving Sparse-View 3DGS Generalization via Flat Minima Optimization",
-      "url": "https://arxiv.org/abs/2607.00885",
-      "excerpt": "Recent advances in neural rendering have established 3D Gaussian Splatting (3DGS) as a highly efficient representation for novel view synthesis, enabling fast training and real-time rendering with strong fidelity. However, when supervision is limited to sparse input views, 3DGS tends to overfit to the observed images and generalize poorly to unseen viewpoints. We address this challenge from the perspective of flat minima (FM) optimization, which seeks solutions that remain stable under small parameter perturbations. Viewing Gaussian parameters as trainable weights, we adapt FM principles to the geometric and dynamic nature of 3DGS with a lightweight training framework. Our method regularizes optimization with controlled Gaussian perturbations that account for each Gaussian's anisotropy and the training progress, preserving fine details while improving robustness to sparse-view overfitting. To further stabilize this flat minima optimization process, we introduce periodic reinitialization, which temporarily returns non-positional parameters to their initial states for a short window. Together, these techniques integrate seamlessly into existing 3DGS pipelines without architectural changes. Experiments on LLFF and Mip-NeRF360 datasets demonstrate improved quantitative metrics and perceptual quality under sparse-view supervision, producing reconstructions that are sharper, more stable, and better generalized to novel viewpoints.",
-      "publishedAt": "2026-07-03T04:00:00.000Z",
-      "category": "tech",
-      "meta": "world-model",
-      "content": "Recent advances in neural rendering have established 3D Gaussian Splatting (3DGS) as a highly efficient representation for novel view synthesis, enabling fast training and real-time rendering with strong fidelity. However, when supervision is limited to sparse input views, 3DGS tends to overfit to the observed images and generalize poorly to unseen viewpoints. We address this challenge from the perspective of flat minima (FM) optimization, which seeks solutions that remain stable under small parameter perturbations. Viewing Gaussian parameters as trainable weights, we adapt FM principles to the geometric and dynamic nature of 3DGS with a lightweight training framework. Our method regularizes optimization with controlled Gaussian perturbations that account for each Gaussian's anisotropy and the training progress, preserving fine details while improving robustness to sparse-view overfitting. To further stabilize this flat minima optimization process, we introduce periodic reinitialization, which temporarily returns non-positional parameters to their initial states for a short window. Together, these techniques integrate seamlessly into existing 3DGS pipelines without architectural changes. Experiments on LLFF and Mip-NeRF360 datasets demonstrate improved quantitative metrics and perceptual quality under sparse-view supervision, producing reconstructions that are sharper, more stable, and better generalized to novel viewpoints.",
-      "authors": "Kangmin Seo, Sangeek Hyun, MinKyu Lee, Jae-Pil Heo",
-      "source": "arXiv Papers",
-      "summary": "提出平坦最小值优化方法提升稀疏视图下3D高斯泼溅（3DGS）的泛化能力。通过寻找损失景观的平坦区域，减少对有限视图的过拟合，改善新视图合成质量。"
-    },
-    {
-      "sourceId": "arxiv-papers",
-      "title": "DeWorldSG: Depth-Aware 3D Semantic Scene Graph Generation via World-Model Priors",
-      "url": "https://arxiv.org/abs/2607.00889",
-      "excerpt": "We present DeWorldSG, a novel framework that generates spatio-temporally robust 3D Semantic Scene Graphs from RGB-D sequences. Existing methods often struggle to construct reliable 3D scene graphs due to unstable 3D object representations and missing relations caused by frame-wise inference. DeWorldSG addresses these issues by estimating instance-level geometric 3D Gaussian distributions through depth-guided filtering and representing each object as a probabilistic 3D node rather than a single projected point. To mitigate relational sparsity from frame-wise inference, our framework further aggregates spatiotemporal evidence across object pairs and refines relations using contextual priors derived from a world model (V-JEPA 2). Experiments on the 3DSSG and ReplicaSSG datasets demonstrate state-of-the-art (SoTA) performance in both object and predicate prediction, while producing temporally consistent scene structures. In particular, our method improves triplet recall by 77.4% and predicate recall by 23.2% over prior SoTA approaches, making it suitable for robotic manipulation and AR applications. Our code and models are open-sourced.",
-      "publishedAt": "2026-07-03T04:00:00.000Z",
-      "category": "tech",
-      "meta": "world-model",
-      "content": "We present DeWorldSG, a novel framework that generates spatio-temporally robust 3D Semantic Scene Graphs from RGB-D sequences. Existing methods often struggle to construct reliable 3D scene graphs due to unstable 3D object representations and missing relations caused by frame-wise inference. DeWorldSG addresses these issues by estimating instance-level geometric 3D Gaussian distributions through depth-guided filtering and representing each object as a probabilistic 3D node rather than a single projected point. To mitigate relational sparsity from frame-wise inference, our framework further aggregates spatiotemporal evidence across object pairs and refines relations using contextual priors derived from a world model (V-JEPA 2). Experiments on the 3DSSG and ReplicaSSG datasets demonstrate state-of-the-art (SoTA) performance in both object and predicate prediction, while producing temporally consistent scene structures. In particular, our method improves triplet recall by 77.4% and predicate recall by 23.2% over prior SoTA approaches, making it suitable for robotic manipulation and AR applications. Our code and models are open-sourced.",
-      "authors": "Seok-Young Kim, Abdelrahman Elskhawy, Taewook Ha, Dooyoung Kim, Eunjae Shin, Benjamin Busam, Woontack Woo",
-      "source": "arXiv Papers",
-      "summary": "DeWorldSG利用世界模型先验从RGB-D序列生成时空鲁棒的3D语义场景图，解决了逐帧推理导致的3D目标表示不稳定和关系缺失问题。"
+      "summary": "为隐式神经表示（INR）学习心脏运动先验，加速针对每个序列的优化过程，提升运动场估计的效率与稳定性。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1681,7 +1710,7 @@
       "content": "Audio-driven talking head synthesis has achieved impressive progress in lip synchronization and visual quality, yet generating expressive emotional avatars with controllable intensity remains challenging, especially under real-time constraints. In this paper, we present GaussianEmoTalker, an audio-driven framework for real-time emotional talking head synthesis based on 3D Gaussian Splatting. Instead of directly predicting the final emotional avatar from speech, we formulate emotional animation as a neutral-to-emotional residual deformation problem. GaussianEmoTalker first constructs an identity-specific neutral talking space with GaussianBlendshapes, which provides high-fidelity Gaussian attributes and phoneme-synchronized neutral motion. It then predicts an emotion-conditioned residual deformation by combining mesh displacement cues, audio features, emotion categories, and intensity encodings. To fuse these heterogeneous signals, we introduce a spatial-audio-emotion attention module that estimates the offsets of Gaussian attributes for expressive and temporally stable rendering. Extensive experiments demonstrate that GaussianEmoTalker achieves competitive video quality, accurate lip synchronization, controllable emotional expression, and real-time rendering compared with recent emotional talking head methods. Our project page is available at https://njust-yang.github.io/GaussianEmoTalker.github.io/",
       "authors": "Haijie Yang, Zhenyu Zhang, Yixuan Dong, Jianjun Qian, Jian Yang",
       "source": "arXiv Papers",
-      "summary": "GaussianEmoTalker结合音频驱动和基于混合形状的3D高斯泼溅，实现实时情感说话头合成。支持对笑容等情绪强度的精细控制，同时保持唇形同步。"
+      "summary": "提出GaussianEmoTalker，基于3D高斯泼溅的实时情感说话头合成，支持音频驱动与blendshape控制，实现逼真表情及强度控制。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1694,46 +1723,7 @@
       "content": "Video Large Language Models (VideoLLMs) have shown strong progress in video understanding, yet they still suffer from hallucinations that are inconsistent with visual evidence. Existing benchmarks mainly focus on object hallucination or coarse action perception, leaving a key video-specific problem underexplored: motion hallucination, in which models infer human motions that are absent from the video. We present MoHallBench, a benchmark for diagnosing motion hallucination in VideoLLMs. MoHallBench systematically evaluates three major sources of hallucination: co-occurrence priors, sequential inference, and similarity confusion. It contains 11,306 video clips and 40,493 question-answer pairs, covering binary-choice, multiple-choice, and generative settings. We further introduce a bi-directional questioning protocol with bias-aware metrics to reduce affirmation bias in binary evaluation. Experiments on ten recent open-source VideoLLMs reveal a clear decoupling between action recognition and hallucination resistance, as models that perform well on positive action recognition often fail on adversarial negatives. Among all settings, sequential inference hallucination is the most severe, showing that current models tend to over-infer expected outcomes from partial motion cues. Our analyses further confirm that stronger priors and finer-grained similarity substantially amplify hallucination. We hope MoHallBench can facilitate future evaluation and mitigation of motion hallucination in VideoLLMs.",
       "authors": "Jiale Li, Sihan Chen, Mengyuan Liu",
       "source": "arXiv Papers",
-      "summary": "MoHallBench构建专门评估视频大语言模型（VideoLLM）运动幻觉的基准，揭示模型在动作连续性、速度等运动特征上存在的幻觉问题，补充现有目标幻觉评估的不足。"
-    },
-    {
-      "sourceId": "arxiv-papers",
-      "title": "World from Motion: Generative Dynamic Gaussian Reconstruction from Monocular Video",
-      "url": "https://arxiv.org/abs/2607.01202",
-      "excerpt": "We present World from Motion, a method for generating freely renderable dynamic 3D Gaussian representations from monocular videos. Our approach conditions a video model on dense, pixel-aligned renderings that encode appearance, geometry, and 3D scene motion along both input and target camera trajectories to correct rendering artifacts and fill in missing regions from an initial reconstruction. To train this model, we construct a dataset of aligned multiview video pairs and dynamic 3DGS representations, with simulated artifacts characteristic of monocular reconstruction. At test time, we distill the model's generations, including newly observed regions and motions, back into a single consistent, high-quality dynamic 3DGS, improving both novel-view synthesis and the underlying 3D motion. Our method sets a new state of the art in 4D reconstruction and seamlessly generalizes to in-the-wild videos with large viewpoint changes and dynamic motions.",
-      "publishedAt": "2026-07-03T04:00:00.000Z",
-      "category": "tech",
-      "meta": "world-model",
-      "content": "We present World from Motion, a method for generating freely renderable dynamic 3D Gaussian representations from monocular videos. Our approach conditions a video model on dense, pixel-aligned renderings that encode appearance, geometry, and 3D scene motion along both input and target camera trajectories to correct rendering artifacts and fill in missing regions from an initial reconstruction. To train this model, we construct a dataset of aligned multiview video pairs and dynamic 3DGS representations, with simulated artifacts characteristic of monocular reconstruction. At test time, we distill the model's generations, including newly observed regions and motions, back into a single consistent, high-quality dynamic 3DGS, improving both novel-view synthesis and the underlying 3D motion. Our method sets a new state of the art in 4D reconstruction and seamlessly generalizes to in-the-wild videos with large viewpoint changes and dynamic motions.",
-      "authors": "Liyuan Zhu, Shengyu Huang, Amrita Mazumdar, Tianye Li, Zan Gojcic, Gordon Wetzstein, Iro Armeni, Shalini De Mello, Alex Trevithick",
-      "source": "arXiv Papers",
-      "summary": "World from Motion从单目视频生成可渲染的动态3D高斯表示。通过视频模型以密集像素对齐渲染为条件，同时编码外观、几何和沿相机轨迹的3D场景运动。"
-    },
-    {
-      "sourceId": "arxiv-papers",
-      "title": "Ink3D: Sculpting 3D Assets with Extremely Complex Textures via Video Generative Models",
-      "url": "https://arxiv.org/abs/2607.01222",
-      "excerpt": "Recent 3D generative models can synthesize high-quality geometry but often struggle to reproduce intricate textures from reference images, largely due to the scarcity of large-scale 3D training data with rich surface appearance. In contrast, visual generative models are trained on datasets several orders of magnitude larger and excel at modeling complex visual patterns. Motivated by this gap, we introduce Ink3D, a framework that bridges 3D generation with large-scale video generative models to synthesize extremely complex textures. Ink3D first reconstructs a white-mesh geometry using an off-the-shelf 3D generation model. It then employs OrbitPainter, a conditional video generative model, to produce dense orbit-scan videos capturing object appearance across viewpoints. To convert these views into coherent textures, we introduce TextureOptimizer, a neural baking module that integrates dense multi-view observations while mitigating geometry inconsistencies arising from video generation. By decoupling geometry and texture synthesis and leveraging large-scale pretrained video priors, Ink3D enables significantly richer and more faithful texture generation than prior approaches.",
-      "publishedAt": "2026-07-03T04:00:00.000Z",
-      "category": "tech",
-      "meta": "world-model",
-      "content": "Recent 3D generative models can synthesize high-quality geometry but often struggle to reproduce intricate textures from reference images, largely due to the scarcity of large-scale 3D training data with rich surface appearance. In contrast, visual generative models are trained on datasets several orders of magnitude larger and excel at modeling complex visual patterns. Motivated by this gap, we introduce Ink3D, a framework that bridges 3D generation with large-scale video generative models to synthesize extremely complex textures. Ink3D first reconstructs a white-mesh geometry using an off-the-shelf 3D generation model. It then employs OrbitPainter, a conditional video generative model, to produce dense orbit-scan videos capturing object appearance across viewpoints. To convert these views into coherent textures, we introduce TextureOptimizer, a neural baking module that integrates dense multi-view observations while mitigating geometry inconsistencies arising from video generation. By decoupling geometry and texture synthesis and leveraging large-scale pretrained video priors, Ink3D enables significantly richer and more faithful texture generation than prior approaches.",
-      "authors": "Yue Han, Chong Li, Zhening Liu, Cong Huang, Fang Deng, Yong Liu, Fangyun Wei, Yan Lu",
-      "source": "arXiv Papers",
-      "summary": "Ink3D利用视频生成模型为3D资产雕刻极其复杂的纹理。借助视频模型大规模训练数据，弥补3D纹理数据的稀缺，生成细节丰富的表面外观。"
-    },
-    {
-      "sourceId": "arxiv-papers",
-      "title": "OmniFall: From Staged Through Synthetic to Wild, A Unified Multi-Domain Dataset for Robust Fall Detection",
-      "url": "https://arxiv.org/abs/2505.19889",
-      "excerpt": "Visual fall detection models are usually trained on small, staged datasets. Their real-world utility remains unclear; such data lacks diversity and evaluation protocols differ from paper to paper. We propose OmniFall, a unified benchmark of 15k videos (80 hours) with frame-level annotations in a single 16-class taxonomy. It spans three domains: OF-Staged unifies eight staged datasets with cross-subject and cross-view splits; OF-Synthetic adds 12k videos (17 h) with controlled demographic and environmental diversity; and OF-In-the-Wild provides a test-only set of genuine accident videos. We evaluate fine-tuned models as well as much larger zero-shot multimodal LLMs. On in-the-wild fall events, both do comparably well. The clinically critical fallen state is where they part: zero-shot models keep confusing fallen with lying, whereas models fine-tuned on synthetic data with explicit fallen-state scenes do substantially better. We release the unified annotations, the synthetic data, and the in-the-wild test set to foster the development of fall and fallen-state detectors for uncontrolled environments. Dataset: https://hf.co/datasets/simplexsigil2/omnifall",
-      "publishedAt": "2026-07-03T04:00:00.000Z",
-      "category": "tech",
-      "meta": "motion",
-      "content": "Visual fall detection models are usually trained on small, staged datasets. Their real-world utility remains unclear; such data lacks diversity and evaluation protocols differ from paper to paper. We propose OmniFall, a unified benchmark of 15k videos (80 hours) with frame-level annotations in a single 16-class taxonomy. It spans three domains: OF-Staged unifies eight staged datasets with cross-subject and cross-view splits; OF-Synthetic adds 12k videos (17 h) with controlled demographic and environmental diversity; and OF-In-the-Wild provides a test-only set of genuine accident videos. We evaluate fine-tuned models as well as much larger zero-shot multimodal LLMs. On in-the-wild fall events, both do comparably well. The clinically critical fallen state is where they part: zero-shot models keep confusing fallen with lying, whereas models fine-tuned on synthetic data with explicit fallen-state scenes do substantially better. We release the unified annotations, the synthetic data, and the in-the-wild test set to foster the development of fall and fallen-state detectors for uncontrolled environments. Dataset: https://hf.co/datasets/simplexsigil2/omnifall",
-      "authors": "David Schneider, Zdravko Marinov, Moritz Mistol, Zeyun Zhong, Alexander Jaus, Rodi D\\\"uger, Rafael Baur, M. Saquib Sarfraz, Rainer Stiefelhagen",
-      "source": "arXiv Papers",
-      "summary": "OmniFall构建统一多领域跌倒检测基准，包含15k段共80小时视频及帧级标注，覆盖模仿、合成和真实场景，以评估模型在多样环境下的泛化能力。"
+      "summary": "构建MoHallBench基准，评估视频大模型在运动感知上的幻觉问题，区分物体幻觉与精细运动理解，填补现有基准空白。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1746,7 +1736,7 @@
       "content": "Reconstructing biomechanically realistic 3D human motion - recovering both kinematics (motion) and kinetics (forces) - is a critical challenge. While marker-based systems are lab-bound and slow, popular monocular methods use oversimplified, anatomically inaccurate models (e.g., SMPL) and ignore physics, fundamentally limiting their biomechanical fidelity. In this work, we introduce MonoMSK, a hybrid framework that bridges data-driven learning and physics-based simulation for biomechanically realistic 3D human motion estimation from monocular video. MonoMSK jointly recovers both kinematics (motions) and kinetics (forces and torques) through an anatomically accurate musculoskeletal model. By integrating transformer-based inverse dynamics with differentiable forward kinematics and dynamics layers governed by ODE-based simulation, MonoMSK establishes a physics-regulated inverse-forward loop that enforces biomechanical causality and physical plausibility. A novel forward-inverse consistency loss further aligns motion reconstruction with the underlying kinetic reasoning. Experiments on BML-MoVi, BEDLAM, and OpenCap show that MonoMSK significantly outperforms state-of-the-art methods in kinematic accuracy, while for the first time enabling precise monocular kinetics estimation.",
       "authors": "Farnoosh Koleini, Hongfei Xue, Ahmed Helmy, Pu Wang",
       "source": "arXiv Papers",
-      "summary": "MonoMSK从单目视频估计3D人体肌肉骨骼动态，同时恢复运动学（运动）与动力学（力），突破了SMPL等简化模型忽略物理力的局限，实现生物力学真实重建。"
+      "summary": "提出MonoMSK，从单目视频估计3D肌肉骨骼动力学，同时恢复运动学与动力学，克服SMPL模型解剖不准确的问题。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1759,7 +1749,7 @@
       "content": "Skeleton-based action recognition is widely applied in sensor-based systems, including human-computer interaction and intelligent surveillance. However, typical sensors produce sparse and discrete joint coordinates, often leading to the loss of fine-grained spatiotemporal information during dynamic movements. Furthermore, predefined physical topologies restrict modeling potential long-range dependencies. To address these challenges, we propose KGS-GCN, which integrates kinematics-driven Gaussian splatting and probabilistic topology within a graph convolutional network. A Gaussian splatting module constructs anisotropic covariance matrices by extracting instantaneous joint velocity vectors, rendering sparse skeleton sequences into multi-view continuous heatmaps rich in spatiotemporal semantics. Additionally, a probabilistic topology construction strategy transcends physical connectivity limitations by utilizing the Bhattacharyya distance to quantify statistical correlations between joint Gaussian distributions, generating an adaptive prior adjacency matrix. Finally, the lightweight multi-view rendering branch and topological GCN backbone are unified through a visual context gating mechanism, enabling seamless fusion of continuous dynamic cues with structural priors while maintaining high computational efficiency, requiring only 1.4M parameters and 1.3 GFLOPs. Extensive experiments on multiple benchmark datasets demonstrate that KGS-GCN significantly enhances the modeling of complex spatiotemporal dynamics and achieves competitive performance at low computational cost, establishing an efficient paradigm for improving the perceptual robustness of low-fidelity sensor data.",
       "authors": "Yuhan Chen, Yicui Shi, Guofa Li, Liping Zhang, Jie Li, Jiaxin Gao, Wenbo Chu",
       "source": "arXiv Papers",
-      "summary": "KGS-GCN引入运动学驱动的高斯泼溅和概率拓扑图，增强稀疏离散骨架的时空表示，保留细粒度运动信息，提升骨架动作识别准确率。"
+      "summary": "提出KGS-GCN，将高斯泼溅运动学建模与概率拓扑引入骨架动作识别，从稀疏关节坐标中补偿细粒度时空信息，提升识别精度。"
     },
     {
       "sourceId": "arxiv-papers",
@@ -1772,7 +1762,20 @@
       "content": "Self-collision remains a persistent challenge in SMPL-based human pose estimation and motion generation. Under extreme articulations or stochastic motion synthesis, generated meshes frequently exhibit self-penetrations, leading to physically implausible results. We propose PoseShield, a neural collision constraint defined directly in SMPL pose space. We formulate collision correction as a constrained optimization problem and connect the learned constraint with the Eikonal equation. Enforcing Eikonal regularization ensures non-vanishing gradients near the collision boundary, improving numerical stability and robustness of the optimization process. Unlike prior methods that operate in the mesh space or rely on heuristic penalties, our approach operates directly in the low-dimensional space of human poses and is theoretically grounded. The same learned constraint extends to human motion sequences, providing a generator-agnostic post-hoc collision corrector without retraining the underlying motion model. Experiments on a newly constructed SMPL pose benchmark show that our method achieves a 95.8% success rate and outperforms state-of-the-art baselines.",
       "authors": "Zhengyuan Li, Zeyun Deng, Yifan Shen, Liangyan Gui, Miaolan Xie, Joseph Campbell, Xifeng Gao, Kui Wu, Zherong Pan, Aniket Bera",
       "source": "arXiv Papers",
-      "summary": "PoseShield提出神经碰撞场，用于SMPL人体姿态估计和运动生成中的自碰撞解析。通过预测网格穿透区域并修正姿态，生成物理合理的无穿透人体网格。"
+      "summary": "提出PoseShield，神经碰撞场用于SMPL人体自碰撞解析，在极端姿态或随机生成下消除网格穿透，保证物理合理性。"
+    },
+    {
+      "sourceId": "arxiv-papers",
+      "title": "3D Scene-Adaptive Trajectory-Controllable Human Image Animation with Camera Movement",
+      "url": "https://arxiv.org/abs/2606.30514",
+      "excerpt": "Human image animation, which aims to generate a video of a reference subject following a provided action sequence, has received increasing research interest. With the development of diffusion-based/flow-based video foundation models, existing animation works have began to upgrade the guidance information from 2D skeleton/pose to 3D modeling conditions. Despite achieving reasonable results, these approaches face challenges in synthesizing trajectory-controllable human motion within natural scene under changed camera views. In this work, we present a scene-adaptive human image animation framework that controls both human motion and camera trajectories within a reconstructed 3D environment for video generation. To achieve this, we first develop a ground-adaptive 3D motion retargeting approach to enable user-friendly motion trajectory control adapting to the changes of elevations of ground and orientations automatically. Then we design a viewpoint-adaptive latent fusion mechanism to inject point-cloud geometric priors through scene-visibility masking into the generative process, providing precise guidance of viewpoint changes under camera control. Experiments on two standard human image animation benchmark datasets demonstrate remarkable improvements of our method over the state of the arts in related video generation metics. Project page: https://robinhood256100.github.io/web-disp",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "category": "tech",
+      "meta": "motion",
+      "content": "Human image animation, which aims to generate a video of a reference subject following a provided action sequence, has received increasing research interest. With the development of diffusion-based/flow-based video foundation models, existing animation works have began to upgrade the guidance information from 2D skeleton/pose to 3D modeling conditions. Despite achieving reasonable results, these approaches face challenges in synthesizing trajectory-controllable human motion within natural scene under changed camera views. In this work, we present a scene-adaptive human image animation framework that controls both human motion and camera trajectories within a reconstructed 3D environment for video generation. To achieve this, we first develop a ground-adaptive 3D motion retargeting approach to enable user-friendly motion trajectory control adapting to the changes of elevations of ground and orientations automatically. Then we design a viewpoint-adaptive latent fusion mechanism to inject point-cloud geometric priors through scene-visibility masking into the generative process, providing precise guidance of viewpoint changes under camera control. Experiments on two standard human image animation benchmark datasets demonstrate remarkable improvements of our method over the state of the arts in related video generation metics. Project page: https://robinhood256100.github.io/web-disp",
+      "authors": "Deyin Liu, Jicheng Xu, Lin Yuanbo Wu, Xiaowei Zhao, Xiatian Zhu, Zhe Jin, Anjan Dutta",
+      "source": "arXiv Papers",
+      "summary": "提出3D场景自适应且轨迹可控的人像动画方法，支持相机运动，利用扩散/流基模型生成符合参考人物与动作序列的视频。"
     },
     {
       "sourceId": "tldr-ai",
@@ -1782,7 +1785,7 @@
       "publishedAt": "2026-07-03T00:00:00.000Z",
       "category": "tech",
       "source": "TLDR AI",
-      "summary": "Meta推出Watermelon项目，Anthropic与三星合作芯片，以及自主研究实践的最新进展。"
+      "summary": "Meta推出Watermelon项目，Anthropic与三星达成芯片合作，自动研究实践取得进展，AI领域多项动态。"
     },
     {
       "sourceId": "tldr-ai",
@@ -1792,7 +1795,7 @@
       "publishedAt": "2026-07-02T00:00:00.000Z",
       "category": "tech",
       "source": "TLDR AI",
-      "summary": "Gemini Flash获得升级，Meta发布AI云服务，以及ZCode开发者工具更新。"
+      "summary": "Gemini Flash获得升级，Meta推出AI云服务，ZCode开发者工具上线，AI领域迎来多项更新。"
     },
     {
       "sourceId": "tldr-ai",
@@ -1964,7 +1967,7 @@
       "publishedAt": "2026-07-02T05:44:39.000Z",
       "category": "tech",
       "source": "Smol AI News",
-      "summary": "Fullstack Code Arena将编码智能体评估扩展到数据库、API密钥、部署和结构化工具使用，转向端到端应用交付。LangChain发布LangSmith和OpenWiki。"
+      "summary": "Fullstack Code Arena将编码代理评估扩展到数据库、API密钥等端到端应用；LangChain发布LangSmith统一追踪和OpenWiki自动文档。"
     },
     {
       "sourceId": "smol-ai-news",
@@ -2235,7 +2238,7 @@
       "publishedAt": "2026-07-03T05:11:43.000Z",
       "category": "tech",
       "source": "Latent Space",
-      "summary": "AI工程师世界博览会结束，围绕循环的辩论和AI工程现状报告成为焦点，闭幕主题演讲探讨下一步构建方向。"
+      "summary": "AI工程师世界博览会以关于循环的辩论、AI工程现状报告及闭幕主题演讲收尾，聚焦下一步构建内容。"
     },
     {
       "sourceId": "latent-space",
@@ -2245,7 +2248,7 @@
       "publishedAt": "2026-07-03T00:08:18.000Z",
       "category": "tech",
       "source": "Latent Space",
-      "summary": "Vercel首席软件官Andrew Qu解释其智能体框架eve的创建过程，强调技能、沙盒和智能体可读网站的重要性。"
+      "summary": "Vercel首席软件官Andrew Qu解释代理框架eve的创建过程，强调技能、沙盒和代理可读网站的重要性。"
     },
     {
       "sourceId": "latent-space",
@@ -2255,7 +2258,7 @@
       "publishedAt": "2026-07-02T21:25:14.000Z",
       "category": "tech",
       "source": "Latent Space",
-      "summary": "Adobe正在实验「代理型网站」，根据用户意图动态生成页面。在AIEWF上，Carlos Sanchez讨论了Web的未来。"
+      "summary": "Adobe正在尝试生成式代理网站，根据用户意图动态生成页面；AIEWF上Carlos Sanchez讨论了Web的未来方向。"
     },
     {
       "sourceId": "latent-space",
@@ -2265,7 +2268,7 @@
       "publishedAt": "2026-07-02T14:36:05.000Z",
       "category": "tech",
       "source": "Latent Space",
-      "summary": "Paul Bakaus讨论技能工程，主张在「循环最大化」时代保持人类判断，智能体仍需人类引导。"
+      "summary": "Paul Bakaus讨论Impeccable、人类判断在循环最大化时代的作用，认为代理仍需人类引导和技能工程。"
     },
     {
       "sourceId": "latent-space",
@@ -2275,7 +2278,7 @@
       "publishedAt": "2026-07-02T07:10:14.000Z",
       "category": "tech",
       "source": "Latent Space",
-      "summary": "当天AI领域消息平静，无重大事件发生。"
+      "summary": "当日AI新闻相对平静，未见重大发布或事件，市场关注度较低。"
     },
     {
       "sourceId": "latent-space",
@@ -2285,7 +2288,7 @@
       "publishedAt": "2026-07-02T06:13:49.000Z",
       "category": "tech",
       "source": "Latent Space",
-      "summary": "AI工程师世界博览会中，自主研究引发关于人类能动性的讨论，软件工厂愿景遭遇维护人类理解与控制的反对声音。"
+      "summary": "AI软件工厂愿景遭到捍卫人类理解与控制的发言者质疑，自动研究与人能动性之间存在明显张力。"
     },
     {
       "sourceId": "latent-space",
@@ -2295,7 +2298,7 @@
       "publishedAt": "2026-07-01T23:52:30.000Z",
       "category": "tech",
       "source": "Latent Space",
-      "summary": "Introspection联合创始人Roland Gavrilescu解释自主研究、智能体「食谱」和自我改进循环，强调人类在软件工厂中的核心地位。"
+      "summary": "Introspection联合创始人Roland Gavrilescu解释自动研究、代理配方和自我改进循环，强调人类在软件工厂中的核心地位。"
     },
     {
       "sourceId": "latent-space",
@@ -2305,7 +2308,7 @@
       "publishedAt": "2026-07-01T19:03:44.000Z",
       "category": "tech",
       "source": "Latent Space",
-      "summary": "Cursor的Pauline Brunet介绍其Forward Deployed Engineers团队如何帮助企业实施智能体，构建软件工厂。"
+      "summary": "Cursor公司Pauline Brunet解释前置部署工程师团队如何帮助组织实施代理，实质是建立软件工厂。"
     },
     {
       "sourceId": "latent-space",
@@ -2315,7 +2318,7 @@
       "publishedAt": "2026-07-01T14:42:39.000Z",
       "category": "tech",
       "source": "Latent Space",
-      "summary": "前Llama负责人Evan Feinberg离开Meta加入Genesis Molecular AI进行药物发现，其PEARL模型在零样本OpenBind竞赛中获胜，共折叠技术跨越准确度阈值。"
+      "summary": "前Llama负责人离开Meta转向药物发现；PEARL在零样本OpenBind获胜；共折叠技术突破准确率阈值。"
     },
     {
       "sourceId": "latent-space",
@@ -2424,7 +2427,7 @@
       "publishedAt": "2026-07-02T15:37:08.000Z",
       "category": "tech",
       "source": "MIT Tech Review AI",
-      "summary": "精益六西格玛和BPM等框架曾帮助组织理清运营，AI正被用于进一步提升运营卓越性，通过结构化方式应对混乱。"
+      "summary": "Lean Six Sigma和BPM等框架曾带来运营秩序与质量控制，AI如今被用于推动运营卓越的新阶段。"
     },
     {
       "sourceId": "mit-tech-review-ai",
@@ -2434,7 +2437,7 @@
       "publishedAt": "2026-07-02T12:51:44.000Z",
       "category": "tech",
       "source": "MIT Tech Review AI",
-      "summary": "AI在聊天机器人之外，正在能源、基础设施等领域发挥重要作用，通过运行涡轮机等场景展示其最实质性的用例。"
+      "summary": "AI最重大的应用不在消费端，而在物理基础设施和运营连续性领域，例如与涡轮机协同运行的安全场景。"
     },
     {
       "sourceId": "mit-tech-review-ai",
@@ -2517,7 +2520,7 @@
       "category": "tech",
       "meta": "@RampLabs · 13.4K 粉丝 · 335.4K 阅 · 507 赞 · 45 转",
       "source": "X 推文 (AttentionVC)",
-      "summary": "RampLabs 分享 PorTAL，一种可迁移任务适配器方法，解决 LoRA 等微调方式与特定基座模型绑定、新模型需重新适配的问题，提升 LLM 适配器跨模型复用性。"
+      "summary": "介绍PorTAL方法，解决LoRA等参数高效微调后适配器绑定单一基座模型的问题，使适配器可跨模型迁移，提升复用性。"
     },
     {
       "sourceId": "attentionvc-ai",
@@ -2528,7 +2531,7 @@
       "category": "tech",
       "meta": "@milesdeutscher · 671.1K 粉丝 · 243.8K 阅 · 500 赞 · 73 转",
       "source": "X 推文 (AttentionVC)",
-      "summary": "milesdeutscher 发布 Fable 从入门到精通全指南，涵盖基础设置到高级工作流，声称按步骤操作可 10 倍提升 AI 生产力，适合需快速掌握该工具的用户。"
+      "summary": "Fable 基础指南，涵盖最大化工具价值的关键步骤与技巧，声称可让AI生产力提升10倍，适合新手快速上手。"
     },
     {
       "sourceId": "attentionvc-ai",
@@ -2539,7 +2542,7 @@
       "category": "tech",
       "meta": "@philhchen · 9.1K 粉丝 · 179.1K 阅 · 516 赞 · 34 转",
       "source": "X 推文 (AttentionVC)",
-      "summary": "philhchen 探讨 AI 时代职业建议：学校训练的多是「损失函数」式、有标准答案的问题，而 AI 恰好擅长这类。未来人类核心价值在于定义问题和目标，而非解题。"
+      "summary": "AI时代职业建议：模型擅长有明确损失函数的问题（如学校教育），未来有价值的工作在于那些无法用损失函数定义的模糊任务。"
     },
     {
       "sourceId": "attentionvc-ai",
@@ -2550,7 +2553,7 @@
       "category": "tech",
       "meta": "@ErikVoorhees · 908.5K 粉丝 · 124.8K 阅 · 529 赞 · 103 转",
       "source": "X 推文 (AttentionVC)",
-      "summary": "Venice 创始人 ErikVoorhees 宣布完成 Series A 融资，强调打造私密、不受限的 AI 体验，引用关于思想自由的名言，回应 AI 领域数据控制和信息审查问题。"
+      "summary": "Venice 项目宣布 A 轮融资，专注构建隐私保护、不受限制的AI推理平台，强调思想自由与言论自由的核心价值观。"
     },
     {
       "sourceId": "attentionvc-ai",
@@ -2561,7 +2564,7 @@
       "category": "tech",
       "meta": "@EXM7777 · 121.1K 粉丝 · 83.6K 阅 · 518 赞 · 48 转",
       "source": "X 推文 (AttentionVC)",
-      "summary": "EXM7777 逐步演示如何用 Fable 5 构建企业级第二大脑：让模型深度理解业务上下文，输出与常规使用截然不同的高质量成果，附完整工作流教程。"
+      "summary": "逐步教程：用 Fable 5 构建「第二大脑」系统，深度理解业务并产出个性化知识管理成果，区别于常规AI工具用法。"
     },
     {
       "sourceId": "attentionvc-ai",
@@ -2572,7 +2575,7 @@
       "category": "tech",
       "meta": "@AlexFinn · 459.5K 粉丝 · 72.5K 阅 · 565 赞 · 34 转",
       "source": "X 推文 (AttentionVC)",
-      "summary": "AlexFinn 指出 Fable 5 不是「氛围编码」工具，而是操作系统级工具。建议在 24 小时内将其用作底层工作流系统，而非简单生成代码，以释放最大价值。"
+      "summary": "纠正 Fable 5 的误用：它并非 vibe coding 工具，而是操作系统级工具，应作为底层系统来操作而非简单编码。"
     },
     {
       "sourceId": "attentionvc-ai",
@@ -2583,7 +2586,7 @@
       "category": "tech",
       "meta": "@addyosmani · 404.9K 粉丝 · 53.5K 阅 · 525 赞 · 66 转",
       "source": "X 推文 (AttentionVC)",
-      "summary": "addyosmani 提出 Agentic Autonomy Levels 框架，分析代理从简单提示到自主操作、多循环协作的演进，涉及软件工厂、背景会话等概念，描绘代理工程前沿方向。"
+      "summary": "探讨 Agent 自主性层级，从提示到操作，引入软件工厂、目标循环、后台会话等概念，勾勒 Agent 工程前沿方向。"
     },
     {
       "sourceId": "attentionvc-ai",
@@ -2594,7 +2597,7 @@
       "category": "tech",
       "meta": "@base · 1.4M 粉丝 · 51.0K 阅 · 501 赞 · 112 转",
       "source": "X 推文 (AttentionVC)",
-      "summary": "base（@base）发文探讨「代理经济」现实：代理作为支付主体，其消费模式与传统用户不同，追问代理具体在为什么付费，揭示基础设施和计算成本的新格局。"
+      "summary": "分析 Agent 经济中 Agent 实际付费动机与行为模式，戳破口号背后的真实需求：Agent作为新支付客户的具体特性。"
     },
     {
       "sourceId": "attentionvc-ai",
@@ -2605,7 +2608,7 @@
       "category": "tech",
       "meta": "@trq212 · 299.3K 粉丝 · 40.1K 阅 · 534 赞 · 43 转",
       "source": "X 推文 (AttentionVC)",
-      "summary": "trq212 分享 Fable 5 使用心得：提示和技能只是工作的「地图」，而非实际结果。通过探索未知领域，避免陷入已知模式，才能释放模型真正潜力。"
+      "summary": "使用 Fable 5 的反思：提示词和技能只是「地图」，实际任务是「领土」，两者不可混淆，避免过度依赖模型输出。"
     },
     {
       "sourceId": "attentionvc-ai",
@@ -2616,7 +2619,7 @@
       "category": "tech",
       "meta": "@ericzakariasson · 76.4K 粉丝 · 37.9K 阅 · 567 赞 · 24 转",
       "source": "X 推文 (AttentionVC)",
-      "summary": "ericzakariasson 介绍 Fable 模型已回归 Cursor 编辑器，并展示一种工作流：Fable 作为编排器调度任务，Composer 作为执行工人，实现更高效的 AI 辅助编程。"
+      "summary": "Fable 在 Cursor 中回归，分享使用模式：让 Fable 作为编排者（orchestrator），Cursor Composer 作为工作者（workers），实现高效协作。"
     },
     {
       "sourceId": "attentionvc-ai",
@@ -2627,7 +2630,7 @@
       "category": "tech",
       "meta": "@0xkozue · 690 粉丝 · 24.9K 阅 · 501 赞 · 46 转",
       "source": "X 推文 (AttentionVC)",
-      "summary": "0xkozue 发布 PyTorch 训练管线一页速查表，浓缩深度学习权重更新机制的核心步骤，附带常见错误与优化建议，适合快速参考和日常调试。"
+      "summary": "一页 PyTorch 训练流水线速查表，涵盖深度学习权重微调核心机制，作者征求反馈与改进建议。"
     },
     {
       "sourceId": "attentionvc-ai",
@@ -2638,7 +2641,7 @@
       "category": "tech",
       "meta": "@OptimaiNetwork · 99.8K 粉丝 · 7.8K 阅 · 540 赞 · 351 转",
       "source": "X 推文 (AttentionVC)",
-      "summary": "OptimaiNetwork 发布月报：AI 行业焦点从模型转向基础设施。June Recap 梳理代理原生网络构建，July Vision 展望知识访问与多智能体协调，强调开放去中心化架构。"
+      "summary": "AI 行业转向基础设施核心，关注智能系统如何获取知识与协调行动。Optimai Network 发布六月回顾与七月愿景，构建 Agent 原生互联网。"
     },
     {
       "sourceId": "bbc-world",
@@ -2675,7 +2678,7 @@
       "publishedAt": "2026-07-03T21:00:53.000Z",
       "category": "politics",
       "source": "BBC World",
-      "summary": "委内瑞拉地震导致当地服务不堪重负，遗体被露天放置或置于帐篷内，悲痛的家庭在临时停尸房辨认亲人。"
+      "summary": "委内瑞拉地震导致当地服务崩溃，遇难者遗体被置于户外或帐篷中供家属辨认，家属悲痛不已。"
     },
     {
       "sourceId": "bbc-world",
@@ -2684,8 +2687,7 @@
       "excerpt": "Ali Khamenei's body will lie in state in Tehran's Grand Mosalla from Friday ahead of days-long funeral events.",
       "publishedAt": "2026-07-03T19:03:45.000Z",
       "category": "politics",
-      "source": "BBC World",
-      "summary": "伊朗开始为2月去世的最高领袖哈梅内伊举行公众哀悼，其遗体将于周五在德黑兰大穆萨拉清真寺供瞻仰，随后进行数天葬礼。"
+      "source": "BBC World"
     },
     {
       "sourceId": "bbc-world",
@@ -3049,6 +3051,16 @@
     },
     {
       "sourceId": "guardian-world",
+      "title": "Third teenager charged after 15-year-old Melbourne boy allegedly left to die from stab wounds",
+      "url": "https://www.theguardian.com/australia-news/2026/jul/04/third-teenager-charged-after-15-year-old-melbourne-boy-allegedly-left-to-die-from-stab-wounds-ntwnfb",
+      "excerpt": "Darweish Mohamed was found critically wounded outside Craigieburn community hospital on Wednesday evening Get our breaking news email, free app or daily news podcast A third teenager has been charged over the fatal stabbing of a 15-year-old boy found outside a Melbourne hospital. A 14-year-old from ",
+      "publishedAt": "2026-07-04T01:42:25.000Z",
+      "category": "politics",
+      "source": "The Guardian",
+      "summary": "墨尔本一名15岁男孩达尔韦什·穆罕默德被发现重伤死于克雷吉本社区医院外，第三名青少年因此被指控犯有致命刺伤罪。"
+    },
+    {
+      "sourceId": "guardian-world",
       "title": "Cold feet and cooling prices: Australia’s property market is transforming – and first home buyers aren’t biting",
       "url": "https://www.theguardian.com/australia-news/2026/jul/04/australia-property-market-transforming-first-home-buyers-cold-feet",
       "excerpt": "Exclusive: Data shows buyers are not rushing to get into the market, despite lower prices and less competition Get our breaking news email, free app or daily news podcast First home buyers are starting to step back and investor demand is slumping in all areas except new property, as Australia’s hous",
@@ -3080,15 +3092,6 @@
       "url": "https://www.theguardian.com/australia-news/2026/jul/03/nsw-labor-party-conference-anti-protest-laws-aukus-gambling-palestine-ntwnfb",
       "excerpt": "Fifty-six state branches want laws reviewed, while gambling, Aukus and Palestine also on agenda Get our breaking news email, free app or daily news podcast Fifty-six Labor branches have passed motions to the New South Wales state conference calling for controversial anti-protest legislation to be re",
       "publishedAt": "2026-07-03T14:53:58.000Z",
-      "category": "politics",
-      "source": "The Guardian"
-    },
-    {
-      "sourceId": "guardian-world",
-      "title": "NSW shadow upper house leader steps aside during Icac Liberals inquiry – as it happened",
-      "url": "https://www.theguardian.com/australia-news/live/2026/jul/03/politics-anthony-albanese-labor-angus-taylor-liberal-party-coalition-antisemitism-royal-commission-nsw-victorian-alps-snow-weather-ntwnfb",
-      "excerpt": "This blog is now closed Get our breaking news email, free app or daily news podcast A teenager has been charged with murder after a 15-year-old boy was discovered with fatal stab wounds outside a community medical centre. AAP reports the boy was found critically injured outside Craigieburn Community",
-      "publishedAt": "2026-07-03T07:54:18.000Z",
       "category": "politics",
       "source": "The Guardian"
     },
@@ -3205,7 +3208,7 @@
       "title": "Four Reasons Crimea Has Become Crucial in the Ukraine War",
       "url": "https://www.nytimes.com/2026/07/02/world/europe/russia-crimea-ukraine.html",
       "excerpt": "Escalating drone strikes, fuel shortages and power cuts in the region Russia annexed are among the factors turning up the heat on President Vladimir V. Putin.",
-      "publishedAt": "2026-07-03T14:54:03.000Z",
+      "publishedAt": "2026-07-03T14:54:04.000Z",
       "category": "politics",
       "source": "NYT World"
     },
@@ -3277,7 +3280,7 @@
       "title": "Denmark Has a Big Fourth of July Party. This Year, the U.S. Is Uninvited.",
       "url": "https://www.nytimes.com/2026/07/03/world/europe/denmark-fourth-of-july-trump-us.html",
       "excerpt": "Furious at President Trump over Greenland, Danish officials took the unprecedented step of pressuring organizers to cut American officials from the program.",
-      "publishedAt": "2026-07-03T15:03:16.000Z",
+      "publishedAt": "2026-07-03T15:03:17.000Z",
       "category": "politics",
       "source": "NYT World"
     },
@@ -3307,6 +3310,16 @@
       "publishedAt": "2026-07-02T22:34:11.000Z",
       "category": "politics",
       "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Putin Visits Battlefield and Vows to Take More of Ukraine",
+      "url": "https://www.nytimes.com/2026/07/03/world/europe/putin-ukraine-donbas-battlefield-visit.html",
+      "excerpt": "The Russian leader denounced Ukraine’s “imaginary achievements” on the battlefield of late, calling its leaders “play actors.”",
+      "publishedAt": "2026-07-04T00:24:33.000Z",
+      "category": "politics",
+      "source": "NYT World",
+      "summary": "俄罗斯总统普京视察战场，誓言夺取更多乌克兰领土，并指责乌克兰“虚构成就”，称其领导人为“演员”。"
     },
     {
       "sourceId": "nyt-world",
@@ -3444,15 +3457,6 @@
       "source": "NYT World"
     },
     {
-      "sourceId": "nyt-world",
-      "title": "Bomb Explodes at Damascus Cafe, Killing at Least 6",
-      "url": "https://www.nytimes.com/2026/07/02/world/middleeast/damascus-cafe-bomb.html",
-      "excerpt": "The blast, near the Syrian capital’s main courthouse, underscored the country’s persistent instability as its leaders try to chart a path out of years of dictatorship and war.",
-      "publishedAt": "2026-07-02T17:31:12.000Z",
-      "category": "politics",
-      "source": "NYT World"
-    },
-    {
       "sourceId": "npr-world",
       "title": "Iran's control of the Strait of Hormuz remains a powerful bargaining chip",
       "url": "https://www.npr.org/2026/07/03/nx-s1-5879278/irans-control-of-the-strait-of-hormuz-remains-a-powerful-bargaining-chip",
@@ -3460,7 +3464,7 @@
       "publishedAt": "2026-07-03T20:51:04.000Z",
       "category": "politics",
       "source": "NPR World",
-      "summary": "尽管美国谈判代表努力斡旋，伊朗仍坚持对通过霍尔木兹海峡的船只收取通行费，这成为美伊战争未解决的问题之一，伊朗的控制权仍是重要筹码。"
+      "summary": "尽管美国谈判代表努力，伊朗仍要求通过霍尔木兹海峡的船只支付过路费，成为美伊战争中未决问题。"
     },
     {
       "sourceId": "npr-world",
@@ -3815,6 +3819,72 @@
     },
     {
       "sourceId": "aljazeera",
+      "title": "‘El Obeid crisis could be worse than El Fasher,’ warns ex-UN official",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/4/el-obeid-crisis-could-be-worse-than-el-fasher-warns-ex-un-official?traffic_source=rss",
+      "excerpt": "Mukesh Kapila, ex-UN Humanitarian Coordinator for Sudan warns that, 'El Obeid crisis could be worse than El Fasher'.",
+      "publishedAt": "2026-07-04T02:28:17.000Z",
+      "category": "politics",
+      "source": "Al Jazeera",
+      "summary": "前联合国人道协调员穆克什·卡皮拉警告，苏丹奥贝德危机可能比法希尔更严重。"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Ronaldo sends message to Venezuelan earthquake survivor",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/4/ronaldo-sends-message-to-venezuelan-earthquake-survivor?traffic_source=rss",
+      "excerpt": "Cristiano Ronaldo has sent a message to a young Venezuelan earthquake survivor, recovering in hospital.",
+      "publishedAt": "2026-07-04T01:32:28.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Messi scores again but Argentina given World Cup upset fright by Cape Verde",
+      "url": "https://www.aljazeera.com/sports/2026/7/4/messi-scores-again-but-argentina-given-world-cup-upset-fright-by-cape-verde?traffic_source=rss",
+      "excerpt": "Lionel Messi opens scoring but Argentina taken to extra time by Cape Verde, which threatened greatest World Cup upset.",
+      "publishedAt": "2026-07-04T00:51:40.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Egypt coach dedicates World Cup win to Palestine as Gaza celebrates",
+      "url": "https://www.aljazeera.com/sports/2026/7/4/egypt-coach-dedicates-world-cup-win-to-palestine-as-arab-world-celebrates?traffic_source=rss",
+      "excerpt": "Fans in Gaza celebrated Egypt's win at match screenings held against the backdrop of bombed buildings.",
+      "publishedAt": "2026-07-04T00:20:08.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "England vs Mexico World Cup knockout match to go ahead as scheduled",
+      "url": "https://www.aljazeera.com/sports/2026/7/4/england-vs-mexico-world-cup-knockout-match-to-go-ahead-as-scheduled?traffic_source=rss",
+      "excerpt": "No decision was ever made to reschedule the kickoff time of 6pm local time in Mexico City, sources tell Al Jazeera.",
+      "publishedAt": "2026-07-04T00:07:04.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Iran war live: Millions expected in Tehran for funeral of Ali Khamenei",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/7/4/iran-war-live-millions-expected-in-tehran-for-funeral-of-ali-khamenei?traffic_source=rss",
+      "excerpt": "Israeli attacks on Gaza continue with a child killed and another injured in a drone strike, according to civil defence.",
+      "publishedAt": "2026-07-04T00:00:00.000Z",
+      "category": "politics",
+      "source": "Al Jazeera",
+      "summary": "伊朗最高领袖哈梅内伊葬礼预计在德黑兰有数百万人参加；以色列继续攻击加沙，无人机袭击致一名儿童死亡、一人受伤。"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Quakes reduce Venezuela tourist town to rubble, leaving economy in tatters",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/3/quakes-reduce-venezuela-tourist-town-to-rubble-leaving-economy-in-tatters?traffic_source=rss",
+      "excerpt": "Quakes reduce Venezuela tourist town to rubble, leaving economy in tatters.",
+      "publishedAt": "2026-07-03T23:57:24.000Z",
+      "category": "politics",
+      "source": "Al Jazeera",
+      "summary": "委内瑞拉地震将一旅游城镇夷为废墟，经济遭受重创。"
+    },
+    {
+      "sourceId": "aljazeera",
       "title": "Egypt say Dallas police officer pushed player, team director at World Cup",
       "url": "https://www.aljazeera.com/sports/2026/7/3/egypt-say-dallas-police-officer-pushed-player-team-director-at-world-cup?traffic_source=rss",
       "excerpt": "A security officer pushed the fan, as well as Trezeguet and Hassan, at the team hotel in Dallas before Egypt's match.",
@@ -3830,7 +3900,7 @@
       "publishedAt": "2026-07-03T21:49:17.000Z",
       "category": "politics",
       "source": "Al Jazeera",
-      "summary": "委内瑞拉代总统德尔西·罗德里格斯将外界对政府地震应对措施的批评归咎于“宣传”，并驳回了相关指责。"
+      "summary": "委内瑞拉代理总统德尔西·罗德里格斯指责“宣传”导致外界对其政府地震应对的批评。"
     },
     {
       "sourceId": "aljazeera",
@@ -3840,7 +3910,7 @@
       "publishedAt": "2026-07-03T21:36:31.000Z",
       "category": "politics",
       "source": "Al Jazeera",
-      "summary": "委内瑞拉代总统德尔西·罗德里格斯指责关于其政府地震应对不力的批评是“宣传”，并予以否认。"
+      "summary": "委内瑞拉代理总统德尔西·罗德里格斯否认政府地震应对不力，称批评源于“宣传”。"
     },
     {
       "sourceId": "aljazeera",
@@ -3850,7 +3920,7 @@
       "publishedAt": "2026-07-03T21:32:05.000Z",
       "category": "politics",
       "source": "Al Jazeera",
-      "summary": "美国科罗拉多州“阿斯彭英亩”山火蔓延，迫使数千人撤离。该火是西部约40起野火之一，已摧毁部分房屋。"
+      "summary": "美国科罗拉多州“阿斯彭英亩”野火迫使数千人疏散，该火是西部约40起野火之一，已烧毁房屋。"
     },
     {
       "sourceId": "aljazeera",
@@ -3860,7 +3930,7 @@
       "publishedAt": "2026-07-03T21:17:40.000Z",
       "category": "politics",
       "source": "Al Jazeera",
-      "summary": "委内瑞拉连发两次强震，多排建筑倒塌，许多幸存者栖身于公共公园临时搭建的帐篷中，艰难面对震后困境。"
+      "summary": "委内瑞拉连续地震摧毁多栋建筑，许多幸存者在公共公园帐篷中避难，形容为“噩梦”。"
     },
     {
       "sourceId": "aljazeera",
@@ -3870,7 +3940,7 @@
       "publishedAt": "2026-07-03T21:05:39.000Z",
       "category": "politics",
       "source": "Al Jazeera",
-      "summary": "美国国家航空航天局（NASA）发射了一枚三臂航天器，前往轨道营救一台因故障面临坠地风险的望远镜。"
+      "summary": "NASA发射一个三臂航天器进入轨道，以拯救一台有坠回地球危险的望远镜。"
     },
     {
       "sourceId": "aljazeera",
@@ -3889,7 +3959,7 @@
       "publishedAt": "2026-07-03T21:01:17.000Z",
       "category": "politics",
       "source": "Al Jazeera",
-      "summary": "葡萄牙中部武泽拉附近发生大规模野火，受极端高温和强风驱动，火势已蔓延至多个市镇。"
+      "summary": "葡萄牙中部武泽拉附近野火在极端高温和强风助推下蔓延至多个市镇。"
     },
     {
       "sourceId": "aljazeera",
@@ -3908,7 +3978,7 @@
       "publishedAt": "2026-07-03T19:59:27.000Z",
       "category": "politics",
       "source": "Al Jazeera",
-      "summary": "中国新出台的民族团结法引发讨论。政府称该法有助于塑造共同的国家认同，但外界质疑其可能演变为强制同化。"
+      "summary": "中国新民族团结法旨在促进共同国家认同，但也引发是否强制同化的讨论。"
     },
     {
       "sourceId": "aljazeera",
@@ -3918,7 +3988,7 @@
       "publishedAt": "2026-07-03T19:58:44.000Z",
       "category": "politics",
       "source": "Al Jazeera",
-      "summary": "纽约市长佐兰·马姆达尼在美国独立250周年之际发表讲话，呼吁团结并反思建国理想。"
+      "summary": "纽约市市长佐赫兰·马姆达尼在美国建国250周年之际呼吁团结，并反思国家立国理想。"
     },
     {
       "sourceId": "aljazeera",
@@ -3927,8 +3997,7 @@
       "excerpt": "US heatwave exposes critical strain on power grids from growing energy demands of AI data centres.",
       "publishedAt": "2026-07-03T19:48:44.000Z",
       "category": "politics",
-      "source": "Al Jazeera",
-      "summary": "美国热浪暴露了人工智能数据中心日益增长的能源需求对电网的严重压力，引发各界警惕。"
+      "source": "Al Jazeera"
     },
     {
       "sourceId": "aljazeera",
@@ -3937,8 +4006,7 @@
       "excerpt": "Human rights and media freedom organisations warned that the agreement prevents 'recourse to international courts'.",
       "publishedAt": "2026-07-03T19:27:15.000Z",
       "category": "politics",
-      "source": "Al Jazeera",
-      "summary": "人权与媒体自由组织警告称，黎巴嫩与以色列达成的协议禁止诉诸国际法庭，背叛了战争罪受害者。"
+      "source": "Al Jazeera"
     },
     {
       "sourceId": "aljazeera",
@@ -3947,8 +4015,7 @@
       "excerpt": "Israeli settlers attacked a foreign activist and another man as they blocked access to Palestinian farmland.",
       "publishedAt": "2026-07-03T19:13:39.000Z",
       "category": "politics",
-      "source": "Al Jazeera",
-      "summary": "以色列定居者袭击了一名外国活动人士和另一名男子，阻止他们进入巴勒斯坦农田。"
+      "source": "Al Jazeera"
     },
     {
       "sourceId": "aljazeera",
@@ -3961,9 +4028,9 @@
     },
     {
       "sourceId": "aljazeera",
-      "title": "Argentina vs Cape Verde LIVE: FIFA World Cup 2026",
+      "title": "Argentina 3-2 Cape Verde: FIFA World Cup 2026 – as it happened",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/7/3/live-argentina-vs-cape-verde-fifa-world-cup-2026?traffic_source=rss",
-      "excerpt": "Live coverage and text updates as Lionel Messi's goal gives Argentina lead against Cape Verde in last-32 knockout stage.",
+      "excerpt": "All the updates from our live text commentary stream coverage as Lionel Messi's Argentina beat Cape Verde in last-32.",
       "publishedAt": "2026-07-03T18:47:05.000Z",
       "category": "politics",
       "source": "Al Jazeera"
@@ -3983,69 +4050,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/3/israeli-settlers-intensify-attacks-in-west-bank-targeting-water-supplies?traffic_source=rss",
       "excerpt": "The attacks mark a sharp spike in settler assaults on Palestinians and their homes and livelihoods in recent weeks.",
       "publishedAt": "2026-07-03T18:34:40.000Z",
-      "category": "politics",
-      "source": "Al Jazeera"
-    },
-    {
-      "sourceId": "aljazeera",
-      "title": "Pope Leo, Mamdani send pro-immigrant message for US’s 250th anniversary",
-      "url": "https://www.aljazeera.com/news/2026/7/3/pope-leo-mamdani-send-pro-immigrant-message-for-uss-250th-anniversary?traffic_source=rss",
-      "excerpt": "Influential figures deliver speeches evoking US ideals to counter President Trump's hardline immigration policies.",
-      "publishedAt": "2026-07-03T18:30:40.000Z",
-      "category": "politics",
-      "source": "Al Jazeera"
-    },
-    {
-      "sourceId": "aljazeera",
-      "title": "What to know about Taylor Swift and Travis Kelce’s wedding in NYC",
-      "url": "https://www.aljazeera.com/news/2026/7/3/what-to-know-about-taylor-swift-and-travis-kelces-wedding-in-nyc?traffic_source=rss",
-      "excerpt": "The celebrity couple’s nuptials, dubbed 'America’s royal wedding', light up New York with excitement and speculation.",
-      "publishedAt": "2026-07-03T18:26:18.000Z",
-      "category": "politics",
-      "source": "Al Jazeera"
-    },
-    {
-      "sourceId": "aljazeera",
-      "title": "Keiko Fujimori officially declared winner of Peru presidential race",
-      "url": "https://www.aljazeera.com/news/2026/7/3/keiko-fujimori-officially-declared-winner-of-peru-presidential-race?traffic_source=rss",
-      "excerpt": "Peru's electoral authority solidifies right-wing Fujimori's narrow victory over left-wing Roberto Sanchez.",
-      "publishedAt": "2026-07-03T18:14:45.000Z",
-      "category": "politics",
-      "source": "Al Jazeera"
-    },
-    {
-      "sourceId": "aljazeera",
-      "title": "Israel prevents exiled Palestinian detainees from reuniting with their families",
-      "url": "https://www.aljazeera.com/features/2026/7/3/israel-prevents-exiled-palestinian-detainees-from-reuniting-with-their-families?traffic_source=rss",
-      "excerpt": "Palestinian prisoners released from Israeli jail but remain separated from loved ones due to travel restrictions.",
-      "publishedAt": "2026-07-03T18:13:53.000Z",
-      "category": "politics",
-      "source": "Al Jazeera"
-    },
-    {
-      "sourceId": "aljazeera",
-      "title": "Pakistan bus crash kills 40",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/3/pakistan-bus-crash-kills-40?traffic_source=rss",
-      "excerpt": "At least 40 people were killed and eight others injured after a passenger bus plunged into a ravine in Pakistan.",
-      "publishedAt": "2026-07-03T17:44:02.000Z",
-      "category": "politics",
-      "source": "Al Jazeera"
-    },
-    {
-      "sourceId": "aljazeera",
-      "title": "World leaders pay tribute to Iran’s late leader Khamenei in Tehran",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/3/world-leaders-pay-tribute-to-irans-late-leader-khamenei-in-tehran?traffic_source=rss",
-      "excerpt": "World leaders pay tribute to Iran's late leader Khamenei in Tehran",
-      "publishedAt": "2026-07-03T17:35:22.000Z",
-      "category": "politics",
-      "source": "Al Jazeera"
-    },
-    {
-      "sourceId": "aljazeera",
-      "title": "Heavy rain floods Mumbai during intense monsoon spell",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/3/heavy-rain-floods-mumbai-during-intense-monsoon-spell?traffic_source=rss",
-      "excerpt": "Heavy monsoon rains have inundated parts of Mumbai, India's financial capital, causing widespread flooding.",
-      "publishedAt": "2026-07-03T16:27:20.000Z",
       "category": "politics",
       "source": "Al Jazeera"
     },
