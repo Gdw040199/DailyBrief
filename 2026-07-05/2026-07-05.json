@@ -1,0 +1,75 @@
+{
+  "hero_headline": "伊朗前最高领袖葬礼数千万人参加",
+  "daily_overview": "今日全球关注焦点：伊朗前最高领袖哈梅内伊的葬礼进入第二天，数千万民众不顾酷暑参加，被视为强烈的政治时刻；乌克兰无人机袭击圣彼得堡石油设施，战事显著升级；德国选项党主席魏德尔成功连任并提出领导国家主张。科技方面，OpenAI发布数据显示ChatGPT全球采用持续扩大；DeepMind与A24宣布首次AI电影研究合作；Meta发布Watermelon项目，Anthropic与三星合作芯片；多项关于AI Agent长期评估的基准论文（如AgenticSTS、EvoPolicyGym）发布，推动自主智能体研究标准化。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI数据显示ChatGPT全球采用扩大",
+      "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+      "source": "OpenAI News",
+      "summary": "OpenAI发布Signal数据，显示ChatGPT在全球各地区和各语言中的采用率持续增长，用户使用频次和能力探索均显著提升。",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind与A24宣布AI电影研究合作",
+      "url": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership/",
+      "source": "DeepMind Blog",
+      "summary": "Google DeepMind与电影公司A24宣布首个人工智能与电影制作研究合作，探索AI在叙事和创作中的应用。",
+      "importance": 8
+    },
+    {
+      "title": "AgenticSTS：长周期LLM Agent记忆测试平台",
+      "url": "https://huggingface.co/papers/2607.02255",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出AgenticSTS，一个受限制记忆的测试平台，将记忆视为未来决策的可见内容契约，系统评估不同记忆管理策略对长期任务的影响。",
+      "importance": 7
+    },
+    {
+      "title": "阿里巴巴开源页面GUI Agent「Page Agent」",
+      "url": "https://github.com/alibaba/page-agent",
+      "source": "GitHub Trending",
+      "summary": "阿里巴巴开源的JavaScript页面内GUI代理，支持用自然语言控制网页界面，如表单填写、点击跳转，适合自动化测试和无障碍操作。",
+      "importance": 6
+    },
+    {
+      "title": "Claude Code「穴居人」技能可节省65% Token",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "source": "GitHub Trending",
+      "summary": "一个Claude Code技能，通过模仿穴居人极简语言风格压缩提示词，减少约65%的Token消耗，降低API调用成本。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "伊朗前最高领袖葬礼吸引数千万人",
+      "url": "https://www.bbc.co.uk/news/videos/c23y22z4ppxo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "伊朗已故最高领袖哈梅内伊葬礼进入第二天，当局预计2000万人参加，被视为强烈政治时刻。（多家报道：Al Jazeera等）",
+      "importance": 10
+    },
+    {
+      "title": "乌克兰无人机打击圣彼得堡石油设施",
+      "url": "https://www.bbc.co.uk/news/articles/c8j2vmzxezro?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "乌克兰总统泽连斯基证实袭击圣彼得堡附近石油设施，旨在削弱俄罗斯能源收入，战事显著升级。（多家报道：DW中文等）",
+      "importance": 9
+    },
+    {
+      "title": "魏德尔连任AfD主席称要领导德国",
+      "url": "https://www.dw.com/zh/魏德尔成功连任-称afd要成为-新的人民党-领导德国/a-77833050?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "德国选项党主席魏德尔在党代会成功连任，提出「新的人民党」主张领导德国，并计划放宽入党限制。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "伊朗葬礼与乌克兰战事同步上演，地缘风险升温；AI应用从消费端向工业与创意产业纵深拓展，开源生态持续活跃。",
+  "keywords": [
+    "伊朗",
+    "乌克兰",
+    "ChatGPT",
+    "AI Agent",
+    "DeepMind",
+    "德国AfD",
+    "开源项目",
+    "基准测试"
+  ]
+}
