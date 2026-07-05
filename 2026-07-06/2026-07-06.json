@@ -1,0 +1,75 @@
+{
+  "hero_headline": "超强台风「巴维」登陆美国太平洋岛屿，风速近290km/h",
+  "daily_overview": "当日技术前沿聚焦AI代理评估与隐私本地化：开源项目Meetily实现纯本地AI会议助理，OpenAI展示ChatGPT在全球的扩张图景，DeepMind与A24宣布创意产业研究合作，科研论文AgenticSTS则细探长时域代理记忆策略。时政方面，超强台风「巴维」以近290km/h风速袭击美国太平洋岛屿；以色列内阁威胁无视最高法院判决，加剧行政与司法对立；北约领袖在土耳其峰会寻求团结，欧洲准备担纲更多防务；台湾军校时隔二十余年恢复「反共爱国教育」。",
+  "tech_briefs": [
+    {
+      "title": "隐私优先AI会议助手Meetily开源发布",
+      "url": "https://github.com/Zackriya-Solutions/meetily",
+      "source": "GitHub Trending",
+      "summary": "基于Rust的AI会议助手，支持4倍速实时转录、说话人分离与Ollama摘要，100%本地处理无需云端，适合隐私敏感场景。",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI发布ChatGPT全球采用数据",
+      "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+      "source": "OpenAI News",
+      "summary": "新数据展示ChatGPT在全球范围的使用增长，用户使用频率提升，跨区域与语言扩展加速。",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind与A24启动AI×创意研究合作",
+      "url": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership/",
+      "source": "DeepMind Blog",
+      "summary": "Google DeepMind与独立电影公司A24宣布首次研究合作，探索AI与创意产业的交叉可能性。",
+      "importance": 7
+    },
+    {
+      "title": "AgenticSTS：长时域LLM代理记忆测试平台",
+      "url": "https://huggingface.co/papers/2607.02255",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出有限记忆测试平台AgenticSTS，评估不同记忆合约对长时域LLM代理决策的影响，揭示简单拼接记忆的缺陷。",
+      "importance": 8
+    },
+    {
+      "title": "开源模型对企业数据主权的必要性",
+      "url": "https://x.com/arthurmensch/status/2073157738276749354",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "博主指出封闭模型强制数据留存给企业带来杠杆风险，建议企业领导者优先采用开源模型以保护数据主权。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "以色列内阁威胁无视最高法院裁决",
+      "url": "https://www.nytimes.com/2026/07/05/world/middleeast/israel-court-netanyahu-clash.html",
+      "source": "NYT World",
+      "summary": "以色列内阁通过决议威胁无视最高法院，加剧总理内塔尼亚胡与司法机构的冲突；后有一名高级官员收回相关表态。",
+      "importance": 9
+    },
+    {
+      "title": "北约峰会在土耳其召开，欧洲准备加强防务自主",
+      "url": "https://www.npr.org/2026/07/05/nx-s1-5877610/nato-leaders-look-for-unity-as-trump-attends-annual-summit",
+      "source": "NPR World",
+      "summary": "北约领导人在土耳其峰会上寻求团结，美国总统特朗普出席；欧洲准备承担更多自身防务责任。",
+      "importance": 8
+    },
+    {
+      "title": "台湾军校恢复「反共爱国教育」",
+      "url": "https://www.dw.com/zh/台湾军校恢复对毕业生-反共爱国教育/a-77837468?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "时隔二十多年，台湾军方今年起将军校毕业生爱国教育政训课程更名恢复为「反共爱国教育」。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "AI代理评估日趋系统化，隐私保护与开源生态成为行业焦点；地缘政治方面，制度冲突与自然灾害考验多国治理韧性。",
+  "keywords": [
+    "台风",
+    "AI代理",
+    "隐私计算",
+    "以色列司法冲突",
+    "北约峰会",
+    "台湾反共爱国教育",
+    "开源模型",
+    "基准测试"
+  ]
+}
