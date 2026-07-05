@@ -1,75 +1,74 @@
 {
-  "hero_headline": "伊朗前最高领袖葬礼数千万人参加",
-  "daily_overview": "今日全球关注焦点：伊朗前最高领袖哈梅内伊的葬礼进入第二天，数千万民众不顾酷暑参加，被视为强烈的政治时刻；乌克兰无人机袭击圣彼得堡石油设施，战事显著升级；德国选项党主席魏德尔成功连任并提出领导国家主张。科技方面，OpenAI发布数据显示ChatGPT全球采用持续扩大；DeepMind与A24宣布首次AI电影研究合作；Meta发布Watermelon项目，Anthropic与三星合作芯片；多项关于AI Agent长期评估的基准论文（如AgenticSTS、EvoPolicyGym）发布，推动自主智能体研究标准化。",
+  "hero_headline": "乌克兰打击俄石油设施 战场延伸至俄腹地",
+  "daily_overview": "今日国际要闻：乌克兰无人机大规模袭击圣彼得堡附近石油设施，泽连斯基称此举旨在切断俄军资金来源，标志战争进入新阶段，乌方打击能力已深入俄腹地。科技方面，OpenAI发布ChatGPT全球采用数据，显示用户使用深度与广度持续增长；Google DeepMind宣布与电影公司A24首度合作，探索AI在创意产业的应用；Hugging Face联合Cerebras推出基于Gemma 4的实时语音AI。德国选项党主席魏德尔成功连任，提出「新的人民党」愿景。丹麦百年美国独立日庆典因特朗普格陵兰言论发生变调。",
   "tech_briefs": [
     {
-      "title": "OpenAI数据显示ChatGPT全球采用扩大",
+      "title": "ChatGPT全球采用持续扩张",
       "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
       "source": "OpenAI News",
-      "summary": "OpenAI发布Signal数据，显示ChatGPT在全球各地区和各语言中的采用率持续增长，用户使用频次和能力探索均显著提升。",
+      "summary": "OpenAI发布最新数据，显示ChatGPT在全球范围内用户使用深度和广度持续增长，探索更多功能，推动跨地区跨语言增长。",
       "importance": 9
     },
     {
-      "title": "DeepMind与A24宣布AI电影研究合作",
+      "title": "Google DeepMind与A24首度研究合作",
       "url": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership/",
       "source": "DeepMind Blog",
-      "summary": "Google DeepMind与电影公司A24宣布首个人工智能与电影制作研究合作，探索AI在叙事和创作中的应用。",
+      "summary": "Google DeepMind与电影公司A24宣布首次研究合作，探索人工智能在创意产业中的应用。",
       "importance": 8
     },
     {
-      "title": "AgenticSTS：长周期LLM Agent记忆测试平台",
-      "url": "https://huggingface.co/papers/2607.02255",
-      "source": "HuggingFace Trending Papers",
-      "summary": "提出AgenticSTS，一个受限制记忆的测试平台，将记忆视为未来决策的可见内容契约，系统评估不同记忆管理策略对长期任务的影响。",
-      "importance": 7
+      "title": "Hugging Face与Cerebras推出Gemma 4实时语音AI",
+      "url": "https://huggingface.co/blog/cerebras-gemma4-voice-ai",
+      "source": "Hugging Face Blog",
+      "summary": "Hugging Face与Cerebras合作，将Gemma 4模型引入实时语音AI领域，提升语音交互体验。",
+      "importance": 8
     },
     {
-      "title": "阿里巴巴开源页面GUI Agent「Page Agent」",
+      "title": "阿里发布页面内自然语言GUI代理page-agent",
       "url": "https://github.com/alibaba/page-agent",
       "source": "GitHub Trending",
-      "summary": "阿里巴巴开源的JavaScript页面内GUI代理，支持用自然语言控制网页界面，如表单填写、点击跳转，适合自动化测试和无障碍操作。",
+      "summary": "阿里出品的纯JavaScript页面内GUI代理，支持用自然语言指令直接控制和操作网页界面，适用于自动化测试、低代码构建和智能助手。",
       "importance": 6
     },
     {
-      "title": "Claude Code「穴居人」技能可节省65% Token",
-      "url": "https://github.com/JuliusBrussee/caveman",
-      "source": "GitHub Trending",
-      "summary": "一个Claude Code技能，通过模仿穴居人极简语言风格压缩提示词，减少约65%的Token消耗，降低API调用成本。",
-      "importance": 6
+      "title": "OpenAI推出GeneBench-Pro基因组学AI基准",
+      "url": "https://openai.com/index/introducing-genebench-pro",
+      "source": "OpenAI News",
+      "summary": "OpenAI推出GeneBench-Pro基准，测试AI在基因组学、生物学和科学研究中处理复杂真实世界数据集的能力。（多家报道）",
+      "importance": 7
     }
   ],
   "politics_briefs": [
     {
-      "title": "伊朗前最高领袖葬礼吸引数千万人",
-      "url": "https://www.bbc.co.uk/news/videos/c23y22z4ppxo?at_medium=RSS&at_campaign=rss",
+      "title": "乌克兰打击圣彼得堡石油设施 战争升级",
+      "url": "https://www.bbc.co.uk/news/articles/c8j2vmzxezro?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "summary": "伊朗已故最高领袖哈梅内伊葬礼进入第二天，当局预计2000万人参加，被视为强烈政治时刻。（多家报道：Al Jazeera等）",
+      "summary": "乌克兰无人机大规模袭击圣彼得堡附近石油设施，泽连斯基称旨在削弱俄罗斯战争资金。乌方已能打击俄境内深处目标，分析师称俄开始失去战略优势。（多家报道）",
       "importance": 10
     },
     {
-      "title": "乌克兰无人机打击圣彼得堡石油设施",
-      "url": "https://www.bbc.co.uk/news/articles/c8j2vmzxezro?at_medium=RSS&at_campaign=rss",
+      "title": "伊朗前最高领袖葬礼成「高度政治性时刻」",
+      "url": "https://www.bbc.co.uk/news/videos/c23y22z4ppxo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "summary": "乌克兰总统泽连斯基证实袭击圣彼得堡附近石油设施，旨在削弱俄罗斯能源收入，战事显著升级。（多家报道：DW中文等）",
+      "summary": "伊朗前最高领袖哈梅内伊的葬礼预计吸引多达2000万人参加，被视为高度政治性时刻，影响地区局势。",
       "importance": 9
     },
     {
-      "title": "魏德尔连任AfD主席称要领导德国",
+      "title": "魏德尔连任AfD主席 称要领导德国",
       "url": "https://www.dw.com/zh/魏德尔成功连任-称afd要成为-新的人民党-领导德国/a-77833050?maca=chi-rss-chi-all-1127-rdf",
       "source": "DW 中文",
-      "summary": "德国选项党主席魏德尔在党代会成功连任，提出「新的人民党」主张领导德国，并计划放宽入党限制。",
+      "summary": "德国选项党（AfD）主席魏德尔在党代会上成功连任，提出「新的人民党」愿景，欲放宽入党限制，挑战主流政党。",
       "importance": 8
     }
   ],
-  "editor_note": "伊朗葬礼与乌克兰战事同步上演，地缘风险升温；AI应用从消费端向工业与创意产业纵深拓展，开源生态持续活跃。",
+  "editor_note": "当日信息量密集：乌克兰战场延伸至俄腹地，AI产业多层面向纵深发展。开源与闭源之争、AI责任边界等问题值得持续关注。",
   "keywords": [
-    "伊朗",
-    "乌克兰",
+    "乌克兰战争",
     "ChatGPT",
-    "AI Agent",
-    "DeepMind",
-    "德国AfD",
-    "开源项目",
-    "基准测试"
+    "AI合作",
+    "实时语音AI",
+    "基因组学基准",
+    "伊朗葬礼",
+    "AfD连任"
   ]
 }
