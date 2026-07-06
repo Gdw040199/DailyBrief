@@ -1,0 +1,67 @@
+{
+  "hero_headline": "中国太平洋导弹测试引发澳台强烈关切",
+  "daily_overview": "今日，中国在太平洋的导弹测试引发澳大利亚与台湾强烈反应，被视为破坏稳定的挑衅行为；与此同时，俄军对基辅发动大规模空袭，乌克兰面临拦截弹短缺困境。技术领域，AI系统提示库大规模泄露，暴露Anthropic、OpenAI、Google等模型内部设计；机器人学习与具身AI研究取得多项突破；Agent循环设计成为AI工程新范式，推动编码自动化。此外，英国就纳瓦尔尼案制裁俄罗斯人员，ChatGPT全球采用率持续增长。地缘博弈与技术泄露并行，全球治理承压。",
+  "tech_briefs": [
+    {
+      "title": "AI系统提示库泄露多款模型设计",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "source": "GitHub Trending",
+      "summary": "提取了Anthropic、OpenAI、Google等多款AI模型的系统提示，帮助研究者和安全分析师理解模型行为，无需逆向工程。",
+      "importance": 9
+    },
+    {
+      "title": "AI模型能力与生态持续扩张",
+      "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+      "source": "OpenAI News",
+      "summary": "ChatGPT全球采用率增长，Seedance 2.5、Meta Watermelon等项目发布，OpenAI预计推出GPT-5.6，生态持续扩张。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "机器人学习与具身AI研究取得突破",
+      "url": "https://huggingface.co/blog/lerobot-release-v060",
+      "source": "Hugging Face Blog",
+      "summary": "Hugging Face发布LeRobot v0.6.0，带来想象、评估、改进功能；AgenticSTS提出有界记忆测试床；Embodied.cpp实现异构机器人高效推理；EvoPolicyGym评估自主策略进化。",
+      "importance": 8
+    },
+    {
+      "title": "AI Agent循环设计成为工程新范式",
+      "url": "https://www.latent.space/p/aiewf-daily-dispatch-locomotives",
+      "source": "Latent Space",
+      "summary": "AI工程师博览会聚焦循环设计替代传统提示工程，Vercel发布agent框架eve，GitHub出现生产级agent技能库。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "中国太平洋导弹测试遭澳大利亚和台湾批评",
+      "url": "https://www.theguardian.com/australia-news/live/2026/jul/07/australia-news-live-penny-wong-china-missile-test-pacific-anthony-albanese-solomon-islands-defence-royal-commission-antisemitism-meta-ntwnfb",
+      "source": "The Guardian",
+      "summary": "澳大利亚国防部长称中国导弹测试为破坏稳定行为，可能导致误判；台湾批评此为挑衅。",
+      "importance": 9
+    },
+    {
+      "title": "俄军大规模空袭基辅，乌克兰预警导弹短缺",
+      "url": "https://www.bbc.co.uk/news/articles/cewqqnd7zdwo",
+      "source": "BBC World",
+      "summary": "俄罗斯对基辅发射68枚导弹和351架无人机，导致23人死亡；乌克兰称拦截导弹短缺。",
+      "importance": 9
+    },
+    {
+      "title": "英国制裁七名涉纳瓦尔尼投毒案个人与机构",
+      "url": "https://www.dw.com/zh/涉纳瓦尔尼投毒案-英国制裁7人两家机构/a-77853636",
+      "source": "DW 中文",
+      "summary": "英国以涉嫌参与研发用于毒害纳瓦尔尼的毒素为由，制裁七名个人和两家研究机构。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "地缘博弈与技术泄露并行，AI能力快速演进的同时，大国关系紧张加剧，全球治理面临双重挑战。",
+  "keywords": [
+    "中国导弹测试",
+    "俄乌冲突",
+    "AI系统提示泄露",
+    "Agent循环设计",
+    "机器人学习",
+    "ChatGPT",
+    "英国制裁"
+  ]
+}
