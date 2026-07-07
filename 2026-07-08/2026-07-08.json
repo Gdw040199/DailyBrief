@@ -1,0 +1,75 @@
+{
+  "hero_headline": "美国打击伊朗回应油轮遇袭，中东局势升温",
+  "daily_overview": "时政方面，美国因霍尔木兹海峡油轮遇袭对伊朗发动军事打击并重新制裁，中东紧张加剧；北约峰会在安卡拉开幕，特朗普批评盟友暴露内部分歧；澳洲Telstra大断网影响交通和紧急呼叫，引发通信安全担忧。技术方面，AI模型竞赛持续：腾讯发布295B参数MoE大模型Hy3，Fable模型被誉迄今最重要模型之一；开源社区推出AI求职框架与隐私优先会议助手；前沿研究DELTAVID通过跨视频差异提升细粒度时空感知。整体看，全球地缘风险与AI技术快进同时上演。",
+  "tech_briefs": [
+    {
+      "title": "AI求职框架实现求职自动化",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "source": "GitHub Trending",
+      "summary": "基于Claude Code的AI求职框架，用户Fork后填写资料，Claude自动评估岗位、定制简历、撰写求职信，实现求职流程自动化。",
+      "importance": 8
+    },
+    {
+      "title": "腾讯发布Hy3大模型，295B参数MoE架构",
+      "url": "https://news.smol.ai/issues/26-07-06-not-much/",
+      "source": "Smol AI News",
+      "summary": "腾讯发布Hy3，295B参数MoE架构，21B激活参数，256K上下文，支持MTP推测解码，在vLLM上针对NVIDIA和AMD优化。",
+      "importance": 9
+    },
+    {
+      "title": "Fable模型被称为迄今最重要模型之一",
+      "url": "https://www.latent.space/p/ainews-the-field-guide-to-fable",
+      "source": "Latent Space",
+      "summary": "本周AI新闻聚焦Fable模型发布，被称为迄今最重要模型之一，文章提供实用指南。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "隐私优先AI会议助手Meetily发布",
+      "url": "https://github.com/Zackriya-Solutions/meetily",
+      "source": "GitHub Trending",
+      "summary": "基于Rust的AI会议助手，支持比Whisper快4倍的实时转录、说话人分离，全本地处理保护隐私。",
+      "importance": 7
+    },
+    {
+      "title": "DELTAVID提升视频细粒度时空感知",
+      "url": "https://arxiv.org/abs/2607.02551",
+      "source": "arXiv Papers",
+      "summary": "通过跨视频差异信号增强细粒度时空感知，解决多模态大模型在局部时空差异场景的感知失效，提升时序和空间定位准确率。",
+      "importance": 8
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美国对伊朗发动军事打击回应油轮遇袭",
+      "url": "https://www.bbc.co.uk/news/articles/cwykq59jwpvo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "霍尔木兹海峡油轮遇袭后美国对伊朗发动打击，称施加沉重代价，伊朗警告果断回应；美国同时撤销石油豁免重新制裁。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "北约峰会开幕，特朗普批评欧洲盟友暴露内部分歧",
+      "url": "https://www.npr.org/2026/07/07/nx-s1-5884718/what-happened-in-the-opening-day-of-the-nato-summit-in-ankara-turkey",
+      "source": "NPR World",
+      "summary": "北约峰会在土耳其安卡拉开幕，特朗普再次猛烈抨击欧洲盟友，暴露出联盟内部紧张局势；领导人们希望特朗普意在促欧洲增加防务开支，但分析师担心他有其他目的。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "澳洲Telstra大规模断网影响交通和紧急呼叫",
+      "url": "https://www.theguardian.com/australia-news/2026/jul/08/telstra-outage-down-network-mobile-outages-today",
+      "source": "The Guardian",
+      "summary": "Telstra移动网络大规模中断，数百万用户无法通话或上网，导致维多利亚州火车停运及紧急呼叫受影响。（多家报道）",
+      "importance": 8
+    }
+  ],
+  "editor_note": "地缘冲突与AI竞赛同日升温：美伊军事对峙加剧，北约裂痕显现，澳洲电信断网；技术界迎来腾讯Hy3与Fable模型，同时隐私AI工具崛起。",
+  "keywords": [
+    "美伊冲突",
+    "北约峰会",
+    "Telstra断网",
+    "腾讯Hy3",
+    "Fable模型",
+    "隐私会议助手",
+    "AI求职框架",
+    "视频细粒度感知"
+  ]
+}
