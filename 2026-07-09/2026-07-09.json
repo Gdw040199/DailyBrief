@@ -1,0 +1,74 @@
+{
+  "hero_headline": "美伊冲突升级，美对伊朗发动新一轮打击",
+  "daily_overview": "今日焦点为美伊冲突急剧升级，美国对伊朗发动新一轮打击，霍尔木兹海峡航运安全堪忧，停火协议宣告破裂。技术领域，OpenAI发布政府合作原则，GPT-5.6消息引发关注；多个开源项目聚焦AI智能体能力，如agent-skills和TencentDB Agent Memory；NVIDIA探讨开放数据智能体，WiFi感知技术也取得进展。AI评估基准可靠性受质疑。国际时政方面，澳大利亚Telstra网络故障持续，德国法院判决华人性侵案成员。",
+  "tech_briefs": [
+    {
+      "title": "开源AI编码智能体技能库",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "source": "GitHub Trending",
+      "summary": "提供生产级工程技能模块，涵盖代码审查、调试等，提升智能体在复杂软件开发中的可靠性。",
+      "importance": 7
+    },
+    {
+      "title": "OpenAI公布政府合作原则",
+      "url": "https://openai.com/index/government-national-security-partnerships",
+      "source": "OpenAI News",
+      "summary": "OpenAI公布与政府及国家安全合作方针，强调负责任AI使用、民主问责与公共安全。",
+      "importance": 8
+    },
+    {
+      "title": "动作条件世界模型实现数字遥操作",
+      "url": "https://huggingface.co/papers/2607.06558",
+      "source": "HuggingFace Trending Papers",
+      "summary": "突破物理遥操作瓶颈，通过预测动作后未来状态生成大规模轨迹数据，推动机器人学习规模扩展。",
+      "importance": 6
+    },
+    {
+      "title": "视觉工具编排实现复杂图像创建编辑",
+      "url": "https://arxiv.org/abs/2607.05465",
+      "source": "arXiv Papers",
+      "summary": "利用多个生成/编辑模型协同完成多步骤图像处理任务，如合成、定位、分割等。",
+      "importance": 6
+    },
+    {
+      "title": "利用WiFi信号实现实时空间感知",
+      "url": "https://github.com/ruvnet/RuView",
+      "source": "GitHub Trending",
+      "summary": "无需摄像头，基于WiFi信号进行空间感知、生命体征监测，适用于隐私敏感场景如老人看护。",
+      "importance": 5
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美对伊朗发动新一轮打击",
+      "url": "https://www.bbc.co.uk/news/articles/cz75zjj5wp8o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "美国对伊朗发动更多打击，伊朗南部传出爆炸声。特朗普称系报复伊朗袭击船只。",
+      "importance": 9
+    },
+    {
+      "title": "美中央司令部宣布新打击保护霍尔木兹海峡",
+      "url": "https://www.nytimes.com/live/2026/07/08/world/iran-war-us-trump",
+      "source": "NYT World",
+      "summary": "美国中央司令部宣布新打击保护霍尔木兹海峡航运。特朗普称停火已结束。",
+      "importance": 9
+    },
+    {
+      "title": "Telstra网络故障持续影响紧急呼叫和列车",
+      "url": "https://www.theguardian.com/business/2026/jul/09/telstra-outage-today-cause-vline-network-outages-update",
+      "source": "The Guardian",
+      "summary": "Telstra网络故障导致部分用户无法拨打紧急电话，区域列车中断。维多利亚州V/Line列车受影响。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "美伊冲突急剧升温，全球局势不确定性增加。AI领域多项开源项目与前沿研究推动智能体能力发展。",
+  "keywords": [
+    "美伊冲突",
+    "AI智能体",
+    "OpenAI",
+    "霍尔木兹海峡",
+    "Telstra故障",
+    "世界模型",
+    "物联网感知"
+  ]
+}
