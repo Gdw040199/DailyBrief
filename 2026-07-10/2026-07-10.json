@@ -1,0 +1,68 @@
+{
+  "hero_headline": "美伊冲突升级，停火协议濒临崩溃",
+  "daily_overview": "今日美伊冲突急剧升级，美国对伊朗发动新一轮空袭，伊朗向科威特和卡塔尔发射导弹，停火状态濒临崩溃。科技领域，xAI发布号称Opus级的Grok 4.5大模型，强调性价比；OpenAI宣布GPT-5.6成为Microsoft 365 Copilot首选模型，并推出ChatGPT Work智能代理；Anthropic首次揭示LLM内部思考过程，引发行业对AI可解释性的关注。此外，多个AI开源项目和前沿论文发布，推动技术边界拓展。",
+  "tech_briefs": [
+    {
+      "title": "xAI发布Grok 4.5，主打性价比",
+      "url": "https://news.smol.ai/issues/26-07-08-grok-45/",
+      "source": "Smol AI News",
+      "summary": "xAI推出Grok 4.5模型，参数达1.5万亿，专注编码和代理任务，强调能力性价比而非基准领先，Elon Musk称其为Opus级但更快更便宜。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "GPT-5.6成为Microsoft 365 Copilot首选模型",
+      "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
+      "source": "OpenAI News",
+      "summary": "GPT-5.6增强Word、Excel、PowerPoint等应用AI能力，带来更快速高质量的工作体验。",
+      "importance": 8
+    },
+    {
+      "title": "Anthropic首次揭示LLM内部思考空间",
+      "url": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/",
+      "source": "MIT Tech Review AI",
+      "summary": "Anthropic开发新技术首次清晰揭示大型语言模型内部思考过程，展示Claude在回答问题时的概念推理路径，结果既平凡又引发反思。",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI推出ChatGPT Work智能代理",
+      "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
+      "source": "OpenAI News",
+      "summary": "ChatGPT Work可在应用和文件间执行操作，持续工作数小时，将目标转化为完成成果，支持用户复杂项目。",
+      "importance": 7
+    },
+    {
+      "title": "MadsLorentzen/ai-job-search：AI求职框架",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "source": "GitHub Trending",
+      "summary": "基于Claude Code的AI求职框架，用户填写个人资料后，Claude自动评估职位、定制简历、撰写求职信并准备面试，大幅提升求职效率。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美伊新一轮互袭，停火协议濒临崩溃",
+      "url": "https://www.theguardian.com/world/2026/jul/09/iran-trade-strikes-ceasefire-extended-donald-trump",
+      "source": "The Guardian",
+      "summary": "美国对伊朗发动新一轮空袭，伊朗随后攻击科威特和卡塔尔，并指责美军靠近其核电站区域。停火协议濒临崩溃，双方均无意退让。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "澳大利亚一国党领袖汉森英国之行引争议",
+      "url": "https://www.theguardian.com/australia-news/live/2026/jul/10/australia-news-live-pauline-hanson-one-nation-modi-anthony-albanese-royal-commission-antisemitism-ntwnfb",
+      "source": "The Guardian",
+      "summary": "一国党领袖保琳·汉森在英国“事实调查”之旅中受到极右翼人士欢迎；自由党议员称与一国党结盟非当前计划；澳大利亚电信公司关注南澳一起死亡事件调查。",
+      "importance": 6
+    }
+  ],
+  "editor_note": "美伊冲突使中东局势再度紧张，科技巨头加速模型迭代；在地缘与技术双重变局中，保持理性判断与开放合作仍是关键。",
+  "keywords": [
+    "美伊冲突",
+    "Grok 4.5",
+    "GPT-5.6",
+    "Anthropic",
+    "ChatGPT Work",
+    "AI求职框架",
+    "澳大利亚政治",
+    "停火协议"
+  ]
+}
