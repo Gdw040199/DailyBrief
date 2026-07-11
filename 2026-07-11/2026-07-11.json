@@ -1,75 +1,75 @@
 {
-  "hero_headline": "GPT-5.6系列模型正式发布",
-  "daily_overview": "OpenAI 推出 GPT-5.6 模型家族（Sol、Terra、Luna），集成至 ChatGPT 和 API，同时成为 Microsoft 365 Copilot 首选模型；xAI 发布 Grok 4.5，主打编程与智能体能力。Anthropic 揭示 Claude 内部概念处理隐藏空间，提升模型可解释性。苹果起诉 OpenAI 指控窃取商业机密，西班牙南部野火致 12 人死亡。美伊冲突暂缓，巴西亚马逊砍伐降至十年来最低。AI 竞速加速，监管与地缘风险同现。",
+  "hero_headline": "OpenAI 发布 GPT-5.6 三款模型",
+  "daily_overview": "今日科技头条为 OpenAI 发布 GPT-5.6 系列，涵盖 Sol、Terra、Luna 三款模型，集成至 ChatGPT 和 API，强调性价比与缓存折扣；xAI 随即推出 Grok 4.5，聚焦编码与智能体应用。同时，Anthropic 首次揭示 LLM 内部隐藏推理空间，AI agent 在预测市场交易占比超三成。时政方面，美伊冲突在两天交战后暂歇，加沙局势持续；加拿大阿尔伯塔省分离公投临近，引发全国忧虑；古巴一周内第二次全岛停电，凸显石油封锁困境；西班牙 wildfire 致至少12人死亡。全球科技与地缘格局同步加速演变。",
   "tech_briefs": [
     {
-      "title": "OpenAI 发布 GPT-5.6 系列模型",
+      "title": "OpenAI 发布 GPT-5.6 系列，含 Sol/Terra/Luna",
       "url": "https://openai.com/index/gpt-5-6",
       "source": "OpenAI News",
-      "summary": "OpenAI 推出 GPT-5.6 模型家族（Sol、Terra、Luna），集成至 ChatGPT 和 API，定价每百万 token 1-5 美元，并成为 Microsoft 365 Copilot 首选模型。（多家报道）",
-      "importance": 10
-    },
-    {
-      "title": "xAI 发布 Grok 4.5 编程智能体模型",
-      "url": "https://news.smol.ai/issues/26-07-08-grok-45/",
-      "source": "Smol AI News",
-      "summary": "xAI 发布 Grok 4.5，聚焦编程与智能体能力，强调性价比，自称 Opus 级别模型，在收购 Cursor 后加速发展。（多家报道）",
+      "summary": "OpenAI 发布 GPT-5.6 系列（Sol、Terra、Luna），集成至 ChatGPT、Codex 及 API，定价每百万 token 1-5 美元，新增缓存写入定价及 90% 缓存读取折扣，并成为 Microsoft 365 Copilot 首选模型。（多家报道）",
       "importance": 9
     },
     {
-      "title": "Anthropic 揭示 Claude 内部概念处理空间",
-      "url": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/",
-      "source": "MIT Tech Review AI",
-      "summary": "Anthropic 开发新技术，发现 Claude 在处理概念时的隐藏内部空间，提供对大语言模型内部运作最清晰的观察。",
+      "title": "xAI 发布 Grok 4.5 模型，聚焦编码与 Agent",
+      "url": "https://www.latent.space/p/ainews-spacexai-launches-grok-45",
+      "source": "Latent Space",
+      "summary": "xAI 发布 Grok 4.5 模型，定位为编码与智能体领域的新一代前沿模型，强调性价比而非基准分数，是收购 Cursor 后首个 Opus 级模型。（多家报道）",
       "importance": 8
     },
     {
-      "title": "DesktopCommanderMCP：为 Claude 提供终端控制",
-      "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
-      "source": "GitHub Trending",
-      "summary": "开源 MCP 服务器，赋予 Claude 终端控制、文件搜索和差异编辑能力，适合直接操作终端和文件系统的自动化场景。",
+      "title": "Anthropic 开发技术揭示 Claude 内部推理空间",
+      "url": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/",
+      "source": "MIT Tech Review AI",
+      "summary": "Anthropic 开发新技术，首次清晰揭示大型语言模型在回答问题时的内部运作，发现模型内部存在一个隐藏空间用于处理复杂概念，内容从平凡到令人不安。",
+      "importance": 8
+    },
+    {
+      "title": "AI 代理主导预测市场，Polymarket 超三成交易来自算法",
+      "url": "https://x.com/Oracle_Globall/status/2075365392105509204",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "预测市场 Polymarket 上超过 30% 的交易来自 AI 驱动钱包，自主 AI 代理成为 2026 年最有效策略之一，官方代理已开始入场交易。",
       "importance": 7
     },
     {
-      "title": "UniClawBench：评估主动智能体真实任务能力",
-      "url": "https://huggingface.co/papers/2607.08768",
-      "source": "HuggingFace Trending Papers",
-      "summary": "提出通用基准，评估主动智能体在真实世界任务中使用工具的能力，弥补现有基准交互性与真实性的不足。",
+      "title": "DesktopCommanderMCP：为 Claude 增加终端控制与文件编辑能力",
+      "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+      "source": "GitHub Trending",
+      "summary": "开源 MCP 服务器，让 Claude 可直接执行命令行操作、搜索文件系统并进行差异编辑，适用于自动化开发与运维场景，实现 AI agent 对电脑的精细控制。",
       "importance": 6
     }
   ],
   "politics_briefs": [
     {
-      "title": "苹果起诉 OpenAI 指控窃取商业机密",
-      "url": "https://www.bbc.co.uk/news/articles/cy8w379e091o?at_medium=RSS&at_campaign=rss",
+      "title": "阿尔伯塔省脱离运动升温，10月公投引担忧",
+      "url": "https://www.bbc.co.uk/news/articles/c3eykgln5eeo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "summary": "苹果在诉讼中称 OpenAI 的硬件业务「烂到骨子里」，指控其窃取商业机密。",
-      "importance": 9
-    },
-    {
-      "title": "西班牙南部野火致 12 人死亡 23 人失踪",
-      "url": "https://www.theguardian.com/world/2026/jul/10/wildfire-southern-spain-temperatures-almeria-los-gallardos-bedar",
-      "source": "The Guardian",
-      "summary": "西班牙阿尔梅里亚省快速蔓延的野火已造成至少 12 人死亡，23 人失踪，4 名英国人据信遇难。",
+      "summary": "加拿大卡尔加里牛仔节上，阿尔伯塔省脱离运动成为焦点。今年10月将举行关于该省未来的投票，外界担忧可能出现类似英国脱欧的意外结果。",
       "importance": 8
     },
     {
-      "title": "美伊冲突暂缓 双方进入脆弱停火",
+      "title": "美伊冲突暂歇，脆弱停火得以维持",
       "url": "https://www.npr.org/2026/07/10/g-s1-132943/up-first-newsletter-iran-us-tps-haitians-syrians-eac-gaza-israel-hamas",
       "source": "NPR World",
-      "summary": "美国与伊朗在两天冲突后暂停战斗，进入脆弱停火状态。",
-      "importance": 7
+      "summary": "美国与伊朗在两天冲突后似乎暂停了交火，双方在脆弱停火框架下暂时休战。同时加沙地区以色列控制区内的生活仍在继续。",
+      "importance": 9
+    },
+    {
+      "title": "古巴一周内第二次全岛停电，特朗普石油封锁加剧危机",
+      "url": "https://www.aljazeera.com/news/2026/7/10/cuba-suffers-second-island-wide-blackout-in-a-week-amid-trump-fuel-blockade?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "古巴一周内遭遇第二次全岛停电，美国总统特朗普实施事实上的石油封锁导致电网压力增大，进一步加剧该国经济危机。",
+      "importance": 8
     }
   ],
-  "editor_note": "AI 竞赛白热化，GPT-5.6 与 Grok 4.5 同日争锋；苹果诉讼凸显行业竞争风险，技术突破与监管博弈并行。",
+  "editor_note": "AI 大模型发布潮持续，GPT-5.6 与 Grok 4.5 同日争锋，技术迭代速度远超预期，但安全与监管滞后问题仍待解决。",
   "keywords": [
     "GPT-5.6",
     "Grok 4.5",
-    "Anthropic",
-    "AI 代理",
-    "苹果起诉 OpenAI",
-    "西班牙野火",
+    "AI 模型",
     "美伊冲突",
-    "亚马逊森林砍伐"
+    "阿尔伯塔分离",
+    "古巴停电",
+    "Claude 内部机制",
+    "预测市场"
   ]
 }
