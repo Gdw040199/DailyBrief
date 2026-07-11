@@ -1,0 +1,68 @@
+{
+  "hero_headline": "伊朗宣布无限期关闭霍尔木兹海峡",
+  "daily_overview": "伊朗革命卫队宣布无限期关闭霍尔木兹海峡，向过往船只鸣枪示警，并警告美国勿挑衅，全球能源市场骤然紧张。科技领域，OpenAI正式发布GPT-5.6系列（Sol/Terra/Luna），实现分层定价并成为Microsoft 365 Copilot首选模型；Anthropic首次揭示Claude内部概念推理空间，推动AI可解释性前沿；AI自主代理已占Polymarket预测市场30%以上活动。地缘方面，刚果（金）埃博拉疫情再添美国确诊案例，波兰为二战受难者建碑引发波乌历史讨论。AI商业化加速与地缘风险并行，要求决策者兼顾创新与安全。",
+  "tech_briefs": [
+    {
+      "title": "GPT-5.6正式发布并整合Microsoft 365 Copilot",
+      "url": "https://openai.com/index/gpt-5-6",
+      "source": "OpenAI News",
+      "summary": "OpenAI发布GPT-5.6系列，分Sol/Terra/Luna三层，定价每百万token 1-5美元，并成为M365 Copilot首选模型，Codex整合为ChatGPT超级应用。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "Anthropic发现Claude内部概念思考空间",
+      "url": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/",
+      "source": "MIT Tech Review AI",
+      "summary": "研究人员开发新技术，揭示大型语言模型Claude内部存在一个隐藏概念空间，使其在回答问题前进行推理，为AI可解释性提供前所未有的清晰视角。",
+      "importance": 9
+    },
+    {
+      "title": "AI自主代理占据Polymarket超30%活动",
+      "url": "https://x.com/Oracle__Promo/status/2075717726254055684",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "ORACLE官方AI Agent接入Polymarket预测市场，2026年AI自主代理已成为最有效策略，超30%平台活动来自算法。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind与A24首次研究合作",
+      "url": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership/",
+      "source": "DeepMind Blog",
+      "summary": "Google DeepMind与电影工作室A24宣布开创性研究合作，探索AI与创意产业的交叉领域，但具体细节未公开。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "伊朗宣布无限期关闭霍尔木兹海峡",
+      "url": "https://www.bbc.co.uk/news/articles/cj9gkpp0dkeo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "伊朗革命卫队对一艘船只鸣枪示警，宣布关闭霍尔木兹海峡直至另行通知，并警告美国不要以「侵略」回应。此举引发全球能源市场担忧。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "美国公民在刚果检测出埃博拉阳性",
+      "url": "https://www.nytimes.com/2026/07/11/world/africa/dr-congo-ebola-american-us-citizen.html",
+      "source": "NYT World",
+      "summary": "一名服务于人道组织的美国公民在刚果（金）确诊埃博拉，为该疫情中第二位感染者，疫情仍在扩散。",
+      "importance": 9
+    },
+    {
+      "title": "波兰总理承诺为二战乌克兰受害者建碑",
+      "url": "https://www.bbc.co.uk/news/articles/cze94x4361po?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "波兰总理宣布将为二战期间被乌克兰民族主义分子杀害的波兰平民建立纪念碑，此事长期困扰波乌关系。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "AI技术加速商业化，地缘冲突同步升级。在享受GPT-5.6等创新红利时，需警惕霍尔木兹海峡等热点带来的系统性风险。",
+  "keywords": [
+    "霍尔木兹海峡",
+    "GPT-5.6",
+    "伊朗",
+    "AI自主代理",
+    "Claude",
+    "埃博拉",
+    "波兰二战",
+    "Microsoft 365 Copilot"
+  ]
+}
