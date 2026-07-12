@@ -1,0 +1,68 @@
+{
+  "hero_headline": "美伊互攻 霍尔木兹海峡冲突升级",
+  "daily_overview": "今日中东局势急剧恶化，美国与伊朗在霍尔木兹海峡相互发动打击，停火协议面临破裂，全球能源供应风险上升。曼谷酒吧火灾致至少27人死亡，引发安全监管质疑。美国参议员格雷厄姆突发心脏病去世。科技方面，OpenAI发布GPT-5.6系列模型，引入Sol/Terra/Luna三层分级及智能定价，成为当日最大技术动态。Anthropic首次揭示大语言模型内部概念处理的“隐藏空间”，为AI可解释性带来突破。多个AI安全工具项目在GitHub流行，旨在防范Agent误操作。",
+  "tech_briefs": [
+    {
+      "title": "GPT-5.6发布 引入三层模型分级",
+      "url": "https://openai.com/index/gpt-5-6",
+      "source": "OpenAI News",
+      "summary": "OpenAI推出GPT-5.6系列，包含Sol/Terra/Luna三层，整合至ChatGPT、Codex及API，定价每百万token $1-$5，成为当日AI领域最大事件。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "Anthropic发现LLM内部“隐藏空间”",
+      "url": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/",
+      "source": "MIT Tech Review AI",
+      "summary": "Anthropic开发新技术首次清晰揭示Claude等大语言模型处理概念时的内部空间，为AI可解释性提供新视角。",
+      "importance": 8
+    },
+    {
+      "title": "AI安全工具阻止Agent危险命令",
+      "url": "https://github.com/Dicklesworthstone/destructive_command_guard",
+      "source": "GitHub Trending",
+      "summary": "两个热门GitHub项目——Destructive Command Guard与DesktopCommanderMCP，分别用于防范AI Agent执行破坏性指令和提供安全的终端控制能力，提升自动化流水线安全性。（多家报道）",
+      "importance": 7
+    },
+    {
+      "title": "德国电信借助OpenAI转型AI原生电信",
+      "url": "https://openai.com/index/deutsche-telekom",
+      "source": "OpenAI News",
+      "summary": "德国电信利用OpenAI技术重构客户服务、员工工作流、网络运营及语音服务，成为AI原生电信公司典范。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美伊在霍尔木兹海峡互攻 停火破裂",
+      "url": "https://www.theguardian.com/world/live/2026/jul/13/middle-east-crisis-live-us-launches-new-wave-of-strikes-on-iran-tehran-says-attacks-render-diplomacy-futile",
+      "source": "The Guardian",
+      "summary": "美国对伊朗发动新一波打击，伊朗称外交徒劳并试图在霍尔木兹海峡建立永久收费系统，中东危机急剧升级，停火协议面临破裂。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "曼谷酒吧火灾致至少27人死亡",
+      "url": "https://www.bbc.co.uk/news/articles/c24yev53q06o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "曼谷乍都节区酒吧发生大火，迅速蔓延致顾客无法逃生，至少27人死亡，火灾原因尚在调查。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "美国参议员格雷厄姆突发疾病去世",
+      "url": "https://www.bbc.co.uk/news/articles/cvgj25j6nmeo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "特朗普亲密盟友、南卡罗来纳州参议员林赛·格雷厄姆因突发心脏病去世，终年71岁。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "中东战火重燃与AI模型竞速同时上演，全球地缘与技术格局加速重塑。曼谷火灾敲响安全警钟，AI安全工具需求亦渐增。",
+  "keywords": [
+    "美伊冲突",
+    "霍尔木兹海峡",
+    "GPT-5.6",
+    "OpenAI",
+    "曼谷火灾",
+    "格雷厄姆",
+    "AI可解释性",
+    "AI安全"
+  ]
+}
