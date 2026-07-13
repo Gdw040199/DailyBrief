@@ -1,0 +1,75 @@
+{
+  "hero_headline": "美伊冲突升级，特朗普恢复伊朗港口封锁",
+  "daily_overview": "7月13日，美伊冲突急剧升温：特朗普恢复对伊朗港口封锁并对霍尔木兹海峡货物征收20%费用，美军连续第三晚打击伊朗，局势回到6月停火前的公开冲突状态。科技领域，OpenAI正式推出GPT-5.6系列模型（Sol/Terra/Luna），整合至ChatGPT和Codex，成为多个科技简报焦点；Anthropic公布AI内部推理机制新发现；开源视频编辑工具OpenCut、前馈立体高斯泼溅StereoSplat+及视觉预训练方法等研究也引发关注。时政方面，林赛·格雷厄姆去世后其妹妹接任参议员，移民执法事件致9人死亡。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI发布GPT-5.6系列模型",
+      "url": "https://news.smol.ai/issues/26-07-10-not-much/",
+      "source": "Smol AI News",
+      "summary": "OpenAI推出GPT-5.6，分Luna/Terra/Sol三层及Max/Ultra努力级别，集成至ChatGPT、Codex及API，并成为Microsoft 365 Copilot首选模型。同时Codex整合为ChatGPT超级应用，但工作流分离带来体验挑战。多家报道。",
+      "importance": 9
+    },
+    {
+      "title": "Anthropic发现Claude内部推理空间",
+      "url": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/",
+      "source": "MIT Tech Review AI",
+      "summary": "Anthropic开发新技术，清晰窥见大语言模型Claude在回答问题时的内部推理过程，成果既有平凡也有令人不安之处，为模型可解释性提供新视角。",
+      "importance": 8
+    },
+    {
+      "title": "开源视频编辑工具OpenCut发布",
+      "url": "https://github.com/OpenCut-app/OpenCut",
+      "source": "GitHub Trending",
+      "summary": "OpenCut是一款开源视频编辑工具，旨在替代CapCut。提供剪辑、特效、字幕等核心功能，支持多平台运行，免费供创作者使用，无需依赖商业软件。",
+      "importance": 6
+    },
+    {
+      "title": "StereoSplat+：前馈立体高斯泼溅新方法",
+      "url": "https://arxiv.org/abs/2607.08808",
+      "source": "arXiv Papers",
+      "summary": "提出StereoSplat+，利用扩散模型辅助从双目视角直接生成高质量3D场景表示，无需多视角或未来帧访问，显著提升新视角合成效率。解决了有限视角下3D重建难题。",
+      "importance": 7
+    },
+    {
+      "title": "视频生成模型或成通用视觉基础",
+      "url": "https://huggingface.co/papers/2607.09024",
+      "source": "HuggingFace Trending Papers",
+      "summary": "研究论证大规模文本到视频生成可作为计算机视觉通用基础模型的催化剂，通过视频生成任务学习获得通用视觉表征，类似NLP中next-token prediction的作用。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美伊冲突升级，特朗普恢复海军封锁并持续打击",
+      "url": "https://www.bbc.co.uk/news/articles/c8d2vn38dy1o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "特朗普恢复伊朗港口封锁，对通过霍尔木兹海峡货物征收20%费用；美军连续第三晚打击伊朗，阿联酋称两艘油轮遭伊朗导弹击中。双方回到6月停火前公开冲突状态。多家报道。",
+      "importance": 10
+    },
+    {
+      "title": "林赛·格雷厄姆去世，其妹妹接任参议员",
+      "url": "https://www.aljazeera.com/news/2026/7/13/backed-by-trump-lindsey-grahams-sister-darline-will-replace-him-in-senate?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "在特朗普支持下，南卡罗来纳州州长任命已故参议员林赛·格雷厄姆的妹妹达琳·格雷厄姆·诺尔登接替其参议员席位，任期至2027年初。多家报道。",
+      "importance": 7
+    },
+    {
+      "title": "特朗普移民执法行动已致至少9人死亡",
+      "url": "https://www.aljazeera.com/news/2026/7/13/nine-deaths-tied-to-trumps-immigration-enforcement-operations-in-us?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "缅因州比迪福德发生致命枪击案，成为至少第九起与特朗普移民执法行动相关的死亡事件，引发公众对移民政策的关注与争议。",
+      "importance": 6
+    }
+  ],
+  "editor_note": "美伊冲突骤然升级，霍尔木兹海峡航运风险加剧，全球市场承压；AI领域GPT-5.6发布与模型可解释性突破并行，技术进步值得关注。",
+  "keywords": [
+    "美伊冲突",
+    "GPT-5.6",
+    "Anthropic",
+    "伊朗封锁",
+    "霍尔木兹海峡",
+    "开源视频编辑",
+    "StereoSplat+",
+    "视觉预训练"
+  ]
+}
