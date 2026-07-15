@@ -1,0 +1,68 @@
+{
+  "hero_headline": "美伊连续第五天互攻，伊朗暗示谈判可能",
+  "daily_overview": "今日美伊冲突持续第五天，双方互有攻守，伊朗高级官员表示「既不怕战争也不怕谈判」，为局势留下转圜空间。技术领域，OpenAI发布GPT-Red超级黑客模型用于安全对抗训练，DeepSeek计划新一轮融资并筹备内地IPO，AI编码助手Codex日增百万用户，代理产品周使用量增长2.5倍。此外，加拿大一处前核掩体将改造为豪华「末日」公寓，引起关注。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI发布GPT-Red超级黑客模型提升安全",
+      "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+      "source": "OpenAI News",
+      "summary": "OpenAI开发自动化红队系统GPT-Red，通过自我对弈提升模型安全性与提示注入鲁棒性，旗舰模型GPT-5.6已从中受益。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "DeepSeek计划再融资并筹备IPO",
+      "url": "https://www.dw.com/zh/消息人士：deepseek计划再融资并筹备ipo/a-77971573?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "消息人士称中国AI初创公司DeepSeek拟启动新一轮融资，并争取今年在中国内地进行首次公开募股。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI代理产品周使用量激增2.5倍",
+      "url": "https://news.smol.ai/issues/26-07-14-not-much/",
+      "source": "Smol AI News",
+      "summary": "OpenAI代理产品（Codex和ChatGPT Work）周使用量增长2.5倍，Codex日增百万用户，JetBrains将其列为推荐代理。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "艾伦研究所分享构建AI代理经验",
+      "url": "https://huggingface.co/blog/allenai/shippy-tech-blog",
+      "source": "Hugging Face Blog",
+      "summary": "艾伦人工智能研究所通过构建Shippy代理，总结出有效开发AI代理系统的经验，涵盖工具集成与推理循环设计。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美伊冲突持续五天，伊朗暗示谈判可能",
+      "url": "https://www.nytimes.com/live/2026/07/15/world/iran-war-trump-hormuz",
+      "source": "NYT World",
+      "summary": "美伊连续第五天互相打击，伊朗高级官员表示「我们既不怕战争也不怕谈判」，为外交解决留出余地。",
+      "importance": 10
+    },
+    {
+      "title": "特朗普周四黄金时段演讲引发关注",
+      "url": "https://www.aljazeera.com/news/2026/7/15/really-big-news-what-to-know-about-trumps-primetime-speech-on-thursday?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "白宫重新审视2020年大选并推动新的投票限制，特朗普将于周四发表黄金时段演讲，吸引广泛关注。",
+      "importance": 8
+    },
+    {
+      "title": "美司法部拒绝新墨西哥州爱泼斯坦文件请求",
+      "url": "https://www.aljazeera.com/news/2026/7/15/us-justice-department-refuses-new-mexicos-request-for-epstein-files?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "美国司法部拒绝向新墨西哥州提供爱泼斯坦相关文件，该州称这些记录对其刑事调查至关重要。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "美伊冲突持续升温，科技领域AI安全与融资并进。全球治理面临挑战，需平衡发展与风险。",
+  "keywords": [
+    "美伊冲突",
+    "DeepSeek IPO",
+    "GPT-Red",
+    "Codex",
+    "AI安全",
+    "伊朗",
+    "特朗普",
+    "爱泼斯坦文件"
+  ]
+}
