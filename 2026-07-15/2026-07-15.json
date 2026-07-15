@@ -1,75 +1,75 @@
 {
-  "hero_headline": "美伊冲突升级 特朗普威胁打击伊朗电厂",
-  "daily_overview": "今日中东局势急剧升温，美国总统特朗普威胁打击伊朗发电厂并恢复霍尔木兹海峡封锁，美伊冲突进入新阶段。科技领域，OpenAI Codex使用量半年增长超10倍，用户达700万；Anthropic揭示LLM内部推理机制，估值近万亿美元；Prime Intellect发布v1验证器提升智能体强化学习效率；Destructive Command Guard等AI安全工具受关注。此外，立陶宛新总理表示以台湾名义设代表处「或许过于大胆」，释放修复对华关系信号；印度-英国自由贸易协议正式生效，为两国经济合作注入新动力。",
+  "hero_headline": "特朗普威胁打击伊朗发电厂 美伊危机升级",
+  "daily_overview": "今日中东紧张加剧，美国总统特朗普威胁若伊朗不就霍尔木兹海峡问题达成协议，将打击其发电厂及桥梁。科技方面，OpenAI智能体产品周使用量增长2.5倍，Codex日增百万用户，JetBrains推荐；Anthropic最新研究首次看清大模型内部「困惑空间」；DeepMind CEO断言AGI数年内到来。GitHub热门项目涌现独立开发者列表，xAI、Prime Intellect、Sakana发布新工具。时政方面，立陶宛新总理称以「台湾」名义设代表处「可能过于大胆」，释放修复对华关系信号；加拿大前议员因私藏439支枪被捕。",
   "tech_briefs": [
     {
-      "title": "OpenAI Codex用户半年增10倍达700万",
-      "url": "https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months",
-      "source": "Latent Space",
-      "summary": "OpenAI Codex使用量6个月增长超10倍，用户达700万，过去一天新增100万，与Claude Code竞争激烈。",
-      "importance": 9
-    },
-    {
-      "title": "Anthropic揭示LLM内部推理机制 引发行业关注",
-      "url": "https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show/",
-      "source": "MIT Tech Review",
-      "summary": "Anthropic发布最新AI发现，揭示LLM回答问题时的内部隐藏空间及概念推理机制。公司估值近1万亿美元，引发广泛关注。（多家报道）",
-      "importance": 9
-    },
-    {
-      "title": "Prime Intellect发布v1验证器 提升智能体强化学习效率",
-      "url": "https://news.smol.ai/issues/26-07-13-not-much/",
+      "title": "OpenAI代理产品增长 Codex日增百万用户",
+      "url": "https://news.smol.ai/issues/26-07-14-not-much/",
       "source": "Smol AI News",
-      "summary": "Prime Intellect发布verifiers v1，重新设计环境栈以支持智能体强化学习，采用消息DAG存储轨迹，复杂度从O(n²)降至O(n)，显著提升效率。",
+      "summary": "OpenAI智能体产品周使用量增长2.5倍，Codex和ChatGPT Work需求强劲，JetBrains将Codex列为推荐代理。ChatGPT Work助力数据科学和销售团队。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "Anthropic揭示大模型内部思考空间",
+      "url": "https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show/",
+      "source": "MIT Tech Review AI",
+      "summary": "Anthropic开发新技术，首次清晰观察到大型语言模型在回答问题时内部的「困惑空间」，揭示了模型思考过程，但实际意义仍有争议。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "多项AI项目发布：xAI/Prime Intellect/Sakana",
+      "url": "https://tldr.tech/ai/2026-07-14",
+      "source": "TLDR AI",
+      "summary": "xAI上传代码库，Prime Intellect发布验证器v1（重新设计智能体强化学习环境栈，复杂度从O(n²)降至O(n)），Sakana推出智能积木。（多家报道）",
       "importance": 8
     },
     {
-      "title": "开源工具Destructive Command Guard阻止AI Agent执行危险命令",
-      "url": "https://github.com/Dicklesworthstone/destructive_command_guard",
+      "title": "中国独立开发者项目清单登上GitHub热榜",
+      "url": "https://github.com/1c7/chinese-independent-developer",
       "source": "GitHub Trending",
-      "summary": "dcg项目用于拦截AI agent执行危险的git和shell命令（如强制删除、重置），保护系统免受误判或恶意指令，适合自动化agent安全运行。",
+      "summary": "项目「1c7/chinese-independent-developer」汇集中国独立开发者开源项目清单，便于发现优秀个人作品、交流经验。",
       "importance": 7
     },
     {
-      "title": "DeepMind创始人称AGI将在几年内到来 呼吁负责任开发",
+      "title": "DeepMind CEO称AGI数年内到来",
       "url": "https://x.com/demishassabis/status/2076957440109625718",
       "source": "X 推文 (AttentionVC)",
-      "summary": "DeepMind创始人Demis Hassabis认为AGI即将到来，提出前沿AI框架，强调负责任的开发与治理，呼吁应对机遇与挑战。",
+      "summary": "DeepMind CEO Demis Hassabis在X上发文，断言AGI可能在数年内实现，呼吁建立前沿AI伦理框架。",
       "importance": 8
     }
   ],
   "politics_briefs": [
     {
-      "title": "美伊冲突持续升级 特朗普威胁打击伊朗电厂",
-      "url": "https://www.bbc.co.uk/news/articles/cy0608wy8pro?at_medium=RSS&at_campaign=rss",
-      "source": "BBC / The Guardian / NPR",
-      "summary": "特朗普取消24小时前对霍尔木兹海峡货运收费的威胁，但恢复封锁，连续第三晚打击伊朗，威胁若达不成协议将打击伊朗发电厂，美国同日实施新制裁。（多家报道）",
+      "title": "特朗普威胁打击伊朗发电厂 美伊僵局升级",
+      "url": "https://www.theguardian.com/world/live/2026/jul/14/us-iran-war-live-updates-strikes-strait-of-hormuz-middle-east-crisis-trump-latest-news",
+      "source": "The Guardian",
+      "summary": "美国总统特朗普威胁若伊朗不就霍尔木兹海峡问题达成协议，将打击其发电厂及桥梁。美方恢复对伊朗港口封锁，后又放弃对货物收费计划。（多家报道）",
       "importance": 10
     },
     {
-      "title": "立陶宛新总理：以台湾名义设代表处「或许过于大胆」",
+      "title": "立陶宛新总理称以台湾之名设代表处「可能过于大胆」",
       "url": "https://www.dw.com/zh/立陶宛新总理：以台湾之名设代表处的决定-或许过于大胆/a-77957517?maca=chi-rss-chi-all-1127-rdf",
       "source": "DW 中文",
-      "summary": "立陶宛新任总理辛克维丘斯表示，2021年允许台湾以「台湾」为名开设代表处「或许过于大胆」，上任首日释放修复对华关系信号。",
-      "importance": 9
+      "summary": "立陶宛新总理辛克维丘斯表示，2021年以「台湾」名义开设代表处的决定可能过于大胆，释放修复对华关系信号。",
+      "importance": 8
     },
     {
-      "title": "印度-英国自由贸易协议正式生效",
-      "url": "https://www.bbc.co.uk/news/articles/c0kymrz0vkgo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "summary": "世界第五和第六大经济体之间的自由贸易协议生效，预计将影响温网毛巾、苏格兰威士忌等商品贸易，为两国经济带来新机遇。",
-      "importance": 8
+      "title": "加拿大前议员私藏枪支数十万被捕",
+      "url": "https://www.nytimes.com/2026/07/14/world/canada/inky-mark-arrested-guns-manitoba.html",
+      "source": "NYT World",
+      "summary": "加拿大前保守党议员英奇·马克在家中藏有439支枪和一门大炮，被警方逮捕并被控枪支贩运等罪名。",
+      "importance": 7
     }
   ],
-  "editor_note": "中东紧张局势牵动全球神经，AI领域创新与安全治理并行不悖，地缘与科技的交织正推动世界格局深刻变化。",
+  "editor_note": "今日新闻呈现技术突破与地缘博弈双主线。AI产业进入智能体驱动阶段，中东紧张局势需持续关注。保持中立理性视角。",
   "keywords": [
-    "美伊冲突",
-    "霍尔木兹海峡",
-    "OpenAI Codex",
+    "美伊危机",
+    "OpenAI",
     "Anthropic",
-    "AI安全",
-    "立陶宛",
-    "印度-英国贸易",
-    "AGI"
+    "AGI预言",
+    "立陶宛对台政策",
+    "GitHub独立开发者",
+    "智能体",
+    "霍尔木兹海峡"
   ]
 }
