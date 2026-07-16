@@ -1,0 +1,75 @@
+{
+  "hero_headline": "美伊冲突升级：美军打击伊朗基础设施",
+  "daily_overview": "今日全球焦点集中在地缘冲突与技术突破：美军对伊朗发动新一轮打击，重点摧毁桥梁和铁路枢纽，霍尔木兹海峡局势急剧升温，卡塔尔否认参与军事行动。技术上，Thinking Machines Lab 发布 975B 参数的开源 MoE 模型 Inkling，成为 Apache 2.0 许可下最强多模态模型；OpenAI 推出 LLM 超级黑客 GPT-Red 用于对抗训练，并倡导「反向联邦主义」AI 治理。此外，NVIDIA Nemotron 3 Embed 在检索基准排名第一，Apache Ossie 提出跨平台语义元数据标准。自然灾害方面，德克萨斯州再度遭遇致命洪水，加拿大山火烟雾影响美国 20 个州空气质量。",
+  "tech_briefs": [
+    {
+      "title": "Thinking Machines 发布开源 975B 多模态模型 Inkling",
+      "url": "https://news.smol.ai/issues/26-07-15-thinky-inkling/",
+      "source": "Smol AI News",
+      "summary": "Thinking Machines Lab 发布首个完整开放权重模型系列 Inkling，含 975B 参数（41B 活跃）的 MoE 架构，支持文本、图像、音频多模态，采用 Apache 2.0 许可，成为美国最强开源模型（多家报道）。",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI 用 GPT-Red 超级黑客提升模型防御",
+      "url": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/",
+      "source": "MIT Tech Review AI",
+      "summary": "OpenAI 构建 LLM 超级黑客 GPT-Red 作为对抗训练对手，提升其他模型抵御网络攻击的能力，并已发布最新旗舰模型 GPT-5.6。",
+      "importance": 8
+    },
+    {
+      "title": "NVIDIA Nemotron 3 Embed 在 RTEB 排名第一",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb",
+      "source": "Hugging Face Blog",
+      "summary": "NVIDIA 推出的 Nemotron 3 Embed 模型在 RTEB 基准测试中综合排名第一，推动智能检索（Agentic Retrieval）技术进步。",
+      "importance": 7
+    },
+    {
+      "title": "Apache Ossie 标准化 AI/BI 平台语义元数据交换",
+      "url": "https://github.com/apache/ossie",
+      "source": "GitHub Trending",
+      "summary": "Apache Ossie 提出行业规范，标准化分析、AI 与 BI 平台间语义元数据交换，实现厂商中立单一可信源，解决跨平台数据语义一致性问题。",
+      "importance": 6
+    },
+    {
+      "title": "开源多模态模型 Boogu-Image-0.1 发布",
+      "url": "https://arxiv.org/abs/2607.13125",
+      "source": "arXiv Papers",
+      "summary": "Boogu-Image-0.1 开源模型系列发布，含 Base、Turbo、Edit 等变体，在文本到图像生成、快速推理和双语支持上表现良好。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美对伊朗发动新打击 霍尔木兹海峡紧张升级",
+      "url": "https://www.nytimes.com/live/2026/07/16/world/iran-war-trump-hormuz",
+      "source": "NYT World",
+      "summary": "美军对伊朗基础设施发动新一轮打击，包括桥梁和铁路枢纽；卡塔尔否认同意参与军事行动，霍尔木兹海峡局势持续升级。",
+      "importance": 10
+    },
+    {
+      "title": "德克萨斯州再遭致命洪水 已致至少1人死亡",
+      "url": "https://www.bbc.co.uk/news/articles/c3v0xe5elzyo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "去年曾致130多人死亡的德克萨斯州洪水重灾区再次被淹，目前已确认至少1人死亡。",
+      "importance": 8
+    },
+    {
+      "title": "59岁活动家绝食19天 联手学生运动要求教育变革",
+      "url": "https://www.nytimes.com/2026/07/16/world/asia/india-sonam-wangchuk-cockroach-janata-party-hunger-strike.html",
+      "source": "NYT World",
+      "summary": "印度活动家索南·旺楚克已绝食19天，与领导学生运动联手要求改革教育体系，绝食抗议仍为印度政治有力工具（多家报道）。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "今日信号：美伊冲突升温与 AI 开源模型重大发布同日出现，技术与地缘风险交织，需警惕能源波动与 AI 安全治理新动态。",
+  "keywords": [
+    "美伊冲突",
+    "Inkling 开源模型",
+    "GPT-Red",
+    "NVIDIA Nemotron",
+    "Apache Ossie",
+    "德克萨斯洪水",
+    "印度绝食抗议",
+    "AI安全"
+  ]
+}
