@@ -1,0 +1,68 @@
+{
+  "hero_headline": "全球最大开源AI模型Kimi K3发布",
+  "daily_overview": "今日科技领域最大亮点是中国AI公司月之暗面发布Kimi K3，2.8T参数开源模型性能达到Opus 4.8级别，并引入Delta Attention技术大幅提升解码速度。OpenAI提出AI记分卡衡量回报，DeepMind发布生物韧性策略，视频生成与强化学习领域亦有新进展。国际局势方面，美国对伊朗军事打击进入第七天，桥梁水厂等民用设施遭袭，霍尔木兹海峡风险升高；特朗普以山火烟雾为由威胁对加拿大加征新关税；欧盟敦促以色列停止定居点扩建，以色列定居者袭击儿童事件引发关注。",
+  "tech_briefs": [
+    {
+      "title": "月之暗面发布全球最大开源模型Kimi K3",
+      "url": "https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest",
+      "source": "Latent Space",
+      "summary": "Moonshot AI发布Kimi K3，2.8T参数、50B活跃参数，支持100万token上下文与多模态输入，性能达Opus 4.8级别，解码速度提升6.3倍。定价与Sonnet 5相当，是迄今最大开源模型。多家报道称其在编程、智能体任务上表现强劲。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "OpenAI推出AI投资回报记分卡",
+      "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
+      "source": "OpenAI News",
+      "summary": "OpenAI CFO Sarah Friar提出实用AI记分卡，从有效工作、每成功任务成本、可靠性和计算回报四个维度衡量AI投资回报率，为企业评估AI部署提供量化工具。",
+      "importance": 7
+    },
+    {
+      "title": "DeepMind发布生物韧性策略与AI模型",
+      "url": "https://deepmind.google/blog/our-approach-to-bioresilience/",
+      "source": "DeepMind Blog",
+      "summary": "Google DeepMind与Isomorphic Labs联合发布生物韧性方法，分享AI模型在生物韧性领域的应用策略，旨在增强系统对抗生物威胁的能力。",
+      "importance": 8
+    },
+    {
+      "title": "开源视频多模态模型VideoChat3发布",
+      "url": "https://huggingface.co/papers/2607.14935",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出VideoChat3，完全开源视频多模态大模型，通过统一架构处理运动、长视频和流式交互，突破现有模型泛化局限，推动视频理解走向实际应用。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美国对伊朗军事打击进入第七天，民用设施受损",
+      "url": "https://www.nytimes.com/live/2026/07/17/world/iran-war-trump-hormuz",
+      "source": "NYT World",
+      "summary": "伊朗报告美国对桥梁、水处理厂等民用基础设施实施打击，美军还攻击海湾国家中驻有美军基地的类似目标。下午美军宣布新一轮打击，霍尔木兹海峡局势风险上升。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "特朗普威胁因山火烟雾对加拿大加征关税",
+      "url": "https://www.bbc.co.uk/news/articles/cwyq93j34lgo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "特朗普威胁因加拿大山火烟雾飘入美国城市加征新关税。加拿大领导人卡尼表示美加双方对应对气候变化负有同等责任，专家认为气候变化加剧山火。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "欧盟敦促以色列停止定居点扩建",
+      "url": "https://www.aljazeera.com/news/2026/7/17/eu-urges-israel-to-halt-settlement-expansion-as-settlers-attack-children?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "欧盟敦促以色列停止定居点扩建，此前以色列定居者袭击儿童事件引发关注。欧盟内部对以色列非法定居点和暴力行为实施制裁的压力增大。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "Kimi K3开源模型突破展现中国AI实力，但美国伊朗冲突升级与贸易摩擦持续凸显地缘紧张。技术跃进与安全博弈并行，需平衡创新与风险。",
+  "keywords": [
+    "Kimi K3",
+    "开源模型",
+    "美国伊朗冲突",
+    "特朗普关税",
+    "欧盟以色列",
+    "AI记分卡",
+    "生物韧性",
+    "视频多模态模型"
+  ]
+}
