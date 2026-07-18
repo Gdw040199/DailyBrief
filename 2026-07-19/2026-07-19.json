@@ -1,0 +1,68 @@
+{
+  "hero_headline": "伊朗袭击致两名美军死亡 美军发动报复性打击",
+  "daily_overview": "今日地缘政治急剧升温：伊朗在约旦袭击致两名美军死亡、一人失踪，美军发动报复性打击，美伊冲突全面升级。德国总理默茨同时呼吁中国放开人民币汇率，警告不会容忍扭曲竞争。技术方面，月之暗面发布2.8万亿参数开源模型Kimi K3，百万token上下文，性能对标Opus 4.8，定价仅为Sonnet 5水平；OpenAI推出AI投资回报记分卡；LongStraw论文在固定GPU预算下将RL后训练上下文扩展至超200万token，突破长上下文瓶颈。",
+  "tech_briefs": [
+    {
+      "title": "月之暗面发布Kimi K3：2.8T参数开源模型",
+      "url": "https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest",
+      "source": "Latent Space",
+      "summary": "月之暗面发布Kimi K3，2.8万亿参数、百万token上下文，性能达Opus 4.8级别，定价仅为Sonnet 5水平，引发对中国开源模型前沿度的重新评估（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "LongStraw：固定GPU预算下RL上下文突破200万token",
+      "url": "https://huggingface.co/papers/2607.14952",
+      "source": "HuggingFace Trending Papers",
+      "summary": "LongStraw在固定GPU预算下将强化学习后训练上下文长度扩展至超200万token，解决推理端与训练端长度鸿沟，突破长度泛化瓶颈，适用于长上下文AI agent的强化学习",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI推出AI投资回报记分卡",
+      "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
+      "source": "OpenAI News",
+      "summary": "OpenAI首席财务官提出通过有用工作量、每成功任务成本、可靠性和计算回报等指标衡量AI投资回报率",
+      "importance": 7
+    },
+    {
+      "title": "Apache Ossie发起语义元数据标准化",
+      "url": "https://github.com/apache/ossie",
+      "source": "GitHub Trending",
+      "summary": "Apache Ossie项目旨在制定跨AI、BI、分析平台的语义元数据交换规范，实现厂商中立的单一事实来源，解决数据互通与治理问题",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "伊朗袭击约旦致两名美军死亡 美军发动报复性打击",
+      "url": "https://www.nytimes.com/live/2026/07/18/world/iran-war-strikes-trump-hormuz",
+      "source": "NYT World",
+      "summary": "伊朗在约旦发起袭击，两名美军死亡、一人失踪，美军于周日晨间发动报复性打击，美伊冲突再度升级（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "德国总理默茨呼吁中国放开人民币汇率",
+      "url": "https://www.dw.com/zh/默茨呼吁中国放开人民币汇率：不会再容忍扭曲竞争/a-78019738?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "默茨在德法会议上呼吁中国放开人民币汇率，称不会继续容忍损害欧洲产业和就业的扭曲竞争",
+      "importance": 8
+    },
+    {
+      "title": "匈牙利总统苏廖克在议会罢免后同意辞职",
+      "url": "https://www.bbc.co.uk/news/articles/cpd7q7eev7po?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "被视为欧尔班忠实盟友的匈牙利总统苏廖克在议会通过罢免动议后，于周六晚同意结束任期",
+      "importance": 7
+    }
+  ],
+  "editor_note": "美伊冲突骤然升级，地缘风险加剧；AI开源模型Kimi K3刷新规模纪录，技术前沿持续前行。",
+  "keywords": [
+    "美伊冲突",
+    "Kimi K3",
+    "开源模型",
+    "AI记分卡",
+    "长上下文",
+    "强化学习",
+    "语义元数据",
+    "德国默茨"
+  ]
+}
