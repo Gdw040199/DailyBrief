@@ -1,0 +1,75 @@
+{
+  "hero_headline": "美伊冲突持续升级 美军再失一士兵",
+  "daily_overview": "当日焦点集中于美伊冲突再升级，美军在伊拉克遭袭致一死一伤，此前约旦遇袭已致两名美军死亡，中东局势趋于紧张。技术领域，月之暗面发布迄今最大开源模型Kimi K3（2.8T参数），凭借Delta Attention实现6倍解码加速，引发对中文开源模型前沿水平的重新评估；同时多项AI agent相关研究（LongStraw、SEED）及开源项目（AI Agent Book）推动智能体技术发展。此外，欧盟禁止销毁滞销服装新规生效，澳大利亚拟严格限制政府AI使用，凸显全球治理新动向。",
+  "tech_briefs": [
+    {
+      "title": "Kimi K3发布：迄今最大开源模型性能达Opus 4.8级",
+      "url": "https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest",
+      "source": "Latent Space",
+      "summary": "月之暗面发布Kimi K3模型，2.8T参数，100万Token上下文，支持原生多模态输入，采用Delta Attention实现6.3倍解码加速，性能达Opus 4.8级而定价与Sonnet 5相同，引发对中文开源模型前沿水平的重新评估。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "LongStraw：固定GPU预算下实现2M Token以上RL后训练",
+      "url": "https://huggingface.co/papers/2607.14952",
+      "source": "HuggingFace Trending Papers",
+      "summary": "针对推理与RL后训练上下文长度差距，提出LongStraw方法，在固定GPU预算下将RL后训练扩展到2M Token以上，有效提升部署长度泛化，尤其适合AI agent场景。",
+      "importance": 8
+    },
+    {
+      "title": "VideoChat3：全开源视频多模态大模型实现高效通用理解",
+      "url": "https://huggingface.co/papers/2607.14935",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出VideoChat3全开源视频多模态大模型，统一支持运动、长视频和流式交互理解，克服现有开源模型在多样化视频类型上的泛化局限。",
+      "importance": 7
+    },
+    {
+      "title": "SEED：自进化on-policy蒸馏提升智能体强化学习",
+      "url": "https://huggingface.co/papers/2607.14777",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出SEED自进化on-policy蒸馏方法，为智能体RL提供密集学习信号，通过自我蒸馏持续提升多轮交互、工具使用等长任务中的策略性能。",
+      "importance": 7
+    },
+    {
+      "title": "《深入理解AI Agent》开源项目发布",
+      "url": "https://github.com/bojieli/ai-agent-book",
+      "source": "GitHub Trending",
+      "summary": "李博杰著《深入理解AI Agent：设计原理与工程实践》开源主仓库，提供全书正文、编译版PDF及按章配套代码，系统讲解AI Agent设计原理与工程实践，适合AI开发者、学生和研究人员从理论到实战深入学习。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美伊冲突持续 美军士兵在伊拉克遭袭身亡",
+      "url": "https://www.nytimes.com/live/2026/07/19/world/iran-war-strikes-trump-hormuz",
+      "source": "NYT World",
+      "summary": "美军一名士兵在伊拉克处置伊朗无人机时丧生，另有一人受伤。此前约旦遭袭致两名美军死亡、一人失踪，以色列警告袭击逼近，美伊紧张局势再升级。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "欧盟禁止销毁滞销服装新规生效",
+      "url": "https://www.dw.com/zh/禁止销毁滞销服装-欧盟新规能奏效吗？/a-78026008?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "从即日起，欧盟大公司不得销毁滞销的服装和鞋类产品，旨在鼓励节约减少纺织品垃圾，但外界对执行效果存疑。",
+      "importance": 6
+    },
+    {
+      "title": "澳大利亚将严格限制政府AI自动化决策",
+      "url": "https://www.theguardian.com/australia-news/live/2026/jul/20/australia-news-live-anthony-albanese-pauline-hanson-labor-one-nation-angus-taylor-coalition-antisemitism-royal-commission-ntwnfb",
+      "source": "The Guardian",
+      "summary": "澳大利亚政府宣布将出台新规，严格限制政府部门在自动化决策中使用人工智能，此前一国党领袖李·汉森关于「白澳政策」的言论引发争议。",
+      "importance": 6
+    }
+  ],
+  "editor_note": "美伊冲突升级与AI开源模型突破同日发生，技术乐观与地缘阴云交织，全球治理议题持续深化。",
+  "keywords": [
+    "美伊冲突",
+    "AI Agent",
+    "Kimi K3",
+    "开源模型",
+    "欧盟服装禁令",
+    "澳大利亚AI监管",
+    "LongStraw",
+    "视频理解"
+  ]
+}
