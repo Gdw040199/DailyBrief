@@ -1,0 +1,75 @@
+{
+  "hero_headline": "美伊冲突升级，美军发动新一轮打击",
+  "daily_overview": "今日时政焦点集中于美伊冲突急剧升级，美军中央司令部对伊朗发动新一轮打击以削弱其军事能力，特朗普警告伊朗将为美军士兵死亡付出代价，国际油价上涨。同时特朗普对加拿大加征50%关税，北美贸易摩擦加剧。科技领域，Moonshot AI发布Kimi K3开放权重模型（2.8T参数）成为行业焦点；OpenAI披露长时间运行AI模型安全风险；研究显示AI招聘偏见比人类更严重。中国成立世界人工智能合作组织意图扩大全球AI影响力。",
+  "tech_briefs": [
+    {
+      "title": "Moonshot发布Kimi K3：史上最大开源模型",
+      "url": "https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest",
+      "source": "Latent Space",
+      "summary": "Moonshot AI发布Kimi K3，2.8万亿参数（50B激活），1M上下文窗口，支持多模态输入，采用Kimi Delta Attention机制，性能达Opus 4.8级别，定价与Sonnet 5相当（多家报道）。",
+      "importance": 10
+    },
+    {
+      "title": "OpenAI披露长时间运行AI模型安全风险",
+      "url": "https://openai.com/index/safety-alignment-long-horizon-models",
+      "source": "OpenAI News",
+      "summary": "OpenAI分享部署长时间运行AI模型的经验，指出新安全风险和已观察到的失败，并通过迭代部署改进防护措施。",
+      "importance": 9
+    },
+    {
+      "title": "NVIDIA发布Cosmos 3 Edge模型",
+      "url": "https://huggingface.co/blog/nvidia/cosmos3edge",
+      "source": "Hugging Face Blog",
+      "summary": "NVIDIA发布Cosmos 3 Edge模型，具体细节待公布。",
+      "importance": 6
+    },
+    {
+      "title": "研究称AI招聘偏见比人类更严重",
+      "url": "https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans/",
+      "source": "MIT Tech Review AI",
+      "summary": "新研究表明，大语言模型在简历筛选时会从训练数据中习得比人类更严重的偏见，引发对AI公平性的担忧。",
+      "importance": 8
+    },
+    {
+      "title": "Loopie: 最强循环Transformer模型发布",
+      "url": "https://huggingface.co/papers/2607.16051",
+      "source": "HuggingFace Trending Papers",
+      "summary": "Loopie采用MoE架构（20B参数/2B激活），通过循环扩展在性能与效率间取得平衡，是当前最强循环Transformer模型。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美伊冲突持续升级，美军发动新一轮打击",
+      "url": "https://www.bbc.co.uk/news/articles/cx25wg2x26do",
+      "source": "BBC World",
+      "summary": "美军中央司令部对伊朗发动新一轮打击，旨在削弱其军事能力。特朗普警告伊朗将为杀害美军士兵付出代价。伊朗宣布处于全面战争状态，国际油价上涨（多家报道）。",
+      "importance": 10
+    },
+    {
+      "title": "特朗普对加拿大进口商品加征50%关税",
+      "url": "https://www.bbc.co.uk/news/articles/cg4dzq3x3e1o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "美国总统特朗普宣布对加拿大进口商品加征50%关税，以回应加拿大反制措施，北美贸易紧张局势进一步升级。",
+      "importance": 9
+    },
+    {
+      "title": "英国政客安·维德科姆遇刺案嫌疑人被控",
+      "url": "https://www.aljazeera.com/news/2026/7/20/suspect-charged-in-fatal-attack-on-uk-politician-ann-widdecombe?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "英国改革党政治人物安·维德科姆遭致命袭击，一名嫌疑人被指控谋杀，警方调查政治动机。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "AI模型竞赛与地缘冲突同日升温，全球技术治理与军事博弈进入新阶段，需警惕双重风险叠加。",
+  "keywords": [
+    "美伊冲突",
+    "特朗普关税",
+    "Kimi K3",
+    "OpenAI",
+    "AI安全",
+    "中国AI治理",
+    "AI招聘偏见",
+    "循环Transformer"
+  ]
+}
