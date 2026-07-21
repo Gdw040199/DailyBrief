@@ -1,0 +1,73 @@
+{
+  "hero_headline": "乌克兰总统解职军队总司令 任命新将领",
+  "daily_overview": "今日地缘政治局势出现重大变动：乌克兰总统泽连斯基解职军队总司令瑟尔斯基，任命德拉帕蒂接任，引发国际关注；中俄在日本专属经济区联合实弹演习遭东京强烈抗议，北京驳斥「炒作」；美加贸易战升级，特朗普宣布对加拿大加征50%关税，加拿大表示将考虑所有选项。科技方面，DeepMind推出Gemini 3.6 Flash等新模型，聚焦性能与安全；OpenAI启动小企业计划助力创业者AI应用，同时与Hugging Face披露模型评估安全事件细节；Anthropic展示Claude Code在代码迁移中的惊人效率；GitHub上实时全球情报仪表盘Worldmonitor开源，引发安全领域关注。AI安全与地缘政治风险成为当日核心议题。",
+  "tech_briefs": [
+    {
+      "title": "DeepMind发布Gemini 3.6 Flash等三款新模型",
+      "url": "https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind发布Gemini 3.6 Flash、3.5 Flash-Lite及3.5 Flash Cyber，分别面向不同性能与安全需求场景，拓展模型能力边界。",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI推出ChatGPT小企业计划",
+      "url": "https://openai.com/index/introducing-chatgpt-small-business-program",
+      "source": "OpenAI News",
+      "summary": "OpenAI启动ChatGPT小企业计划，帮助创业者提升AI技能、自动化工作，并利用ChatGPT Work实现业务增长。",
+      "importance": 8
+    },
+    {
+      "title": "Anthropic用Claude Code实现大规模代码迁移",
+      "url": "https://x.com/ClaudeDevs/status/2079654423828304282",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "Anthropic团队使用Claude Code在单月内迁移10个代码包，过去需数年才能完成，显示AI辅助重构显著提升生产力。",
+      "importance": 8
+    },
+    {
+      "title": "开源项目Worldmonitor：实时全球情报仪表盘",
+      "url": "https://github.com/koala73/worldmonitor",
+      "source": "GitHub Trending",
+      "summary": "实时全球情报仪表盘，利用AI聚合新闻、地缘政治监控与基础设施跟踪，提供统一态势感知界面，适合安全分析师与研究者。",
+      "importance": 7
+    },
+    {
+      "title": "OpenAI与Hugging Face联合披露模型评估安全事件",
+      "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
+      "source": "OpenAI News",
+      "summary": "OpenAI与Hugging Face披露一次AI模型评估中的安全事件初步调查结果，展示高级网络攻击能力，并为防御者提供经验教训。",
+      "importance": 9
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "乌克兰总统泽连斯基解职军队总司令",
+      "url": "https://www.npr.org/2026/07/21/g-s1-134849/ukraine-military-chief-fired-protests",
+      "source": "NPR World",
+      "summary": "泽连斯基在持续数天抗议后解除瑟尔斯基职务，任命米哈伊洛·德拉帕蒂为新任武装部队总司令。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "中俄在日专属经济区实弹演习 日本抗议",
+      "url": "https://www.dw.com/zh/日本抗议中俄在日专属经济区实弹演习-北京驳斥-抹黑炒作/a-78057796?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "中俄海军在日本专属经济区内联合实弹演习，日本提出抗议，北京驳斥日方「抹黑炒作」。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "特朗普宣布对加拿大加征50%关税",
+      "url": "https://www.bbc.co.uk/news/articles/cg4dzq3x3e1o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "特朗普宣布对加拿大加征50%关税，加拿大总理卡尼表示考虑所有选项，贸易紧张局势升级。（多家报道）",
+      "importance": 8
+    }
+  ],
+  "editor_note": "今日头条覆盖乌克兰军方变动与AI安全事件，显示出技术发展与地缘政治并行交织的复杂态势。多源报道凸显了全球治理面临的挑战。",
+  "keywords": [
+    "乌克兰",
+    "中俄联合军演",
+    "Gemini 3.6",
+    "ChatGPT",
+    "AI安全",
+    "特朗普关税"
+  ]
+}
