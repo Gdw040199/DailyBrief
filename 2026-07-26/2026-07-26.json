@@ -1,0 +1,75 @@
+{
+  "hero_headline": "柏林骄傲游行遭车辆冲撞至少1死14伤",
+  "daily_overview": "今日焦点：柏林骄傲游行遭汽车冲撞致至少1死14伤，警方全力搜捕；印度教育部长在「蟑螂运动」抗议中辞职，标志莫迪政府重大让步；法西野火迫使超25万人撤离。技术领域，Anthropic推出Claude Opus 5，以一半价格实现Fable级别性能引发讨论；OpenAI推出ChatGPT健康功能接入个人医疗数据；Google承诺4000万美元助力Genesis科学探索；Black Forest Labs发布跨模态FLUX 3模型；最大开源代码数据集The Stack v3亮相。AI正加速渗透医疗、科研和代码开发。",
+  "tech_briefs": [
+    {
+      "title": "Claude Opus 5发布，性能比肩Fable价格减半",
+      "url": "https://www.latent.space/p/ainews-claude-opus-5-fable-level",
+      "source": "Latent Space",
+      "summary": "Anthropic发布Claude Opus 5模型，Epoch能力指数达159，编码代理能力获好评，价格仅为Fable的一半。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI推出ChatGPT健康功能，可连接医疗记录",
+      "url": "https://openai.com/index/health-in-chatgpt",
+      "source": "OpenAI News",
+      "summary": "允许符合条件的美国用户安全连接医疗记录和Apple Health数据，获得个性化健康洞察。",
+      "importance": 8
+    },
+    {
+      "title": "最大开源代码数据集The Stack v3发布",
+      "url": "https://news.smol.ai/issues/26-07-23-not-much/",
+      "source": "Smol AI News",
+      "summary": "包含114TB原始数据、2.24亿个仓库和5万亿去重token，为开源代码模型与网络防御提供海量数据。",
+      "importance": 8
+    },
+    {
+      "title": "Black Forest Labs发布FLUX 3多模态流模型",
+      "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
+      "source": "Latent Space",
+      "summary": "性能超越Seedance 2.0、Gemini Omni和Grok Imagine，并推出FLUX-mimic视频动作机器人模型。",
+      "importance": 8
+    },
+    {
+      "title": "Google承诺4000万美元加速科学发现",
+      "url": "https://deepmind.google/blog/accelerating-the-frontiers-of-scientific-discovery-googles-40m-commitment-to-the-genesis-mission/",
+      "source": "DeepMind Blog",
+      "summary": "提供4000万美元AI代币和信用额度，支持Genesis Mission推进科学前沿研究。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "柏林骄傲游行遭车辆冲撞致至少1死14伤",
+      "url": "https://www.nytimes.com/2026/07/25/world/europe/berlin-car-attack.html",
+      "source": "NYT World",
+      "summary": "一辆汽车冲入柏林骄傲游行人群，造成至少1死14伤，警方停止游行并搜捕嫌疑人。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "印度「蟑螂运动」迫使教育部长辞职",
+      "url": "https://www.dw.com/zh/蟑螂运动-重大胜利：印度教育部长辞职/a-78113808?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "持续数周的学生抗议「蟑螂运动」取得重大胜利，教育部长普拉丹辞职，为莫迪政府罕见让步。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "法国西班牙野火肆虐，超25万人撤离",
+      "url": "https://www.bbc.co.uk/news/articles/cd7le0d53y2o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "法国和西班牙野火失控，超过25万人被迫撤离，当局警告形势严峻，英国苏格兰也发生严重火灾。（多家报道）",
+      "importance": 8
+    }
+  ],
+  "editor_note": "AI模型迭代加速，成本降低推动应用扩展；全球多地突发事件考验政府应对能力。技术与社会治理需平衡创新与伦理。",
+  "keywords": [
+    "柏林汽车冲撞",
+    "印度蟑螂运动",
+    "法西野火",
+    "Claude Opus 5",
+    "ChatGPT健康",
+    "The Stack v3",
+    "FLUX 3",
+    "Genesis Mission"
+  ]
+}
