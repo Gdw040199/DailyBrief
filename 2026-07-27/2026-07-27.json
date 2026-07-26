@@ -1,0 +1,75 @@
+{
+  "hero_headline": "Anthropic发布Claude Opus 5，性能达Fable级价格减半",
+  "daily_overview": "今日科技领域迎来多款重磅模型发布：Anthropic推出Claude Opus 5，以Fable级性能、半价定价引发关注；Black Forest Labs发布FLUX 3多模态流模型，超越多项基准；OpenAI在ChatGPT中集成健康功能，推动AI应用深入个人医疗。开源社区亦活跃，The Stack v3发布史上最大代码数据集，GitHub上bitchat蓝牙Mesh聊天项目引人注目。时政方面，欧洲野火因极端高温和强风持续蔓延，法国、西班牙数十万人被迫撤离；美伊双方连续两日暂停攻击，释放重启和谈信号；英国新任首相承诺继续支持乌克兰。技术与地缘政治交织，气候危机凸显。",
+  "tech_briefs": [
+    {
+      "title": "Anthropic推出Claude Opus 5，性能达Fable级、价格减半",
+      "url": "https://news.smol.ai/issues/26-07-24-opus-5/",
+      "source": "Smol AI News",
+      "summary": "Anthropic发布Claude Opus 5模型，性能达到Fable级别，价格仅为其一半，在编码代理等方面获赞（多家报道）。",
+      "importance": 10
+    },
+    {
+      "title": "Black Forest Labs发布FLUX 3多模态流模型",
+      "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
+      "source": "Latent Space",
+      "summary": "FLUX 3多模态流模型性能超越Seedance 2.0、Gemini Omni和Grok Imagine，并推出FLUX-mimic视频动作机器人模型。",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI推出ChatGPT健康功能",
+      "url": "https://openai.com/index/health-in-chatgpt",
+      "source": "OpenAI News",
+      "summary": "OpenAI在ChatGPT中推出健康功能，允许符合条件的美国用户安全连接医疗记录和Apple Health，提供个性化健康见解。",
+      "importance": 8
+    },
+    {
+      "title": "谷歌斥资4000万美元支持Genesis Mission",
+      "url": "https://deepmind.google/blog/accelerating-the-frontiers-of-scientific-discovery-googles-40m-commitment-to-the-genesis-mission/",
+      "source": "DeepMind Blog",
+      "summary": "谷歌承诺向Genesis Mission提供4000万美元AI代币和积分，助力加速科学发现前沿。",
+      "importance": 7
+    },
+    {
+      "title": "bitchat：基于蓝牙Mesh的开源聊天应用",
+      "url": "https://github.com/permissionlesstech/bitchat",
+      "source": "GitHub Trending",
+      "summary": "bitchat利用蓝牙Mesh协议实现设备间去中心化通信，无需网络基础设施，适合离线场景下的群聊。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "法国西班牙野火肆虐，数十万人撤离",
+      "url": "https://www.nytimes.com/live/2026/07/26/world/france-spain-wildfires-evacutions",
+      "source": "NYT World",
+      "summary": "极端高温和强风在法国、西班牙引发大面积野火，数十万人被迫撤离。新一波热浪可能加剧火势，多国协助灭火（多家报道）。",
+      "importance": 10
+    },
+    {
+      "title": "美伊连续两日暂停攻击，释放和谈信号",
+      "url": "https://www.npr.org/2026/07/26/g-s1-135593/us-pauses-attacks-iran-second-day-tehran",
+      "source": "NPR World",
+      "summary": "美国与伊朗连续两日暂停军事攻击，双方共同为临时停火谈判继续创造条件。",
+      "importance": 9
+    },
+    {
+      "title": "英国新首相承诺继续支持乌克兰",
+      "url": "https://www.bbc.co.uk/news/articles/cy8me5vyjg2o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "英国首相Andy Burnham在泽连斯基到访前承诺持续支持乌克兰，泽连斯基是其上任后首位国际访客。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "AI模型以半价逼近高端性能，欧洲野火凸显气候危机紧迫。技术突破与自然挑战同时加速，世界需更均衡的发展战略。",
+  "keywords": [
+    "Claude Opus 5",
+    "FLUX 3",
+    "欧洲野火",
+    "美伊冲突",
+    "ChatGPT健康",
+    "开源代码",
+    "Genesis Mission",
+    "英国援乌"
+  ]
+}
