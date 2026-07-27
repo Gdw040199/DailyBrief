@@ -1,0 +1,75 @@
+{
+  "hero_headline": "Anthropic发布Claude Opus 5 性能媲美Fable价格减半",
+  "daily_overview": "今日科技焦点：Anthropic发布Claude Opus 5，性能达Fable水平价格仅一半，引发业界热议；OpenAI研究显示AI正重塑工作边界；NVIDIA将生成式模拟引入手术机器人领域；Skill Self-Play推动LLM自我演化。时政方面：美国警告制裁中国AI公司，北京反控美企「蒸馏」并威胁反制；欧洲持续野火迫使数十万人撤离；西雅图美食节枪击案嫌疑人增至三人。整体呈现技术与地缘政治的深度交织。",
+  "tech_briefs": [
+    {
+      "title": "Claude Opus 5发布 性能价格双优",
+      "url": "https://news.smol.ai/issues/26-07-24-opus-5/",
+      "source": "Smol AI News",
+      "summary": "Anthropic发布Claude Opus 5，ECI指数159略低于Fable的161，编码智能体能力获赞，性能达Fable水平价格仅一半，知识蒸馏表现突出。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI研究显示AI扩展工作边界",
+      "url": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
+      "source": "OpenAI News",
+      "summary": "OpenAI研究显示AI正扩展员工职责，ChatGPT用户在多种角色中承担任务，重塑工作边界。",
+      "importance": 8
+    },
+    {
+      "title": "NVIDIA将生成式模拟引入手术机器人",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+      "source": "Hugging Face Blog",
+      "summary": "NVIDIA发布Cosmos-H-Dreams，将实时生成式模拟引入手术机器人领域，有望提升手术训练和规划效率。",
+      "importance": 8
+    },
+    {
+      "title": "Skill Self-Play：LLM自我演化新方法",
+      "url": "https://huggingface.co/papers/2607.22529",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出Skill Self-Play，通过技能协同进化推动LLM自我演化，在保持任务多样性的同时提供可靠验证，突破了现有方法中多样性-可靠性困境。该技术解决了LLM训练中手动标注成本高的问题，利用交互驱动自进化。",
+      "importance": 7
+    },
+    {
+      "title": "BitChat：蓝牙Mesh离线聊天工具",
+      "url": "https://github.com/permissionlesstech/bitchat",
+      "source": "GitHub Trending",
+      "summary": "基于蓝牙Mesh的离线聊天工具，无需互联网或中心服务器，支持局域网点对点通信，风格类似IRC，适合露营、断网场景下的小范围实时群聊。对去中心化通信爱好者有吸引力。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美国警告制裁中国AI公司 北京反制",
+      "url": "https://www.dw.com/zh/美国警告制裁中国ai公司-北京反控美企蒸馏模型并威胁反制/a-78133474?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "中国商务部指责美国AI企业使用中国模型进行「蒸馏」，若美方采取限制措施将实施必要反制。",
+      "importance": 9
+    },
+    {
+      "title": "欧洲野火危机：热浪加剧 数十万人撤离",
+      "url": "https://www.nytimes.com/live/2026/07/27/world/france-spain-wildfires-evacutions",
+      "source": "NYT World",
+      "summary": "欧洲新一轮热浪加剧法国和西班牙「前所未有」的火灾季，消防员和志愿者奋力控制火势，已迫使数十万人撤离。",
+      "importance": 8
+    },
+    {
+      "title": "西雅图美食节枪击案 嫌疑人增至三人",
+      "url": "https://www.bbc.co.uk/news/articles/c78gjyx4q2yo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "西雅图美食节枪击案嫌疑人增至三人，一人已被拘留，一人被追捕，第三人据信已死亡。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "AI竞争与地缘政治风险交织，技术突破与监管博弈同步加速，各方需警惕科技脱钩带来的长期影响。",
+  "keywords": [
+    "Claude Opus 5",
+    "AI制裁",
+    "生成式模拟",
+    "Skill Self-Play",
+    "蓝牙Mesh",
+    "欧洲野火",
+    "西雅图枪击",
+    "中美关系"
+  ]
+}
