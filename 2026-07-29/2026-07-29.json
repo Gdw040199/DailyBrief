@@ -1,0 +1,59 @@
+{
+  "hero_headline": "日本熊本县6.8级地震致多栋建筑倒塌",
+  "daily_overview": "日本熊本县6.8级强震造成建筑物倒塌和火灾，救援工作紧张展开。AI领域，Moonshot发布2.8万亿参数Kimi K3开源模型，引发业界关注；OpenAI报告显示AI编码代理正在加速科学计算。时政层面，美国FCC以安全风险为由禁止中国产人形机器人，中美技术脱钩进一步扩大；秘鲁新任总统藤森庆子宣誓就职，承诺铁腕打击犯罪。整体看，自然灾害与AI竞赛交织，全球政治科技格局持续演变。",
+  "tech_briefs": [
+    {
+      "title": "Moonshot发布2.8T参数Kimi K3开源模型",
+      "url": "https://huggingface.co/papers/2607.24653",
+      "source": "HuggingFace Trending Papers",
+      "summary": "Moonshot发布Kimi K3，2.8万亿参数MoE架构，104B活跃参数，原生视觉与百万token上下文，引入KDA等创新并开源基础设施。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI报告：AI编码代理加速科学计算",
+      "url": "https://openai.com/index/scientific-computing-agentic-ai",
+      "source": "OpenAI News",
+      "summary": "OpenAI发布报告，展示科学家使用AI编码代理现代化科学计算，加速基因组学等领域的软件开发与发现。",
+      "importance": 8
+    },
+    {
+      "title": "三星半导体员工大量跳槽至SK海力士",
+      "url": "https://www.technologyreview.com/2026/07/28/1140853/samsung-chip-workers-exodus-sk-hynix/",
+      "source": "MIT Tech Review AI",
+      "summary": "三星半导体部门员工因不满现状，大量申请跳槽至竞争对手SK海力士，反映韩国芯片人才竞争加剧。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "日本熊本6.8级强震致建筑倒塌火灾",
+      "url": "https://www.nytimes.com/live/2026/07/28/world/japan-earthquake-kumamoto-tsunami",
+      "source": "NYT World",
+      "summary": "日本熊本县发生6.8级地震，造成多栋建筑倒塌、火灾，救援队搜寻被困人员，已有多人伤亡。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "FCC以安全风险为由禁止中国产人形机器人",
+      "url": "https://www.theguardian.com/us-news/2026/jul/28/fcc-ban-humanoid-robots-china",
+      "source": "The Guardian",
+      "summary": "美国联邦通信委员会以「不可接受的风险」禁止中国产人形机器人进入美国市场，为特朗普政府限制中国技术最新行动。",
+      "importance": 8
+    },
+    {
+      "title": "藤森庆子就任秘鲁总统，承诺铁腕打击犯罪",
+      "url": "https://www.npr.org/2026/07/28/nx-s1-5910830/peru-president-keiko-fujimori-inaugurated",
+      "source": "NPR World",
+      "summary": "藤森庆子以微弱优势赢得大选后宣誓就任秘鲁总统，承诺以「铁腕」打击犯罪。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "日本强震牵动人心，AI大模型开源竞赛加速，中美技术脱钩蔓延至机器人领域，全球格局持续演变。",
+  "keywords": [
+    "日本地震",
+    "Kimi K3",
+    "FCC人形机器人禁令",
+    "秘鲁总统",
+    "AI科学计算",
+    "三星芯片人才"
+  ]
+}
