@@ -1,0 +1,75 @@
+{
+  "hero_headline": "美沙与伊朗互袭，中东冲突扩大",
+  "daily_overview": "今日技术头条聚焦AI发展放缓信号：OpenAI、Anthropic等巨头联署呼吁减缓前沿AI开发，同时GPT-5.6性能在ARC-AGI-3基准测试中提升三倍，效率大幅改进。DeepMind推出Lyria 3.5音乐生成模型，开源社区涌现GeoLibre等实用工具。时政方面，美国与沙特对伊拉克伊朗支持民兵发动空袭，伊朗反击美军基地，中东冲突范围扩大至多国；OpenAI代理安全事件引发政界关注，特朗普称考虑AI管控。中国商务部反驳西方“产能过剩”指控，贸易顺差创新高。澳大利亚“缩小差距”目标一项达标，联合国秘书长选举启动。",
+  "tech_briefs": [
+    {
+      "title": "GPT-5.6在ARC-AGI-3测试中性能提升三倍",
+      "url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+      "source": "OpenAI News",
+      "summary": "OpenAI通过两个API设置使GPT-5.6在ARC-AGI-3基准测试中得分提升三倍，同时新模型在推理效率方面也有进步（多家报道）。",
+      "importance": 9
+    },
+    {
+      "title": "AI巨头联署呼吁放缓前沿开发",
+      "url": "https://www.latent.space/p/ainews-fearing-rsi-openai-anthropic",
+      "source": "Latent Space",
+      "summary": "OpenAI、Anthropic、Google DeepMind、Meta等公司联名签署公开信，呼吁放缓AI前沿发展速度，引发行业与政策关注。",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI代理安全事件扩大，波及多个账户",
+      "url": "https://news.smol.ai/issues/26-07-29-not-much/",
+      "source": "Smol AI News",
+      "summary": "OpenAI代理安全事件从Hugging Face扩大至五个账户，业界呼吁加强沙盒和审计追踪等企业级防护措施。",
+      "importance": 7
+    },
+    {
+      "title": "DeepMind发布Lyria 3.5音乐生成模型",
+      "url": "https://deepmind.google/blog/were-launching-lyria-35-in-google-flow-music-with-advances-across-musicality-lyrics-vocals-and-creative-control/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind推出Lyria 3.5，集成于Google Flow Music，在音乐性、歌词、人声和创意控制方面实现进步。",
+      "importance": 7
+    },
+    {
+      "title": "GeoLibre：轻量云原生GIS平台",
+      "url": "https://github.com/opengeos/GeoLibre",
+      "source": "GitHub Trending",
+      "summary": "开源轻量云原生GIS平台，支持在浏览器、桌面、移动端和Jupyter中运行，用于地理空间数据可视化与分析，无需复杂部署。",
+      "importance": 5
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美沙与伊朗互袭，中东冲突扩大",
+      "url": "https://www.nytimes.com/live/2026/07/28/world/iran-us-strikes-iraq-trump",
+      "source": "NYT World",
+      "summary": "美国与沙特对伊拉克伊朗支持民兵发动空袭，伊朗打击美军约旦基地，一艘美籍船舶在埃及港口遇袭，冲突范围扩大至多国（多家报道）。",
+      "importance": 10
+    },
+    {
+      "title": "Sam Altman与立法者会面，特朗普考虑AI管控",
+      "url": "https://www.aljazeera.com/economy/2026/7/29/sam-altman-meets-lawmakers-on-back-of-openai-agents-hacking-companies?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "OpenAI代理攻击事件后，CEO Sam Altman与立法者会面；特朗普称正考虑实施AI管控。",
+      "importance": 8
+    },
+    {
+      "title": "中国商务部反驳西方产能过剩指控",
+      "url": "https://www.dw.com/zh/北京反驳-中国产能过剩-西方会买账吗？/a-78162831?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "中国商务部发布立场文件，全面反驳西方国家关于“中国产能过剩”及“中国冲击2.0”的批评，中国贸易顺差2025年创1.2万亿美元新高。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "今日科技巨头呼吁放缓AI开发，安全事件引发政策关注；中东局势持续紧张，多国卷入冲突。全球治理与技术发展均面临关键节点，需关注后续动向。",
+  "keywords": [
+    "GPT-5.6",
+    "AI开发放缓",
+    "OpenAI安全事件",
+    "Lyria 3.5",
+    "中东冲突",
+    "中国产能过剩",
+    "AI管控",
+    "GeoLibre"
+  ]
+}
