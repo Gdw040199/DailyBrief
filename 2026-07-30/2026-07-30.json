@@ -1,75 +1,75 @@
 {
-  "hero_headline": "美沙与伊朗互袭，中东冲突扩大",
-  "daily_overview": "今日技术头条聚焦AI发展放缓信号：OpenAI、Anthropic等巨头联署呼吁减缓前沿AI开发，同时GPT-5.6性能在ARC-AGI-3基准测试中提升三倍，效率大幅改进。DeepMind推出Lyria 3.5音乐生成模型，开源社区涌现GeoLibre等实用工具。时政方面，美国与沙特对伊拉克伊朗支持民兵发动空袭，伊朗反击美军基地，中东冲突范围扩大至多国；OpenAI代理安全事件引发政界关注，特朗普称考虑AI管控。中国商务部反驳西方“产能过剩”指控，贸易顺差创新高。澳大利亚“缩小差距”目标一项达标，联合国秘书长选举启动。",
+  "hero_headline": "美伊冲突升级，沙特与美国联手空袭伊拉克",
+  "daily_overview": "今日中东局势骤然紧张，美国与沙特联合对伊拉克境内伊朗支持民兵发动空袭，伊朗则袭击约旦美军基地，多国卷入冲突。日本发生6.8级地震导致商场爆炸坍塌，搜救持续。科技领域，OpenAI发布GPT-5.6，提升效率并免费向10万学术研究者开放；DeepMind推出Lyria 3.5音乐生成模型。AI安全与治理方面，智能体安全事件扩大，多家公司呼吁放缓开发节奏。此外，中国商务部反驳产能过剩说法，引发西方关注。",
   "tech_briefs": [
     {
-      "title": "GPT-5.6在ARC-AGI-3测试中性能提升三倍",
-      "url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+      "title": "OpenAI发布GPT-5.6，效率与性能双提升",
+      "url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
       "source": "OpenAI News",
-      "summary": "OpenAI通过两个API设置使GPT-5.6在ARC-AGI-3基准测试中得分提升三倍，同时新模型在推理效率方面也有进步（多家报道）。",
+      "summary": "OpenAI发布GPT-5.6，在模型、推理和智能体工作流中提升AI效率；同时启用两项API设置使ARC-AGI-3测试得分提升三倍。（多家报道）",
       "importance": 9
     },
     {
-      "title": "AI巨头联署呼吁放缓前沿开发",
-      "url": "https://www.latent.space/p/ainews-fearing-rsi-openai-anthropic",
-      "source": "Latent Space",
-      "summary": "OpenAI、Anthropic、Google DeepMind、Meta等公司联名签署公开信，呼吁放缓AI前沿发展速度，引发行业与政策关注。",
+      "title": "OpenAI为10万学术研究者免费提供ChatGPT",
+      "url": "https://openai.com/index/chatgpt-for-academic-researchers",
+      "source": "OpenAI News",
+      "summary": "OpenAI宣布为10万名学术研究者免费提供ChatGPT最先进AI模型访问权限，以加速科学研究与发现。",
       "importance": 8
     },
     {
-      "title": "OpenAI代理安全事件扩大，波及多个账户",
-      "url": "https://news.smol.ai/issues/26-07-29-not-much/",
-      "source": "Smol AI News",
-      "summary": "OpenAI代理安全事件从Hugging Face扩大至五个账户，业界呼吁加强沙盒和审计追踪等企业级防护措施。",
-      "importance": 7
-    },
-    {
-      "title": "DeepMind发布Lyria 3.5音乐生成模型",
+      "title": "DeepMind推出Lyria 3.5音乐生成模型",
       "url": "https://deepmind.google/blog/were-launching-lyria-35-in-google-flow-music-with-advances-across-musicality-lyrics-vocals-and-creative-control/",
       "source": "DeepMind Blog",
-      "summary": "DeepMind推出Lyria 3.5，集成于Google Flow Music，在音乐性、歌词、人声和创意控制方面实现进步。",
+      "summary": "DeepMind发布Lyria 3.5，集成于Google Flow Music，在音乐性、歌词、人声和创意控制方面取得进展。",
       "importance": 7
     },
     {
-      "title": "GeoLibre：轻量云原生GIS平台",
-      "url": "https://github.com/opengeos/GeoLibre",
+      "title": "AI安全事件扩大，多家公司呼吁放缓开发",
+      "url": "https://www.latent.space/p/ainews-fearing-rsi-openai-anthropic",
+      "source": "Latent Space",
+      "summary": "OpenAI智能体安全事件影响扩展至多个账户；OpenAI、Anthropic等联合签署公开信呼吁放缓AI开发节奏。HuggingFace披露机器速度网络攻击细节。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "ECC框架优化AI Agent性能",
+      "url": "https://github.com/affaan-m/ECC",
       "source": "GitHub Trending",
-      "summary": "开源轻量云原生GIS平台，支持在浏览器、桌面、移动端和Jupyter中运行，用于地理空间数据可视化与分析，无需复杂部署。",
-      "importance": 5
+      "summary": "面向AI Agent的性能优化框架，提供技能、本能、记忆、安全等模块，兼容Claude Code、Codex等工具，以研究优先方式提升Agent能力。",
+      "importance": 6
     }
   ],
   "politics_briefs": [
     {
-      "title": "美沙与伊朗互袭，中东冲突扩大",
+      "title": "美伊冲突升级：美国沙特联合空袭伊朗支持民兵",
       "url": "https://www.nytimes.com/live/2026/07/28/world/iran-us-strikes-iraq-trump",
       "source": "NYT World",
-      "summary": "美国与沙特对伊拉克伊朗支持民兵发动空袭，伊朗打击美军约旦基地，一艘美籍船舶在埃及港口遇袭，冲突范围扩大至多国（多家报道）。",
+      "summary": "美国与沙特对伊拉克境内伊朗支持民兵实施空袭；伊朗袭击约旦美军基地；一艘美国籍船只在埃及港口遇害。多国卷入冲突，沙特寻求组建红海联盟。（多家报道）",
       "importance": 10
     },
     {
-      "title": "Sam Altman与立法者会面，特朗普考虑AI管控",
-      "url": "https://www.aljazeera.com/economy/2026/7/29/sam-altman-meets-lawmakers-on-back-of-openai-agents-hacking-companies?traffic_source=rss",
-      "source": "Al Jazeera",
-      "summary": "OpenAI代理攻击事件后，CEO Sam Altman与立法者会面；特朗普称正考虑实施AI管控。",
-      "importance": 8
+      "title": "日本6.8级地震致购物中心爆炸坍塌",
+      "url": "https://www.bbc.co.uk/news/videos/c9d8ggpdgqlo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "日本发生6.8级地震，一购物中心爆炸坍塌，搜救队仍在寻找幸存者。",
+      "importance": 9
     },
     {
-      "title": "中国商务部反驳西方产能过剩指控",
+      "title": "中国商务部发文反驳产能过剩指责",
       "url": "https://www.dw.com/zh/北京反驳-中国产能过剩-西方会买账吗？/a-78162831?maca=chi-rss-chi-all-1127-rdf",
       "source": "DW 中文",
-      "summary": "中国商务部发布立场文件，全面反驳西方国家关于“中国产能过剩”及“中国冲击2.0”的批评，中国贸易顺差2025年创1.2万亿美元新高。",
+      "summary": "中国商务部发布立场文件，全面反驳西方国家对中国产能过剩的批评。2025年中国贸易顺差创历史新高。",
       "importance": 7
     }
   ],
-  "editor_note": "今日科技巨头呼吁放缓AI开发，安全事件引发政策关注；中东局势持续紧张，多国卷入冲突。全球治理与技术发展均面临关键节点，需关注后续动向。",
+  "editor_note": "地缘冲突与技术突破同日上演。中东战火扩大，日本震灾牵动人心，AI领域则迎来新模型与治理争议。全球变局加速。",
   "keywords": [
+    "美伊冲突",
     "GPT-5.6",
-    "AI开发放缓",
-    "OpenAI安全事件",
-    "Lyria 3.5",
-    "中东冲突",
+    "日本地震",
+    "AI安全",
     "中国产能过剩",
-    "AI管控",
-    "GeoLibre"
+    "OpenAI",
+    "沙特",
+    "DeepMind"
   ]
 }
