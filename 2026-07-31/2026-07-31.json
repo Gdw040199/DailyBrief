@@ -1,0 +1,76 @@
+{
+  "hero_headline": "特朗普宣布加沙解除武装协议，以方将撤军",
+  "daily_overview": "技术领域，OpenAI 发布 GPT-5.6 并提升 ARC-AGI-3 得分三倍，DeepMind 推出 Gemini Robotics ER 2 机器人模型，MIT 指 LLM 存在根本性安全缺陷。时政方面，特朗普宣称「和平委员会」就哈马斯解除武装达成协议，以色列将撤出加沙，但双方未证实；美伊冲突扩大，沙特与十余国成立红海防御联盟；一枚疑似俄导弹落入波兰，形成巨大弹坑，北约领空再遭侵犯。此外，地球生态超载日提前到来，人类已用尽全年自然资源。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI 发布 GPT-5.6，ARC-AGI-3 得分提升三倍",
+      "url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+      "source": "OpenAI News",
+      "summary": "OpenAI 推出 GPT-5.6 及低价 Luna/Terra 模型，并公布两项 API 设置使 ARC-AGI-3 基准得分提升三倍，同时提高效率。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind 推出 Gemini Robotics ER 2",
+      "url": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/",
+      "source": "DeepMind Blog",
+      "summary": "通过视频理解、任务编排与多机器人协作，提升机器人推理与协作能力，标志机器人应用的关键进步。相关另一款 Gemini Robotics 2 亦同日发布。",
+      "importance": 8
+    },
+    {
+      "title": "LLM 存在根本性缺陷，攻击难以避免",
+      "url": "https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack/",
+      "source": "MIT Tech Review AI",
+      "summary": "研究者在 ICML 2026 上指出，大语言模型存在根本性安全缺陷，无法实现完全安全，攻击漏洞难以避免。",
+      "importance": 9
+    },
+    {
+      "title": "TurboVLA：RTX 4090 上以 32 Hz 运行的实时 VLA 模型",
+      "url": "https://huggingface.co/papers/2607.27205",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出避免 LLM 中心路径的 VLA 模型，在 RTX 4090 上实现 32 Hz 推理，VRAM 占用 <1 GB，大幅降低计算开销，适用于高效机器人控制。",
+      "importance": 7
+    },
+    {
+      "title": "OpenAI 向 10 万学术研究人员免费提供 ChatGPT",
+      "url": "https://openai.com/index/chatgpt-for-academic-researchers",
+      "source": "OpenAI News",
+      "summary": "OpenAI 宣布向 10 万名学术研究人员免费开放最先进 ChatGPT 模型，以加速科学发现与合作。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "特朗普宣称哈马斯解除武装协议达成，加沙将停火",
+      "url": "https://www.bbc.co.uk/news/articles/cj03m512r4go?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "特朗普称其「和平委员会」已就哈马斯解除武装达成历史性协议，以色列将撤出加沙，但以方与哈马斯尚未回应。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "美伊冲突扩大，沙特与十余国组建红海防御联盟",
+      "url": "https://www.nytimes.com/live/2026/07/30/world/iran-war-strikes-trump",
+      "source": "NYT World",
+      "summary": "随着美国与伊朗冲突升级，沙特携手埃及、土耳其等国成立新防御联盟，保护红海航运免受袭击。",
+      "importance": 9
+    },
+    {
+      "title": "疑似俄导弹落入波兰，北约领空再遭侵犯",
+      "url": "https://www.dw.com/zh/北约成员国领空再遭侵犯-波兰境内留下巨大弹坑/a-78179513?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "俄罗斯对乌克兰大规模轰炸期间，一枚疑似俄导弹在波兰境内造成直径10米弹坑，俄导弹、无人机多次侵犯北约领空。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "技术突破与地缘冲突同步升温，AI 能力跃升伴随安全隐忧，加沙与东欧局势再度紧张。",
+  "keywords": [
+    "加沙",
+    "哈马斯",
+    "GPT-5.6",
+    "ARC-AGI-3",
+    "Gemini Robotics",
+    "LLM安全",
+    "伊朗",
+    "北约",
+    "生态超载"
+  ]
+}
