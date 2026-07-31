@@ -1,0 +1,75 @@
+{
+  "hero_headline": "六万移民涌入西班牙飞地 政治风波蔓延",
+  "daily_overview": "西班牙休达遭遇数万人规模移民涌入，多数人随后返回，但死亡与政治争议持续发酵；加沙和平协议路线图浮现，特朗普宣称重大突破。科技线方面，OpenAI 大幅下调 GPT-5.6 定价，智能成本四个月降逾十倍；DeepMind 发布 Gemini Robotics 2，推动具身智能迈向多机器人协作；MiniMax 开源多模态模型 H3；同时研究揭示大语言模型存在难以根治的安全缺陷。欧盟另指控 Temu 不配合调查，威胁高额罚款。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI 大幅下调 GPT-5.6 定价",
+      "url": "https://news.smol.ai/issues/26-07-30-not-much/",
+      "source": "Smol AI News",
+      "summary": "OpenAI 将 GPT-5.6 Luna 降价 80%、Terra 降价 20%，并推出低延迟档位 Sol Fast；由于递归自我优化，GPT-5.4 同智能成本四个月降约 13 倍。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind 发布 Gemini Robotics 2 机器人模型",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 推出 Gemini Robotics 2，具备视频理解、任务编排与多机器人协作能力，帮助机器人在现实世界完成复杂任务。",
+      "importance": 8
+    },
+    {
+      "title": "MiniMax 开源多模态生成模型 H3",
+      "url": "https://x.com/MiniMax_AI/status/2083008095488516262",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "MiniMax 发布开源通用多模态生成模型 H3，统一理解文本、图像、视频与音频，支持生成带原生立体声的视频，打破任务与模态边界。",
+      "importance": 7
+    },
+    {
+      "title": "研究称大语言模型存在根本性安全缺陷",
+      "url": "https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack/",
+      "source": "MIT Tech Review AI",
+      "summary": "MIT Tech Review 报道，研究团队在 ICML 发表论文称，受工作原理中的根本性缺陷影响，大型语言模型不可能完全抵御黑客攻击，相关主张影响深远。",
+      "importance": 8
+    },
+    {
+      "title": "AskChem：以主张为中心的化学文献基础设施",
+      "url": "https://huggingface.co/papers/2607.28618",
+      "source": "HuggingFace Trending Papers",
+      "summary": "针对化学文献检索难以定位与验证具体发现的问题，AskChem 将文献发现组织为可验证主张，支持科学家与 AI 智能体高效检索、溯源与综合，提升材料发现效率。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "数万移民涌入西班牙飞地 首相归咎贩运者",
+      "url": "https://www.bbc.co.uk/news/articles/cx2kp639yx4o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "约 6 万人从摩洛哥涌入西班牙休达，多数已返回，但数十人丧生；首相桑切斯称此次涌入为“袭击”，意大利暂停申根协议，右翼政党激烈批评。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "特朗普宣称加沙和平协议取得重大突破",
+      "url": "https://www.theguardian.com/world/live/2026/jul/31/us-iran-war-live-updates-trump-claims-gaza-hamas-deal-middle-east-crisis-latest-news",
+      "source": "The Guardian",
+      "summary": "特朗普称以色列对加沙和平计划非常满意，协议为重大突破，包含哈马斯完全解除武装，但未明确撤军与解除武装的先后顺序；沙特据报准备对胡塞武装发动攻势。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "欧盟指控 Temu 不配合调查 威胁巨额罚款",
+      "url": "https://www.dw.com/zh/欧盟指控temu不配合调查-威胁巨额罚款/a-78194489?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "欧盟委员会 7 月 31 日表示，已对中国电商 Temu 发起诉讼，指控其在反补贴搜查中不配合调查，可能面临最高年营业额 1% 的罚款。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "今日焦点集中于移民潮考验欧洲治理、大模型定价战与安全隐忧并存。技术加速与地缘风险交织，提示政策与产业需同步跟进。",
+  "keywords": [
+    "移民危机",
+    "西班牙",
+    "GPT-5.6",
+    "Gemini Robotics",
+    "加沙和平",
+    "LLM 安全",
+    "MiniMax",
+    "Temu"
+  ]
+}
