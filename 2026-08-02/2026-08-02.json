@@ -1,0 +1,75 @@
+{
+  "hero_headline": "特朗普取消对伊打击，AI数学与机器人突破并行",
+  "daily_overview": "今日国际时政与AI领域均现重大动向。美伊紧张局势出现转机，特朗普宣布取消对伊朗的军事打击，称双方接近达成协议框架；乌克兰首都基辅则遭俄军夜间导弹袭击，致九人遇难，防空压力持续。科技方面，OpenAI公布数学与理论计算机科学十大进展，展示AI在推理前沿的突破；DeepMind发布Gemini Robotics 2，推动机器人全身智能落地；DeepSeek V4-Flash公开测试并大幅降价，大模型竞争白热化。此外，研究揭示LLM存在根本性安全缺陷，MiniMax开源多模态模型H3，凸显行业在能力跃升与风险治理间的张力。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI公布数学与理论计算机十大进展",
+      "url": "https://openai.com/index/ten-advances-in-mathematics",
+      "source": "OpenAI News",
+      "summary": "OpenAI发布在几何、密码学、复杂性理论等长期未解问题上的十项新成果，展示AI在数学推理与理论计算机科学领域的突破，或推动相关研究方向。",
+      "importance": 9
+    },
+    {
+      "title": "Gemini Robotics 2带来机器人全身智能",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind发布Gemini Robotics 2，强化视频理解、任务编排与多机器人协作能力，使机器人能推理、协同并解决现实任务，代表具身智能新阶段。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "DeepSeek V4-Flash API开启公开测试",
+      "url": "https://news.smol.ai/issues/26-07-31-not-much/",
+      "source": "Smol AI News",
+      "summary": "DeepSeek推出V4-Flash API公开测试版，称在不改动架构与规模的情况下实现训练后性能跃升，Terminal-Bench得分达82，引发AI社区广泛关注。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "研究指LLM存在根本性安全缺陷",
+      "url": "https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack/",
+      "source": "MIT Tech Review AI",
+      "summary": "研究人员在论文中指出，由于大语言模型工作机制的根本性缺陷，无法使其完全抵御黑客攻击，相关成果发表于国际会议。",
+      "importance": 7
+    },
+    {
+      "title": "MiniMax发布开源多模态模型H3",
+      "url": "https://x.com/MiniMax_AI/status/2083008095488516262",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "MiniMax发布通用多模态生成模型H3，可统一理解文本、图像、视频与音频，并直接生成带原生立体声的视频，定位为打破任务与模态边界的开源模型。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "特朗普取消对伊朗打击，称接近达成协议",
+      "url": "https://www.bbc.co.uk/news/articles/cjwx74qgld2o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "美国总统特朗普宣布应伊朗及中东国家请求取消计划中的打击行动，称美伊已接近「协议边界」，但外界对谈判前景仍存疑虑。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "俄军夜间袭击基辅致9人死亡",
+      "url": "https://www.npr.org/2026/08/01/nx-s1-5916393/overnight-russia-kyiv-ukraine-strikes",
+      "source": "NPR World",
+      "summary": "弹道导弹周六凌晨击中乌克兰首都五个区，造成九人遇难。与此同时，特朗普被指收回对乌导弹防御系统的增援承诺，基辅防空压力持续。",
+      "importance": 8
+    },
+    {
+      "title": "美以国安为由限制外国人形机器人进入",
+      "url": "https://www.dw.com/zh/人形机器人：特朗普对华贸易战的最新战场？/a-78202865?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "美国禁止外国制造的人形机器人进入本国市场，分析认为此举名为国家安全、实为给本土厂商争取追赶中国竞争对手的时间，可能成为对华贸易战新战线。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "地缘博弈与AI竞赛同频共振：美伊局势暂缓但变数未消，大模型价格战与机器人技术进步则持续加速。读者宜关注安全风险与产业重塑的双重影响。",
+  "keywords": [
+    "特朗普",
+    "伊朗",
+    "OpenAI",
+    "Gemini Robotics",
+    "DeepSeek",
+    "多模态模型",
+    "LLM安全",
+    "人形机器人"
+  ]
+}
