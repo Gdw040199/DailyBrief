@@ -1,0 +1,13 @@
+{
+  "hero_headline": "委内瑞拉地震死亡人数突破6000",
+  "daily_overview": "技术方面，DeepSeek 发布 V4-Flash 公开测试版，成本显著降低；OpenAI 将 GPT-5.6 Luna 降价八成并推出低延迟层级，模型竞争加剧。Gemini Robotics 2 强化视频理解与多机器人协作，OpenAI 另公布数学与理论计算机科学十项突破。时政方面，委内瑞拉地震死亡人数超六千；欧盟因休达越境事件商讨强化边境；美伊围绕谈判重启各执一词。太空碎片等议题亦受关注。",
+  "tech_briefs": [
+    {
+      "title": "Gemini Robotics ER 2：视频理解与多机器人协作",
+      "url": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi"
+    }
+  ],
+  "politics_briefs": [],
+  "editor_note": "",
+  "keywords": []
+}
