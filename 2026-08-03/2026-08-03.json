@@ -1,0 +1,13 @@
+{
+  "hero_headline": "深度求索发布新模型，特朗普暂缓对伊打击",
+  "daily_overview": "AI 领域今日密集上新：DeepSeek 发布 V4-Flash API 公测版，性能与成本优势明显；OpenAI 将 GPT-5.6 价格下调两至八成，智能成本四个月降 13 倍；DeepMind 推出 Gemini Robotics ER 2，把视频理解、多机协作带入机器人应用。与此同时，研究警示大模型存在难以根除的安全缺陷。国际方面，特朗普宣称伊朗协议框架已定，叫停大规模打击，谈判周一恢复；莫斯科一家餐馆发生爆炸，致 3 死 21 伤，被定性为恐怖行径；巴基斯坦斯瓦特河谷遭遇自杀式袭击，至少 14 人遇难。安全风险与 AI 竞赛同步升温。",
+  "tech_briefs": [
+    {
+      "title": "DeepSeek 推出 V4-Flash API 公测版",
+      "url": "https://news.s"
+    }
+  ],
+  "politics_briefs": [],
+  "editor_note": "",
+  "keywords": []
+}
