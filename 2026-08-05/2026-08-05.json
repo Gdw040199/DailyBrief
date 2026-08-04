@@ -1,0 +1,15 @@
+{
+  "hero_headline": "美国拟禁中国数据中心关键组件",
+  "daily_overview": "今日科技与时政均有重磅信号：DeepSeek 开放 V4 Flash API 公测，Qwen 3.8-Max 及 27B 开源模型发布，开源与推理性能竞争持续升温；DeepMind 推出 Gemini Robotics 2 与 ER 2，机器人向视频理解与多机协作进阶；OpenAI 就苹果诉讼发声，AI 治理讨论同步推进。时政方面，美国拟禁止进口中国产数据中心关键组件，科技供应链博弈加剧；乌克兰防空短板凸显，爱国者导弹全球需求飙升；台湾岛内公投与两岸法律战交织，地缘不确定性增大。",
+  "tech_briefs": [
+    {
+      "title": "DeepSeek V4 Flash 开启公测",
+      "url": "https://news.smol.ai/issues/26-07-31-not-much/",
+      "source": "Smol AI News",
+      "summary": null
+    }
+  ],
+  "politics_briefs": [],
+  "editor_note": "",
+  "keywords": []
+}
