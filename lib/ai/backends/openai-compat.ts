@@ -104,6 +104,34 @@ export async function runOpenAICompat(
       { timeout: timeoutMs },
     );
     const text = (resp.choices[0]?.message?.content ?? "").trim();
+    const finishReason = resp.choices[0]?.finish_reason;
+
+    // DeepSeek and some providers return "terminated" or empty content when
+    // the server-side kills a request mid-generation (overloaded, rate-limited,
+    // or safety-filtered). Treat these as retryable — the caller should
+    // back off and try again rather than bubble up a zero-length response
+    // that downstream JSON parsing will choke on.
+    if (!text || finishReason === "terminated") {
+      const reason = !text
+        ? "empty response"
+        : `finish_reason=${finishReason}`;
+      const err = new Error(`LLM ${reason} — retryable`);
+      (err as any).retryable = true;
+      const durationMs = Date.now() - started;
+      logLlmCall({
+        ts: new Date(started).toISOString(),
+        backend: cfg.backend,
+        model,
+        durationMs,
+        success: false,
+        inputChars,
+        outputChars: text.length,
+        errorCategory: "retryable_empty",
+        errorSnippet: reason,
+      });
+      throw err;
+    }
+
     const durationMs = Date.now() - started;
     logLlmCall({
       ts: new Date(started).toISOString(),

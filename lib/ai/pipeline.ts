@@ -199,21 +199,30 @@ export async function generateDailyReport(
   }));
   const userPayloadJson = JSON.stringify(userPayload);
 
-  let report: DailyReport;
-  try {
-    report = await callOnce(userPayloadJson);
-  } catch (firstErr) {
-    // One retry — claude CLI occasionally wraps in narration on the first
-    // pass but obeys when the same prompt is repeated.
-    console.warn(
-      `[pipeline] first claude CLI call failed, retrying: ${
-        firstErr instanceof Error ? firstErr.message : String(firstErr)
-      }`,
-    );
-    report = await callOnce(userPayloadJson);
+  let lastErr: unknown;
+  const MAX_RETRIES = 3;
+
+  for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+    try {
+      const report = await callOnce(userPayloadJson);
+      return { report, tokensUsed: 0 };
+    } catch (err) {
+      lastErr = err;
+      const msg = err instanceof Error ? err.message : String(err);
+      if (attempt < MAX_RETRIES) {
+        // Exponential backoff: 2s, 4s, 8s — gives overloaded APIs
+        // (especially flash/free-tier models) time to recover between
+        // retries. Empty responses and terminated finish reasons are
+        // the most common transient failures for budget models.
+        const delayMs = Math.min(2000 * 2 ** attempt, 30_000);
+        console.warn(
+          `[pipeline] attempt ${attempt + 1}/${MAX_RETRIES + 1} failed, ` +
+          `retrying in ${(delayMs / 1000).toFixed(0)}s: ${msg}`,
+        );
+        await new Promise((r) => setTimeout(r, delayMs));
+      }
+    }
   }
 
-  // Max subscription has no per-call token meter — we expose 0 for schema
-  // compatibility; consumers should treat 0 as "metric not available".
-  return { report, tokensUsed: 0 };
+  throw lastErr;
 }

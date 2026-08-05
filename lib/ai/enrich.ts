@@ -291,7 +291,32 @@ async function runEnrichment(
     }
   } catch (e) {
     const msg = e instanceof Error ? e.message : String(e);
-    console.warn(`[enrich] ${scope} failed: ${msg}`);
+    // One retry with a short backoff — transient API failures (empty
+    // responses, terminated connections) are common with flash-tier
+    // models and often resolve after a 2-3 second pause.
+    console.warn(`[enrich] ${scope} failed, retrying: ${msg}`);
+    try {
+      await new Promise((r) => setTimeout(r, 3000));
+      const { text } = await runLlm({
+        systemPrompt,
+        userPrompt,
+        timeoutMs: 240_000,
+      });
+      const cleaned = extractJson(text);
+      let parsed: { summaries?: Array<{ url?: string; summary?: string }> };
+      try {
+        parsed = JSON.parse(cleaned);
+      } catch {
+        parsed = JSON.parse(jsonrepair(cleaned));
+      }
+      for (const s of parsed.summaries ?? []) {
+        if (s.url && s.summary) result.set(s.url, s.summary.trim());
+      }
+      console.warn(`[enrich] ${scope}: retry matched ${result.size}/${payload.length}`);
+    } catch (e2) {
+      const msg2 = e2 instanceof Error ? e2.message : String(e2);
+      console.warn(`[enrich] ${scope} retry also failed: ${msg2}`);
+    }
   }
 
   return result;
