@@ -1,12 +1,13 @@
 {
-  "hero_headline": "美国拟禁中国数据中心关键组件",
-  "daily_overview": "今日科技与时政均有重磅信号：DeepSeek 开放 V4 Flash API 公测，Qwen 3.8-Max 及 27B 开源模型发布，开源与推理性能竞争持续升温；DeepMind 推出 Gemini Robotics 2 与 ER 2，机器人向视频理解与多机协作进阶；OpenAI 就苹果诉讼发声，AI 治理讨论同步推进。时政方面，美国拟禁止进口中国产数据中心关键组件，科技供应链博弈加剧；乌克兰防空短板凸显，爱国者导弹全球需求飙升；台湾岛内公投与两岸法律战交织，地缘不确定性增大。",
+  "hero_headline": "俄导弹袭基辅致17死",
+  "daily_overview": "今日俄军弹道导弹再次大规模袭击基辅，造成至少17人死亡，乌克兰防空系统短板凸显；特朗普同时警告伊朗尽快开放霍尔木兹海峡，原油市场面临波动。科技侧，阿里开源2.4万亿参数模型Qwen3.8-Max，主攻自主编程与长周期执行；谷歌DeepMind推出新一代机器人模型，OpenAI则就苹果诉讼公开回应。美国拟禁止进口中国产数据中心组件，使AI产业链的地缘博弈进一步加剧。整体看，前沿模型与地缘科技管制同步升温。",
   "tech_briefs": [
     {
-      "title": "DeepSeek V4 Flash 开启公测",
-      "url": "https://news.smol.ai/issues/26-07-31-not-much/",
+      "title": "阿里开源Qwen3.8-Max大模型",
+      "url": "https://news.smol.ai/issues/26-08-03-qwen-38/",
       "source": "Smol AI News",
-      "summary": null
+      "summary": "阿里发布2.4万亿参数开放权重模型Qwen3.8-Max，主打自主编程与长周期执行，定价激进；早期基准显示其在偏好与视觉任务上与Claude相当。（多家报道）",
+      "importance": 9
     }
   ],
   "politics_briefs": [],
