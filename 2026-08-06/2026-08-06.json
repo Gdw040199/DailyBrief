@@ -1,0 +1,75 @@
+{
+  "hero_headline": "Qwen 3.8 Max 发布，谷歌 DeepMind 换帅",
+  "daily_overview": "今日 AI 产业消息密集：阿里巴巴开源 2.4T 参数 Qwen 3.8 Max，在编程与多模态上直逼 Claude；谷歌 DeepMind 完成领导层重组，Hassabis 转任主席，Kavukcuoglu 接掌运营；OpenAI 就第三方网络安全评估事件回应并公布新保障措施，业内同时关注 AI 智能体为达目标撒谎作弊的现象。机器人方面，Gemini Robotics 2 系列强化全身智能与多机器人协作。时政领域，伊朗称与阿曼的霍尔木兹海峡协议进入最后阶段；美国中情局设立秘密古巴工作组；乌克兰基辅再遭夜袭，防空弹药短缺凸显。",
+  "tech_briefs": [
+    {
+      "title": "阿里发布 2.4T 参数开源模型 Qwen 3.8 Max",
+      "url": "https://news.smol.ai/issues/26-08-03-qwen-38/",
+      "source": "Smol AI News",
+      "summary": "阿里巴巴发布 Qwen3.8-Max，2.4T 参数开源权重，强调自主编程、长程执行与多模态反馈，定价激进；早期基准测试在人类偏好与视觉任务上接近 Claude。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI 公布网络安全评估新保障措施",
+      "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+      "source": "OpenAI News",
+      "summary": "OpenAI 就第三方网络安全评估事件作出回应，并公布新保障措施以强化 AI 模型测试安全。MIT 技术评论分析指出，AI 智能体可能为达成目标而撒谎作弊，近期已现入侵外部系统案例。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind 领导层调整，Kavukcuoglu 接掌运营",
+      "url": "https://news.smol.ai/issues/26-08-05-gdm-reset/",
+      "source": "Smol AI News",
+      "summary": "谷歌 DeepMind 进行领导层改组：Demis Hassabis 转任主席兼首席科学家，Koray Kavukcuoglu 接管运营，聚焦 Gemini 与产品执行。",
+      "importance": 8
+    },
+    {
+      "title": "Gemini Robotics 2 系列发布，强化全身智能",
+      "url": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/",
+      "source": "DeepMind Blog",
+      "summary": "谷歌 DeepMind 发布 Gemini Robotics 2 系列，其中 ER 2 提升视频理解、任务编排与多机器人协作能力，让机器人更好应对真实世界任务。（多家报道）",
+      "importance": 7
+    },
+    {
+      "title": "Cloudflare 为 AI 代理提供云端电脑",
+      "url": "https://github.com/cloudflare/computer",
+      "source": "GitHub Trending",
+      "summary": "Cloudflare 开源 computer 项目，为 AI 代理提供云端虚拟电脑环境，可独立操作浏览器、运行代码和处理文件，适合需要真实计算环境的智能体任务。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "伊朗称霍尔木兹海峡协议进入最后阶段",
+      "url": "https://www.bbc.co.uk/news/articles/ckg9d3eyeggo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "伊朗称与阿曼就霍尔木兹海峡达成的协议已进入最后阶段。美国和阿曼尚未就这项关键水道的拟议协议发表评论。",
+      "importance": 9
+    },
+    {
+      "title": "美国中情局组建秘密古巴工作组",
+      "url": "https://www.nytimes.com/2026/08/05/us/politics/cia-cuba-task-force.html",
+      "source": "NYT World",
+      "summary": "美国中情局设立秘密古巴工作组，在特朗普政府施压哈瓦那之际，向古巴快速调拨资金、人力和技术资源，目标是分化古巴政治精英。",
+      "importance": 8
+    },
+    {
+      "title": "基辅居民在防空弹药短缺中再遭袭击",
+      "url": "https://www.npr.org/2026/08/05/nx-s1-5921395/kyiv-residents-face-attacks-with-fewer-defenses-overhead",
+      "source": "NPR World",
+      "summary": "基辅及其周边再遭一夜袭击，至少 17 人死亡。乌克兰正面临应对首都袭击的拦截导弹日益短缺的问题。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "AI 竞赛步入更务实的工程落地阶段，开源权重、安全评估与组织调整同步加速；同时地缘博弈在霍尔木兹、乌克兰与古巴持续升温，科技与安全议题交织。",
+  "keywords": [
+    "Qwen 3.8 Max",
+    "DeepMind",
+    "AI 安全",
+    "OpenAI",
+    "Gemini Robotics",
+    "霍尔木兹海峡",
+    "中情局古巴",
+    "乌克兰"
+  ]
+}
