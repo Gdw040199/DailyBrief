@@ -1,75 +1,74 @@
 {
-  "hero_headline": "GPT-5.6免费开放、AMD收购，AI格局加速洗牌",
-  "daily_overview": "今日AI产业进入新一轮调整：OpenAI升级GPT-5.6 Sol，免费用户可无限使用Luna版日常对话，并新增Agent插件；AMD收购Taalas，推理芯片竞争升温；谷歌DeepMind高层大换血，四位资深研究员离职。GitHub热榜与前沿论文继续聚焦AI代理的自我改进与安全评估。时政方向，西班牙与意大利因休达移民潮互设临时边境检查；巴基斯坦、土耳其与沙特签署「麦加联合防御公约」，中东地区安全格局再添变数；中国追授南海撞船殉职海警为烈士，台湾「汉光演习」同步举行。技术迭代与地缘博弈同步推进，成为今日简报的核心信号。",
+  "hero_headline": "OpenAI 将 Astra 升级为关键网络能力 加强安全管控",
+  "daily_overview": "今日 AI 领域重磅频出：OpenAI 将 Astra 升级为「关键」网络能力级别并强化安全评估；AMD 收购芯片初创 Taalas，推理端竞争升温。OpenAI 同步改进 GPT-5.6 Sol 并扩大 Luna 免费访问；谷歌 DeepMind 领导层换血，四名核心研究者离职。开源社区自我改进编码智能体登上 GitHub 热榜。时政方面，苏丹战乱致逾 800 万儿童失学，联合国警告一代人前景堪忧；休达移民潮引发西班牙与意大利互设边境管制；中国追认两名南海撞船殉职海警为烈士。AI 治理、算力竞争与人道危机交织，全球局势仍高度紧张。",
   "tech_briefs": [
     {
-      "title": "GPT-5.6升级 Sol更精准 Luna免费开放",
-      "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+      "title": "OpenAI 将 Astra 列为关键网络能力并加强安全管控",
+      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
       "source": "OpenAI News",
-      "summary": "OpenAI推出改进版GPT-5.6 Sol，提升准确性和一致性；免费用户可不限次数使用GPT-5.6 Luna日常对话，并新增Agent插件。（多家报道）",
-      "importance": 10
+      "summary": "OpenAI 公布 Astra 模型的初步网络安全评估，并采取加强安全防护与控制措施；另有报道称该模型被升级为「关键」网络能力级别，部分活动暂停。（多家报道）",
+      "importance": 9
     },
     {
-      "title": "AMD收购Taalas 布局AI推理算力",
+      "title": "AMD 收购 AI 芯片初创 Taalas 推理竞争升温",
       "url": "https://www.latent.space/p/ainews-amd-buys-taalas",
       "source": "Latent Space",
-      "summary": "AMD收购AI公司Taalas，强化推理侧芯片能力。业内评估认为推理（inference）赛道正在加速升温，预示模型部署基础设施进入新一轮扩张。（多家报道）",
+      "summary": "AMD 收购 AI 芯片初创公司 Taalas，推理领域竞争进入新阶段。行业评论认为，推理拐点正在升温，芯片格局或生变。（多家报道）",
       "importance": 8
     },
     {
-      "title": "谷歌DeepMind高层大调整 创始人转任主席",
+      "title": "OpenAI 改进 GPT-5.6 Sol 并扩大 Luna 免费访问",
+      "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+      "source": "OpenAI News",
+      "summary": "ChatGPT 推出改进版 GPT-5.6 Sol，提升准确性与一致性；免费用户也可无限使用 GPT-5.6 Luna，访问门槛降低。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "谷歌 DeepMind 领导层调整 四名核心研究者离职",
       "url": "https://www.latent.space/p/ainews-jeff-sanjay-oriol-and-quoc",
       "source": "Latent Space",
-      "summary": "Demis Hassabis转任谷歌DeepMind主席兼首席科学家，Koray Kavukcuoglu接管Gemini运营；Jeff等四位资深研究员离职，被视作一个时代结束。（多家报道）",
+      "summary": "Jeff、Sanjay、Oriol 和 Quoc 四位研究者离开 DeepMind，Demis 转任主席，Koray 任高级副总裁，外界关注谷歌 AI 战略走向。（多家报道）",
       "importance": 8
     },
     {
-      "title": "GitHub热榜：AI编码代理工具双发布",
+      "title": "GitHub 热门：自我改进的编码 RLM 智能体",
       "url": "https://github.com/PrimeIntellect-ai/prime-agent",
       "source": "GitHub Trending",
-      "summary": "prime-agent是面向编码的自我改进智能体，能在长期自主任务中优化策略；agent-skills提供生产级工程技能库，涵盖代码规范与测试审查，帮助AI代理适应真实开发环境。（多家报道）",
-      "importance": 7
-    },
-    {
-      "title": "DeepMind发布WeatherNext 气旋预报突破",
-      "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
-      "source": "DeepMind Blog",
-      "summary": "DeepMind推出WeatherNext AI模型，在气旋预报上实现突破性进展，有望提升极端天气预警能力，为防灾减灾提供更早的决策窗口。",
-      "importance": 7
+      "summary": "Prime Agent 面向编码工作流和长期自主任务，通过强化学习在运行中持续优化自身策略。该项目展示 RLM 在复杂工程场景的落地，适合长时间独立执行的自动化任务。",
+      "importance": 6
     }
   ],
   "politics_briefs": [
     {
-      "title": "西班牙对意大利实施临时边境检查",
+      "title": "联合国：苏丹战乱威胁整整一代人未来",
+      "url": "https://www.aljazeera.com/news/2026/8/8/sudans-war-threatens-an-entire-generations-future-un-warns?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "联合国警告，苏丹战争已致超过 800 万儿童失学，近四分之三学校受影响，恐威胁「整整一代人」的未来。",
+      "importance": 9
+    },
+    {
+      "title": "休达移民潮发酵 西班牙对意大利实施边境管制",
       "url": "https://www.bbc.co.uk/news/articles/c5yv5l6yr5ko?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "summary": "约7.8万名移民自摩洛哥涌入西班牙飞地休达，意大利先实施边境管制；西班牙随后宣布对来自意大利的游客进行对等临时检查。（多家报道）",
-      "importance": 8
-    },
-    {
-      "title": "巴沙土签署「麦加联合防御公约」",
-      "url": "https://www.aljazeera.com/news/2026/8/7/new-regional-order-pakistan-turkiye-saudi-arabia?traffic_source=rss",
-      "source": "Al Jazeera",
-      "summary": "巴基斯坦、土耳其与沙特签署「麦加联合防御公约」，意图在伊朗与以色列之间构建新地区秩序；观察人士质疑该联盟能否真正有效运转。",
+      "summary": "因约 7.8 万名移民从摩洛哥涌入西班牙飞地休达，意大利先行引入边境管制，西班牙随后对意大利实施管制，双方关系趋紧。",
       "importance": 7
     },
     {
-      "title": "中国追授海警烈士 台湾汉光演习启动",
+      "title": "中国官方追认南海撞船事故两名海警为烈士",
       "url": "https://www.dw.com/zh/中国海警船与军舰南海相撞1年后-官方证实2人死亡追授-烈士/a-78282773?maca=chi-rss-chi-all-1127-rdf",
       "source": "DW 中文",
-      "summary": "中国官方证实两名海警去年在南海执行任务时殉职并追授烈士；同时台湾年度汉光演习启动，首次纳入随军记者机制，引发关注。（多家报道）",
-      "importance": 7
+      "summary": "中国官方间接确认去年 8 月南海撞船事故中两海警殉职，并追授「烈士」称号，系事发一年后首次承认有人员丧生。",
+      "importance": 8
     }
   ],
-  "editor_note": "AI产业从模型竞争转向基础设施与治理重组，地缘安全议题同步升温。新闻背后既有技术迭代的乐观，也有秩序重构的不确定，值得持续观察。",
+  "editor_note": "AI 能力跃升与安全管控同步加速，芯片并购和开源生态竞争加剧；苏丹人道危机与欧洲移民摩擦仍未见解，需持续跟踪后续发展。",
   "keywords": [
+    "OpenAI Astra",
+    "AMD 收购 Taalas",
     "GPT-5.6",
-    "AMD收购",
-    "DeepMind重组",
-    "AI代理",
-    "边境检查",
-    "麦加公约",
-    "汉光演习",
-    "南海"
+    "DeepMind 领导层变动",
+    "苏丹战争",
+    "休达移民危机",
+    "南海海警烈士"
   ]
 }
