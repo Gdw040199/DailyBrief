@@ -1,0 +1,59 @@
+{
+  "hero_headline": "以色列拒绝特朗普15点加沙计划",
+  "daily_overview": "今日要闻聚焦地缘博弈与AI变局。政治方面，以色列总理内塔尼亚胡正式拒绝特朗普提出的15点加沙计划，坚持在哈马斯彻底解除武装前不从加沙撤出，中东和平进程再添变数；加拿大不列颠哥伦比亚省野火失控，数千人撤离，灾情严峻。技术领域，OpenAI将即将发布的Astra模型列为「关键」网络能力，并公布初步安全评估、强化防护措施；谷歌DeepMind经历重大领导层重组，创始人Hassabis转任主席；AMD收购AI推理初创Taalas，推理算力竞争升温。Meta新一代模型则以低成本展现出前沿实力，AI科研潜力也在多个领域得到印证。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI将Astra列为关键网络安全能力",
+      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
+      "source": "OpenAI News",
+      "summary": "OpenAI公布Astra模型的初步网络安全评估，并加强防护管控；该模型在智能体编码与网络安全方面进展显著，公司暂停部分活动以强化安全。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "谷歌DeepMind高层改组，四位研究者离职",
+      "url": "https://www.latent.space/p/ainews-jeff-sanjay-oriol-and-quoc",
+      "source": "Latent Space",
+      "summary": "谷歌DeepMind进行重大领导层调整：Hassabis转任主席兼首席科学家，Koray接管运营，另有四位核心成员离职。多位创始人转向新项目。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "AMD收购AI推理初创公司Taalas",
+      "url": "https://www.latent.space/p/ainews-amd-buys-taalas",
+      "source": "Latent Space",
+      "summary": "AMD宣布收购AI推理初创企业Taalas，市场关注推理「拐点」升温。分析认为该交易将加剧AI推理算力领域竞争。（多家报道）",
+      "importance": 7
+    },
+    {
+      "title": "Meta Muse Spark 1.2跻身前沿模型行列",
+      "url": "https://news.smol.ai/issues/26-08-06-not-much/",
+      "source": "Smol AI News",
+      "summary": "Meta的Muse Spark 1.2以每次0.69美元测试成本跻身Vals Index前五，比Kimi便宜3倍，并在五项STEM奥赛中获金牌级表现，理论部分满分。",
+      "importance": 7
+    },
+    {
+      "title": "GPT-5.6与Claude Fable解决25年理论难题",
+      "url": "https://x.com/DimitrisPapail/status/2086158118354887060",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "博主称上周GPT-5.6与Claude Fable意外解决无线通信领域一个25年未决的理论问题，该问题曾在2000至2010年代被深入钻研，引发对AI科研潜力的讨论。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "加拿大野火失控，数千人被迫撤离",
+      "url": "https://www.bbc.co.uk/news/articles/cx25dkwk3e3o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "加拿大不列颠哥伦比亚省「巴尔岭」野火持续蔓延，过火面积超136平方公里，数千人撤离；此前安大略省野火烟雾曾影响美国东海岸。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "以色列拒绝特朗普15点加沙计划",
+      "url": "https://www.bbc.co.uk/news/articles/c5yw4lpe0yeo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "以色列总理内塔尼亚胡拒绝特朗普提出的15点计划，称在哈马斯真正解除武装前以军不会撤离加沙。该计划上月提出，要求哈马斯交出武器。（多家报道）",
+      "importance": 9
+    }
+  ],
+  "editor_note": "",
+  "keywords": []
+}

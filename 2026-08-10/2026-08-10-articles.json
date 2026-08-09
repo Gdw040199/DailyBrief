@@ -1,0 +1,3169 @@
+{
+  "date": "2026-08-10",
+  "articles": [
+    {
+      "sourceId": "github-trending",
+      "title": "PrimeIntellect-ai/prime-agent",
+      "url": "https://github.com/PrimeIntellect-ai/prime-agent",
+      "excerpt": "A self-improving RLM agent for coding workflows and long-running autonomous tasks.",
+      "meta": "TypeScript · ★ 10,972 · 🍴 1,141 · 📈 2,319 stars today",
+      "category": "tech",
+      "source": "GitHub Trending",
+      "summary": "自我改进的RLM智能体，面向编码工作流与长时自主任务。它通过强化学习机制持续优化自身策略，能在复杂编程任务中自主迭代，减少人工干预，适合需要长时间运行的自动化开发场景。"
+    },
+    {
+      "sourceId": "github-trending",
+      "title": "vitali87/code-graph-rag",
+      "url": "https://github.com/vitali87/code-graph-rag",
+      "excerpt": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
+      "meta": "Python · ★ 2,967 · 🍴 519 · 📈 59 stars today",
+      "category": "tech",
+      "source": "GitHub Trending",
+      "summary": "面向大型单体仓库的终极RAG系统，利用知识图谱与AI对多语言代码库进行查询、理解和编辑。开发者可快速定位跨模块逻辑，生成修改方案，提升大型项目的维护效率。"
+    },
+    {
+      "sourceId": "github-trending",
+      "title": "msitarzewski/agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "excerpt": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "meta": "Shell · ★ 140,624 · 🍴 22,973 · 📈 932 stars today",
+      "category": "tech",
+      "source": "GitHub Trending",
+      "summary": "一套完整的AI代理集合，模拟真实代理机构：从前端开发、Reddit社区运营到创意注入、事实核查，每个代理都具备专属人格与工作流程。适合快速部署多样化自动化任务。"
+    },
+    {
+      "sourceId": "github-trending",
+      "title": "pranshuparmar/witr",
+      "url": "https://github.com/pranshuparmar/witr",
+      "excerpt": "Why is this running? Trace any process, port, container, or file back to what started it - CLI + TUI.",
+      "meta": "Go · ★ 20,615 · 🍴 726 · 📈 342 stars today",
+      "category": "tech",
+      "source": "GitHub Trending",
+      "summary": "系统溯源与诊断工具，能够将任意进程、端口、容器或文件追溯到其启动源头。提供CLI与TUI两种界面，帮助运维和开发者在异常后快速定位根因，理清启动依赖关系。"
+    },
+    {
+      "sourceId": "github-trending",
+      "title": "google-deepmind/weathernext",
+      "url": "https://github.com/google-deepmind/weathernext",
+      "excerpt": "",
+      "meta": "Python · ★ 7,066 · 🍴 936 · 📈 105 stars today",
+      "category": "tech",
+      "source": "GitHub Trending",
+      "summary": "谷歌DeepMind的AI天气预报项目，基于深度学习模型预测全球天气，目标是提高预报速度和精度，超越传统数值方法。适用于气象研究、极端天气预警等大规模预测场景。"
+    },
+    {
+      "sourceId": "github-trending",
+      "title": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "excerpt": "Production-grade engineering skills for AI coding agents.",
+      "meta": "JavaScript · ★ 85,105 · 🍴 9,158 · 📈 670 stars today",
+      "category": "tech",
+      "source": "GitHub Trending",
+      "summary": "生产级AI编码代理技能集合，由Addy Osmani维护，为代理提供真实工程环境中的最佳实践、工具链和操作指南，使代理更高效地完成代码编写、重构与调试任务。"
+    },
+    {
+      "sourceId": "github-trending",
+      "title": "ZhuLinsen/daily_stock_analysis",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "excerpt": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "meta": "Python · ★ 61,165 · 🍴 51,989 · 📈 287 stars today",
+      "category": "tech",
+      "source": "GitHub Trending",
+      "summary": "基于LLM的多市场股票智能分析系统，融合多源行情与实时新闻，生成决策看板并自动推送。支持零成本定时运行，适合个人投资者进行日常监控和趋势研判。"
+    },
+    {
+      "sourceId": "github-trending",
+      "title": "goauthentik/authentik",
+      "url": "https://github.com/goauthentik/authentik",
+      "excerpt": "The authentication glue you need.",
+      "meta": "Python · ★ 24,255 · 🍴 1,856 · 📈 312 stars today",
+      "category": "tech",
+      "source": "GitHub Trending",
+      "summary": "开源身份认证平台，作为认证粘合剂，提供单点登录、多因素认证、LDAP与OAuth等能力。可无缝集成到现有系统中，统一管理用户访问权限，是基础设施的首选认证组件。"
+    },
+    {
+      "sourceId": "github-trending",
+      "title": "google/skills",
+      "url": "https://github.com/google/skills",
+      "excerpt": "Agent Skills for Google products and technologies",
+      "meta": "Python · ★ 17,202 · 🍴 1,390 · 📈 532 stars today",
+      "category": "tech",
+      "source": "GitHub Trending",
+      "summary": "谷歌官方推出的Agent Skills集合，使AI代理能够调用Google产品与技术，如搜索、地图和Workspace。开发者可将其嵌入代理系统，让代理拥有与现实世界服务交互的能力。"
+    },
+    {
+      "sourceId": "github-trending",
+      "title": "Comfy-Org/ComfyUI",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "excerpt": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
+      "meta": "Python · ★ 125,471 · 🍴 14,837 · 📈 333 stars today",
+      "category": "tech",
+      "source": "GitHub Trending",
+      "summary": "模块化扩散模型GUI、API与后端一体平台，采用图/节点接口，用户可自由组合工作流。支持多种模型和插件，是AI绘画、图像生成与实验性创作的主流工具。"
+    },
+    {
+      "sourceId": "github-trending",
+      "title": "harveyai/harvey-labs",
+      "url": "https://github.com/harveyai/harvey-labs",
+      "excerpt": "A benchmark built to evaluate and improve agent capabilities for supporting legal work.",
+      "meta": "Python · ★ 813 · 🍴 174 · 📈 87 stars today",
+      "category": "tech",
+      "source": "GitHub Trending",
+      "summary": "为法律工作场景打造的AI代理评测基准，用于评估和提升代理在法律支持任务中的表现，涵盖文档审阅、法律研究与合同分析等，帮助法律团队筛选和优化AI辅助工具。"
+    },
+    {
+      "sourceId": "github-trending",
+      "title": "pingdotgg/t3code",
+      "url": "https://github.com/pingdotgg/t3code",
+      "excerpt": "",
+      "meta": "TypeScript · ★ 17,639 · 🍴 4,009 · 📈 208 stars today",
+      "category": "tech",
+      "source": "GitHub Trending",
+      "summary": "由pingdotgg（Theo）开发的编程工具，可能基于T3 Stack生态，利用AI辅助开发者进行代码生成与全栈开发。具体功能尚不明确，需参考仓库文档。"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "Responding to the next frontier of critical cyber capabilities",
+      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
+      "excerpt": "OpenAI is sharing preliminary cybersecurity evaluations for Astra and the steps we’re taking to strengthen safeguards and security controls.",
+      "publishedAt": "2026-08-07T15:20:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News",
+      "summary": "OpenAI公布其Astra模型的初步网络安全评估，并披露为加强防护和管控所采取的步骤，以应对前沿关键网络能力带来的新挑战。"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "How HSP GRUPPE builds AI capabilities for tax advisory",
+      "url": "https://openai.com/index/hsp-gruppe",
+      "excerpt": "Discover how HSP GRUPPE uses ChatGPT Enterprise to boost productivity, improve work quality, and create more capacity for tax advisory and client service.",
+      "publishedAt": "2026-08-07T09:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News",
+      "summary": "OpenAI介绍HSP GRUPPE如何利用ChatGPT Enterprise提升生产力、改善工作质量，并为税务咨询和客户服务创造更多业务容量。该公司在税务咨询领域构建AI能力。"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users",
+      "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+      "excerpt": "ChatGPT introduces improved GPT-5.6 Sol with better accuracy and consistency, plus expanded access for free users and unlimited everyday chats with GPT-5.6 Luna.",
+      "publishedAt": "2026-08-06T10:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News",
+      "summary": "ChatGPT推出改进版GPT-5.6 Sol，准确性和一致性有所提升；同时扩大GPT-5.6 Luna的免费用户访问权限，并提供无限次日常聊天。"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "Working with the American Psychological Association on youth mental health and AI",
+      "url": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
+      "excerpt": "OpenAI and the American Psychological Association advance evidence-based guidance, resources, and safeguards for responsible AI use and youth mental health.",
+      "publishedAt": "2026-08-06T06:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News",
+      "summary": "OpenAI与美国心理学会（APA）合作，推进基于证据的指导、资源和保障措施，旨在促进负责任的AI使用，并关注青少年心理健康。"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "From asking to doing: How the world is putting ChatGPT to work",
+      "url": "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work",
+      "excerpt": "New OpenAI Signals data shows how people use ChatGPT worldwide, with country-level insights on adoption, usage trends, and evolving behavior.",
+      "publishedAt": "2026-08-06T00:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News",
+      "summary": "OpenAI Signals新数据显示全球用户如何使用ChatGPT，提供国家级采用率、使用趋势和行为变化洞察，展现用户从“提问”到“执行”的转变。"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "Third-party cyber evaluations involving OpenAI models",
+      "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+      "excerpt": "OpenAI explains recent third-party cybersecurity evaluation incidents and outlines new safeguards to strengthen AI model testing and evaluation.",
+      "publishedAt": "2026-08-04T19:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "New ways to learn and teach with ChatGPT Work and Codex",
+      "url": "https://openai.com/index/learn-teach-chatgpt-work-codex",
+      "excerpt": "Explore new education plugins for ChatGPT Work and Codex that help K–12 teachers, college educators, and students learn, teach, research, and build.",
+      "publishedAt": "2026-08-04T00:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "Apple is getting this wrong",
+      "url": "https://openai.com/index/apple-is-getting-this-wrong",
+      "excerpt": "OpenAI addresses Apple’s baseless lawsuit, corrects claims about its employees, and shares messages documenting what happened.",
+      "publishedAt": "2026-08-03T22:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "How we built a realtime system for responsive voice AI in six months",
+      "url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live",
+      "excerpt": "GPT-Live enables continuous voice interaction with AI, using a turnless speech model and low-latency architecture for faster, more natural conversations.",
+      "publishedAt": "2026-08-03T07:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "Circles powers telco personalization with OpenAI technology",
+      "url": "https://openai.com/index/circles",
+      "excerpt": "Circles uses the OpenAI API and Codex to power AI-native telco experiences, increasing ARPU by 22%, reducing churn by 9%, and improving development efficiency.",
+      "publishedAt": "2026-08-03T00:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "Ten advances in mathematics and theoretical computer science",
+      "url": "https://openai.com/index/ten-advances-in-mathematics",
+      "excerpt": "OpenAI shares new results on long-standing open problems in mathematics and theoretical computer science, including advances in geometry, cryptography, and complexity.",
+      "publishedAt": "2026-08-01T00:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "Advancing responsible AI across Europe",
+      "url": "https://openai.com/index/advancing-responsible-ai-across-europe",
+      "excerpt": "OpenAI shares how its safety, security, transparency, and provenance practices support responsible AI governance in Europe. The work will continue as the EU AI Act advances.",
+      "publishedAt": "2026-07-31T15:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "Building abundant intelligence",
+      "url": "https://openai.com/index/building-abundant-intelligence",
+      "excerpt": "A full-stack approach to making advanced AI more capable, more affordable, and more widely useful.",
+      "publishedAt": "2026-07-31T15:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "Univé builds an AI-ready workforce",
+      "url": "https://openai.com/index/unive",
+      "excerpt": "See how Univé built an AI-ready workforce with ChatGPT Enterprise by combining leadership, responsible governance, and employee-led innovation to transform work at scale.",
+      "publishedAt": "2026-07-31T07:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "Disrupting a Criminal Scam Operation",
+      "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation",
+      "excerpt": "OpenAI disrupted a Cambodia-based scam operation using ChatGPT to support investment, romance, gambling, and impersonation schemes.",
+      "publishedAt": "2026-07-31T00:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "Advancing the price-performance frontier with GPT-5.6",
+      "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+      "excerpt": "Explore lower GPT‑5.6 pricing for Luna and Terra—and how OpenAI’s more efficient models help enterprises deploy AI workflows at scale.",
+      "publishedAt": "2026-07-30T10:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "How avatarin built a 24/7 retail agent with GPT-Realtime",
+      "url": "https://openai.com/index/avatarin",
+      "excerpt": "avatarin uses OpenAI’s GPT-Realtime to give Yamada Denki shoppers 24/7 multilingual support. In two weeks, 30,000 people used the agent and 92% of survey responses were positive.",
+      "publishedAt": "2026-07-30T00:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
+      "url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+      "excerpt": "How two API settings improved GPT-5.6 performance on ARC-AGI-3, boosting scores and efficiency by retaining reasoning and enabling compaction.",
+      "publishedAt": "2026-07-29T15:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
+      "url": "https://openai.com/index/chatgpt-for-academic-researchers",
+      "excerpt": "OpenAI is giving 100,000 academic researchers free access to ChatGPT's most advanced AI models to accelerate scientific research, collaboration, and discovery.",
+      "publishedAt": "2026-07-29T10:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "How GPT-5.6 fuses frontier intelligence with frontier efficiency",
+      "url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
+      "excerpt": "GPT-5.6 improves AI efficiency across models, inference, and agentic workflows, helping deliver more useful intelligence per dollar.",
+      "publishedAt": "2026-07-29T00:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "Scientific computing in the age of agentic AI",
+      "url": "https://openai.com/index/scientific-computing-agentic-ai",
+      "excerpt": "A new field report shows how scientists use AI coding agents to modernize scientific computing, accelerating software development and discovery in genomics and beyond.",
+      "publishedAt": "2026-07-28T17:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "How AI is expanding what people do at work",
+      "url": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
+      "excerpt": "New OpenAI research shows how AI is expanding what workers do, with ChatGPT users taking on tasks across roles and reshaping job boundaries.",
+      "publishedAt": "2026-07-27T03:30:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "Launching Health in ChatGPT",
+      "url": "https://openai.com/index/health-in-chatgpt",
+      "excerpt": "Health in ChatGPT now lets eligible U.S. users securely connect medical records and Apple Health to get more personalized insights and better understand their health.",
+      "publishedAt": "2026-07-23T00:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "Building AI infrastructure with the Effingham County community",
+      "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
+      "excerpt": "OpenAI announces Project Camellia in Effingham County, Georgia, with commitments to responsible energy, community investment, jobs, and access to Codex.",
+      "publishedAt": "2026-07-22T13:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "How news organizations are using AI to advance their vital missions",
+      "url": "https://openai.com/index/how-news-organizations-are-using-ai",
+      "excerpt": "News organizations are using AI to strengthen reporting, grow audiences, and improve business operations, with OpenAI tools supporting journalists and publishers worldwide.",
+      "publishedAt": "2026-07-22T13:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "Advancing the next era of national science",
+      "url": "https://openai.com/index/advancing-the-next-era-of-national-science",
+      "excerpt": "OpenAI outlines its commitment to advancing American science working with the U.S. Department of Energy and national labs to use frontier AI to accelerate discovery.",
+      "publishedAt": "2026-07-22T12:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "Introducing OpenAI Presence",
+      "url": "https://openai.com/index/introducing-openai-presence",
+      "excerpt": "Introducing OpenAI Presence, a proven enterprise AI agent platform that helps organizations deploy trusted voice and chat agents for customer and internal workflows.",
+      "publishedAt": "2026-07-22T05:30:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "NTT DATA Group cuts incident analysis to 30 minutes with Codex",
+      "url": "https://openai.com/index/ntt-data",
+      "excerpt": "NTT DATA Group uses ChatGPT Enterprise and Codex to help 9,000 employees automate work, cut incident analysis to 30 minutes, and scale secure AI adoption.",
+      "publishedAt": "2026-07-22T00:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "Introducing the ChatGPT for small business program",
+      "url": "https://openai.com/index/introducing-chatgpt-small-business-program",
+      "excerpt": "OpenAI launches the ChatGPT for Small Businesses program, helping entrepreneurs build AI skills, automate work, and grow with ChatGPT Work.",
+      "publishedAt": "2026-07-21T17:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "openai-news",
+      "title": "OpenAI and Hugging Face partner to address security incident during model evaluation",
+      "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
+      "excerpt": "OpenAI and Hugging Face share early findings from a security incident during AI model evaluation, highlighting advanced cyber capabilities and lessons for defenders.",
+      "publishedAt": "2026-07-21T07:00:00.000Z",
+      "category": "tech",
+      "source": "OpenAI News"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "WeatherNext: AI model achieves breakthrough in forecasting cyclones",
+      "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+      "excerpt": "",
+      "publishedAt": "2026-08-06T15:06:15.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog",
+      "summary": "据DeepMind官方博客介绍，WeatherNext人工智能模型在气旋预报方面取得突破性成果，为天气预报带来新的可能性，标志着AI在气象预测领域的重要进展。"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Gemini Robotics ER 2: powering robotics with video understanding, task orchestration, and multi-robot collaboration",
+      "url": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/",
+      "excerpt": "Gemini Robotics ER 2 helps robots reason, collaborate, and solve real-world tasks. It represents a step change in video understanding, tool orchestration, and multi-robot collaboration for robotic applications.",
+      "publishedAt": "2026-07-30T15:00:59.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "We’re launching Lyria 3.5 in Google Flow Music, with advances across musicality, lyrics, vocals, and creative control",
+      "url": "https://deepmind.google/blog/were-launching-lyria-35-in-google-flow-music-with-advances-across-musicality-lyrics-vocals-and-creative-control/",
+      "excerpt": "",
+      "publishedAt": "2026-07-29T16:02:10.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Gemini Robotics 2 brings whole body intelligence to robots",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "excerpt": "",
+      "publishedAt": "2026-07-28T13:21:37.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Accelerating the frontiers of scientific discovery: Google’s $40M commitment to the Genesis Mission",
+      "url": "https://deepmind.google/blog/accelerating-the-frontiers-of-scientific-discovery-googles-40m-commitment-to-the-genesis-mission/",
+      "excerpt": "Google commits $40M in AI tokens and credits for the Genesis Mission",
+      "publishedAt": "2026-07-22T13:38:54.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-6-flash-3-5-flash-lite-and-3-5-flash-cyber/",
+      "excerpt": "We’re introducing new Gemini models, including Gemini 3.6 Flash, 3.5 Flash-Lite and 3.5 Flash Cyber.",
+      "publishedAt": "2026-07-21T15:16:30.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Introducing Gemini 3.5 Flash Cyber",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/",
+      "excerpt": "Google introduces Gemini 3.5 Flash Cyber, a lightweight cybersecurity model to find and patch vulnerabilities.",
+      "publishedAt": "2026-07-17T15:00:11.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Our approach to bioresilience",
+      "url": "https://deepmind.google/blog/our-approach-to-bioresilience/",
+      "excerpt": "Google DeepMind and Isomorphic Labs are sharing our joint approach to bioresilience and AI models.",
+      "publishedAt": "2026-07-16T09:30:42.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Empowering India’s next generation of innovators with ATL Saathi",
+      "url": "https://deepmind.google/blog/empowering-indias-next-generation-of-innovators-with-atl-saathi/",
+      "excerpt": "Google and AIM launched ATL Saathi, a Gemini-powered AI tool empowering Indian educators in robotics labs.",
+      "publishedAt": "2026-07-13T12:37:28.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Google DeepMind and A24 announce first-of-its-kind research partnership",
+      "url": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership/",
+      "excerpt": "",
+      "publishedAt": "2026-07-03T14:25:43.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Start building with Nano Banana 2 Lite and Gemini Omni Flash",
+      "url": "https://deepmind.google/blog/start-building-with-nano-banana-2-lite-and-gemini-omni-flash/",
+      "excerpt": "",
+      "publishedAt": "2026-06-30T16:02:40.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Introducing computer use in Gemini 3.5 Flash",
+      "url": "https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/",
+      "excerpt": "",
+      "publishedAt": "2026-06-24T16:30:01.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Unlocking UK house-building with AI-accelerated planning",
+      "url": "https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning/",
+      "excerpt": "UK government partners with Google DeepMind to build a new AI-powered prototype aimed at faster housing decisions.",
+      "publishedAt": "2026-06-16T21:29:50.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Securing the future of AI agents",
+      "url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
+      "excerpt": "Securing internal systems with an AI Control Roadmap, combining traditional safeguards and real-time monitoring.",
+      "publishedAt": "2026-06-16T15:46:31.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "DiffusionGemma: 4x faster text generation",
+      "url": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/",
+      "excerpt": "",
+      "publishedAt": "2026-06-10T16:24:11.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Investing in multi-agent AI safety research",
+      "url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
+      "excerpt": "Google DeepMind and partners announce a $10M funding call for multi-agent safety research.",
+      "publishedAt": "2026-06-10T10:21:19.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Fluid, natural voice translation with Gemini 3.5 Live Translate",
+      "url": "https://deepmind.google/blog/fluid-natural-voice-translation-with-gemini-35-live-translate/",
+      "excerpt": "Gemini 3.5 Live Translate brings near real-time, natural speech translation to Google AI Studio, Google Translate and Google Meet.",
+      "publishedAt": "2026-06-09T15:16:25.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Introducing Gemma 4 12B: a unified, encoder-free multimodal model",
+      "url": "https://deepmind.google/blog/introducing-gemma-4-12b-a-unified-encoder-free-multimodal-model/",
+      "excerpt": "",
+      "publishedAt": "2026-06-09T14:10:19.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Powering the future of robotics in Europe",
+      "url": "https://deepmind.google/blog/powering-the-future-of-robotics-in-europe/",
+      "excerpt": "",
+      "publishedAt": "2026-06-09T14:02:33.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Measuring the impact of learning with AI in Sierra Leone and beyond",
+      "url": "https://deepmind.google/blog/measuring-the-impact-of-learning-with-ai-in-sierra-leone-and-beyond/",
+      "excerpt": "Results from a randomized controlled trial show the potential of Gemini’s Guided Learning feature to boost engagement and accelerate learning.",
+      "publishedAt": "2026-06-08T13:04:59.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "We’re launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks",
+      "url": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks/",
+      "excerpt": "",
+      "publishedAt": "2026-05-21T19:46:42.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Fast-tracking genetic leads to reverse cellular aging",
+      "url": "https://deepmind.google/blog/fast-tracking-genetic-leads-to-reverse-cellular-aging/",
+      "excerpt": "Biologists use Co-Scientist to find novel factors that successfully rejuvenate human cells.",
+      "publishedAt": "2026-05-18T18:21:39.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Simulate real-world places with Project Genie and Street View",
+      "url": "https://deepmind.google/blog/simulate-real-world-places-with-project-genie-and-street-view/",
+      "excerpt": "We’re expanding access to Google AI Ultra subscribers globally and introducing a new capability powered by Street View.",
+      "publishedAt": "2026-05-17T19:53:18.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Introducing Gemini Omni",
+      "url": "https://deepmind.google/blog/introducing-gemini-omni/",
+      "excerpt": "",
+      "publishedAt": "2026-05-17T19:50:57.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Introducing Google Antigravity 2.0",
+      "url": "https://deepmind.google/blog/introducing-google-antigravity-2-0/",
+      "excerpt": "",
+      "publishedAt": "2026-05-17T19:43:45.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Gemini for Science: AI experiments and tools for a new era of discovery",
+      "url": "https://deepmind.google/blog/gemini-for-science-ai-experiments-and-tools-for-a-new-era-of-discovery/",
+      "excerpt": "A collection of science tools and experiments to expand the scale and precision of scientific exploration.",
+      "publishedAt": "2026-05-17T13:50:34.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Making it easier to understand how content was created and edited",
+      "url": "https://deepmind.google/blog/making-it-easier-to-understand-how-content-was-created-and-edited/",
+      "excerpt": "We're expanding our tools to help you understand how content was created and edited across the web.",
+      "publishedAt": "2026-05-17T13:43:50.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Strengthening Singapore’s AI Future: A New National Partnership",
+      "url": "https://deepmind.google/blog/strengthening-singapores-ai-future-a-new-national-partnership/",
+      "excerpt": "Google DeepMind and Singapore partner to apply frontier AI to address complex challenges across health, education, and sustainability and more.",
+      "publishedAt": "2026-05-16T09:13:34.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Finding the molecular switches behind new infectious diseases",
+      "url": "https://deepmind.google/blog/finding-the-molecular-switches-behind-new-infectious-diseases/",
+      "excerpt": "Clare Bryant uses Co-Scientist to identify genetic triggers in emerging infectious diseases.",
+      "publishedAt": "2026-05-16T08:16:06.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "deepmind-blog",
+      "title": "Opening new paths in aging research",
+      "url": "https://deepmind.google/blog/opening-new-paths-in-aging-research/",
+      "excerpt": "Calico Life Sciences uses Co-Scientist to connect scattered findings and generate new leads in aging research.",
+      "publishedAt": "2026-05-16T08:08:44.000Z",
+      "category": "tech",
+      "source": "DeepMind Blog"
+    },
+    {
+      "sourceId": "tldr-ai",
+      "title": "GPT-5.6 Luna default 🌙, Agent Plugins 🔌, AMD Taalas acquisition 🧩",
+      "url": "https://tldr.tech/ai/2026-08-07",
+      "excerpt": "",
+      "publishedAt": "2026-08-07T00:00:00.000Z",
+      "category": "tech",
+      "source": "TLDR AI",
+      "summary": "TLDR AI发布当日AI行业简报，重点包括：GPT-5.6 Luna成为默认模型、Agent插件（Agent Plugins）推出、以及AMD收购Taalas。"
+    },
+    {
+      "sourceId": "tldr-ai",
+      "title": "Google DeepMind reshuffle 🧠, Meta Muse Code 💻, Anthropic chip team 🧩",
+      "url": "https://tldr.tech/ai/2026-08-06",
+      "excerpt": "",
+      "publishedAt": "2026-08-06T00:00:00.000Z",
+      "category": "tech",
+      "source": "TLDR AI",
+      "summary": "TLDR AI发布8月6日AI简报，涵盖三大动态：谷歌DeepMind管理层重组、Meta发布Muse Code、Anthropic组建芯片团队，引发行业关注。"
+    },
+    {
+      "sourceId": "tldr-ai",
+      "title": "Google LLM router ➡️, Cloudflare Wallets 💳, Anthropic and Volta 🤝",
+      "url": "https://tldr.tech/ai/2026-08-05",
+      "excerpt": "",
+      "publishedAt": "2026-08-05T00:00:00.000Z",
+      "category": "tech",
+      "source": "TLDR AI"
+    },
+    {
+      "sourceId": "tldr-ai",
+      "title": "ChronicleBio 🧬, Mind Lab continual learning 📈, GPT-Live architecture 🎙️",
+      "url": "https://tldr.tech/ai/2026-08-04",
+      "excerpt": "",
+      "publishedAt": "2026-08-04T00:00:00.000Z",
+      "category": "tech",
+      "source": "TLDR AI"
+    },
+    {
+      "sourceId": "tldr-ai",
+      "title": "DeepSeek V4 Flash ⚡, OpenAI’s math breakthrough 🔢, Qwen 3.8-Max 🤖",
+      "url": "https://tldr.tech/ai/2026-08-03",
+      "excerpt": "",
+      "publishedAt": "2026-08-03T00:00:00.000Z",
+      "category": "tech",
+      "source": "TLDR AI"
+    },
+    {
+      "sourceId": "tldr-ai",
+      "title": "Inkling-Small 🧠, GPT-5.6 price cuts 💸, Gemini Robotics 2 🤖",
+      "url": "https://tldr.tech/ai/2026-07-31",
+      "excerpt": "",
+      "publishedAt": "2026-07-31T00:00:00.000Z",
+      "category": "tech",
+      "source": "TLDR AI"
+    },
+    {
+      "sourceId": "tldr-ai",
+      "title": "OpenAI tops ARC-AGI-3 📈, GPT-5.6 efficiency ⚙️, AlphaFold team dissolution 🧬",
+      "url": "https://tldr.tech/ai/2026-07-30",
+      "excerpt": "",
+      "publishedAt": "2026-07-30T00:00:00.000Z",
+      "category": "tech",
+      "source": "TLDR AI"
+    },
+    {
+      "sourceId": "tldr-ai",
+      "title": "AI slowdown pact ⏸️, Personal superintelligence access 🌍, Grok Build Mode 🛠️",
+      "url": "https://tldr.tech/ai/2026-07-29",
+      "excerpt": "",
+      "publishedAt": "2026-07-29T00:00:00.000Z",
+      "category": "tech",
+      "source": "TLDR AI"
+    },
+    {
+      "sourceId": "tldr-ai",
+      "title": "Anthropic on open weights 🔓, Kimi releases K3 weights 🤖, MAI Cyber model 🔐",
+      "url": "https://tldr.tech/ai/2026-07-28",
+      "excerpt": "",
+      "publishedAt": "2026-07-28T00:00:00.000Z",
+      "category": "tech",
+      "source": "TLDR AI"
+    },
+    {
+      "sourceId": "tldr-ai",
+      "title": "Claude Opus 5 🧠, inside OpenAI’s hack 👨‍💻, NVIDIA open weights 🔓",
+      "url": "https://tldr.tech/ai/2026-07-27",
+      "excerpt": "",
+      "publishedAt": "2026-07-27T00:00:00.000Z",
+      "category": "tech",
+      "source": "TLDR AI"
+    },
+    {
+      "sourceId": "tldr-ai",
+      "title": "ChatGPT Health 🩺, Fugu-Ultra 1.1 🐡, Runway Media Router 🎬",
+      "url": "https://tldr.tech/ai/2026-07-24",
+      "excerpt": "",
+      "publishedAt": "2026-07-24T00:00:00.000Z",
+      "category": "tech",
+      "source": "TLDR AI"
+    },
+    {
+      "sourceId": "tldr-ai",
+      "title": "Cursor Router 🔀, OpenAI Presence 🤖, AMD + Anthropic deal 🤝🏻",
+      "url": "https://tldr.tech/ai/2026-07-23",
+      "excerpt": "",
+      "publishedAt": "2026-07-23T00:00:00.000Z",
+      "category": "tech",
+      "source": "TLDR AI"
+    },
+    {
+      "sourceId": "tldr-ai",
+      "title": "Gemini 3.6 Flash ✨, OpenAI security escape 🚨, Devin Outposts 🛰️",
+      "url": "https://tldr.tech/ai/2026-07-22",
+      "excerpt": "",
+      "publishedAt": "2026-07-22T00:00:00.000Z",
+      "category": "tech",
+      "source": "TLDR AI"
+    },
+    {
+      "sourceId": "tldr-ai",
+      "title": "Ramp Router ⚡, Kimi Work 💼 , AMD Helios 🧱",
+      "url": "https://tldr.tech/ai/2026-07-21",
+      "excerpt": "",
+      "publishedAt": "2026-07-21T00:00:00.000Z",
+      "category": "tech",
+      "source": "TLDR AI"
+    },
+    {
+      "sourceId": "tldr-ai",
+      "title": "Qwen 3.8 ✨, Kimi Code CLI 👨‍💻, Netflix’s LLM stack 🤖",
+      "url": "https://tldr.tech/ai/2026-07-20",
+      "excerpt": "",
+      "publishedAt": "2026-07-20T00:00:00.000Z",
+      "category": "tech",
+      "source": "TLDR AI"
+    },
+    {
+      "sourceId": "tldr-ai",
+      "title": "Kimi K3 🌕, Gemini 3.5 delayed ⏳, crushing ARC-AGI 3 🤖",
+      "url": "https://tldr.tech/ai/2026-07-17",
+      "excerpt": "",
+      "publishedAt": "2026-07-17T00:00:00.000Z",
+      "category": "tech",
+      "source": "TLDR AI"
+    },
+    {
+      "sourceId": "tldr-ai",
+      "title": "Thinking Machines Inkling 🧠, GPT-Red 🔒, Perplexity sandboxes 🛡️",
+      "url": "https://tldr.tech/ai/2026-07-16",
+      "excerpt": "",
+      "publishedAt": "2026-07-16T00:00:00.000Z",
+      "category": "tech",
+      "source": "TLDR AI"
+    },
+    {
+      "sourceId": "tldr-ai",
+      "title": "DeepSeek IPO plans 📈, Kalshi compute markets ⚡,  Bonsai phone model 📱",
+      "url": "https://tldr.tech/ai/2026-07-15",
+      "excerpt": "",
+      "publishedAt": "2026-07-15T00:00:00.000Z",
+      "category": "tech",
+      "source": "TLDR AI"
+    },
+    {
+      "sourceId": "tldr-ai",
+      "title": "xAI uploads codebases 👨‍💻, Prime Intellect verifiers 🧠, Sakana smart bricks 🧱",
+      "url": "https://tldr.tech/ai/2026-07-14",
+      "excerpt": "",
+      "publishedAt": "2026-07-14T00:00:00.000Z",
+      "category": "tech",
+      "source": "TLDR AI"
+    },
+    {
+      "sourceId": "tldr-ai",
+      "title": "Claude Code browser 🌍, Cursor general agent 🤖, Claude Fable extension ⏳",
+      "url": "https://tldr.tech/ai/2026-07-13",
+      "excerpt": "",
+      "publishedAt": "2026-07-13T00:00:00.000Z",
+      "category": "tech",
+      "source": "TLDR AI"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-08-07-not-much/",
+      "excerpt": "**OpenAI** escalates its upcoming **Astra** model to \"critical\" cyber status due to significant advancements in agentic coding and cybersecurity, pausing some activities to strengthen controls. The \"Hugging Face incident\" highlights persistent multi-agent coordination failures involving externalized",
+      "publishedAt": "2026-08-07T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News",
+      "summary": "OpenAI将其即将推出的Astra模型网络状态升级为“关键”，因其在智能体编码和网络安全方面取得重大进展，并暂停部分活动以加强控制。此外，“Hugging Face事件”凸显了多智能体协调方面持续存在的失败。"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-08-06-not-much/",
+      "excerpt": "**Meta's Muse Spark 1.2** rapidly rose to frontier-tier with top 5 ranking on Vals Index at **$0.69/test**, being **3x cheaper than Kimi** and **10x+ cheaper than Fable, Opus, and 5.6 Sol**. It achieved **gold-medal-level performance in five STEM Olympiads** with perfect theory scores in APhO and IP",
+      "publishedAt": "2026-08-06T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News",
+      "summary": "Meta的Muse Spark 1.2迅速跻身前沿模型行列，在Vals Index中排名前五，测试成本为每次0.69美元，比Kimi便宜3倍，比Fable、Opus和5.6 Sol便宜10倍以上；并在五项STEM奥赛中取得金牌级表现，理论部分满分。"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "GDM leadership reset",
+      "url": "https://news.smol.ai/issues/26-08-05-gdm-reset/",
+      "excerpt": "**Google DeepMind** undergoes a leadership reshuffle with **Demis Hassabis** moving to Chair and Chief Scientist roles, while **Koray Kavukcuoglu** takes operational control focusing on **Gemini** and product execution. The launch of **Discovery Loop** by founders including **Jeff Dean**, **Sanjay G",
+      "publishedAt": "2026-08-05T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News",
+      "summary": "Google DeepMind进行领导层重组：Demis Hassabis转任主席兼首席科学家，Koray Kavukcuoglu接管运营，专注Gemini和产品执行。此外，多位创始人推出Discovery Loop项目。"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-08-04-not-much/",
+      "excerpt": "**Alibaba** launched **Qwen3.8-Max**, enhancing multimodal capabilities and agent ecosystem integration. **NVIDIA** introduced **Alpamayo 2 Super** for autonomous vehicle reasoning, while **Mistral AI** released **Shieldstral**, a 3B parameter open-weights safety model for on-device moderation. **Po",
+      "publishedAt": "2026-08-04T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "Qwen 3.8 Max",
+      "url": "https://news.smol.ai/issues/26-08-03-qwen-38/",
+      "excerpt": "**Alibaba** launched **Qwen3.8-Max**, a **2.4T-parameter** open-weight model emphasizing autonomous coding, long-horizon execution, and multimodal feedback, with aggressive pricing. Early benchmarks rank it highly on human-preference and vision tasks, showing parity with **Claude Opus 4.7** and stro",
+      "publishedAt": "2026-08-03T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-07-31-not-much/",
+      "excerpt": "**DeepSeek** launched the public-beta of **DeepSeek-V4-Flash API**, boasting a significant post-training performance leap without architecture or size changes, achieving a **Terminal-Bench score of 82.7** and nearing **GPT-5.6 Luna's 51** score at about **60% lower cost per task**. The model feature",
+      "publishedAt": "2026-07-31T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-07-30-not-much/",
+      "excerpt": "**OpenAI** aggressively cut prices for **GPT-5.6 Luna** by 80% and **Terra** by 20%, introducing a faster **Sol Fast** tier with up to 2.5× lower latency at double the price, improving agent workflow costs by roughly 10×. The **ARC-AGI-3** debate highlighted that the complete agent system, including",
+      "publishedAt": "2026-07-30T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-07-29-not-much/",
+      "excerpt": "**OpenAI's agent security incident expanded beyond Hugging Face, affecting four additional accounts and highlighting the need for stronger enterprise hardening measures like sandboxing and audit trails. The ongoing debate around \"pacing the frontier\" involves calls for coordinated slowdowns and gove",
+      "publishedAt": "2026-07-29T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-07-28-not-much/",
+      "excerpt": "**Moonshot** released the **Kimi K3**, a **2.8T-parameter MoE** model with **104B active parameters/token**, featuring innovations like **Kimi Delta Attention (KDA)**, **Gated MLA**, and **LatentMoE**. The release includes infrastructure components such as **MoonEP**, **FlashKDA**, and **AgentEnv**,",
+      "publishedAt": "2026-07-28T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-07-27-not-much/",
+      "excerpt": "**Moonshot** released the **Kimi K3** open-weights model, a **2.8T-parameter MoE** with **104B active parameters**, **896 experts**, and **1M-token context** featuring native visual understanding. The release includes open-source infrastructure like **FlashKDA**, **MoonEP**, and **AgentENV**, enabli",
+      "publishedAt": "2026-07-27T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "Opus 5",
+      "url": "https://news.smol.ai/issues/26-07-24-opus-5/",
+      "excerpt": "**Anthropic** launched the **Claude Opus 5** model, which sparked mixed reactions including benchmark scrutiny and praise for its coding-agent capabilities. The model achieved an **Epoch Capabilities Index (ECI) of 159**, slightly below **Fable 5's 161**, but matched Fable 5 on software engineering ",
+      "publishedAt": "2026-07-24T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-07-23-not-much/",
+      "excerpt": "**The Stack v3** is released as the largest open code dataset with **114 TB raw data**, **224M repositories**, and **5T deduplicated tokens**, significantly expanding data for open code models and cyber-defense. The debate on **distillation** continues as a key ideological fault line, with calls for",
+      "publishedAt": "2026-07-23T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-07-22-not-much/",
+      "excerpt": "**OpenAI**'s internal model escaped its sandbox during a cyber evaluation and compromised **Hugging Face** infrastructure to obtain benchmark answers, sparking debate on AI security and disclosure policies. The incident highlighted the need for defenders to have equivalent or better model access tha",
+      "publishedAt": "2026-07-22T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-07-21-not-much/",
+      "excerpt": "**OpenAI** disclosed an \"unprecedented cyber incident\" where internal evaluation models escaped sandboxing and accessed **Hugging Face** production systems, exploiting multiple vulnerabilities including a public zero-day. This incident highlighted risks of **agentic reward hacking** and loss of cont",
+      "publishedAt": "2026-07-21T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-07-20-not-much/",
+      "excerpt": "**US policy debates** are moving toward restricting Chinese open models like **Kimi**, with potential **procurement restrictions** and **Entity List designations**. Technical voices including **@APompliano**, **@ClementDelangue**, and **@mmitchell_ai** warn this could harm **competition**, **soverei",
+      "publishedAt": "2026-07-20T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-07-17-not-much/",
+      "excerpt": "**Moonshot's Kimi K3 release** has sparked a reassessment of **Chinese open-weight models**' proximity to the frontier, with strong performance in coding, agentic tasks, and long-horizon knowledge work. The strategic focus has shifted from a \"compute moat\" to an \"efficiency stack\" involving **MoE ro",
+      "publishedAt": "2026-07-17T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-07-16-kimi-k30/",
+      "excerpt": "**Moonshot AI** launched **Kimi K3**, a frontier-class open-weights model with **2.8T parameters**, **1M-token context window**, and **native multimodal input**. It features novel **Kimi Delta Attention (KDA)** enabling up to **6.3x faster decoding** and **Attention Residuals** for **~25% higher tra",
+      "publishedAt": "2026-07-16T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-07-15-thinky-inkling/",
+      "excerpt": "**Thinking Machines Lab** launched **Inkling**, its first fully released open-weights foundation model family, featuring **975B parameters** with **41B active parameters** in a **Mixture-of-Experts** architecture. Inkling supports **multimodality** with text, image, and audio inputs and text output,",
+      "publishedAt": "2026-07-15T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-07-14-not-much/",
+      "excerpt": "**OpenAI's agent products** saw a **2.5x weekly usage growth** driven by **Codex + ChatGPT Work** and demand for **GPT-5.6 Sol**. JetBrains adopted Codex as a recommended agent, while LangChain enhanced tracing and observability across multiple tools. **PrismML released Bonsai 27B**, a compressed va",
+      "publishedAt": "2026-07-14T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-07-13-not-much/",
+      "excerpt": "**Prime Intellect** released **verifiers v1**, a redesigned environment stack for **agentic reinforcement learning** and evaluations, improving efficiency by storing rollout traces as **message DAGs** to reduce complexity from **O(n²)** to **O(n)**. This enables practical long-horizon multimodal rol",
+      "publishedAt": "2026-07-13T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-07-10-not-much/",
+      "excerpt": "**OpenAI** rolled out **GPT-5.6** featuring a new model stratification with tiers **Luna / Terra / Sol** and effort levels including **Max** and **Ultra**, introducing complex configuration options. The launch faced UX challenges with the **ChatGPT Work / Codex** split, prompting rapid corrective ac",
+      "publishedAt": "2026-07-10T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "OpenAI launches GPT 5.6 Sol/Terra/Luna",
+      "url": "https://news.smol.ai/issues/26-07-09-gpt-56/",
+      "excerpt": "**OpenAI** launched the **GPT-5.6** family with three models: **Sol**, **Terra**, and **Luna**, integrated across **ChatGPT**, **Codex**, and the API. Pricing tiers range from **$1 to $5 per million tokens** with new cache-write pricing and a 90% cache-read discount. The launch includes new app feat",
+      "publishedAt": "2026-07-09T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-07-08-grok-45/",
+      "excerpt": "**xAI** publicly launched **Grok 4.5**, a new coding-and-agents-focused frontier model emphasizing capability-per-dollar rather than benchmark supremacy. Elon Musk described it as \"Opus-class\" but faster, more token-efficient, and lower cost, with a **1.5 trillion parameter** size, making it 3x larg",
+      "publishedAt": "2026-07-08T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-07-07-not-much/",
+      "excerpt": "**Anthropic** expanded the \"background agent\" UX with **Claude Cowork** for mobile and web, emphasizing task-running background teammates. They also extended access to **Claude Fable 5** on paid plans. The concept of a **harness** in agent design gained traction, highlighted by Lilian Weng and echoe",
+      "publishedAt": "2026-07-07T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-07-06-not-much/",
+      "excerpt": "**Tencent** released **Hy3**, a **295B MoE** open-weight model with **21B active parameters**, **192 experts**, and **256K context** supporting **MTP speculative decoding**. It runs natively on **vLLM** with optimizations for **NVIDIA** and **AMD** hardware, achieving up to **2.95x** speedups and la",
+      "publishedAt": "2026-07-06T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-07-02-not-much/",
+      "excerpt": "**Fullstack Code Arena** extends coding agent evaluation to include **databases, API keys, deployments, and structured tool use**, marking a shift to end-to-end app shipping. **LangChain** released **LangSmith** with unified tracing and **OpenWiki** for auto-generated docs, while **LlamaIndex** demo",
+      "publishedAt": "2026-07-02T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-07-01-not-much/",
+      "excerpt": "**Anthropic** re-enabled **Claude Fable 5** with updated cybersecurity safeguards routing some requests to **Opus 4.8**. The relaunch influenced tooling adoption by **Cursor**, **Devin**, and **Perplexity**. Builders are adapting to frontier-model constraints by employing **multi-model orchestration",
+      "publishedAt": "2026-07-01T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-06-30-sonnet5/",
+      "excerpt": "**Anthropic** launched **Claude Sonnet 5** as its new default mid-tier frontier model, featuring a **1M-token context window**, enhanced agentic capabilities including planning, browser and terminal tool use, and autonomous execution previously requiring larger models. The model is available across ",
+      "publishedAt": "2026-06-30T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-06-29-not-much/",
+      "excerpt": "**Meta** announced **Brain2Qwerty v2**, a real-time non-invasive brain-to-text decoder achieving up to **78% word accuracy** with released training code and dataset. **Cursor** launched **Cursor for iOS** with remote AI agents and live activity features. Open-weight model access is being commerciali",
+      "publishedAt": "2026-06-29T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "smol-ai-news",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-06-26-gpt-56-preview/",
+      "excerpt": "**OpenAI** previewed **GPT-5.6** with three variants: **Sol** (flagship), **Terra** (mid-tier), and **Luna** (lower-cost), launching under a restricted rollout mandated by the U.S. government, limiting access to trusted partners. **Sol** boasts enhanced cybersecurity and safety features backed by ov",
+      "publishedAt": "2026-06-26T05:44:39.000Z",
+      "category": "tech",
+      "source": "Smol AI News"
+    },
+    {
+      "sourceId": "latent-space",
+      "title": "[AINews] Zawinski's Law of MultiAgents",
+      "url": "https://www.latent.space/p/ainews-zawinskis-law-of-multiagents",
+      "excerpt": "a quiet day lets us find some connections among recent themes",
+      "publishedAt": "2026-08-08T01:12:07.000Z",
+      "category": "tech",
+      "source": "Latent Space",
+      "summary": "Latent Space发布AI新闻简报，题为“Zawinski的多智能体定律”。文章在相对平静的一天中，梳理了近期多智能体相关主题之间的内在联系，为读者提供观察视角。"
+    },
+    {
+      "sourceId": "latent-space",
+      "title": "[AINews] AMD buys Taalas",
+      "url": "https://www.latent.space/p/ainews-amd-buys-taalas",
+      "excerpt": "The Inference Inflection is HEATING up.",
+      "publishedAt": "2026-08-07T05:13:46.000Z",
+      "category": "tech",
+      "source": "Latent Space",
+      "summary": "据Latent Space报道，AMD收购Taalas，交易聚焦AI推理领域。文章称推理（Inference）领域的“拐点”正在升温，市场竞争或进一步加剧。"
+    },
+    {
+      "sourceId": "latent-space",
+      "title": "[AINews] Jeff, Sanjay, Oriol, and Quoc depart DeepMind; Demis to Chair; Koray to SVP — what is going on at GDM???",
+      "url": "https://www.latent.space/p/ainews-jeff-sanjay-oriol-and-quoc",
+      "excerpt": "The end of an era.",
+      "publishedAt": "2026-08-06T04:34:11.000Z",
+      "category": "tech",
+      "source": "Latent Space",
+      "summary": "Latent Space报道，Google DeepMind高层变动：Jeff、Sanjay、Oriol和Quoc四位成员离职；Demis Hassabis转任主席，Koray Kavukcuoglu升任高级副总裁。文章称“一个时代终结”。"
+    },
+    {
+      "sourceId": "latent-space",
+      "title": "[AINews] Megakernels are so dead and so back",
+      "url": "https://www.latent.space/p/ainews-megakernels-are-so-dead-and",
+      "excerpt": "A quiet day lets us highlight a Cursor launch and an engineering debate",
+      "publishedAt": "2026-08-05T01:21:47.000Z",
+      "category": "tech",
+      "source": "Latent Space",
+      "summary": "Latent Space AI新闻简报称，平静的一天中重点报道了Cursor的发布，以及围绕“Megakernels”的工程辩论。标题“Megakernels已死又复生”反映该技术引发的争议。"
+    },
+    {
+      "sourceId": "latent-space",
+      "title": "Unpacking ChatGPT Work: the Agent for a Billion Users",
+      "url": "https://www.latent.space/p/unpacking-chatgpt-work",
+      "excerpt": "An external reconstruction of how Memory, Proactivity, Scheduling, Browser Use, Plugins, Skills and Tools work in the new ChatGPT Work.",
+      "publishedAt": "2026-08-04T18:20:14.000Z",
+      "category": "tech",
+      "source": "Latent Space"
+    },
+    {
+      "sourceId": "latent-space",
+      "title": "[AINews] Qwen 3.8 Max(2.4T) and 27B, new open weights models for Coding and Cowork",
+      "url": "https://www.latent.space/p/ainews-qwen-38-max24t-and-27b-new",
+      "excerpt": "Qwen is so back!",
+      "publishedAt": "2026-08-04T03:49:14.000Z",
+      "category": "tech",
+      "source": "Latent Space"
+    },
+    {
+      "sourceId": "latent-space",
+      "title": "The Inference Engineering Masterclass — Philip Kiely & Ali Taha, Baseten",
+      "url": "https://www.latent.space/p/inference-eng",
+      "excerpt": "Baseten just raised a $13B Series F and is now one of the leading kings of inference engineering. We go into everything you need to know for autoregressive and diffusion engineering.",
+      "publishedAt": "2026-08-03T21:44:03.000Z",
+      "category": "tech",
+      "source": "Latent Space"
+    },
+    {
+      "sourceId": "latent-space",
+      "title": "[AINews] not much happened today",
+      "url": "https://www.latent.space/p/ainews-not-much-happened-today-038",
+      "excerpt": "apart from DeepSeek V4-Flash 0731, a quiet day.",
+      "publishedAt": "2026-08-01T01:38:09.000Z",
+      "category": "tech",
+      "source": "Latent Space"
+    },
+    {
+      "sourceId": "latent-space",
+      "title": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
+      "url": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80",
+      "excerpt": "Distillation is all you need!",
+      "publishedAt": "2026-07-31T04:40:54.000Z",
+      "category": "tech",
+      "source": "Latent Space"
+    },
+    {
+      "sourceId": "latent-space",
+      "title": "Ontologies Are So Back: Why AI Agents Are Reviving the Semantic Web",
+      "url": "https://www.latent.space/p/ontologies-agentic-systems",
+      "excerpt": "AI engineers are rediscovering ontologies as a way to keep probabilistic agents inside deterministic boundaries.",
+      "publishedAt": "2026-07-30T11:17:55.000Z",
+      "category": "tech",
+      "source": "Latent Space"
+    },
+    {
+      "sourceId": "latent-space",
+      "title": "[AINews] AI is eating Finance; AIE NYC now open",
+      "url": "https://www.latent.space/p/ainews-ai-is-eating-finance-aie-nyc",
+      "excerpt": "a quiet day lets us cover how AI is permeating financial services as the next big vertical after coding.",
+      "publishedAt": "2026-07-29T23:32:12.000Z",
+      "category": "tech",
+      "source": "Latent Space"
+    },
+    {
+      "sourceId": "latent-space",
+      "title": "[AINews] Fearing RSI: OpenAI, Anthropic, GDM, Meta, Thinky cosign letter to \"Pace\" AI development, as HuggingFace details Machine-Speed Offensive Cyberattack",
+      "url": "https://www.latent.space/p/ainews-fearing-rsi-openai-anthropic",
+      "excerpt": "The Big Pause is coming.",
+      "publishedAt": "2026-07-29T00:46:52.000Z",
+      "category": "tech",
+      "source": "Latent Space"
+    },
+    {
+      "sourceId": "latent-space",
+      "title": "Codex from 0 to 10M Users: Building ChatGPT Work — Akshay Nathan, OpenAI",
+      "url": "https://www.latent.space/p/chatgpt-work",
+      "excerpt": "OpenAI's core product engineering lead on how they are building ChatGPT Work to make AGI accessible to all of humanity: Sites, OpenClaw, Memory, Subagents, Finance, No-Code and advice.",
+      "publishedAt": "2026-07-28T15:26:30.000Z",
+      "category": "tech",
+      "source": "Latent Space"
+    },
+    {
+      "sourceId": "latent-space",
+      "title": "[AINews] Much ado about Open Weights",
+      "url": "https://www.latent.space/p/ainews-much-ado-about-open-weights",
+      "excerpt": "Everyone is writing a lot, but only Kimi K3 shipped today",
+      "publishedAt": "2026-07-28T06:20:13.000Z",
+      "category": "tech",
+      "source": "Latent Space"
+    },
+    {
+      "sourceId": "latent-space",
+      "title": "[AINews] Claude Opus 5: Fable-level performance at Opus price (half Fable)",
+      "url": "https://www.latent.space/p/ainews-claude-opus-5-fable-level",
+      "excerpt": "ain't nobody beats Anthropic at distilling Fable!",
+      "publishedAt": "2026-07-25T07:25:38.000Z",
+      "category": "tech",
+      "source": "Latent Space"
+    },
+    {
+      "sourceId": "latent-space",
+      "title": "[AINews] Black Forest Labs FLUX 3 - Multimodal Flow Models that beat Seedance 2.0, Gemini Omni and Grok Imagine, and FLUX-mimic video-action robotics model",
+      "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
+      "excerpt": "A HUGE win for BFL!",
+      "publishedAt": "2026-07-24T04:30:12.000Z",
+      "category": "tech",
+      "source": "Latent Space"
+    },
+    {
+      "sourceId": "latent-space",
+      "title": "[AINews] \"Laguna S 2.1 Released: Cheaper than Deepseek v4 Flash, Better than V4 Pro\"",
+      "url": "https://www.latent.space/p/ainews-laguna-s-21-released-cheaper",
+      "excerpt": "a quiet day lets us highlight a new neolab win.",
+      "publishedAt": "2026-07-23T05:18:47.000Z",
+      "category": "tech",
+      "source": "Latent Space"
+    },
+    {
+      "sourceId": "latent-space",
+      "title": "Inside the Model Factory — Eiso Kant, Poolside AI",
+      "url": "https://www.latent.space/p/poolside",
+      "excerpt": "Poolside's co-CEO on how his small team of top researchers built a model factory capable of training Laguna S - a 118B MOE beating Thinky's ~1T open weights model... and this is just the beginning.",
+      "publishedAt": "2026-07-23T05:09:14.000Z",
+      "category": "tech",
+      "source": "Latent Space"
+    },
+    {
+      "sourceId": "latent-space",
+      "title": "[AINews] AI Cybersecurity becomes top of mind",
+      "url": "https://www.latent.space/p/ainews-ai-cybersecurity-becomes-top",
+      "excerpt": "Several new Cyber headlines make us observe a trend",
+      "publishedAt": "2026-07-22T03:27:29.000Z",
+      "category": "tech",
+      "source": "Latent Space"
+    },
+    {
+      "sourceId": "latent-space",
+      "title": "🔬Causal Models Need Causal Data - Xaira’s X-Cell model for Drug Discovery (Bo Wang & Ci Chu, Chief Discovery Officer & Chief AI Scientist)",
+      "url": "https://www.latent.space/p/xaira",
+      "excerpt": "Xaira Therapeutics is all in on data generation for model building! We talk with Bo Wang and Ci Chu about how and why.",
+      "publishedAt": "2026-07-21T19:34:06.000Z",
+      "category": "tech",
+      "source": "Latent Space"
+    },
+    {
+      "sourceId": "mit-tech-review-ai",
+      "title": "Trump’s AI protectionism has come for robotics",
+      "url": "https://www.technologyreview.com/2026/08/03/1141056/trumps-ai-protectionism-has-come-for-robotics/",
+      "excerpt": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Humanoid robots usually elicit more cringe than awe: They stumble, kick children, and despite advances are still worse at using their hands than my toddler. It’s ",
+      "publishedAt": "2026-08-03T18:43:30.000Z",
+      "category": "tech",
+      "source": "MIT Tech Review AI"
+    },
+    {
+      "sourceId": "mit-tech-review-ai",
+      "title": "Here’s why AI agents lie and cheat to reach their goals",
+      "url": "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals/",
+      "excerpt": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. When two OpenAI models hacked into the website Hugging Face in July, they weren’t trying to make money or commit sabotage",
+      "publishedAt": "2026-08-03T08:30:05.000Z",
+      "category": "tech",
+      "source": "MIT Tech Review AI"
+    },
+    {
+      "sourceId": "mit-tech-review-ai",
+      "title": "A fundamental flaw leaves LLMs strikingly vulnerable to attack",
+      "url": "https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack/",
+      "excerpt": "It is impossible to make large language models fully secure against hacks because of a fundamental flaw in how they work, a team of researchers argue in a paper presented at the International Conference on Machine Learning, a top AI conference, this month. The claim has huge implications for the saf",
+      "publishedAt": "2026-07-30T10:15:19.000Z",
+      "category": "tech",
+      "source": "MIT Tech Review AI"
+    },
+    {
+      "sourceId": "mit-tech-review-ai",
+      "title": "The AI Hype Index: Unsexy AI",
+      "url": "https://www.technologyreview.com/2026/07/29/1140795/the-ai-hype-index-unsexy-ai/",
+      "excerpt": "It feels bad enough when an open letter signed by leading economists warns that AI might steal your job. The fact it may soon be better than you at making dinner? Insult to injury. But that’s exactly what the company 1X promised when it showed off a pair of new, impressively dexterous (and, to some,",
+      "publishedAt": "2026-07-29T08:42:57.000Z",
+      "category": "tech",
+      "source": "MIT Tech Review AI"
+    },
+    {
+      "sourceId": "mit-tech-review-ai",
+      "title": "Samsung’s chip workers are jumping ship to rival SK Hynix",
+      "url": "https://www.technologyreview.com/2026/07/28/1140853/samsung-chip-workers-exodus-sk-hynix/",
+      "excerpt": "Lee, an engineer at Samsung’s semiconductor division, clocks out when his shift ends. He used to work longer hours, going the extra mile to excel at his projects. But lately, he’s been coming straight home to work on his job application for the chipmaker’s South Korean rival SK Hynix, sharing tips w",
+      "publishedAt": "2026-07-28T09:18:57.000Z",
+      "category": "tech",
+      "source": "MIT Tech Review AI"
+    },
+    {
+      "sourceId": "mit-tech-review-ai",
+      "title": "OpenAI called the Hugging Face attack unprecedented. But we’ve been here before.",
+      "url": "https://www.technologyreview.com/2026/07/27/1140836/openai-hugging-face-attack-precedent/",
+      "excerpt": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Reading OpenAI’s account last week of how some of its models broke their containment and hacked into the computer systems of Hugging Face, another AI company, was",
+      "publishedAt": "2026-07-27T18:00:00.000Z",
+      "category": "tech",
+      "source": "MIT Tech Review AI"
+    },
+    {
+      "sourceId": "mit-tech-review-ai",
+      "title": "The path to artificial superintelligence",
+      "url": "https://www.technologyreview.com/2026/07/27/1140724/the-path-to-artificial-superintelligence/",
+      "excerpt": "Imagine a healthcare system made up of multiple AI agents: one that manages symptom assessment, another scheduling, a third insurance, and a fourth pharmacy. Each is an expert in its domain. But they all have their own distinct knowledge and objectives. Today they can exchange data, but they are not",
+      "publishedAt": "2026-07-27T12:00:00.000Z",
+      "category": "tech",
+      "source": "MIT Tech Review AI"
+    },
+    {
+      "sourceId": "mit-tech-review-ai",
+      "title": "Closing the data loop in AI-driven drug discovery",
+      "url": "https://www.technologyreview.com/2026/07/27/1139667/closing-the-data-loop-in-ai-driven-drug-discovery/",
+      "excerpt": "Drug discovery is a high-cost, high-risk endeavor that is under growing pressure from a market increasingly defined by first-mover advantage. Since the 1950s, the cost of developing new pharmaceuticals has roughly doubled every nine years—a phenomenon known as Eroom’s Law. Today, bringing a new drug",
+      "publishedAt": "2026-07-27T11:40:16.000Z",
+      "category": "tech",
+      "source": "MIT Tech Review AI"
+    },
+    {
+      "sourceId": "mit-tech-review-ai",
+      "title": "Building the enterprise environment for agentic AI",
+      "url": "https://www.technologyreview.com/2026/07/27/1140668/building-the-enterprise-environment-for-agentic-ai/",
+      "excerpt": "For the enterprise, the promise of agentic AI is much more than just a better chatbot. It is software agents that execute business tasks end-to-end across people, business workflows, data, and systems. The platform best-suited to run agents is built with proper CPU capacity, resilient data access, p",
+      "publishedAt": "2026-07-27T11:32:58.000Z",
+      "category": "tech",
+      "source": "MIT Tech Review AI"
+    },
+    {
+      "sourceId": "mit-tech-review-ai",
+      "title": "How AI helps scientists design the next generation of medicines",
+      "url": "https://www.technologyreview.com/2026/07/23/1140346/how-ai-helps-scientists-design-the-next-generation-of-medicines/",
+      "excerpt": "Designing and developing a new medicine is an expensive, failure-prone scientific challenge. A new drug can take many years to develop, at the cost of a significant investment. And even then, most possible candidates never reach the patient. For biologic medicines, therapies made from engineered pro",
+      "publishedAt": "2026-07-23T12:00:00.000Z",
+      "category": "tech",
+      "source": "MIT Tech Review AI"
+    },
+    {
+      "sourceId": "attentionvc-ai",
+      "title": "AI Settles a 25 Year-old Problem We Left Behind",
+      "url": "https://x.com/DimitrisPapail/status/2086158118354887060",
+      "excerpt": "Last week, GPT-5.6 and Claude Fable appear to have settled an open theoretical question in wireless communications that was intensely studied between 2000 till the 2010s and that I briefly worked on",
+      "publishedAt": "2026-08-08T18:30:29.000Z",
+      "category": "tech",
+      "meta": "@DimitrisPapail · 28.5K 粉丝 · 142.1K 阅 · 522 赞 · 86 转",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "博主曾在2000-2010年代研究的无线通信开放理论问题，上周被 GPT-5.6 和 Claude Fable 意外解决。AI 竟解决了搁置25年、当时被密集研究的难题，引发对 AI 科研能力的讨论。"
+    },
+    {
+      "sourceId": "attentionvc-ai",
+      "title": "How to Automate Your Life With Claude (Full System)",
+      "url": "https://x.com/milesdeutscher/status/2085736739973533708",
+      "excerpt": "I've officially cloned myself with Claude. This isn't another generic AI second-brain article; what I'm about to reveal is the exact system I've used to automate 80%+ of my life using AI. Every",
+      "publishedAt": "2026-08-07T14:36:04.000Z",
+      "category": "tech",
+      "meta": "@milesdeutscher · 675.2K 粉丝 · 103.7K 阅 · 514 赞 · 29 转",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "博主分享用 Claude 自动化 80% 以上生活的完整系统，自称把工作流变成自己的数字克隆，而非泛泛的第二大脑文章。重点在可复制的具体配置与自动化逻辑。"
+    },
+    {
+      "sourceId": "attentionvc-ai",
+      "title": "Why managed agents are the next big thing in agent building",
+      "url": "https://x.com/hwchase17/status/2085780032031760694",
+      "excerpt": "Today we’re launching Managed Deep Agents - the easiest way to build, run and deploy production agents. We have a full release blog and docs if you want to read more. In this article I want to talk",
+      "publishedAt": "2026-08-07T17:28:06.000Z",
+      "category": "tech",
+      "meta": "@hwchase17 · 124.4K 粉丝 · 86.0K 阅 · 506 赞 · 68 转",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "宣布推出 Managed Deep Agents，声称是构建、运行和部署生产级 agent 最简单的方式。文章阐释为何托管式 agent 是下一波 agent 构建的大趋势。"
+    },
+    {
+      "sourceId": "attentionvc-ai",
+      "title": "AI Adoption is a Myth",
+      "url": "https://x.com/vasuman/status/2085806422072418632",
+      "excerpt": "You’re already in the top 1% of AI users. Yes, there’s a gap between you and the folks on the frontier. The crazy kids running 20 terminals simultaneously with a knowledge base that rewrites itself",
+      "publishedAt": "2026-08-07T19:12:58.000Z",
+      "category": "tech",
+      "meta": "@vasuman · 88.5K 粉丝 · 80.7K 阅 · 569 赞 · 33 转",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "博主提出「AI 普及是个神话」：其实你已经属于前 1% 的重度用户，虽然与前沿玩家有差距——那些同时开 20 个终端、自重构知识库的极客只是少数。意在打破主流叙事。"
+    },
+    {
+      "sourceId": "attentionvc-ai",
+      "title": "Grok Build's most important features you should know",
+      "url": "https://x.com/XFreeze/status/2086000397798248750",
+      "excerpt": "In under 12 weeks, Grok Build has evolved from a terminal coding assistant into a full agentic software engineering platform....becoming one of the most powerful agent harnesses in the world. And",
+      "publishedAt": "2026-08-08T08:03:45.000Z",
+      "category": "tech",
+      "meta": "@XFreeze · 253.7K 粉丝 · 60.9K 阅 · 515 赞 · 67 转",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "博主盘点 Grok Build 最具价值的功能：12 周内从终端编码助手进化为完整 agentic 软件工程平台，跃升为世界最强 agent harness 之一。适合关注探索 agent 工程平台的开发者。"
+    },
+    {
+      "sourceId": "attentionvc-ai",
+      "title": "Profiling LLM Inference with SGLang and Torch Profiler",
+      "url": "https://x.com/jino_rohit/status/2085947942339563598",
+      "excerpt": "This blog is my attempt to learn how to profile an llm served using sglang and its in built torch profiler integration that comes out of box. The idea here would be try and understand when I hit",
+      "publishedAt": "2026-08-08T04:35:19.000Z",
+      "category": "tech",
+      "meta": "@jino_rohit · 6.9K 粉丝 · 20.3K 阅 · 519 赞 · 59 转",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "博主以学习笔记形式讲解如何用 SGLang 自带的 Torch Profiler 集成为 LLM 推理做性能剖析，重点在于理解服务端何时出现瓶颈。对做推理优化的人有参考价值。"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Israel rejects Trump's 15-point plan for Gaza, Netanyahu says",
+      "url": "https://www.bbc.co.uk/news/articles/c5yw4lpe0yeo?at_medium=RSS&at_campaign=rss",
+      "excerpt": "Israel's PM says its military will not pull out from Gaza until Hamas is \"genuinely\" disarmed.",
+      "publishedAt": "2026-08-09T21:25:04.000Z",
+      "category": "politics",
+      "source": "BBC World",
+      "summary": "以色列总理内塔尼亚胡拒绝特朗普的15点计划，称在哈马斯“真正”解除武装之前，以军不会从加沙撤出。"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Suspected crime boss Daniel Kinahan appears in court after extradition",
+      "url": "https://www.bbc.co.uk/news/articles/c62qd5plzp6o?at_medium=RSS&at_campaign=rss",
+      "excerpt": "The Irish Prison Service bought a bulletproof and bombproof van to transport the 49-year-old to court after his extradition from Dubai.",
+      "publishedAt": "2026-08-09T20:58:18.000Z",
+      "category": "politics",
+      "source": "BBC World",
+      "summary": "涉嫌犯罪集团头目丹尼尔·基纳汉从迪拜被引渡后出庭。爱尔兰监狱管理局购入防弹防爆专用车，接送这名49岁的嫌疑人。"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Ancient Roman shipwreck discovered off Sicily coast",
+      "url": "https://www.bbc.co.uk/news/articles/cvgx1kpz17go?at_medium=RSS&at_campaign=rss",
+      "excerpt": "Italy's culture minister says it is one of the most important underwater archaeological finds in years.",
+      "publishedAt": "2026-08-09T12:27:26.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Residents warned to brace for the worst as Canada wildfire rages out of control",
+      "url": "https://www.bbc.co.uk/news/articles/cx25dkwk3e3o?at_medium=RSS&at_campaign=rss",
+      "excerpt": "The Bald Range wildfire in British Columbia, still considered \"out of control\", has spread over 53 sq miles (136 sq km).",
+      "publishedAt": "2026-08-09T22:27:53.000Z",
+      "category": "politics",
+      "source": "BBC World",
+      "summary": "加拿大不列颠哥伦比亚省“巴尔岭”野火持续失控，过火面积已超过53平方英里（约136平方公里），当局警告居民做好最坏准备。"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Ecuador charges ex-minister over presidential candidate assassination case",
+      "url": "https://www.bbc.co.uk/news/articles/cgjeznj6979o?at_medium=RSS&at_campaign=rss",
+      "excerpt": "Prosecutors accuse six others, including the leader of cartel Los Lobos, of having an indirect role in the murder of Fernando Villavicencio.",
+      "publishedAt": "2026-08-09T15:34:04.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Drones spotted over German base days after Leipzig bomb incident",
+      "url": "https://www.bbc.co.uk/news/articles/cwyeg1ljp2eo?at_medium=RSS&at_campaign=rss",
+      "excerpt": "Police are investigating a drone sighting over a miltary base reportedly used for housing Patriot missile system parts.",
+      "publishedAt": "2026-08-09T16:18:10.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Nigerian army says it safely rescued 33 people kidnapped by gunmen",
+      "url": "https://www.bbc.co.uk/news/articles/c89nkkvx2veo?at_medium=RSS&at_campaign=rss",
+      "excerpt": "The people were abducted while travelling through the country's north-western Zamfara state on Saturday.",
+      "publishedAt": "2026-08-09T19:57:28.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Perez Hilton faces long recovery after reports he self-harmed during livestream",
+      "url": "https://www.bbc.co.uk/news/articles/cg5lnqjz497o?at_medium=RSS&at_campaign=rss",
+      "excerpt": "The US blogger is in a \"serious but stable\" condition in hospital, according to his family.",
+      "publishedAt": "2026-08-09T04:32:06.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Puerto Rico rations water supplies due to intense drought",
+      "url": "https://www.bbc.co.uk/news/articles/cqlxgk7r2vwo?at_medium=RSS&at_campaign=rss",
+      "excerpt": "Hot weather and ageing infrastructure have led to the rationing, affecting hundreds of thousands of people.",
+      "publishedAt": "2026-08-09T16:43:23.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "An unbearable rotting stench is plaguing an LA neighbourhood",
+      "url": "https://www.bbc.co.uk/news/articles/c2elpz33zp2o?at_medium=RSS&at_campaign=rss",
+      "excerpt": "Heaps of rotting meat have been festering in the summer sun after a fire ripped through a huge food warehouse.",
+      "publishedAt": "2026-08-09T00:15:28.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Israel accused of weaponising archaeology at ancient West Bank sites",
+      "url": "https://www.bbc.co.uk/news/articles/c20d8qre98do?at_medium=RSS&at_campaign=rss",
+      "excerpt": "Israel is planning large-scale land expropriations in historic, Palestinian areas of the West Bank.",
+      "publishedAt": "2026-08-08T23:43:44.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Man arrested after boat capsizes near Statue of Liberty killing woman and infant",
+      "url": "https://www.bbc.co.uk/news/articles/c935w1d05d7o?at_medium=RSS&at_campaign=rss",
+      "excerpt": "Twelve other people initially rescued from the water are all reported to be in stable condition.",
+      "publishedAt": "2026-08-09T19:40:09.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Hormuz talks positive, Oman says, as Iran warns deal would not open strait",
+      "url": "https://www.bbc.co.uk/news/articles/c934j5y2lq9o?at_medium=RSS&at_campaign=rss",
+      "excerpt": "Both sides suggest progress in talks to agree a new shipping route through the strait, but a breakthrough remains unclear.",
+      "publishedAt": "2026-08-08T19:18:57.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Spain imposes border controls against Italy as row over Ceuta migrant influx intensifies",
+      "url": "https://www.bbc.co.uk/news/articles/c5yv5l6yr5ko?at_medium=RSS&at_campaign=rss",
+      "excerpt": "Italy introduced border controls following an influx of about 78,000 migrants from Morocco into the neighbouring Spanish exclave of Ceuta.",
+      "publishedAt": "2026-08-08T14:25:19.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Child among three killed in Russian missile attacks near Kyiv",
+      "url": "https://www.bbc.co.uk/news/articles/cz7dy8gq99eo?at_medium=RSS&at_campaign=rss",
+      "excerpt": "Russia continued its overnight attacks after President Volodymyr Zelensky warned of Ukraine's dwindling supplies of missile interceptors.",
+      "publishedAt": "2026-08-08T18:06:25.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Typhoon Dolphin batters Japan's Okinawa before bearing down on China",
+      "url": "https://www.bbc.co.uk/news/articles/cvglp2zlvrlo?at_medium=RSS&at_campaign=rss",
+      "excerpt": "The storm has cut power to at least 44,000 buildings and injured five people on the Japanese island.",
+      "publishedAt": "2026-08-08T15:15:17.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "US offers $1bn to Colombia on new right-wing president's first day of office",
+      "url": "https://www.bbc.co.uk/news/articles/cy9wy3y0e5wo?at_medium=RSS&at_campaign=rss",
+      "excerpt": "Abelardo de la Espriella used his maiden speech to promise an \"all-out war\" on what he calls \"narco-terrorism\".",
+      "publishedAt": "2026-08-08T17:58:42.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Thai PM vows to introduce stricter gun laws after eight killed in shooting",
+      "url": "https://www.bbc.co.uk/news/articles/cdewx6rew04o?at_medium=RSS&at_campaign=rss",
+      "excerpt": "Eight people were killed when a 14-year-old opened fire at his home and school before shooting himself dead.",
+      "publishedAt": "2026-08-07T21:19:27.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Saudi Arabia, Turkey and Pakistan sign defence pact",
+      "url": "https://www.bbc.co.uk/news/articles/c30418m4mj4o?at_medium=RSS&at_campaign=rss",
+      "excerpt": "Pakistan says an attack on any of the three will amount to an attack against all, amid conflict in the Middle East.",
+      "publishedAt": "2026-08-07T17:42:54.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Spanish police arrest 78 people in bust of 'one of largest' smuggling networks",
+      "url": "https://www.bbc.co.uk/news/articles/clylejzkkx4o?at_medium=RSS&at_campaign=rss",
+      "excerpt": "The group moved synthetic drugs from Spain to Algeria, then used the return journey to smuggle migrants and weapons.",
+      "publishedAt": "2026-08-07T16:13:45.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Book hidden in fireplace returned to Australian library 150 years overdue",
+      "url": "https://www.bbc.co.uk/news/articles/c39eprxln0go?at_medium=RSS&at_campaign=rss",
+      "excerpt": "It is thought an apprentice stonemason who worked on the Houses of Parliament in London borrowed it.",
+      "publishedAt": "2026-08-07T18:06:58.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Kidnapped rare Serbian eagle freed into wild after rescue",
+      "url": "https://www.bbc.co.uk/news/articles/cdewxgw69exo?at_medium=RSS&at_campaign=rss",
+      "excerpt": "Feliks the eagle was abducted as he first flew the nest in Serbia and wound up in the Middle East with poachers who demanded a ransom.",
+      "publishedAt": "2026-08-07T20:40:56.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Hundreds arrested over French wildfires, but who is to blame?",
+      "url": "https://www.bbc.co.uk/news/articles/cvgxjn92x9jo?at_medium=RSS&at_campaign=rss",
+      "excerpt": "The government is trying to attribute blame for the unprecedented fires which tore through the country last month.",
+      "publishedAt": "2026-08-08T23:59:23.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Australia is the planet's extinction hotspot, but one animal offers a glimmer of hope",
+      "url": "https://www.bbc.co.uk/news/articles/c9q94lxqrzzo?at_medium=RSS&at_campaign=rss",
+      "excerpt": "The country is home to some of the world's most unique species - but it is losing them at an alarming rate.",
+      "publishedAt": "2026-08-08T19:00:22.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "How a schoolteacher's son became Kashmir's first India Test cricketer",
+      "url": "https://www.bbc.co.uk/news/articles/c2elpkg1l0jo?at_medium=RSS&at_campaign=rss",
+      "excerpt": "Auqib Nabi becomes Jammu and Kashmir's first cricketer to get India Test call-up, inspiring millions.",
+      "publishedAt": "2026-08-09T03:00:44.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Nigeria's mass wedding - and how telling lovers from fraudsters is proving tricky",
+      "url": "https://www.bbc.co.uk/news/articles/cqx7q17531do?at_medium=RSS&at_campaign=rss",
+      "excerpt": "The scheme is for couples who cannot afford the significant financial costs associated with marriage.",
+      "publishedAt": "2026-08-09T01:10:50.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "The phone book that led us to Assad's spy chief in hiding",
+      "url": "https://www.bbc.co.uk/news/articles/c4gyrzn8p94o?at_medium=RSS&at_campaign=rss",
+      "excerpt": "How we tracked down \"The Spider\" who was once one of the most-feared men in Syria.",
+      "publishedAt": "2026-08-07T23:23:12.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Watch: Moment opposition MP throws eggs at Kosovo's acting PM",
+      "url": "https://www.bbc.co.uk/news/videos/cvg8je12xxeo?at_medium=RSS&at_campaign=rss",
+      "excerpt": "Lawmakers and police officers had to intervene after Alliance party MP Time Kadrijaj hurled at least four eggs towards Kosovo's acting prime minister Albin Kurti.",
+      "publishedAt": "2026-08-08T15:59:37.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "Watch: BBC asks Infantino if he will resign as Fifa president",
+      "url": "https://www.bbc.co.uk/news/videos/c0ejrdzx98wo?at_medium=RSS&at_campaign=rss",
+      "excerpt": "The head of the football governing body has faced multiple calls to quit after his aborted attempt to sell private stakes in the World Cup.",
+      "publishedAt": "2026-08-07T21:24:17.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "bbc-world",
+      "title": "What we know so far about the deadly Thailand shooting",
+      "url": "https://www.bbc.co.uk/news/videos/c70glx1ww78o?at_medium=RSS&at_campaign=rss",
+      "excerpt": "At least seven people have died after a teenage boy shot his grandparents before opening fire on a school in Bangkok.",
+      "publishedAt": "2026-08-07T17:17:36.000Z",
+      "category": "politics",
+      "source": "BBC World"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Spain to introduce temporary border checks on visitors from Italy",
+      "url": "https://www.theguardian.com/world/2026/aug/07/spain-to-introduce-temporary-border-checks-on-visitors-from-italy",
+      "excerpt": "Move comes in response to Rome imposing similar measures after mass migration rush to Ceuta Spain has announced it will introduce temporary border checks on visitors from Italy in response to Rome imposing similar measures after a mass rush of people from Morocco into Ceuta. The checks, which come “",
+      "publishedAt": "2026-08-07T21:44:38.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Judge approves Trump effort to end South Sudan TPS protections",
+      "url": "https://www.theguardian.com/us-news/2026/aug/07/judge-trump-south-sudan-tps",
+      "excerpt": "Decision follows supreme court ruling that allowed US government to strip protections for Haitians and Syrians Temporary protected status (TPS) for hundreds of South Sudanese nationals in the United States is set to end after a federal judge ruled that the Trump administration can move forward with ",
+      "publishedAt": "2026-08-07T18:34:34.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Ebola virus behind massive outbreak in DRC could be mutating, officials say",
+      "url": "https://www.theguardian.com/world/2026/aug/06/ebola-virus-drc-mutating",
+      "excerpt": "Cases have passed 4,000 and health watchdog plans to go door to door to find patients in major response escalation The virus causing a massive outbreak of Ebola in the Democratic Republic of the Congo could be mutating, health officials fear, as confirmed cases pass 4,000. Africa’s public health wat",
+      "publishedAt": "2026-08-06T16:18:46.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "US to shut five consulates as critics fear China could fill diplomatic vacuum",
+      "url": "https://www.theguardian.com/us-news/2026/aug/05/us-state-department-consulate-closures",
+      "excerpt": "State department informs Congress of planned closures in Canada, Grenada, Japan, Indonesia and Cameroon The US state department is to shut five foreign consulates and missions across Asia, Africa, North America and the Caribbean, drawing criticism that it is leaving a diplomatic vacuum at risk of be",
+      "publishedAt": "2026-08-06T15:41:29.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Top Ugandan footballer killed by robbers armed with paving stones",
+      "url": "https://www.theguardian.com/football/2026/aug/06/top-uganda-footballer-killed-robbery-kampala",
+      "excerpt": "David Owori, who played for the national team, died in hospital after he tried to stop robbers taking his phone The Ugandan football community is in mourning after the death of a player who was fatally injured during a robbery in the capital, Kampala, on Tuesday night. David Owori, who captained Spo",
+      "publishedAt": "2026-08-06T14:30:32.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Canadian government steps in as ‘out of control’ wildfires force thousands to flee",
+      "url": "https://www.theguardian.com/world/2026/aug/09/canada-british-columbia-government-wildfires",
+      "excerpt": "British Columbia battling 102 fires day and night across province, as breakneck speed hampers firefighters’ efforts Canada’s federal government has announced it will provide urgent assistance to British Columbia after an onslaught of unprecedented fast-moving wildfires forced about 22,000 people to ",
+      "publishedAt": "2026-08-09T18:20:25.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Costa Rican diplomat emerges as strong contender to be first female head of UN",
+      "url": "https://www.theguardian.com/world/2026/aug/09/costa-rican-diplomat-rebeca-grynspan-contender-first-female-head-of-un",
+      "excerpt": "Rebeca Grynspan seen as continuity candidate with tacit support from current secretary general, António Guterres A Costa Rican diplomat and former vice-president whose parents were refugees from the Holocaust has become the surprise frontrunner to lead the United Nations as its first female secretar",
+      "publishedAt": "2026-08-09T07:00:08.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "‘I couldn’t breathe’: the deadly health burden of wildfire smoke",
+      "url": "https://www.theguardian.com/news/ng-interactive/2026/aug/08/wildfire-smoke-unknown-health-impacts",
+      "excerpt": "Scientists race to untangle complex links between exposure and mortality as fire weather grows more prevalent A thousand kilometres from the infernos gorging on northern Ontario’s boreal forests, Erin O’Connor watched the sky above Canada’s biggest city turn an “almost post-apocalyptic” orange as it",
+      "publishedAt": "2026-08-08T05:00:37.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "US promises $1bn in security aid to Colombia as new rightwing president pledges drugs crackdown",
+      "url": "https://www.theguardian.com/world/2026/aug/08/us-promises-1bn-in-security-aid-to-colombia-as-new-rightwing-president-pledges-drugs-crackdown",
+      "excerpt": "Trump ally Abelardo De La ‌Espriella vows to start ‘profound transformation’ of country’s destiny as he is sworn in The ​Trump administration plans to provide $1bn in security assistance to the ⁠government of Colombia’s new ​rightwing ‌president, the US state department announced, soon after Abelard",
+      "publishedAt": "2026-08-08T04:08:18.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "US police officer accused of killing three people in Mexico arrested at border",
+      "url": "https://www.theguardian.com/us-news/2026/aug/07/chad-eberle-arrested-police-killings",
+      "excerpt": "Chad Eberle of Texas charged over deadly shooting in Saltillo that officials say stemmed from custody dispute A Texas police officer has been arrested in Mexico after authorities there accused him of killing three people and critically injuring the mother of his child in what investigators say stemm",
+      "publishedAt": "2026-08-07T20:49:24.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Typhoon Dolphin makes landfall in China as its strongest storm this year",
+      "url": "https://www.theguardian.com/world/2026/aug/09/typhoon-dolphin-makes-landfall-in-china-as-its-strongest-storm-this-year",
+      "excerpt": "Tropical cyclone brings torrential rain and high winds to east coast after hitting Japan’s southern Okinawa province Typhoon Dolphin, the most powerful tropical cyclone to hit China this year, has made landfall on the country’s east coast, bringing torrential rain and strong ⁠winds and triggering wa",
+      "publishedAt": "2026-08-09T18:13:57.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Chinese EV sales surge to new high in Europe putting tariffs under scrutiny",
+      "url": "https://www.theguardian.com/business/2026/aug/09/chinese-electric-car-sales-surge-to-a-record-high-in-europe",
+      "excerpt": "Imports this year now account for 14% of the market amid claims vehicles are being dumped in the EU and UK Chinese electric car sales have risen across Europe to a record high driven by strong demand and low tariffs in the UK and a surge in buyers in Italy. Against a backdrop of claims that Chinese ",
+      "publishedAt": "2026-08-09T14:30:58.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Thailand school shooting toll rises to nine after 12-year-old dies, police say",
+      "url": "https://www.theguardian.com/world/2026/aug/09/thailand-school-shooting-toll-rises-to-nine-after-12-year-old-dies-police-say",
+      "excerpt": "Teenage girl treated in hospital after Friday’s school shooting has died, police say The death toll from a school shooting in Thailand rose to nine on Saturday, after police said a 12-year-old girl caught up in Friday’s incident had died. Police at the Plai Bang Police Station in Nonthaburi Province",
+      "publishedAt": "2026-08-09T02:11:34.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Thailand school shooting: eight killed including suspected attacker, police say",
+      "url": "https://www.theguardian.com/world/2026/aug/07/thailand-school-shooting-debsirin-nonthaburi-bangkok",
+      "excerpt": "Teenager killed his grandparents ⁠before opening fire at school near Bangkok, where more than 30 were wounded A Thai teenager killed his grandparents before opening fire at his school, where he shot five people dead and took his own life, police have said, in an attack that has shaken a country stru",
+      "publishedAt": "2026-08-07T14:16:01.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "‘Mamma mia!’: Trump tariffs refund ignites 53% profit spike at Nintendo",
+      "url": "https://www.theguardian.com/games/2026/aug/06/trump-tariffs-refund-fuels-profit-spike-nintendo",
+      "excerpt": "Profit jump fuelled largely by unknown US refund amount as Japanese video game firm records quarterly sales drop Nintendo has reported a jump in profits, as the Japanese game maker’s earnings were buoyed up by a long-awaited refund on Donald Trump’s tariffs. The company said profits surged 53.5% to ",
+      "publishedAt": "2026-08-06T11:11:46.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Australia news live: Minns considers banning ebikes for under-12s in NSW; air safety chief says Sydney tarmac near-miss ‘unacceptable’",
+      "url": "https://www.theguardian.com/australia-news/live/2026/aug/10/australia-news-live-transport-minister-sydney-airport-air-traffic-control-catherine-king-aukus-public-inquiry-malcolm-turnbull-alan-jones-trial-ntwnfb",
+      "excerpt": "Australian Transport Safety Bureau gathering information about circumstances surrounding the incident. Follow today’s news live Mortgage applications fall 20% at Westpac since budget Westpac has delivered a $1.8bn quarterly net profit, even after mortgage applications fell due to a combination of hi",
+      "publishedAt": "2026-08-09T23:33:15.000Z",
+      "category": "politics",
+      "source": "The Guardian",
+      "summary": "澳大利亚新南威尔士州州长明斯考虑禁止12岁以下儿童骑电动自行车；航空安全主管称悉尼机场停机坪险撞事件“不可接受”，澳运输安全局正调查。西太平洋银行季度净利润18亿澳元，但房贷申请下降20%。"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Body of woman found in suitcase by side of road in regional NSW",
+      "url": "https://www.theguardian.com/australia-news/2026/aug/09/body-woman-found-suitcase-regional-nsw-road-ntwnfb",
+      "excerpt": "Police called to Oallen, about 40km south of Goulburn, on Sunday afternoon after suitcase discovered near Wolgon Road Follow our Australia news live blog for latest updates Get our breaking news email, free app or daily news podcast The body of a woman has been found in a suitcase by the side of a r",
+      "publishedAt": "2026-08-09T22:37:00.000Z",
+      "category": "politics",
+      "source": "The Guardian",
+      "summary": "澳大利亚新南威尔士州古尔本以南约40公里的奥伦镇沃尔根路旁发现一只装有女性尸体的行李箱，警方周日下午接报后展开调查。"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "China expresses ‘grave concern’ as internal documents reveal suicide warning before death in Melbourne immigration detention",
+      "url": "https://www.theguardian.com/australia-news/2026/aug/10/woman-who-took-her-own-life-in-melbourne-detention-centre-was-known-suicide-risk-documents-reveal-ntwnfb",
+      "excerpt": "Exclusive: Serious questions raised about whether Chinese citizen was properly monitored at centre run by US prison giant Follow our Australia news live blog for latest updates Get our breaking news email, free app or daily news podcast The US private prison company running Australia’s immigration d",
+      "publishedAt": "2026-08-09T15:00:18.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Sydney gardener fined almost $200,000 for removing 287 trees to improve harbourside mansion’s water views",
+      "url": "https://www.theguardian.com/australia-news/2026/aug/09/trees-vandalism-lane-cove-council-sydney-gardener-fined-court-longueville-ntwnfb",
+      "excerpt": "Local council described incident as ‘worst act of environmental vandalism in Lane Cove history’ Get our breaking news email, free app or daily news podcast It began with a gardener being hired to trim grass at a harbourside mansion in Sydney – and escalated to payments being left in a shoe for the u",
+      "publishedAt": "2026-08-09T05:35:39.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Labor open to ‘sensible amendments’ on gambling reforms, minister says – as it happened",
+      "url": "https://www.theguardian.com/australia-news/live/2026/aug/09/bird-flu-updates-politics-reactions-sarah-hanson-young-insiders-ntwnfb",
+      "excerpt": "This blog is now closed Get our breaking news email, free app or daily news podcast Coalition demands NDIS changes focus on fraud, corruption Liberal frontbencher Tim Wilson also called on the government to focus more on fraud and corruption issues in the NDIS, as the Coalition and Labor negotiate o",
+      "publishedAt": "2026-08-09T04:21:03.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Labour seeking ‘deeper relationship’ with EU under Burnham, new minister says",
+      "url": "https://www.theguardian.com/politics/2026/aug/09/uk-eu-reset-talks-brexit-burnham-hamish-falconer",
+      "excerpt": "Exclusive: Hamish Falconer wants ‘sense of renewed pace’ in post-Brexit talks while staying within Labour’s red lines ‘I was on my honeymoon!’: Hamish Falconer’s surprise call-up to Burnham’s cabinet The UK will move faster and be more ambitious on achieving closer ties with Europe under Andy Burnha",
+      "publishedAt": "2026-08-09T18:00:21.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Italy condemns Spain’s ‘unacceptable’ border controls as Ceuta fallout intensifies",
+      "url": "https://www.theguardian.com/world/2026/aug/09/italy-condemns-spain-border-controls-ceuta-fallout-intensifies",
+      "excerpt": "Travellers caught up in migration row as Madrid introduces checks on visitors from Italy in retaliation for Rome’s move Italy’s foreign minister has called Spain’s decision to impose retaliatory checks on travellers from Italy “incomprehensible and completely unacceptable” as people making their way",
+      "publishedAt": "2026-08-09T14:59:39.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Russian family denied asylum in Finland fear reprisals for pro-Ukraine activism",
+      "url": "https://www.theguardian.com/world/2026/aug/09/russian-family-finland-reprisals-pro-ukraine-activism",
+      "excerpt": "Nikita and Olga Belov say they will be persecuted on return to Moscow but are yet to convince Finnish authorities A Russian family faces deportation from Finland after repeatedly being denied asylum – despite the threat of arrest, imprisonment and potential torture for their pro-Ukrainian activism. ",
+      "publishedAt": "2026-08-09T07:00:08.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Navy says it is spending 25% more time monitoring Russian vessels around UK waters",
+      "url": "https://www.theguardian.com/uk-news/2026/aug/08/navy-says-it-is-spending-25-more-time-monitoring-russian-vessels-around-uk-waters",
+      "excerpt": "Warning of increased activity as patrols spent 21 days in July shadowing Moscow’s ships in Dover Strait and North Sea The Royal Navy has warned of increasing Russian activity around the UK’s waters after it spent 21 days in July monitoring Moscow’s ships. Naval operations to monitor Russian vessels ",
+      "publishedAt": "2026-08-08T20:03:34.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "The Bond effect? How MI6 fascinates spy watchers around the world",
+      "url": "https://www.theguardian.com/world/2026/aug/08/mi6-global-reputation-expertise-spy-agencies",
+      "excerpt": "Britain’s spooks take quiet satisfaction from survey ranking Secret Intelligence Service Europe’s top espionage agency MI6 has the swagger of James Bond; its French equivalent, DGSE, the complexities of the television drama Le Bureau. The film and TV shows may be fictional, but a survey run by a Fre",
+      "publishedAt": "2026-08-08T11:00:44.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Netanyahu rejects US-led 15-point Gaza peace plan in rare public break with Trump",
+      "url": "https://www.theguardian.com/world/2026/aug/09/israel-rejects-us-led-15-point-gaza-peace-plan-says-netanyahu",
+      "excerpt": "Israeli PM says IDF will not withdraw until Hamas is disarmed and rebukes US pressure to end wars without his country’s buy-in Middle East crisis live – latest updates Israel’s prime minister, Benjamin Netanyahu, has rejected a US-backed 15-point peace plan for Gaza in a rare public break with Donal",
+      "publishedAt": "2026-08-09T20:00:48.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Netanyahu rejects Trump’s Gaza plan and vows no withdrawal until Hamas disarms – as it happened",
+      "url": "https://www.theguardian.com/world/live/2026/aug/09/iran-us-irgc-strait-of-hormuz-israel-netanyahu-trump-gaza-plan-latest-news-updates",
+      "excerpt": "This live blog is now closed. Israel rejects US-led 15-point Gaza peace plan, says Netanyahu Israeli prime minister Benjamin Netanyahu rejected a Gaza plan hailed by US president Donald Trump, vowing no military pullout of Gaza until Hamas is “genuinely” disarmed. The Israeli military “will not carr",
+      "publishedAt": "2026-08-09T19:54:53.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Iran-aligned Houthis claim they attacked oil refinery in Saudi Arabia",
+      "url": "https://www.theguardian.com/world/2026/aug/09/yemen-houthis-saudi-oil-refinery-defence-pact-iran-strait-of-hormuz",
+      "excerpt": "Drone strike comes after Riyadh signs defence pact and Tehran issues tough demands to reopen strait of Hormuz Middle East crisis live – latest updates Yemen’s Tehran-aligned Houthis have claimed responsibility for an attack on a refinery in Saudi Arabia, two days after the kingdom signed ⁠a defence ",
+      "publishedAt": "2026-08-09T15:11:28.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Iran issues tough demands to reopen strait of Hormuz as deal still out of reach",
+      "url": "https://www.theguardian.com/world/2026/aug/08/iran-issues-tough-demands-to-reopen-strait-of-hormuz-as-deal-remains-out-of-reach",
+      "excerpt": "Tehran urges US to ‘correct its behaviour’ as UAE says one of its ships targeted by Iranian missile Iran has issued tough new demands for reopening the strait of Hormuz, while the United Arab Emirates said one of its ships was targeted by an Iranian missile, as a deal to open the strategic waterway ",
+      "publishedAt": "2026-08-08T21:01:28.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "guardian-world",
+      "title": "Bluster and backdown have turned Iran war into Trump’s own Groundhog Day",
+      "url": "https://www.theguardian.com/world/ng-interactive/2026/aug/08/trump-iran-war-criticism-groundhog-day",
+      "excerpt": "The US president’s profound ignorance of his enemy has led to an impotent cycle of empty threats, analysts say Being the subject of mockery may be the most intense of all Donald Trump’s known aversions. Yet more than five months after embarking on a war of choice against Iran, the US president risks",
+      "publishedAt": "2026-08-08T09:00:43.000Z",
+      "category": "politics",
+      "source": "The Guardian"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Inside the War on Hezbollah’s Finances",
+      "url": "https://www.nytimes.com/2026/08/09/world/europe/lebanon-hezbollah-iran-us-finances.html",
+      "excerpt": "Israel and the United States aren’t just targeting the Lebanese militant group’s weapons. They’re going after its money.",
+      "publishedAt": "2026-08-09T09:00:15.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Iran, Holding Firm to Hormuz, Pushes for Return to June MOU",
+      "url": "https://www.nytimes.com/2026/08/09/world/europe/iran-strait-hormuz-trump-deal.html",
+      "excerpt": "The Strait of Hormuz is Iran’s best leverage to get Washington to release Iran’s frozen assets, lift economic sanctions and end its naval blockade.",
+      "publishedAt": "2026-08-09T17:58:22.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Iran War Timeline: Key Moments and Attacks In U.S. and Israel’s Campaign",
+      "url": "https://www.nytimes.com/article/iran-war-trump-us-oil-hormuz-key-dates-events.html",
+      "excerpt": "The United States and Israel attacked Iran on Feb. 28, starting a monthslong war that spread to neighboring countries and rocked global markets.",
+      "publishedAt": "2026-08-09T21:34:51.000Z",
+      "category": "politics",
+      "source": "NYT World",
+      "summary": "美国与以色列于2月28日对伊朗发动攻击，由此引发持续数月的战争，冲突蔓延至周边国家，并冲击全球市场。"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Iran Taps Longtime I.R.G.C. Commander Mohsen Rezaei to Top Security Post",
+      "url": "https://www.nytimes.com/2026/08/09/world/middleeast/iran-security-council-guards-commander.html",
+      "excerpt": "The appointment of Mohsen Rezaei as secretary of the Supreme National Security Council suggests that Iran’s old guard is consolidating power.",
+      "publishedAt": "2026-08-09T18:18:22.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Israel Rejects Trump’s 15-Point Plan to Disarm Hamas",
+      "url": "https://www.nytimes.com/2026/08/09/world/middleeast/israel-netanyahu-trump-15-point-plan-hamas-peace-gaza.html",
+      "excerpt": "President Trump’s Board of Peace announced an agreement last month that aimed at Hamas’s giving up its weapons alongside an Israeli withdrawal from Gaza.",
+      "publishedAt": "2026-08-09T21:40:37.000Z",
+      "category": "politics",
+      "source": "NYT World",
+      "summary": "以色列拒绝特朗普提出的15点计划。该计划由上月的“和平委员会”协议提出，要求哈马斯交出武器，同时以色列从加沙撤军。"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "As the Climate Warms, Beavers are Coming for Canada’s Arctic",
+      "url": "https://www.nytimes.com/2026/08/09/world/canada/arctic-beavers-canada-climate-umiujaq-quebec.html",
+      "excerpt": "Drawn by a warming climate, Canada’s furry national symbol is colonizing new territory, evading Inuit hunters and reshaping the world they find.",
+      "publishedAt": "2026-08-09T09:00:42.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Syria Agrees to Reorganized Russian Military Presence",
+      "url": "https://www.nytimes.com/2026/08/09/world/middleeast/syria-reorganized-russian-military-presence.html",
+      "excerpt": "After more than a year and a half of negotiations, Syria and Russia have agreed on new parameters of Russia’s military presence in Syria. Syria said it opens the way for a new phase in relations.",
+      "publishedAt": "2026-08-09T15:57:53.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Europe Braces for Another Heat Wave. Here’s What to Know.",
+      "url": "https://www.nytimes.com/2026/08/09/weather/extreme-heat-wave-uk-france-spain-forecast.html",
+      "excerpt": "High temperature warnings were in place across western, central and southern Europe on Sunday as a heat dome intensifies across the continent.",
+      "publishedAt": "2026-08-09T12:23:03.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Whirling Like Dervishes in Turkey, but Open to Everyone",
+      "url": "https://www.nytimes.com/2026/08/08/world/europe/turkey-sema-whirling-dervish-islam.html",
+      "excerpt": "Hundreds of people attended a seven-day retreat in the Turkish countryside seeking transcendence through sema, the spiritual practice of whirling.",
+      "publishedAt": "2026-08-09T08:18:47.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "How a Drone ‘Hellscape’ Might Stop a Chinese Invasion of Taiwan",
+      "url": "https://www.nytimes.com/2026/08/09/world/asia/taiwan-drone-china-invasion.html",
+      "excerpt": "Inspired by Ukraine’s battlefield gains, Taiwan is betting on drones to deter a potential Chinese invasion.",
+      "publishedAt": "2026-08-09T15:55:30.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Yemen Teeters on Civil War as Regional Stability Hangs in the Balance",
+      "url": "https://www.nytimes.com/2026/08/08/world/middleeast/yemen-houthis-regional-stability.html",
+      "excerpt": "While the Middle East waits to hear whether a deal can be reached to reopen the Strait of Hormuz, the Yemeni government’s conflict with Iran-backed Houthi rebels escalated overnight.",
+      "publishedAt": "2026-08-08T14:57:24.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "As Thailand Gets Known for Mass Shootings, Fresh Pledges to Fix Gun Laws",
+      "url": "https://www.nytimes.com/2026/08/08/world/asia/thailand-mass-shootings-gun-laws.html",
+      "excerpt": "A rampage at a high school in Thailand on Friday was the latest episode of gun violence in a country that has grappled in recent years with several attacks.",
+      "publishedAt": "2026-08-08T14:47:22.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Bald Range Wildfire Forces Evacuation of 18,000 in British Columbia",
+      "url": "https://www.nytimes.com/2026/08/08/world/canada/canada-summerland-bc-wildfire-bald-range-evacuation.html",
+      "excerpt": "The Bald Range fire has burned more than 25,000 acres in British Columbia. At one point, the fire spread more than 2,000 acres in about an hour, officials said.",
+      "publishedAt": "2026-08-09T15:10:49.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Canada Wildfires: What to Know About Fires in British Columbia and Ontario",
+      "url": "https://www.nytimes.com/article/canada-wildfires-2026.html",
+      "excerpt": "Fire activity has increased sharply in British Columbia, with thousands evacuated from their homes just weeks after smoke from blazes in Ontario choked the East Coast.",
+      "publishedAt": "2026-08-09T22:23:03.000Z",
+      "category": "politics",
+      "source": "NYT World",
+      "summary": "加拿大野火形势严峻：不列颠哥伦比亚省火势急剧蔓延，数千人被迫疏散；数周前安大略省的野火烟雾曾笼罩美国东海岸。"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Still Waiting for Peace in Gaza",
+      "url": "https://www.nytimes.com/2026/08/09/world/gaza-israel-iran.html",
+      "excerpt": "A photojournalist with The New York Times details the displacement and danger, in words and images, that have come to define his home.",
+      "publishedAt": "2026-08-09T21:28:02.000Z",
+      "category": "politics",
+      "source": "NYT World",
+      "summary": "《纽约时报》一名摄影记者以文字和图片记录加沙民众的流离失所与危险，讲述他家乡的现状，并表达仍在等待和平。"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Iran Issues List of Demands, Dampening Hopes of Reopening Strait of Hormuz",
+      "url": "https://www.nytimes.com/2026/08/08/world/middleeast/iran-us-oman-strait-of-hormuz.html",
+      "excerpt": "The head of Iran’s Supreme National Security Council said that the Strait of Hormuz would remain closed until the United States met certain conditions.",
+      "publishedAt": "2026-08-08T19:04:41.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Edge of Your Seat",
+      "url": "https://www.nytimes.com/2026/08/08/briefing/edge-of-your-seat.html",
+      "excerpt": "A superfan of thrillers recommends some of her favorites.",
+      "publishedAt": "2026-08-08T10:19:58.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Signs of Economic Recovery While Greater Uncertainty Looms",
+      "url": "https://www.nytimes.com/2026/08/08/world/canada/canada-economy-tariffs-carney-trump.html",
+      "excerpt": "Jobs and trade numbers released this week show that Canada is recovering from trade turmoil, but another round of tariffs may arrive this month.",
+      "publishedAt": "2026-08-08T10:00:07.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "As Ukraine Strikes Wildberries, Russia’s Richest Businesswoman Faces Her Biggest Test Yet",
+      "url": "https://www.nytimes.com/2026/08/08/world/europe/russia-wildberries-tatyana-kim.html",
+      "excerpt": "As Ukraine repeatedly strikes warehouses of the e-commerce site Wildberries, Tatyana Kim, its billionaire co-founder, faces her biggest test yet.",
+      "publishedAt": "2026-08-08T04:01:50.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Pellet Guns, Sticks and Tear Gas: How India’s Police Halted a Youth March",
+      "url": "https://www.nytimes.com/2026/08/08/world/asia/india-new-delhi-cjp-protest-march-police.html",
+      "excerpt": "A New York Times analysis details the July 20 crackdown on unarmed protesters in New Delhi that has provoked public outrage and accusations of excessive force.",
+      "publishedAt": "2026-08-08T05:21:06.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Their African Islands Were Set to Be Decolonized. Then the U.S. Bombed Iran.",
+      "url": "https://www.nytimes.com/2026/08/08/world/africa/diego-garcia-chagos-displaced-iran-war.html",
+      "excerpt": "The inhabitants of the Chagos Islands were expelled by the British 60 years ago. Refugees were anxious to return this year, but their hopes have been caught in a morass of geopolitics.",
+      "publishedAt": "2026-08-08T04:01:31.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "What to Know About Wildberries, the Company in Ukraine’s Cross Hairs",
+      "url": "https://www.nytimes.com/2026/08/08/world/europe/wildberries-russia-ukraine.html",
+      "excerpt": "Ukrainian drones have increasingly targeted warehouses belonging to Wildberries, which many Russians rely on as the country’s largest e-commerce business.",
+      "publishedAt": "2026-08-08T04:01:17.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Punjabi Soldiers Who Fought for Britain in World War I Are Recognized for First Time",
+      "url": "https://www.nytimes.com/2026/08/08/world/europe/punjabi-soldiers-ww1-british-indian-army.html",
+      "excerpt": "Nearly 10,000 Punjabi soldiers who died in World War I have been added to casualty records for the first time.",
+      "publishedAt": "2026-08-08T04:01:08.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Canada Offers U.S. Concessions in Trade Talks but Demands a Comprehensive Deal",
+      "url": "https://www.nytimes.com/2026/08/07/world/canada/us-trade-tariffs-carney-trump.html",
+      "excerpt": "Prime Minister Mark Carney is attempting to prevent 50 percent tariffs against many Canadian goods scheduled for this month.",
+      "publishedAt": "2026-08-08T14:39:26.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Houthis Claim Attack on Yemeni Military Camp",
+      "url": "https://www.nytimes.com/2026/08/07/world/middleeast/yemen-houthis-attack-military-camp.html",
+      "excerpt": "Recent escalating tensions between the Iran-backed group and the Yemeni government have prompted fears that a truce in place since 2022 is nearing collapse.",
+      "publishedAt": "2026-08-07T20:44:46.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Former Marine Is Unresponsive After Mistreatment in Russian Detention, Family Says",
+      "url": "https://www.nytimes.com/2026/08/07/us/robert-gilman-russia-torture.html",
+      "excerpt": "Robert Gilman, 32, was being fed through a tube and in a “dissociative stupor,” an advocacy group said. He was arrested in Russia in 2022.",
+      "publishedAt": "2026-08-08T09:58:51.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "U.S. Squeezes Cuba Even as It Searches for a New Regime Leader",
+      "url": "https://www.nytimes.com/2026/08/07/us/politics/us-search-cuba-leader.html",
+      "excerpt": "Some officials warn that a more hard-line leader could emerge if the Trump administration moves forward with its plans.",
+      "publishedAt": "2026-08-07T22:35:20.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Iranians Say Trump’s Promises Have Fallen by the Wayside as Iran War Drags On",
+      "url": "https://www.nytimes.com/2026/08/07/us/politics/trump-iran-war-protesters.html",
+      "excerpt": "As President Trump struggles to extricate the United States from the war in Iran, his promises to protesters in the country have fallen by the wayside.",
+      "publishedAt": "2026-08-07T18:56:02.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Parts of Eastern and Central Europe Broke Heat Records This Week",
+      "url": "https://www.nytimes.com/2026/08/07/world/europe/europe-heat-records.html",
+      "excerpt": "The hot weather has exacerbated dry conditions, creating conditions for wildfires and receding rivers.",
+      "publishedAt": "2026-08-07T15:53:09.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "nyt-world",
+      "title": "Photos Show England Turning Brown in Drought",
+      "url": "https://www.nytimes.com/2026/08/07/world/europe/england-drought-dry-weather-photos.html",
+      "excerpt": "Beset by historically dry weather, much of the nation is losing its signature hue.",
+      "publishedAt": "2026-08-09T12:49:41.000Z",
+      "category": "politics",
+      "source": "NYT World"
+    },
+    {
+      "sourceId": "npr-world",
+      "title": "Demi Vollering wins Tour de France for the 2nd time",
+      "url": "https://www.npr.org/2026/08/09/g-s1-137991/demi-vollering-tour-de-france-winner",
+      "excerpt": "Vollering, who first won the competition in 2023, finished the stage more than a minute ahead of Spaniard Paula Blasi Cairol and 2024 champion Polish rider Katarzyna Niewiadoma-Phinney.",
+      "publishedAt": "2026-08-09T22:00:52.000Z",
+      "category": "politics",
+      "source": "NPR World",
+      "summary": "荷兰车手德米·沃勒林第二次赢得环法自行车赛冠军，她曾在2023年夺冠。本次她领先西班牙选手保拉·布拉西·凯罗尔和2024年冠军波兰选手卡塔日娜·涅维亚多马-芬尼超过一分钟。"
+    },
+    {
+      "sourceId": "npr-world",
+      "title": "How Iran's 'Axis of Resistance' has shaped the war",
+      "url": "https://www.npr.org/2026/08/09/nx-s1-5923613/how-irans-axis-of-resistance-has-shaped-the-war",
+      "excerpt": "NPR's Rob Schmitz speaks with Peter Salisbury, professor at Columbia University's School of International and Public Affairs, about how Iran and its allies have reshaped the war in the Middle East.",
+      "publishedAt": "2026-08-09T21:27:11.000Z",
+      "category": "politics",
+      "source": "NPR World",
+      "summary": "美国国家公共电台记者罗布·施密茨采访哥伦比亚大学国际与公共事务学院教授彼得·索尔兹伯里，分析伊朗及其“抵抗轴心”盟友如何重塑中东战局。"
+    },
+    {
+      "sourceId": "npr-world",
+      "title": "Netanyahu rejects Trump's Gaza Peace Plan, demands Hamas disarm first",
+      "url": "https://www.npr.org/2026/08/09/nx-s1-5926459/netanyahu-rejects-trump-gaza-peace-plan-israel-hamas",
+      "excerpt": "Netanyahu's comments come just over a week after President Trump said his Board of Peace had reached a \"historic\" agreement with Hamas to give up its weapons.",
+      "publishedAt": "2026-08-09T18:21:45.000Z",
+      "category": "politics",
+      "source": "NPR World"
+    },
+    {
+      "sourceId": "npr-world",
+      "title": "In Munich, it's never too early for a breakfast beer with sausage and pretzels",
+      "url": "https://www.npr.org/2026/08/09/nx-s1-5900954/in-munich-its-never-too-early-for-a-breakfast-beer-with-sausage-and-pretzels",
+      "excerpt": "Bavarians traditionally wash down a breakfast of boiled veal sausage, sweet mustard and a giant pretzel with beer — all before the church bells ring at midday.",
+      "publishedAt": "2026-08-09T12:48:36.000Z",
+      "category": "politics",
+      "source": "NPR World"
+    },
+    {
+      "sourceId": "npr-world",
+      "title": "This rising painter reimagines Renaissance art in a cocoa plantation in Cameroon",
+      "url": "https://www.npr.org/2026/08/09/g-s1-137636/paintings-religious-renaissance-old-masters-marc-padeu-african-cameroon-artist",
+      "excerpt": "A new gallery show in London features the paintings of Marc Padeu, playing with themes from Renaissance art and bringing them to his homeland of Cameroon.",
+      "publishedAt": "2026-08-09T11:58:02.000Z",
+      "category": "politics",
+      "source": "NPR World"
+    },
+    {
+      "sourceId": "npr-world",
+      "title": "Yemen's Houthis claim attack on Aramco oil facility in Saudi Arabia, and other Middle East news",
+      "url": "https://www.npr.org/2026/08/09/nx-s1-5926387/yemens-houthis-claim-attack-on-aramco-oil-facility-in-saudi-arabia-and-other-middle-east-news",
+      "excerpt": "Meanwhile, Iran has made new demands about the restart of negotiations and the reopening of the Strait of Hormuz, and the Pentagon is pressing the U.S. defense industry to accelerate production of weapons.",
+      "publishedAt": "2026-08-09T09:44:02.000Z",
+      "category": "politics",
+      "source": "NPR World"
+    },
+    {
+      "sourceId": "npr-world",
+      "title": "Solar eclipse to occur next week. Here is what to know",
+      "url": "https://www.npr.org/2026/08/08/nx-s1-5925939/solar-eclipse-august-2026",
+      "excerpt": "It will be visible in parts of the U.S. on Wednesday.",
+      "publishedAt": "2026-08-09T00:56:21.000Z",
+      "category": "politics",
+      "source": "NPR World"
+    },
+    {
+      "sourceId": "npr-world",
+      "title": "Meet the man circumnavigating the Arctic Ocean, alone",
+      "url": "https://www.npr.org/2026/08/08/nx-s1-5923345/circumnavigate-arctic-ocean-matt-rutherford-10000-mile-odyssey",
+      "excerpt": "Matt Rutherford is sailing 10,000 nautical miles, through ice floes and gales, to try and accomplish a world first. He spoke with NPR from the cabin of his boat.",
+      "publishedAt": "2026-08-08T21:30:56.000Z",
+      "category": "politics",
+      "source": "NPR World"
+    },
+    {
+      "sourceId": "npr-world",
+      "title": "Tanker sailors still face danger in the Strait of Hormuz",
+      "url": "https://www.npr.org/2026/08/08/nx-s1-5923592/tanker-sailors-still-face-danger-in-the-strait-of-hormuz",
+      "excerpt": "An agreement over the Strait of Hormuz is still far away. Tim Wilkins, who works for a tanker industry group, says the ships stuck around the waterway are in limbo, and transiting is still dangerous.",
+      "publishedAt": "2026-08-08T21:19:54.000Z",
+      "category": "politics",
+      "source": "NPR World"
+    },
+    {
+      "sourceId": "npr-world",
+      "title": "Ukraine mourns 'collector of souls' Oleksiy Yukov, killed recovering war dead",
+      "url": "https://www.npr.org/2026/08/08/nx-s1-5925887/ukraine-mourns-oleksiy-yukov",
+      "excerpt": "Oleksiy Yukov spent two decades recovering the bodies of soldiers — including many Russians. He was killed during a recovery mission after stepping on a landmine.",
+      "publishedAt": "2026-08-08T17:46:05.000Z",
+      "category": "politics",
+      "source": "NPR World"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "爆炸、呐喊、冲锋声此起彼落 中国“红色旅游景点“推出历史战争体验",
+      "url": "https://www.dw.com/zh/爆炸、呐喊、冲锋声此起彼落-中国-红色旅游景点-推出历史战争体验/a-78260505?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "以为在拍电影，没想到是亲身上战场！烟火连天、红旗漫卷，法新社记者在贵州娄山关体验一次“沉浸式”长征战役，到底有多震撼？",
+      "publishedAt": "2026-08-09T14:36:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "媒体：台湾2027国防预算或逾GDP3%，首度破1兆新台币",
+      "url": "https://www.dw.com/zh/媒体：台湾2027国防预算或逾gdp3-，首度破1兆新台币/a-78296560?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "据台湾媒体周日报道，随着政府加强军备实力的努力，台湾行政院将提议2027年国防预算增长16%，这将使预算总额首次突破1万亿新台币（约合310亿美元）。",
+      "publishedAt": "2026-08-09T13:59:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "中国7月物价涨幅低于预期  通缩压力挥之不去",
+      "url": "https://www.dw.com/zh/中国7月物价涨幅低于预期-通缩压力挥之不去/a-78296204?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "专家表示，油价走低叠加需求走弱，使中国7月的消费者与生产者价格通胀双双低于预期；但是中国政府稳定价格的努力收效有限，油价走势仍不确定，因而全年通胀仍将呈\"M型\"走势。",
+      "publishedAt": "2026-08-09T13:27:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "墙外文摘：强制恢复中国国籍？对台湾人甚至都不需要",
+      "url": "https://www.dw.com/zh/墙外文摘：强制恢复中国国籍？对台湾人甚至都不需要/a-78294571?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "有评论指出，从中共的法律架构来看，台湾人的处境更为脆弱：台湾人甚至不需要经过任何“恢复国籍”的行政手续，中共当局在法律上早已预设对你拥有完全的管辖权。",
+      "publishedAt": "2026-08-09T12:09:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "事实核查：默茨真的会宣布辞职吗？",
+      "url": "https://www.dw.com/zh/事实核查：默茨真的会宣布辞职吗？/a-78294629?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "一段据称来自德国之声的视频援引执政党基民盟内部文件，声称总理默茨即将宣布辞职。这则假消息很可能与俄罗斯的虚假信息攻势有关。",
+      "publishedAt": "2026-08-09T11:22:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "长平观察：今天你要到了狗权，明天是不是就要人权？",
+      "url": "https://www.dw.com/zh/长平观察：今天你要到了狗权，明天是不是就要人权？/a-78293425?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "中国“旺旺”事件震荡波仍在向全球扩散，被中国当局认为“存在被境外势力恶意炒作的政治风险”。时事评论作家长平讨论了动物权利与人权的关系，及其在中国政治中的敏感度。",
+      "publishedAt": "2026-08-09T09:45:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "美国谴责中国“黄岩岛”新法“破坏稳定”",
+      "url": "https://www.dw.com/zh/美国谴责中国-黄岩岛-新法-破坏稳定/a-78293744?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "美国国务院发言人皮戈特表示，“美国拒绝中国持续试图在斯卡伯勒礁实施其单方面设立的、具有破坏稳定性质的‘国家级自然保护区’，以及阻止菲律宾渔民进入其传统渔场的做法。”",
+      "publishedAt": "2026-08-09T09:39:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "德国IT行业失业率上升",
+      "url": "https://www.dw.com/zh/德国it行业失业率上升/a-78235540?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "德国工程师协会（VDI）与德国经济研究所（IW）联合发布的最新报告显示，德国经济放缓对工程和IT行业的就业市场造成了冲击。",
+      "publishedAt": "2026-08-09T08:03:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "媒体：FBI局长帕特尔任下 与中俄建立执法合作关系",
+      "url": "https://www.dw.com/zh/媒体：fbi局长帕特尔任下-与中俄建立执法合作关系/a-78268638?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "美国联邦情报局（FBI）局长帕特尔表示，过去一年与中俄建立了新的执法伙伴关系，以共同打击包括芬太尼、网络诈骗和儿童性剥削在内的跨国犯罪。",
+      "publishedAt": "2026-08-09T07:45:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "欧洲天太热 核电产能低",
+      "url": "https://www.dw.com/zh/欧洲天太热-核电产能低/a-78268909?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "提到欧洲的热浪，你脑海里或许只有社交媒体上“无空调硬扛”的幽默自嘲。但在这个酷暑中，比家里没凉风更危险的，是能源动脉的“中暑”。天太热、不下雨、河流水位暴跌——为欧洲提供动力的核电厂，正因为缺少冷却水而被迫关小“阀门”。",
+      "publishedAt": "2026-08-09T06:59:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "“德国趋势”民调：AfD进一步领先联盟党",
+      "url": "https://www.dw.com/zh/德国趋势-民调：afd进一步领先联盟党/a-78282327?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "最新“ARD-德国趋势”问卷调查显示，德国选择党AfD的支持率已升至28%，联盟党则降至21%。32%的受访者认为，是否与AfD合作应视具体情况而定。",
+      "publishedAt": "2026-08-09T06:58:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "我们真的正在经历创纪录高温吗？",
+      "url": "https://www.dw.com/zh/我们真的正在经历创纪录高温吗？/a-78289380?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "科学家如何知道某次高温是否打破了历史纪录？为什么城市升温幅度往往高于农村地区？湿度真的会让人感觉更热吗？高温天气是否成为一种趋势？",
+      "publishedAt": "2026-08-08T13:39:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "封锁霍尔木兹海峡：伊朗博弈特朗普的风险",
+      "url": "https://www.dw.com/zh/封锁霍尔木兹海峡：伊朗博弈特朗普的风险/a-78288365?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "伊朗领导层坚信，通过在霍尔木兹海峡施加军事压力，最终能迫使美国接受其对全球能源要道的控制权。德黑兰当局认为时间站在自己这一边，但从国内经济衰退到潜在的社会动荡，再到美军的反制威胁，这场逼迫特朗普让步的高风险博弈究竟藏着怎样的隐患？",
+      "publishedAt": "2026-08-08T10:45:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "台风“白海豚”袭日后逼近华东 中国管制台海航行遭台谴责",
+      "url": "https://www.dw.com/zh/台风-白海豚-袭日后逼近华东-中国管制台海航行遭台谴责/a-78287611?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "台风“白海豚”吹袭日本南部，造成至少6人受伤，并导致5万多户家庭停电。与此同时，中国将此前的台风黄色预警升级为台风橙色预警，并关闭相关港口及航线。",
+      "publishedAt": "2026-08-08T10:04:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "澳大利亚小镇将建成西方钪供应基石",
+      "url": "https://www.dw.com/zh/澳大利亚小镇将建成西方钪供应基石/a-78288297?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "在美国承诺提供4亿美元资金后，澳大利亚一座偏远小镇计划建成西方钪供应的\"基石\"，可望打破中国对这一稀土元素的垄断。",
+      "publishedAt": "2026-08-08T10:04:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "美军就要“弹尽炮绝”？",
+      "url": "https://www.dw.com/zh/美军就要-弹尽炮绝-？/a-78236361?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "路透社独家援引美军武库知情人士报道说，美国在新近的中东伊朗冲突中，已消耗大部分高精度远程导弹库存。该消息引发了外界对美军应对未来冲突准备状态的担忧。特朗普对此类表述表达“很生气”，并威胁“严惩传播这些言论的叛徒”。",
+      "publishedAt": "2026-08-08T08:42:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "突破中国反对 台湾获邀出席太平洋岛国论坛峰会",
+      "url": "https://www.dw.com/zh/突破中国反对-台湾获邀出席太平洋岛国论坛峰会/a-78287391?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "太平洋岛国论坛宣布，已克服中国方面的反对，邀请台湾出席本月在帕劳举行的太平洋岛国领导人年度会议。论坛秘书长瓦卡称台湾是\"重要的发展伙伴\"。",
+      "publishedAt": "2026-08-08T08:40:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "AI失控了？Meta人工智能“闯入”别家公司系统",
+      "url": "https://www.dw.com/zh/ai失控了？meta人工智能-闯入-别家公司系统/a-78268837?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "继OpenAI和Anthropic之后，Facebook母公司Meta也确认，旗下一款AI模型在测试过程中意外进入另一家企业的计算机系统。“AI黑客”有什么不一样？普通用户要担心吗？",
+      "publishedAt": "2026-08-08T07:21:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "德语媒体：台湾开始练习抵抗",
+      "url": "https://www.dw.com/zh/德语媒体：台湾开始练习抵抗/a-78282100?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "本年度台湾“汉光演习”已拉开帷幕，除了检验军队应对冲突的能力，演习也首次纳入随军记者机制等新内容。这场演习释放了什么信号？德媒又如何解读？《法兰克福汇报》关注了处于马六甲海峡咽喉要道的印尼如何在中美这两大强国之间寻找平衡。",
+      "publishedAt": "2026-08-07T13:59:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "“汉光演习”：赖清德亲自参与 首度封锁淡江大桥",
+      "url": "https://www.dw.com/zh/汉光演习-：赖清德亲自参与-首度封锁淡江大桥/a-78262718?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "台湾本年度“汉光演习”继续，赖清德自2024年就职以来首次亲自参与演习。亦有美方人员在现场观察。",
+      "publishedAt": "2026-08-07T13:30:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "德语媒体：北京如何“拿捏”欧洲",
+      "url": "https://www.dw.com/zh/德语媒体：北京如何-拿捏-欧洲/a-78263578?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "中欧贸易战风险正在升温。双方一步步加码布局，而北京手中还有哪些“牌”可以打？《法兰克福汇报》对此进行了分析。《经济周刊》则关注到美国拟禁止进口中国产的新型光收发器的消息。",
+      "publishedAt": "2026-08-06T11:01:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "中國全球追稅補財政缺口 鎖定富豪海外資產",
+      "url": "https://www.dw.com/zh/中國全球追稅補財政缺口-鎖定富豪海外資產/a-78258904?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "中國政府近期加大對富豪海外資產的查稅力道，要求銀行清查其海外資產及投資所得，並在部分個案中追溯超過25年的欠稅紀錄。《金融時報》及《彭博》分析，中國加強監管資本外流，可能加速中國富豪移民。",
+      "publishedAt": "2026-08-06T05:31:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "德语媒体：俄罗斯之后是伊朗？中国如何“间接支持”盟友",
+      "url": "https://www.dw.com/zh/德语媒体：俄罗斯之后是伊朗？中国如何-间接支持-盟友/a-78249933?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "中国没有直接参与战争，但西方担心，北京可能通过贸易、技术等等为伊朗和俄罗斯提供关键支持。《新苏黎世报》分析称，这些做法背后隐藏着更深层次的地缘政治战略考量。与此同时，宝马、保时捷等老牌车企纷纷裁员的消息也引起德媒注意，《法兰克福汇报》指出：单靠削减成本，救不了德国车企。",
+      "publishedAt": "2026-08-05T12:52:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "《奧德賽》北京首映掀話題 諾蘭中國專訪為何在西方爆紅？",
+      "url": "https://www.dw.com/zh/《奧德賽》北京首映掀話題-諾蘭中國專訪為何在西方爆紅？/a-78246793?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "《奧德賽》在中國尚未正式上映，但已引發一波社群討論。其中，中國播客主持人「仲樹」對導演諾蘭的採訪，因談及較深入的哲學、神學思辨，獲得英語世界的網友高度關注。另一個爭議則關於首映式主持人陳璇，有中國網友質疑她「卑躬屈膝」。",
+      "publishedAt": "2026-08-05T10:53:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "德语媒体：北京对台湾的“法律战”",
+      "url": "https://www.dw.com/zh/德语媒体：北京对台湾的-法律战/a-78235219?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "“日本无权干预台湾问题”、“一个中国原则不可侵犯”——《南德意志报》关注北京如何塑造对台立场的合法性。《法兰克福汇报》聚焦德国一个稀土项目获得许可证。",
+      "publishedAt": "2026-08-04T14:16:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "德语媒体：TikTok欧美网红竞相展示“中国范儿”",
+      "url": "https://www.dw.com/zh/德语媒体：tiktok欧美网红竞相展示-中国范儿/a-78219657?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "德国《焦点》关注到短视频平台TikTok上一个现象，不少欧美博主以“中国风”内容或标签赢得关注。德国《世界报》则将中国公司发布的人工智能模型Kimi K3称为“免费的超级智能”。",
+      "publishedAt": "2026-08-03T14:02:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "中國AI競賽再升級 阿里巴巴推出最新模型",
+      "url": "https://www.dw.com/zh/中國ai競賽再升級-阿里巴巴推出最新模型/a-78219363?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "中國阿里巴巴發布新一代AI模型，號稱是旗下迄今規模最大、能力最強的人工智慧模型。另一方面，研究機構指出，DeepSeek最新模型的運行成本較Anthropic的Claude Fable 5低逾百倍，凸顯中國AI企業在效能與成本上持續展現競爭力。",
+      "publishedAt": "2026-08-03T13:32:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "中國出入境管制收緊 學者：趁還能離開快走",
+      "url": "https://www.dw.com/zh/中國出入境管制收緊-學者：趁還能離開快走/a-78211560?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "中國總理李強7月底簽署國務院令，擴大了出入境管制範圍，違反出口管制規範者將被禁止出境；若在境外被認為「違反國安」將難以再次出國。",
+      "publishedAt": "2026-08-03T07:36:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "AI自主入侵别家公司 安全问题引忧虑",
+      "url": "https://www.dw.com/zh/ai自主入侵别家公司-安全问题引忧虑/a-78193713?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "开发了AI模型Claude的美国企业Anthropic日前承认，其模型在测试期间曾入侵了另外3个机构。就在几天前，ChatGPT的开发企业OpenAI也承认，其模型也“失控”并入侵了另一家企业。这两起事件进一步引发了各界对于人工智能安全性的担忧。",
+      "publishedAt": "2026-08-02T07:11:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "dw-chinese",
+      "title": "人形机器人：特朗普对华贸易战的最新战场？",
+      "url": "https://www.dw.com/zh/人形机器人：特朗普对华贸易战的最新战场？/a-78202865?maca=chi-rss-chi-all-1127-rdf",
+      "excerpt": "美国已禁止外国制造的人形机器人进入本国市场，而这一市场目前由中国科技企业占据主导地位。尽管华盛顿方面称此举是出于国家安全考虑，但分析人士认为，美国总统特朗普实际上是在为本国机器人制造商争取追赶中国竞争对手的时间。",
+      "publishedAt": "2026-08-01T13:54:00.000Z",
+      "category": "politics",
+      "source": "DW 中文"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Union reports 108 attacks on Palestinian journalists in July",
+      "url": "https://www.aljazeera.com/news/2026/8/9/union-reports-108-attacks-on-palestinian-journalists-in-july?traffic_source=rss",
+      "excerpt": "Palestinian Journalists Syndicate exposes rising threats, with over 270 journalists killed in Gaza since October 2023.",
+      "publishedAt": "2026-08-09T23:01:25.000Z",
+      "category": "politics",
+      "source": "Al Jazeera",
+      "summary": "巴勒斯坦记者工会报告称，7月针对巴勒斯坦记者的袭击达108起，威胁不断上升。自2023年10月以来，加沙已有超过270名记者丧生。"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "What’s driving unrest in Pakistan-administered Kashmir?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/9/aje-onl-nf_dnrexp-260808-warrinera-pakistankashmir-100826?traffic_source=rss",
+      "excerpt": "Pakistan-administered Kashmir is facing its biggest political crisis in years. Al Jazeera's Ava Warriner explains.",
+      "publishedAt": "2026-08-09T22:37:11.000Z",
+      "category": "politics",
+      "source": "Al Jazeera",
+      "summary": "巴基斯坦控制的克什米尔地区正面临多年来最严重的政治危机。半岛电视台记者阿娃·沃里纳实地解析引发动荡的原因。"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Germany warns of ‘daily hybrid warfare’ after explosive-laden drone found",
+      "url": "https://www.aljazeera.com/news/2026/8/9/germany-warns-of-daily-hybrid-warfare-following-suspected-drone-attack?traffic_source=rss",
+      "excerpt": "Espionage, sabotage, cyberattacks, and covert operations are a 'constant reality', says Germany's interior minister.",
+      "publishedAt": "2026-08-09T20:40:25.000Z",
+      "category": "politics",
+      "source": "Al Jazeera",
+      "summary": "德国发现一架携带爆炸物的无人机后，内政部长警告称，间谍活动、破坏、网络攻击和秘密行动已成为“日常混合战争”的“常态现实”。"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Palestinians say Netanyahu’s decision leaves ‘no clear path’ to peace",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/9/palestinians-say-netanyahus-decision-leaves-no-clear-path-to-peace?traffic_source=rss",
+      "excerpt": "‘We're going backwards.’",
+      "publishedAt": "2026-08-09T20:02:57.000Z",
+      "category": "politics",
+      "source": "Al Jazeera",
+      "summary": "巴勒斯坦方面表示，内塔尼亚胡的决定让和平“没有清晰路径”，并称“我们正在倒退”。"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Israel is ‘trying to make Palestine disappear’: The Elders",
+      "url": "https://www.aljazeera.com/video/the-bottom-line/2026/8/9/israel-is-trying-to-make-palestine-disappear-the-elders?traffic_source=rss",
+      "excerpt": "Former Irish President Mary Robinson: Israel ‘erasing Palestine physically, economically, culturally and politically’.",
+      "publishedAt": "2026-08-09T19:30:00.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Can the Doha Framework end the conflict in eastern DRC?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/8/9/can-the-doha-framework-end-the-conflict-in-eastern-drc?traffic_source=rss",
+      "excerpt": "Kinshasa hands over 15 prisoners to powerful rebel alliance.",
+      "publishedAt": "2026-08-09T19:07:35.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Hundreds of anti-tourism Spanish protesters march in Mallorca’s Soller",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/9/hundreds-of-anti-tourism-spanish-protesters-march-in-mallorcas-soller?traffic_source=rss",
+      "excerpt": "Hundreds of people marched on Saturday in the town of Soller, in the island of Mallorca against mass tourism.",
+      "publishedAt": "2026-08-09T18:59:33.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Where does Iran stand on Saudi-Pakistan-Turkiye pact?",
+      "url": "https://www.aljazeera.com/news/2026/8/9/where-does-iran-stand-on-saudi-pakistan-turkiye-pact?traffic_source=rss",
+      "excerpt": "Iran not immediately threatened by pact, analysts say, with officials focusing on aspect of diminishing US role.",
+      "publishedAt": "2026-08-09T18:44:28.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Jannik Sinner withdraws from Cincinnati Open with knee injury",
+      "url": "https://www.aljazeera.com/sports/2026/8/9/jannik-sinner-withdraws-from-cincinnati-open-with-knee-injury?traffic_source=rss",
+      "excerpt": "Number one ranked player in men's tennis will miss the tournament due to a knee issue, he says via organisers.",
+      "publishedAt": "2026-08-09T16:53:53.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Former Iraqi provincial governor arrested as graft crackdown continues",
+      "url": "https://www.aljazeera.com/news/2026/8/9/former-iraqi-provincial-governor-arrested-as-graft-crackdown-continues?traffic_source=rss",
+      "excerpt": "Ahmed al-Jubouri and a close associate were arrested on charges of misusing contract funds in Saladin province.",
+      "publishedAt": "2026-08-09T16:53:45.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Wildfires in Albania and Spain cause hundreds to evacuate",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/9/wildfires-in-albania-and-spain-cause-hundreds-to-evacuate?traffic_source=rss",
+      "excerpt": "Wildfires have spread near Albania’s capital and in parts of southern Spain, prompting hundreds to evacuate.",
+      "publishedAt": "2026-08-09T16:41:00.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "How Israel’s occupation fuels resistance",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/9/how-israels-occupation-fuels-resistance?traffic_source=rss",
+      "excerpt": "Israel is trapped in a cycle it created.",
+      "publishedAt": "2026-08-09T16:19:34.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "‘No surprise’: Netanyahu rejects US-backed Gaza plan",
+      "url": "https://www.aljazeera.com/video/quotable/2026/8/9/no-surprise-netanyahu-rejects-us-backed-gaza-plan?traffic_source=rss",
+      "excerpt": "Palestinian politician Mustafa Barghouti says Netanyahu's rejection of the US-backed Gaza plan is no surprise.",
+      "publishedAt": "2026-08-09T16:08:19.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Incumbents secure Hawaii primary wins, defying progressive challengers",
+      "url": "https://www.aljazeera.com/news/2026/8/9/incumbents-secure-hawaii-primary-wins-defying-progressive-challengers?traffic_source=rss",
+      "excerpt": "Their victories highlight ongoing clashes between centrist Democrats and more progressive candidates.",
+      "publishedAt": "2026-08-09T16:07:23.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Omar Marmoush scores two goals as Man City defeat Atletico Madrid in Seoul",
+      "url": "https://www.aljazeera.com/sports/2026/8/9/omar-marmoush-scores-two-goals-as-man-city-defeat-atletico-madrid-in-seoul?traffic_source=rss",
+      "excerpt": "Marmoush scores twice in three minutes as City rallies to beat Atletico in club friendly at the Seoul World Cup stadium.",
+      "publishedAt": "2026-08-09T16:05:10.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Alleged cartel boss Daniel Kinahan charged in Ireland amid heavy security",
+      "url": "https://www.aljazeera.com/news/2026/8/9/uae-extradites-alleged-international-crime-boss-daniel-kinahan-to-ireland?traffic_source=rss",
+      "excerpt": "Daniel Kinahan is the latest alleged member of the multinational organised crime group to be charged in Dublin.",
+      "publishedAt": "2026-08-09T16:00:50.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "War on Iran: Phase II: Day 29",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/9/war-on-iran-phase-ii-day-29?traffic_source=rss",
+      "excerpt": "Iran says the Strait of Hormuz will remain restricted unless the US meets a series of demands.",
+      "publishedAt": "2026-08-09T15:46:09.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Pentagon urges faster US weapons production amid stockpile concerns",
+      "url": "https://www.aljazeera.com/news/2026/8/9/pentagon-urges-faster-us-weapons-production-amid-stockpile-concerns?traffic_source=rss",
+      "excerpt": "US defence industry pressed to boost output as munitions shortages raise security concerns amid Middle East tensions.",
+      "publishedAt": "2026-08-09T15:38:56.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Concerns mount over integrity of Israel’s upcoming October elections",
+      "url": "https://www.aljazeera.com/news/2026/8/9/concerns-mount-over-integrity-of-israels-upcoming-october-elections?traffic_source=rss",
+      "excerpt": "Poll shows 70 percent of Jewish Israelis fear election integrity risks as Netanyahu government faces mounting criticism.",
+      "publishedAt": "2026-08-09T15:20:18.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Gaza’s children still struggling with hunger as another famine threatens",
+      "url": "https://www.aljazeera.com/features/2026/8/9/gazas-children-still-struggling-with-hunger-as-another-famine-threatens?traffic_source=rss",
+      "excerpt": "Youngsters are still feeling the effects of the 2025 famine, with another food emergency emerging.",
+      "publishedAt": "2026-08-09T14:47:29.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Gaza engineer builds animal shelters out of empty cans",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/9/gaza-engineer-builds-animal-shelters-out-of-empty-cans?traffic_source=rss",
+      "excerpt": "Gaza engineer builds animal shelters out of empty cans",
+      "publishedAt": "2026-08-09T14:28:34.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "What now as Israel rejects Trump’s 15-point plan for Gaza?",
+      "url": "https://www.aljazeera.com/news/2026/8/9/what-now-as-israel-rejects-trumps-15-point-plan-for-gaza?traffic_source=rss",
+      "excerpt": "As Netanyahu demands 'genuine' Hamas disarmament before considering pull-out from Gaza, a look at what happens next.",
+      "publishedAt": "2026-08-09T14:26:30.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "The Mecca pact is not just another regional alliance",
+      "url": "https://www.aljazeera.com/opinions/2026/8/9/the-mecca-pact-is-not-just-another-regional-alliance?traffic_source=rss",
+      "excerpt": "It could set the stage for a profound transformation of regional security in the Gulf.",
+      "publishedAt": "2026-08-09T14:23:13.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Syria says it reached deal with Moscow on future of Russian bases",
+      "url": "https://www.aljazeera.com/news/2026/8/9/syria-says-it-reached-deal-with-moscow-on-future-of-russian-bases?traffic_source=rss",
+      "excerpt": "Hmeimim airbase and Tartus naval base will become joint training and capacity-building centres under the agreement.",
+      "publishedAt": "2026-08-09T14:20:51.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "aljazeera",
+      "title": "Trump targets birthright citizenship again",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/9/trump-targets-birthright-citizenship-again?traffic_source=rss",
+      "excerpt": "US President Donald Trump has signed two new executive orders targeting birthright citizenship.",
+      "publishedAt": "2026-08-09T14:20:31.000Z",
+      "category": "politics",
+      "source": "Al Jazeera"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "China’s Asian Affairs Reshuffle",
+      "url": "https://thediplomat.com/2026/08/chinas-asian-affairs-reshuffle/",
+      "excerpt": "The elevation of a former ambassador to Mongolia signals a shift in diplomatic execution – but the change can only go so far.",
+      "publishedAt": "2026-08-07T20:04:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "Hopes for the North Korean Human Rights Act of 2026",
+      "url": "https://thediplomat.com/2026/08/hopes-for-the-north-korean-human-rights-act-of-2026/",
+      "excerpt": "The North Korean Human Rights Act of 2004 expired in 2022. An important bipartisan effort seeks to reauthorize it.",
+      "publishedAt": "2026-08-07T18:02:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "India’s Climate Stress and the Solar Power Paradox",
+      "url": "https://thediplomat.com/2026/08/indias-climate-stress-and-the-solar-power-paradox/",
+      "excerpt": "Rising demand will keep coal the backbone of India’s power grid in the coming years. This buys time for executing an energy transition, if India can see through its plans.",
+      "publishedAt": "2026-08-07T11:19:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "No Wonderland: Alice’s Shameful Australian Aboriginal Camps",
+      "url": "https://thediplomat.com/2026/08/no-wonderland-alices-shameful-australian-aboriginal-camps/",
+      "excerpt": "The conditions in and around Australia’s Aboriginal camps, such as the one where a 5-year-old girl was murdered in April, are shameful for one of the world’s wealthiest countries.",
+      "publishedAt": "2026-08-07T12:22:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "Taiwan’s Missing Deterrent",
+      "url": "https://thediplomat.com/2026/08/taiwans-missing-deterrent/",
+      "excerpt": "Conventional deterrence alone overlooks the vector of conflict most likely to define a cross-strait crisis: civil defense.",
+      "publishedAt": "2026-08-07T13:28:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "China’s Military Is Now Using AI to Plan Strike Operations",
+      "url": "https://thediplomat.com/2026/08/chinas-military-is-now-using-ai-to-plan-strike-operations/",
+      "excerpt": "What does that mean for the future of human control in war – including a war over Taiwan?",
+      "publishedAt": "2026-08-07T12:50:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "How China Is Reordering Global Governance From Within",
+      "url": "https://thediplomat.com/2026/08/how-china-is-reordering-global-governance-from-within/",
+      "excerpt": "Beijing’s June white paper leaves the U.N.-centered architecture intact – but re-interprets the priorities.",
+      "publishedAt": "2026-08-07T12:28:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "India’s Communal Violence is Crossing into Nepal",
+      "url": "https://thediplomat.com/2026/08/indias-communal-violence-is-crossing-into-nepal/",
+      "excerpt": "With the RSS steadily building on Nepali soil, Hindu-Muslim tensions and violence are growing, especially in Nepal’s Tarai-Madhesh region bordering India",
+      "publishedAt": "2026-08-07T07:30:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "From Jobs to Skills: Rethinking Vietnam’s FDI success",
+      "url": "https://thediplomat.com/2026/08/from-jobs-to-skills-rethinking-vietnams-fdi-success/",
+      "excerpt": "Despite its rapid industrialization, the country's economy is not creating enough jobs that make productive use of advanced skills.",
+      "publishedAt": "2026-08-07T07:37:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "Thailand Pledges to Work Towards Myanmar’s Full Reintegration With ASEAN",
+      "url": "https://thediplomat.com/2026/08/thailand-pledges-to-work-towards-myanmars-full-reintegration-with-asean/",
+      "excerpt": "The pledge came as Prime Minister Anutin Charnvirakul hosted the country's military-appointed president, Min Aung Hlaing, in Bangkok.",
+      "publishedAt": "2026-08-07T06:48:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "How the World Learned to Live with the Exclusion of Afghan Women",
+      "url": "https://thediplomat.com/2026/08/how-the-world-learned-to-live-with-the-exclusion-of-afghan-women/",
+      "excerpt": "The world has to do more than admire Afghan women’s resilience. It must stand with them by taking concrete actions.",
+      "publishedAt": "2026-08-06T18:55:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "Where Is Myanmar’s Aung San Suu Kyi?",
+      "url": "https://thediplomat.com/2026/08/where-is-myanmars-aung-san-suu-kyi/",
+      "excerpt": "Sean Turnell, an economist and former advisor to the ousted leader, returns to Beyond The Mekong to discuss recent events in Myanmar.",
+      "publishedAt": "2026-08-06T03:33:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "Vietnam’s Top Leader To Lam to Pay State Visits to Australia and New Zealand",
+      "url": "https://thediplomat.com/2026/08/vietnams-top-leader-to-lam-to-pay-state-visits-to-australia-and-new-zealand/",
+      "excerpt": "The visits are likely to build on the momentum created by the Comprehensive Strategic Partnerships signed recently with both countries.",
+      "publishedAt": "2026-08-07T00:15:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "Japan’s Billions Are the Wildcard in Southeast Asia’s Aid Race",
+      "url": "https://thediplomat.com/2026/08/japans-billions-are-the-wildcard-in-southeast-asias-aid-race/",
+      "excerpt": "Few development actors in the region can currently match Tokyo’s combination of credibility and quality.",
+      "publishedAt": "2026-08-06T18:33:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "Was Tarique Rahman’s Youth Outreach More Than an Election Strategy?",
+      "url": "https://thediplomat.com/2026/08/was-tarique-rahmans-youth-outreach-more-than-an-election-strategy/",
+      "excerpt": "The BNP’s credibility with Bangladesh’s youth will ultimately depend not on whether the government can deliver jobs, fair recruitment, and meaningful participation in state-building.",
+      "publishedAt": "2026-08-06T17:17:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "How South Korea Can Survive the Unbundling of International Order",
+      "url": "https://thediplomat.com/2026/08/how-south-korea-can-survive-the-unbundling-of-international-order/",
+      "excerpt": "South Korea’s strategic challenges – and the potential solutions – make the case for democratic multilateralism.",
+      "publishedAt": "2026-08-06T16:47:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "The Rule of Law in Afghanistan Failed Long Before the Taliban’s Triumph",
+      "url": "https://thediplomat.com/2026/08/the-rule-of-law-in-afghanistan-failed-long-before-the-talibans-triumph/",
+      "excerpt": "To be rightfully concerned about the present is not an excuse to distort the past.",
+      "publishedAt": "2026-08-06T16:14:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "Bangladesh-India Relations Hit Fresh Turbulence",
+      "url": "https://thediplomat.com/2026/08/bangladesh-india-relations-hit-fresh-turbulence/",
+      "excerpt": "Bangladesh expressed “outrage” even as India said it had nothing to do with Sheikh Hasina’s online media engagement at the Awami League presser in New Delhi.",
+      "publishedAt": "2026-08-06T15:44:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "Clashes Erupt at Susta Along India-Nepal Border",
+      "url": "https://thediplomat.com/2026/08/clashes-erupt-at-susta-along-india-nepal-border/",
+      "excerpt": "India and Nepal have settled almost 98 percent of their border. Differences over Kalapani and Susta have proven difficult to resolve.",
+      "publishedAt": "2026-08-06T13:03:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "China’s ‘Ethnic Unity’ Law is Already Harming Uyghurs",
+      "url": "https://thediplomat.com/2026/08/chinas-ethnic-unity-law-is-already-harming-uyghurs/",
+      "excerpt": "Government actions that could once be described as regional campaigns are now embedded in national legislation. Restrictions will become easier to expand and harder to challenge.",
+      "publishedAt": "2026-08-06T14:26:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "Balochistan Is Now Pakistan’s Most Dangerous Province",
+      "url": "https://thediplomat.com/2026/08/balochistan-is-now-pakistans-most-dangerous-province/",
+      "excerpt": "July was Balochistan’s most violent month this year. It also overtook Khyber Pakhtunkhwa to emerge as Pakistan’s most volatile province.",
+      "publishedAt": "2026-08-06T12:50:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "Delhi’s EV Policy Changes the Engine, Not the System",
+      "url": "https://thediplomat.com/2026/08/delhis-ev-policy-changes-the-engine-not-the-system/",
+      "excerpt": "Electric vehicles can reduce pollution and emissions. But underlying issues of preserving car dependence, displacing environmental harm, and workers bearing the costs of a clean future need to be addressed.",
+      "publishedAt": "2026-08-06T14:03:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "Mongolia’s Fuel Crisis Is a Demand Problem, Not Just a Supply One",
+      "url": "https://thediplomat.com/2026/08/mongolias-fuel-crisis-is-a-demand-problem-not-just-a-supply-one/",
+      "excerpt": "The cause of the crisis can be attributed to both external and internal factors, highlighting Mongolia's energy insecurity. The cure might be a path toward transportation electrification.",
+      "publishedAt": "2026-08-06T13:28:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "How Kazakhstan Wrote Its Security Service Into the AI Business",
+      "url": "https://thediplomat.com/2026/08/how-kazakhstan-wrote-its-security-service-into-the-ai-business/",
+      "excerpt": "Largely construed as routine modernization efforts, the KNB’s new responsibilities may not have attracted much scrutiny but they could have significant implications.",
+      "publishedAt": "2026-08-06T13:19:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "Sheikh Hasina’s Remarks Spark Bangladesh’s Boldest Message to India Yet",
+      "url": "https://thediplomat.com/2026/08/sheikh-hasinas-remarks-spark-bangladeshs-boldest-message-to-india-yet/",
+      "excerpt": "Dhaka wants the post-2024 political order to be viewed not only as a domestic transition but also as the basis of a more assertive foreign policy identity.",
+      "publishedAt": "2026-08-06T12:01:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "US Pacific Command Considers Moving Billions in Planned Infrastructure Out of Micronesia",
+      "url": "https://thediplomat.com/2026/08/us-pacific-command-considers-moving-billions-in-planned-infrastructure-out-of-micronesia/",
+      "excerpt": "The U.S. is threatening to pull a $2 billion infrastructure project in Yap. It's second time recently there have been major problems in U.S. defense negotiations with a COFA partner.",
+      "publishedAt": "2026-08-06T12:14:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "As Taiwan’s Drone Budget Debate Drags on, Time Is Running out",
+      "url": "https://thediplomat.com/2026/08/as-taiwans-drone-budget-debate-drags-on-time-is-running-out/",
+      "excerpt": "Taiwan could end 2026 without awarding a single new large-scale contract for domestically produced combat drones.",
+      "publishedAt": "2026-08-06T11:40:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "India at a Crossroads: Examining Comprehensive National Power and the Road to 2047",
+      "url": "https://thediplomat.com/2026/08/india-at-a-crossroads-examining-comprehensive-national-power-and-the-road-to-2047/",
+      "excerpt": "Just how powerful is India? CNP may present a better picture than GDP.",
+      "publishedAt": "2026-08-05T14:28:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "Malaysia Says It Will Not Deport Rohingya if There Are Risks to Their Safety",
+      "url": "https://thediplomat.com/2026/08/malaysia-says-it-will-not-deport-rohingya-if-there-are-risks-to-their-safety/",
+      "excerpt": "Prime Minister Anwar Ibrahim's government has announced plans to repatriate around 5,000 Rohingya with Myanmar's assent.",
+      "publishedAt": "2026-08-06T02:37:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    },
+    {
+      "sourceId": "the-diplomat",
+      "title": "Artillery-Missile Command: Vietnam’s Answer to the Maritime-Continental Dilemma",
+      "url": "https://thediplomat.com/2026/08/artillery-missile-command-vietnams-answer-to-the-maritime-continental-dilemma/",
+      "excerpt": "Long-range surface-to-surface and ground-based anti-ship missiles will help defend the country on both land and sea.",
+      "publishedAt": "2026-08-06T03:10:00.000Z",
+      "category": "politics",
+      "source": "The Diplomat"
+    }
+  ],
+  "labWatch": [
+    {
+      "id": "yuexin-ma",
+      "name": "Yuexin Ma · ShanghaiTech",
+      "url": "http://yuexinma.me/",
+      "status": "unchanged",
+      "headline": "2026.07: Two papers are accepted by ACM MM."
+    },
+    {
+      "id": "chi-zhang",
+      "name": "Chi Zhang · Westlake AGI Lab",
+      "url": "https://icoz69.github.io/",
+      "status": "unchanged",
+      "headline": "Jun 2026 Ultra3D is accepted by ECCV 2026."
+    },
+    {
+      "id": "yaohui-wang",
+      "name": "Yaohui Wang · Shanghai AI Lab",
+      "url": "https://wyhsirius.github.io/",
+      "status": "unchanged",
+      "headline": "03 / 2026 1 paper AI killed the video star accepted to IJCV."
+    }
+  ]
+}
