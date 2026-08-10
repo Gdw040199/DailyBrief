@@ -1,0 +1,66 @@
+{
+  "hero_headline": "哥伦比亚7.4级地震致百余人遇难",
+  "daily_overview": "今日全球聚焦哥伦比亚7.4级强震，已致逾百人遇难、建筑坍塌，救援持续；美国特朗普签署行政令限制儿童疫苗并拆分联合疫苗，引发儿科学界反对；土耳其立法推进与库尔德工人党的和平进程。科技方面，AI深入行业与科研：OpenAI将Astra模型列为关键网络安全等级并暂缓部分活动，财务官分享AI原生财务经验；NVIDIA发布低延迟多语种语音代理；参数高效微调研究YOLO-PEFT解决实时检测器适配难题；多个AI模型被指解决悬置25年的无线通信理论问题。技术落地与安全治理并重，成为当日核心信号。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI将Astra模型升级为关键网络安全等级",
+      "url": "https://news.smol.ai/issues/26-08-07-not-much/",
+      "source": "Smol AI News",
+      "summary": "OpenAI将其即将推出的Astra模型升级为「关键」网络安全等级，因在智能体编码与网络安全方面进展显著，暂停部分活动以加强管控。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI财务官谈AI原生财务职能经验",
+      "url": "https://openai.com/index/building-an-ai-native-finance-function",
+      "source": "OpenAI News",
+      "summary": "OpenAI首席财务官Sarah Friar撰文总结五条经验：自动化预测、强化内控、衡量AI投资回报等，展示AI原生财务团队的组织方法。",
+      "importance": 7
+    },
+    {
+      "title": "AI模型疑似解决悬置25年的通信理论难题",
+      "url": "https://x.com/DimitrisPapail/status/2086158118354887060",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "GPT-5.6与Claude Fable据称解决无线通信领域一个悬置25年的开放理论问题，该问题曾于2000至2010年代被密集研究，引发对AI基础科研能力的关注。",
+      "importance": 7
+    },
+    {
+      "title": "NVIDIA Magpie TTS开放低延迟多语种语音代理",
+      "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
+      "source": "Hugging Face Blog",
+      "summary": "Hugging Face介绍NVIDIA Magpie TTS，可构建低延迟多语言语音代理，开放权重并允许完全部署控制，适合实时交互场景。",
+      "importance": 6
+    },
+    {
+      "title": "YOLO-PEFT：面向实时检测器的参数高效微调",
+      "url": "https://huggingface.co/papers/2608.07051",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出结构感知的参数高效微调方法，针对通用PEFT在YOLO等实时检测器上因异构算子与检测专用组件而失效的问题，在低参数量下保持检测性能，降低定制检测模型成本。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "哥伦比亚7.4级地震遇难人数超百",
+      "url": "https://www.theguardian.com/world/live/2026/aug/10/74-magnitude-earthquake-shakes-colombia-causing-serious-damage-latest-news",
+      "source": "The Guardian",
+      "summary": "哥伦比亚7.4级强震导致逾百人死亡、几十栋建筑倒塌，卡利市仍有人员被困，救援持续；佩雷拉机场亦记录剧烈晃动。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "特朗普签署行政令拆分儿童疫苗引争议",
+      "url": "https://www.bbc.co.uk/news/articles/ce3q5vl581wo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "特朗普签署行政令，限制儿童疫苗接种并将MMR联合疫苗拆分接种。美国儿科学会批评该建议「危险」，引发公共卫生争论。",
+      "importance": 9
+    },
+    {
+      "title": "土耳其立法推进与库尔德工人党和平进程",
+      "url": "https://www.nytimes.com/2026/08/10/world/europe/turkey-law-pkk-peace-framework.html",
+      "source": "NYT World",
+      "summary": "土耳其政府通过一项法律，被视作结束库尔德工人党与该国数十年冲突的重要一步，为和平进程铺路。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "",
+  "keywords": []
+}
