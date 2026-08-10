@@ -1,59 +1,75 @@
 {
-  "hero_headline": "以色列拒绝特朗普15点加沙计划",
-  "daily_overview": "今日要闻聚焦地缘博弈与AI变局。政治方面，以色列总理内塔尼亚胡正式拒绝特朗普提出的15点加沙计划，坚持在哈马斯彻底解除武装前不从加沙撤出，中东和平进程再添变数；加拿大不列颠哥伦比亚省野火失控，数千人撤离，灾情严峻。技术领域，OpenAI将即将发布的Astra模型列为「关键」网络能力，并公布初步安全评估、强化防护措施；谷歌DeepMind经历重大领导层重组，创始人Hassabis转任主席；AMD收购AI推理初创Taalas，推理算力竞争升温。Meta新一代模型则以低成本展现出前沿实力，AI科研潜力也在多个领域得到印证。",
+  "hero_headline": "OpenAI将Astra升级为关键网络安全能力",
+  "daily_overview": "今日AI行业加速分化：OpenAI公布Astra网络安全评估并提升安全管控，同时更新GPT-5.6系列，扩大免费用户权限；AMD收购Taalas，推理算力竞争升温。基础研究亦有进展，DeepMind WeatherNext突破气旋预测，开源社区出现自改进编码代理。时政方面，加拿大山火失控迫使数千人撤离，中东局势持续紧张，胡塞武装再袭也门港口，美伊“半谈判”前景未明；台湾拟将2027年国防预算首次突破1万亿新台币。",
   "tech_briefs": [
     {
-      "title": "OpenAI将Astra列为关键网络安全能力",
+      "title": "OpenAI发布Astra安全评估并强化管控",
       "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
       "source": "OpenAI News",
-      "summary": "OpenAI公布Astra模型的初步网络安全评估，并加强防护管控；该模型在智能体编码与网络安全方面进展显著，公司暂停部分活动以强化安全。（多家报道）",
+      "summary": "OpenAI公布Astra模型初步网络安全评估，因其在智能体编码与网络安全方面进展显著，将模型升级为“关键”级别，并暂停部分活动以加强安全控制。（多家报道）",
       "importance": 9
     },
     {
-      "title": "谷歌DeepMind高层改组，四位研究者离职",
-      "url": "https://www.latent.space/p/ainews-jeff-sanjay-oriol-and-quoc",
-      "source": "Latent Space",
-      "summary": "谷歌DeepMind进行重大领导层调整：Hassabis转任主席兼首席科学家，Koray接管运营，另有四位核心成员离职。多位创始人转向新项目。（多家报道）",
+      "title": "GPT-5.6 Sol改进并扩大免费用户访问",
+      "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+      "source": "OpenAI News",
+      "summary": "OpenAI在ChatGPT中推出改进版GPT-5.6 Sol，提升准确性与一致性；同时扩大免费用户权限，开放GPT-5.6 Luna无限日常聊天，并已将其设为默认。（多家报道）",
       "importance": 8
     },
     {
-      "title": "AMD收购AI推理初创公司Taalas",
+      "title": "AMD收购Taalas，推理算力竞争升温",
       "url": "https://www.latent.space/p/ainews-amd-buys-taalas",
       "source": "Latent Space",
-      "summary": "AMD宣布收购AI推理初创企业Taalas，市场关注推理「拐点」升温。分析认为该交易将加剧AI推理算力领域竞争。（多家报道）",
+      "summary": "Latent Space报道AMD收购AI芯片公司Taalas，认为推理（Inference）领域的拐点正在升温，预示AI推理算力与芯片竞争将进一步加剧。（多家报道）",
       "importance": 7
     },
     {
-      "title": "Meta Muse Spark 1.2跻身前沿模型行列",
-      "url": "https://news.smol.ai/issues/26-08-06-not-much/",
-      "source": "Smol AI News",
-      "summary": "Meta的Muse Spark 1.2以每次0.69美元测试成本跻身Vals Index前五，比Kimi便宜3倍，并在五项STEM奥赛中获金牌级表现，理论部分满分。",
-      "importance": 7
+      "title": "DeepMind WeatherNext实现气旋预测突破",
+      "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind发布WeatherNext模型，称其在热带气旋预测方面取得突破性进展，有望显著提升极端天气预警能力。",
+      "importance": 8
     },
     {
-      "title": "GPT-5.6与Claude Fable解决25年理论难题",
-      "url": "https://x.com/DimitrisPapail/status/2086158118354887060",
-      "source": "X 推文 (AttentionVC)",
-      "summary": "博主称上周GPT-5.6与Claude Fable意外解决无线通信领域一个25年未决的理论问题，该问题曾在2000至2010年代被深入钻研，引发对AI科研潜力的讨论。",
-      "importance": 7
+      "title": "prime-agent：自改进编码智能体开源",
+      "url": "https://github.com/PrimeIntellect-ai/prime-agent",
+      "source": "GitHub Trending",
+      "summary": "prime-agent是一个面向编码工作流和长期自主任务的自我改进型RLM代理，能在自动化重构、代码审查等场景中持续学习优化，适合长时间独立运行的复杂编程任务。",
+      "importance": 6
     }
   ],
   "politics_briefs": [
     {
-      "title": "加拿大野火失控，数千人被迫撤离",
+      "title": "加拿大两省山火失控，数千人撤离",
       "url": "https://www.bbc.co.uk/news/articles/cx25dkwk3e3o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "summary": "加拿大不列颠哥伦比亚省「巴尔岭」野火持续蔓延，过火面积超136平方公里，数千人撤离；此前安大略省野火烟雾曾影响美国东海岸。（多家报道）",
+      "summary": "不列颠哥伦比亚省“秃岭”山火过火面积达136平方公里，火势持续失控，数千人被迫撤离；此前安大略省山火烟雾曾影响东海岸。（多家报道）",
       "importance": 8
     },
     {
-      "title": "以色列拒绝特朗普15点加沙计划",
-      "url": "https://www.bbc.co.uk/news/articles/c5yw4lpe0yeo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "summary": "以色列总理内塔尼亚胡拒绝特朗普提出的15点计划，称在哈马斯真正解除武装前以军不会撤离加沙。该计划上月提出，要求哈马斯交出武器。（多家报道）",
+      "title": "美伊“半谈判”，胡塞再袭也门穆哈港",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/8/10/iran-war-live-us-semi-negotiating-with-tehran-israel-rejects-gaza-plan?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "美国称正与伊朗“半谈判”并等待经济施压见效；以色列正式拒绝加沙15点和平计划。与此同时，胡塞武装对也门穆哈港发动新一轮导弹和无人机袭击。（多家报道）",
       "importance": 9
+    },
+    {
+      "title": "台湾2027年国防预算或首破1万亿新台币",
+      "url": "https://www.dw.com/zh/媒体：台湾2027国防预算或逾gdp3-，首度破1兆新台币/a-78296560?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "据台湾媒体报道，行政院拟提议2027年国防预算增长16%，总额首次突破1万亿新台币（约310亿美元），以加强军备实力。",
+      "importance": 7
     }
   ],
-  "editor_note": "",
-  "keywords": []
+  "editor_note": "AI能力跃升带动安全与算力双重竞赛，但气候与地缘风险同步升级。技术突破与全球治理的失衡，仍是未来数日需要密切关注的信号。",
+  "keywords": [
+    "OpenAI",
+    "Astra",
+    "GPT-5.6",
+    "AMD收购Taalas",
+    "WeatherNext",
+    "加拿大山火",
+    "中东局势",
+    "台湾国防预算"
+  ]
 }
