@@ -1,0 +1,75 @@
+{
+  "hero_headline": "哥伦比亚7.4级强震逾百人遇难",
+  "daily_overview": "今日全球目光聚焦哥伦比亚：7.4级强震已致百余人遇难，救援仍在废墟中争分夺秒；同一天，叙利亚法院缺席判处前总统阿萨德死刑，中东司法追责再进一步。科技领域，OpenAI在ChatGPT中测试广告，试图以广告支撑免费服务；Meta以Apache 2.0协议开源30B模型Muse Glimmer，可在单张RTX 3090运行；NVIDIA推出轻量级Nemotron 3.5与路由库，DeepMind则在气旋预报与机器人视频理解上取得进展。此外，台湾法院判陆配徐春莺七年监禁，两岸关系敏感议题再度升温。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI开始在ChatGPT中测试广告",
+      "url": "https://openai.com/index/testing-ads-in-chatgpt",
+      "source": "OpenAI News",
+      "summary": "OpenAI宣布在ChatGPT中测试广告，以支持免费访问。官方表示广告将明确标识、不影响回答独立性，并强化隐私保护与用户控制。",
+      "importance": 9
+    },
+    {
+      "title": "Meta发布开源模型Muse Glimmer",
+      "url": "https://www.latent.space/p/ainews-muse-glimmer-and-spark-open",
+      "source": "Latent Space",
+      "summary": "Meta发布开源权重模型Muse Glimmer，30B密集参数、多模态、面向智能体，采用Apache 2.0许可，可在单张RTX 3090上运行，主打本地常驻智能体，被视为开源模型重回前沿的信号。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "NVIDIA发布Nemotron 3.5与NeMo Switchyard",
+      "url": "https://x.com/nvidia/status/2087172614896988545",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "NVIDIA发布轻量级开源模型Nemotron 3.5 Lightning与路由库NeMo Switchyard，称可更快更高效驱动智能体AI，统一管理边缘设备、PC、数据中心和云端的AI、数据与工作流。",
+      "importance": 7
+    },
+    {
+      "title": "DeepMind气候模型突破气旋预报",
+      "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind推出WeatherNext AI模型，在气旋预报领域取得突破。该模型通过学习历史气象数据，提升对热带气旋路径与强度的预测准确率，为防灾预警争取时间。",
+      "importance": 8
+    },
+    {
+      "title": "Gemini Robotics ER 2赋能机器人协作",
+      "url": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind发布Gemini Robotics ER 2，增强机器人视频理解、工具编排与多机器人协作能力，帮助机器人在真实环境中推理与完成任务，被视为具身智能领域的重要进展。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "哥伦比亚强震逾百人遇难 救援持续",
+      "url": "https://www.bbc.co.uk/news/articles/czxerlglgw5o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "哥伦比亚卡利市一栋五层公寓楼在地震中倒塌，救援人员持续搜寻幸存者。报道称7.4级地震已致百余人死亡，一名男子在废墟旁为兄弟遇难而悲痛。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "叙利亚法院缺席判处阿萨德死刑",
+      "url": "https://www.npr.org/2026/08/11/g-s1-138166/syria-assad-sentenced-to-death",
+      "source": "NPR World",
+      "summary": "叙利亚一家法院以危害人类罪和战争罪，缺席判处前总统阿萨德及其兄弟死刑。14年内战已导致约50万人死亡。",
+      "importance": 9
+    },
+    {
+      "title": "台湾法院判陆配徐春莺七年监禁",
+      "url": "https://www.dw.com/zh/违反《反渗透法》：-陆配-徐春莺被判七年监禁/a-78325628?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "台湾一家法院周二以违反《反渗透法》为由，判处“陆配”徐春莺七年监禁，称其受中国政府官员及代理人指示干预台湾政治。",
+      "importance": 6
+    }
+  ],
+  "editor_note": "哥伦比亚强震与阿萨德判决凸显全球治理的脆弱性；AI开源与商业化并进，但广告模式与隐私平衡仍需观察。两岸司法个案宜保持克制。",
+  "keywords": [
+    "哥伦比亚地震",
+    "阿萨德",
+    "Muse Glimmer",
+    "OpenAI广告",
+    "Nemotron 3.5",
+    "徐春莺",
+    "DeepMind",
+    "AI开源"
+  ]
+}
