@@ -1,0 +1,75 @@
+{
+  "hero_headline": "Gemini 3.7 闪电发布，特朗普威胁霍尔木兹",
+  "daily_overview": "AI 领域迎来密集发布：谷歌闪电推出 Gemini 3.7 Flash，OpenAI 预览 GPT-5.6 Sol 超快模式，SpaceXAI 携 Grok 4.6 加入竞赛；开源侧则出现端侧微型模型与科学智能体新进展。时政方面，特朗普威胁将霍尔木兹海峡宣布为美国领土，俄罗斯被指深度干预摩尔多瓦政局，胡塞武装袭击也门港口令停火前景黯淡。科技竞争与地缘风险相互交织，成为当日最值得关注的两条主线。",
+  "tech_briefs": [
+    {
+      "title": "谷歌发布 Gemini 3.7 Flash，主打编程与智能体",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
+      "source": "DeepMind Blog",
+      "summary": "谷歌发布 Gemini 3.7 Flash，距上代仅三周；主打编程、网页开发与智能体工作流，首发价格下调 50%，基准测试表现提升。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI 预览 GPT-5.6 Sol 超快模式",
+      "url": "https://openai.com/index/previewing-ultrafast",
+      "source": "OpenAI News",
+      "summary": "OpenAI 预览 Ultrafast API 服务，由 Cerebras 提供支持，可将 GPT-5.6 Sol 运行速度提升最高 14 倍，每秒输出 750 tokens。",
+      "importance": 9
+    },
+    {
+      "title": "SpaceXAI 发布 Grok 4.6，AI 队友赛道迎新",
+      "url": "https://www.latent.space/p/ainews-spacexai-grok-46-and-grok",
+      "source": "Latent Space",
+      "summary": "Grok 4.6 在智能指数取得 61 分，具备较强智能体能力，被视为 AI 队友赛道新入局者；Grok 4.7 已在训练中。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "Intern-S2 科学智能体，面向长周期科研",
+      "url": "https://huggingface.co/papers/2608.13505",
+      "source": "HuggingFace Trending Papers",
+      "summary": "Intern-S2-Preview 是面向科学发现的智能体基础模型系列，可推理多模态科学证据、使用科研工具并支撑长周期任务，有望加速科研流程。",
+      "importance": 7
+    },
+    {
+      "title": "needle：14MB 端侧基础模型，让微型设备跑 AI",
+      "url": "https://github.com/cactus-compute/needle",
+      "source": "GitHub Trending",
+      "summary": "该 14MB 基础模型面向手机、穿戴设备与机器人，将大语言模型压缩至端侧可运行，适合离线低功耗场景，解决微型设备算力与存储受限问题。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "特朗普威胁将霍尔木兹海峡宣为美国领土",
+      "url": "https://www.theguardian.com/us-news/2026/aug/14/trump-threat-strait-hormuz-us-territory",
+      "source": "The Guardian",
+      "summary": "特朗普威胁宣布霍尔木兹海峡为“美国领土”；其政府正努力结束对伊战争，相关言论的严肃性与政策含义尚不明确。",
+      "importance": 9
+    },
+    {
+      "title": "俄罗斯被曝干预摩尔多瓦选举，收买神职人员",
+      "url": "https://www.nytimes.com/2026/08/14/world/europe/russia-moldova-putin.html",
+      "source": "NYT World",
+      "summary": "纽约时报披露，俄罗斯在摩尔多瓦收买东正教神职人员、实施买票计划并设立选举干预培训营，企图破坏该国亲西方政府。",
+      "importance": 8
+    },
+    {
+      "title": "胡塞导弹袭也门穆哈港，停火面临瓦解",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/houthi-attack-on-port-kills-four-eroding-truce-with-yemens-government?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "胡塞武装向也门政府控制的穆哈港发射六枚弹道导弹，造成至少四人死亡，停火协议面临瓦解风险。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "AI 模型发布进入周更节奏，竞争焦点转向部署效率。与此同时，中东与东欧地缘信号密集，读者宜区分表态与实质进展，避免被短期情绪牵引。",
+  "keywords": [
+    "Gemini 3.7 Flash",
+    "GPT-5.6 Sol",
+    "Grok 4.6",
+    "Intern-S2",
+    "端侧基础模型",
+    "霍尔木兹海峡",
+    "摩尔多瓦选举干预",
+    "也门停火"
+  ]
+}
