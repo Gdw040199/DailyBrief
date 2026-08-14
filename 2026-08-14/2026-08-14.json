@@ -1,74 +1,75 @@
 {
-  "hero_headline": "Gemini 3.7 Flash与Grok 4.6同日发布",
-  "daily_overview": "今日AI领域竞争白热化：谷歌DeepMind发布Gemini 3.7 Flash，定位为编码与智能体最强“工作马”；xAI推出Grok 4.6，据称已在训练Grok 4.7；OpenAI则发布GPT-5.6构建者指南，并预览由Cerebras支持的Ultrafast极速模式。Agent生态步入标准化，Google力推Agent Plugins，Anthropic开放Agent Skills仓库。时政方面，普京首次到访日俄争议岛屿令东京强烈不满；波兰总理透露挫败俄罗斯暗杀乌克兰裔美国公民的图谋；台湾方面则通报遭受AI辅助的海外网络攻击，凸显新型安全威胁。技术迭代与地缘博弈同频共振。",
+  "hero_headline": "谷歌发布 Gemini 3.7 Flash 主打编码与智能体",
+  "daily_overview": "今日 AI 竞赛再度升温：谷歌推出 Gemini 3.7 Flash，强化编码与智能体能力；xAI 正式发布 Grok 4.6，并透露 4.7 已在训练；OpenAI 则通过开发者指南与 14 倍速 API 预览扩展 GPT-5.6 生态。Agent Skills 正成为行业共同语言，Anthropic 开放官方仓库，Google 加入 Agent Plugins 标准。时政方面，巴以冲突持续，加沙城警察局长遭空袭身亡；波兰挫败俄方刺杀乌克兰裔美国人阴谋；美军林肯号航母超期部署导致水手处境艰难。科技与地缘风险消息密集交叉，全球注意力高度紧绷。",
   "tech_briefs": [
     {
-      "title": "谷歌发布Gemini 3.7 Flash，主打编码与Agent",
+      "title": "谷歌发布 Gemini 3.7 Flash 主打编码与智能体",
       "url": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
       "source": "DeepMind Blog",
-      "summary": "谷歌DeepMind推出Gemini 3.7 Flash，距上一代仅三个月，官方称其为最智能的“工作马”模型，面向编码与智能体场景优化。（多家报道）",
+      "summary": "谷歌推出 Gemini 3.7 Flash，为 Flash 系列中最智能的编码和智能体模型，距上一代仅三个月，强化了代码生成、工具调用与智能体工作流能力。（多家报道）",
       "importance": 9
     },
     {
-      "title": "xAI发布Grok 4.6，Grok 4.7已开始训练",
+      "title": "xAI 发布 Grok 4.6 并预告 4.7 已在训练",
       "url": "https://www.latent.space/p/ainews-spacexai-grok-46-and-grok",
       "source": "Latent Space",
-      "summary": "xAI发布Grok 4.6，在智能指数得分61并展现较强智能体能力，更强者Grok 4.7已在训练中。（多家报道）",
-      "importance": 8
+      "summary": "xAI 发布 Grok 4.6，在 Intelligence Index 上得分 61，Agent 能力表现突出，并推出 Grok @Bot；Grok 4.7 已在训练中。（多家报道）",
+      "importance": 9
     },
     {
-      "title": "OpenAI发布GPT-5.6构建指南并预览极速模式",
+      "title": "OpenAI 加速 GPT-5.6 落地与 14 倍速 API 预览",
       "url": "https://openai.com/index/builders-guide-to-gpt-5-6",
       "source": "OpenAI News",
-      "summary": "OpenAI发布《GPT-5.6构建者指南》，帮助初创企业用更智能的模型选择构建低成本AI智能体；同日预览Ultrafast服务，由Cerebras提供支持，速度最高提升14倍。",
+      "summary": "OpenAI 发布 GPT-5.6 开发者指南，展示初创公司如何利用其构建更快、更具成本效益的 AI 代理；同时预览 Ultrafast API，基于 Cerebras 硬件实现最高 14 倍加速、每秒输出 750 token。（多家报道）",
       "importance": 8
     },
     {
-      "title": "Agent技能标准化提速：谷歌力推Agent Plugins",
-      "url": "https://x.com/GoogleCloudTech/status/2087733334617063503",
-      "source": "X 推文 (AttentionVC)",
-      "summary": "谷歌联合推动开放的Agent Plugins标准，将Agent Skills及MCP服务器打包为便携目录，兼容客户端可加载；Anthropic亦公开Agent Skills仓库，推动智能体能力复用。（多家报道）",
-      "importance": 7
+      "title": "Anthropic 开源 Agent Skills，Google 加入 Agent Plugins",
+      "url": "https://github.com/anthropics/skills",
+      "source": "GitHub Trending",
+      "summary": "Anthropic 官方公开 Agent Skills 仓库，让智能体通过声明式技能复用专业知识；Google 宣布加入开放标准 Agent Plugins，将技能与 MCP 服务器打包为便携文件夹，兼容客户端可直接加载。（多家报道）",
+      "importance": 8
     },
     {
-      "title": "DeepMind推出手语转文本AI，服务聋人用户",
+      "title": "DeepMind 推手语转文字模型 SL2T",
       "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
       "source": "DeepMind Blog",
-      "summary": "DeepMind发布手语转文本模型SL2T，为聋人与听障用户提供实时手语识别功能，帮助其更便捷地参与数字交流。",
+      "summary": "DeepMind 发布手语转文本模型 SL2T，为失聪和听障用户提供实时手语识别，降低沟通障碍，推动手语 AI 走向实际应用。",
       "importance": 7
     }
   ],
   "politics_briefs": [
     {
-      "title": "普京首访日俄争议岛屿，东京强烈抗议",
-      "url": "https://www.nytimes.com/2026/08/13/world/asia/putin-visit-islands-japan-russia.html",
-      "source": "NYT World",
-      "summary": "俄罗斯总统普京到访二战末期从日本夺取的南千岛群岛（日称北方领土），系其首次访问该争议地区，日本政府表达强烈不满。（多家报道）",
+      "title": "加沙城警察局长遭以色列空袭身亡",
+      "url": "https://www.aljazeera.com/news/2026/8/13/gaza-city-police-chief-killed-as-israel-pushes-on-with-deadly-strikes?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "以色列持续对加沙发动致命空袭，加沙城警察局长贾迈勒·阿布·卡米勒遇袭身亡，另有 1 人在汗尤尼斯死亡。",
       "importance": 9
     },
     {
-      "title": "波兰总理：挫败俄罗斯暗杀乌克兰裔美国人图谋",
+      "title": "波兰称挫败俄方刺杀乌克兰裔美国人阴谋",
       "url": "https://www.theguardian.com/world/2026/aug/13/russian-plot-kill-ukrainian-american-thwarted-poland-says-polish-pm",
       "source": "The Guardian",
-      "summary": "波兰总理图斯克表示，波兰在首都华沙挫败了一起由俄方下令、针对一名乌克兰裔美国公民的暗杀行动，称这是俄罗斯首次在北约国家内企图袭击美国公民。",
+      "summary": "波兰总理图斯克表示，波兰在华沙挫败俄罗斯刺杀一名乌克兰裔美国公民的阴谋，并称这是俄方首次下令在北约国家攻击美国公民。",
       "importance": 9
     },
     {
-      "title": "台湾通报遭AI辅助网攻，政府机关成目标",
-      "url": "https://www.dw.com/zh/台灣稱遭ai輔助網攻-政府機關成目標/a-78353071",
-      "source": "DW 中文",
-      "summary": "台湾政府部门称7月侦测到来自海外的网络攻击，以色列网络安全公司揭露一场由AI代理驱动的黑客行动曾锁定台湾政府单位，引发对新型AI威胁的关注。",
-      "importance": 7
+      "title": "美航母林肯号超期部署 水手诉苦情",
+      "url": "https://www.bbc.co.uk/news/articles/cyvl2d5j52lo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "美国「亚伯拉罕·林肯」号航母在海上部署超 250 天，据报数千水手面临食物短缺与管道破损，部分船员甚至考虑跳海。",
+      "importance": 8
     }
   ],
-  "editor_note": "AI能力快速迭代，Agent生态走向开放标准化；地缘冲突借技术升级又添新变数。技术红利与安全风险并存，各方需在竞争中守住责任底线。",
+  "editor_note": "AI 模型发布进入井喷期，安全与地缘风险同步上升。各方在加速技术落地的同时，也需回应社会与伦理关切，后续监管与外交博弈值得密切关注。",
   "keywords": [
     "Gemini 3.7 Flash",
     "Grok 4.6",
     "GPT-5.6",
     "Agent Skills",
-    "普京访争议岛屿",
-    "俄乌冲突",
-    "AI网络安全"
+    "巴以冲突",
+    "俄乌地缘",
+    "航母危机",
+    "AI安全"
   ]
 }
