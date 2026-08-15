@@ -1,0 +1,75 @@
+{
+  "hero_headline": "Gemini 3.7 Flash发布 GPT-5.6提速14倍",
+  "daily_overview": "今日科技界聚焦大模型密集迭代：谷歌在3.6 Flash发布仅三周后即推出Gemini 3.7 Flash，主打编程与智能体工作流，首发价格下调50%；OpenAI同步预览GPT-5.6 Sol的Ultrafast模式，由Cerebras提供算力，输出速度最高提升14倍。前沿研究方面，面向机器人操作的世界模型DreamX-Phi 1.0与科学智能体基础模型Intern-S2-Preview引发关注。时政方面，特朗普称将宣布霍尔木兹海峡为美国领土，中东局势持续紧张；澳大利亚新州启动邦迪恐袭后枪支回购计划；日本防卫大臣参拜靖国神社遭中韩强烈抗议。",
+  "tech_briefs": [
+    {
+      "title": "谷歌发布Gemini 3.7 Flash 性能与价格双升级",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
+      "source": "DeepMind Blog",
+      "summary": "谷歌在3.6 Flash推出仅三周后发布Gemini 3.7 Flash，面向编程、网页开发与智能体工作流，首发价格下调50%，DeepSWE 65.3%、Code Arena Elo 1588。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "OpenAI预览Ultrafast模式 GPT-5.6提速14倍",
+      "url": "https://openai.com/index/previewing-ultrafast",
+      "source": "OpenAI News",
+      "summary": "OpenAI发布GPT-5.6开发者指南，并预览由Cerebras驱动的Ultrafast API层级，GPT-5.6 Sol输出速率达每秒750 token，速度快14倍，面向成本敏感的智能体应用。",
+      "importance": 9
+    },
+    {
+      "title": "DreamX-Phi 1.0：面向机器人操作的世界模型",
+      "url": "https://huggingface.co/papers/2608.13489",
+      "source": "HuggingFace Trending Papers",
+      "summary": "新论文提出动作条件视频世界模型DreamX-Phi 1.0，输入当前帧、语言指令与末端位姿动作序列即可预测未来观测，用于机器人操作规划与评估，侧重行为预测而非视觉真实感。",
+      "importance": 7
+    },
+    {
+      "title": "Intern-S2-Preview：科学智能体基础模型亮相",
+      "url": "https://huggingface.co/papers/2608.13505",
+      "source": "HuggingFace Trending Papers",
+      "summary": "该模型系列面向科学发现，能对异构科学证据推理、调用科学工具，并在长任务跨度中持续推进，为材料、生物等复杂科研流程提供智能体化基础能力。",
+      "importance": 7
+    },
+    {
+      "title": "吴恩达发布AI工程技能地图",
+      "url": "https://x.com/AndrewYNg/status/2088302050706686198",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "吴恩达发布「AI工程技能地图」，指出现阶段AI软件开发范式较2022年已根本改变，掌握新技能的工程师将获得大量机会，为开发者提供系统化成长路径。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "特朗普称将宣布霍尔木兹海峡为美国领土",
+      "url": "https://www.dw.com/zh/特朗普称将-很快-宣布霍尔木兹海峡为美国领土/a-78383780?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "特朗普表示击败伊朗后将宣布霍尔木兹海峡为美国领土，并呼吁民众接受上涨的油价。伊朗此前为回应美以军事打击关闭该海峡，国际油价持续飙升。",
+      "importance": 10
+    },
+    {
+      "title": "日本防卫大臣参拜靖国神社 中韩强烈抗议",
+      "url": "https://www.dw.com/zh/日本战败81周年：日防卫大臣参拜靖国神社引中韩强烈抗议/a-78382023?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "日本战败81周年之际，防卫大臣参拜靖国神社，中韩予以强烈谴责。首相高市早苗未亲自前往，但通过执政党高层代奉祭祀费以安抚右翼支持者。",
+      "importance": 8
+    },
+    {
+      "title": "澳新州将启动邦迪恐袭后枪支回购",
+      "url": "https://www.bbc.co.uk/news/articles/cgjee21eenvo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "澳大利亚新南威尔士州将在邦迪海滩袭击后启动枪支回购计划，向枪主提供现金回购枪支。一国党领袖汉森表示反对。（多家报道）",
+      "importance": 7
+    }
+  ],
+  "editor_note": "大模型迭代进入以周为单位的竞速阶段，价格与速度成为关键变量；地缘政治风险与国内枪支管控议题同步升温，科技与治理的张力值得持续观察。",
+  "keywords": [
+    "Gemini 3.7 Flash",
+    "GPT-5.6",
+    "世界模型",
+    "科学智能体",
+    "霍尔木兹海峡",
+    "靖国神社",
+    "枪支回购",
+    "AI工程"
+  ]
+}
