@@ -1,0 +1,75 @@
+{
+  "hero_headline": "库什纳罕见会晤哈马斯 推动加沙停火",
+  "daily_overview": "今日国际时政聚焦加沙：特朗普女婿库什纳在埃及罕见会见哈马斯领导人，为推进加沙停火与特朗普方案铺路；美方同时宣布缩减与韩国的联合军演。技术侧，谷歌三周内再度迭代，发布 Gemini 3.7 Flash，价格下调 50%；OpenAI 预览由 Cerebras 驱动的 GPT-5.6 Ultrafast 模式，速度提升 14 倍。开源生态与前沿研究同步推进：Hugging Face 发布开源模型夏季观察，两篇科学智能体与机器人世界模型论文登上热榜。此外，美政府据报警告苹果勿用中国存储芯片，科技地缘风险再受关注。",
+  "tech_briefs": [
+    {
+      "title": "Gemini 3.7 Flash 发布：三周迭代降价 50%",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
+      "source": "DeepMind Blog",
+      "summary": "谷歌发布 Gemini 3.7 Flash，距 3.6 仅三周。面向编码、网页开发与智能体工作流，首发价格下调 50%，DeepSWE 基准得分达 65.3%，Code Arena Elo 1588。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI 发布 GPT-5.6 开发者指南及超快模式",
+      "url": "https://openai.com/index/previewing-ultrafast",
+      "source": "OpenAI News",
+      "summary": "OpenAI 预览 API 新层级 Ultrafast，基于 Cerebras 硬件，将 GPT-5.6 Sol 推理速度提升至 14 倍，每秒输出最多 750 个词元；同期发布面向开发者的 GPT-5.6 构建指南，强调更聪明的模型选择与成本效率。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "Intern-S2-Preview：面向科学发现的智能体模型",
+      "url": "https://huggingface.co/papers/2608.13505",
+      "source": "HuggingFace Trending Papers",
+      "summary": "Intern-S2-Preview 是一系列科学智能体基础模型，可跨文本、图像等异构模态推理，连接科学工具与环境，在长周期任务中自主推进假设生成、实验验证等环节，为 AI 驱动科研提供新范式。",
+      "importance": 7
+    },
+    {
+      "title": "DreamX-Phi 1.0：机器人操作的视频世界模型",
+      "url": "https://huggingface.co/papers/2608.13489",
+      "source": "HuggingFace Trending Papers",
+      "summary": "该模型输入当前观测帧、语言指令与末端执行器动作序列，预测未来视频帧，给机器人操作策略带来前瞻性视觉反馈，有助于复杂物体的操控规划。",
+      "importance": 6
+    },
+    {
+      "title": "Hugging Face 发布开源模型夏季观察",
+      "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+      "source": "Hugging Face Blog",
+      "summary": "Hugging Face 博客总结 2026 年夏季开源模型生态，涵盖模型能力进展、社区趋势与发布动态，为开发者选择开源基座提供阶段性参考。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "库什纳在埃及会见哈马斯，推动加沙停火",
+      "url": "https://www.npr.org/2026/08/16/g-s1-138948/kushner-gaza-hamas-netanyahu-egypt-talks",
+      "source": "NPR World",
+      "summary": "特朗普女婿兼特使库什纳在埃及与哈马斯领导人举行罕见会晤，以推动加沙停火并推进特朗普方案，稍后还将会见以色列总理内塔尼亚胡。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "美国将缩减与韩国联合军演",
+      "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "特朗普表示，鉴于韩国未参与对伊朗的军事行动，美国将缩小与韩国的联合军演规模，并援引与朝鲜领导人的关系作为背景。",
+      "importance": 7
+    },
+    {
+      "title": "特朗普政府警告苹果勿用中国存储芯片",
+      "url": "https://www.dw.com/zh/特朗普政府警告苹果勿用中国芯片/a-78388866?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "美国商务部长卢特尼克透露，特朗普政府不希望苹果从中国采购存储芯片。苹果是否听从仍不确定，科技供应链地缘化风险上升。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "AI 模型迭代与地缘博弈同步加速。商业发布节奏加快的同时，科技供应链与外交斡旋均进入高敏感区间，后续博弈值得持续观察。",
+  "keywords": [
+    "Gemini 3.7 Flash",
+    "GPT-5.6",
+    "库什纳",
+    "加沙停火",
+    "开源模型",
+    "AI 智能体",
+    "美韩军演",
+    "苹果芯片"
+  ]
+}
