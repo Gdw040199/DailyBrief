@@ -1,0 +1,74 @@
+{
+  "hero_headline": "Stripe 70亿美元收购OpenRouter",
+  "daily_overview": "今日科技与地缘政经交织：支付巨头Stripe以70亿美元收购AI模型路由平台OpenRouter，凸显AI分发层价值；OpenAI与黄仁勋同步强调电力、土地等AI基建瓶颈，并宣布扩大俄亥俄州投资。模型端，谷歌发布Gemini 3.7 Flash，智谱推出GLM-5.3，开源社区亦有多项进展。时政方面，库什纳赴以色列推动加沙停火谈判，台湾2027年国防预算首破万亿新台币，俄经济学者因警示经济困境遭解雇，多国地震灾后应对分化引人关注。",
+  "tech_briefs": [
+    {
+      "title": "Stripe 70亿美元收购AI路由平台OpenRouter",
+      "url": "https://www.latent.space/p/ainews-stripe-buys-openrouter-for",
+      "source": "Latent Space",
+      "summary": "支付巨头Stripe以70亿美元收购AI模型路由平台OpenRouter，交易重点在基础设施与分发能力，而非GPU或智能体业务。多家媒体认为这将重塑AI模型接入与计费生态。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "谷歌发布Gemini 3.7 Flash轻量模型",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind正式发布Gemini 3.7 Flash，为面向高频推理和开发者场景的新一代轻量模型，官方尚未披露完整技术参数。",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI加码俄亥俄州算力基建",
+      "url": "https://openai.com/index/openai-joins-ports-pike-project",
+      "source": "OpenAI News",
+      "summary": "OpenAI宣布加入PORTS-Pike项目并扩大社区投资，同时在俄亥俄州建设至2032年达8吉瓦的算力园区，承诺采用英伟达4+吉瓦容量，推进电力、数据中心与芯片垂直整合。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "智谱推出GLM-5.3，阿里发布Qwen3.8",
+      "url": "https://news.smol.ai/issues/26-08-14-cursor-xai/",
+      "source": "Smol AI News",
+      "summary": "Z.ai发布聚焦编程与网络安全的GLM-5.3，依靠扩大后训练而非扩大基座模型，在智能体与安全基准上提升显著；阿里巴巴同期推出Apache 2.0许可的多模态模型Qwen3.8-27B。（多家报道）",
+      "importance": 7
+    },
+    {
+      "title": "开源AI渗透测试工具Strix发布",
+      "url": "https://github.com/usestrix/strix",
+      "source": "GitHub Trending",
+      "summary": "开源AI渗透测试工具Strix可利用AI自动发现并协助修复应用漏洞，支持集成到CI/CD流程，为安全团队提供持续性的应用安全评估能力。",
+      "importance": 5
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "库什纳赴以色列斡旋加沙停火僵局",
+      "url": "https://www.nytimes.com/2026/08/17/world/middleeast/kushner-netanyahu-gaza-peace-deal.html",
+      "source": "NYT World",
+      "summary": "库什纳与内塔尼亚胡会晤，试图推动加沙停火。内塔尼亚胡坚持哈马斯全面解除武装前不撤军，特朗普政府面临展示进展的压力；美军航母正前往中东换防。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "台湾2027年国防预算首破万亿新台币",
+      "url": "https://www.dw.com/zh/应对中国军事施压-台湾国防预算首破万亿/a-78401596?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "台湾总统赖清德宣布提出创纪录的2027年国防预算，总额首次突破万亿新台币，以应对大陆军事压力，同时计划向民众普发现金红利。",
+      "importance": 7
+    },
+    {
+      "title": "特朗普威胁阿曼勿在伊核问题上碍事",
+      "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "特朗普警告美国盟友阿曼，若在伊朗核协议谈判中「碍事」将对其轰炸。阿曼正与伊朗就重新开放霍尔木兹海峡对话，60天和平谈判窗口刚到期。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "今日信息显示，AI竞争正从模型层延伸到基建与分发层，地缘政治与科技投资绑定加深。建议读者关注资金流向的长期影响。",
+  "keywords": [
+    "Stripe收购OpenRouter",
+    "Gemini 3.7 Flash",
+    "AI基础设施",
+    "GLM-5.3",
+    "加沙停火谈判",
+    "台湾国防预算",
+    "特朗普威胁阿曼"
+  ]
+}
