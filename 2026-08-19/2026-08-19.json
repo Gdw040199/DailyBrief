@@ -1,0 +1,23 @@
+{
+  "hero_headline": "Stripe 70亿美元收购 OpenRouter",
+  "daily_overview": "今日 AI 赛道资本整合加速：支付巨头 Stripe 以 70 亿美元收购模型路由平台 OpenRouter，凸显模型分发与基础设施价值；OpenAI 同步加强前沿模型安全治理与民主监督，Google 则发布 Gemini 3.7 Flash。研究机构对 AI 使用数据透明度提出质疑。时政方面，美加关税午夜截止将近，两国仍在最后谈判；乌克兰被解职防长呼吁战时总统选举，向泽连斯基发起直接挑战；韩国国内围绕核武与美韩军演削减的安全焦虑升温。",
+  "tech_briefs": [
+    {
+      "title": "Stripe 70亿美元收购 OpenRouter",
+      "url": "https://www.latent.space/p/ainews-stripe-buys-openrouter-for",
+      "source": "Latent Space",
+      "summary": "支付公司 Stripe 以 70 亿美元收购 AI 模型路由平台 OpenRouter，交易聚焦基础设施与分发渠道，不涉及 GPU 或智能体业务。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI 强化前沿模型安全与民主监督",
+      "url": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+      "source": "OpenAI News",
+      "summary": "OpenAI 宣布加强前沿模型监控、对齐与安全，并推出国家安全领域 AI 民主监督计划，向政府机构提供工具和培训，以应对网络关键能力风险。（多家报道）",
+      "importance": 8
+    }
+  ],
+  "politics_briefs": [],
+  "editor_note": "",
+  "keywords": []
+}
