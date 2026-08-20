@@ -1,66 +1,14 @@
 {
-  "hero_headline": "OpenAI暂停前沿AI训练，安全优先",
-  "daily_overview": "今日科技与地缘政治同步出现高波动信号。科技方面，OpenAI因安全与对齐考量暂停部分前沿强化学习训练两周，并重申API零数据保留、预览私有安全处理；内存价格一年暴涨500%，持续推高AI算力成本；研究界同时探索低资源微调长程智能体与一键短视频生成等应用。时政方面，澳大利亚针对以色列放弃调查援助人员被杀事件召见大使，外交摩擦升级；阿联酋宣布对伊朗全面交易禁运，中东经济关系收紧；逾千名阿富汗难民仍被困卡塔尔营地，人道危机未解。",
+  "hero_headline": "美加贸易协议谈判收尾 细节仍待明确",
+  "daily_overview": "今日头条聚焦美加贸易谈判：加拿大总理卡尼与美方在关税截止日前取得「重大进展」，协议细节与让步条件尚不明朗。科技领域，OpenAI为强化对齐暂停前沿强化学习训练两周，安全考量正左右前沿模型扩张节奏；内存价格12个月暴涨500%，硬件成本压力凸显。与此同时，GLM-5.3 API发布、Cerebras推出新芯片，Replit以GPT-5.6 Luna开放免费编程，火山引擎开源OpenViking记忆数据库。时政方面，中非金矿坍塌致百余人死亡，乌克兰前国防部长呼吁战时大选。多线并进，谨慎观察。",
   "tech_briefs": [
     {
-      "title": "OpenAI暂停前沿强化学习训练两周",
+      "title": "OpenAI暂停前沿强化学习训练以强化对齐",
       "url": "https://news.smol.ai/issues/26-08-18-not-much/",
-      "source": "Smol AI News",
-      "summary": "OpenAI暂停部分前沿强化学习训练两周，以加强安全与对齐，称安全准备度如今决定前沿模型扩展节奏。此举引发业内对AI安全优先级的广泛讨论。（多家报道）",
-      "importance": 9
-    },
-    {
-      "title": "OpenAI为零数据保留API客户预览私有安全处理",
-      "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
-      "source": "OpenAI News",
-      "summary": "OpenAI重申对符合条件的API客户提供零数据保留，并预览“私有安全处理”功能，旨在不牺牲数据隐私的前提下推进高级AI安全。",
-      "importance": 8
-    },
-    {
-      "title": "内存价格12个月暴涨500%",
-      "url": "https://www.latent.space/p/ainews-memory-prices-up-500-in-12",
-      "source": "Latent Space",
-      "summary": "据Latent Space报道，内存价格过去12个月上涨500%，内存紧缩延续，摩尔定律进程倒退至2007年水平，AI训练与推理成本压力持续加剧。",
-      "importance": 7
-    },
-    {
-      "title": "最小GPU资源微调长程AI智能体新方法",
-      "url": "https://huggingface.co/papers/2608.17310",
-      "source": "HuggingFace Trending Papers",
-      "summary": "论文提出Agentic ESOpt，用进化策略式优化替代反向传播重计算，以最小GPU资源微调长程LLM agent，解决交互式分支训练中奖励稀疏、开销大的问题。该工作降低了多步推理智能体部署门槛。",
-      "importance": 6
-    },
-    {
-      "title": "MoneyPrinterTurbo：AI一键生成短视频",
-      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-      "source": "GitHub Trending",
-      "summary": "利用AI大模型和自动化工作流，根据主题或关键词一键生成高清短视频，整合剪辑、配音、字幕环节。该项目降低视频制作门槛，适合内容创作者快速产出，技术栈围绕大模型提示与脚本化流水线。",
-      "importance": 5
+      "source": "Smol AI News"
     }
   ],
-  "politics_briefs": [
-    {
-      "title": "澳大利亚愤怒召见以色列大使",
-      "url": "https://www.bbc.co.uk/news/articles/cp87g29r718o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "summary": "以色列决定不就2024年加沙援助人员佐米·弗兰科姆被无人机袭击身亡事件提起刑事追诉，澳大利亚外长黄英贤称该决定“侮辱性”，宣布召见以色列大使。（多家报道）",
-      "importance": 9
-    },
-    {
-      "title": "阿联酋宣布对伊朗全面禁运",
-      "url": "https://www.nytimes.com/2026/08/19/world/middleeast/iran-emirates-gulf-economic-ties.html",
-      "source": "NYT World",
-      "summary": "阿联酋作为伊朗最重要的地区贸易伙伴，周二宣布对德黑兰实施全面交易禁运。此举将冲击双边贸易格局，伊朗与海湾国家经济联系面临重新洗牌。",
-      "importance": 8
-    },
-    {
-      "title": "阿富汗难民被困卡塔尔营地五年",
-      "url": "https://www.npr.org/2026/08/19/nx-s1-5936482/more-than-1-000-afghan-refugees-have-been-stuck-at-a-camp-in-qatar-since-2021",
-      "source": "NPR World",
-      "summary": "超过1000名阿富汗难民自2021年以来被困在卡塔尔的阿塞利耶营地，与外界隔绝且无法离开，尽管许多人曾协助美军作战。人道主义困境持续引发关注。",
-      "importance": 6
-    }
-  ],
+  "politics_briefs": [],
   "editor_note": "",
   "keywords": []
 }
