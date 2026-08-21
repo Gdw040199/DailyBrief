@@ -1,75 +1,75 @@
 {
-  "hero_headline": "基辅遭俄最猛空袭至少16人遇难",
-  "daily_overview": "今日地缘与科技双线震荡。俄罗斯对基辅发动开战以来最猛烈空袭，至少16人遇难；特朗普以“经济登陆日”威胁伊朗，美伊角力进入新阶段；巴基斯坦前总理伊姆兰·汗被送医，引发关注。技术侧，OpenAI推出探讨AI社会影响的博客，DeepMind发布Gemini 3.7 Flash，开源模型Ornith-1.5与GLM-5.3 API相继亮相，推理效率与后训练缩放定律成为焦点；Co-RL论文为无监督推理提供新思路。安全与隐私议题同步升温，OpenAI重申零数据保留，AI发展与地缘风险交织前行。",
+  "hero_headline": "俄军猛烈空袭基辅 至少16人死亡",
+  "daily_overview": "今日地缘冲突持续升温：俄军对基辅发动开战以来最猛烈空袭之一，至少16人遇难；特朗普再度威胁对伊朗实施「经济D-Day」，跨源分析称其意在避免重返战争；也门政府军与胡塞武装相互攻击，全面战事或将重启。技术方面，OpenAI 推出新博客「AI Futures」并重申 API 零数据保留；Google 发布 Gemini 3.7 Flash；智谱 GLM-5.3 API 上线，CEO 唐杰提出后训练扩展定律；开源社区则迎来 Ornith-1.5 大模型和 Modular 平台更新。AI 安全、推理效率与模型开放成为今日主线。",
   "tech_briefs": [
     {
-      "title": "OpenAI推博客探讨AI社会影响",
+      "title": "OpenAI 推出 AI Futures 博客 探讨 AI 社会影响",
       "url": "https://openai.com/index/introducing-ai-futures",
       "source": "OpenAI News",
-      "summary": "OpenAI推出新博客「AI Futures」，探讨变革性AI如何重塑权力、治理、经济与个体自由，反映业界对AI深层社会影响的持续关注。",
-      "importance": 7
-    },
-    {
-      "title": "谷歌发布Gemini 3.7 Flash",
-      "url": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
-      "source": "DeepMind Blog",
-      "summary": "谷歌DeepMind宣布推出Gemini 3.7 Flash模型，定位Flash轻量系列，官方尚未披露性能与参数细节。",
+      "summary": "OpenAI 宣布推出新博客「AI Futures」，聚焦变革性 AI 如何重塑权力、治理、经济和个体自由，并首发相关分析文章。",
       "importance": 8
     },
     {
-      "title": "Ornith-1.5开源模型发布",
+      "title": "Google 发布 Gemini 3.7 Flash 模型",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
+      "source": "DeepMind Blog",
+      "summary": "Google DeepMind 发布 Gemini 3.7 Flash，延续 Flash 系列轻量与高效定位，面向开发者和消费级应用提供更快的推理能力。",
+      "importance": 9
+    },
+    {
+      "title": "GLM-5.3 API 上线 唐杰谈后训练扩展定律",
+      "url": "https://www.latent.space/p/ainews-death-of-params-zai-ceo-jie",
+      "source": "Latent Space",
+      "summary": "智谱发布 GLM-5.3 API，CEO 唐杰称模型能力增长进入「参数的死亡」阶段，提出新的后训练扩展定律，强调后训练将主导下一代模型进步。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "开源模型 Ornith-1.5 发布 含 397B MoE 变体",
       "url": "https://news.smol.ai/issues/26-08-19-not-much/",
       "source": "Smol AI News",
-      "summary": "Ornith-1.5开放权重模型系列发布，提供9B稠密、35B MoE与397B MoE三种变体，采用MIT许可，支持FP8、GGUF、MLX及NVFP4量化格式，并具备端到端自我改进能力。",
+      "summary": "Ornith-1.5 开放权重模型系列发布，提供 9B dense、35B MoE 和 397B MoE 三种规模，采用 MIT 许可，支持 FP8、GGUF 等多种量化格式，并展示端到端自我改进能力。",
       "importance": 7
     },
     {
-      "title": "新论文提出多智能体强化学习Co-RL",
-      "url": "https://huggingface.co/papers/2608.17253",
-      "source": "HuggingFace Trending Papers",
-      "summary": "论文提出Co-RL多智能体强化学习方法，通过构造多样化智能体群体，使无监督推理从协作与竞争互动中涌现，减少对可验证奖励等密集标注依赖，为提升模型推理能力提供新路径。",
-      "importance": 6
-    },
-    {
-      "title": "GLM-5.3 API上线 唐杰谈缩放定律",
-      "url": "https://www.latent.space/p/ainews-death-of-params-zai-ceo-jie",
-      "source": "Latent Space",
-      "summary": "Z.ai发布GLM-5.3 API，CEO唐杰在访谈中提出“参数之死”观点，强调后训练缩放定律成为新重点，预示模型训练范式或转向效率驱动。（多家报道）",
+      "title": "OpenAI 推出零数据保留与私有安全处理",
+      "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+      "source": "OpenAI News",
+      "summary": "OpenAI 重申面向符合条件 API 客户提供零数据保留，并预告「私有安全处理」功能，在保护数据隐私的同时实现高级 AI 安全审查。",
       "importance": 8
     }
   ],
   "politics_briefs": [
     {
-      "title": "基辅遭俄猛烈空袭 至少16人遇难",
+      "title": "俄军猛烈空袭基辅 至少16人死亡",
       "url": "https://www.theguardian.com/world/2026/aug/20/ukraine-kyiv-deaths-russian-missile-attack",
       "source": "The Guardian",
-      "summary": "俄罗斯对乌克兰首都基辅及周边发动猛烈导弹和无人机袭击，造成至少16人死亡，是开战以来最严重空袭之一，儿童医院和居民区遭击中。",
-      "importance": 9
+      "summary": "俄军对基辅发动导弹与无人机联合袭击，至少16人遇难，儿童医院和居民区遭击中，系开战以来最密集攻势之一。",
+      "importance": 10
     },
     {
-      "title": "特朗普威胁对伊朗发动经济战",
+      "title": "特朗普威胁对伊朗实施「经济 D-Day」",
       "url": "https://www.nytimes.com/2026/08/20/world/europe/trump-iran-economy-sanctions-threats.html",
       "source": "NYT World",
-      "summary": "特朗普威胁称将对伊朗实施“经济登陆日”，以经济施压代替军事冲突，向德黑兰传达不愿重返战争的信号，美伊关系面临新紧张。",
+      "summary": "特朗普威胁对伊朗发动「经济 D-Day」，分析认为此举向伊朗传递不愿重返战争的信号；另有报道评估制裁升级可能重创伊朗经济。（多家报道）",
       "importance": 8
     },
     {
-      "title": "巴基斯坦前总理汗被送医治疗",
-      "url": "https://www.bbc.co.uk/news/articles/ckgdr9vr50po?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "summary": "据伊姆兰·汗所在政党与当地媒体消息，汗被从阿迪亚拉监狱转至希法国际医院接受治疗，全程严密安保，转移遵循法院命令。（多家报道）",
-      "importance": 6
+      "title": "也门政府军与胡塞武装交火 或重返全面战争",
+      "url": "https://www.aljazeera.com/news/2026/8/20/houthis-and-government-trade-attacks-as-yemen-slides-back-to-full-scale-war?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "过去24小时也门政府军发动81次袭击，胡塞武装称击中沙特两处目标，双方冲突升级，国家正滑向全面战争。",
+      "importance": 7
     }
   ],
-  "editor_note": "地缘冲突与AI竞赛同日升温，各领域加速争夺定义权。技术迭代令人振奋，但安全、隐私与治理仍需稳步跟上，宜冷静观察。",
+  "editor_note": "今日信号集中在冲突升级与 AI 基础设施加速两条主线。各地战事频仍，技术界则在安全、开放与效率之间寻求平衡，值得持续关注事件后续演化。",
   "keywords": [
     "基辅空袭",
-    "美伊经济战",
+    "OpenAI",
     "Gemini 3.7 Flash",
-    "Ornith-1.5",
     "GLM-5.3",
-    "Co-RL",
-    "AI安全",
-    "伊姆兰·汗"
+    "也门冲突",
+    "零数据保留",
+    "特朗普对伊制裁",
+    "Ornith-1.5"
   ]
 }
