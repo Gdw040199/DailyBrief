@@ -1,0 +1,68 @@
+{
+  "hero_headline": "OpenAI推出「AI Futures」博客 聚焦AI重塑社会",
+  "daily_overview": "今日科技界，OpenAI上线新博客「AI Futures」，聚焦变革性AI对权力、治理、经济与个人自由的潜在影响；DeepMind在游戏AI领域发布15年研究新进展。学界方面，长上下文推理与视觉语言模型轻量化成为论文热点，FlashPrefill V2与token去噪方案分别优化推理速度与边缘部署。时政领域，荷兰对Uber开出约9.66亿美元罚单，凸显欧洲对自动决策系统的数据保护审查；澳大利亚立法要求科技巨头为新闻内容付费，重塑平台与媒体关系；俄乌冲突持续，俄军无人机袭击乌克兰一处商场，造成严重伤亡。整体来看，AI治理与地缘安全同日成为全球焦点。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI推出「AI Futures」博客 探讨AI重塑社会",
+      "url": "https://openai.com/index/introducing-ai-futures",
+      "source": "OpenAI News",
+      "summary": "OpenAI上线新博客「AI Futures」，聚焦变革性AI对权力、治理、经济和个人自由的潜在影响，为AI社会议题提供系统性讨论平台。",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind与游戏工作室推进15年游戏AI研究",
+      "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
+      "source": "DeepMind Blog",
+      "summary": "Google DeepMind与游戏工作室合作，基于15年游戏AI研究成果，在《EVE Online》等游戏中原型验证突破性AI玩法，延续从Atari时代起的AI研究脉络。",
+      "importance": 7
+    },
+    {
+      "title": "FlashPrefill V2：块稀疏预填充加速长上下文推理",
+      "url": "https://huggingface.co/papers/2608.19758",
+      "source": "HuggingFace Trending Papers",
+      "summary": "提出FlashPrefill V2，采用块稀疏预填充注意力，针对长上下文LLM服务中注意力二次复杂度的预填充瓶颈，在FlashPrefill基础上提升长序列处理效率与吞吐。",
+      "importance": 7
+    },
+    {
+      "title": "聚类与token去噪让视觉语言模型更快更稳",
+      "url": "https://arxiv.org/abs/2608.19285",
+      "source": "arXiv Papers",
+      "summary": "针对视觉语言模型视觉token过多、边缘部署困难的问题，提出聚类与token去噪方法，减少视觉token数量，提升推理速度与鲁棒性，使VLM在资源受限设备上高效运行。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "荷兰对Uber开出约9.66亿美元罚单",
+      "url": "https://www.theguardian.com/technology/2026/aug/21/netherlands-fines-uber-automated-driver-suspensions",
+      "source": "The Guardian",
+      "summary": "荷兰数据保护监管机构对Uber处以8.25亿欧元（约9.66亿美元）罚款，因其自动化系统停用司机账户且处理不充分，凸显欧洲对自动化决策的严格监管。",
+      "importance": 9
+    },
+    {
+      "title": "澳大利亚立法要求科技巨头为新闻付费",
+      "url": "https://www.npr.org/2026/08/21/nx-s1-5939814/big-tech-companies-will-have-to-pay-to-publish-australian-news-content-under-new-laws",
+      "source": "NPR World",
+      "summary": "澳大利亚通过新法律，要求谷歌、Meta等大型科技平台与新闻出版商达成协议，否则须按广告收入缴纳费用，迫使科技巨头为新闻内容直接付费。",
+      "importance": 8
+    },
+    {
+      "title": "俄无人机二次打击乌商场致15人死亡",
+      "url": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "俄罗斯无人机对乌克兰一购物中心实施“双击”式袭击，造成15人死亡、130余人受伤，其中含23名儿童，俄乌冲突局势持续升级。",
+      "importance": 9
+    }
+  ],
+  "editor_note": "AI技术迭代与监管行动正同步加速：前沿模型不断拓展能力边界，欧洲与澳大利亚则强化对科技巨头的问责；与此同时，地缘冲突仍在制造人道代价。",
+  "keywords": [
+    "AI治理",
+    "OpenAI",
+    "DeepMind",
+    "长上下文推理",
+    "视觉语言模型",
+    "Uber罚款",
+    "澳大利亚新闻法",
+    "俄乌冲突"
+  ]
+}
