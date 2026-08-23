@@ -1,0 +1,68 @@
+{
+  "hero_headline": "美加贸易战升级 加拿大宣布对等反制",
+  "daily_overview": "美加贸易摩擦急剧升级，美国对200亿美元加拿大商品加征50%关税，加方宣布9月8日起等额反制，总理卡尼称‘与美开战’。科技面，OpenAI开源终端编码代理Codex，DeepMind联手游戏工作室推进AI玩法，FlashPrefill V2与EnvHarness两篇论文分别优化长上下文推理与智能体训练环境。嫦娥七号因台风推迟发射，英国首相拟访乌助其自产远程导弹，地缘博弈与技术进展交织推进。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI 开源终端编码代理 Codex",
+      "url": "https://github.com/openai/codex",
+      "source": "GitHub Trending",
+      "summary": "OpenAI 发布轻量级编码代理 Codex，可直接在终端运行，理解自然语言指令，辅助代码编写、修改与调试，开发者无需离开命令行即可获得 AI 编程支持。",
+      "importance": 9
+    },
+    {
+      "title": "FlashPrefill V2：块稀疏注意力加速长上下文推理",
+      "url": "https://huggingface.co/papers/2608.19758",
+      "source": "HuggingFace Trending Papers",
+      "summary": "针对长上下文大模型预填充阶段的高计算开销，FlashPrefill V2 提出块稀疏注意力机制，通过跳过无关计算显著降低延迟，在可接受精度损失内提升服务效率。",
+      "importance": 8
+    },
+    {
+      "title": "EnvHarness：为智能体动态生成训练环境",
+      "url": "https://huggingface.co/papers/2608.19880",
+      "source": "HuggingFace Trending Papers",
+      "summary": "静态环境难以匹配智能体成长速度，EnvHarness 将静态世界改造成能针对智能体弱点自适应生成训练场景的系统，无需领域专用流程即可持续提升能力，有助于降低环境构建成本。",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind 联手游戏工作室推进 AI 玩法研究",
+      "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 宣布与多家游戏工作室合作，在 Atari 到 EVE Online 的 15 年研究基础上原型验证突破性 AI 玩法，进一步探索 AI 与电子游戏的结合。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美加贸易战升级 加拿大宣布对等反制",
+      "url": "https://www.npr.org/2026/08/22/nx-s1-5941584/us-canada-tariffs",
+      "source": "NPR World",
+      "summary": "美国已对 200 亿美元加拿大商品加征 50% 关税，加总理卡尼称‘与美开战’，宣布 9 月 8 日起等额反制。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "台风过境 嫦娥七号发射推迟",
+      "url": "https://www.dw.com/zh/台风过境-嫦娥7号推迟奔月找水/a-78478041?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "因台风过境，原定 8 月 24 日在海南文昌发射的嫦娥七号任务推迟，今年内暂无发射窗口。探测器将赴月球南极寻找水冰资源，并搭载 6 国科研载荷。",
+      "importance": 8
+    },
+    {
+      "title": "英首相拟访乌 助其自产远程导弹",
+      "url": "https://www.theguardian.com/politics/2026/aug/24/andy-burnham-ukraine-long-range-missile-technology-kyiv-visit",
+      "source": "The Guardian",
+      "summary": "英国首相伯纳姆拟在乌克兰独立日访问基辅，宣布分享“风暴之影”导弹部件机密信息，以提升乌克兰自主制造远程导弹的能力。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "美加贸易战与地缘博弈升温，AI开源与算力优化同步加速。短期看冲突或加剧，长期仍需关注科技落地实效与政策风险。",
+  "keywords": [
+    "美加贸易战",
+    "对等反制",
+    "嫦娥七号",
+    "OpenAI Codex",
+    "FlashPrefill V2",
+    "EnvHarness",
+    "DeepMind",
+    "远程导弹"
+  ]
+}
