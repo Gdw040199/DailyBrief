@@ -1,75 +1,16 @@
 {
-  "hero_headline": "美加贸易战升级 加拿大宣布下月对等反制",
-  "daily_overview": "美加贸易谈判破裂后，美国对 200 亿美元加拿大商品加征 50% 关税，加拿大总理卡尼斥之为「误判」，并宣布 9 月 8 日起一美元对一美元报复，北美经贸格局急转直下。与此同时，AI 领域持续高热：OpenAI 发布终端编码代理 Codex，并为零数据保留客户推出前沿模型隐私保护；学界则通过 FlashPrefill V2、EnvHarness 与 SWE-bench Science 三项新研究，分别优化长上下文推理、智能体训练环境与科学编码评测。技术演进与地缘博弈同步加速，业界与决策者均需在新的不确定性中寻找平衡。",
+  "hero_headline": "美加贸易谈判破裂 加拿大宣布9月8日反制",
+  "daily_overview": "美加贸易战升级：美国对200亿美元加拿大商品加征50%关税，谈判破裂后，加拿大宣布9月8日起对等反制，总理卡尼批评美方“误判”。伊朗警告邻国勿加入美国经济战。技术方面，OpenAI开源终端编码智能体Codex；DeepMind与游戏工作室合作推进AI玩法原型；FlashPrefill V2论文提出分块稀疏注意力，加速长上下文LLM推理；神秘模型Ox Alpha疑似智谱新版本。",
   "tech_briefs": [
     {
-      "title": "OpenAI 推出终端编码代理 Codex",
+      "title": "OpenAI开源终端编码智能体Codex",
       "url": "https://github.com/openai/codex",
       "source": "GitHub Trending",
-      "summary": "OpenAI 推出可在终端运行的轻量级编码代理，可直接理解代码库并执行编程任务，支持代码修改、测试与 git 工作流，让开发者不必离开命令行即可获得 AI 辅助。",
-      "importance": 7
-    },
-    {
-      "title": "FlashPrefill V2：块稀疏注意力加速长上下文服务",
-      "url": "https://huggingface.co/papers/2608.19758",
-      "source": "HuggingFace Trending Papers",
-      "summary": "新论文提出 FlashPrefill V2，以块稀疏预填充注意力优化长上下文 LLM 服务中计算密集的预填充阶段，降低延迟与计算开销，缓解注意力二次复杂度瓶颈。",
+      "summary": "OpenAI 出品的轻量级编码智能体，直接运行在终端里。它能理解代码库、执行常规开发任务并处理 git 工作流，适合开发者在不离开终端的情况下快速完成编码、调试和提交等操作。",
       "importance": 8
-    },
-    {
-      "title": "EnvHarness：为智能体动态构建训练环境",
-      "url": "https://huggingface.co/papers/2608.19880",
-      "source": "HuggingFace Trending Papers",
-      "summary": "研究提出 EnvHarness，可从已有静态世界中自动构建动态训练环境，无需领域专用流水线，帮助 LLM 智能体针对自身弱点持续学习，降低环境生成成本。",
-      "importance": 7
-    },
-    {
-      "title": "SWE-bench Science：科学编码任务新基准",
-      "url": "https://huggingface.co/papers/2608.19799",
-      "source": "HuggingFace Trending Papers",
-      "summary": "新基准专门评估编码智能体解决科学领域工程任务的能力，强调科学代码故障可能损害研究证据，弥补现有评测仅关注总体成功率的局限。",
-      "importance": 7
-    },
-    {
-      "title": "OpenAI 为前沿模型提供零数据保留选项",
-      "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
-      "source": "OpenAI News",
-      "summary": "OpenAI 重申对符合条件的 API 客户提供零数据保留服务，并预告 Private Safety Processing，在保证数据隐私的同时推进高级 AI 安全。",
-      "importance": 6
     }
   ],
-  "politics_briefs": [
-    {
-      "title": "美对加征50%关税 加拿大下月对等反制",
-      "url": "https://www.npr.org/2026/08/22/nx-s1-5941584/us-canada-tariffs",
-      "source": "NPR World",
-      "summary": "美国对200亿美元加拿大商品加征50%关税，加拿大总理卡尼称特朗普关税是「误判」，宣布9月8日起一美元对一美元报复，美加贸易谈判破裂。（多家报道）",
-      "importance": 9
-    },
-    {
-      "title": "专家：朝鲜掌握更多筹码 不急于与美会谈",
-      "url": "https://www.dw.com/zh/特金会-近期举行？专家：手握更多筹码的朝鲜并不着急谈/a-78469847?maca=chi-rss-chi-all-1127-rdf",
-      "source": "DW 中文",
-      "summary": "特朗普称计划与金正恩会面，但专家分析朝鲜回应释放信号：若要会谈，朝方希望获得最大程度让步，且当前手握更多筹码并不着急。",
-      "importance": 6
-    },
-    {
-      "title": "乌克兰第五个战时独立日 德国外长访基辅",
-      "url": "https://www.dw.com/zh/第五个战时独立日：德国外长访问乌克兰表达支持/a-78469463?maca=chi-rss-chi-all-1127-rdf",
-      "source": "DW 中文",
-      "summary": "乌克兰迎来战时第五个独立日，德国外长再访基辅，表示德国正为乌克兰过冬做准备，并谴责俄罗斯持续升级的无人机与导弹攻势。",
-      "importance": 7
-    }
-  ],
-  "editor_note": "贸易战升级加剧全球经济不确定性，AI 研究则在工程化与安全维度同步深入。各方博弈之外，更需回归事实与长期风险。",
-  "keywords": [
-    "美加关税",
-    "OpenAI Codex",
-    "FlashPrefill V2",
-    "EnvHarness",
-    "SWE-bench Science",
-    "零数据保留",
-    "朝鲜谈判",
-    "德国外长访乌"
-  ]
+  "politics_briefs": [],
+  "editor_note": "",
+  "keywords": []
 }
