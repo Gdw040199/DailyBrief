@@ -1,0 +1,59 @@
+{
+  "hero_headline": "美对伊金融总攻升级，英国新首相首访基辅",
+  "daily_overview": "今日核心信号有三：其一，美国财长贝森特宣布将切断与伊朗全部经济联系，称其为“史上最猛金融攻势”，伊朗誓言抵抗并称“一滴油”也不流出海湾，制裁涟漪冲击全球能源市场；其二，英国新任首相伯纳姆上任后首访乌克兰，在俄方警告声中重申支持基辅；其三，科技界，OpenAI 推出 GPT-5.6 并接入 Kiro 平台，主打开发性价比，DeepMind 复盘15年游戏AI研究并转向与工作室共创玩法。地缘与AI加速交织：台湾起诉九人涉嫌向大陆走私AI服务器，算力期货被视为下一个万亿资产类别。",
+  "tech_briefs": [
+    {
+      "title": "GPT-5.6 上线 Kiro，开发者性价比提升",
+      "url": "https://openai.com/index/gpt-5-6-in-kiro",
+      "source": "OpenAI News",
+      "summary": "OpenAI 宣布 GPT-5.6 在 Kiro 平台上线，支持规划、构建、审查和测试软件，强调更好性价比，旨在降低开发成本并提升效率。",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind 复盘15年游戏AI研究并合作共创",
+      "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
+      "source": "DeepMind Blog",
+      "summary": "谷歌 DeepMind 发文回顾从 Atari 到 EVE Online 的15年研究历程，并宣布与游戏工作室合作，原型化突破性 AI 玩法，将研究成果导入实际游戏开发。",
+      "importance": 7
+    },
+    {
+      "title": "算力期货被看好成为下一个万亿资产",
+      "url": "https://x.com/chamath/status/2091930810098364595",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "有分析引用贝莱德 CEO 拉里·芬克观点称，算力供给不足将催生“算力期货”新资产类别；近期行业动态正加速这一预测落地，算力正从资源变成金融标的。",
+      "importance": 7
+    },
+    {
+      "title": "图工程：从个体智能走向系统智能",
+      "url": "https://huggingface.co/papers/2608.21156",
+      "source": "HuggingFace Trending Papers",
+      "summary": "新论文提出图工程视角，把提示工程、上下文工程之外的多智能体协同组织化，主张将个体智能组装为系统智能，为复杂任务提供统一工程框架。",
+      "importance": 8
+    },
+    {
+      "title": "免费聚合多模型AI编码工具登上热榜",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "source": "GitHub Trending",
+      "summary": "免费整合 Claude Code、Codex 等编码 AI 的终端工具，号称提供13亿+免费 token，支持 IDE、手机与语音使用；让开发者零成本切换多模型并遵守服务条款。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美对伊朗发起史上最猛金融攻势",
+      "url": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "美国财长贝森特称将切断与伊朗全部经济联系，任何与伊金融合作的国家也会被孤立；新制裁瞄准航空、科技与航运，伊朗誓言“一滴油”也不流出海湾，全球能源市场承压。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "英新首相首访乌克兰承诺继续支持",
+      "url": "https://www.nytimes.com/2026/08/24/world/europe/uk-andy-burnham-ukraine-russia.html",
+      "source": "NYT World",
+      "summary": "英国首相伯纳姆上任后首次外访即抵达乌克兰，承诺继续支持基辅；俄罗斯就乌使用英制无人机发出新警告，英方表示不会退缩。（多家报道）",
+      "importance": 8
+    }
+  ],
+  "editor_note": "",
+  "keywords": []
+}
