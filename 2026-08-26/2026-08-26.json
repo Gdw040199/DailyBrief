@@ -1,0 +1,23 @@
+{
+  "hero_headline": "美加贸易战升级，加拿大宣布50%报复性关税",
+  "daily_overview": "今日科技与地缘政治交织共振。OpenAI发布自研推理芯片Jalapeño首批测试结果，推理速度与能效行业领先；上海人形机器人“嘉年华”显示具身AI正成为中国产业战略。智能体工程化加速，英伟达提出“Skill Lift”指标重构评估，开源项目Apache Maka以本地优先模式探索可审计AI代理；OpenAI同时封禁利用AI操纵舆论的俄罗斯账号。时政方面，美加贸易战急剧升级，加拿大宣布对美最高50%报复性关税；美国威胁对伊朗黄金、数字资产等领域实施“经济登陆日”式制裁，CIA局长也被曝秘密访俄，大国博弈与贸易摩擦同步升温。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI自研推理芯片Jalapeño首秀",
+      "url": "https://openai.com/index/jalapeno-first-results",
+      "source": "OpenAI News",
+      "summary": "OpenAI公布自研推理芯片Jalapeño首批测试结果，速度与能效均达行业领先水平，吞吐量更高、延迟更低，可适配现代模型推理需求。",
+      "importance": 10
+    },
+    {
+      "title": "上海人形机器人嘉年华：具身AI纳入五年计划",
+      "url": "https://www.technologyreview.com/2026/08/25/1141907/dispatch-shanghai-humanoid-robot-carnival/",
+      "source": "MIT Tech Review AI",
+      "summary": "MIT技术评论记者探访上海人形机器人“嘉年华”，这些机器人在中国快速走红，帮助政府将AI融入日常生活，具身AI已被写入最新五年计划。",
+      "importance": 8
+    }
+  ],
+  "politics_briefs": [],
+  "editor_note": "",
+  "keywords": []
+}
