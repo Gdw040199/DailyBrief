@@ -1,56 +1,56 @@
 {
-  "hero_headline": "美对伊金融总攻升级，英国新首相首访基辅",
-  "daily_overview": "今日核心信号有三：其一，美国财长贝森特宣布将切断与伊朗全部经济联系，称其为“史上最猛金融攻势”，伊朗誓言抵抗并称“一滴油”也不流出海湾，制裁涟漪冲击全球能源市场；其二，英国新任首相伯纳姆上任后首访乌克兰，在俄方警告声中重申支持基辅；其三，科技界，OpenAI 推出 GPT-5.6 并接入 Kiro 平台，主打开发性价比，DeepMind 复盘15年游戏AI研究并转向与工作室共创玩法。地缘与AI加速交织：台湾起诉九人涉嫌向大陆走私AI服务器，算力期货被视为下一个万亿资产类别。",
+  "hero_headline": "GPT-5.6 发布，美伊金融攻势升级",
+  "daily_overview": "今日科技领域，OpenAI 发布 GPT-5.6 并推出终端编码代理 Codex，继续加码开发者工具；DeepMind 盘点 15 年游戏 AI 研究，神秘模型 Ox Alpha 疑似来自智谱，显示基础模型竞争依旧激烈。时政方面，美国财政部长宣布对伊朗发动“史上最大金融攻势”，并警告孤立任何与伊金融合作的国家；英国首相伯纳姆上任后首访基辅，誓言支持乌克兰；日本跨党派议员代表团在高市早苗涉台言论后赴北京，寻求修复中日关系。特斯拉在华召回近 300 万辆汽车亦引发关注。",
   "tech_briefs": [
     {
-      "title": "GPT-5.6 上线 Kiro，开发者性价比提升",
+      "title": "GPT-5.6 登陆 Kiro，为开发者提升性价比",
       "url": "https://openai.com/index/gpt-5-6-in-kiro",
       "source": "OpenAI News",
-      "summary": "OpenAI 宣布 GPT-5.6 在 Kiro 平台上线，支持规划、构建、审查和测试软件，强调更好性价比，旨在降低开发成本并提升效率。",
+      "summary": "OpenAI 发布 GPT-5.6，通过 Kiro 平台向开发者提供，帮助规划、构建、审查和测试软件，强调在价格与性能之间取得更好平衡。",
       "importance": 9
     },
     {
-      "title": "DeepMind 复盘15年游戏AI研究并合作共创",
-      "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
-      "source": "DeepMind Blog",
-      "summary": "谷歌 DeepMind 发文回顾从 Atari 到 EVE Online 的15年研究历程，并宣布与游戏工作室合作，原型化突破性 AI 玩法，将研究成果导入实际游戏开发。",
-      "importance": 7
-    },
-    {
-      "title": "算力期货被看好成为下一个万亿资产",
-      "url": "https://x.com/chamath/status/2091930810098364595",
-      "source": "X 推文 (AttentionVC)",
-      "summary": "有分析引用贝莱德 CEO 拉里·芬克观点称，算力供给不足将催生“算力期货”新资产类别；近期行业动态正加速这一预测落地，算力正从资源变成金融标的。",
-      "importance": 7
-    },
-    {
-      "title": "图工程：从个体智能走向系统智能",
-      "url": "https://huggingface.co/papers/2608.21156",
-      "source": "HuggingFace Trending Papers",
-      "summary": "新论文提出图工程视角，把提示工程、上下文工程之外的多智能体协同组织化，主张将个体智能组装为系统智能，为复杂任务提供统一工程框架。",
+      "title": "神秘模型 Ox Alpha 现身，或属智谱 GLM 家族",
+      "url": "https://news.smol.ai/issues/26-08-21-not-much/",
+      "source": "Smol AI News",
+      "summary": "独立评测发现神秘模型 Ox Alpha 在编码与智能体任务上表现突出，分析师判断其可能来自智谱/GLM 家族，提升主要来自后训练与基础设施优化。",
       "importance": 8
     },
     {
-      "title": "免费聚合多模型AI编码工具登上热榜",
-      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "title": "DeepMind 回顾 15 年游戏 AI，携手工作室探索新玩法",
+      "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
+      "source": "DeepMind Blog",
+      "summary": "Google DeepMind 发文总结从 Atari 到 EVE Online 的 15 年游戏 AI 研究，并宣布与游戏工作室合作，原型化突破性 AI 游戏玩法。",
+      "importance": 7
+    },
+    {
+      "title": "OpenAI 发布终端编码代理 Codex",
+      "url": "https://github.com/openai/codex",
       "source": "GitHub Trending",
-      "summary": "免费整合 Claude Code、Codex 等编码 AI 的终端工具，号称提供13亿+免费 token，支持 IDE、手机与语音使用；让开发者零成本切换多模型并遵守服务条款。",
+      "summary": "OpenAI 推出轻量级编码代理 Codex，可在终端内运行，支持以自然语言驱动代码编写、修改与调试，适合追求高效本地编码体验的开发者。",
+      "importance": 7
+    },
+    {
+      "title": "RISE 提出按需想象预算，提升世界动作模型效率",
+      "url": "https://arxiv.org/abs/2608.20430",
+      "source": "arXiv Papers",
+      "summary": "新论文提出 RISE 方法，针对世界动作模型每场景固定想象预算的局限，通过选择性回放按需分配计算资源，在减少冗余推理的同时提升规划与动作生成效率。",
       "importance": 6
     }
   ],
   "politics_briefs": [
     {
-      "title": "美对伊朗发起史上最猛金融攻势",
+      "title": "美对伊发动“最大金融攻势”，金融合作者将遭孤立",
       "url": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "summary": "美国财长贝森特称将切断与伊朗全部经济联系，任何与伊金融合作的国家也会被孤立；新制裁瞄准航空、科技与航运，伊朗誓言“一滴油”也不流出海湾，全球能源市场承压。（多家报道）",
+      "summary": "美国财政部长宣布切断与伊朗的经济联系，称任何与伊金融合作的国家将被孤立；新一轮制裁波及航空、科技与航运，推高全球能源价格。（多家报道）",
       "importance": 9
     },
     {
-      "title": "英新首相首访乌克兰承诺继续支持",
+      "title": "英国首相伯纳姆首访乌克兰，誓言支持基辅",
       "url": "https://www.nytimes.com/2026/08/24/world/europe/uk-andy-burnham-ukraine-russia.html",
       "source": "NYT World",
-      "summary": "英国首相伯纳姆上任后首次外访即抵达乌克兰，承诺继续支持基辅；俄罗斯就乌使用英制无人机发出新警告，英方表示不会退缩。（多家报道）",
+      "summary": "英国首相伯纳姆上任后首度外访乌克兰，承诺继续支持基辅；此前俄方因乌克兰据称使用英制无人机发出“后果”警告。（多家报道）",
       "importance": 8
     }
   ],
