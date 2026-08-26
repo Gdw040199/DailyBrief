@@ -1,23 +1,75 @@
 {
-  "hero_headline": "美加贸易战升级，加拿大宣布50%报复性关税",
-  "daily_overview": "今日科技与地缘政治交织共振。OpenAI发布自研推理芯片Jalapeño首批测试结果，推理速度与能效行业领先；上海人形机器人“嘉年华”显示具身AI正成为中国产业战略。智能体工程化加速，英伟达提出“Skill Lift”指标重构评估，开源项目Apache Maka以本地优先模式探索可审计AI代理；OpenAI同时封禁利用AI操纵舆论的俄罗斯账号。时政方面，美加贸易战急剧升级，加拿大宣布对美最高50%报复性关税；美国威胁对伊朗黄金、数字资产等领域实施“经济登陆日”式制裁，CIA局长也被曝秘密访俄，大国博弈与贸易摩擦同步升温。",
+  "hero_headline": "加拿大宣布对美征收最高50%报复性关税",
+  "daily_overview": "美加贸易摩擦骤然升级，加拿大宣布对多类美国商品征收最高50%的报复性关税，北美贸易与供应链面临新的不确定性。科技领域，OpenAI发布自研推理芯片Jalapeño，主打更高吞吐与更低延迟；同时封禁一批利用AI实施虚假信息活动的俄罗斯账号，折射AI安全博弈加剧。DeepMind回顾15年游戏AI研究并与游戏工作室合作推动原型落地，多篇论文则关注智能体在复杂工作与移动端规划上的能力评测。监管方面，巴西以儿童数据违规重罚TikTok 3000万美元。贸易政策、AI基建与安全合规成为今日主线。",
   "tech_briefs": [
     {
-      "title": "OpenAI自研推理芯片Jalapeño首秀",
+      "title": "OpenAI发布自研推理芯片Jalapeño 称速度与能效领先",
       "url": "https://openai.com/index/jalapeno-first-results",
       "source": "OpenAI News",
-      "summary": "OpenAI公布自研推理芯片Jalapeño首批测试结果，速度与能效均达行业领先水平，吞吐量更高、延迟更低，可适配现代模型推理需求。",
-      "importance": 10
+      "summary": "Jalapeño是OpenAI自研的定制推理芯片，据称能提供更高吞吐量和更低延迟，在AI推理速度与功耗效率上达到行业领先水平，用于现代模型部署。",
+      "importance": 9
     },
     {
-      "title": "上海人形机器人嘉年华：具身AI纳入五年计划",
+      "title": "OpenAI封禁俄方账号 遏制AI虚假信息活动",
+      "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+      "source": "OpenAI News",
+      "summary": "OpenAI封禁一批俄罗斯来源账号，这些账号利用AI推广伪装成以色列智库的虚假机构及「主权指数」，以赞扬俄罗斯并批评西方。",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind合作游戏工作室 推动15年游戏AI成果落地",
+      "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
+      "source": "DeepMind Blog",
+      "summary": "Google DeepMind宣布与多家游戏工作室合作，将15年来从Atari到EVE Online的游戏AI研究成果原型化，探索突破性AI玩法。",
+      "importance": 6
+    },
+    {
+      "title": "Apodex 1.1提出可扩展智能体框架 支持复杂工作自主执行",
+      "url": "https://huggingface.co/papers/2608.23283",
+      "source": "HuggingFace Trending Papers",
+      "summary": "论文提出Apodex 1.1，将通用语言模型扩展为能长期执行复杂任务的智能体，支持与文件、信息源和代码持续交互，并具备状态维护、失败恢复与可验证交付能力。",
+      "importance": 7
+    },
+    {
+      "title": "上海人形机器人嘉年华观察：AI加速嵌入物理世界",
       "url": "https://www.technologyreview.com/2026/08/25/1141907/dispatch-shanghai-humanoid-robot-carnival/",
       "source": "MIT Tech Review AI",
-      "summary": "MIT技术评论记者探访上海人形机器人“嘉年华”，这些机器人在中国快速走红，帮助政府将AI融入日常生活，具身AI已被写入最新五年计划。",
-      "importance": 8
+      "summary": "《麻省理工科技评论》记者走访上海人形机器人「嘉年华」，称这些热门机器人是中国将AI嵌入物理系统、融入日常生活战略的一部分。",
+      "importance": 7
     }
   ],
-  "politics_briefs": [],
-  "editor_note": "",
-  "keywords": []
+  "politics_briefs": [
+    {
+      "title": "加拿大宣布对美征收最高50%报复性关税",
+      "url": "https://www.bbc.co.uk/news/articles/c3v4xg5klx7o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "加拿大宣布对钢铁、家具等美国商品征收最高50%的报复性关税，回应美国此前对加商品加征50%关税及贸易谈判破裂。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "CIA局长突访莫斯科 举行未宣布会谈",
+      "url": "https://www.bbc.co.uk/news/articles/c87vg9x5d7do?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "据美国媒体报道，CIA局长本周前往莫斯科举行未事先宣布的会谈；飞行追踪数据确认一架美军飞机经拉脱维亚抵达俄罗斯。",
+      "importance": 8
+    },
+    {
+      "title": "巴西因儿童数据违规对TikTok罚款3000万美元",
+      "url": "https://www.aljazeera.com/news/2026/8/25/brazil-fines-tiktok-30m-for-child-data-privacy-violations?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "巴西监管机构以违反儿童数据隐私规定为由，对TikTok处以3000万美元罚款，并要求母公司字节跳动删除非法获取的儿童数据，科技巨头监管持续收紧。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "美加关税战再度升级，贸易政策不确定性加剧；OpenAI在芯片与AI安全上双线发力，智能体与监管博弈同步升温，后续动向值得关注。",
+  "keywords": [
+    "美加关税",
+    "CIA突访莫斯科",
+    "OpenAI芯片",
+    "AI智能体",
+    "AI安全",
+    "TikTok罚款",
+    "游戏AI",
+    "人形机器人"
+  ]
 }
