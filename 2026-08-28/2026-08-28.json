@@ -1,0 +1,75 @@
+{
+  "hero_headline": "尼泊尔西藏洪灾致数百人死 逾千失踪",
+  "daily_overview": "喜马拉雅山洪成为今日国际焦点——尼泊尔与西藏边界地区爆发灾难性洪水与山体滑坡，官方统计数百人死亡、逾1400人失踪，救援面临二次洪水威胁，多国媒体连续报道并呼吁重视区域气候安全。时政方面，特朗普签署行政令将安大略湖更名“美国湖”，加剧美加紧张；叙利亚政治重组亦现新动向。科技侧，英伟达被曝以130亿美元收购 HuggingFace，开源生态迎来里程碑式整合；智谱开源 GLM-5.3 Flash 多模态模型，谷歌 DeepMind 同步更新 Gemini 系列；OpenAI 发布教育研究，显示 AI 与批判性思维训练的协同。",
+  "tech_briefs": [
+    {
+      "title": "英伟达拟130亿美元收购 HuggingFace",
+      "url": "https://www.latent.space/p/ainews-nvidia-buys-huggingface-for",
+      "source": "Latent Space",
+      "summary": "AI 新闻通讯 Latent Space 报道，英伟达将以130亿美元收购开源模型社区 HuggingFace，被视为开源权重生态的关键整合。",
+      "importance": 9
+    },
+    {
+      "title": "智谱开源多模态模型 GLM-5.3 Flash",
+      "url": "https://news.smol.ai/issues/26-08-26-not-much/",
+      "source": "Smol AI News",
+      "summary": "智谱AI发布 GLM-5.3-Flash，采用 320B 总参数/18B 激活的 MoE 架构，原生支持多模态与 100 万 token 上下文，以 MIT 协议开源，便于开发者灵活接入。",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI 研究：ChatGPT 与批判性思维训练",
+      "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
+      "source": "OpenAI News",
+      "summary": "OpenAI 发布覆盖逾千名学生的随机对照研究，评估 ChatGPT 与批判性思维训练对真实大学作业原创性及表现的影响。",
+      "importance": 7
+    },
+    {
+      "title": "谷歌发布 Gemini 模型更新与智能转录",
+      "url": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/",
+      "source": "DeepMind Blog",
+      "summary": "谷歌 DeepMind 发布 Gemini Omni 1.1 Flash，强化开发者构建 AI 应用的控制力；并推出 Gemini 3.5 Transcribe，升级语音转文字能力。",
+      "importance": 7
+    },
+    {
+      "title": "新基准 VGI-Bench 探测视频生成模型视觉智能",
+      "url": "https://huggingface.co/papers/2608.19583",
+      "source": "HuggingFace Trending Papers",
+      "summary": "研究提出 VGI-Bench 基准，通过对齐视觉先验的输入与需动态演化的任务，系统评估视频生成模型的零样本视觉推理能力。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "尼泊尔西藏洪灾致数百死逾千失踪",
+      "url": "https://www.nytimes.com/live/2026/08/27/world/nepal-tibet-flash-floods",
+      "source": "NYT World",
+      "summary": "尼泊尔与西藏边界地区爆发灾难性洪水与山体滑坡，官方确认数百人死亡、逾1400人失踪；救援仍在持续，区域面临更多洪水威胁。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "特朗普签署行政令将安大略湖更名“美国湖”",
+      "url": "https://www.bbc.co.uk/news/articles/ckgwdn1g58yo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "特朗普签署行政命令，将安大略湖更名为“美国湖”，此举发生在美加贸易谈判破裂后；加拿大总理与数名美国州长公开反对。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "叙利亚任命库尔德 SDF 前指挥官为顾问",
+      "url": "https://www.aljazeera.com/news/2026/8/27/syrias-president-appoints-ex-commander-of-kurdish-led-sdf-as-advisor?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "叙利亚总统沙拉任命“叙利亚民主力量”前指挥官阿卜迪为总统顾问，三天前该组织刚宣布解散。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "洪灾与并购同日刷屏，提示气候风险与开源商业化的双重考验。报道需保持克制，避免将灾难与资本叙事混为一谈。",
+  "keywords": [
+    "尼泊尔洪水",
+    "西藏",
+    "英伟达",
+    "HuggingFace",
+    "GLM-5.3",
+    "OpenAI",
+    "特朗普",
+    "Gemini"
+  ]
+}
