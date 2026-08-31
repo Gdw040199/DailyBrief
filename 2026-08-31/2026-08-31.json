@@ -1,0 +1,30 @@
+{
+  "hero_headline": "美军打击伊朗后遭报复 美伊冲突骤然升级",
+  "daily_overview": "今日头条聚焦美伊冲突骤然升级：美军空袭伊朗拉拉克岛火箭发射器，伊朗革命卫队随即报复驻约旦美军基地，中东局势再添变数。与此同时，尼泊尔边境洪灾致数千人失踪，国际援助与搜救仍在推进；冰岛公投拒绝重启入欧盟谈判。技术领域，OpenAI因Cursor被SpaceX收购而终止向其供应模型，凸显AI产业与资本博弈；谷歌DeepMind发布Gemini Omni 1.1 Flash并试点双盲AI评估，语音评测首次纳入全球南方语言。开源方面，清华OpenMAIC与TTPO测试时策略优化等成果，拓展大模型在教育与推理场景的应用边界。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI宣布终止向Cursor提供模型",
+      "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+      "source": "OpenAI News",
+      "summary": "OpenAI称，因Cursor被SpaceX收购，公司决定逐步终止向其提供OpenAI模型的合同。业内认为这是马斯克与奥特曼竞争的实际后果（多家报道）。",
+      "importance": 9
+    },
+    {
+      "title": "谷歌DeepMind发布Gemini Omni 1.1 Flash",
+      "url": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/",
+      "source": "DeepMind Blog",
+      "summary": "据官方博客，Gemini Omni 1.1 Flash让开发者在构建应用时获得更多控制力，进一步扩展多模态模型能力边界，具体技术细节尚未完全披露。",
+      "importance": 8
+    },
+    {
+      "title": "Hugging Face语音评测榜新增全球南方语言",
+      "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
+      "source": "Hugging Face Blog",
+      "summary": "Hugging Face宣布其开放自动语音识别排行榜新增首个全球南方语言，扩大语音评测的语言覆盖范围，有望推动低资源语言的语音技术发展。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [],
+  "editor_note": "",
+  "keywords": []
+}
