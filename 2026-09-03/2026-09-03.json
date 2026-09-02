@@ -1,0 +1,37 @@
+{
+  "hero_headline": "美伊冲突再度升级 伊朗空袭海湾多国",
+  "daily_overview": "AI大模型当日密集发布：Anthropic推出Claude Fable 5.1与Mythos 5.1，缓存成本下调75%；DeepMind发布Gemini 3.8 Flash及网络安全版Flash Cyber，并公布主动防御方案；OpenAI推出首个达到关键网络安全门槛的Astra。地缘局势同步升温：美伊冲突再度升级，伊朗空袭美军基地并波及海湾邻国；习近平时隔十年访问埃及，中国寻求在中东扩大影响。模型安全与地缘冲突成为贯穿全天的两大主线。",
+  "tech_briefs": [
+    {
+      "title": "Anthropic发布Claude Fable 5.1/Mythos 5.1",
+      "url": "https://news.smol.ai/issues/26-09-01-claude-mythos-51/",
+      "source": "Smol AI News",
+      "summary": "Anthropic发布Claude Fable 5.1与Mythos 5.1，二者共享基础权重但安全防护与路由不同；编码性能提升，缓存读取价格下降75%至每百万token 0.25美元，输出token增加70%。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "谷歌发布Gemini 3.8 Flash及网络安全版",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
+      "source": "DeepMind Blog",
+      "summary": "谷歌DeepMind推出轻量级模型Gemini 3.8 Flash，以及面向网络安全场景的3.8 Flash Cyber，为企业提供兼顾效率与安全防御的AI推理能力。",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI发布达到关键网络安全门槛的Astra",
+      "url": "https://openai.com/index/path-to-astra",
+      "source": "OpenAI News",
+      "summary": "OpenAI称Astra是其预备框架下首个达到关键网络安全能力阈值的模型，发布时配备更严格的安全防护，以降低潜在风险。",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind推出面向政企的主动网络防御方案",
+      "url": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
+      "source": "DeepMind Blog",
+      "summary": "谷歌DeepMind发布主动网络防御方案，利用AI帮助政府和企业安全团队识别漏洞并自动响应，重点覆盖关键基础设施防护。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [],
+  "editor_note": "",
+  "keywords": []
+}
