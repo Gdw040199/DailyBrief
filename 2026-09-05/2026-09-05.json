@@ -1,0 +1,52 @@
+{
+  "hero_headline": "GPT-6 Astra问世，AI攻防与天气模型同日升级",
+  "daily_overview": "AI领域今日多点突破：OpenAI发布旗舰模型GPT-6 Astra，编码与计算机使用刷新SOTA，按任务成本更低，企业实测效率提升；DeepMind更新WeatherNext 3天气模型并推出Gemini 3.8 Flash网络安全版。科研上，Agent终端环境生成和KV缓存压缩有新思路。时政方面，德国极右翼冲击州政权，卫报揭以军空袭援助车队内情，尼泊尔洪灾暴露水电过度集中的风险。",
+  "tech_briefs": [
+    {
+      "title": "GPT-6 Astra发布：编码与计算机使用刷新SOTA",
+      "url": "https://www.latent.space/p/astra",
+      "source": "Latent Space",
+      "summary": "OpenAI推出旗舰模型GPT-6 Astra，官方称在编程与计算机使用上刷新SOTA。第三方用逾200亿Token实测发现，它可按低于6美元/小时成本充当自动化AI工程师，企业案例中手动修复量减少50%。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "十亿美元布局AI网络防御与安全模型",
+      "url": "https://openai.com/index/daybreak-for-frontline-defenders",
+      "source": "OpenAI News",
+      "summary": "OpenAI启动Daybreak计划，承诺10亿美元扩大关键基础设施获取前沿网络AI与培训；DeepMind同步发布Gemini 3.8 Flash及网络安全版，目标政府与企业主动防御。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind发布WeatherNext 3全球天气模型",
+      "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind发布WeatherNext 3，官方称其为迄今最先进、最准确的全球天气AI模型，旨在提升中长期预报能力并应对极端气候。",
+      "importance": 7
+    },
+    {
+      "title": "论文：把智能体轨迹变成可扩展终端环境",
+      "url": "https://huggingface.co/papers/2609.04148",
+      "source": "HuggingFace Trending Papers",
+      "summary": "针对终端代码智能体缺少真实可执行训练环境的问题，Terminal-Universe将海量agent轨迹转化为高仿真终端环境，可反复生成可验证任务并反馈结果，为后训练持续供数。",
+      "importance": 6
+    },
+    {
+      "title": "Random Attention让KV缓存压缩更简单",
+      "url": "https://huggingface.co/papers/2609.03430",
+      "source": "HuggingFace Trending Papers",
+      "summary": "长思维链使KV缓存成为内存瓶颈，现有压缩方法多依赖逐token重要性评估再驱逐。随机注意力的思路是不做预估，直接随机驱逐部分缓存，为长程推理提供更轻量方案。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "德国极右翼选择党冲击东部州首个州政府",
+      "url": "https://www.bbc.co.uk/news/articles/cvgypkzgy4wo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "德国极右翼政党选择党在萨克森-安哈尔特州选举中力争首次掌握州级权力。若赢得绝对多数，将是二战后极右政党首次在德国一个州执政。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "",
+  "keywords": []
+}
