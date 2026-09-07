@@ -1,0 +1,59 @@
+{
+  "hero_headline": "GPT-6 Astra发布 德国极右翼再赢州选",
+  "daily_overview": "AI前沿掀起发布潮：OpenAI推出旗舰模型GPT-6 Astra，代码与计算机操作能力刷新纪录，按任务成本下降但每token涨价、可监测性降低；DeepMind跟进发布Gemini 3.8 Flash网络安全版与第三代天气模型WeatherNext 3，并向关键基础设施承诺网络防御投入。研究端新论文提出Random Attention，用随机缓存驱逐突破长推理的显存瓶颈。时政方面，德国选择党在萨克森-安哈尔特州选举预计得票44%，几近单独过半，为欧洲极右翼注入动能；美国特使莫斯科磋商后首访基辅，伊朗就油轮遇袭强硬警告，地缘风险高悬。",
+  "tech_briefs": [
+    {
+      "title": "GPT-6 Astra发布 刷新编程与智能体能力",
+      "url": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest",
+      "source": "Latent Space",
+      "summary": "OpenAI推出旗舰模型GPT-6 Astra，在代码生成与电脑操作上取得新SOTA；每token定价约为前代的2.5倍，但按任务完成成本更低，且可监测性下降。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "DeepMind发布Gemini 3.8 Flash及网络安全版",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
+      "source": "DeepMind Blog",
+      "summary": "新版轻量模型Gemini 3.8 Flash面向低延迟推理场景，配套网络安全特化版Flash Cyber用于威胁检测与防御，扩充Google在安全AI领域的产品线。",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind发布第三代全球天气AI模型WeatherNext 3",
+      "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+      "source": "DeepMind Blog",
+      "summary": "全球天气预报AI模型WeatherNext 3自称迄今最先进、最准确，可服务极端天气预警、能源调度等对精度敏感的行业，帮助各方提前应对气候风险。",
+      "importance": 7
+    },
+    {
+      "title": "Random Attention：随机缓存驱逐加速长推理",
+      "url": "https://huggingface.co/papers/2609.03430",
+      "source": "HuggingFace Trending Papers",
+      "summary": "长链式推理令KV缓存成为显存瓶颈。论文提出随机注意力驱逐策略，用随机性规避既有缓存压缩法对token重要度的估计偏差，在接近性能下显著释放显存。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "德国AfD东部州选举得票44% 距过半仅差三席",
+      "url": "https://www.bbc.co.uk/news/articles/cy4zejgz3z9o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "德国选择党在萨克森-安哈尔特州议会选举预计得票44%，保守派仅17%。因未单独过半，能否组阁执政仍是悬念，极右翼或难入主州政府。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "美国特使莫斯科见普京后首访基辅",
+      "url": "https://www.npr.org/2026/09/06/nx-s1-5959728/u-s-envoys-visit-kyiv-for-first-time-after-meeting-putin-in-moscow",
+      "source": "NPR World",
+      "summary": "美国特使库什纳和维特科夫在莫斯科与普京会面一天后，首次前往基辅，就俄乌局势与乌方接触，显示美国外交斡旋在俄乌之间交叉推进。",
+      "importance": 8
+    },
+    {
+      "title": "美国袭击伊朗油轮 伊朗警告更重回应并宣布霍尔木兹新航线",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/9/7/iran-war-live-tehran-to-announce-new-hormuz-shipping-route-in-coming-days?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "伊朗首席谈判代表称，若再遭攻击将作出更严厉回应。德黑兰还计划数日内公布经霍尔木兹海峡的新航运路线，海湾航运风险进一步上升。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "",
+  "keywords": []
+}
