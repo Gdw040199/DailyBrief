@@ -1,5 +1,5 @@
 import { jsonrepair } from "jsonrepair";
-import { runLlm } from "./llm";
+import { runLlm, getBackend } from "./llm";
 import { extractJson } from "./json-util";
 import { SYSTEM_PROMPT_DIGEST_EN, SYSTEM_PROMPT_DIGEST_ZH } from "./prompts";
 import { REPORT_LOCALE } from "../sources/registry";
@@ -86,7 +86,7 @@ function selectRoundRobin(
   return out;
 }
 
-async function callOnce(userPayloadJson: string): Promise<DailyReport> {
+async function callOnce(userPayloadJson: string, model?: string): Promise<DailyReport> {
   // Claude Code CLI's built-in system prompt biases the model toward
   // conversational markdown output. Anchor the format expectation in the
   // user message (instruction recency wins) *and* explicitly demand every
@@ -135,6 +135,7 @@ async function callOnce(userPayloadJson: string): Promise<DailyReport> {
   const { text } = await runLlm({
     systemPrompt: SYSTEM_PROMPT_DIGEST,
     userPrompt,
+    model,
   });
   const cleaned = extractJson(text);
   let parsed: Partial<DailyReport>;
@@ -202,9 +203,29 @@ export async function generateDailyReport(
   let lastErr: unknown;
   const MAX_RETRIES = 3;
 
+  // Fallback model for when the primary model keeps returning empty
+  // responses. deepseek-v4-flash is cheap but intermittently returns
+  // zero-length completions under load; v4-pro costs ~3x but is
+  // dramatically more reliable, and one digest call is a rounding
+  // error either way. LLM_FALLBACK_MODEL overrides the auto choice.
+  const primaryModel = process.env.LLM_MODEL?.trim() || "";
+  const fallbackModel =
+    process.env.LLM_FALLBACK_MODEL?.trim() ||
+    (getBackend() === "deepseek" &&
+    (!primaryModel || primaryModel === "deepseek-v4-flash")
+      ? "deepseek-v4-pro"
+      : "");
+  // First two attempts: primary. Remaining attempts: fallback (if any).
+  const modelForAttempt = (attempt: number): string | undefined =>
+    fallbackModel && attempt >= 2 ? fallbackModel : undefined;
+
   for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+    const model = modelForAttempt(attempt);
+    if (model) {
+      console.warn(`[pipeline] switching to fallback model ${model}`);
+    }
     try {
-      const report = await callOnce(userPayloadJson);
+      const report = await callOnce(userPayloadJson, model);
       return { report, tokensUsed: 0 };
     } catch (err) {
       lastErr = err;
@@ -224,5 +245,46 @@ export async function generateDailyReport(
     }
   }
 
-  throw lastErr;
+  // All attempts failed — degrade gracefully. A skeleton report built
+  // from raw article titles/excerpts keeps the daily run alive (and the
+  // site updated) instead of failing the whole job. Quality is lower but
+  // a degraded report beats no report.
+  const errMsg = lastErr instanceof Error ? lastErr.message : String(lastErr);
+  console.warn(
+    `[pipeline] ALL digest attempts failed (${errMsg}) — building skeleton report from raw articles`,
+  );
+  return { report: buildSkeletonReport(compact), tokensUsed: 0 };
+}
+
+/**
+ * Last-resort report when the LLM is unavailable. Uses raw article
+ * titles + excerpts with zero LLM calls so the pipeline can still
+ * deploy something useful.
+ */
+function buildSkeletonReport(compact: ArticleInput[]): DailyReport {
+  const tech = compact.filter((a) => a.category === "tech");
+  const politics = compact.filter((a) => a.category === "politics");
+
+  const toBrief = (a: ArticleInput, importance: number): BriefItem => ({
+    title: a.title,
+    url: a.url,
+    source: a.source,
+    summary: (a.summary ?? a.excerpt ?? "").slice(0, 200) || a.title,
+    importance,
+  });
+
+  const headline = compact[0]?.title ?? "DailyBrief";
+  const degradedNote =
+    REPORT_LOCALE === "en"
+      ? "LLM generation failed today; showing raw headlines instead. Summaries are excerpt-only."
+      : "今日 LLM 生成失败，以下为原始新闻标题，摘要仅为原文摘录。";
+
+  return {
+    hero_headline: headline,
+    daily_overview: degradedNote,
+    tech_briefs: tech.slice(0, 5).map((a, i) => toBrief(a, 8 - i)),
+    politics_briefs: politics.slice(0, 3).map((a, i) => toBrief(a, 7 - i)),
+    editor_note: degradedNote,
+    keywords: [],
+  };
 }

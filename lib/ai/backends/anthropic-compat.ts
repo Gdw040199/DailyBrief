@@ -59,6 +59,8 @@ export async function runAnthropicCompat(
   cfg: AnthropicCompatConfig,
 ): Promise<LlmRunResult> {
   const { client, model } = getClient(cfg);
+  // Per-call model override (fallback model) wins over env/default.
+  const modelForCall = opts.model?.trim() || model;
   const started = Date.now();
   const inputChars = opts.systemPrompt.length + opts.userPrompt.length;
   const timeoutMs = opts.timeoutMs ?? 180_000;
@@ -66,7 +68,7 @@ export async function runAnthropicCompat(
   try {
     const resp = await client.messages.create(
       {
-        model,
+        model: modelForCall,
         max_tokens: 8192,
         system: opts.systemPrompt,
         messages: [{ role: "user", content: opts.userPrompt }],
@@ -82,7 +84,7 @@ export async function runAnthropicCompat(
     logLlmCall({
       ts: new Date(started).toISOString(),
       backend: cfg.backend,
-      model,
+      model: modelForCall,
       durationMs,
       success: true,
       inputChars,
@@ -97,7 +99,7 @@ export async function runAnthropicCompat(
     logLlmCall({
       ts: new Date(started).toISOString(),
       backend: cfg.backend,
-      model,
+      model: modelForCall,
       durationMs,
       success: false,
       inputChars,

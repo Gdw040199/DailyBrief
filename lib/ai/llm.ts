@@ -32,6 +32,12 @@ export interface LlmRunOptions {
   systemPrompt: string;
   userPrompt: string;
   timeoutMs?: number;
+  /**
+   * Override the model for this single call (ignores LLM_MODEL env and the
+   * backend default). Used for model fallback — e.g. retry a flaky
+   * flash-tier model call against a more reliable model before giving up.
+   */
+  model?: string;
 }
 
 export interface LlmRunResult {

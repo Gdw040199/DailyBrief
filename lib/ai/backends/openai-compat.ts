@@ -78,6 +78,8 @@ export async function runOpenAICompat(
   cfg: OpenAICompatConfig,
 ): Promise<LlmRunResult> {
   const { client, model } = getClient(cfg);
+  // Per-call model override (fallback model) wins over env/default.
+  const modelForCall = opts.model?.trim() || model;
   const started = Date.now();
   const inputChars = opts.systemPrompt.length + opts.userPrompt.length;
   const timeoutMs = opts.timeoutMs ?? 180_000;
@@ -85,7 +87,7 @@ export async function runOpenAICompat(
   try {
     const resp = await client.chat.completions.create(
       {
-        model,
+        model: modelForCall,
         messages: [
           { role: "system", content: opts.systemPrompt },
           { role: "user", content: opts.userPrompt },
@@ -121,7 +123,7 @@ export async function runOpenAICompat(
       logLlmCall({
         ts: new Date(started).toISOString(),
         backend: cfg.backend,
-        model,
+        model: modelForCall,
         durationMs,
         success: false,
         inputChars,
@@ -136,7 +138,7 @@ export async function runOpenAICompat(
     logLlmCall({
       ts: new Date(started).toISOString(),
       backend: cfg.backend,
-      model,
+      model: modelForCall,
       durationMs,
       success: true,
       inputChars,
