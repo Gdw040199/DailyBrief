@@ -69,7 +69,7 @@ export async function runAnthropicCompat(
     const resp = await client.messages.create(
       {
         model: modelForCall,
-        max_tokens: 8192,
+        max_tokens: opts.maxTokens ?? 8192,
         system: opts.systemPrompt,
         messages: [{ role: "user", content: opts.userPrompt }],
       },

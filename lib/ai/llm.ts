@@ -38,6 +38,13 @@ export interface LlmRunOptions {
    * flash-tier model call against a more reliable model before giving up.
    */
   model?: string;
+  /**
+   * Max output tokens for this call (default 8192). Thinking-mode models
+   * (DeepSeek V4 family) burn output budget on internal reasoning before
+   * writing the visible answer — complex prompts need a larger budget or
+   * the response comes back empty.
+   */
+  maxTokens?: number;
 }
 
 export interface LlmRunResult {

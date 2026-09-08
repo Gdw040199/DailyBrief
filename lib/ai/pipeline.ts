@@ -136,6 +136,13 @@ async function callOnce(userPayloadJson: string, model?: string): Promise<DailyR
     systemPrompt: SYSTEM_PROMPT_DIGEST,
     userPrompt,
     model,
+    // The digest is the most complex prompt in the pipeline. Thinking-mode
+    // models (DeepSeek V4) consume output budget on internal reasoning
+    // before writing the answer; 8192 was occasionally fully spent on
+    // reasoning alone, returning an empty response. 32K covers reasoning +
+    // the full JSON report with comfortable headroom (extra budget costs
+    // nothing unless the model actually emits it).
+    maxTokens: 32768,
   });
   const cleaned = extractJson(text);
   let parsed: Partial<DailyReport>;

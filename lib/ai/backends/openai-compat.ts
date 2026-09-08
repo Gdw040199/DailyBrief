@@ -97,8 +97,11 @@ export async function runOpenAICompat(
         // exceeds 4K output tokens once you count Chinese chars + JSON
         // structure, and silent truncation made it through with just 1/16
         // entries parseable. 8192 covers all observed daily batches with
-        // generous headroom. Match the explicit value Anthropic SDK uses.
-        max_tokens: 8192,
+        // generous headroom; thinking-mode models get a bigger budget from
+        // the caller (opts.maxTokens) because reasoning tokens are charged
+        // against this same cap and a fully-reasoned answer otherwise
+        // arrives as an empty string.
+        max_tokens: opts.maxTokens ?? 8192,
         // Don't force JSON mode — not all OpenAI-compat providers support
         // response_format=json_object, and our prompts + jsonrepair already
         // handle the slop.
@@ -112,10 +115,12 @@ export async function runOpenAICompat(
     // the server-side kills a request mid-generation (overloaded, rate-limited,
     // or safety-filtered). Treat these as retryable — the caller should
     // back off and try again rather than bubble up a zero-length response
-    // that downstream JSON parsing will choke on.
+    // that downstream JSON parsing will choke on. finish_reason=length with
+    // empty content means the output budget was fully consumed by internal
+    // reasoning — raise maxTokens, don't just retry.
     if (!text || finishReason === "terminated") {
       const reason = !text
-        ? "empty response"
+        ? `empty response (finish_reason=${finishReason ?? "none"})`
         : `finish_reason=${finishReason}`;
       const err = new Error(`LLM ${reason} — retryable`);
       (err as any).retryable = true;

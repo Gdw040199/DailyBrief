@@ -183,7 +183,10 @@ jobs:
     needs: gate
     if: needs.gate.outputs.should-run == 'true'
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    # 25 min was too tight: enrichment retries (each empty LLM response
+    # costs 60-120s) + digest retries with backoff can legitimately push
+    # past it, killing the run before the skeleton-report fallback fires.
+    timeout-minutes: 40
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}

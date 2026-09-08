@@ -252,6 +252,9 @@ async function runEnrichment(
       systemPrompt,
       userPrompt,
       timeoutMs: 240_000,
+      // 15-item batches occasionally exhaust 8192 on reasoning tokens
+      // (thinking-mode models) and come back empty — give them headroom.
+      maxTokens: 16384,
     });
     const cleaned = extractJson(text);
 
@@ -301,6 +304,7 @@ async function runEnrichment(
         systemPrompt,
         userPrompt,
         timeoutMs: 240_000,
+        maxTokens: 16384,
       });
       const cleaned = extractJson(text);
       let parsed: { summaries?: Array<{ url?: string; summary?: string }> };
