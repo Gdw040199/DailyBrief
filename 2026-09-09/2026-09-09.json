@@ -1,0 +1,74 @@
+{
+  "hero_headline": "人类基因90亿种变异预测图谱今日发布",
+  "daily_overview": "科技与地缘政治同步加速。谷歌发布覆盖人类基因组90亿种单碱基变异的预测图谱，为疾病研究与生物发现提供基础平台；OpenAI披露AI模型可自主运行量子计算实验，并升级图像生成模型；新一代全球天气AI模型同步亮相。地缘方面，美军称摧毁多艘伊朗油轮，美伊对抗明显升温；加拿大总理卡尼推进“远离美国”的贸易转向；美国国务卿鲁比奥访拉美推动禁毒议程。AI能力从分析走向自动实验，大国博弈同步升温，构成当日主线。",
+  "tech_briefs": [
+    {
+      "title": "DeepMind发布人类基因组90亿变异预测图谱",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind推出AlphaGenome Atlas，绘制人类基因组90亿种单碱基DNA变异的分子效应预测图谱，并上线交互式平台，为理解变异影响、加速生物发现提供基础。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI展示AI自主运行量子计算实验",
+      "url": "https://openai.com/index/codex-quantum-computing-experiments",
+      "source": "OpenAI News",
+      "summary": "OpenAI介绍，麻省理工学院研究员借助GPT-5.6 Sol与Codex自主运行量子计算实验，分析结果并校准量子比特，展示大模型在实验科研中的自动化潜力。",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI发布ChatGPT Images 2.5图像模型",
+      "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+      "source": "OpenAI News",
+      "summary": "OpenAI发布ChatGPT Images 2.5，可将创意、草图和参考照片转化为更个性化、精致的图像，称能更准确呈现用户想法。",
+      "importance": 7
+    },
+    {
+      "title": "DeepMind推出全球天气AI模型WeatherNext 3",
+      "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind发布其称为最先进、最准确的全球天气AI模型WeatherNext 3，面向天气预测场景提供更高精度的建模能力。",
+      "importance": 7
+    },
+    {
+      "title": "研究：优化层稀疏度兼顾大模型训练效率",
+      "url": "https://huggingface.co/papers/2609.05275",
+      "source": "HuggingFace Trending Papers",
+      "summary": "论文主张不应随模型规模增大而简单弃用层dropout；通过优化层稀疏度，可加快训练、提升精度，并保持零样本层剪枝鲁棒性，实现大模型训练与推理双高效。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美军称摧毁伊朗油轮回应导弹袭击",
+      "url": "https://www.theguardian.com/us-news/2026/sep/08/iran-underwater-drone-strait-of-hormuz",
+      "source": "The Guardian",
+      "summary": "美国军方表示，伊朗伊斯兰革命卫队导弹袭击美海军军舰未果，美军予以回击并摧毁多艘伊朗油轮，美伊紧张局势明显升级。",
+      "importance": 9
+    },
+    {
+      "title": "加拿大总理卡尼强化减少对美依赖转向",
+      "url": "https://www.nytimes.com/2026/09/08/world/canada/carney-trump-canada-us-trade-war.html",
+      "source": "NYT World",
+      "summary": "加拿大总理卡尼继续推进减少对美依赖的目标；加方对美商品关税已生效，随着重要国际活动临近，其“远离美国”的转向进一步强化。",
+      "importance": 8
+    },
+    {
+      "title": "鲁比奥访拉美促哥伦比亚打击可卡因贸易",
+      "url": "https://www.nytimes.com/2026/09/08/world/americas/rubio-colombia-cocaine.html",
+      "source": "NYT World",
+      "summary": "美国国务卿鲁比奥访问哥伦比亚、厄瓜多尔和秘鲁，计划推动哥新领导人打击可卡因贩运，并同各国商讨贩毒“恐怖分子”与贸易议题。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "AI基因图谱与自动化实验加速科研，美伊冲突与贸易摩擦同步升温。技术突破与地缘博弈交织，如何在开放与安全之间找到平衡，是各国共同考验。",
+  "keywords": [
+    "AlphaGenome Atlas",
+    "量子计算",
+    "基因变异图谱",
+    "AI图像生成",
+    "美伊冲突",
+    "加拿大对美转向",
+    "地缘政治"
+  ]
+}
