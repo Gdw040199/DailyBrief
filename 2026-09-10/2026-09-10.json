@@ -1,0 +1,75 @@
+{
+  "hero_headline": "OpenAI 称 AI 智能体发现纳维-斯托克斯方程奇点",
+  "daily_overview": "OpenAI 宣称，约 1 万个智能体在 88 小时内找到纳维-斯托克斯方程奇点，相关结果可能竞逐第二个千禧年大奖，但学界争议未平；同日发布的企业级模型 GPT-6 Astra 主打更强推理、电脑操作与设计判断。DeepMind 公开 AlphaGenome Atlas，预测 90 亿种人类 DNA 单碱基变异的分子效应；对齐研究者 Paul Christiano 加入 OpenAI 董事会参与安全监督。时政方面，欧盟推出「欧洲优先」公共采购新规，美国将厄瓜多尔贩毒黑帮列为恐怖组织，俄乌无人机战在摩尔多瓦边境造成人员伤亡。AI 加速与地缘摩擦在同一个新闻日内交汇。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI 称 AI 智能体发现纳维-斯托克斯方程奇点",
+      "url": "https://www.latent.space/p/ainews-openai-reports-navier-stokes",
+      "source": "Latent Space",
+      "summary": "OpenAI 称约 1 万个智能体在 88 小时内找到纳维-斯托克斯方程奇点，耗资超 4000 万美元，或角逐千禧年大奖；学界对论证存在广泛争议。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "OpenAI 发布企业级模型 GPT-6 Astra",
+      "url": "https://openai.com/index/gpt-6-astra-next-generation-work",
+      "source": "OpenAI News",
+      "summary": "GPT-6 Astra 是 OpenAI 面向工作场景推出的最新旗舰模型，官方称其具备更强的推理、计算机操作能力，以及更好的写作与设计判断力。",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind 发布 AlphaGenome 基因变异预测图谱",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "source": "DeepMind Blog",
+      "summary": "绘制人类基因组约 90 亿种单核苷酸变异的分子效应预测图谱，评估每个 DNA 字母改变对功能的潜在影响，为疾病研究与精准医学提供大规模参考。",
+      "importance": 8
+    },
+    {
+      "title": "Paul Christiano 加入 OpenAI 董事会",
+      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+      "source": "OpenAI News",
+      "summary": "AI 对齐领域知名研究者 Paul Christiano 加入 OpenAI 基金会董事会和安全与安保委员会，参与安全监督；他在个人声明中表示，这是基于对近期 AI 能力演进判断所作的决定。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "开源 superpowers 框架试图让 AI 编程更可控",
+      "url": "https://github.com/obra/superpowers",
+      "source": "GitHub Trending",
+      "summary": "该项目提出一套智能体技能框架与软件开发方法，把 AI 编程能力拆成可复用、可组合的「技能」，让智能体遵循稳定流程修改代码，降低行为漂移和结果失控风险。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "欧盟推「欧洲优先」公共采购新规",
+      "url": "https://www.dw.com/zh/欧洲优先-：欧盟公布公共采购新规/a-79202934?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "欧盟提出新规，鼓励成员国在政府合同招标时优先考虑欧洲而非中国竞标者，以扶持本土关键产业，并提升其在中美竞争中的战略地位。",
+      "importance": 8
+    },
+    {
+      "title": "美国将厄瓜多尔黑帮列入恐怖组织名单",
+      "url": "https://www.theguardian.com/world/2026/sep/09/ecuador-drugs-gang-terrorist-group-los-tiguerones-rubio",
+      "source": "The Guardian",
+      "summary": "美国把曾闯入电视直播的贩毒团伙「洛斯蒂格罗内斯」列为恐怖组织，称将推动国会拨款予以打击；分析意见认为此类制裁未必能真正伤及其财源。（多家报道）",
+      "importance": 7
+    },
+    {
+      "title": "俄乌无人机战波及摩尔多瓦边境",
+      "url": "https://www.bbc.co.uk/news/articles/cvgyvpxe3yjo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "新一轮无人机袭击在俄罗斯与乌克兰境内均造成人员伤亡，摩尔多瓦边境有两人死亡。战事外溢风险上升，周边安全形势受到更多关注。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "AI 能力叙事与地缘政策收紧同时加速。千禧年级别的声称需要独立验证，贸易保护的成本与安全行动的后果，也应回到事实与规则中评估。",
+  "keywords": [
+    "OpenAI",
+    "纳维-斯托克斯方程",
+    "GPT-6 Astra",
+    "AlphaGenome Atlas",
+    "Paul Christiano",
+    "欧盟采购新规",
+    "厄瓜多尔黑帮",
+    "俄乌冲突"
+  ]
+}
