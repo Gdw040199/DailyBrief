@@ -1,75 +1,74 @@
 {
-  "hero_headline": "OpenAI 智能体声称发现纳维-斯托克斯奇点引争议",
-  "daily_overview": "技术面上，OpenAI 称其智能体集群在 88 小时内报告一项纳维-斯托克斯方程奇点发现，成本逾 4000 万美元，可验证性迅速引发数学界争论；DeepMind 发布 AlphaGenome Atlas，为人类基因组约 90 亿个单碱基变异建立预测图谱；MIT 科技评论指出电力与电网架构正成为 AI 扩张的硬约束，GitHub 趋势榜则由编码智能体技能框架与开源空间情报工具占据。时政方面，青岛一货船起火致至少 25 人死亡，习近平要求全力搜救并严肃追责；以色列称摧毁黎巴嫩南部真主党基地并扩大行动；美国中期选举前，特朗普承诺共和党胜选后向每位成年人发放 5000 美元。",
+  "hero_headline": "OpenAI 声称发现纳维-斯托克斯奇点引争议",
+  "daily_overview": "技术面，OpenAI 称动用约一万个智能体、1300 亿 token，在 88 小时内定位纳维-斯托克斯方程奇点，随即引发数学界质疑；DeepMind 发布 AlphaGenome Atlas，为全基因组单碱基变异绘制效应预测图谱；阿什本数据中心集群再传断电，显示 AI 用电正撞上电网架构瓶颈。时政面，特朗普承诺共和党赢下中期选举后向每位成年人发放 5000 美元，遭跨阵营质疑；青岛一货船起火已致至少 25 人死亡。",
   "tech_briefs": [
     {
-      "title": "OpenAI 称智能体 88 小时发现纳维-斯托克斯奇点",
+      "title": "OpenAI 声称发现纳维-斯托克斯奇点引争议",
       "url": "https://www.latent.space/p/ainews-openai-reports-navier-stokes",
       "source": "Latent Space",
-      "summary": "报道称 OpenAI 动用 Astra-next、约 1 万个智能体与 1300 亿 token，成本逾 4000 万美元，在 88 小时内报告一项纳维-斯托克斯方程奇点发现；数学界随即质疑其可验证性。（多家报道）",
+      "summary": "OpenAI 称以 Astra-next、约 1 万个智能体和 1300 亿 token，在 88 小时内报告定位纳维-斯托克斯方程奇点，耗资逾 4000 万美元；数学界随即质疑其结论是否可验证。（多家报道）",
       "importance": 9
     },
     {
-      "title": "DeepMind 发布全基因组变异预测图谱",
+      "title": "DeepMind 发布全基因组变异效应预测图谱",
       "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
       "source": "DeepMind Blog",
-      "summary": "AlphaGenome Atlas 为人类基因组约 90 亿个单碱基变异建立预测图谱，刻画每个 DNA 字母改变可能产生的分子层面效应，为解读非编码区变异与疾病关联提供参照。",
+      "summary": "AlphaGenome Atlas 为人类基因组约 90 亿个单碱基变异逐一给出分子效应预测，相当于一张可查询的变异后果地图，用于解读非编码区变异与疾病的关联，减少实验筛选成本。",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI 推出金融服务业版 ChatGPT",
+      "url": "https://openai.com/index/introducing-chatgpt-financial-services",
+      "source": "OpenAI News",
+      "summary": "OpenAI 发布面向金融服务业的 ChatGPT，内置金融数据并接入 GPT-6 Astra 模型，用于研究、建模以及生成可直接交付客户的材料，显示其企业垂直化继续推进。",
       "importance": 8
     },
     {
-      "title": "MIT 评论：为 AI 供电本质是架构问题",
+      "title": "AI 数据中心断电频发，供电成架构难题",
       "url": "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem/",
       "source": "MIT Tech Review AI",
-      "summary": "文章指出，2026 年 7 月 22 日弗吉尼亚州阿什本一条输电线路故障，数秒内令全球最大数据中心集群所在电网损失逾 3 吉瓦负荷，认为 AI 扩张的真正瓶颈在电力与电网架构。",
+      "summary": "2026 年 7 月 22 日，弗吉尼亚阿什本一条输电线路故障，数秒内使电网甩掉逾 3 吉瓦负荷；该地是全球最大数据中心集群核心，两年前亦有类似事故，AI 用电正倒逼电网架构改造。",
       "importance": 8
     },
     {
-      "title": "开源项目把真实卫星数据搬进浏览器",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view",
-      "source": "GitHub Trending",
-      "summary": "gods-eye-view 将公开地理空间数据叠加到照片级 3D 地球上，做成浏览器里的「侦察卫星」模拟器，用户可像操控卫星一样调取地面影像与目标信息，适合 OSINT 爱好者与地理信息研究者动手实验。",
-      "importance": 6
-    },
-    {
-      "title": "编码 agent 技能框架 superpowers 登趋势榜",
+      "title": "开源 Agent 技能框架 superpowers",
       "url": "https://github.com/obra/superpowers",
       "source": "GitHub Trending",
-      "summary": "该项目是一套面向 AI 编码 agent 的技能框架与开发方法论：把可复用的技能模块和协作流程拆开组合，让 agent 按规范完成从需求到实现的任务，便于团队沉淀并复用自家研发工作流。",
-      "importance": 6
+      "summary": "GitHub 热榜项目，把可复用的 AI agent 能力封装成标准 skill，并配套一套协作与开发流程，让多个 agent 按规范分工完成编码任务，适合想系统化落地 agent 工作流的团队。",
+      "importance": 7
     }
   ],
   "politics_briefs": [
     {
-      "title": "青岛海域一货船起火，至少 25 人死亡",
-      "url": "https://www.dw.com/zh/中国青岛货船起火-至少25人死亡/a-79215360?maca=chi-rss-chi-all-1127-rdf",
+      "title": "特朗普承诺胜选后向每人发 5000 美元引质疑",
+      "url": "https://www.dw.com/zh/特朗普：共和党赢了就全民发钱-每人5000美金/a-79215349?maca=chi-rss-chi-all-1127-rdf",
       "source": "DW 中文",
-      "summary": "悬挂利比里亚旗的散货船「海洋旋律」号起火，造成至少 25 人死亡。习近平作出重要指示，要求全力搜救，并依法严肃追究责任。",
+      "summary": "为挽救中期选举选情，特朗普承诺若共和党获胜，将向每位美国成年人发放 5000 美元，随即引发有关财政赤字与「买选票」的质疑，部分支持者亦表示怀疑。（多家报道）",
       "importance": 8
     },
     {
-      "title": "特朗普承诺共和党胜选后每人发 5000 美元",
-      "url": "https://www.dw.com/zh/特朗普：共和党赢了就全民发钱-每人5000美金/a-79215349?maca=chi-rss-chi-all-1127-rdf",
+      "title": "利比里亚籍货船起火，至少 25 人死亡",
+      "url": "https://www.dw.com/zh/中国青岛货船起火-至少25人死亡/a-79215360?maca=chi-rss-chi-all-1127-rdf",
       "source": "DW 中文",
-      "summary": "为挽救中期选举选情，特朗普承诺若共和党获胜，将向每位美国成年人发放 5000 美元。该表态立即引发对财政赤字与「买选票」的质疑。",
-      "importance": 7
+      "summary": "悬挂利比里亚旗的散货船「海洋旋律」号起火，至少 25 人死亡；习近平作出重要指示，要求全力搜救并依法严肃追究责任。",
+      "importance": 8
     },
     {
-      "title": "以色列称摧毁黎巴嫩南部真主党基地",
-      "url": "https://www.aljazeera.com/news/2026/9/10/israel-says-it-destroyed-hezbollah-base-in-lebanons-ali-al-taher-ridge?traffic_source=rss",
+      "title": "伊朗称在霍尔木兹海峡捕获美军无人艇",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/iran-claims-to-have-captured-a-us-sail-drone-near-hormuz-strait?traffic_source=rss",
       "source": "Al Jazeera",
-      "summary": "以军称摧毁黎巴嫩阿里·塔希尔岭的真主党基地及南部隧道网络，一周前其刚宣称对该战略要地建立作战控制；联合国维和人员罕见向媒体开放前线。（多家报道）",
+      "summary": "伊朗革命卫队称其海军在霍尔木兹海峡入口处袭击并捕获一艘由美国操作的水面无人艇；该海峡是全球重要石油运输通道，事件可能加剧地区紧张。",
       "importance": 7
     }
   ],
-  "editor_note": "智能体自主科研的宣告与质疑同步到来，独立验证机制比算力更稀缺；时政端突发事故与选举承诺交织，信息核实仍是第一要务。",
+  "editor_note": "AI 竞赛正从模型能力转向可验证性与电力、算力等硬约束；技术叙事之外，选举承诺与地区摩擦提醒，现实政治从未缺席。",
   "keywords": [
-    "OpenAI",
-    "纳维-斯托克斯",
+    "纳维-斯托克斯猜想",
     "AlphaGenome",
-    "AI 编码智能体",
-    "数据中心供电",
-    "以色列与黎巴嫩",
-    "特朗普",
-    "青岛货船火灾"
+    "ChatGPT 金融版",
+    "AI 电力架构",
+    "美国中期选举",
+    "霍尔木兹海峡",
+    "Agent 技能框架"
   ]
 }
