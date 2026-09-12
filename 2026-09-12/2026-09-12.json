@@ -1,0 +1,74 @@
+{
+  "hero_headline": "OpenAI智能体88小时求解流体方程奇点",
+  "daily_overview": "技术侧，OpenAI约一万个智能体在88小时内报告纳维-斯托克斯方程奇点结果；GPT-6 Astra落地Perplexity与Cognition Devin；DeepMind发布AlphaGenome Atlas，绘制基因组90亿个单碱基变异效应图；OpenAI存储平台支撑10亿ChatGPT用户。时政侧，金砖峰会齐聚新德里，战争与能源价格加剧分歧；胡塞武装控制也门红海沿岸并占领丕林岛，沙特输油管道因无人机袭击暂停。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI智能体88小时求解纳维-斯托克斯奇点",
+      "url": "https://www.latent.space/p/ainews-openai-reports-navier-stokes",
+      "source": "Latent Space",
+      "summary": "OpenAI称以约1万个智能体、1300亿token（成本逾4000万美元）在88小时内找到纳维-斯托克斯方程奇点结果，若获验证或成千年奖难题突破，目前尚未经同行评审。",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind发布人类基因组变异预测图谱",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "source": "DeepMind Blog",
+      "summary": "该图谱为人类基因组约90亿个单碱基变异绘制分子效应预测图，可评估任一DNA字母改变对基因调控的影响，为疾病遗传解读与大规模基因组研究提供参照。",
+      "importance": 8
+    },
+    {
+      "title": "GPT-6 Astra加速企业与开发自动化落地",
+      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "source": "OpenAI News",
+      "summary": "Perplexity用GPT-6 Astra撰写沟通、修改软件并监控生产系统，对模型检查频率低于早期；Cognition借此提升Devin自测能力，以减少代码审查、加快交付。（多家报道）",
+      "importance": 7
+    },
+    {
+      "title": "OpenAI披露支撑10亿用户的分布式存储平台",
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+      "source": "OpenAI News",
+      "summary": "OpenAI介绍如何把内部Python库Habitat演进为全球分布式存储平台，支撑超10亿ChatGPT用户、每秒2200万次请求，涉及容量扩展与一致性等工程取舍。",
+      "importance": 7
+    },
+    {
+      "title": "T1：面向终端长程任务的强化学习智能体",
+      "url": "https://huggingface.co/papers/2609.11042",
+      "source": "HuggingFace Trending Papers",
+      "summary": "论文提出T1：总参数122B的MoE模型，用强化学习训练终端shell长程任务智能体，可在云沙箱真实shell中连续执行300次以上工具调用，指向编码与科学发现的自动化。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "金砖峰会新德里登场，内部分歧与扩员并行",
+      "url": "https://www.nytimes.com/2026/09/11/world/asia/brics-meeting-summit-delhi.html",
+      "source": "NYT World",
+      "summary": "中国、俄罗斯、印度、伊朗等金砖国家领导人本周末在新德里举行峰会。报道称战争与能源价格上涨令成员国分歧扩大，但新兴国家仍持续寻求加入这一机制。",
+      "importance": 8
+    },
+    {
+      "title": "胡塞武装宣称控制红海沿岸并占领丕林岛",
+      "url": "https://www.bbc.co.uk/news/articles/c23x72yx2rvo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "受伊朗支持的胡塞武装宣称在也门取得重大进展，控制红海沿岸并占领战略岛屿丕林岛；沙特在无人机袭击后暂停一条重要输油管道，红海航运通道风险上升。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "澳前总理警告：对美同盟或把澳拖入对华冲突",
+      "url": "https://www.theguardian.com/australia-news/2026/sep/12/rise-of-china-is-australia-us-alliance-still-worth-the-risk-kevin-rudd",
+      "source": "The Guardian",
+      "summary": "澳大利亚前总理陆克文及专家警告，随着中国崛起，澳大利亚日益嵌入美国战争机器，可能被盟友拖入对华冲突，并质疑澳美同盟是否仍值得承担这一风险。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "AI的突破性宣称与地缘冲突并存。对未经同行评审的成果宜保持审慎，多关注可验证的工程进展。",
+  "keywords": [
+    "纳维-斯托克斯方程",
+    "GPT-6 Astra",
+    "AlphaGenome",
+    "金砖峰会",
+    "红海航运",
+    "AI智能体",
+    "分布式存储"
+  ]
+}
