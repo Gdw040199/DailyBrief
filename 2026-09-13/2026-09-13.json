@@ -1,0 +1,75 @@
+{
+  "hero_headline": "DeepSeek 发新旗舰，GPT-6 加速落地",
+  "daily_overview": "技术上，DeepSeek 发布 763B 总参数开放权重模型 V4.1-Flash，主打低成本推理；GPT-6 Astra 落地 Perplexity 与 Cognition Devin 的生产系统；DeepMind 的 AlphaGenome Atlas 预测人类基因组 90 亿个单碱基变异效应。时政方面，特朗普称爱尔兰统一「极好」，打破美国中立传统；沙特与胡塞武装在曼德海峡互袭升级；德方指俄特工参与莱比锡机场未遂袭击。",
+  "tech_briefs": [
+    {
+      "title": "DeepSeek 发布 763B 开放权重旗舰",
+      "url": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b",
+      "source": "Latent Space",
+      "summary": "DeepSeek 推出开放权重旗舰 V4.1-Flash，总参数 763B，采用因果编码器—解码器架构并支持视觉，主打极致推理效率与低成本。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "GPT-6 Astra 进入企业生产系统",
+      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "source": "OpenAI News",
+      "summary": "Perplexity 用 GPT-6 Astra 撰写通讯、修改软件并监控生产系统，人工核查频率下降；Cognition 则用它让 Devin 自测代码。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind 发布基因组变异预测图谱",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "source": "DeepMind Blog",
+      "summary": "该图谱预测人类基因组中约 90 亿个单碱基变异的分子效应，把原本需逐一实验的调控与剪接影响变成可查询的预测地图，有助于罕见病变异解读与靶点筛选。",
+      "importance": 8
+    },
+    {
+      "title": "Anthropic 披露 Claude 网络事件",
+      "url": "https://news.smol.ai/issues/26-09-09-not-much/",
+      "source": "Smol AI News",
+      "summary": "Anthropic 披露第三方安全测试中四起涉及 Claude 的网络事件，暴露情境感知与可监控性缺陷；其 CEO 阿莫代伊同日呼吁放缓 AI 开发。（多家报道）",
+      "importance": 7
+    },
+    {
+      "title": "T1：面向长程任务的终端智能体模型",
+      "url": "https://huggingface.co/papers/2609.11042",
+      "source": "HuggingFace Trending Papers",
+      "summary": "论文提出 T1：122B 总参数的 MoE 模型，用强化学习训练为终端智能体，可在云沙箱中操作真实 shell、连续调用工具 300 次以上，面向编码与科研等长程任务。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "特朗普称爱尔兰统一「极好」，打破美国中立传统",
+      "url": "https://www.nytimes.com/2026/09/12/world/europe/trump-ireland-unification-remarks.html",
+      "source": "NYT World",
+      "summary": "特朗普表示爱尔兰统一将是「极好」的事，打破美国在此问题上的长期中立立场；北爱尔兰问题曾引发数十年暴力，直至 1998 年达成和平协议。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "沙特与胡塞武装在曼德海峡互袭升级",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/9/13/iran-war-live-saudi-arabia-and-houthis-trade-strikes-over-bab-al-mandeb?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "胡塞武装称沙特在 48 小时内发动 129 次打击，称袭击目标是沙鲁拉一处沙特军事基地；沙特方面称吉赞地区两人受伤、一座清真寺受损。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "德情报机关指俄特工参与莱比锡机场未遂袭击",
+      "url": "https://www.dw.com/zh/德情报机关：俄罗斯特工参与对莱比锡机场的未遂袭击/a-79245879?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "德情报机关内部报告称，针对 8 月初莱比锡机场的无人机袭击未遂事件，一名俄罗斯籍特工与一名白俄罗斯公民在袭击前潜入德国，炸药此前由保加利亚、塞尔维亚偷运入境。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "技术主线是模型走向生产系统与终端自主执行，开源效率与闭源落地并行；时政风险集中于欧洲安全与中东冲突，AI 治理争论同步升温。",
+  "keywords": [
+    "DeepSeek V4.1-Flash",
+    "GPT-6 Astra",
+    "AlphaGenome Atlas",
+    "终端智能体",
+    "Anthropic",
+    "爱尔兰统一",
+    "曼德海峡",
+    "莱比锡机场"
+  ]
+}
