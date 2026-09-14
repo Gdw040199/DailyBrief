@@ -1,0 +1,75 @@
+{
+  "hero_headline": "DeepSeek 发布开源旗舰，瑞典大选难分胜负",
+  "daily_overview": "技术侧，DeepSeek 以 763B 参数的 v4.1-Flash 主打极致推理效率，开源社区用纯 C 引擎流式加载 MoE 权重压低本地门槛；GPT-6 Astra 已被 Perplexity、Cognition 接入生产流程，人工复核明显减少；DeepMind 的 AlphaGenome Atlas 覆盖约 90 亿个单碱基变异。时政侧，瑞典大选两阵营票数胶着，俄军无人机袭击乌克兰火车站时美国前中情局局长彼得雷乌斯在场，BRICS 峰会在印度举行而美国缺席，阿曼宣布推迟霍尔木兹海峡相关谈判。",
+  "tech_briefs": [
+    {
+      "title": "DeepSeek 发布 v4.1-Flash 开放权重旗舰",
+      "url": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b",
+      "source": "Latent Space",
+      "summary": "DeepSeek 发布开放权重旗舰 v4.1-Flash，总参数 763B，采用新型因果编码器—解码器架构并支持视觉，主打极低推理成本，有观点称其规格本应叫 v5。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "GPT-6 Astra 进入企业生产系统",
+      "url": "https://openai.com/index/cognition-devin-testing-with-astra",
+      "source": "OpenAI News",
+      "summary": "Perplexity 用 GPT-6 Astra 撰写沟通内容、改动软件并监控生产系统，Cognition 用其提升 Devin 自测能力，双方称人工复核与代码审查量明显减少。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind 发布 AlphaGenome 全基因组变异图谱",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "source": "DeepMind Blog",
+      "summary": "AlphaGenome Atlas 绘制了人类基因组约 90 亿个单碱基变异的分子效应预测图，研究者可据此快速判断任一 DNA 单字母改动的潜在影响，为遗传病研究与靶点筛选提供通用参考。",
+      "importance": 8
+    },
+    {
+      "title": "纯 C 引擎 colibri：本地跑 MoE 大模型",
+      "url": "https://github.com/JustVugg/colibri",
+      "source": "GitHub Trending",
+      "summary": "colibri 是用纯 C 编写的极简推理引擎，零第三方依赖，把 MoE 专家权重按需从磁盘流式加载，使显存内存有限的消费级硬件也能运行混合专家大模型，便于本地离线部署。",
+      "importance": 6
+    },
+    {
+      "title": "T1：面向终端长时程任务的 122B 智能体",
+      "url": "https://huggingface.co/papers/2609.11042",
+      "source": "HuggingFace Trending Papers",
+      "summary": "T1 是 122B 总参数的混合专家终端智能体，经强化学习训练可在云沙箱中操作真实 shell、支持 300 次以上工具调用，面向编码与科学发现等长时程任务。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "瑞典大选胶着，中左翼阵营微幅领先",
+      "url": "https://www.theguardian.com/world/live/2026/sep/13/sweden-general-election-social-democrats-magdalena-sweden-democrats-ulf-kristersson-andersson-far-right-europe-latest-news-updates",
+      "source": "The Guardian",
+      "summary": "瑞典大选计票显示中左翼与中右翼阵营得票基本持平，选举机构部分计票预测中左翼反对派将获一席多数，反移民的瑞典民主党有望首次进入政府。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "俄无人机袭乌火车站，彼得雷乌斯在场",
+      "url": "https://www.nytimes.com/2026/09/13/world/europe/ukraine-petraeus-russian-strike.html",
+      "source": "NYT World",
+      "summary": "乌克兰官员称，俄方无人机击中一处火车站时，美国中情局前局长彼得雷乌斯正在站内；另一列载有英国前首相约翰逊等政要的列车刚刚驶离，约翰逊谴责此次袭击。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "BRICS 年度峰会在印度举行，美国缺席",
+      "url": "https://www.npr.org/2026/09/13/nx-s1-5967045/world-leaders-gathered-for-the-annual-brics-summit-here-are-the-takeaways",
+      "source": "NPR World",
+      "summary": "印度主办的 BRICS 年度峰会汇集 28 国领导人，包括中国与伊朗总统，美国未派代表出席；扩容后的内部协调与峰会成果成为外界关注焦点。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "技术侧关注点正从模型能力转向落地成本与工程承载力，时政线则由选举、冲突与多边博弈交织，后续信息仍需交叉验证。",
+  "keywords": [
+    "DeepSeek v4.1-Flash",
+    "GPT-6 Astra",
+    "AlphaGenome",
+    "MoE 推理引擎",
+    "长时程智能体",
+    "瑞典大选",
+    "俄乌冲突",
+    "BRICS 峰会"
+  ]
+}
