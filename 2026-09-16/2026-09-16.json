@@ -1,0 +1,75 @@
+{
+  "hero_headline": "谷歌发布 Gemini 3.8 Live，AEF-1 评估标准出炉",
+  "daily_overview": "技术侧，谷歌 DeepMind 推出 Gemini 3.8 Live 与扩展思考版本两款实时对话模型，称智能与并行推理大幅升级；DeepSeek 开源 7630 亿参数旗舰 V4.1-Flash，主打推理效率与低成本；GPT-6 Astra 已进入 Perplexity 与 Cognition 的生产流程，承担撰写沟通、改动软件与监控系统等工作；xAI、OpenAI、Anthropic 共同签署面向第三方评估机构的 AEF-1 标准；阿里开源确定性流水线加 LLM Agent 的代码审查工具。时政侧，中国国安部发文强调 AI 带来的政治与意识形态安全风险；加拿大以万亿美元规模招商并转向欧盟；也门冲突升温，沙特称拦截一架飞往麦加的无人机。",
+  "tech_briefs": [
+    {
+      "title": "谷歌发布 Gemini 3.8 Live 与扩展思考版本",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+      "source": "DeepMind Blog",
+      "summary": "谷歌 DeepMind 发布 Gemini 3.8 Live 与 Gemini 3.8 Live Extended Thinking 两款实时对话模型，称其在智能水平与并行推理上大幅升级，人机协作更自然（多家报道）。",
+      "importance": 9
+    },
+    {
+      "title": "DeepSeek 推出 V4.1-Flash 开源旗舰模型",
+      "url": "https://news.smol.ai/issues/26-09-10-not-much/",
+      "source": "Smol AI News",
+      "summary": "DeepSeek 发布开放权重旗舰模型 V4.1-Flash，采用 7630 亿总参数的因果编码器—解码器架构，主打极致推理效率与低使用成本，延续其开源路线。",
+      "importance": 9
+    },
+    {
+      "title": "GPT-6 Astra 进入 Perplexity 与 Devin 生产流程",
+      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "source": "OpenAI News",
+      "summary": "Perplexity 用 GPT-6 Astra 撰写沟通内容、改动软件并监控生产系统，人工复核频率明显低于早期模型；Cognition 也让 Devin 借助该模型自测代码（多家报道）。",
+      "importance": 8
+    },
+    {
+      "title": "xAI、OpenAI、Anthropic 共签 AEF-1 评估标准",
+      "url": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for",
+      "source": "Latent Space",
+      "summary": "面向第三方评估机构的 AEF-1 标准出台，xAI、OpenAI 与 Anthropic 三方共同签署认可。报道同时提到，前沿模型的评估推进节奏正在加快。",
+      "importance": 8
+    },
+    {
+      "title": "阿里开源混合架构代码审查工具",
+      "url": "https://github.com/alibaba/open-code-review",
+      "source": "GitHub Trending",
+      "summary": "阿里开源代码审查工具，把确定性流水线与 LLM Agent 组合成混合架构，可给出精确到行的评论，内置空指针、线程安全等多语言规则集，已在阿里内部大规模验证，适合接入 CI 做自动化评审。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "中国国安部发文警告人工智能安全风险",
+      "url": "https://www.dw.com/zh/北京警告人工智能风险-专家：政治安全是其首要关切/a-79280247?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "中国国安部部长陈一新发表人工智能安全文章，强调敌对势力利用 AI 对华实施舆论战、认知战，直接威胁政治安全、制度安全与意识形态安全；受访专家认为政治安全是其首要关切。",
+      "importance": 8
+    },
+    {
+      "title": "也门冲突升温，沙特称拦截飞往麦加无人机",
+      "url": "https://www.aljazeera.com/news/2026/9/16/saudi-led-coalition-intercepts-drone-headed-for-mecca?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "沙特领导的联军称拦截一架飞往麦加的无人机，强调朝圣者安全是红线；胡塞武装则报告沙特空袭造成伤亡，双方互相指责，也门境内战事仍激烈（多家报道）。",
+      "importance": 8
+    },
+    {
+      "title": "加拿大推万亿美元招商计划并转向欧盟",
+      "url": "https://www.bbc.co.uk/news/articles/cmq8jdgel128o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "加拿大首届投资峰会推出总额 1 万亿美元的招商计划，提供逾 160 个项目，并在与美国贸易战持续的背景下将目光转向欧盟。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "模型迭代与评估标准同步推进，能力落地的同时把验证责任推给第三方；AI 安全议题正从技术圈讨论进入国家安全叙事。",
+  "keywords": [
+    "Gemini 3.8 Live",
+    "DeepSeek V4.1-Flash",
+    "GPT-6 Astra",
+    "AEF-1 标准",
+    "代码审查",
+    "AI 安全",
+    "也门冲突",
+    "加拿大投资峰会"
+  ]
+}
