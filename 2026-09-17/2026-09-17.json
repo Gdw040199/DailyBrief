@@ -1,0 +1,75 @@
+{
+  "hero_headline": "Gemini 3.8 上线，美联储三年来首次加息",
+  "daily_overview": "科技侧，DeepMind 发布 Gemini 3.8 Live 与扩展思考版本；OpenAI 公开模型错位报告框架并附六份异常行为报告；TypeSafe 推出只做决策、分类、路由与评分的「系统一模型」Jev，宣称速度提升百倍、成本大幅下降；阿里与 Cloudflare 分别开源代码审查与安全审计的 Agent 工具，DeepMind 另发布 AlphaGenome Atlas 基因变异预测图谱。时政侧，美联储三年来首次加息；欧盟邀加拿大成为首个「准成员」，特朗普表达不满；特朗普称美国接近结束对伊朗冲突。",
+  "tech_briefs": [
+    {
+      "title": "DeepMind 推出 Gemini 3.8 Live 双版本",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 在官方博客上线 Gemini 3.8 Live 与 Gemini 3.8 Live Extended Thinking 两个版本，后者具备扩展思考能力，官方尚未披露更多参数与开放范围细节。",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI 发布模型错位追踪与披露框架",
+      "url": "https://openai.com/index/model-misalignment-reporting-framework",
+      "source": "OpenAI News",
+      "summary": "OpenAI 公布一套用于追踪、调查与披露模型错位（misalignment）的框架，并同时发布六份关于模型意外或令人担忧行为的报告，试图把安全披露流程化。",
+      "importance": 8
+    },
+    {
+      "title": "TypeSafe 推出百倍速「系统一模型」Jev",
+      "url": "https://www.latent.space/p/ainews-jev-a-system-one-model-that",
+      "source": "Latent Space",
+      "summary": "TypeSafe 发布 Jev，定位为只负责决策、分类、路由与评分的「系统一模型」，据称比小型前沿大模型快 100 倍以上、成本低 200 倍以上，适合承担流水线中的轻量判断环节。",
+      "importance": 8
+    },
+    {
+      "title": "阿里开源大规模验证的代码审查工具",
+      "url": "https://github.com/alibaba/open-code-review",
+      "source": "GitHub Trending",
+      "summary": "阿里巴巴开源已在内部大规模验证的代码审查工具：确定性流水线负责规则检查，LLM Agent 处理语义问题，可输出精确到行的评论，并内置 NPE、线程安全等多语言规则集。",
+      "importance": 7
+    },
+    {
+      "title": "DeepMind 发布 AlphaGenome Atlas 预测图谱",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 发布 AlphaGenome Atlas，为人类基因组中约 90 亿个单碱基变异绘制分子效应预测图谱，可用于解读非编码区变异与疾病的关联，属基础科研工具类进展。",
+      "importance": 8
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美联储三年来首次加息",
+      "url": "https://www.bbc.co.uk/news/articles/cw4gmlyvj422o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "美联储宣布加息，为三年来首次，据报道该决定为一致通过，未采纳总统特朗普此前要求的降息，利率后续路径仍待观察。",
+      "importance": 9
+    },
+    {
+      "title": "欧盟邀加拿大担任首个「准成员」",
+      "url": "https://www.nytimes.com/2026/09/16/world/canada/eu-canada-associate-member-trade.html",
+      "source": "NYT World",
+      "summary": "欧盟向加拿大提出给予其首个「准成员」地位，欧盟高层支持加拿大总理的相关诉求，意在美方压力下深化双边关系；特朗普对此表达不满，计划仍面临重大障碍。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "特朗普称美国接近结束对伊朗冲突",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/9/17/iran-war-live-trump-says-us-nearing-end-of-war-claims-tehran-direct-talks?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "美国总统特朗普表示，美国正接近结束与伊朗的冲突，并声称已与德黑兰展开直接谈判，相关表态出现在中东局势的滚动报道中。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "技术与地缘两条线同时收紧：模型能力与安全披露并行推进，而利率、盟友关系与中东战事仍在重塑外部环境。",
+  "keywords": [
+    "Gemini 3.8",
+    "模型错位",
+    "Jev",
+    "开源代码审查",
+    "AlphaGenome",
+    "美联储加息",
+    "欧盟准成员",
+    "伊朗冲突"
+  ]
+}
