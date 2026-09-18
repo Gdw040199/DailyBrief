@@ -1,0 +1,75 @@
+{
+  "hero_headline": "AI 巨头密集发布，时政与安全争议同步升温",
+  "daily_overview": "DeepMind 发布 AlphaGenome Atlas，为人类基因组 90 亿个单字母变异提供分子效应预测图谱，并更新 Gemini 3.8 Live；OpenAI 公布模型失准报告框架与六份异常行为报告。DeepSeek 推出开源权重旗舰 V4.1-Flash，主打极低推理成本；阿里开源企业级代码审查工具，工具链正转向「可验证、可追责」。时政方面，联合国专家称有理由相信美国对伊朗打击构成战争罪；美众议院通过制裁俄油买家法案，北京批评长臂管辖。",
+  "tech_briefs": [
+    {
+      "title": "DeepMind 发布全基因组变异预测图谱",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "source": "DeepMind Blog",
+      "summary": "AlphaGenome Atlas 覆盖人类基因组约 90 亿个单字母 DNA 变异，预测其分子层面效应，可用于解读非编码区变异与疾病关联，把基因组解释能力扩展到全图谱尺度。",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind 发布 Gemini 3.8 Live 系列",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 推出 Gemini 3.8 Live 与 3.8 Live Extended Thinking 两个版本，前者面向实时交互，后者支持更长的思考过程，具体能力与开放范围见官方博客。",
+      "importance": 7
+    },
+    {
+      "title": "OpenAI 公布模型失准报告框架",
+      "url": "https://openai.com/index/model-misalignment-reporting-framework",
+      "source": "OpenAI News",
+      "summary": "OpenAI 发布用于追踪、调查与披露模型失准的框架，并同时公布六份关于模型异常或令人担忧行为的报告，试图把失准事件的发现与公开流程制度化。",
+      "importance": 8
+    },
+    {
+      "title": "DeepSeek 发布开源权重模型 V4.1-Flash",
+      "url": "https://news.smol.ai/issues/26-09-10-not-much/",
+      "source": "Smol AI News",
+      "summary": "据 Smol AI News 报道，DeepSeek 推出开源权重旗舰模型 V4.1-Flash，采用 763B 总参数的因果编码器-解码器架构，主打极致推理效率与低成本。",
+      "importance": 8
+    },
+    {
+      "title": "阿里开源企业级代码审查工具",
+      "url": "https://github.com/alibaba/open-code-review",
+      "source": "GitHub Trending",
+      "summary": "阿里内部大规模验证过的代码审查工具，采用确定性流水线加 LLM Agent 的混合架构：规则负责精确匹配，模型补充语义判断，可输出精确到行的评论，内置空指针、线程安全等多语言规则集，便于接入 CI。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "联合国专家：有理由相信美军打击伊朗构成战争罪",
+      "url": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "联合国专家表示，有理由相信美国对伊朗的打击构成战争罪。美方尚未承认今年 2 月对米纳布一所小学和拉梅尔德一处体育设施的致命袭击。",
+      "importance": 8
+    },
+    {
+      "title": "美国会通过制裁俄油买家法案 北京批长臂管辖",
+      "url": "https://www.dw.com/zh/美国会通过法案制裁俄油买家-北京批长臂管辖/a-79311051?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "美国众议院批准一项对俄施压的制裁法案，除制裁俄罗斯企业与个人外，还将对俄罗斯油气主要买家加征高额关税；中方批评此举属于长臂管辖。",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI 就 AI 安全立法向澳政府提交意见",
+      "url": "https://www.theguardian.com/australia-news/live/2026/sep/18/labor-migration-plan-tony-burke-coalition-qantas-renewable-energy-ntwnfb",
+      "source": "The Guardian",
+      "summary": "澳大利亚新闻直播报道，OpenAI 向工党政府提交意见书，警告全球安全威胁，建议澳方放慢 AI 应用步伐并完善安全法律；总理阿尔巴尼斯将在美国会见苹果 CEO 库克。",
+      "importance": 6
+    }
+  ],
+  "editor_note": "技术侧发布密集，能力之外的可信度问题被同步摆上台面；时政层面制裁与冲突仍在拉扯，AI 治理正进入立法与问责的实操阶段。",
+  "keywords": [
+    "AlphaGenome",
+    "Gemini 3.8",
+    "模型失准报告",
+    "代码审查 Agent",
+    "DeepSeek V4.1-Flash",
+    "俄油制裁",
+    "长臂管辖",
+    "AI 安全立法"
+  ]
+}
