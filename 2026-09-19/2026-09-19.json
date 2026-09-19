@@ -1,0 +1,75 @@
+{
+  "hero_headline": "DeepSeek 发布低本推理模型，美丹达成格陵兰安全协议",
+  "daily_overview": "技术侧，DeepSeek 发布 V4.1-Flash，以 7630 亿参数与更激进的 KV cache 压缩主打超低推理成本；OpenAI 公布模型失准的追踪与披露框架，并附六份异常行为报告；DeepMind 推出覆盖人类基因组约 90 亿个单碱基变异的 AlphaGenome Atlas；阿里开源大规模代码审查工具。AI 智能体的可靠性与治理成为主线。时政侧，美丹达成北极安全协议，美国获准扩大在格陵兰的军事存在；被遣返至赤道几内亚的美国移民在酒店内遭捆绑殴打，引发人权警告；特朗普宣布禁止 CNN 与 Politico 进入白宫。",
+  "tech_briefs": [
+    {
+      "title": "DeepSeek 发布 V4.1-Flash，主打极致推理效率",
+      "url": "https://huggingface.co/papers/2609.19969",
+      "source": "HuggingFace Trending Papers",
+      "summary": "长程智能体让模型负载愈发输入密集，prefill 与 KV cache 持续挤占 HBM 和存储容量。V4.1-Flash 以 7630 亿参数和更激进的 KV cache 压缩，降低长上下文服务的显存与成本门槛。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI 发布模型失准追踪与披露框架",
+      "url": "https://openai.com/index/model-misalignment-reporting-framework",
+      "source": "OpenAI News",
+      "summary": "OpenAI 公布一套用于追踪、调查与披露模型失准的框架，并同时发布六份关于模型意外或令人担忧行为的报告，试图把失准事件纳入可复现的通报流程。",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind 推出 AlphaGenome Atlas 变异图谱",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "source": "DeepMind Blog",
+      "summary": "AlphaGenome Atlas 对人类基因组中约 90 亿个单碱基变异逐一给出分子效应预测，形成可查询的变异影响地图，为解读非编码区致病位点提供参考。",
+      "importance": 8
+    },
+    {
+      "title": "阿里开源大规模代码审查工具 open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "source": "GitHub Trending",
+      "summary": "阿里开源经内部大规模实战检验的代码审查工具，采用确定性流水线加 LLM Agent 的混合架构，可输出行级精确评论，并内置 NPE 等多语言规则集，适合高吞吐审查场景。",
+      "importance": 8
+    },
+    {
+      "title": "Jev 定位为做选择题的决策模型，已有落地用例",
+      "url": "https://x.com/mvanhorn/status/2100784142850097482",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "Jev 不聊天，只输出「是否垃圾邮件」「该调哪个工具」这类可直接执行的判定，常用作智能体循环中的决策与评估组件；另有实践以 Jev 搭建 harness，解决 agent 循环中途中断的问题。（多家报道）",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美丹达成北极安全协议，美可扩大格陵兰军事存在",
+      "url": "https://www.theguardian.com/world/2026/sep/18/united-states-denmark-greenland-security",
+      "source": "The Guardian",
+      "summary": "特朗普宣布美国与丹麦及格陵兰领导人达成北极安全协议，美方获准扩大在格陵兰的军事存在；丹麦与格陵兰表示协议保留了其主权与自决权。",
+      "importance": 8
+    },
+    {
+      "title": "被遣返至赤道几内亚的移民在酒店遭捆绑殴打",
+      "url": "https://www.theguardian.com/us-news/2026/sep/18/us-men-deported-hotel-equatorial-guinea",
+      "source": "The Guardian",
+      "summary": "律师与目击者称，被特朗普政府遣返至赤道几内亚的男子在巴米酒店内遭捆绑、蒙头并殴打；人权组织警告当地拘留条件恶劣，赤道几内亚政府是美方遣返计划的合作方。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "特朗普称将禁止 CNN 与 Politico 进入白宫",
+      "url": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "特朗普表示将禁止 CNN 和 Politico 进入白宫。他此前与美国媒体长期关系紧张，此举被视为对主流媒体采访准入的进一步收紧。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "推理降本与智能体治理同日推进，格陵兰、遣返与媒体准入等政治摩擦同步发酵，技术与政治的相互嵌入比以往更明显。",
+  "keywords": [
+    "DeepSeek-V4.1-Flash",
+    "KV cache 压缩",
+    "模型失准",
+    "代码审查",
+    "AlphaGenome Atlas",
+    "格陵兰安全协议",
+    "赤道几内亚遣返",
+    "白宫媒体准入"
+  ]
+}
