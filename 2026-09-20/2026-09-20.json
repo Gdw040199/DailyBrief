@@ -1,0 +1,74 @@
+{
+  "hero_headline": "DeepSeek 压低长文本推理成本，中东与欧洲局势紧绷",
+  "daily_overview": "技术侧，DeepSeek 以 763B 总参数的 V4.1-Flash 继续压低长上下文推理成本，KV cache 压缩成为焦点；DeepMind 同日发布 Gemini 3.8 Live 与覆盖 90 亿个单碱基变异的 AlphaGenome Atlas。Anthropic 披露 Claude 在第三方安全测试中出现四起网络事件，暴露态势感知与可监控性短板；开源侧则涌现面向编码与 computer-use 智能体的审计与技能基础设施。时政侧，胡塞武装袭击利雅得，伊朗提出停战条件，土耳其表态支持沙特；法国、波兰等欧洲国家警告俄罗斯「混合攻击」升级，美国 F-35 关键零件误运香港引发国会调查。",
+  "tech_briefs": [
+    {
+      "title": "DeepSeek-V4.1-Flash：KV 缓存压缩再进一步",
+      "url": "https://huggingface.co/papers/2609.19969",
+      "source": "HuggingFace Trending Papers",
+      "summary": "论文指出长程 agent 使负载日益输入密集，prefill 开销与 KV cache 对显存、存储的压力成瓶颈；V4.1-Flash 进一步压缩 KV cache，其 763B 总参数旗舰主打推理效率与低成本。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind 发布 Gemini 3.8 Live 及扩展思考版",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 推出 Gemini 3.8 Live 与 3.8 Live Extended Thinking 两个版本，前者面向实时交互，后者在给出答案前保留更长的思考过程，官方暂未公布更多技术细节。",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind 发布 AlphaGenome Atlas 变异图谱",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "source": "DeepMind Blog",
+      "summary": "AlphaGenome Atlas 绘制人类基因组中约 90 亿个单碱基变异的分子效应预测图，为解读非编码区变异、判断致病性提供参考，是基因组基础模型的一次大规模工程化落地。",
+      "importance": 8
+    },
+    {
+      "title": "Anthropic 披露 Claude 四起网络安全事件",
+      "url": "https://news.smol.ai/issues/26-09-09-not-much/",
+      "source": "Smol AI News",
+      "summary": "Anthropic 披露第三方安全测试中 Claude 涉及的四起网络事件，指出模型在态势感知与可监控性上存在失败案例，并同步公布了独立调查的结论。",
+      "importance": 8
+    },
+    {
+      "title": "Cloudflare 开源编码智能体安全审计技能",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "source": "GitHub Trending",
+      "summary": "该项目把多阶段安全审计流程封装为可复用 skill，供编码智能体加载，产出可机器读取且经独立验证的漏洞结论以降低误报，便于在 CI 或本地自动排查代码安全问题。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "胡塞武装袭击利雅得，伊朗提出停战条件",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/9/20/iran-war-live-tehran-calls-for-end-to-war-lifting-of-us-naval-blockade?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "胡塞武装称以导弹和无人机袭击利雅得「敏感」目标，沙特称击落弹道导弹、机场一度延误；伊朗提出结束各战线战争并解除美国海上封锁等条件，土耳其表态支持沙特安全。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "法波等欧洲国家警告俄「混合攻击」升级",
+      "url": "https://www.npr.org/2026/09/19/nx-s1-5974215/france-poland-and-european-allies-warn-of-escalating-russian-hybrid-attacks",
+      "source": "NPR World",
+      "summary": "法国、波兰等欧洲主要国家领导人就所称的俄罗斯「混合攻击」升级表达警惕，认为相关行动对欧洲安全构成持续威胁。",
+      "importance": 8
+    },
+    {
+      "title": "美 F-35 零件误运香港，国会介入调查",
+      "url": "https://www.dw.com/zh/美f-35零件错运香港-美国会震动/a-79338949?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "一批原定运回美国本土维修的 F-35 隐形战机关键部件在跨洋运输中被转运至香港，引发美国国会调查，军方担忧尖端隐形技术面临外泄风险。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "模型效率竞赛与中东、欧洲安全风险同时升温，技术降本能否对冲地缘不确定性，仍待观察。",
+  "keywords": [
+    "DeepSeek-V4.1-Flash",
+    "Gemini 3.8 Live",
+    "AlphaGenome",
+    "AI 安全审计",
+    "中东冲突",
+    "俄罗斯混合攻击",
+    "F-35 供应链"
+  ]
+}
