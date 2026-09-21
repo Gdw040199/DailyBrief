@@ -1,0 +1,75 @@
+{
+  "hero_headline": "中美会谈铺路峰会，DeepSeek 提速长文本推理",
+  "daily_overview": "技术侧，DeepSeek 发布 V4.1-Flash 开源模型，以 763B 参数推进 KV 缓存压缩，缓解长上下文显存压力；DeepMind 上线 Gemini 3.8 Live，并发布人类基因组变异预测图谱；OpenAI 推出面向法律行业的 Astra for Law。时政侧，中美高层纽约会谈为元首会晤铺路，议题含贸易休战、AI 监管与关键矿产；德国基民盟在柏林与梅前州选举受挫，默茨称「灾难」但拒绝辞职。",
+  "tech_briefs": [
+    {
+      "title": "DeepSeek 发布 V4.1-Flash 模型",
+      "url": "https://huggingface.co/papers/2609.19969",
+      "source": "HuggingFace Trending Papers",
+      "summary": "面向长程 agent 的输入密集负载，论文提出 DeepSeek-V4.1-Flash，压缩 KV cache 以降低长上下文推理的显存与存储压力；另有报道称其为 763B 参数开源权重模型（多家报道）。",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind 推出 Gemini 3.8 Live",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+      "source": "DeepMind Blog",
+      "summary": "谷歌 DeepMind 发布 Gemini 3.8 Live 与 Gemini 3.8 Live Extended Thinking 两个版本，前者主打实时交互响应，后者延长思考过程以处理更复杂的推理任务。",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind 发布基因组变异预测图谱",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "source": "DeepMind Blog",
+      "summary": "AlphaGenome Atlas 预测人类基因组中约 90 亿个单碱基变异的分子效应，等于为每一种可能的 DNA 字母改动预先给出影响评估，可用于疾病相关变异的快速筛选与解释。",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI 推出法律专用产品 Astra",
+      "url": "https://openai.com/index/astra-for-law",
+      "source": "OpenAI News",
+      "summary": "OpenAI 发布面向法律行业的 Astra for Law，提供前沿模型能力、律所定制工作流、可连接的法律数据源与保密管控；同期律所 Cooley 基于 ChatGPT Work 构建 IPO 工具（多家报道）。",
+      "importance": 7
+    },
+    {
+      "title": "Cloudflare 开源安全审计代理技能",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "source": "GitHub Trending",
+      "summary": "Cloudflare 为编码代理提供的技能包，按多阶段流程执行安全审计，并输出可独立验证、机器可读的结论，解决自动化审查结果难复核、难接入 CI 的问题，便于嵌入代理工作流或流水线。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "中美高层纽约会谈，为元首峰会铺路",
+      "url": "https://www.dw.com/zh/中美高层纽约会谈-为特朗普习近平峰会铺路/a-79346677?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "美国财长贝森特与中国国务院副总理何立峰在纽约会谈，议题含贸易休战延长、人工智能监管、关键矿产与伊朗问题，为两国元首数日后的白宫会晤做准备；分析认为短期难有重大突破（多家报道）。",
+      "importance": 9
+    },
+    {
+      "title": "基民盟地方选举连败，默茨拒绝辞职",
+      "url": "https://www.bbc.co.uk/news/articles/cvwyz29n0nn2o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "出口民调显示，默茨领导的中右翼基民盟在柏林与梅克伦堡-前波莫瑞州选举中遭遇重挫，选择党在梅前州领先。默茨称结果为「灾难」，但表示不会辞职（多家报道）。",
+      "importance": 8
+    },
+    {
+      "title": "俄罗斯战时选举结束，执政党料占主导",
+      "url": "https://www.aljazeera.com/news/2026/9/20/polls-close-in-russian-wartime-election-with-ruling-party-set-to-dominate?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "俄罗斯战时选举投票结束，执政党预计将继续占据主导地位。俄总统普京将此次投票视为对其持续进行的乌克兰战争支持度的一次检验。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "技术与地缘政治同频：模型效率竞赛与 AI 监管已进入中美元首峰会议程，欧洲地方选举结果则在重塑政策预期。",
+  "keywords": [
+    "DeepSeek V4.1-Flash",
+    "KV 缓存压缩",
+    "Gemini 3.8 Live",
+    "AlphaGenome",
+    "AI 监管",
+    "中美元首会晤",
+    "德国地方选举",
+    "俄罗斯选举"
+  ]
+}
