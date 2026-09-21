@@ -1,0 +1,75 @@
+{
+  "hero_headline": "DeepMind 连发 Gemini 3.8 Live 与基因组预测图谱",
+  "daily_overview": "技术侧，DeepMind 发布 Gemini 3.8 Live 与扩展思考版本，并推出 AlphaGenome Atlas，可预测人类基因组 90 亿个单碱基变异的分子效应。智能体基础设施继续升温：CodeMidas 从代码本身构造强化学习环境，RecreationWorld 与 trycua/cua 补齐 computer-use 智能体的训练环境与跨系统驱动，社区两天内涌现 6 个 Jev 模型克隆。时政侧，中共中央政治局会议宣布张又侠、刘振立被开除党籍军籍，并确定 10 月 26 日至 29 日召开二十届五中全会；联合国大会一般性辩论把 AI 与自主武器列为核心议题；美国三家媒体就白宫采访禁令起诉特朗普政府。",
+  "tech_briefs": [
+    {
+      "title": "DeepMind 发布 Gemini 3.8 Live 与扩展思考版本",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 官方博客宣布推出 Gemini 3.8 Live 与 Gemini 3.8 Live Extended Thinking 两个模型版本，前者面向实时交互场景，后者提供扩展思考能力。官方暂未公布详细评测数据与开放范围。",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind 发布 AlphaGenome Atlas 基因组变异图谱",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "source": "DeepMind Blog",
+      "summary": "AlphaGenome Atlas 绘制人类基因组中约 90 亿个单字母 DNA 变异的分子效应图谱，为判断任意变异的潜在功能影响提供预测参考，可用于遗传病研究与变异筛选排序。",
+      "importance": 9
+    },
+    {
+      "title": "computer-use 智能体的训练环境与开源驱动同日上线",
+      "url": "https://github.com/trycua/cua",
+      "source": "GitHub Trending",
+      "summary": "Hugging Face 论文 RecreationWorld 提出可扩展、可验证的环境，训练在界面操作与代码、命令行之间交替切换的混合 computer-use 智能体，解决真实数字工作需两类能力交织的问题；GitHub 项目 trycua/cua 则提供跨系统驱动、可批量调度的设备集群及训练评测基准。（多家报道）",
+      "importance": 7
+    },
+    {
+      "title": "CodeMidas：从代码本身扩展编码智能体强化学习环境",
+      "url": "https://huggingface.co/papers/2609.22068",
+      "source": "HuggingFace Trending Papers",
+      "summary": "以强化学习训练编码智能体需要多样任务与可靠验证器，既有方法多依赖 issue、commit 等开发产物，限制了任务来源。CodeMidas 直接从开源代码本身自动生成并扩展 RL 环境，扩大可训练任务的规模与多样性。",
+      "importance": 7
+    },
+    {
+      "title": "Jev 模型两天内出现 6 个克隆，社区发布入门指南",
+      "url": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in",
+      "source": "Latent Space",
+      "summary": "被称为通用 System One 模型的 Jev 在社交平台走红后，两天内出现 6 个克隆版本；社区同时发布入门指南，指出网上流传的示例多有误导，并说明其真实能力边界与使用方式。（多家报道）",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "中共政治局会议：张又侠、刘振立被开除党籍军籍",
+      "url": "https://www.dw.com/zh/清除最大权力政治隐患：张又侠、刘振立被开除党籍军籍/a-79361660?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "中共中央政治局于 9 月 21 日召开会议，宣布给予张又侠、刘振立开除党籍处分；会议同时决定 10 月 26 日至 29 日召开中共第二十届中央委员会第五次全体会议。",
+      "importance": 9
+    },
+    {
+      "title": "联大一般性辩论：AI 与自主武器风险成重点议题",
+      "url": "https://www.npr.org/2026/09/21/nx-s1-5974200/ai-and-autonomous-weapons-are-high-on-the-agenda-at-the-un-general-assembly",
+      "source": "NPR World",
+      "summary": "各国领导人齐聚联合国大会年度一般性辩论，人工智能与自主武器被列为重要议题。哥伦比亚前总统、诺贝尔和平奖得主就自主武器与 AI 日益上升的风险发表看法。",
+      "importance": 7
+    },
+    {
+      "title": "CNN 等三家美国媒体就白宫采访禁令提起诉讼",
+      "url": "https://www.bbc.co.uk/news/articles/cm0e32rwvrryo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "CNN、MS NOW 与 Politico 就特朗普政府禁止其进入白宫采访提起诉讼。此前多家美国主要电视网暂停对白宫的电视直播报道，特朗普已启程前往纽约出席联合国峰会。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "同一天内，模型迭代、智能体基础设施与 AI 治理标准并行推进，AI 已同时成为技术议题与外交、司法议题，后续进展值得持续跟踪。",
+  "keywords": [
+    "Gemini 3.8 Live",
+    "AlphaGenome Atlas",
+    "AI 智能体",
+    "强化学习环境",
+    "Jev 模型",
+    "二十届五中全会",
+    "联合国大会",
+    "自主武器"
+  ]
+}
