@@ -1,0 +1,75 @@
+{
+  "hero_headline": "GPT-6 双模型发布，联大聚焦伊朗与格陵兰防务",
+  "daily_overview": "技术侧，OpenAI 一天内发布 GPT-6 Sol 与 Luna 两款模型并改进提示缓存，小米 MiMo-V2.6-Pro 以约 300 万美元训练成本成为新的最强开放权重模型，闭源与开源阵营节奏同时加快；Hugging Face 打通 llama.cpp 量化格式，Agent 框架与企业文档检索的优化研究同步升温。时政侧，联合国大会成为焦点：特朗普在演讲中威胁「消灭」伊朗并提出赢者通吃式秩序设想，多国领导人警告国际分歧加深；美丹签署防务协议，美方将在格陵兰建设两处军事基地，中国欧盟商会则警告欧中贸易失衡不可持续。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI 发布 GPT-6 Sol 与 Luna 两款模型",
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "source": "OpenAI News",
+      "summary": "OpenAI 发布 GPT-6 Sol 与 Luna，在能力与成本间提供不同取舍；同期公布提示缓存改进，提升命中率并新增显式断点与诊断，降低延迟与成本。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "小米发布 MiMo-V2.6-Pro 开放权重模型",
+      "url": "https://www.latent.space/p/ainews-xiaomi-mimo-v26-pro-1t-a42b",
+      "source": "Latent Space",
+      "summary": "小米推出 MiMo-V2.6-Pro，采用 1T 总参数、A42B 激活的稀疏架构，训练成本约 300 万美元，成为当前最强的开放权重模型之一，被视为中国前沿实验室的重要进展。",
+      "importance": 8
+    },
+    {
+      "title": "Univer：面向 AI Agent 的办公文档运行时",
+      "url": "https://github.com/dream-num/univer",
+      "source": "GitHub Trending",
+      "summary": "Univer 把电子表格、文档、幻灯片、画布、关系表与 PDF 统一到同一运行时，让 Agent 直接读写与编辑办公文件；对需要 AI 生成、操作办公文档的团队，可省去逐格式对接的成本。",
+      "importance": 7
+    },
+    {
+      "title": "RRSI：Agent 框架的正则化递归自我改进",
+      "url": "https://huggingface.co/papers/2609.24972",
+      "source": "HuggingFace Trending Papers",
+      "summary": "针对 LLM agent 的 harness 自动优化易退化的问题，论文提出正则化递归自我改进 RRSI：迭代筛选组件级编辑并施加正则约束，使改进稳定累积，在骨干模型冻结下持续提升表现。",
+      "importance": 7
+    },
+    {
+      "title": "Transformers 库现已支持 llama.cpp 量化模型",
+      "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "source": "Hugging Face Blog",
+      "summary": "Hugging Face 宣布 Transformers 可直接加载并运行 llama.cpp 的量化模型，打通推理框架生态；开发者由此能在同一套 API 下完成量化推理，减少格式转换与工具链切换的成本。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "特朗普联大演讲威胁「消灭」伊朗",
+      "url": "https://www.bbc.co.uk/news/articles/c52e0ywl9pr7o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "特朗普在联合国大会演讲中称，须决定是与伊朗达成协议还是「消灭」伊朗，并提出赢者通吃式的国际秩序设想；多国领导人警告国际社会分歧加深。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "美丹签署防务协议 将在格陵兰建两处基地",
+      "url": "https://www.bbc.co.uk/news/articles/c9dr74g32g8go?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "美国与丹麦在联合国大会期间签署防务协议，美方将在格陵兰建设两处军事基地；协议同时重申丹麦对该半自治北极领地的主权。",
+      "importance": 7
+    },
+    {
+      "title": "中国欧盟商会：欧中贸易失衡不可持续",
+      "url": "https://www.dw.com/zh/中国欧盟商会：欧中贸易失衡不可持续/a-79376658?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "中国欧盟商会发布年度报告，对中国国内消费疲软及由此带来的出口强劲表示担忧；按中方数据，今年前 8 个月欧盟对华贸易逆差达 2420 亿欧元，超过同期美国对华逆差。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "模型发布节奏依旧密集，但围绕评测可信度与安全事件的讨论同步升温；联大场内外的博弈也提示，技术议题与地缘政治正越来越难分开。",
+  "keywords": [
+    "GPT-6",
+    "小米 MiMo",
+    "开放权重模型",
+    "AI Agent",
+    "联合国大会",
+    "格陵兰防务",
+    "欧中贸易",
+    "提示缓存"
+  ]
+}
