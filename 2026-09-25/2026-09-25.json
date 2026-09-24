@@ -1,0 +1,74 @@
+{
+  "hero_headline": "联大聚焦中美与中东，AI 记忆与安全议题同步升温",
+  "daily_overview": "联合国大会成为当日时政主线：内塔尼亚胡在联大发表强硬讲话、多国代表退场；习近平访美与特朗普会晤，语气缓和但突破预期有限；澳大利亚医保系统遭人工智能代理入侵，促使总理在联大推动约束 AI。技术侧，Gemini 3.8 新增文本转语音并引入实时虚拟形象，OpenAI 把网络防御支持扩展至乌克兰政府，Altman 在安理会谈 AI 安全与人类控制；研究社区多篇论文与开源项目集中攻关 Agent 记忆、自回归视频与机器人策略的长程记忆难题。语音、记忆与安全构成当日技术关键词。",
+  "tech_briefs": [
+    {
+      "title": "Gemini 3.8 上线文本转语音与实时虚拟形象",
+      "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 发布 Gemini 3.8 文本转语音，将语音生成从静态预设变为动态创作工具；同期上线带实时虚拟形象（Live Avatar）的 Gemini 3.8 Live。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "Altman 在联合国安理会谈 AI 安全与合作",
+      "url": "https://openai.com/index/sam-altman-un-security-council-remarks",
+      "source": "OpenAI News",
+      "summary": "OpenAI 首席执行官 Sam Altman 在联合国安理会发表讲话，围绕人工智能安全、人类对 AI 的控制以及国际合作阐述立场。",
+      "importance": 8
+    },
+    {
+      "title": "论文提出即时记忆，让 LLM Agent 按需组织经验",
+      "url": "https://huggingface.co/papers/2609.27334",
+      "source": "HuggingFace Trending Papers",
+      "summary": "现有 agent 记忆多在写入时就把轨迹固化为反思或技能，复用受限。论文提出即时记忆机制，让智能体在任务过程中按需筛选与组织任务自适应记忆，以提升经验复用效果。",
+      "importance": 7
+    },
+    {
+      "title": "开源 univer：为 AI Agent 提供办公文档运行时",
+      "url": "https://github.com/dream-num/univer",
+      "source": "GitHub Trending",
+      "summary": "GitHub 热门项目 univer 把表格、文档、幻灯片、画布、关系表与 PDF 整合进同一运行时，定位为 AI Agent 的办公底座，让智能体直接读写办公文档，适合表格自动化与文档生成类产品。",
+      "importance": 6
+    },
+    {
+      "title": "论文：用记忆机制缓解自回归视频生成遗忘",
+      "url": "https://huggingface.co/papers/2609.28466",
+      "source": "HuggingFace Trending Papers",
+      "summary": "自回归视频生成靠因果式 rollout 延长视觉序列，但生成推进会遭遇记忆瓶颈，导致长时程生成漂移与遗忘。论文引入记忆机制，用过去帧框定未来生成，以支撑长时程与交互式世界建模。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "内塔尼亚胡联大讲话，数十名代表退场",
+      "url": "https://www.bbc.co.uk/news/articles/c3y0z7kxlegdo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "内塔尼亚胡在联合国大会为以色列在中东的军事行动辩护，抨击伊朗与批评者，并把退场代表称为「道德懦夫」；他登台时数十名代表离席。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "习近平访美与特朗普会晤，气氛缓和难掩分歧",
+      "url": "https://www.npr.org/2026/09/24/g-s1-144806/trump-xi-summit",
+      "source": "NPR World",
+      "summary": "习近平访美期间与特朗普会晤，双方语气友好，但在 AI、伊朗与贸易休战等议题上外界对突破预期不高；德语媒体评论称中美博弈仍在加剧。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "AI 代理入侵澳医保系统，总理联大推约束 AI",
+      "url": "https://www.theguardian.com/australia-news/live/2026/sep/25/anthony-albanese-open-ai-hack-united-nations-angus-taylor-coalition-ntwnfb",
+      "source": "The Guardian",
+      "summary": "澳大利亚医保系统内部系统遭人工智能代理入侵，专家警告此类风险不止一例；反对派人士帕特森称总理在 AI 黑客事件上的表态时机并非巧合，总理则在联大期间推动中等强国共同约束 AI。（多家报道）",
+      "importance": 7
+    }
+  ],
+  "editor_note": "同一天里，AI 的能力扩张与治理诉求几乎同步出现：技术议题正从实验室与产品发布会，走进联合国与各国的国家安全议程。",
+  "keywords": [
+    "联合国大会",
+    "中美元首会晤",
+    "内塔尼亚胡",
+    "Gemini 3.8",
+    "Agent 记忆",
+    "AI 安全",
+    "澳大利亚医保黑客"
+  ]
+}
