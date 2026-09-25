@@ -1,0 +1,75 @@
+{
+  "hero_headline": "AI 模型密集发布，特习会晤气氛重于实质",
+  "daily_overview": "技术侧，DeepMind 发布 Gemini 3.8 Live 并加入实时数字人 Live Avatar；Stripe 以 70 亿美元收购 OpenRouter，DeepSeek 年经常性收入被曝达 10 亿美元。美国国防部申请 3030 万美元研发 AI 测谎系统，另有论文发现大模型存在「线性叠加」表征。时政侧，特朗普与习近平会晤仪式隆重但摩擦议题无实质突破；俄军袭击乌克兰数据中心；美最高法院放行争议数据库核查选民身份。",
+  "tech_briefs": [
+    {
+      "title": "DeepMind 发布 Gemini 3.8 Live 与实时数字人",
+      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 推出 Gemini 3.8 Live，并为其加入 Live Avatar 实时数字人功能；同日官方博客还上线 Gemini 3.8 文本转语音，但两项更新均未披露更多技术细节与上线范围。",
+      "importance": 8
+    },
+    {
+      "title": "Stripe 以 70 亿美元收购 OpenRouter",
+      "url": "https://www.latent.space/p/openrouter",
+      "source": "Latent Space",
+      "summary": "对谈回顾 OpenRouter 从种子轮到被 Stripe 收购的历程：2023 年业界还认为前沿模型实验室最多一两家，如今已有数十家，Stripe 以 70 亿美元买下其中最知名的一家。",
+      "importance": 8
+    },
+    {
+      "title": "五角大楼拟投 3030 万美元研发 AI 测谎系统",
+      "url": "https://www.technologyreview.com/2026/09/25/1145144/pentagon-ai-lie-detector/",
+      "source": "MIT Tech Review AI",
+      "summary": "据美国国防部预算申请文件，美国政府计划未来五年投入 3030 万美元开发改进型测谎设备，项目代号 Polygraph+，又称 Polygraph Next，重点研发基于人工智能的评分算法。",
+      "importance": 7
+    },
+    {
+      "title": "研究：大模型存在「线性叠加」表征",
+      "url": "https://huggingface.co/papers/2609.29845",
+      "source": "HuggingFace Trending Papers",
+      "summary": "论文发现 LLM 存在基础线性：不同文本流的输入被线性组合后，输出是各自 next-token 分布的叠加，作者称之为「线性叠加」，为理解模型内部表征提供新视角。",
+      "importance": 7
+    },
+    {
+      "title": "Anthropic 上线官方 Claude Code 插件目录",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "source": "GitHub Trending",
+      "summary": "Anthropic 官方维护的 Claude Code 插件目录，集中收录经筛选的高质量插件，方便开发者发现、安装与组合使用，用于扩展编码和自动化能力，减少自行筛选插件的成本。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "特朗普与习近平会晤：气氛热烈，实质进展有限",
+      "url": "https://www.npr.org/2026/09/25/nx-s1-5981265/takeaways-trump-xi-state-visit-pageantry-pandas",
+      "source": "NPR World",
+      "summary": "访问期间双方展现友好气氛，礼宾安排与熊猫等元素受到关注，但多处摩擦议题未见实质推进；DW 中文亦报道北京市民对此次访问高度关注。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "泽连斯基称俄军袭击乌克兰数据中心",
+      "url": "https://www.bbc.co.uk/news/articles/c84gkwgk7d06o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "乌克兰总统泽连斯基表示，俄罗斯针对乌克兰数据中心的袭击意在破坏民众保持联络、学习和工作的能力，打击目标指向「普通生活」。",
+      "importance": 7
+    },
+    {
+      "title": "美最高法院放行争议数据库核查选民身份",
+      "url": "https://www.bbc.co.uk/news/articles/ck05rrj3jeylo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "美国最高法院裁定，允许特朗普政府使用一份具争议的数据库核查选民公民身份。批评者质疑数据可靠性，警告可能导致美国公民被错误移出选民名册。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "技术叙事仍由模型发布与资本并购主导，时政则呈现峰会气氛与冲突现实并行，AI 治理与地缘风险的相互渗透值得持续跟踪。",
+  "keywords": [
+    "Gemini 3.8",
+    "OpenRouter 收购",
+    "AI 测谎",
+    "乌克兰数据中心",
+    "特朗普习近平会晤",
+    "选民数据库",
+    "线性叠加",
+    "Claude Code"
+  ]
+}
