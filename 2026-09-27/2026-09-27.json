@@ -1,0 +1,74 @@
+{
+  "hero_headline": "特朗普拒绝伊朗霍尔木兹方案，AI 工具链密集更新",
+  "daily_overview": "技术侧，DeepMind 同日发布 Gemini 3.8 Live 与文本转语音，实时虚拟形象与语音能力继续产品化；开源社区给出可复现的 LLM 后训练配方 Rufus-Air，以及面向 Agent 记忆与管理的工具；有论文发现 LLM 存在线性叠加现象。时政侧，特朗普拒绝伊朗七天内重开霍尔木兹海峡的方案，伊朗总统称已不再信任与华盛顿谈判；特朗普在华盛顿接待习近平，成效仍待解读；东北风暴令纽约、新泽西进入紧急状态。",
+  "tech_briefs": [
+    {
+      "title": "Gemini 3.8 新增实时形象与语音",
+      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 同日发布 Gemini 3.8 Live，新增实时虚拟形象（Live Avatar），并推出 Gemini 3.8 文本转语音；具体能力与开放范围未披露。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "开源后训练配方 Rufus-Air 发布",
+      "url": "https://huggingface.co/papers/2609.29421",
+      "source": "HuggingFace Trending Papers",
+      "summary": "在 GLM-4.5-Air-Base 上给出开放可复现的后训练配方：SFT、推理与代码 RL、指令遵循、Agent 与 RLHF 八阶段串行，并公开数据与奖励设计。",
+      "importance": 7
+    },
+    {
+      "title": "论文称 LLM 存在线性叠加现象",
+      "url": "https://huggingface.co/papers/2609.29845",
+      "source": "HuggingFace Trending Papers",
+      "summary": "论文发现 LLM 具有基础线性性：不同文本流的输入线性组合后，输出分布近似为各自分布的叠加，并据此分析 Transformer 的组合机制。",
+      "importance": 7
+    },
+    {
+      "title": "paperclip：开源 Agent 管理应用",
+      "url": "https://github.com/paperclipai/paperclip",
+      "source": "GitHub Trending",
+      "summary": "面向工作场景的开源 Agent 管理应用，可集中创建、调度并监控多个 Agent 的执行流程，团队能在统一界面查看状态与结果，便于把 Agent 接入日常协作。",
+      "importance": 6
+    },
+    {
+      "title": "Stripe 收购 OpenRouter",
+      "url": "https://www.latent.space/p/openrouter",
+      "source": "Latent Space",
+      "summary": "播客节目提到，Stripe 以 70 亿美元收购 OpenRouter；嘉宾回顾 2023 年业界多认为前沿模型实验室只能有一两家，如今已有数十家。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "特朗普拒绝伊朗重开霍尔木兹海峡方案",
+      "url": "https://www.bbc.co.uk/news/articles/cqgmrr9ekr7ko?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "特朗普拒绝伊朗七天内重开霍尔木兹海峡的方案，称其不可接受；伊朗外长称正等待调解方最终意见，伊朗总统佩泽希齐扬表示已不再信任与华盛顿的谈判。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "特朗普华盛顿接待习近平，成果受关注",
+      "url": "https://www.npr.org/2026/09/26/nx-s1-5980066/trump-gave-xi-jinping-a-warm-welcome-what-did-the-talks-accomplish",
+      "source": "NPR World",
+      "summary": "特朗普在华盛顿从国家档案馆到国宴接待习近平，两人互动融洽；两名前 NPR 驻华记者分析此次访问取得的成果与未能实现的目标。",
+      "importance": 8
+    },
+    {
+      "title": "东北风暴来袭，纽约新泽西进入紧急状态",
+      "url": "https://www.bbc.co.uk/news/articles/ck1wxxzn5jndo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "一场东北风暴给美国东北部带来洪水，纽约州与新泽西州宣布进入紧急状态，从缅因州到弗吉尼亚州有数千万人处于风暴路径之上。",
+      "importance": 6
+    }
+  ],
+  "editor_note": "今日技术叙事仍围绕 Agent 与模型能力展开，时政焦点是美伊海峡博弈与中美互动；对单源消息建议保留核验空间。",
+  "keywords": [
+    "Gemini 3.8",
+    "AI Agent",
+    "后训练",
+    "霍尔木兹海峡",
+    "中美关系",
+    "Transformer",
+    "开源模型"
+  ]
+}
