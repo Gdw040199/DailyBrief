@@ -1,0 +1,74 @@
+{
+  "hero_headline": "美方称特朗普曾提对华军售，伊朗警告已备战",
+  "daily_overview": "技术面上，DeepMind 推出支持实时数字人的 Gemini 3.8 Live，五角大楼拟投 3030 万美元研发 AI 测谎系统，Stripe 以 70 亿美元收购 OpenRouter。开源与学术侧，GitHub 上的多智能体管理工具 paperclip 走红，arXiv 论文给出大模型输出「线性叠加」的实验证据。时政方面，美国驻华大使称特朗普曾提出对华军售、白宫否认；伊朗在美方拒绝七天路线图后称已为战争做好准备；美国军方本周正式结束二十余年的驻伊军事存在。",
+  "tech_briefs": [
+    {
+      "title": "Gemini 3.8 Live 支持实时数字人",
+      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 发布 Gemini 3.8 Live，新增 Live Avatar 实时数字人能力，可在实时交互中生成带语音的拟人形象，面向需要真人感对话的产品场景。官方博客未披露开放范围与定价。",
+      "importance": 8
+    },
+    {
+      "title": "五角大楼拟投 3030 万美元研发 AI 测谎",
+      "url": "https://www.technologyreview.com/2026/09/25/1145144/pentagon-ai-lie-detector/",
+      "source": "MIT Tech Review AI",
+      "summary": "美国国防部预算申请显示，未来五年拟投入 3030 万美元改进测谎技术，项目名为 Polygraph+ 或 Polygraph Next，重点是研发基于人工智能的评分算法。",
+      "importance": 7
+    },
+    {
+      "title": "论文称大模型存在「线性叠加」现象",
+      "url": "https://huggingface.co/papers/2609.29845",
+      "source": "HuggingFace Trending Papers",
+      "summary": "该论文发现，当来自不同文本流的输入被线性组合时，大模型输出等于各单独 next-token 分布的叠加，作者称之为线性叠加现象，为大模型可解释性与组合式推理提供实验依据。",
+      "importance": 7
+    },
+    {
+      "title": "开源项目 paperclip 统一管理多智能体",
+      "url": "https://github.com/paperclipai/paperclip",
+      "source": "GitHub Trending",
+      "summary": "GitHub 上的开源应用，提供统一界面来创建、调度和监控 AI agent，解决团队中脚本零散、多个工具难以协同的问题，适合在检索、写作、数据处理等重复流程中规模化编排智能体。",
+      "importance": 7
+    },
+    {
+      "title": "播客称 Stripe 以 70 亿美元收购 OpenRouter",
+      "url": "https://www.latent.space/p/openrouter",
+      "source": "Latent Space",
+      "summary": "播客对谈提到，2023 年业界普遍认为前沿模型实验室只会有一两家，如今已有数十家，而 Stripe 刚以 70 亿美元收购其中知名度最高的一家，即模型聚合平台 OpenRouter。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美驻华大使称特朗普曾提出对华军售",
+      "url": "https://www.nytimes.com/2026/09/27/us/politics/trump-weapons-sale-china.html",
+      "source": "NYT World",
+      "summary": "美国驻华大使珀杜表示，总统特朗普曾向中国领导人习近平提出对华出售武器；白宫随后回应称，美国没有此类军售计划。",
+      "importance": 8
+    },
+    {
+      "title": "伊朗称已为战争做好充分准备",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/9/28/iran-war-live-tehran-warns-its-fully-prepared-for-war-amid-hormuz-tensions?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "伊朗外长阿拉格奇警告称，在华盛顿拒绝一项旨在结束战争并重新开放霍尔木兹海峡的七天路线图后，伊朗已为战争做好充分准备。",
+      "importance": 8
+    },
+    {
+      "title": "美军本周正式结束二十余年驻伊任务",
+      "url": "https://www.npr.org/2026/09/27/nx-s1-5981123/after-more-than-two-decades-u-s-forces-prepare-to-leave-iraq",
+      "source": "NPR World",
+      "summary": "美国军方本周正式结束在伊拉克持续二十多年的军事存在，相关撤军进程随之告一段落。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "模型与智能体能力继续快速迭代，同时军事与地缘摩擦升温；技术落地的速度仍快于相关规则与信任机制的建立。",
+  "keywords": [
+    "Gemini 3.8",
+    "AI 测谎",
+    "AI 智能体",
+    "线性叠加",
+    "对华军售",
+    "霍尔木兹海峡",
+    "美军撤离伊拉克"
+  ]
+}
