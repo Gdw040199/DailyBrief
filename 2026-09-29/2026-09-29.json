@@ -1,0 +1,75 @@
+{
+  "hero_headline": "Stripe 70 亿美元收购 OpenRouter，Gemini 3.8 同日发布",
+  "daily_overview": "技术侧，DeepMind 发布 Gemini 3.8 Live 与实时虚拟形象、语音合成更新，多模态交互继续向实时化推进；Stripe 以 70 亿美元收购模型路由平台 OpenRouter，模型聚合层被资本视为关键入口。开源社区同日活跃：VoiceStudio 提供可本地部署的 ElevenLabs 替代方案，创作者开源基于 Opus 5.5 的动效视频生产流程。研究上，新论文以对数线性复杂度改造块稀疏注意力，缓解长上下文建模瓶颈。时政侧，英国费尔福德空军基地附近疑现恐袭图谋，五名男子获保释；特朗普否认向伊朗提供制裁减免；德语媒体评中美峰会称习近平占优。",
+  "tech_briefs": [
+    {
+      "title": "DeepMind 发布 Gemini 3.8 系列更新",
+      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 推出 Gemini 3.8 Live，并引入 Live Avatar 实时虚拟形象；同期发布 Gemini 3.8 文本转语音。该系列更新聚焦实时多模态交互与语音合成能力。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "Stripe 以 70 亿美元收购 OpenRouter",
+      "url": "https://www.latent.space/p/openrouter",
+      "source": "Latent Space",
+      "summary": "播客对谈披露，Stripe 以 70 亿美元收购模型路由平台 OpenRouter。对谈指出，2023 年业界普遍怀疑前沿模型实验室至多一两家，如今已有数十家，模型聚合与路由层的价值随之上升。",
+      "importance": 8
+    },
+    {
+      "title": "创作者开源 Opus 5.5 动效视频生产流程",
+      "url": "https://x.com/RaphaelAubryy/status/2104502744010629269",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "多位创作者公布基于 Opus 5.5 的开源动效视频流程：3 天产出 10 余支片子，可替代工作室报价 5000 至 15000 美元的发布视频，且不依赖 MCP 与外部工具。作者指出首版渲染平庸、音画脱节是通病并给出解法。（多家报道）",
+      "importance": 7
+    },
+    {
+      "title": "开源 VoiceStudio：可本地部署的语音工具集",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "source": "GitHub Trending",
+      "summary": "该项目对标 ElevenLabs，支持声音克隆、音色设计、视频配音、听写、转录与有声书制作，覆盖 646 种语言，推理可完全在本地完成。对不愿调用云端 API、重视数据隐私的内容创作者与开发者有实际价值。",
+      "importance": 7
+    },
+    {
+      "title": "新论文提出对数线性复杂度的块稀疏注意力",
+      "url": "https://huggingface.co/papers/2609.31093",
+      "source": "HuggingFace Trending Papers",
+      "summary": "长上下文建模受自注意力二次成本制约；块稀疏注意力虽高效，却需为所有 query-block 对打分来挑选保留块，本身仍是瓶颈。该工作提出具备对数线性复杂度的块稀疏注意力，降低块选择开销，提升长序列建模效率。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "英国空军基地附近疑现恐袭图谋 5 人获保释",
+      "url": "https://www.nytimes.com/2026/09/28/world/europe/uk-fairford-base-terrorist-plot.html",
+      "source": "NYT World",
+      "summary": "五名英国男子在皇家空军费尔福德基地附近因涉嫌恐怖罪名被拘留后获保释，但仍处于调查之中。该基地供美军用于对伊朗的军事行动，周边村庄与城镇因此受到外界关注。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "特朗普否认曾向伊朗提供制裁减免",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/9/29/iran-war-live-trump-says-he-did-not-offer-tehran-sanctions-relief?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "美国总统特朗普否认一则新闻报道，该报道称其政府曾向伊朗提供制裁减免与解冻资金。相关表态出现在美伊冲突持续的背景下。",
+      "importance": 7
+    },
+    {
+      "title": "德语媒体评中美峰会：习近平成赢家",
+      "url": "https://www.dw.com/zh/德语媒体：习近平是中美峰会的赢家/a-79462396?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "针对上周在华盛顿举行的中美峰会，《法兰克福汇报》评论认为习近平的反制措施已驯服率先发起关税战的特朗普；《商报》批评特朗普讨好威权政治、贬损盟友，正危害美国与民主阵营的安全。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "同一天里，资本押注模型路由层，开源补齐语音与视频生产链，模型能力正加速转化为可交易的基础设施；时政风险仍集中在中东与欧洲安全议题。",
+  "keywords": [
+    "Gemini 3.8",
+    "OpenRouter",
+    "Stripe",
+    "VoiceStudio",
+    "块稀疏注意力",
+    "费尔福德基地",
+    "美伊关系",
+    "中美峰会"
+  ]
+}
