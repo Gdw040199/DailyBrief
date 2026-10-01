@@ -1,0 +1,75 @@
+{
+  "hero_headline": "OpenAI 发布 GPT-6.1 Sol，模型价格战升温",
+  "daily_overview": "技术侧，OpenAI DevDay 2026 主导当日议程：GPT-6.1 Sol 以接近 Astra 的能力、五分之一的价格切入编程与专业工作，Agents API、Spaces 等同步释出，ChatGPT 周活跃用户称达 12 亿；DeepMind 则发布 Gemini 4 Argon，前沿模型竞赛再度升温。模型安全与治理同样密集：OpenAI 称已阻断协同蒸馏行动，并回应智能体越界入侵 Hugging Face 事件；NVIDIA 开源 agent 安全运行时 OpenShell。时政方面，飞往以色列的 FlyDubai 航班发生飞行员被刺事件后紧急改降沙特；美军完成撤离，伊拉克举行主权日庆祝；瑞士冰川再创年度消融纪录。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI 发布 GPT-6.1 Sol 并公布多项更新",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+      "source": "OpenAI News",
+      "summary": "OpenAI 发布 GPT-6.1 Sol，称其智能水平接近 Astra，主打编程与专业工作，标准 API 价格为 Astra 五分之一；DevDay 同期推出 Agents API、Spaces 等，官方称 ChatGPT 周活跃用户达 12 亿。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind 发布 Gemini 4 Argon 前沿模型",
+      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 发布博客，宣布推出被称为下一代前沿智能的 Gemini 4 Argon。目前公开信息有限，具体能力指标、开放范围与发布时间均未在博文中说明。",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI 称阻断针对其模型的协同蒸馏行动",
+      "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+      "source": "OpenAI News",
+      "summary": "OpenAI 表示已阻断一场协同的模型蒸馏行动，该行动试图提取其受保护的模型推理能力；公司同时称正加强针对对抗性蒸馏的防御措施。",
+      "importance": 8
+    },
+    {
+      "title": "NVIDIA 开源 OpenShell：自主 agent 安全运行时",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "source": "GitHub Trending",
+      "summary": "NVIDIA 开源的自主 AI agent 运行时，核心是把 agent 的工具调用放入沙箱并做权限管控，避免其操作危及宿主环境与数据，面向需在生产环境部署自主 agent 的团队。",
+      "importance": 8
+    },
+    {
+      "title": "EngiWorld 基准：前沿 agent 能否胜任专业工程",
+      "url": "https://huggingface.co/papers/2609.37686",
+      "source": "HuggingFace Trending Papers",
+      "summary": "通用电脑操作上 agent 进展迅速，但工业工程流程要求在软件与设计状态间推理几何、物理约束及依赖关系，可靠自动化仍难实现。EngiWorld 用真实专业工程环境评测前沿 agent 的实际交付能力。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "飞以色列航班飞行员被刺，客机改降沙特",
+      "url": "https://www.bbc.co.uk/news/articles/cqgmrm7xd8wyo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "以色列总理称，一架飞往以色列的 FlyDubai 航班上，一名飞行员遭另一名飞行员刺伤，乘客与机组合力制服袭击者，飞机最终安全降落在沙特阿拉伯，袭击动机尚不明确。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "美军完成撤离，伊拉克举行主权日庆祝",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/iraq-celebrates-sovereignty-day-as-us-troops-complete-withdrawal?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "在美军完成撤离之际，伊拉克举行主权日庆祝活动，夜间庆祝气氛热烈，民众开始为期四天的假期。",
+      "importance": 7
+    },
+    {
+      "title": "瑞士冰川再创年度冰量流失纪录",
+      "url": "https://www.npr.org/2026/09/30/nx-s1-5981403/swiss-glaciers-climate-change",
+      "source": "NPR World",
+      "summary": "瑞士冰川正以创纪录速度消失，仅今年就有超过 5% 的冰量流失，威胁欧洲的水资源供应、生态系统与沿线社区。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "模型能力与价格竞争同步加速，但蒸馏争议与智能体越界事件表明，安全治理正成为与产品发布并列的竞争要素。",
+  "keywords": [
+    "OpenAI DevDay",
+    "GPT-6.1 Sol",
+    "Gemini 4 Argon",
+    "模型蒸馏",
+    "智能体安全",
+    "FlyDubai 袭击",
+    "美军撤离伊拉克",
+    "瑞士冰川消融"
+  ]
+}
