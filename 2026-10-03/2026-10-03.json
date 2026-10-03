@@ -1,0 +1,75 @@
+{
+  "hero_headline": "GPT-6 落地指南发布，智能体加速进入企业场景",
+  "daily_overview": "技术侧，OpenAI 发布 GPT-6 系列实用指南，覆盖模型选择与生产部署；企业级 AI 投资预计今年达 2.5 万亿美元、同比增长 44%。开源社区同日活跃：Agent-Reach 用一个 CLI 免费检索多平台内容，caveman 靠极简表达为编码智能体省下约 65% token；研究中 GPT-6 Astra 机器人智能体成功率提升 14%、token 减少 65%。时政侧，也门战事升级，G7 紧急决定释放 1 亿桶柴油储备，朝鲜发射弹道导弹并因战俘移交与乌克兰起外交摩擦，巴西大选进入最后冲刺。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI 发布 GPT-6 系列模型实用指南",
+      "url": "https://openai.com/index/practical-guide-building-gpt-6",
+      "source": "OpenAI News",
+      "summary": "OpenAI 发布 GPT-6 系列实用指南，介绍初创企业如何按场景选择模型、调节推理强度、优化提示词与技能、协调工具调用，并为生产环境部署准备工作流。",
+      "importance": 9
+    },
+    {
+      "title": "Agent-Reach：免 API 费用为智能体接入多平台检索",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "source": "GitHub Trending",
+      "summary": "单一 CLI 工具，为 AI 智能体接入联网检索，可读取并搜索 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书等平台内容，无需申请各家 API 或付费，适合内容与舆情调研。",
+      "importance": 7
+    },
+    {
+      "title": "caveman：用极简表达为编码智能体省 65% token",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "source": "GitHub Trending",
+      "summary": "让编码智能体以极简方式说话来压缩输出，据称可减少约 65% 的 token 消耗；提供 skill 与 proxy 两种接入方式，适合关注上下文长度与 API 成本的 Claude Code、Codex 用户。",
+      "importance": 7
+    },
+    {
+      "title": "GPT-6 Astra 机器人智能体：成功率升 14%、token 降 65%",
+      "url": "https://huggingface.co/papers/2610.01939",
+      "source": "HuggingFace Trending Papers",
+      "summary": "论文提出 PyRUA-Lean 框架，把反馈驱动的动作原语与视觉语言模型结合来控制机器人，减少重复调用与冗余观察带来的 token 开销；在 GPT-6 Astra 智能体上成功率提升 14%，token 消耗减少 65%。",
+      "importance": 8
+    },
+    {
+      "title": "报告：2026 年全球企业级 AI 投资预计达 2.5 万亿美元",
+      "url": "https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/",
+      "source": "MIT Tech Review AI",
+      "summary": "文章称企业级 AI 已进入实际运营阶段，模型能力提升快于多数组织的消化速度，性能成本持续下降，并预计 2026 年全球 AI 投资达 2.5 万亿美元、同比增长 44%。",
+      "importance": 8
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "也门战事升级，军方称 24 小时发动 474 次攻击",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/10/3/iran-war-live-fighting-intensifies-in-yemen-hundreds-killed-or-injured?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "也门各地战斗加剧，也门军方称 24 小时内发动 474 次攻击，造成 1540 名胡塞武装人员死亡或受伤。",
+      "importance": 8
+    },
+    {
+      "title": "G7 紧急决定未来 4 个月释放 1 亿桶柴油储备",
+      "url": "https://www.npr.org/2026/10/02/nx-s1-5989397/the-g7-will-release-100-million-reserve-barrels-of-diesel-fuel-over-the-next-4-months",
+      "source": "NPR World",
+      "summary": "在华盛顿施压后，七国集团召开能源紧急会议，宣布将在未来 4 个月内释放储备中的 1 亿桶石油与柴油。",
+      "importance": 8
+    },
+    {
+      "title": "朝鲜发射弹道导弹，韩乌因战俘移交起外交争执",
+      "url": "https://www.aljazeera.com/news/2026/10/2/north-korea-fires-ballistic-missile-towards-the-sea-south-korea-says?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "韩国军方称朝鲜从港口城市元山向海上发射一枚弹道导弹；同期韩国总统李在明就两名朝鲜战俘移交被曝光一事威胁对乌克兰采取惩罚性措施，乌方称这是外交误会。（多家报道）",
+      "importance": 7
+    }
+  ],
+  "editor_note": "技术面模型能力与工程降本同步加速，落地重心转向企业场景；时政面地缘冲突与选举风险叠加，能源与半岛动向值得持续跟踪。",
+  "keywords": [
+    "GPT-6",
+    "AI 智能体",
+    "token 压缩",
+    "企业级 AI",
+    "也门战事",
+    "G7 释储",
+    "朝鲜半岛",
+    "巴西大选"
+  ]
+}
