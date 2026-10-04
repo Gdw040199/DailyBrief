@@ -1,0 +1,75 @@
+{
+  "hero_headline": "Gemini 4 Argon 发布，中欧贸易摩擦升温",
+  "daily_overview": "技术侧，DeepMind 发布新一代前沿模型 Gemini 4 Argon，OpenAI 同步给出 GPT-6 系列选型与推理强度指南，前沿模型迭代继续提速；SynthID Bio 尝试为 AI 生成蛋白质嵌入水印，人形机器人测试时演化研究让控制器复用既有技能完成未训练任务，GitHub 上围绕代理记忆与「少写代码」的工程实践升温。时政侧，俄军转向打击基辅桥梁，威胁首都通勤命脉；中国在欧盟贸易专员访华前夕对欧盟发起反倾销调查，中欧摩擦风险上升；法国高中生抗议蔓延多座城市，约五千人被捕。",
+  "tech_briefs": [
+    {
+      "title": "DeepMind 发布 Gemini 4 Argon 模型",
+      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 发布新一代前沿模型 Gemini 4 Argon，自称开启前沿智能新阶段；同日多家 AI 简报亦将其列为头条议题，但官方尚未披露具体能力与可用范围。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI 发布 GPT-6 系列模型选用指南",
+      "url": "https://openai.com/index/practical-guide-building-gpt-6",
+      "source": "OpenAI News",
+      "summary": "OpenAI 面向初创企业发布 GPT-6 系列指南，涵盖模型选择、推理强度调节、提示词与技能优化、工具调用协调，以及面向生产环境的工作流准备。",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind 推出 SynthID Bio 蛋白质水印",
+      "url": "https://deepmind.google/blog/introducing-synthid-bio/",
+      "source": "DeepMind Blog",
+      "summary": "SynthID Bio 是给 AI 生成蛋白质加水印的概念验证方案，目标是在不破坏蛋白质生物功能的前提下留下可追溯标记，为生成式合成生物学的内容溯源提供思路。",
+      "importance": 7
+    },
+    {
+      "title": "人形机器人测试时演化方法 InterEvolve",
+      "url": "https://huggingface.co/papers/2610.02196",
+      "source": "HuggingFace Trending Papers",
+      "summary": "InterEvolve 让通用人形机器人控制器在测试阶段自我演化：无需重新训练，直接复用已有技能、从自身尝试中改进并保留有效经验，从而完成从未训练过的 loco-manipulation 任务。",
+      "importance": 7
+    },
+    {
+      "title": "GitHub 项目 ponytail：让代理少写代码",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "source": "GitHub Trending",
+      "summary": "该项目以技能与提示词形式注入 AI 编程代理，要求动手前先判断代码是否真有必要存在，能复用就不新写、能删就不保留，像「最懒的资深工程师」一样思考，从源头减少冗余实现与维护成本。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "俄军转向打击基辅桥梁",
+      "url": "https://www.nytimes.com/2026/10/03/world/europe/russia-ukraine-bridges-kyiv.html",
+      "source": "NYT World",
+      "summary": "俄军将打击目标转向基辅的桥梁，这些桥梁是首都大量通勤者日常依赖的通道，属于俄方针对乌克兰基础设施广泛轰炸行动的最新一环。",
+      "importance": 8
+    },
+    {
+      "title": "中国对欧盟发起反倾销调查",
+      "url": "https://www.dw.com/zh/中欧贸易会谈在即-中国对欧盟发起反倾销调查/a-79531185?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "中国商务部宣布对自欧盟进口的对硝基甲苯发起反倾销调查，距欧盟贸易专员谢夫乔维奇赴京与商务部长王文涛会谈不足一周，中欧贸易摩擦升级风险上升。",
+      "importance": 8
+    },
+    {
+      "title": "法国学生抗议蔓延 约五千人被捕",
+      "url": "https://www.npr.org/2026/10/03/nx-s1-5989532/france-arrests-5-000-people-mostly-teens-as-school-protests-spread",
+      "source": "NPR World",
+      "summary": "法国高中生抗议教室拥挤、教师短缺与校舍待修，活动已蔓延至多座城市，约5000人被捕，其中多数为青少年。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "模型迭代与代理工程同日推进，但决定落地成效的仍是数据、评测与流程改造；时政面可以基建打击与贸易调查为观察窗口。",
+  "keywords": [
+    "Gemini 4 Argon",
+    "GPT-6",
+    "SynthID Bio",
+    "人形机器人",
+    "AI 编程代理",
+    "中欧贸易",
+    "基辅桥梁",
+    "法国学生抗议"
+  ]
+}
