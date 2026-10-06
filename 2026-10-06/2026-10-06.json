@@ -1,0 +1,75 @@
+{
+  "hero_headline": "OpenAI 连发三文，也门战事牵动中东多国",
+  "daily_overview": "技术侧，OpenAI 同日推进三条线：发布 GPT-6 系列模型指南，为 ChatGPT 引入视觉广告格式与归因测量，并披露应对欧盟文本溯源的水印思路。学术侧，HyperBrowseComp 以 13 种语言评测浏览智能体，claude-mem 尝试为代理补上跨会话记忆。时政侧，也门战事升级，土耳其与巴基斯坦同意向沙特派兵；德国社民党与德媒风向显示柏林不再充当欧盟对华政策刹车片；巴西大选首轮无人过半，10 月 25 日进入第二轮。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI 发布 GPT-6 系列模型选用指南",
+      "url": "https://openai.com/index/practical-guide-building-gpt-6",
+      "source": "OpenAI News",
+      "summary": "OpenAI 发布 GPT-6 系列模型指南，面向初创公司说明如何选型、调整推理强度、优化提示与技能、协调工具，并准备工作流以投入生产环境。",
+      "importance": 8
+    },
+    {
+      "title": "ChatGPT 推出视觉广告格式并扩展测量",
+      "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+      "source": "OpenAI News",
+      "summary": "OpenAI 为 ChatGPT 推出新的视觉广告格式，同时扩展广告测量工具、归因合作与品牌适配能力，称该形态适配人们使用 AI 的方式。",
+      "importance": 7
+    },
+    {
+      "title": "OpenAI 说明欧盟文本溯源与水印方案",
+      "url": "https://openai.com/index/eu-text-provenance",
+      "source": "OpenAI News",
+      "summary": "OpenAI 介绍其应对欧盟文本溯源规则的思路，说明文本水印的适用范围、检测机制，以及为何相关访问权限先从研究人员开放。",
+      "importance": 7
+    },
+    {
+      "title": "HyperBrowseComp：浏览智能体多语言压力测试",
+      "url": "https://huggingface.co/papers/2610.03574",
+      "source": "HuggingFace Trending Papers",
+      "summary": "该基准面向网页浏览智能体，423 道题目由母语者人工编写并验证，覆盖 13 种语言，答案简洁且可公开核验，用于检验代理跨语言检索与推理的真实上限。",
+      "importance": 7
+    },
+    {
+      "title": "claude-mem 为 AI 代理补跨会话记忆",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "source": "GitHub Trending",
+      "summary": "GitHub 项目 claude-mem 记录代理在会话中的所有操作，用 AI 压缩为摘要并在后续会话注入相关上下文，兼容 Claude 等主流代理，解决长期任务反复交代背景的痛点。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "也门战事升级 土巴同意向沙特派兵",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/6/10-6-yemen-war-update-sv?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "也门军方称已确保红海航道安全，沙特支持的力量对是否夺取曼德海峡附近摩卡港说法不一；利雅得紧急会谈中，土耳其与巴基斯坦同意向沙特派遣快速部署部队。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "德媒：德国不再充当欧盟对华政策刹车片",
+      "url": "https://www.dw.com/zh/德媒：社民党支持对中国更强硬-保护本土汽车工业/a-79552389?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "《南德意志报》称德国立场正因「中国冲击2.0」变化；《时代》周报报道社民党领衔部委在共同文件中支持对华更强硬，德法正联手推动欧盟新型贸易保护机制。（多家报道）",
+      "importance": 7
+    },
+    {
+      "title": "巴西大选首轮：弗拉维奥·博索纳罗胜出",
+      "url": "https://www.bbc.co.uk/news/articles/ck1l34ed592no?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "巴西大选首轮中右翼候选人弗拉维奥·博索纳罗得票领先，因无人超过 50%，选举将进入 10 月 25 日的第二轮投票。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "当日主线是企业级 AI 从能力展示转向可靠性与商业化验证，代理的「自我汇报」是否可信，正成为新的工程命题。",
+  "keywords": [
+    "GPT-6",
+    "ChatGPT 广告",
+    "文本溯源",
+    "AI 代理记忆",
+    "HyperBrowseComp",
+    "也门局势",
+    "德国对华政策",
+    "巴西大选"
+  ]
+}
