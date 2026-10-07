@@ -1,0 +1,75 @@
+{
+  "hero_headline": "GPT-6 上线：OpenAI 称解决 90 个数学难题",
+  "daily_overview": "今日科技侧由模型发布主导：OpenAI 将 GPT-6 面向全球 ChatGPT 用户推出，并上线 Intelligent UI；其公布的 722 篇数学论文宣称解决 500 个顶尖开放问题中的 90 个。法国 Mistral 发布 Large 4，美国 Reflection Beam 以 501B-A23B 开源权重入场。安全研究方面，AdvSim2Real 提出在模拟网页环境中训练 agent 抵御自适应提示注入。时政侧，沙特多座机场遭胡塞武装袭击致 3 人死亡；德语媒体讨论欧盟对华贸易强硬路线；加沙战争三周年，以色列举行纪念活动，当地重建仍步履维艰。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI 发布 722 篇数学论文，宣称解出 90 题",
+      "url": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai",
+      "source": "Latent Space",
+      "summary": "Latent Space 报道，OpenAI 发布 722 篇数学论文，声称解决了 500 个顶尖公开数学问题中的 90 个，并称之为百余年来数学领域最重要的时刻之一。",
+      "importance": 9
+    },
+    {
+      "title": "GPT-6 面向全球 ChatGPT 用户上线",
+      "url": "https://openai.com/index/gpt-6-for-everyone",
+      "source": "OpenAI News",
+      "summary": "OpenAI 宣布 GPT-6 在全球范围内向 ChatGPT 用户推出，同步上线 Intelligent UI，提供更快响应、可视化内容与可直接探索使用的交互体验。",
+      "importance": 8
+    },
+    {
+      "title": "法国 Mistral 发布 Large 4 模型",
+      "url": "https://www.dw.com/zh/欧洲ai出大招-法国mistral推出超强模型/a-79582475?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "法国 AI 公司 Mistral 推出 Large 4 模型，被视为欧洲减少对中美竞争对手依赖的关键一步；TLDR AI 当日汇总亦收录该动态。（多家报道）",
+      "importance": 7
+    },
+    {
+      "title": "美国开源模型 Reflection Beam 亮相：501B-A23B",
+      "url": "https://www.latent.space/p/ainews-reflection-beam-501b-a23b",
+      "source": "Latent Space",
+      "summary": "Reflection 发布美国开源模型 Reflection Beam，总参数 501B、激活 23B，被 Latent Space 视为美国开源阵营的一次小胜；TLDR AI 亦收录该动态。（多家报道）",
+      "importance": 7
+    },
+    {
+      "title": "新研究让网页 agent 抵御自适应提示注入",
+      "url": "https://huggingface.co/papers/2610.08773",
+      "source": "HuggingFace Trending Papers",
+      "summary": "Web agent 须读取第三方页面，页面植入指令可使其偏离用户目标，却又无法直接忽略页面中的数值与控件。论文提出 AdvSim2Real，在 Web 世界模型中训练 agent 抵御自适应提示注入，并缩小仿真到真实的差距。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "沙特机场遭胡塞武装袭击，3 死数十伤",
+      "url": "https://www.nytimes.com/2026/10/07/world/middleeast/saudi-arabia-airports-houthis.html",
+      "source": "NYT World",
+      "summary": "沙特阿拉伯机场遭袭，造成 3 人死亡、数十人受伤。沙特政府称死者包括两名女性和一名苏丹男子，首都机场被击中；胡塞武装发言人称该武装实施了袭击。",
+      "importance": 9
+    },
+    {
+      "title": "德语媒体讨论欧盟对华强硬路线与反制权限",
+      "url": "https://www.dw.com/zh/德语媒体：-不能因惧怕死亡而选择自杀/a-79582805?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "《商报》评论称，欧盟对华贸易强硬路线可能招致北京报复，但因惧怕报复而不作为等同于经济自杀；《日报》认为德法扩大欧盟反制权限的建议，使其获得快速反击的可能。",
+      "importance": 7
+    },
+    {
+      "title": "加沙战争三周年，以色列举行纪念活动",
+      "url": "https://www.bbc.co.uk/news/articles/cwkgj0g30m5jo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "哈马斯主导袭击三周年之际，以色列举行纪念活动。《纽约时报》视频则记录停战近一年后加沙居民如何应对现状并重建生活。（多家报道）",
+      "importance": 7
+    }
+  ],
+  "editor_note": "模型发布与数学突破同日而至，能力宣称仍待第三方复现；地缘冲突与贸易摩擦继续占据时政版面。",
+  "keywords": [
+    "GPT-6",
+    "OpenAI",
+    "Mistral Large 4",
+    "Reflection Beam",
+    "提示注入",
+    "欧盟对华贸易",
+    "加沙三周年",
+    "沙特机场遇袭"
+  ]
+}
