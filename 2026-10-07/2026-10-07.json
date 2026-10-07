@@ -1,0 +1,74 @@
+{
+  "hero_headline": "企业AI提速：501B开源模型与数学证明同日发布",
+  "daily_overview": "技术侧，企业级AI落地提速：Reflection发布501B参数美国开源模型Beam，Atlassian与OpenAI扩大合作、将前沿模型接入企业知识库，OpenAI公开模型在数学开放问题上的结果与Lean证明。开发者生态活跃，GitHub出现编码代理技能集与文本转CAD工具；论文方面，语言模型被用于自动发现更快的分子几何优化算法。时政方面，德国首次产生AfD籍州议长，澳大利亚高等法院作出首例气候变化裁决，苏丹布尔汉拒绝谈判并誓言收复失地。",
+  "tech_briefs": [
+    {
+      "title": "Reflection发布501B参数开源模型Beam",
+      "url": "https://www.latent.space/p/ainews-reflection-beam-501b-a23b",
+      "source": "Latent Space",
+      "summary": "Latent Space与TLDR AI均报道，美国开源阵营新增Reflection Beam，总参数501B、激活参数23B，被视为美国开源模型的一次进展。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "Atlassian与OpenAI扩大合作，接入企业知识",
+      "url": "https://openai.com/index/atlassian-partnership",
+      "source": "OpenAI News",
+      "summary": "双方扩大合作，把前沿模型与企业知识体系相连接，帮助团队完成规划、构建与交付，推动企业知识转化为可执行动作。",
+      "importance": 7
+    },
+    {
+      "title": "OpenAI公开模型数学新结果与Lean证明",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+      "source": "OpenAI News",
+      "summary": "OpenAI公布内部前沿模型在数学开放问题上的新结果，并在GitHub公开Lean证明形式化文件与研究细节，供外界核验与复用。",
+      "importance": 7
+    },
+    {
+      "title": "GitHub热榜：面向编码代理的技能集skills",
+      "url": "https://github.com/mattpocock/skills",
+      "source": "GitHub Trending",
+      "summary": "作者将个人.agents目录中的AI编码代理技能整理开源。这类技能以配置与提示文件定义代理在具体任务中的行为流程，可挂载到Claude Code等代理工具，便于工程师沉淀可复用工作流。",
+      "importance": 6
+    },
+    {
+      "title": "语言模型自动发现更快的分子几何优化算法",
+      "url": "https://huggingface.co/papers/2610.06577",
+      "source": "HuggingFace Trending Papers",
+      "summary": "量子化学几何优化每步都需一次力评估，在DFT级别下主导整体耗时。该研究让语言模型自动搜索更高效的分子弛豫优化器，以替代人工设计、减少迭代步数。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "德国首次选出AfD籍州议长",
+      "url": "https://www.dw.com/zh/德国首位afd州议长：劳施当选萨安州议长/a-79565827?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "35岁的劳施在首轮投票中当选萨克森-安哈尔特州议会议长，成为德国首位选择党（AfD）籍州议长。",
+      "importance": 8
+    },
+    {
+      "title": "澳高等法院首例气候变化诉讼判社区团体胜诉",
+      "url": "https://www.theguardian.com/environment/2026/oct/07/mount-pleasant-coalmine-case-high-court-climate-change-hunter-valley",
+      "source": "The Guardian",
+      "summary": "亨特谷社区团体就Mount Pleasant煤矿在澳大利亚高等法院胜诉，这是该国首例气候变化相关裁决。团体称，裁决表明不能继续挖煤并假装后果与自己无关。",
+      "importance": 7
+    },
+    {
+      "title": "苏丹布尔汉拒绝谈判，誓言收复全部领土",
+      "url": "https://www.aljazeera.com/news/2026/10/7/sudans-al-burhan-rejects-talks-vows-to-retake-all-territory-from-rsf?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "苏丹主权委员会主席布尔汉拒绝与快速支援部队谈判，誓言收复全部领土。周二冲突扩大，西科尔多凡州至少10名平民死亡，青尼罗州5500人流离失所。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "技术与地缘两线并进：企业级AI从试点转向嵌入组织知识；而欧洲政党格局与非洲战事提醒，制度与安全变量仍难被算法预测。",
+  "keywords": [
+    "Reflection Beam",
+    "企业级AI",
+    "开源大模型",
+    "AfD",
+    "气候变化诉讼",
+    "苏丹冲突",
+    "AI代理技能"
+  ]
+}
