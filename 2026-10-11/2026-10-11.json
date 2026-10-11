@@ -1,0 +1,74 @@
+{
+  "hero_headline": "利雅得机场遭胡塞武装袭击致12死 美国权衡军事介入",
+  "daily_overview": "时政焦点仍在也门与伊朗方向：胡塞武装对沙特利雅得国际机场发动导弹袭击，造成至少12人死亡、300余人受伤，沙特领导联军称之为「战争罪」，美国正权衡是否加入对胡塞武装的打击；同日美国宣布新一轮制裁国际刑事法院，特朗普称乌克兰需要「新领导人」。技术侧，自我改进成为大模型主线，MiMo-V2.6 以大规模强化学习与全模态训练推进这一路径；企业落地则集中在降本增效，Sophos 把威胁调查时间压缩96%，Asana 让浏览器代理成本降76倍，AI Agent 也开始进入逆向工程等专业场景。",
+  "tech_briefs": [
+    {
+      "title": "安全公司借 AI 将威胁调查时间缩短 96%",
+      "url": "https://openai.com/index/sophos",
+      "source": "OpenAI News",
+      "summary": "OpenAI 披露，安全公司 Sophos 使用其 Daybreak 将网络威胁调查时间缩短 96%，并把 52% 的 MDR（托管检测与响应）案例交由自动化处理，同时保留人工监督。",
+      "importance": 7
+    },
+    {
+      "title": "MiMo-V2.6：以强化学习推进模型自我改进",
+      "url": "https://huggingface.co/papers/2610.11959",
+      "source": "HuggingFace Trending Papers",
+      "summary": "MiMo-V2.6 是面向自我改进的全模态模型家族。报告介绍其在强化学习之前先做 mid-training，并扩大 RL 算力规模，系统阐述把强化学习推向模型自我提升的训练范式与工程实践。",
+      "importance": 8
+    },
+    {
+      "title": "Asana 浏览器代理成本降低 76 倍",
+      "url": "https://openai.com/index/asana-browser-agent",
+      "source": "OpenAI News",
+      "summary": "OpenAI 消息称，Asana 在 Codex 中使用 GPT-6 系列模型改进其浏览器代理，测试中模型成本降低 76 倍、速度提升 5 倍，以便向客户提供能力更强的模型。",
+      "importance": 7
+    },
+    {
+      "title": "rea：用 AI Agent 逆向分析应用与二进制",
+      "url": "https://github.com/morluto/rea",
+      "source": "GitHub Trending",
+      "summary": "GitHub 上的 rea 项目用 AI Agent 做逆向工程，分析范围从应用层行为一直下探到原生二进制文件。它面向安全研究与漏洞分析场景，帮助在没有源码时快速理解软件内部逻辑与实现细节。",
+      "importance": 6
+    },
+    {
+      "title": "Harness Compilation：重构小模型与外部工具分工",
+      "url": "https://arxiv.org/abs/2610.11231",
+      "source": "arXiv Papers",
+      "summary": "论文提出 Harness Compilation 离线流程，在冻结的小型视觉语言模型与外部 harness 之间重新划分工作，并借大模型教师依据学生执行轨迹修订分工策略，让小模型不仅能读、也能有效获取外部证据。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "利雅得机场遇袭致 12 人死亡",
+      "url": "https://www.bbc.co.uk/news/articles/cw33x4y8k82no?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "也门胡塞武装对沙特利雅得国际机场发动导弹袭击，造成至少12人死亡、300余人受伤，沙特领导联军称其为「战争罪」，机场一度停运；美国正评估是否加入对胡塞武装的打击。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "美国对国际刑事法院实施新一轮制裁",
+      "url": "https://www.dw.com/zh/美国制裁国际刑事法院-继续推进-瓦解-行动/a-79628741?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "美国宣布对国际刑事法院实施新一轮制裁，被视为特朗普政府试图「瓦解」这一政府间组织的最新动作，国务卿卢比奥发出强硬警告，国际社会与法院方面均有回应。",
+      "importance": 7
+    },
+    {
+      "title": "特朗普称乌克兰需要「新领导人」",
+      "url": "https://www.theguardian.com/world/2026/oct/10/ukraine-russia-strikes-war-trump-diesel-deal-zelenskyy",
+      "source": "The Guardian",
+      "summary": "特朗普在与普京达成柴油采购协议次日表示，乌克兰需要「新领导人」，暗示泽连斯基在结束战争方面作为不足。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "利雅得机场袭击把地区冲突重新推上台面，而技术新闻的主旋律已从能力展示转向成本与可靠性，这两条线索都值得持续跟踪。",
+  "keywords": [
+    "利雅得机场遇袭",
+    "胡塞武装",
+    "美国制裁国际刑事法院",
+    "乌克兰局势",
+    "强化学习自我改进",
+    "AI Agent",
+    "模型成本优化"
+  ]
+}
