@@ -1,0 +1,75 @@
+{
+  "hero_headline": "Gemini 4 Argon 开放，基辅遇袭断电",
+  "daily_overview": "技术侧，Gemini 4 Argon 面向开发者、企业与机器人场景全球开放；OpenAI 连发智能体案例，从代码扩展到反恶意软件与长时间运行的企业任务。端侧模型活跃：DeepMind 与新加坡政府合作以轻量 Gemma 拦截聊天诈骗，开源社区出现全本地运行的语音工作台。时政侧，俄军袭击致基辅 60 万人断电、卫星互联网项目受限，乌克兰对外部卫星依赖的风险上升；特朗普宣扬格陵兰油气矿产交易遭丹麦反驳；重庆前市长黄奇帆被官宣落马。",
+  "tech_briefs": [
+    {
+      "title": "Gemini 4 Argon 正式全球开放",
+      "url": "https://x.com/GoogleAIStudio/status/2110061450618159297",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "Gemini 4 Argon 通过 AI Studio 与 Gemini 平台 API 面向开发者与企业开放，Ultra 订阅者可在 Google Antigravity 使用；DeepMind 同期披露安全开发流程与机器人应用方向。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI 连发多起企业智能体案例",
+      "url": "https://openai.com/index/amp-beyond-coding",
+      "source": "OpenAI News",
+      "summary": "OpenAI 发布多个企业案例：Amp 把智能体拓展到编码之外，SentinelOne 将恶意软件分析从数周缩至数小时，另有实验室并行运行万级智能体逾 36 小时。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind 与新加坡共建端侧反诈模型",
+      "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "source": "DeepMind Blog",
+      "summary": "谷歌 DeepMind 与新加坡政府科技局合作，微调轻量级端侧 Gemma 模型，用于在私密聊天中拦截对话式诈骗，识别过程在设备上完成，数据无需传出云端。",
+      "importance": 7
+    },
+    {
+      "title": "VoiceStudio：完全本地的开源语音工作台",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "source": "GitHub Trending",
+      "summary": "GitHub 项目 VoiceStudio 定位 ElevenLabs 的完全本地开源替代，支持声音克隆、音色设计、视频配音、转写与有声书制作，覆盖 646 种语言，语音数据不出设备，适合重视隐私的创作者。",
+      "importance": 6
+    },
+    {
+      "title": "Agent-Reflex：让语言智能体学会反思",
+      "url": "https://huggingface.co/papers/2610.17953",
+      "source": "HuggingFace Trending Papers",
+      "summary": "长时程语言智能体常面对 MCP 工具返回的噪声反馈与用户临时纠错，现有方法对反思能力监督有限。Agent-Reflex 通过专门训练让智能体学会反思性行动，在噪声与人工干预下保持鲁棒。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "基辅遇袭断电，乌克兰卫星通信承压",
+      "url": "https://www.nytimes.com/2026/10/14/world/europe/ukraine-starlink-energy.html",
+      "source": "NYT World",
+      "summary": "俄军大规模袭击致基辅 60 万人断电；五角大楼资助的卫星互联网项目似在未预警下受限，乌方称星链速度限制影响战场任务，马斯克称限制由美国政府决定。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "特朗普宣扬格陵兰矿产交易 丹麦反驳",
+      "url": "https://www.aljazeera.com/news/2026/10/14/denmark-pushes-back-as-trump-touts-greenland-oil-and-mineral-deals?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "特朗普称正推动格陵兰石油与矿产交易，丹麦方面予以反驳。近期美-格陵兰-丹麦协议不包含采矿或钻探权，并重申格陵兰主权。",
+      "importance": 8
+    },
+    {
+      "title": "重庆前市长黄奇帆被官宣落马",
+      "url": "https://www.dw.com/zh/黄奇帆落马-为什么有人惋惜？/a-79662742?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "重庆前市长黄奇帆在卸任多年后被官宣落马，引发广泛关注。他曾经历重庆官场多次震荡而未受影响，并因专业背景与直言风格被称为「网红经济学家」，其落马令部分人惋惜。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "今日主线是智能体从演示走向交付：模型开放与端侧落地并行，而基辅断电与格陵兰争议提醒，技术依赖同样是地缘变量。",
+  "keywords": [
+    "Gemini 4 Argon",
+    "AI 智能体",
+    "端侧模型",
+    "开源语音工具",
+    "乌克兰卫星通信",
+    "格陵兰",
+    "黄奇帆",
+    "企业 AI 落地"
+  ]
+}
