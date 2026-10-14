@@ -1,0 +1,75 @@
+{
+  "hero_headline": "Gemini 4 Argon 上线，美银领巨额罚单",
+  "daily_overview": "技术侧，谷歌 Gemini 4 Argon 全球上线，Meta MSL 发布对标 Claude 5.5 的 Muse Wonder，Higgsfield 将 AI 视频延长至 10 分钟以上，前沿模型竞争向多模态与长时程推进；同时 AI 实验室开始收购关停初创公司的数据用于训练。时政侧，美国银行因反洗钱与制裁违规被罚 12 亿美元，特朗普宣布的「能源停火」数小时后被指遭破坏，欧盟通过最大规模对俄制裁，沙特阿美再遭胡塞武装袭击。",
+  "tech_briefs": [
+    {
+      "title": "谷歌 Gemini 4 Argon 全球上线",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+      "source": "DeepMind Blog",
+      "summary": "谷歌 Gemini 4 Argon 面向开发者与企业全球开放，可经 AI Studio 与 Gemini 平台 API 调用，Ultra 订阅者可在 Antigravity 使用，官方同步公布安全与机器人方向说明。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "Meta MSL 发布 Muse Wonder 前沿模型",
+      "url": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder",
+      "source": "Latent Space",
+      "summary": "Meta 的 MSL 推出 Muse Wonder 与 Wonder Full，被评价为 Claude 5.5 级别的前沿模型，标志 MSL 作为前沿实验室的崛起完成；TLDR AI 同日亦收录该消息。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "Higgsfield 将 AI 视频时长延至 10 分钟以上",
+      "url": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "source": "OpenAI News",
+      "summary": "据 OpenAI 消息，Higgsfield 用 GPT-6 Astra 将 AI 视频从 1 分钟延长到 10 分钟以上，并以 GPT-Image-2.5 提升画面精度，同时通过 GPT-Live 探索语音电影制作。",
+      "importance": 7
+    },
+    {
+      "title": "AI 实验室收购倒闭初创数据用于训练",
+      "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
+      "source": "MIT Tech Review AI",
+      "summary": "MIT 科技评论报道，AI 实验室正收购已关停初创公司的数字档案用于模型训练；一名加密创业者出售公司数据后，仅代码部分即获约 2.5 万美元。",
+      "importance": 7
+    },
+    {
+      "title": "开源 VoiceStudio：本地运行的语音克隆工具",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "source": "GitHub Trending",
+      "summary": "GitHub 项目 VoiceStudio 是完全本地运行的开源 ElevenLabs 替代方案，支持声音克隆、音色设计、视频配音、转录与有声书制作，覆盖 646 种语言，音频不出设备，适合隐私敏感场景。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美国银行因反洗钱违规被罚 12 亿美元",
+      "url": "https://www.aljazeera.com/news/2026/10/14/us-fines-bank-of-america-1-2bn-for-money-laundering-sanctions-violations?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "美国第二大银行美国银行因未遵守反洗钱与制裁相关法律，被处以 12 亿美元罚款，属创纪录处罚。",
+      "importance": 8
+    },
+    {
+      "title": "特朗普宣布能源停火后乌称设施再遭袭",
+      "url": "https://www.dw.com/zh/特朗普宣布-能源停火-后-乌称能源设施遭俄袭击/a-79652601?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "特朗普在与俄罗斯达成柴油协议后宣布基辅与莫斯科达成「能源停火」，数小时后乌方称能源设施再遭袭击；欧盟同日批准针对莫斯科的史上最大规模制裁。",
+      "importance": 8
+    },
+    {
+      "title": "胡塞武装袭击沙特阿美 冲突升级",
+      "url": "https://www.nytimes.com/2026/10/13/world/middleeast/saudi-arabia-yemen-houthis-aramco-threat.html",
+      "source": "NYT World",
+      "summary": "也门胡塞武装警告将袭击沙特阿美总部后，沙特能源巨头阿美遭到打击；沙特领导的联盟表示正打击胡塞武装的作战能力。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "前沿模型迭代与数据收购并行，监管处罚与地缘摩擦同步加剧，数据来源合规与能源风险值得持续跟踪。",
+  "keywords": [
+    "Gemini 4 Argon",
+    "Meta Muse Wonder",
+    "AI 视频生成",
+    "数据交易",
+    "美国银行罚款",
+    "能源停火",
+    "欧盟制裁",
+    "开源语音工具"
+  ]
+}
