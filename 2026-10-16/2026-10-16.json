@@ -1,0 +1,75 @@
+{
+  "hero_headline": "Gemini 4 开放，也门亚丁政府总部遭袭",
+  "daily_overview": "今日主线是模型与 AI 基础设施同步加速：Gemini 4 Argon 面向开发者与企业开放，Meta 开源多模态混合专家模型 Muse Spark Open。Modal 以 160 亿美元 D 轮跻身纽约 AI 基础设施十角兽；Anthropic 上线官方 Claude Code 插件目录，科研 Agent 技能库扩张。时政方面，胡塞导弹袭击也门亚丁政府总部致 5 人死亡，美国小学枪击致至少 4 人丧生，新鸭绿江大桥通车受关注。",
+  "tech_briefs": [
+    {
+      "title": "Gemini 4 Argon 面向企业与开发者开放",
+      "url": "https://x.com/GoogleAIStudio/status/2110061450618159297",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "Google 宣布 Gemini 4 Argon 全球开放，开发者与企业可经 AI Studio 和 Gemini 平台 API 调用，Google AI Ultra 订阅者可在 Antigravity 等入口使用；DeepMind 同日发文说明其安全与责任开发流程。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "Modal 完成 160 亿美元 D 轮融资",
+      "url": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d",
+      "source": "Latent Space",
+      "summary": "Modal 年度经常性收入达 10 亿美元，完成 160 亿美元 D 轮融资，成为纽约最新的 AI 基础设施十角兽；5 个月内使用量与估值均增长 3 倍，一年增长 15 倍。",
+      "importance": 8
+    },
+    {
+      "title": "Meta 开源多模态 MoE 模型 Muse Spark Open",
+      "url": "https://huggingface.co/blog/meta-muse-spark-open",
+      "source": "Hugging Face Blog",
+      "summary": "Meta 发布开源权重的前沿多模态混合专家模型 Muse Spark Open，Hugging Face 博客同步给出介绍与使用说明，开源权重阵营再添一个多模态前沿模型。",
+      "importance": 8
+    },
+    {
+      "title": "Anthropic 上线官方 Claude Code 插件目录",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "source": "GitHub Trending",
+      "summary": "Anthropic 官方维护的 Claude Code 插件目录，汇集经筛选的高质量插件，缓解插件来源分散、质量参差的问题；开发者可据此查找并安装扩展编码能力的插件，省去自行甄别的成本。",
+      "importance": 7
+    },
+    {
+      "title": "科研 Agent 技能库收录 177 项即用技能",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "source": "GitHub Trending",
+      "summary": "面向科研场景的 Agent Skills 库，提供 177 个经验证的开箱即用技能并接入 100 多个科学数据库；通用 agent 接入后即可执行文献检索、数据分析等科研工作流，免去自建工具链。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "胡塞导弹袭击也门亚丁政府总部致 5 死",
+      "url": "https://www.nytimes.com/2026/10/15/world/middleeast/yemen-strike-aden-palace.html",
+      "source": "NYT World",
+      "summary": "胡塞武装导弹袭击也门亚丁的马什格宫，一名也门部长称袭击造成 5 人死亡；目击者称总统府附近至少发生 6 次爆炸，该处为也门国际公认政府所用。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "美国一小学发生枪击致至少 4 人死亡",
+      "url": "https://www.aljazeera.com/news/2026/10/15/at-least-4-including-3-children-killed-in-us-elementary-school-shooting?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "美国一所小学发生枪击事件，至少 4 人死亡，其中 3 名为儿童；当局表示枪手已被枪击击毙，有关袭击经过的细节仍然很少。",
+      "importance": 8
+    },
+    {
+      "title": "新鸭绿江大桥通车，中朝经贸受关注",
+      "url": "https://www.dw.com/zh/新鸭绿江大桥延宕12年终通车-中国力图恢复对朝影响力/a-79670658?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "延宕 12 年的新鸭绿江大桥正式通车，连接中国丹东与朝鲜新义州，距朝俄公路桥开通约一个月；分析认为大桥有望提振双边贸易，也反映北京希望恢复对朝鲜的独特影响力。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "模型与资本同日加速，AI 竞争焦点正从能力转向安全与工程化落地；而时政突发风险仍是当日新闻主线。",
+  "keywords": [
+    "Gemini 4 Argon",
+    "Modal",
+    "开源权重模型",
+    "Claude Code",
+    "科研 Agent",
+    "也门局势",
+    "美国校园枪击",
+    "鸭绿江大桥"
+  ]
+}

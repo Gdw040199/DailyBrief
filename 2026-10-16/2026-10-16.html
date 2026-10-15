@@ -1,0 +1,1668 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日简报 · 2026-10-16</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  /* ===== MiMo Figma exact clone ===== */
+  @keyframes mimoScrollLeft { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes mimoScrollRight { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #0a0a0a;
+    color: #f0f0f0;
+    font-family: Inter, 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+  main#content {
+    max-width: 860px; margin: 0 auto;
+    padding: 6rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    scroll-margin-top: 4.5rem;
+  }
+  .content-label { margin-bottom: 2.5rem; }
+
+  /* ===== Nav — fixed blur ===== */
+  .top-nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1rem 2rem;
+    background: rgba(10,10,10,0.88);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  .nav-logo {
+    font-weight: 800; font-size: 1.35rem; color: #fff;
+    letter-spacing: 0.06em;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .nav-links { display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; }
+  .nav-link {
+    color: rgba(255,255,255,0.55); font-size: 0.875rem; font-weight: 400;
+    text-decoration: none; transition: color 0.2s;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .nav-link:hover { color: rgba(255,255,255,0.9); }
+  .nav-group { position: relative; }
+  .nav-flyout {
+    position: absolute; top: calc(100% + 0.6rem); left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    min-width: 13.5rem;
+    padding: 0.35rem 0;
+    background: rgba(14,14,14,0.96);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 2px;
+    opacity: 0; visibility: hidden;
+    transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+    pointer-events: none;
+  }
+  .nav-group:hover .nav-flyout,
+  .nav-group:focus-within .nav-flyout {
+    opacity: 1; visibility: visible;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+  }
+  .nav-flyout-link {
+    display: flex; align-items: center; gap: 0.65rem;
+    width: 100%; padding: 0.55rem 1rem;
+    background: none; border: none; cursor: pointer;
+    text-align: left; font-family: Inter, 'Noto Sans SC', sans-serif;
+    color: rgba(255,255,255,0.55); font-size: 0.78rem;
+    transition: background 0.15s, color 0.15s;
+  }
+  .nav-flyout-link:hover {
+    background: rgba(255,255,255,0.04);
+    color: rgba(255,255,255,0.92);
+  }
+  .nav-flyout-num {
+    color: rgba(255,255,255,0.18);
+    font-size: 0.62rem; font-weight: 700;
+    letter-spacing: 0.1em; flex-shrink: 0;
+    font-family: Inter, sans-serif;
+  }
+  .nav-flyout-name { flex: 1; }
+  .nav-flyout-count {
+    color: rgba(255,255,255,0.22);
+    font-size: 0.62rem; flex-shrink: 0;
+    font-family: Inter, sans-serif;
+  }
+  @media (max-width: 600px) {
+    .top-nav { padding: 0.75rem 1.25rem; }
+    .nav-links { gap: 1rem; }
+    .nav-link { font-size: 0.78rem; }
+  }
+
+  /* ===== Hero — 100vh + animated text pattern ===== */
+  .hero-section {
+    position: relative; height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; background: #0a0a0a;
+  }
+  .hero-pattern {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; justify-content: center;
+    overflow: hidden; pointer-events: none; user-select: none;
+  }
+  .pattern-row {
+    white-space: nowrap;
+    color: #fff; opacity: 0.042;
+    font-size: 2.6rem; font-weight: 800;
+    letter-spacing: 0.55em; line-height: 3.6rem;
+    font-family: Inter, sans-serif;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .pattern-row { animation: none !important; }
+    html { scroll-behavior: auto; }
+  }
+  .pattern-text { padding: 0 1.5rem; }
+  .hero-content {
+    position: relative; z-index: 2; text-align: center;
+    animation: fadeIn 0.8s ease-out; padding: 0 2rem;
+  }
+  .hero-title {
+    color: #fff; font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 700; letter-spacing: -0.02em;
+    line-height: 1.15; margin-bottom: 1rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .hero-subtitle {
+    color: rgba(255,255,255,0.38);
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-weight: 400;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    margin-bottom: 0.5rem;
+  }
+  .hero-subtitle-en {
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    font-family: Inter, sans-serif;
+  }
+  .hero-subtitle-zh {
+    letter-spacing: 0.08em;
+    color: rgba(255,255,255,0.28);
+    font-size: 0.9rem;
+  }
+  .hero-date {
+    color: rgba(255,255,255,0.25);
+    font-size: 0.85rem; letter-spacing: 0.08em;
+    font-family: Inter, sans-serif;
+  }
+  .scroll-indicator {
+    position: absolute; left: 50%; bottom: 4rem;
+    transform: translateX(-50%);
+    width: 1px; height: 3rem;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent);
+  }
+
+  /* ===== About — MiMo About section ===== */
+  .about-section {
+    padding: 6rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .about-inner { max-width: 768px; margin: 0 auto; }
+  .about-text {
+    color: rgba(255,255,255,0.72);
+    font-size: 1.08rem; line-height: 1.9;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    font-weight: 300; margin: 0;
+  }
+
+  /* ===== arXiv directions — MiMo Products grid ===== */
+  .arxiv-section {
+    padding: 6rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .arxiv-inner { max-width: 960px; margin: 0 auto; }
+  .arxiv-grid {
+    display: grid; grid-template-columns: 1fr;
+    gap: 1px; background: rgba(255,255,255,0.05);
+  }
+  @media (min-width: 768px) {
+    .arxiv-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  .arxiv-card {
+    position: relative;
+    display: flex; flex-direction: column; align-items: flex-start;
+    text-align: left;
+    background: #0a0a0a;
+    padding: 2.25rem;
+    border: none; cursor: pointer;
+    font-family: inherit;
+    transition: background 0.3s;
+  }
+  .arxiv-card:hover { background: #161616; }
+  .arxiv-card:hover .arxiv-arrow { transform: translateX(4px); }
+  .arxiv-card:hover .arxiv-cta { color: rgba(255,255,255,0.85); }
+  .arxiv-num {
+    color: rgba(255,255,255,0.12);
+    font-size: 0.7rem; letter-spacing: 0.15em;
+    font-weight: 700; margin-bottom: 2.5rem;
+    font-family: Inter, sans-serif;
+  }
+  .arxiv-name {
+    color: #fff; font-size: 1.15rem; font-weight: 600;
+    letter-spacing: -0.01em; line-height: 1.3;
+    margin: 0 0 0.75rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .arxiv-tagline {
+    color: rgba(255,255,255,0.45);
+    font-size: 0.875rem; line-height: 1.65;
+    margin: 0 0 1.5rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    font-weight: 400;
+  }
+  .arxiv-count {
+    color: rgba(255,255,255,0.22);
+    font-size: 0.68rem; letter-spacing: 0.06em;
+    margin-bottom: 2rem;
+    font-family: Inter, sans-serif;
+  }
+  .arxiv-cta {
+    margin-top: auto;
+    color: rgba(255,255,255,0.38);
+    font-size: 0.875rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    transition: color 0.2s;
+  }
+  .arxiv-arrow {
+    display: inline-block;
+    transition: transform 0.2s;
+  }
+  .source-content[id] { scroll-margin-top: 5rem; }
+
+  /* ===== Lab watch — MiMo Blog rows ===== */
+  .lab-watch-section {
+    padding: 6rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .lab-watch-inner { max-width: 860px; margin: 0 auto; }
+  .lab-watch-summary {
+    color: rgba(255,255,255,0.35);
+    font-size: 0.85rem;
+    margin: -2.5rem 0 2rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .lab-watch-list { display: flex; flex-direction: column; }
+  .lab-row {
+    display: flex; align-items: baseline; gap: 1.25rem;
+    padding: 1.2rem 0;
+    border-top: 1px solid rgba(255,255,255,0.055);
+    text-decoration: none; color: inherit;
+    transition: padding-left 0.2s, background 0.2s;
+  }
+  .lab-row:last-child { border-bottom: 1px solid rgba(255,255,255,0.055); }
+  .lab-row:hover { padding-left: 0.75rem; }
+  .lab-row-updated:hover .lab-name { color: rgba(255,255,255,0.95); }
+  .lab-row-updated .lab-name { color: rgba(255,255,255,0.82); }
+  .lab-row-updated .lab-badge {
+    background: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.85);
+    border-color: rgba(255,255,255,0.15);
+  }
+  .lab-row-quiet .lab-name { color: rgba(255,255,255,0.42); }
+  .lab-row-quiet .lab-detail { color: rgba(255,255,255,0.22); }
+  .lab-row-error .lab-detail { color: rgba(255,255,255,0.45); }
+  .lab-num {
+    color: rgba(255,255,255,0.14);
+    font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.1em; flex-shrink: 0;
+    font-family: Inter, sans-serif;
+  }
+  .lab-name {
+    font-size: 0.93rem; line-height: 1.45;
+    flex-shrink: 0; min-width: 11rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    transition: color 0.2s;
+  }
+  .lab-detail {
+    flex: 1; font-size: 0.82rem; line-height: 1.5;
+    color: rgba(255,255,255,0.48);
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .lab-badge {
+    font-size: 0.58rem; padding: 0.12rem 0.45rem;
+    border-radius: 2px; font-weight: 600;
+    border: 1px solid rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.3);
+    flex-shrink: 0; font-family: Inter, sans-serif;
+    letter-spacing: 0.04em;
+  }
+  .lab-arrow {
+    color: rgba(255,255,255,0.15); font-size: 1rem;
+    flex-shrink: 0; transition: color 0.2s, transform 0.2s;
+  }
+  .lab-row:hover .lab-arrow { color: rgba(255,255,255,0.55); transform: translateX(4px); }
+  @media (max-width: 640px) {
+    .lab-row { flex-wrap: wrap; gap: 0.4rem 1rem; }
+    .lab-name { min-width: 0; flex: 1 1 100%; }
+    .lab-detail { flex: 1 1 100%; order: 3; }
+  }
+
+  /* ===== Section labels — MiMo uppercase style ===== */
+  .section-label {
+    color: rgba(255,255,255,0.25);
+    font-size: 0.7rem; letter-spacing: 0.2em;
+    text-transform: uppercase; font-weight: 500;
+    font-family: Inter, sans-serif;
+    margin-bottom: 3.5rem;
+  }
+
+  /* ===== Primary tabs ===== */
+  .tabs {
+    display: flex; gap: 0;
+    margin: 0 0 3rem;
+    border-bottom: 1px solid rgba(255,255,255,0.055);
+  }
+  .tab {
+    background: none; border: none;
+    padding: 1rem 1.8rem;
+    font-size: 0.8rem; font-weight: 500;
+    color: rgba(255,255,255,0.35);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px; font-family: Inter, 'Noto Sans SC', sans-serif;
+    transition: all 0.2s;
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .tab:hover { color: rgba(255,255,255,0.6); }
+  .tab.active { color: rgba(255,255,255,0.9); border-bottom-color: #fff; }
+  .tab .count { font-size: 0.6rem; color: rgba(255,255,255,0.2); margin-left: 0.5rem; }
+  .panel { display: none; }
+  .panel.active { display: block; }
+
+  /* ===== Sub-tabs ===== */
+  .sub-tabs { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 2.5rem; }
+  .sub-tab {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 0.5rem 1.1rem; border-radius: 2px;
+    font-size: 0.75rem; font-weight: 500;
+    color: rgba(255,255,255,0.45);
+    cursor: pointer; font-family: Inter, 'Noto Sans SC', sans-serif;
+    transition: all 0.2s; letter-spacing: 0.03em;
+  }
+  .sub-tab:hover { border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.03); }
+  .sub-tab.active { background: #fff; color: #0a0a0a; border-color: #fff; }
+  .sub-tab .count { font-size: 0.55rem; opacity: 0.5; margin-left: 0.4rem; }
+  .sub-content { display: none; }
+  .sub-content.active { display: block; }
+
+  /* ===== Source tabs — text-only L3 filters ===== */
+  .source-tabs {
+    display: flex; flex-wrap: wrap; gap: 0.4rem;
+    margin: 0 0 2rem; padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.055);
+  }
+  .source-tab {
+    background: none; border: none;
+    padding: 0.3rem 0.6rem; border-radius: 2px;
+    font-size: 0.7rem; color: rgba(255,255,255,0.35);
+    cursor: pointer; font-family: Inter, 'Noto Sans SC', sans-serif;
+    transition: all 0.2s;
+    border-bottom: 1px solid transparent;
+  }
+  .source-tab:hover { color: rgba(255,255,255,0.65); }
+  .source-tab.active {
+    color: rgba(255,255,255,0.9);
+    border-bottom-color: rgba(255,255,255,0.35);
+    background: none;
+  }
+  .source-tab .count { font-size: 0.55rem; opacity: 0.5; margin-left: 0.3rem; }
+  .source-content { display: none; }
+  .source-content.active { display: block; }
+
+  /* ===== Article rows — MiMo blog row style ===== */
+  .article {
+    padding: 1.3rem 0;
+    border-top: 1px solid rgba(255,255,255,0.055);
+    transition: all 0.2s;
+  }
+  .article:first-child { border-top: none; }
+  .article:hover { padding-left: 1rem; }
+  .article:hover .article-title a { color: rgba(255,255,255,0.95); }
+  .article-title {
+    font-size: 0.95rem; margin: 0 0 0.35rem;
+    font-weight: 500; line-height: 1.5;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .article-title a { color: rgba(255,255,255,0.7); text-decoration: none; transition: color 0.2s; }
+  .article-title a:hover { color: rgba(255,255,255,0.95); }
+  .article-authors {
+    color: rgba(255,255,255,0.22);
+    font-size: 0.7rem; margin: 0 0 0.35rem;
+    font-family: Inter, sans-serif;
+  }
+  .article-code { margin: 0 0 0.35rem; }
+  .code-link {
+    display: inline-block; background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.45);
+    font-size: 0.68rem; font-weight: 500;
+    padding: 0.12rem 0.55rem; border-radius: 2px;
+    text-decoration: none; transition: all 0.2s;
+    font-family: Inter, sans-serif;
+  }
+  .code-link:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.8); }
+  .article-meta { color: rgba(255,255,255,0.18); font-size: 0.68rem; margin: 0 0 0.35rem; }
+  .article-stats { color: rgba(255,255,255,0.18); font-size: 0.72rem; margin: 0 0 0.5rem; }
+  .article-excerpt {
+    margin: 0; color: rgba(255,255,255,0.48);
+    font-size: 0.85rem; line-height: 1.75;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    font-weight: 400;
+  }
+  .article-summary {
+    margin: 0.8rem 0 0; padding: 0.9rem 1.2rem;
+    background: rgba(255,255,255,0.03);
+    border-left: 2px solid rgba(255,255,255,0.12);
+    border-radius: 0 2px 2px 0;
+    font-size: 0.82rem; line-height: 1.75;
+    color: rgba(255,255,255,0.5);
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    font-weight: 300;
+  }
+  .summary-label {
+    display: inline-block; font-size: 0.55rem;
+    color: rgba(255,255,255,0.3);
+    margin-right: 0.5rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.15em;
+    font-family: Inter, sans-serif;
+  }
+
+  .empty {
+    color: rgba(255,255,255,0.2);
+    text-align: center; padding: 5rem 0;
+    font-size: 0.85rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+
+  /* ===== Footer — MiMo style ===== */
+  .mimo-footer {
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 1rem;
+    padding: 2.5rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    max-width: 860px; margin: 0 auto;
+  }
+  .footer-logo {
+    font-weight: 800; font-size: 1.25rem; color: #fff;
+    letter-spacing: 0.06em;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .footer-right {
+    display: flex; flex-direction: column; align-items: flex-end;
+    gap: 0.35rem; text-align: right;
+  }
+  .footer-disclaimer {
+    color: rgba(255,255,255,0.22);
+    font-size: 0.68rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    letter-spacing: 0.02em; max-width: 28rem;
+  }
+  .footer-copy {
+    color: rgba(255,255,255,0.2);
+    font-size: 0.72rem; font-family: Inter, sans-serif;
+    letter-spacing: 0.04em;
+  }
+
+  /* ===== Conference Deadlines — MiMo Careers style ===== */
+  .deadlines-section {
+    padding: 6rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    max-width: 860px; margin: 0 auto;
+  }
+  .deadline-row {
+    display: flex; align-items: baseline; gap: 1.5rem;
+    padding: 1.3rem 0;
+    border-top: 1px solid rgba(255,255,255,0.055);
+    transition: all 0.2s;
+    text-decoration: none; color: inherit;
+  }
+  .deadline-row:last-of-type { border-bottom: 1px solid rgba(255,255,255,0.055); }
+  .deadline-row:hover { padding-left: 1rem; }
+  .deadline-row:hover .deadline-arrow { color: rgba(255,255,255,0.6); transform: translateX(4px); }
+  .deadline-num {
+    color: rgba(255,255,255,0.14);
+    font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.1em; flex-shrink: 0;
+    font-family: Inter, sans-serif;
+  }
+  .deadline-info { flex: 1; }
+  .deadline-name {
+    color: rgba(255,255,255,0.62);
+    font-size: 0.93rem; line-height: 1.5;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    font-weight: 400; transition: color 0.2s;
+  }
+  .deadline-row:hover .deadline-name { color: rgba(255,255,255,0.92); }
+  .deadline-meta {
+    color: rgba(255,255,255,0.18);
+    font-size: 0.72rem; flex-shrink: 0;
+    font-family: Inter, sans-serif; letter-spacing: 0.04em;
+  }
+  .deadline-badge {
+    font-size: 0.6rem; padding: 0.1rem 0.4rem;
+    border-radius: 2px; font-weight: 600;
+    font-family: Inter, sans-serif;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .deadline-badge.soon { background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.78); }
+  .deadline-badge.upcoming { background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.55); }
+  .deadline-badge.later { background: rgba(255,255,255,0.03); color: rgba(255,255,255,0.35); }
+  .deadline-arrow {
+    color: rgba(255,255,255,0.15); font-size: 1rem;
+    flex-shrink: 0; transition: color 0.2s, transform 0.2s;
+  }
+  .tab:focus-visible, .sub-tab:focus-visible, .source-tab:focus-visible,
+  .nav-link:focus-visible, .deadline-row:focus-visible,
+  .arxiv-card:focus-visible, .nav-flyout-link:focus-visible,
+  .lab-row:focus-visible {
+    outline: 2px solid rgba(255,255,255,0.4);
+    outline-offset: 2px;
+  }
+</style>
+</head>
+<body>
+<!-- Fixed nav -->
+<nav class="top-nav">
+  <span class="nav-logo">DailyBrief</span>
+  <div class="nav-links">
+    <div class="nav-group">
+  <a class="nav-link nav-link-parent" href="#content" data-nav-tab="tech">技术动态</a>
+  <div class="nav-flyout" role="menu"><button type="button" class="nav-flyout-link" data-arxiv-dir="motion" role="menuitem"><span class="nav-flyout-num">01</span><span class="nav-flyout-name">Human Motion</span><span class="nav-flyout-count">4</span></button><button type="button" class="nav-flyout-link" data-arxiv-dir="video" role="menuitem"><span class="nav-flyout-num">02</span><span class="nav-flyout-name">Video Models</span><span class="nav-flyout-count">10</span></button><button type="button" class="nav-flyout-link" data-arxiv-dir="world-model" role="menuitem"><span class="nav-flyout-num">03</span><span class="nav-flyout-name">World Models</span><span class="nav-flyout-count">10</span></button></div>
+</div>
+    <a class="nav-link" href="#content" data-nav-tab="politics">时政观察</a>
+    <a class="nav-link nav-link-archive" href="../archive.html">历史归档</a>
+  </div>
+</nav>
+
+<!-- Hero — 100vh with animated text pattern -->
+<div class="hero-section">
+  <div class="hero-pattern" aria-hidden="true">
+    <div class="pattern-row" style="animation:mimoScrollLeft 22.0s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 23.8s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 25.6s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 27.4s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 29.2s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 31.0s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 32.8s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 34.6s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 36.4s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 38.2s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 40.0s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 41.8s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 43.6s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 45.4s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 47.2s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 49.0s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 50.8s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 52.6s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 54.4s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 56.2s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 58.0s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 59.8s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 61.6s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 63.4s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+  </div>
+  <div class="hero-content">
+    <h1 class="hero-title">Gemini 4 开放，也门亚丁政府总部遭袭</h1>
+    <p class="hero-subtitle hero-subtitle-zh">2026-10-16</p>
+    
+  </div>
+  <div class="scroll-indicator"></div>
+</div>
+
+<section class="about-section" id="about">
+  <div class="about-inner">
+    <div class="section-label">今日总览</div>
+    <p class="about-text">今日主线是模型与 AI 基础设施同步加速：Gemini 4 Argon 面向开发者与企业开放，Meta 开源多模态混合专家模型 Muse Spark Open。Modal 以 160 亿美元 D 轮跻身纽约 AI 基础设施十角兽；Anthropic 上线官方 Claude Code 插件目录，科研 Agent 技能库扩张。时政方面，胡塞导弹袭击也门亚丁政府总部致 5 人死亡，美国小学枪击致至少 4 人丧生，新鸭绿江大桥通车受关注。</p>
+  </div>
+</section>
+<section class="lab-watch-section" id="lab-watch">
+  <div class="lab-watch-inner">
+    <div class="section-label">课题组动态</div>
+    <p class="lab-watch-summary">今日暂无课题组主页更新。</p>
+    <div class="lab-watch-list"><a class="lab-row lab-row-error" href="http://yuexinma.me/" target="_blank" rel="noopener noreferrer">
+  <span class="lab-num">01</span>
+  <span class="lab-name">Yuexin Ma · ShanghaiTech</span>
+  <span class="lab-detail">no News / New Events section found</span>
+  <span class="lab-badge">检查失败</span>
+  <span class="lab-arrow" aria-hidden="true">→</span>
+</a>
+<a class="lab-row lab-row-quiet" href="https://icoz69.github.io/" target="_blank" rel="noopener noreferrer">
+  <span class="lab-num">02</span>
+  <span class="lab-name">Chi Zhang · Westlake AGI Lab</span>
+  <span class="lab-detail">Sep 2026🚀 We released World in World, exploring video worlds with world models.</span>
+  <span class="lab-badge">无变化</span>
+  <span class="lab-arrow" aria-hidden="true">→</span>
+</a>
+<a class="lab-row lab-row-quiet" href="https://wyhsirius.github.io/" target="_blank" rel="noopener noreferrer">
+  <span class="lab-num">03</span>
+  <span class="lab-name">Yaohui Wang · Shanghai AI Lab</span>
+  <span class="lab-detail">03 / 2026 1 paper AI killed the video star accepted to IJCV.</span>
+  <span class="lab-badge">无变化</span>
+  <span class="lab-arrow" aria-hidden="true">→</span>
+</a></div>
+  </div>
+</section>
+<section class="arxiv-section" id="arxiv-directions">
+  <div class="arxiv-inner">
+    <div class="section-label">研究方向</div>
+    <div class="arxiv-grid"><button type="button" class="arxiv-card" data-arxiv-dir="motion">
+  <span class="arxiv-num">01</span>
+  <h3 class="arxiv-name">Human Motion</h3>
+  <p class="arxiv-tagline">人体动作生成、理解与控制</p>
+  <span class="arxiv-count">4 篇</span>
+  <span class="arxiv-cta">浏览论文 <span class="arxiv-arrow">→</span></span>
+</button>
+<button type="button" class="arxiv-card" data-arxiv-dir="video">
+  <span class="arxiv-num">02</span>
+  <h3 class="arxiv-name">Video Models</h3>
+  <p class="arxiv-tagline">视频生成、编辑与理解</p>
+  <span class="arxiv-count">10 篇</span>
+  <span class="arxiv-cta">浏览论文 <span class="arxiv-arrow">→</span></span>
+</button>
+<button type="button" class="arxiv-card" data-arxiv-dir="world-model">
+  <span class="arxiv-num">03</span>
+  <h3 class="arxiv-name">World Models</h3>
+  <p class="arxiv-tagline">世界模型与物理仿真</p>
+  <span class="arxiv-count">10 篇</span>
+  <span class="arxiv-cta">浏览论文 <span class="arxiv-arrow">→</span></span>
+</button></div>
+  </div>
+</section>
+
+<main id="content">
+  <div class="section-label content-label">内容</div>
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="tech">技术动态<span class="count">82</span></button>
+    <button class="tab" data-tab="politics">时政观察<span class="count">15</span></button>
+  </nav>
+
+  <section class="panel active" data-panel="tech">
+    <nav class="sub-tabs"><button class="sub-tab active" data-sub="github-trending" data-cat="tech">GitHub Trending<span class="count">12</span></button><button class="sub-tab" data-sub="arxiv-papers" data-cat="tech">arXiv 论文<span class="count">29</span></button><button class="sub-tab" data-sub="trending-papers" data-cat="tech">热门论文<span class="count">20</span></button><button class="sub-tab" data-sub="x-viral" data-cat="tech">X 推文<span class="count">6</span></button><button class="sub-tab" data-sub="ai-news" data-cat="tech">AI 媒体<span class="count">15</span></button></nav>
+<div class="sub-contents"><div class="sub-content active" data-sub-content="github-trending" data-cat="tech">
+    
+    <div class="source-contents">
+      <div class="source-content active" data-source-content="github-trending" data-sub="github-trending" data-cat="tech">
+    <article class="article">
+  <h3 class="article-title"><a href="https://github.com/morluto/rea" target="_blank" rel="noopener noreferrer">morluto/rea</a></h3>
+  
+  
+  <p class="article-stats">TypeScript · ★ 268,957 · 🍴 67,431 · 📈 32,282 stars today</p>
+  
+  <p class="article-excerpt">Reverse engineer anything with agents, from app behavior down to native binaries.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 面向逆向工程的 AI agent 工具，可从应用层行为一路下探到原生二进制，自动完成分析流程。把原本依赖人工经验的逆向工作交给智能体驱动，适合安全研究、漏洞挖掘与恶意样本分析人员使用。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/anthropics/claude-plugins-official" target="_blank" rel="noopener noreferrer">anthropics/claude-plugins-official</a></h3>
+  
+  
+  <p class="article-stats">Python · ★ 39,022 · 🍴 4,322 · 📈 525 stars today</p>
+  
+  <p class="article-excerpt">Official, Anthropic-managed directory of high quality Claude Code Plugins.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Anthropic 官方维护的 Claude Code 插件目录，汇集经筛选的高质量插件，解决插件来源分散、质量参差的问题。开发者可在此查找并安装扩展 Claude Code 能力的插件，适合日常用 Claude Code 编码的工程师。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/K-Dense-AI/scientific-agent-skills" target="_blank" rel="noopener noreferrer">K-Dense-AI/scientific-agent-skills</a></h3>
+  
+  
+  <p class="article-stats">Python · ★ 50,420 · 🍴 4,486 · 📈 1,091 stars today</p>
+  
+  <p class="article-excerpt">Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigrav</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 面向科研场景的 Agent Skills 库，提供 177 个经验证的开箱即用技能，并接入 100 多个科学数据库，覆盖生物等领域。能让通用 AI agent 快速具备科研工作流能力，供科研人员做文献检索、数据分析等任务。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/JuliusBrussee/caveman" target="_blank" rel="noopener noreferrer">JuliusBrussee/caveman</a></h3>
+  
+  
+  <p class="article-stats">Go · ★ 112,499 · 🍴 6,518 · 📈 530 stars today</p>
+  
+  <p class="article-excerpt">🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 给编码 agent 用的技能与代理层，通过让模型改用「穴居人式」极简表达来压缩 token，官方称可削减约 65% 的消耗。适合关注 API 成本与上下文占用的开发者，在长会话编码场景中显著降低开销。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/debpalash/VoiceStudio" target="_blank" rel="noopener noreferrer">debpalash/VoiceStudio</a></h3>
+  
+  
+  <p class="article-stats">Python · ★ 68,980 · 🍴 7,548 · 📈 3,027 stars today</p>
+  
+  <p class="article-excerpt">VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription &amp; audiobook creation in 646 languages.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 完全本地运行的开源语音工具集，定位为 ElevenLabs 的替代方案，涵盖语音克隆、音色设计、视频配音、听写、转写与有声书制作，支持 646 种语言。适合对数据隐私敏感、想自建语音能力的开发者与创作者。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/obra/superpowers" target="_blank" rel="noopener noreferrer">obra/superpowers</a></h3>
+  
+  
+  <p class="article-stats">Shell · ★ 299,852 · 🍴 26,779 · 📈 688 stars today</p>
+  
+  <p class="article-excerpt">An agentic skills framework &amp; software development methodology that works.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 一套面向 AI agent 的技能框架与软件开发方法论，为编码智能体提供可复用的工作流与能力组织方式。目标是让 agent 按结构化流程完成开发任务，适合想规范 agent 协作流程的团队和个人开发者。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/ruvnet/ruflo" target="_blank" rel="noopener noreferrer">ruvnet/ruflo</a></h3>
+  
+  
+  <p class="article-stats">TypeScript · ★ 75,093 · 🍴 8,925 · 📈 224 stars today</p>
+  
+  <p class="article-excerpt">🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 多智能体编排框架，可部署协作式 agent 集群、协调自主工作流并构建对话式 AI 系统，内置自适应记忆、自学习能力与联邦式架构。适合需要搭建复杂多 agent 应用的开发者，用于自动化流程与智能助手场景。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/mksglu/context-mode" target="_blank" rel="noopener noreferrer">mksglu/context-mode</a></h3>
+  
+  
+  <p class="article-stats">TypeScript · ★ 29,773 · 🍴 2,081 · 📈 902 stars today</p>
+  
+  <p class="article-excerpt">Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对 AI 编码 agent 的上下文窗口优化工具，把工具输出放入沙箱、号称可减少 98% 占用，同时持久化会话记忆，并通过 MCP 与 hooks 在 17 个平台上统一路由。适合长会话、受上下文长度限制的开发者。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/NationalSecurityAgency/ghidra" target="_blank" rel="noopener noreferrer">NationalSecurityAgency/ghidra</a></h3>
+  
+  
+  <p class="article-stats">Java · ★ 88,697 · 🍴 9,900 · 📈 1,366 stars today</p>
+  
+  <p class="article-excerpt">Ghidra is a software reverse engineering (SRE) framework</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 美国国家安全局开源的软件逆向工程框架，提供反汇编、反编译、图形化分析与脚本扩展能力，支持多种处理器架构和文件格式。安全研究员与逆向工程师常用它分析二进制程序、排查漏洞和恶意代码。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">affaan-m/ECC</a></h3>
+  
+  
+  <p class="article-stats">JavaScript · ★ 280,323 · 🍴 41,697 · 📈 1,015 stars today</p>
+  
+  <p class="article-excerpt">The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 面向 AI 编码 agent 的性能优化系统，围绕技能、直觉、记忆、安全与调研优先的开发方式，为 Claude Code、Codex、Cursor 等工具提供统一增强。适合希望提升 agent 输出质量与稳定性的开发者。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/lightseekorg/tokenspeed" target="_blank" rel="noopener noreferrer">lightseekorg/tokenspeed</a></h3>
+  
+  
+  <p class="article-stats">Python · ★ 2,467 · 🍴 336 · 📈 25 stars today</p>
+  
+  <p class="article-excerpt">TokenSpeed is a speed-of-light LLM inference engine.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 高速 LLM 推理引擎，目标是把推理性能推向极致，降低单次生成的延迟与开销。适合需要自建高性能推理服务、对吞吐和响应速度敏感的团队，可用于在线对话、批处理等大模型部署场景。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/xerj-org/xerj" target="_blank" rel="noopener noreferrer">xerj-org/xerj</a></h3>
+  
+  
+  <p class="article-stats">Rust · ★ 5,597 · 🍴 307 · 📈 725 stars today</p>
+  
+  <p class="article-excerpt">XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible,</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 面向 AI 的数据搜索工具，通过 autoindex 自动为代码、文档、日志和 PDF 建立索引，让 agent 无需 grep、sed 也能理解数据，避免 token 浪费。一条命令即可完成索引，适合要让 agent 检索大型代码库或资料集的开发者。</p>
+</article>
+  </div>
+    </div>
+  </div>
+<div class="sub-content" data-sub-content="arxiv-papers" data-cat="tech">
+    <nav class="source-tabs"><button class="source-tab active" data-source="arxiv-motion" data-sub="arxiv-papers" data-cat="tech">Human Motion<span class="count">4</span></button><button class="source-tab" data-source="arxiv-video" data-sub="arxiv-papers" data-cat="tech">Video Models<span class="count">10</span></button><button class="source-tab" data-source="arxiv-world-model" data-sub="arxiv-papers" data-cat="tech">World Models<span class="count">10</span></button><button class="source-tab" data-source="arxiv-cv-other" data-sub="arxiv-papers" data-cat="tech">CV Highlights<span class="count">5</span></button></nav>
+    <div class="source-contents">
+      <div class="source-content active" id="arxiv-motion" data-source-content="arxiv-motion" data-sub="arxiv-papers" data-cat="tech">
+    <article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19494" target="_blank" rel="noopener noreferrer">Robust Real-Time Monocular Human Pose Estimation with Insole-Based Sensor Fusion</a></h3>
+  <p class="article-authors">Liang Yu, Tao Zhu, Xiangqing Lu, Wenjian Luo, Liming Chen</p>
+  
+  <p class="article-stats">motion</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">Real-time monocular human pose estimation is an important sensing component for human-centered intelligent systems. While recent camera-based methods have achieved impressive accuracy, fundamental challenges persist, particularly when visual observations are incomplete, such as during lower-body occlusion or short out-of-frame intervals. In these challenging but common scenarios, vision-only systems often struggle to reconstruct physically plausible lower-limb motion and reliable foot-ground contact. Due to the highly unobtrusive and wearable nature of smart insoles, this paper investigates whether simple plantar pressure and acceleration sensors can effectively resolve these visually induced limitations. To systematically investigate this, we first collect a synchronized multimodal dataset and then propose a part-decoupled temporal fusion framework. The proposed model fuses foot-sensing features into the lower-body branch to compensate for incomplete visual evidence, while a lightweight coordinator exchanges information between the upper- and lower-body temporal representations to maintain whole-body consistency. The framework is evaluated with three representative real-time visual backbones based on 2D keypoints, 3D landmarks, and SMPL-based human mesh recovery. We evaluate our framework on three representative real-time visual backbones. Quantitative experiments demonstrate that incorporating simple foot sensors consistently improves pose accuracy, motion smoothness, and gait-related measurements over vision-only baselines, with the most significant gains observed under occlusion and short visual-dropout conditions. Ultimately, our results demonstrate that unobtrusive foot sensing provides vital and complementary physical observability when camera observations are temporarily unavailable.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对单目人体姿态估计在视觉观测不完整（如下半身遮挡）时失效的问题，提出融合鞋垫惯性传感器的实时方法，以互补信号提升鲁棒性，服务于以人为中心的智能系统感知。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19729" target="_blank" rel="noopener noreferrer">A Diagnostic Study of World-Space Human Recovery Under High Camera Dynamics</a></h3>
+  <p class="article-authors">Hao-Jen Chien, Wei-Lun Chao, Yu-Lun Liu</p>
+  
+  <p class="article-stats">motion</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">Monocular world-space human recovery methods excel on current benchmarks, but these rarely include fast camera motion. We introduce the K-Pop stress test, broadcast dance videos that combine fast, large camera motion with dense multi-person choreography. Leading methods produce plausible per-frame meshes on these videos, yet their world-space trajectories drift far from the performers&#39; stage positions. Through a systematic diagnosis, we show that the camera and human estimates each remain self-consistent, and that the drift appears when they are combined at mismatched scales. Each is recovered at its own scale, so a mismatch between the two can turn camera motion into human drift that grows with camera displacement and becomes severe in broadcast dance videos. We derive a closed-form correction that estimates this mismatch and applies one scale to all performers, removing the drift while keeping their relative positions in one shared world frame. It requires no retraining and works with existing backends. Combined with physical constraints, the correction yields stable world-space reconstruction for choreography modeling, scene editing, data generation, and virtual reshooting.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 论文提出 K-Pop 压力测试，用兼具快速大幅相机运动与密集多人编舞的广播舞蹈视频，诊断单目世界坐标人体恢复方法；现有领先方法虽逐帧结果看似合理，在此场景下仍暴露一致性缺陷。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19857" target="_blank" rel="noopener noreferrer">OmniPoser: Flexible Human Motion Recovery in the Wild with Masked Flow Matching</a></h3>
+  <p class="article-authors">Minghao Liu, Tutian Tang</p>
+  
+  <p class="article-stats">motion</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">Recovering 3D human motion from sparse wearable sensors is challenging due to the inherent noise, occlusion, and instability of real-world tracking signals. Existing approaches are restricted to fixed sensor configurations and, when built on diffusion models, are computationally prohibitive for real-time deployment. We propose OmniPoser, a universal framework that recovers full-body SMPL motion from a flexible combination of heterogeneous inputs, such as 3D keypoints, sparse IMU rotations, head-mounted 6-DoF poses, or any subset thereof, within a single model. OmniPoser introduces a cross-modal masking mechanism paired with a Masked Conditioning Encoder, enabling one architecture to incorporate diverse sensor configurations through a masked design. A decoupled dual-stream generative backbone generates complete motion via Conditional Flow Matching, requiring only a single ODE integration step at inference. Across three settings and seven benchmarks, including in-the-wild Nymeria and Ego-Exo4D datasets, OmniPoser performs on par with state-of-the-art methods while running at over 700 FPS. The project page is available at https://jamesbridgewater51.github.io/omniposer-eccv/.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> OmniPoser 用 masked flow matching 从稀疏可穿戴传感器恢复 3D 人体运动，针对真实跟踪信号的噪声、遮挡与不稳定，打破已有方法对固定传感器配置的依赖，并避免扩散模型的高计算开销。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.20124" target="_blank" rel="noopener noreferrer">DreamHMR: From Video Generation to Human Motion Modeling via Structural Focusing</a></h3>
+  <p class="article-authors">Zhengjie Xu, Ruihao Gong, Xianglong Liu</p>
+  
+  <p class="article-stats">motion</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">Human mesh recovery (HMR) provides a geometric foundation for understanding human motion, but accurately reconstructing both body motion and fine hand articulation from videos remains challenging, especially in real-world scenes where occlusion and partial visibility are common. Video generation pretraining offers rich spatial and temporal priors for this task, but its focus on visual synthesis leaves a gap between these representations and explicit human geometry. We present DreamHMR, a general framework that adapts video generation priors for complete body-and-hand reconstruction. It follows a global-to-local strategy, first grounding video representations in human geometry and then refining body and hand detail with reliable local evidence. Global Body Representation Transfer trains the video backbone to predict complete human renderings, turning its native prediction task into a means of learning surface correspondence and posed geometry. Local Joint Feature Enhancement combines contextual estimates with reliable local evidence to recover fine body and hand detail, while limiting interference from occluders and background. Experiments on five datasets with four video backbones demonstrate strong reconstruction performance across backbone families. Under a unified evaluation protocol, our best model outperforms the best existing methods on all reported metrics of 3DPW, EMDB-1, and RICH, reducing body MPJPE by 4.2%, 4.7%, and 6.1%, respectively. In more challenging occlusion settings on held-out BEDLAM and EgoBody sequences, DreamHMR reduces overall body and hand MPJPE by 7.0% and 10.0%, respectively. Our code will be made publicly available.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> DreamHMR 利用视频生成先验做人体网格恢复，通过结构聚焦从生成模型中提取运动信息，应对真实场景中常见的遮挡与部分可见，在重建身体运动的同时恢复精细手部关节。</p>
+</article>
+  </div>
+<div class="source-content" id="arxiv-video" data-source-content="arxiv-video" data-sub="arxiv-papers" data-cat="tech">
+    <article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19102" target="_blank" rel="noopener noreferrer">The Gap Is in the Geometry: A Convergent Meta-Analysis of Multi-Facet Aerial and Remote Sensing Video Understanding</a></h3>
+  <p class="article-authors">Georgios Angelidis, Aggelos Psiris, Maria Vakalopoulou, Georgios Th. Papadopoulos, Giorgos Sfikas, Iraklis Varlamis</p>
+  
+  <p class="article-stats">video</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">Aerial and remote sensing video is increasingly evaluated like web video, by posing multiple-choice questions to multimodal large language models (MLLMs) over sampled frames and reporting accuracy. This paper argues that this recipe measures the wrong aspect, and supports the claim with a convergent meta-analysis of a broad set of published results, organized in four evidence tiers, in which a claim becomes a position only when collected evidence agrees. Parameter scale exhibits a median of +3.4 accuracy points per tenfold increase on aerial benchmarks, far below a human gap of at least 19 points, whereas acquisition conditions control perception, as 315 of 318 evaluations in 19 within-paper contrasts lose accuracy when conditions such as altitude, view, object size or time horizon become harder. No aerial benchmark in the corpus combines video input with per-task human and random baselines, competence collapses from answering to acting in closed-loop navigation, and the same MLLMs score higher on the aerial benchmark than on ground spatial ones, but lower on studies that test cross-view geometry. From these findings the current study derives five falsifiable principles and proposes the AVU-Card, a reporting card for aerial video benchmarks</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 论文质疑当前以采样帧多选题、报告准确率来评测航空遥感视频的通行做法，认为其测量了错误的能力维度，并通过汇聚式元分析论证：问题的关键在于几何信息未被有效评估。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19257" target="_blank" rel="noopener noreferrer">Long-horizon Video Generation with Slot Memory Addressed By Region Tokens</a></h3>
+  <p class="article-authors">Eren Cetin, Julius Erbach, Vukasin Bozic, Hyojun Go, Zixiang Zhao, Nikolai Kalischek, Federico Tombari, Konrad Schindler, Dominik Narnhofer</p>
+  
+  <p class="article-stats">video</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">Memory for long-horizon video generation must satisfy two competing requirements: it must remain bounded so generation can continue indefinitely, while still recovering what was observed at a place when the camera returns, regardless of how long ago it was seen. Reconstruction-based memories provide spatial recall by caching and reprojecting explicit geometry, but require growing storage and depend on estimated 3D structure. Recurrent memories keep a constant-size state, but retention is governed by temporal recurrence, causing old observations to fade with time. We introduce SMART, a slot memory addressed by region tokens, which combines bounded storage with spatially addressed recall. SMART stores content in a constant-size slot recurrence whose writes are addressed by the observing camera and whose reads are queried by the rendering camera, without constructing an explicit 3D representation or maintaining a growing cache. Consequently, recall is conditioned on inter-view geometry rather than on recency. Each read additionally provides a confidence estimate that conditions a chunk-causal diffusion transformer, allowing it to selectively trust retrieved content while relying on its generative prior elsewhere. On long trajectories in Memory Maze and Minecraft, SMART maintains high-fidelity recall far beyond its training horizon while using constant memory and per-step cost.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 面向长时程视频生成提出 slot memory 机制，用区域 token 寻址有界记忆槽：既保证内存规模有界以支持无限生成，又能在相机重返旧场景时按位置召回此前观测，缓解重建式记忆的容量瓶颈。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19290" target="_blank" rel="noopener noreferrer">Kandinsky S2V 1.0: Audio-Driven Avatar Video Generation</a></h3>
+  <p class="article-authors">Nikolay Semenov, Artem Riabinin, Sergey Bassenko, Anna Averchenkova, Julia Agafonova, Anastasia Aliaskina, Kirill Kozlov, Lev Novitskiy, Nikita Samsonov, Nikolai Gerasimenko, Denis Dimitrov</p>
+  
+  <p class="article-stats">video</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">We present Kandinsky S2V 1.0, an open family of speech-to-video models for controllable audio-driven human animation, comprising Kandinsky S2V 1.0 Lite (2B parameters) and Kandinsky S2V 1.0 Pro (21B parameters). From a single reference image, a speech waveform, and a text prompt, the models generate long-form 25 FPS video in which lip motion, expression, pose, and gesture follow the speech. The architecture draws text and audio conditioning from one Qwen2.5-Omni model and adds a reference-aware three-scale visual memory. Training starts from the Kandinsky 5.0 Video foundation models [1] and combines mixed reference-memory layouts with an area-adaptive face loss. The training corpus contains 1.17M single-speaker clips selected by active-speaker detection, with captions generated directly in English and Russian. A side-by-side human evaluation against the strongest open-source baseline and two proprietary commercial models shows that Kandinsky S2V 1.0 Pro performs comparably to or better than these models on average and is also preferred for lip synchronization. On common speech to video benchmarks, Kandinsky S2V 1.0 Lite and Kandinsky S2V 1.0 Pro rank among the top performing models according to mean rank over five reported metrics. Beyond the base models, we provide {\pi}-Flow distilled variants of both Kandinsky S2V 1.0 Lite and Kandinsky S2V 1.0 Pro. The distilled Kandinsky S2V 1.0 Pro model generates video in 16 sampling steps without classifier-free guidance, achieving a 5.4 times end-to-end speedup over the base model, while matching or exceeding it on nearly all reported benchmark metrics. To accelerate open research and deployment in speech-to-video generation, we release the code, model checkpoints, and diffusers integration under the MIT license.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Kandinsky S2V 1.0 是开源语音驱动人像视频生成模型族，含 2B 的 Lite 与 21B 的 Pro 两个版本；仅需单张参考图、一段语音波形和文本 prompt，即可生成可控的人类动画视频。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19424" target="_blank" rel="noopener noreferrer">VideoHarness-SRSI: Structured Recursive Self-Improvement for Video Understanding Harness</a></h3>
+  <p class="article-authors">Zihao Lin, Haoyu Dong, Haobo Xu, Chi-Chih Chang, Xuying Ning, Yinglong Xia, Shuang Yang, Zhuokai Zhao, Xinying Song, Dongfang Liu, Lifu Huang, Yang Song, Qifan Wang</p>
+  
+  <p class="article-stats">video</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">LLM system capabilities depend not only on model parameters but also on the executable harnesses that organize information acquisition, tool use, reasoning, and memory. Recursive harness evolution can automate their design, but how it can reliably discover generalizable systems from limited, noisy, and repeatedly reused feedback remains unclear. We study this question in agentic video understanding, where rich multimodal evidence and coupled mechanisms make harness optimization challenging. We first introduce VideoHarness-BRSI, a recursive self-improvement framework that evolves video harnesses around a frozen vision-language model. Analyzing over 4,000 evolved candidates, we find it competitive with hand-engineered systems but identify three interconnected failure modes: validation overfitting, search-budget dilution, and the early-experience trap. We trace all three to a common root: the same imperfect validation evidence drives both harness revisions and the proposer&#39;s search strategy. We therefore propose VideoHarness-SRSI, an evidence-governed framework in which every search decision rests on evidence that is transferable, sufficient, and gathered before the search commits. It restricts the proposer to content-free feedback, informs exploration with instrumented warm-up experiments, and develops mechanisms in isolated probe-race branches before factorial composition and joint refinement. Across four video understanding benchmarks, VideoHarness-SRSI improves the equally weighted mean held-out score by 6.2% relative to VideoHarness-BRSI and reduces the mean validation-test gap by 37.9%. Reliable harness evolution thus depends on how search is organized and informed, not only on how well it optimizes validation performance.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出 VideoHarness-SRSI，用结构化递归自我改进自动演化视频理解的 executable harness，将信息获取、工具调用、推理与记忆组织起来，在有限且带噪的反馈下发现可泛化的系统方案。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19526" target="_blank" rel="noopener noreferrer">HyrCap: Hybrid Rank-Calibration of Action Proposals for Temporal Event Understanding</a></h3>
+  <p class="article-authors">Rui Chen, Xingyu Chen, Pengxin Xu, Kai Chen, Junzhi Yu</p>
+  
+  <p class="article-stats">video</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">Temporal action detection in long untrimmed videos suffers from inaccurate localization and low-quality proposals, especially with sparse annotations and ambiguous boundaries. For open-ended video understanding and LLM-driven event analysis, reliable proposals connect temporal localization, event annotation, and semantic understanding. However, conventional temporal action detection (TAD) pipelines lack explicit modeling of proposal localization quality, cross-representation support, and inter-proposal relations. We propose Hybrid Rank-Calibration of Action Proposals (HyrCap), a proposal-centric query-based TAD framework for temporal event understanding. Hybrid combines complementary video features with different localization cues, while Rank-Calibration adjusts proposal ranking confidence to reflect localization reliability and candidate competition. HyrCap treats dense query-based predictions as an over-complete temporal event hypothesis space. Cross-Representation Consensus Calibration, Localization Quality Estimation, and Proposal Redundancy Suppression improve proposal ranking reliability, localization quality, and candidate discrimination. Inspired by LLMs&#39; capabilities in fine-grained semantic recognition, event description, and reasoning, we introduce HyrCap for Semantic Action Understanding, using calibrated proposals for standard TAD and as inputs to LLM-based semantic understanding. We define a staged evaluation protocol to separately measure event localization, segment-level semantic understanding, and combined event understanding performance. Experiments on public benchmarks show that HyrCap achieves state-of-the-art performance across multiple metrics and provides a finer-grained paradigm and evaluation protocol for query-based event segmentation and annotation.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> HyrCap 面向长未剪辑视频的时序动作检测，针对标注稀疏、边界模糊导致定位不准与提案质量低的问题，提出动作提案的混合排序-校准方案，为开放式视频理解与 LLM 事件分析提供可靠提案。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19728" target="_blank" rel="noopener noreferrer">Mitigating Video Hallucinations via Attention-Guided Representation Perturbation</a></h3>
+  <p class="article-authors">Zhixin Cai, Ruoqi Yuan, Xinchen Yang, Zhuofan Chen, Jun Bai, Chuantao Yin, Wenge Rong</p>
+  
+  <p class="article-stats">video</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">Video large language models (Video LLMs) often generate responses unsupported by the input video. Contrastive decoding (CD) can mitigate these hallucinations, but its effectiveness depends on how the negative branch weakens visual evidence. Existing methods rely on predefined perturbations or masking guided by question reconstruction, offering limited control over the model&#39;s visual reliance during answer generation. We introduce Attention-guided Representation Perturbation for Contrastive Decoding (ARP-CD), a training-free framework for constructing contrastive negatives directly in representation space. ARP-CD uses the attention mass assigned to visual tokens at the answer-prediction position to guide bounded gradient updates of the language model&#39;s input visual hidden states. These updates reduce visual attention and produce a negative input, whose predictions are contrasted with those of the original branch throughout generation. Experiments across four Video LLMs and four benchmarks show that ARP-CD outperforms representative training-free baselines in most model--benchmark settings, reducing hallucinations while improving general video understanding. Further analyses show that attention-guided perturbation directions improve negative quality and that the resulting negatives provide effective contrastive references for correcting the original predictions.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对 Video LLM 生成与输入视频不符的幻觉，论文改进对比解码：通过注意力引导的表征扰动构造更强的负分支，精准削弱视觉证据，从而在不依赖预定义扰动或掩码的情况下缓解视频幻觉。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19785" target="_blank" rel="noopener noreferrer">FPV-CRASH: A Dataset for Offline Crash Moment Localization in Drone First-Person-View Videos</a></h3>
+  <p class="article-authors">Jifan Zhang, Tingyu Wang, Qian Liu, Zhedong Zheng</p>
+  
+  <p class="article-stats">video</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">Crash Moment Localization aims to localize the major physical impact that interrupts controlled flight in an onboard first-person-view (FPV) video recorded by a drone, thereby providing a temporal reference for retrospective crash analysis in aerial robotics. However, existing crash-video datasets predominantly target surveillance or dash-camera footage, and their annotation schemes and task formulations are not designed for temporal localization of the major physical impact in UAV onboard FPV videos. To address this gap, we present FPV-CRASH, a dataset and fixed-protocol reference evaluation for offline Crash Moment Localization in drone FPV videos. FPV-CRASH contains 1,052 drone FPV clips (526 Crash and 526 Normal); each Crash clip has a single-frame reference annotation for the Crash Moment, and every clip is paired with four English captions automatically generated from sampled frames and the known Crash/Normal label. Normal clips carry no timestamp target and provide training-time background supervision. The captions support an auxiliary Text-to-Video Retrieval task, whereas localization inference remains video-only. We further provide a heatmap-based reference model that estimates a continuous Crash Moment timestamp from sparsely sampled frames. Under the fixed, non-source-disjoint clip-level protocol, the reference model reduces MAE from 1.12 s for the strongest fixed timing-prior baseline to 0.56 s (a 50% relative reduction) and achieves a median absolute error (MedAE) of 0.33 s; the fraction of clips localized within 0.5 s rises from 37.14% to 65.71%. The release includes annotations, available source video identifiers and URLs, clipping metadata, fixed split lists, and preprocessing code so that the reportable portion can be reconstructed without redistributing source footage. At submission time, all source-compilation URLs remained accessible.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> FPV-CRASH 是面向无人机第一人称视角视频的坠机时刻定位数据集，目标是定位中断受控飞行的主要物理撞击时刻，为航空机器人事故回溯分析提供时间参考，弥补现有坠机视频数据不足。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19823" target="_blank" rel="noopener noreferrer">PhyMetric: Diagnosing Physical Plausibility in Text-to-Video Generation via Scene-Level QA</a></h3>
+  <p class="article-authors">Siwei Meng, Xuerou Cai, Rui Hu, Ping Liu</p>
+  
+  <p class="article-stats">video</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">Text-to-video (T2V) generation models can produce visually realistic videos that nevertheless violate the physical consequences implied by the prompt and scene. Existing benchmarks largely rely on holistic plausibility scores or broad quality dimensions, leaving it unclear which physical behavior is being tested and why a model fails. We introduce PhyMetric, a scene-level diagnostic benchmark that recasts physical plausibility evaluation as verifiable, scene-grounded question answering. PhyMetric contains 1{,}115 scenes spanning 50 physical categories across six domains, paired with 8{,}920 answer-balanced binary questions over 12 evaluation dimensions. Each scene is associated with eight targeted yes/no questions and a structured physical prior specifying the governing law, expected temporal sequence, observable signatures, and common failure modes. At evaluation time, a vision-language model (VLM) judge answers each question from question-aware sampled frames conditioned on the prior, and correctness is hierarchically aggregated into scene, dimension, physical category, and model scores. Experiments on four open-source T2V models and three VLM judges show that scene-specific binary QA is a critical component of the protocol: when each targeted question is replaced by a single generic plausibility query, evaluator accuracy drops to the chance level. Structured physical priors offer a complementary signal that improves human alignment of the resulting scores, with effects that vary across VLM judges of different capacity. These findings establish PhyMetric as a benchmark that turns physical plausibility evaluation from opaque holistic scoring into interpretable, scene-level inspection. Our project page is available at: https://mengsiwei.github.io/PhyMetric/.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> PhyMetric 通过场景级问答诊断文生视频的物理合理性：现有基准多给出整体可信度或宽泛质量分数，无法定位具体哪类物理行为出错，该方法可细化到具体物理规律层面进行评测。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19849" target="_blank" rel="noopener noreferrer">DeltaStreamer: Towards Human-Like Agentic Streaming Video Understanding</a></h3>
+  <p class="article-authors">Boyuan Sun, Deshui Miao, Wenzhao Gao, Shaoyong Jia, Shaohui Jiao, Chi Liu, Yan Shu, Derek Li, Bryan Dai, Shengsheng Qian, Qibin Hou</p>
+  
+  <p class="article-stats">video</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">We propose DeltaStreamer, a novel agentic framework for streaming video understanding inspired by how humans observe, remember, and investigate. Streaming video understanding requires a system to retain evidence before knowing which details future queries will need. Existing approaches often obscure event transitions and omit relevant details when compressing video history, and cannot recover missing visual evidence. DeltaStreamer addresses these limitations by combining change-aware memory with query-driven planning and targeted evidence gathering with replay. Before a query arrives, it continuously observes the stream and explicitly records visual changes in structured memory, preserving how events unfold rather than only what is present. When a query arrives, a query-driven planner identifies the required evidence and guides memory retrieval and targeted replay. By revisiting historical frames, the agent can recover visual details omitted during observation and ground its answer in evidence beyond the retained descriptions. This connects continuous observation with active investigation tailored to each question. Experiments on OVO-Bench and StreamingBench demonstrate improvements over representative streaming video understanding methods, with overall scores of 66.07% and 59.53%, respectively. Project page: https://bbbbchan.github.io/DeltaStreamer/</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出 DeltaStreamer，受人类观察—记忆—探究方式启发，构建面向流式视频理解的 agentic 框架：在尚不知未来查询需要哪些细节时就保留证据，解决现有方法证据留存不足的问题。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19880" target="_blank" rel="noopener noreferrer">CoDy: Codec Dynamics as Complementary Priors for Unsupervised Temporal Action Localization</a></h3>
+  <p class="article-authors">Tianyu Yan, Qingyi Yang, Qin Yang, Xufei Guo, Yuan Tang, Rui Wang, Yixue Hao, Long Hu</p>
+  
+  <p class="article-stats">video</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">Unsupervised temporal action localization (UTAL) aims to identify action categories and localize their temporal boundaries without annotation supervision. Existing methods typically derive supervision for both tasks solely from RGB and optical-flow representations, often resulting in noisy category assignments and inaccurate temporal boundaries. In this work, we reveal an overlooked property of video codecs: group-of-pictures quantization patterns preserve category-discriminative dynamics, while motion-vector and residual variations exhibit pronounced responses around action transitions. Based on this insight, we propose CoDy, a codec dynamics-guided framework that exploits the codec as complementary information to the visual view for UTAL. CoDy integrates a codec-enhanced view with RGB and flow through confidence-aware consensus clustering, producing reliable soft pseudo-labels. It further converts codec dynamics into a class-agnostic boundary prior, which supervises visual boundary learning and guides proposal initialization and iterative refinement. The codec branches are only used during the training stage and introduce no extra codec-side computation at inference. Extensive experiments on THUMOS14 and ActivityNet v1.3 demonstrate that CoDy consistently outperforms existing UTAL methods and achieves state-of-the-art localization performance. These results establish codec signals as effective annotation-free priors for jointly inferring which actions occur and when they occur.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> CoDy 面向无监督时序动作定位，指出现有方法仅从 RGB 与光流获取监督信号，导致类别与边界噪声大；论文引入视频编解码器动态作为互补先验，提升动作类别识别与时间边界定位质量。</p>
+</article>
+  </div>
+<div class="source-content" id="arxiv-world-model" data-source-content="arxiv-world-model" data-sub="arxiv-papers" data-cat="tech">
+    <article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19007" target="_blank" rel="noopener noreferrer">Action Jets: Learning the Local Shape of the Action-conditioned Data Manifold</a></h3>
+  <p class="article-authors">Anton Arapin, Chahyon Ku, Bernadette Bucher</p>
+  
+  <p class="article-stats">world-model</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">World models are a powerful means of reasoning and planning, but many of these action-conditioned predictive models are high dimensional and computationally expensive. These challenges limit the number of action candidates that can be evaluated by a planner. We show that this cost is avoidable for planners over short horizons, which only require local information with respect to the current state. For a fixed state, the frames reachable by varying a low-dimensional action (a camera movement or an end-effector command) lie on a low-dimensional manifold. We estimate the local shape of that manifold directly via a network trained to estimate how each image region moves per unit of each action axis supervised by data collected from samples by the generator. A correction head fit to trajectory data estimates the shape of this manifold region up to a third-order Taylor polynomial. We call this network estimating the Taylor polynomial describing the manifold shape an Action Jet and compute its radius of validity in closed form. By traversing this approximation of the local manifold shape, we only have to perform inference once per state for any number of candidate actions. Scoring sixteen candidates from a single extraction is over 300x faster than with either source generator, and this gap widens with the number of candidates a planner evaluates. We measure against state-of-the-art action-conditioned generators, IRASim and WorldGym on BridgeData V2, a real 7-DoF manipulation benchmark, and FrameCrafter on DL3DV scenes, where we chart from the novel-view generators DepthSplat and LagerNVS. Because only the tangent comes from the generator and every other term from the data, the Action Jet also predicts held-out frames more accurately than IRASim, the generator that supplied its tangent, at short horizons and at over 100x less compute.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Action Jets：针对动作条件世界模型维度高、推理昂贵、限制规划器评估动作候选数量的问题，提出学习动作条件数据流形的局部几何结构，以低成本近似动作对预测的影响，从而在规划中高效评估更多候选动作。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19063" target="_blank" rel="noopener noreferrer">WorldMemBench: A Comprehensive Benchmark for Memory of Video World Models</a></h3>
+  <p class="article-authors">Nan Zhou, Jianxiong Gao, Qiuyu Wang, Wen Wang, Jiahao Wang, Yufeng Yuan, Shuaiting Li, Hao Ouyang, Yujun Shen, Weiming Lu, Jun Xiao, Yueting Zhuang, Yongliang Shen</p>
+  
+  <p class="article-stats">world-model</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">As video models enable longer and more realistic interactive experiences, maintaining a world consistent with its history becomes essential. This requires both preserving previously observed content and ensuring coherent world evolution over time. World memory is a critical capability to evaluate alongside visual fidelity and video duration. We introduce WorldMemBench, a benchmark for systematically evaluating world memory in video world models. Across 260 test cases, it assesses static memory through the retention of human identity and appearance, object appearance and geometry, and environmental content and geometry, and dynamic memory through event progression and state persistence. Using controlled camera departures and multi-revisit trajectories, the benchmark evaluates static content against fixed initial references and dynamic events against expected state transitions. It combines appearance and geometry metrics with event-specific assessments, and reports video quality and camera-following accuracy as complementary diagnostics. Evaluation of nine representative models shows that strong static retention does not imply reliable dynamic state evolution, while repeated revisits reveal memory degradation beyond the first return. Human studies support the alignment between our automatic evaluations and human judgments. WorldMemBench provides a systematic testbed for diagnosing memory failures and guiding the development of persistent, temporally coherent video worlds.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出 WorldMemBench，面向视频世界模型记忆能力的综合基准：既要求模型保留此前观测到的内容，又要求世界随时间连贯演化，弥补现有评测对长程历史一致性考察不足的缺陷。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19201" target="_blank" rel="noopener noreferrer">Into the LidarVerse: A Real-Time Unified LiDAR World Model Across Tasks and Sensors</a></h3>
+  <p class="article-authors">Henry Che, Xuanchi Ren, Sanja Fidler, Shenlong Wang, Laura Leal-Taix\&#39;e, Shengyu Huang</p>
+  
+  <p class="article-stats">world-model</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">We present LidarVerse, a real-time unified LiDAR world model for sensor simulation across tasks and sensors. Existing LiDAR simulators largely follow one of two complementary paradigms: reconstruction-based methods preserve the geometry of a captured scene but require lengthy per-scene optimization, whereas generative methods amortize learning across data but lack the consistency needed for long-horizon rollouts. LidarVerse brings both paradigms into a single, unified conditional generative framework. A universal tokenizer maps LiDAR range sequences into a shared latent space, where a bidirectional teacher learns a common interface for conditioning on a LiDAR prefix, an HD-Map, a persistent spatial cache, and optionally, text. Varying the available scene evidence turns the same model into a generator of new worlds, a point-cloud forecaster, or a generalizable resimulator of observed scenes without per-scene optimization. We distill the teacher into a four-step autoregressive causal student and maintain both a rolling temporal K/V cache and a world-aligned spatial cache, enabling persistent long-horizon rollouts with real-time inference at 11 FPS on a single H100 GPU. LidarVerse achieves state-of-the-art performance on most reported metrics across all three evaluation protocols, while its tokenizer supports 32-, 64-, and 128-beam LiDAR and generalizes to an unseen scanning pattern. These results demonstrate that generative and reconstruction-grounded LiDAR simulation can be realized within one model, providing the core capabilities for future closed-loop sensor simulation.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出 LidarVerse，面向跨任务、跨传感器的实时统一 LiDAR 世界模型：针对重建式仿真需逐场景长时优化、生成式仿真几何保真不足的两难，实现实时且几何一致的传感器仿真。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19212" target="_blank" rel="noopener noreferrer">Decoupled Drift-Diffusion World Models for Consistent Future Frame Prediction</a></h3>
+  <p class="article-authors">Anton Arapin, Aditya Singh, Yixin Wang, Jun Gao, Bernadette Bucher</p>
+  
+  <p class="article-stats">world-model</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">World models of visual information predict future image frames conditioned on given action sequences. This predicted scene evolution is driven by deterministic changes such as controlled motion on a robot platform, as well as stochastic changes such as rendering of manipulated objects or previously occluded regions. Our key insight is that the spatial location of these stochastic changes is itself learnable. We leverage this insight by jointly regressing both the deterministic next-state prediction and the spatial uncertainty map, then using the uncertainty map to guide a conditional diffusion process. We propose Decoupled Drift-Diffusion World Model (D3WM), which uses a transformer trained with a Gaussian negative-log-likelihood objective to produce both the deterministic next-state prediction and a spatial map of heteroscedastic aleatoric uncertainty. The learned uncertainty map then provides a structured spatial gate for a conditional diffusion model: deterministic regions are anchored to the predicted state, while uncertain regions, such as disocclusions or dynamic textures, are sampled by the diffusion process. We frame this decomposition under a variance-gated stochastic differential equation that separates deterministic drift from stochastic diffusion. D3WM shows improved results over competitive baselines in two distinct types of action spaces: robotic tabletop manipulation and camera motion.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出解耦漂移-扩散世界模型，把动作条件未来帧预测中的确定性变化（如机器人受控运动）与随机变化（如物体渲染）显式分离建模，从而提升未来帧预测的一致性与可控性。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19327" target="_blank" rel="noopener noreferrer">SonoWorld: Towards Interactive Pose-Controllable Ultrasound World Models</a></h3>
+  <p class="article-authors">Zefan Yang, Zheyuan Zhang, Boris Maihe, Yikang Liu, Hang Yu, Ankush Mukherjee, Xiao Chen, Pingkun Yan, Terrence Chen, Shanhui Sun</p>
+  
+  <p class="article-stats">world-model</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">Robotic ultrasound can standardize image acquisition and reduce operator workload and variability, but policy learning remains limited by the lack of realistic, controllable simulation environments. While controllable world models have advanced rapidly in natural-image domains, ultrasound world modeling remains challenging because each frame captures only a cross-section of unobserved 3D anatomy, causing small probe motions to induce large appearance changes. Existing approaches rely on robot-tracked poses and latent-space prediction, but do not directly generate the observations required for interactive control. We propose SonoWorld, a causal ultrasound world model that learns video dynamics from unlabeled clinical videos and grounds them to 6-DoF control using a small set of freehand clinical scans tracked with an EM sensor. SonoWorld is trained in three stages: pretraining a latent-action-conditioned video diffusion model on around 6.9 million unlabeled multi-organ ultrasound frames; grounding the learned video dynamics to metric probe poses with a small EM-tracked thyroid dataset; and applying distribution matching distillation to enable causal, long-horizon autoregressive generation with selectively caching eviction tokens at inference time. We evaluate controllability through pose-following fidelity, round-trip consistency, and axis-specific control under synthetic actions on held-out tracked scans, and further validate it with a user study. In model-based action discrimination, SonoWorld correctly ranks the target-directed probe motion over an equal-magnitude opposite motion in up to 74.8% of trials. To our knowledge, SonoWorld is the first causal, pose-controllable ultrasound world model learned primarily from freehand clinical videos, providing a data-driven interactive environment for robotic ultrasound data acquisition and policy evaluation.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> SonoWorld 面向机器人超声，构建交互式、姿态可控的超声世界模型与仿真环境，以缓解 policy learning 缺乏真实可控仿真数据的问题；该方向在自然图像域已有进展，超声域仍属空白。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19502" target="_blank" rel="noopener noreferrer">Holi-Spatial 360: Generative Reconstruction from Sparse Panoramas for Spatial Rendering and Intelligence</a></h3>
+  <p class="article-authors">Yuanyuan Gao, Zhirui Liu, Yuning Gong, Yifei Liu, Yifan Zhan, Kuixuan Jiao, Xiaolong Zhou, Yifan Yang, Hongjie Zhang, Xue Yang, Dan Xu, Zhihang Zhong</p>
+  
+  <p class="article-stats">world-model</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">Spatial intelligence requires scalable 3D environments that are both photorealistic and semantically grounded, yet existing indoor datasets are dominated by room-scale captures and costly LiDAR acquisition. Online real-estate platforms offer abundant panoramas of diverse multi-room homes, but sparse viewpoints and texture-poor regions make reconstruction severely under-constrained. We introduce Holi-Spatial 360, a generative reconstruction and data curation framework for converting these panoramas into annotated multi-room 3D environments. Because reconstruction quality bounds subsequent generation, our Correspondence-Guided Geometric Optimization converts feed-forward reconstruction priors into reliable cross-view constraints and builds a coherent 3D Gaussian Splatting representation as 3D spatial memory. Adapted single-image and video priors then restore appearance and complete continuous trajectories while preserving observed content. The reconstructed scenes support arbitrary RGB-D rendering and an automated curation pipeline that combines end-to-end 3D grounding with VLM-based verification. Holi360 contains over 1K multi-room 3DGS scenes, more than 100K instance annotations, and 2M spatial question-answer pairs. We also introduce the Holi360 benchmark to evaluate the spatial understanding of VLMs in real-world, multi-room indoor environments. Experiments demonstrate superior reconstruction and curation quality under sparse panoramic inputs, while fine-tuning VLMs on Holi360 substantially improves spatial reasoning capabilities.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Holi-Spatial 360 从稀疏全景图出发做生成式重建，兼顾照片级真实感与语义基础，支持空间渲染与空间智能；利用房产平台的丰富多房间全景数据，突破现有室内数据集以房间尺度、LiDAR 采集为主的局限。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19520" target="_blank" rel="noopener noreferrer">Spectral World Renderer: Unified 3D Hyperspectral Unmixing</a></h3>
+  <p class="article-authors">Chia-Ming Lee, Yu-Jou Hsiao, Ming-Ching Chang, Xin Li, Yu-Lun Liu, Chih-Chung Hsu</p>
+  
+  <p class="article-stats">world-model</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">Cameras and the foundation models built on them recognize what a 3D scene contains, but not what it is made of: surfaces of the same colour can be different materials. Hyperspectral unmixing explains each spectrum as a mixture of material signatures, yet in 3D it is applied to rendered images after the views are composited, or tied to slow implicit fields, and no multi-view data with known composition exist to check the result. We present the Spectral World Renderer (SWR), which unifies world generation and unmixing. A coding agent builds executable 3D worlds that are rendered with measured spectra, so every hyperspectral image comes with exact labels and sub-pixel proportions; the resulting SWR-Bench provides eight indoor and outdoor worlds in which decompositions can be verified. SWR then unmixes inside rendering: each Gaussian of a compact 3D representation is decoded into material abundances before compositing, so one render yields spectra and material maps, and any surface can be queried by material name, a clicked pixel or a reference spectrum. Without material labels, SWR identifies materials best in all eight worlds, has the best mean PSNR on real captures, trains 3.7-12.9x faster than unmixing baselines, renders 34.9 labelled views/s and separates same-coloured materials.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Spectral World Renderer 提出统一的 3D 高光谱解混：现有相机与基础模型只能识别场景中有什么，无法判断由什么材质构成，同色表面可能材质不同；该方法将解混直接嵌入 3D 表示而非仅在渲染图像后处理。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19538" target="_blank" rel="noopener noreferrer">RDCompGS: Rate-Distortion Optimization for Compression of 3D Gaussian Splatting with Image Codecs</a></h3>
+  <p class="article-authors">Huiping Ren, Shuai Wan, Luqian Bai, Zhang Chen, Fuzheng Yang</p>
+  
+  <p class="article-stats">world-model</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">3D Gaussian Splatting (3DGS) enables high-quality, real-time novel view synthesis but requires significant storage and transmission resources. Mapping Gaussian attributes to 2D representations enables efficient compression using mature image codecs. However, Gaussian representations that achieve comparable rendering quality are generally treated similarly during optimization, despite substantial differences in coding rate, leading to limited rate-distortion (R-D) performance after compression. To address this limitation, we propose RDCompGS, a 3DGS compression method that enables overall R-D optimization of Gaussian representations with respect to subsequent coding. A differentiable estimate of the coding rate is incorporated into the R-D optimization with rendering distortion. The rate constraint adjustment model further regulates the R-D trade-off across different compression conditions. Extensive experiments on three benchmark datasets demonstrate that RDCompGS achieves average Bj{\o}ntegaard Delta Rate reductions of 37.84% and 49.31% with H.265/HEVC and JPEG XL, respectively. The estimated rate also shows a strong correlation with the actual bit-rate under different compression conditions.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> RDCompGS 针对 3D Gaussian Splatting 存储与传输开销大的问题，将高斯属性映射为 2D 表示以复用成熟图像编解码器，并引入率失真优化，在高压缩率下维持渲染质量。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19674" target="_blank" rel="noopener noreferrer">Remember, Revisit, Revise: Scaffold Memory for Long-Horizon 3D Geometry</a></h3>
+  <p class="article-authors">Soumick Sarker, Mengmi Zhang</p>
+  
+  <p class="article-stats">world-model</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">Geometry foundation models estimate camera poses and 3D scene structure from video sequences, but maintaining consistent reconstructions over long horizons remains challenging. Feed-forward models process long sequences as independent, fixed-length frame windows and align their predictions, causing pose and reconstruction errors to accumulate across windows. Streaming models retain information from past frames to inform future predictions, but cannot revise earlier estimates when later observations reveal errors. To address this, we introduce Scaffold MemOry for Revision (SMORE), a framework equipping frozen geometry foundation models with a revisable external memory for long-horizon inference. Inspired by hippocampal associative memory in biological brains, which links spatial context with sensory experience, SMORE associates where an observer is with what it observes, enabling past observations to be stored, retrieved, verified against new evidence, and revised when inconsistencies are detected. We evaluate SMORE with eight competitive geometry models on five datasets spanning camera pose estimation, multi-view depth estimation, 3D point-cloud reconstruction, simultaneous localization and mapping (SLAM), and novel view synthesis. Across all evaluated models, SMORE consistently improves long-sequence pose estimation, reduces multi-view depth error by up to 58%, reduces Chamfer distance for 3D point-cloud reconstruction by up to 43%, and achieves average trajectory error as low as 2.9 cm in long-horizon SLAM. By retaining corrected poses and observations, SMORE further improves the fidelity and spatial consistency of large-scale 3D scene reconstruction. These results establish revisable external memory as a flexible interface for extending pretrained geometry models beyond fixed-context prediction toward iterative, error-correcting inference over long visual sequences.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对几何基础模型把长视频切成独立定长窗口、再对齐预测导致长时程重建不一致的问题，提出「记忆-重访-修正」的脚手架记忆机制，在长序列上维持相机位姿与 3D 结构的一致性。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19681" target="_blank" rel="noopener noreferrer">MicroSDF: Microfacet-Driven Hybrid Neural SDFs for Mixed-Reflectance Surface Reconstruction</a></h3>
+  <p class="article-authors">Lejia Ye, Yuhua Xu, Yulan Guo, Lian Xu, Xiaohu Zhang</p>
+  
+  <p class="article-stats">world-model</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">Accurate 3D reconstruction in real-world environments remains a significant challenge due to the coexistence of reflective and non-reflective surfaces, which pose distinct modeling demands. Existing methods often treat these surface types separately, limiting their generalizability and physical plausibility. To bridge this gap, we propose MicroSDF, a novel neural implicit framework that facilitates geometry and reflectance modeling through microfacet theory. Our approach incorporates three core innovations: (i) a microfacet-guided geometry model that extracts multi-scale surface normals (macroscopic and microfacet) from a signed distance field (SDF), regularized by a proposed microfacet normal consistency loss to enforce physically plausible surface orientations; (ii) an enhanced dual-branch color model, where the specular branch leverages the microfacet normals to model high-frequency reflectance, and the vanilla branch, unlike prior works, uses reflection direction (instead of viewing direction) to better model diffuse and low-frequency specular components; and (iii) a detection-guided color blending strategy that adaptively fuses the color outputs based on reflection priors, providing more physically intuitive blending than implicitly learned blending weights. Combined with a tailored multi-stage optimization scheme, the proposed MicroSDF achieves robust and high-fidelity reconstruction across reflective and non-reflective surfaces. Extensive experiments on DTU, Shiny Blender, Ref-NeRF, and DeepVoxels datasets demonstrate state-of-the-art performance, establishing a new direction for physically grounded neural reconstruction.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> MicroSDF 面向反射与非反射表面共存的真实场景重建，提出微面驱动的混合神经 SDF，将两类表面统一建模，避免以往分开处理带来的泛化性与物理合理性不足。</p>
+</article>
+  </div>
+<div class="source-content" id="arxiv-cv-other" data-source-content="arxiv-cv-other" data-sub="arxiv-papers" data-cat="tech">
+    <article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19025" target="_blank" rel="noopener noreferrer">How Far Can Coding Agents Go in Visual Generation?</a></h3>
+  <p class="article-authors">Hengguang Zhou, Yuanhao Ban, Jiaqi Feng, Xiaohuan Pei, Justin Cui, Cho-Jui Hsieh</p>
+  
+  <p class="article-stats">cv-other</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">Modern image generation largely relies on specialized generative models that leave the process of image construction implicit in learned parameters. We explore an alternative: general-purpose coding agents that construct images through executable programs. Our study of zero-shot drawing on AgentDrawBench, a 200-prompt benchmark, reveals a distinctive capability profile. Agents excel at preserving structure and satisfying precise visual constraints, achieving competitive results in domains where compositional accuracy matters more than photorealistic appearance, while remaining limited in perceptual richness. Their visual expressiveness varies with the drawing interface, and a qualitative study on reconstruction shows how procedural skills extracted from human demonstrations support different artistic media. We then examine code as an external visual language of thought: a structured, executable representation that agents can construct and inspect. We test it in visual question answering task and find reconstructed visual code retains substantial information for question answering and, in some domains, supports higher accuracy than the original image. These abilities raise a further question: do agents draw on a shared internal representation of scene content beyond a particular drawing program? We explore an internal visual language-of-thought hypothesis, in which a shared, compositionally structured representation supports visual operations across drawing languages. Cross-harness drawings and images assembled from independent single-pixel queries exhibit related layouts and tones. Agents also maintain self-generated room arrangements across viewpoints after visible drawings are removed. These results demonstrate that the coding agent would maintain a consistent and coherent world inside its imagine even before the harness gets involved and the generation starts.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 探索通用 coding agents 能否胜任视觉生成：不同于把图像构造过程隐式塞进参数的传统生成模型，该方法让 agent 通过可执行程序绘制图像，并在 AgentDraw 上系统研究 zero-shot 绘图能力的边界与失败模式。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19052" target="_blank" rel="noopener noreferrer">Why Do VLMs Fail at Remote Physiological Measurement? Rethinking with Physiological Grounding and Numerical Alignment</a></h3>
+  <p class="article-authors">Xiao Yang, Zekun Zhang, Yuxuan Fan, Duoxun Tang, Ziyang Liu, Dengbo He, Kaishun Wu, Jiyao Wang</p>
+  
+  <p class="article-stats">cv-other</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">Video-based remote physiological measurement (RPM) has broad applications, while Vision-Language Models (VLMs) provide a promising opportunity to enable end-to-end physiological monitoring for future human-aware intelligent systems. However, existing RPM methods rely on task-specific models and cannot be seamlessly integrated with the multimodal understanding and interaction capabilities of VLMs. We revisit RPM with VLMs and provide empirical evidence for two major bottlenecks: generic visual semantic representations fail to preserve fine-grained physiological cues; while discrete token prediction in autoregressive generation is inherently misaligned with continuous numerical measurement. To address these challenges, we propose VITAL (Visual-physiological Token Alignment for Language Models), a visual-physiological token alignment framework for RPM and preserving general vision tasks. VITAL retains the original visual pathway for semantic understanding and introduces an independent physiological pathway to jointly model semantic and physiological information. Moreover, we propose a structured numerical alignment approach to improve the reliability of generative heart rate estimation by enhancing numerical relationship modeling. Extensive experiments show that VITAL improves cross-domain estimation performance on multiple rPPG datasets while preserving the general visual understanding capability of VLMs, demonstrating its effectiveness as a unified visual-physiological model. Code will be released.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对 Vision-Language Models 在视频远程生理测量（RPM）上表现不佳的问题，论文系统分析其失败原因，指出缺乏生理基础与数值对齐，并提出以 physiological grounding 和 numerical alignment 重构 RPM，推动端到端生理监测。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19071" target="_blank" rel="noopener noreferrer">MonoMIP: Multi-Height Inverse Perspective Mapping for Monocular 3D Object Detection</a></h3>
+  <p class="article-authors">Emir Ulurak, Furkan K{\i}ra\c{c}</p>
+  
+  <p class="article-stats">cv-other</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">Monocular 3D object detection methods increasingly rely on depth-guided transformers, but they operate entirely in the perspective image plane where spatial relationships are distorted by foreshortening. We propose MonoMIP, a dual-decoder framework that adds complementary 3D geometric reasoning through Bird&#39;s-Eye View (BEV) features constructed via Multi-Height Inverse Perspective Mapping. We perform IPM at K elevation planes spanning ground to rooftop, producing an ordered stack of height-conditioned metric BEV features that reduces above-ground misprojection and exposes depth-dependent appearance variation across planes. A BEV decoder with multi-scale deformable attention aggregates this multi-height evidence per query, while a depth-guided 3D decoder provides complementary perspective-space predictions. Without extra training data, MonoMIP attains 25.84% Moderate AP3D|R40 on KITTI val and 21.66% on the official test set for Car, outperforming recent published monocular methods on both the KITTI and Waymo benchmarks.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> MonoMIP 面向单目 3D 目标检测，指出深度引导 Transformer 仅在透视图像平面推理、空间关系受透视缩短扭曲，因而引入多高度逆透视映射（MIP）与双解码器，在图像平面之外补充 3D 几何推理。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19108" target="_blank" rel="noopener noreferrer">Towards a Data-Centric Understanding of Spatial Reasoning in Multimodal Large Language Models</a></h3>
+  <p class="article-authors">Mahdieh Mallahnezhad, Masoud Jafaripour, Mohamadali Tofigh, Sheila Schoepp, Osmar R. Zaiane</p>
+  
+  <p class="article-stats">cv-other</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">Multimodal Large Language Models (MLLMs) have been widely applied in embodied agents and robotics for vision tasks. However, MLLMs suffer from limitations in spatial reasoning and perception. Post-training techniques have shown promise for improving these capabilities; yet, there are limited data-driven surveys of such approaches. In this survey, we consider approaches to fine-tuning pretrained MLLMs for spatial reasoning tasks, ranging from supervised to reinforcement learning, with an emphasis on the datasets used. We investigate themes of dataset construction, data modality and annotation, and evaluation of the resulting models. Based on these themes, we categorize research into three groups: dataset design, dataset construction and evaluation. We find four main methods for constructing fixed spatial annotations: rules and templates, LLM prompting, procedural generation, and human-in-the-loop. We also observe substantial variation in evaluation approaches, including different scoring methods, tolerance metrics, and benchmark types. Finally, we identify opportunities for future research in unified dynamic annotation, efficient spatial reasoning, standardization of evaluation, expanded spatial range, and human-centered spatial interactions.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 从数据中心视角审视 MLLM 的空间推理短板：虽然后训练已被证明可提升空间感知能力，但数据层面的因素仍缺乏系统理解，论文据此分析数据属性对空间推理表现的影响。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://arxiv.org/abs/2610.19218" target="_blank" rel="noopener noreferrer">A Gradient-Regularized Deep Learning Method for Restoring Image in Myopic Vision</a></h3>
+  <p class="article-authors">Kebin Contreras, Luis Toscano-Palomino, Rafael Torres, Jorge Bacca</p>
+  
+  <p class="article-stats">cv-other</p>
+  <p class="article-meta">10/15 12:00</p>
+  <p class="article-excerpt">Myopic vision degrades the quality of human vision due to spherical eye defocus aberrations that impair the perception of fine spatial details. To address this limitation, this work proposes a deep learning-based approach to computationally design transformed images that allow individuals with myopia in fixed distance to perceive scenes with enhanced clarity. The method trains a neural network to counteract defocus aberrations modeled using the second-order Zernike polynomial $Z_2^0$. The approach employs a U-Net architecture trained with a loss function combining reconstruction error minimization with spatial difference structural preservation through $\ell_1$ regularization. Training is carried out exclusively on the KITTI dataset, while testing is performed on DIV2K and ImageNet datasets, demonstrating generalization across diverse image distributions. Under myopic conditions modeled by $Z_2^0$, baseline performance shows visual degradation with PSNR values ranging from 19.47 to 27.42 dB across datasets and severity levels. The proposed gradient-regularized method achieves consistent improvements, delivering PSNR gains ranging from 1.48 to 7.34 dB and significantly lower perceptual compared to classical baselines.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对近视因球面离焦像差导致精细空间细节感知下降的问题，提出带梯度正则化的深度学习方法，计算式设计预补偿变换图像，使近视者无需矫正即可更清晰地感知细节。</p>
+</article>
+  </div>
+    </div>
+  </div>
+<div class="sub-content" data-sub-content="trending-papers" data-cat="tech">
+    
+    <div class="source-contents">
+      <div class="source-content active" data-source-content="huggingface-papers" data-sub="trending-papers" data-cat="tech">
+    <article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.19698" target="_blank" rel="noopener noreferrer">RuleTrek: Benchmarking Agentic Rule Reasoning in Complex Scenarios</a></h3>
+  
+  
+  <p class="article-stats">👍 61</p>
+  <p class="article-meta">10/14 08:00</p>
+  <p class="article-excerpt">Large language models (LLMs) increasingly tackle complex real-world tasks in specialized domains. However, identifying and correctly applying domain-specific rules remains challenging when scenario information is distributed across multiple files. Existing rule-reasoning benchmarks typically represe</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 现有规则推理基准多把规则简化呈现，难以反映场景信息分散在多个文件中的真实情形。RuleTrek 构建 agent 规则推理基准，要求模型主动定位并正确应用领域规则，系统评测其在复杂场景下的规则识别与执行能力。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.17771" target="_blank" rel="noopener noreferrer">Many Right Answers, One Training Example: Removing Responder Noise from GRPO for LLM Recommenders</a></h3>
+  
+  
+  <p class="article-stats">👍 35</p>
+  <p class="article-meta">10/13 08:00</p>
+  <p class="article-excerpt">A recommendation request on Reddit draws several replies, each naming different titles. When an LLM recommender is trained on such threads with reinforcement learning (RL), which replies should a generated list be rewarded against? The state-of-the-art recipe, Rank-GRPO, picks one reply per training</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Reddit 上一条推荐请求常有多个回复，各自列出不同作品。Rank-GRPO 等 RL 方案每个训练样本只选一个回复作为奖励依据，引入「响应者噪声」。该工作提出去除响应者噪声的 GRPO 训练方法，使 LLM 推荐器的奖励信号更准确，提升推荐效果。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.15542" target="_blank" rel="noopener noreferrer">Apertus 1.5: From Open Text Models to Open Multimodal Reasoners</a></h3>
+  
+  
+  <p class="article-stats">👍 34</p>
+  <p class="article-meta">10/11 08:00</p>
+  <p class="article-excerpt">Language models are becoming infrastructure, and infrastructure built in the open, by public institutions, on documented data, is the alternative to dependence on a few providers; Apertus shows this is viable at scale. Apertus 1.5 extends the fully open Apertus family from text to multimodal reasoni</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Apertus 1.5 将完全开放的 Apertus 家族从纯文本扩展到多模态推理，主张由公共机构基于公开记录数据构建开放基础设施，以摆脱对少数供应商的依赖。该版本保持权重与数据透明，并证明开源路线在规模化下同样可行。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.19128" target="_blank" rel="noopener noreferrer">CLASHarness: Benchmarking Multi-Agent Conflict in Computer Use via a Controllable and Verifiable Generation Pipeline</a></h3>
+  
+  
+  <p class="article-stats">👍 25</p>
+  <p class="article-meta">10/13 08:00</p>
+  <p class="article-excerpt">Vision-language models (VLMs) are increasingly deployed in multi-agent systems to automate complex computer-use workflows, yet existing benchmarks mostly assume consistent, cooperative environments. In contrast, real-world collaboration rarely runs on consistent information: peer or sub-agents frequ</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 现有 computer-use 基准多假设多 agent 环境信息一致、协作顺畅，而现实中同级或下级 agent 常持有矛盾信息。CLASHarness 提出可控且可验证的生成流水线，构建多智能体冲突基准，评测 VLM 在信息不一致条件下的计算机操作表现。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.14270" target="_blank" rel="noopener noreferrer">The Thinking Leakage in Reinforcement Learning for LLMs</a></h3>
+  
+  
+  <p class="article-stats">👍 20</p>
+  <p class="article-meta">10/09 08:00</p>
+  <p class="article-excerpt">Hybrid reasoning models such as the Qwen3 series switch between a THINK mode and a NO-THINK mode through a few chat-template tokens. A popular recipe trains such models with reinforcement learning in NO-THINK mode and reports improved reasoning performance. We provide evidence that much of this gain</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Qwen3 等混合推理模型通过少量模板 token 在 THINK 与 NO-THINK 间切换。作者发现仅在 NO-THINK 模式下做强化学习却报告推理提升的做法存在「思维泄漏」：增益主要来自模型暗中继续思考，而非真正的非思考推理。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.20431" target="_blank" rel="noopener noreferrer">SwarmRSI: Recursive Self-Improvement through Evolving Scientific Agent Swarm</a></h3>
+  
+  
+  <p class="article-stats">👍 13</p>
+  <p class="article-meta">10/14 08:00</p>
+  <p class="article-excerpt">Recursive self-improvement (RSI) in scientific research aims to improve agents&#39; research capabilities through their own experimental experience. Scientific agent swarms can combine evidence and implementations from different research directions to guide their agents&#39; subsequent experiments. However,</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对科研 agent 的递归自我改进，SwarmRSI 让科学智能体集群通过自身实验经验持续提升研究能力，融合不同研究方向获得的证据与实现来指导后续实验，从而突破单一 agent 自我改进的局限，形成可演化的科研 swarm。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.13623" target="_blank" rel="noopener noreferrer">APEX-Harm: Evaluating Agent Safety in Shared Professional Workspaces</a></h3>
+  
+  
+  <p class="article-stats">👍 12</p>
+  <p class="article-meta">10/09 08:00</p>
+  <p class="article-excerpt">Professional agents increasingly work through command-line interfaces and multiple tools over shared workspaces containing files, messages, and business applications. These environments create safety risks that are difficult to capture with attacks placed at a single, known read location. We introdu</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 专业 agent 越来越多地通过命令行与多种工具在共享工作区中操作文件、消息与业务应用，这类环境的安全风险难以用单点已知读取位置的攻击刻画。APEX-Harm 提出面向共享职业工作区的 agent 安全评测方法，覆盖跨文件与多工具场景的危害行为。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.14774" target="_blank" rel="noopener noreferrer">ProgAgent: Learning Tool Orchestration through Programmatic Training</a></h3>
+  
+  
+  <p class="article-stats">👍 12</p>
+  <p class="article-meta">10/10 08:00</p>
+  <p class="article-excerpt">Large language models (LLMs) are increasingly expected to orchestrate diverse tools over long-horizon tasks. Existing agents typically use Direct Tool Calling (DTC), where the model invokes tools sequentially, and tool responses accumulate in the model context, which can lead to context rot and orch</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 现有 LLM agent 多采用 Direct Tool Calling，顺序调用工具并把响应不断累积进上下文，导致 context rot 与编排失效。ProgAgent 通过程序化训练让模型以程序形式编排工具，减少上下文堆积，在长程任务上提升工具调用的准确性与效率。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.15715" target="_blank" rel="noopener noreferrer">History Replays Itself: Unleashing Long-Context Capability in Linear Attention</a></h3>
+  
+  
+  <p class="article-stats">👍 9</p>
+  <p class="article-meta">10/11 08:00</p>
+  <p class="article-excerpt">Linear attention promises the efficiency needed for long-context language modelling, yet its fixed-size recurrent state must simultaneously support ongoing computation and preserve information from an ever-growing history. This coupling has reinforced a prevailing view that the state&#39;s memory capaci</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 线性注意力具备长上下文效率优势，但其固定大小的循环状态需同时支撑当前计算与不断增长的历史记忆，被认为容量受限。该工作通过让历史「重放」来解耦这一矛盾，释放线性注意力的长上下文能力，在保持效率的同时改善长文本建模。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.17246" target="_blank" rel="noopener noreferrer">LLM-to-Flow Distillation: Teaching Natural Language Goals to Scientific Generators</a></h3>
+  
+  
+  <p class="article-stats">👍 9</p>
+  <p class="article-meta">10/12 08:00</p>
+  <p class="article-excerpt">Generative discovery in science requires coupling high-level scientific reasoning with the ability to generate samples respecting the structure of a design space. Yet these capabilities remain largely separated: foundation LLMs encode broad chemical and biological knowledge, while domain-specific fl</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 科学生成需要把高层次科学推理与符合设计空间结构的样本生成结合起来，但 LLM 的知识与领域专用生成模型长期割裂。LLM-to-Flow Distillation 将自然语言目标蒸馏进生成模型，使通用 LLM 能引导科学生成器按目标产出合规样本。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.19026" target="_blank" rel="noopener noreferrer">Joint Subspace Sparse Attention for Efficient Long-Context Decoding</a></h3>
+  
+  
+  <p class="article-stats">👍 9</p>
+  <p class="article-meta">10/13 08:00</p>
+  <p class="article-excerpt">Sparse attention reduces the KV-cache traffic that dominates long-context LLM decoding, but practical methods largely operate at coarse granularity. Token-level selection offers finer control, yet presents two challenges: low-dimensional scoring may lose query--key structure needed for accurate rank</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 稀疏注意力可缓解长上下文解码中占主导的 KV-cache 流量，但现有方法粒度较粗；token 级选择更精细，却因低维打分丢失 query-key 结构而排序不准。该工作提出 Joint Subspace Sparse Attention，在子空间中联合打分，提升选择精度与长上下文解码效率。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.20609" target="_blank" rel="noopener noreferrer">SafeDriveVLA: Navigation-Conditioned World Model Dreaming for Conflict-Aware End-to-End Autonomous Driving</a></h3>
+  
+  
+  <p class="article-stats">👍 9</p>
+  <p class="article-meta">10/14 08:00</p>
+  <p class="article-excerpt">Vision-Language-Action (VLA) models are gaining attention in autonomous driving, inheriting commonsense priors from large language models (LLMs) and widening the navigation interface from a fixed command set to free-form natural-language instructions. However, this open-ended interface exposes a new</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> VLA 模型把 LLM 常识先验引入自动驾驶，并将导航接口从固定指令集扩展为自由语言指令，但开放接口也带来新的安全挑战。SafeDriveVLA 以导航条件驱动的世界模型「幻想」生成冲突场景，增强端到端自动驾驶对冲突情形的感知与决策安全性。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.17016" target="_blank" rel="noopener noreferrer">ProbabilityBench: Model Evaluation and Calibration with Exact Ground-Truth Uncertainty</a></h3>
+  
+  
+  <p class="article-stats">👍 8</p>
+  <p class="article-meta">10/12 08:00</p>
+  <p class="article-excerpt">Evaluating model uncertainty on real-world data is challenging because each instance provides only a single observed label, leaving true conditional class probabilities unknown. To address this, we introduce ProbabilityBench, a benchmark that provides exact, instance-level class probabilities across</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 真实数据中每个样本只有一个观测标签，真实条件类别概率未知，使不确定性评估与校准难以进行。ProbabilityBench 提供实例级精确类别概率作为 ground truth，覆盖多个任务，为模型不确定性估计与校准提供可量化误差的评测基准。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.19726" target="_blank" rel="noopener noreferrer">Generative World Simulation with DAO and JING</a></h3>
+  
+  
+  <p class="article-stats">👍 8</p>
+  <p class="article-meta">10/14 08:00</p>
+  <p class="article-excerpt">We present a Generative World Simulation framework that couples persistent shared world state with continuous first-person audiovisual generation. The framework integrates DAO, a computable world engine, and JING, an Egocentric Interactive Experience Model, to support sustained interaction for human</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 生成式世界模拟框架把持久共享的世界状态与连续第一人称视听生成结合起来，由可计算世界引擎 DAO 与自我中心交互体验模型 JING 组成，支持人类与 agent 长时间持续交互并保持世界状态一致。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.19696" target="_blank" rel="noopener noreferrer">Share the Symbol, Not the Vector: Training-Free Fact Communication Across Language Models</a></h3>
+  
+  
+  <p class="article-stats">👍 8</p>
+  <p class="article-meta">10/14 15:19</p>
+  <p class="article-excerpt">Multi-agent systems allow language models to solve tasks collaboratively by sharing complementary information. These systems typically communicate through text, while recent approaches also explore exchanging internal model states. However, sharing these states across architectures often requires le</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 多 agent 系统通常以文本通信，近期工作尝试交换模型内部状态，但跨架构共享隐状态往往需要额外对齐训练。该研究提出免训练的事实通信方案：不共享向量而共享符号，使不同语言模型之间可直接传递事实信息，降低跨模型协作成本。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.19420" target="_blank" rel="noopener noreferrer">From Failures to Learnable Worlds: Policy-Conditioned Environment Generation for Navigation Agents</a></h3>
+  
+  
+  <p class="article-stats">👍 7</p>
+  <p class="article-meta">10/14 08:00</p>
+  <p class="article-excerpt">Simulated environments enable scalable training data generation for embodied agents, but more data does not necessarily provide what a particular agent needs to learn. Existing environment-generation pipelines largely optimize generic properties such as realism, diversity, or task coverage, while di</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 仿真环境为具身 agent 提供可扩展训练数据，但数据更多不等于更契合特定 agent 的需求。现有流水线多优化真实感、多样性等通用属性，该工作提出以策略为条件的环境生成方法，从失败中构造针对性「可学习世界」，提升导航 agent 训练效率。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.18598" target="_blank" rel="noopener noreferrer">Rethinking Projector Training in Multimodal LLMs</a></h3>
+  
+  
+  <p class="article-stats">👍 7</p>
+  <p class="article-meta">10/13 08:00</p>
+  <p class="article-excerpt">Multimodal LLMs are typically trained by first aligning a vision encoder with a language model via projector training on large image-caption datasets, followed by joint training of the full multimodal model. Despite its widespread use, the role of the projector training stage remains poorly understo</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 多模态 LLM 通常先在大规模图文数据上训练 projector，以对齐视觉编码器与语言模型，再联合训练整个模型，但 projector 阶段的作用长期缺乏清晰认识。该工作系统分析这一阶段，重新审视其对多模态能力形成与后续联合训练的影响。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.17309" target="_blank" rel="noopener noreferrer">StartLux-Decision: AutoThink Decision Models with Reinforcement Learning for Calibrated Deliberative Decisions</a></h3>
+  
+  
+  <p class="article-stats">👍 7</p>
+  <p class="article-meta">10/12 08:00</p>
+  <p class="article-excerpt">We introduce StartLux-Decision, decision models from 0.8B to 27B parameters that combine efficient single-pass prediction with adaptive, confidence-guided reasoning. The Instant models use bidirectional attention in full-attention layers to improve decision accuracy while keeping single-pass inferen</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> StartLux-Decision 提出参数规模 0.8B 至 27B 的决策模型，兼顾高效单次预测与自适应、置信度引导的推理。Instant 模型在全注意力层引入双向注意力以提升决策准确率并保持单次推理效率，配合强化学习实现校准良好的深思型决策。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.20220" target="_blank" rel="noopener noreferrer">Glance Forcing: Making Bidirectional Diffusion Autoregressive at a Glance</a></h3>
+  
+  
+  <p class="article-stats">👍 7</p>
+  <p class="article-meta">10/14 08:00</p>
+  <p class="article-excerpt">Autoregressive generation underlies real-time, causal video synthesis and is the backbone of video world models. Today&#39;s dominant approach distills a bidirectional diffusion model into a causal few-step student, but existing pipelines make this conversion prohibitively expensive, requiring offline P</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 自回归生成是实时因果视频合成与视频世界模型的基础。主流做法把双向扩散模型蒸馏为因果少步学生模型，但转换成本过高、依赖离线流程。Glance Forcing 提出「一瞥」式转换方法，大幅降低蒸馏开销，使双向扩散模型高效获得自回归生成能力。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.14096" target="_blank" rel="noopener noreferrer">SWEeper-Bench: Can Agents Discover Bugs in Interactive Software?</a></h3>
+  
+  
+  <p class="article-stats">👍 7</p>
+  <p class="article-meta">10/08 08:00</p>
+  <p class="article-excerpt">Coding agents increasingly interact with users by generating interactive software on the fly rather than replying in text, yet many bugs in such software reveal themselves only after multi-step interactions. Today, users must discover these bugs and wait for fixes, making the development loop slow a</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 编码 agent 越来越多地即时生成交互式软件，而许多 bug 只在多步交互后才暴露，目前要靠用户发现并等待修复，开发闭环缓慢。SWEeper-Bench 构建交互式软件评测基准，考察 agent 能否主动发现此类 bug，推动自动化软件测试与修复。</p>
+</article>
+  </div>
+    </div>
+  </div>
+<div class="sub-content" data-sub-content="x-viral" data-cat="tech">
+    
+    <div class="source-contents">
+      <div class="source-content active" data-source-content="attentionvc-ai" data-sub="x-viral" data-cat="tech">
+    <article class="article">
+  <h3 class="article-title"><a href="https://x.com/melvindvivas/status/2109876908934787127" target="_blank" rel="noopener noreferrer">How Grok Bot Changed the Way I Work</a></h3>
+  
+  
+  <p class="article-stats">@melvindvivas · 6.3K 粉丝 · 209.9K 阅 · 541 赞 · 83 转</p>
+  <p class="article-meta">10/13 13:20</p>
+  <p class="article-excerpt">I&#39;ve been using AI coding assistants like Claude Code, Codex, and Cursor for quite some time. They&#39;ve already changed how I build software, but Grok Bot has changed something else: how I work</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 博主长期用 Claude Code、Codex、Cursor 写代码，认为它们改变的是「怎么造软件」，而 Grok Bot 改变的是「怎么工作」本身。属于使用体验类分享，对比角度偏工作方式而非编码效率，具体场景着墨不多。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://x.com/eglyman/status/2110007713396613568" target="_blank" rel="noopener noreferrer">Introducing Glass: Learn Things Once.</a></h3>
+  
+  
+  <p class="article-stats">@eglyman · 393.9K 粉丝 · 88.6K 阅 · 724 赞 · 58 转</p>
+  <p class="article-meta">10/13 22:00</p>
+  <p class="article-excerpt">Last week, David Senra asked me: “How does Ramp move so fast?” Today we’re launching the answer. But before we do, I’d like to tell you why we built it. Giving every employee AI — the best models, the</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Ramp 发布内部 AI 工具 Glass，主题是「只学一次」。起因是 David Senra 追问「Ramp 为何能跑这么快」，博主的答案是给每位员工配上最好的模型。属于产品发布 + 组织方法论分享，强调把顶级 AI 能力普惠到全员。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://x.com/GottliebEli/status/2110077216260608037" target="_blank" rel="noopener noreferrer">How to make a good RL task</a></h3>
+  
+  
+  <p class="article-stats">@GottliebEli · 809 粉丝 · 28.9K 阅 · 506 赞 · 37 转</p>
+  <p class="article-meta">10/14 02:36</p>
+  <p class="article-excerpt">I’ve been making lots of tasks lately. Many poor, some decent, and now finally, a few good. Through this work I’ve gained what I believe to be valuable insights into the task generation process that</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 博主总结近期大量做 RL 任务的经验：多数做得差、一部分尚可，只有少数算好，并从中提炼出任务生成流程的洞察。属于 RL 训练数据/任务设计的踩坑与方法论分享，适合做强化学习环境和评测集的人参考。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://x.com/googlecloud/status/2110039621878882558" target="_blank" rel="noopener noreferrer">Gemini 4 Argon available on Google Cloud, built to help solve  your business’s hardest problems </a></h3>
+  
+  
+  <p class="article-stats">@googlecloud · 573.7K 粉丝 · 21.2K 阅 · 502 赞 · 70 转</p>
+  <p class="article-meta">10/14 00:07</p>
+  <p class="article-excerpt">Last week we announced that Gemini Enterprise has evolved to make it even simpler to get work done, and introduced the Gemini agent, your new universal agent for work. But model intelligence underpins</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Google Cloud 宣布 Gemini 4 Argon 上线，定位是解决企业最难的问题。帖文回顾上周 Gemini Enterprise 的升级与通用办公 agent「Gemini agent」，并强调底层模型智能才是关键。属于云平台的模型与产品能力发布。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://x.com/GoogleAIStudio/status/2110061450618159297" target="_blank" rel="noopener noreferrer">Gemini 4 Argon: Built to solve your hardest problems</a></h3>
+  
+  
+  <p class="article-stats">@GoogleAIStudio · 208.3K 粉丝 · 19.6K 阅 · 635 赞 · 45 转</p>
+  <p class="article-meta">10/14 01:33</p>
+  <p class="article-excerpt">Gemini 4 Argon is now globally available today for developers and enterprises via the API in AI Studio and Gemini platform, for Google AI Ultra subscribers in Google Antigravity, and Google AI Ultra</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Gemini 4 Argon 全球开放：开发者与企业可通过 AI Studio 和 Gemini 平台的 API 调用，Google AI Ultra 订阅者可在 Antigravity 等入口使用。属于模型正式 GA 的渠道与权限说明，面向开发者和企业侧落地。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://x.com/zack0x01_/status/2109900011022725496" target="_blank" rel="noopener noreferrer">How to Build an AI Hacking Agent That Finds Bugs While You Sleep</a></h3>
+  
+  
+  <p class="article-stats">@zack0x01_ · 5.3K 粉丝 · 19.3K 阅 · 501 赞 · 71 转</p>
+  <p class="article-meta">10/13 14:52</p>
+  <p class="article-excerpt">I built an AI agent that hunts bugs while I sleep. Not a chatbot that gives me advice about hacking, an agent on my own server with hands. It maps a target, tests the bug classes I actually care</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 博主搭建了一个能整夜自动找漏洞的 AI agent：不是给建议的聊天机器人，而是跑在自己服务器上有「手」的智能体，会先测绘目标，再按自己关心的漏洞类别逐个测试。属于安全方向的 agent 实战教程，强调可自主执行。</p>
+</article>
+  </div>
+    </div>
+  </div>
+<div class="sub-content" data-sub-content="ai-news" data-cat="tech">
+    
+    <div class="source-contents">
+      <div class="source-content active" data-source-content="_merged" data-sub="ai-news" data-cat="tech">
+    <article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/blog/ibm-granite/granite-switch-4-1" target="_blank" rel="noopener noreferrer">Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint</a></h3>
+  
+  
+  
+  <p class="article-meta">Hugging Face Blog · 10/16 04:34</p>
+  
+  <p class="article-summary"><span class="summary-label">中文介绍</span> IBM 在 Hugging Face 发布 Granite Switch 4.1，官方称其可通过单一端点同时提供聊天、决策与语音三类能力。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://openai.com/index/introducing-the-rosalind-academic-plan" target="_blank" rel="noopener noreferrer">Bringing GPT-Rosalind to academic research labs</a></h3>
+  
+  
+  
+  <p class="article-meta">OpenAI News · 10/16 03:00</p>
+  <p class="article-excerpt">Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> OpenAI 推出 Rosalind 学术计划，为符合条件的学术实验室提供 GPT-Rosalind 的赞助访问权限及相关工具，用于推进生命科学研究。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://deepmind.google/blog/accelerating-antimicrobial-discovery/" target="_blank" rel="noopener noreferrer">Accelerating the search for antimicrobial peptides with Google Antigravity</a></h3>
+  
+  
+  
+  <p class="article-meta">DeepMind Blog · 10/16 00:08</p>
+  <p class="article-excerpt">Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Google DeepMind 利用面向科学场景的 Google Antigravity 平台，加速新型抗菌肽的搜索与发现工作。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://openai.com/index/teaching-students-to-think-and-learn-through-questions" target="_blank" rel="noopener noreferrer">Teaching students to think and learn through questions</a></h3>
+  
+  
+  
+  <p class="article-meta">OpenAI News · 10/15 21:00</p>
+  <p class="article-excerpt">Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> OpenAI 在教师节推出巴西葡萄牙语版 AI for Educators，并介绍 Study Mode 如何帮助教师支持主动、分步骤的学习方式。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d" target="_blank" rel="noopener noreferrer">[AINews] Modal’s $1B ARR, $16B Series D makes it NYC’s newest AI Infra Decacorn, 3x usage and 3x valuation in 5 months, 15x in 1 yr</a></h3>
+  
+  
+  
+  <p class="article-meta">Latent Space · 10/15 18:08</p>
+  <p class="article-excerpt">Sandboxes are all you need.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Modal 年度经常性收入达 10 亿美元，完成 160 亿美元 D 轮融资，成为纽约最新的 AI 基础设施十角兽；5 个月内使用量与估值均增长 3 倍，一年增长 15 倍。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/blog/meta-muse-spark-open" target="_blank" rel="noopener noreferrer">Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta</a></h3>
+  
+  
+  
+  <p class="article-meta">Hugging Face Blog · 10/15 08:00</p>
+  
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Meta 发布开源权重的前沿多模态混合专家模型 Muse Spark Open，Hugging Face 博客对其进行了介绍。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/blog/flux-3" target="_blank" rel="noopener noreferrer">Welcome FLUX.3 Image Klein in Diffusers</a></h3>
+  
+  
+  
+  <p class="article-meta">Hugging Face Blog · 10/15 08:00</p>
+  
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Hugging Face 博客宣布，FLUX.3 Image Klein 模型已可在 Diffusers 库中使用。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://tldr.tech/ai/2026-10-15" target="_blank" rel="noopener noreferrer">Jev 1.14 ⚡, Grok Voice 3 🎙️, RSI 🔁</a></h3>
+  
+  
+  
+  <p class="article-meta">TLDR AI · 10/15 08:00</p>
+  
+  <p class="article-summary"><span class="summary-label">中文介绍</span> TLDR AI 本期汇总的要点包括 Jev 1.14、Grok Voice 3 以及 RSI 等。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.latent.space/p/crossing-the-threshold" target="_blank" rel="noopener noreferrer">Crossing the Threshold: How OpenAI and Anthropic Approach Autonomy and Safety in Financial Agents</a></h3>
+  
+  
+  
+  <p class="article-meta">Latent Space · 10/15 05:40</p>
+  <p class="article-excerpt">At AI Engineer New York, frontier labs and financial firms explored how to give agents useful autonomy while keeping consequential decisions under control.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 在纽约 AI Engineer 大会上，OpenAI、Anthropic 等前沿实验室与金融机构探讨如何让金融代理获得有用的自主权，同时将重大决策置于可控范围。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.latent.space/p/lab-in-the-loop-at-compute-speed" target="_blank" rel="noopener noreferrer">Lab-in-the-Loop at Compute Speed — Ian Quigley, Leash Bio</a></h3>
+  
+  
+  
+  <p class="article-meta">Latent Space · 10/15 04:35</p>
+  <p class="article-excerpt">How Leash Bio tamed DELs, the assay that traumatizes everyone, and used the data to catch cheating models. And why that same data is perfect for AI agents learning to think like chemists.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Leash Bio 的 Ian Quigley 介绍公司如何优化 DEL 检测方法，并利用所得数据识别作弊模型；这些数据同样适用于训练像化学家一样思考的 AI 代理。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/blog/allenai/hiro-acev2" target="_blank" rel="noopener noreferrer">HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost</a></h3>
+  
+  
+  
+  <p class="article-meta">Hugging Face Blog · 10/15 00:12</p>
+  
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Allen AI 发布 HiRO-ACEv2，可在远低于以往成本的情况下模拟 3 公里分辨率的极端天气。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://openai.com/index/amp-beyond-coding" target="_blank" rel="noopener noreferrer">Amp puts AI agents to work beyond code with OpenAI models</a></h3>
+  
+  
+  
+  <p class="article-meta">OpenAI News · 10/14 20:00</p>
+  <p class="article-excerpt">See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Amp 借助 GPT-6 Astra、Ultrafast、GPT-Live-1 以及 Sign in with ChatGPT，将 AI 代理的应用拓展到代码之外的场景。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://openai.com/index/sentinelone" target="_blank" rel="noopener noreferrer">SentinelOne cuts malware analysis from weeks to hours</a></h3>
+  
+  
+  
+  <p class="article-meta">OpenAI News · 10/14 20:00</p>
+  <p class="article-excerpt">With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> SentinelOne 利用 OpenAI Daybreak 将恶意软件分析时间从数周缩短至数小时，从而有更多产能调查其他威胁。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://openai.com/index/third-moment-research" target="_blank" rel="noopener noreferrer">How Third Moment Research runs 10,000 agents for 36+ hours</a></h3>
+  
+  
+  
+  <p class="article-meta">OpenAI News · 10/14 15:00</p>
+  <p class="article-excerpt">With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Third Moment Research 借助 GPT-6 Astra、GPT-6.1 Sol、Codex 及网络安全工具 Daybreak，运行 1 万个代理超过 36 小时，构建可持续专注并随使用改进的代理。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://openai.com/index/block-ai-powered-security" target="_blank" rel="noopener noreferrer">How Block is building AI-powered security with OpenAI technology</a></h3>
+  
+  
+  
+  <p class="article-meta">OpenAI News · 10/14 15:00</p>
+  <p class="article-excerpt">Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Block 基于 OpenAI 技术构建 AI 驱动的安全体系，其安全团队能更快调查威胁，并在数分钟内提出修复补丁。</p>
+</article>
+  </div>
+    </div>
+  </div></div>
+  </section>
+  <section class="panel" data-panel="politics">
+    <div class="sub-content active" data-sub-content="world" data-cat="politics">
+    
+    <div class="source-contents">
+      <div class="source-content active" data-source-content="_merged" data-sub="world" data-cat="politics">
+    <article class="article">
+  <h3 class="article-title"><a href="https://www.nytimes.com/2026/10/15/world/americas/venezuela-machado-trump-oil-deal.html" target="_blank" rel="noopener noreferrer">Venezuela’s Opposition Leader Calls Trump’s New Oil Partner Corrupt</a></h3>
+  
+  
+  
+  <p class="article-meta">NYT World · 10/16 06:53</p>
+  <p class="article-excerpt">As ties with the Trump administration fray, María Corina Machado said her return to Venezuela would come “sooner than you would expect.”</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 委内瑞拉反对派领导人玛丽亚·科里纳·马查多批评特朗普政府新的石油合作伙伴存在腐败，称随着双方关系紧张，她返回委内瑞拉的时间将「比人们预期的更早」。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.aljazeera.com/news/2026/10/15/at-least-4-including-3-children-killed-in-us-elementary-school-shooting?traffic_source=rss" target="_blank" rel="noopener noreferrer">At least 4, including 3 children, killed in US elementary school shooting</a></h3>
+  
+  
+  
+  <p class="article-meta">Al Jazeera · 10/16 06:51</p>
+  <p class="article-excerpt">Authorities have indicated that the shooter was killed by gunfire, though details remain scant about the attack.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 美国一所小学发生枪击事件，至少4人死亡，其中包括3名儿童。当局表示枪手已被枪击击毙，但有关袭击的细节仍很少。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.bbc.co.uk/news/articles/cmq8n513x523o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Letters with &#39;suspicious substances&#39; sent to US senators and election offices</a></h3>
+  
+  
+  
+  <p class="article-meta">BBC World · 10/16 06:46</p>
+  <p class="article-excerpt">A number of states have confirmed they were targeted by the mailings, including Oklahoma, Ohio and Louisiana.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 装有「可疑物质」的信件被寄往美国多名参议员及选举办公室。俄克拉何马、俄亥俄和路易斯安那等多个州确认成为寄送目标。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.bbc.co.uk/news/articles/c6wyrnmgzn01o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Bus hits train stopped on French side of Channel Tunnel, with 19 injured</a></h3>
+  
+  
+  
+  <p class="article-meta">BBC World · 10/16 06:37</p>
+  <p class="article-excerpt">Two people were airlifted to hospital but no-one&#39;s life appeared to be in danger, officials said.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 一辆大巴在英吉利海峡隧道法国一侧撞上停驻的列车，造成19人受伤，其中两人被直升机送医。官员称无人生命受到威胁。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.aljazeera.com/news/2026/10/15/israel-halts-commercial-goods-from-entering-gaza-hamas-denies-tax-claims?traffic_source=rss" target="_blank" rel="noopener noreferrer">Israel halts commercial goods from entering Gaza; Hamas denies tax claims</a></h3>
+  
+  
+  
+  <p class="article-meta">Al Jazeera · 10/16 05:57</p>
+  <p class="article-excerpt">The halt to commercial shipments, including fruit and winter clothing, cuts off a key source of critical supplies.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 以色列停止商业货物进入加沙，包括水果和冬衣在内的商业货运被叫停，切断了一条关键物资来源。哈马斯否认有关税收的指称。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.aljazeera.com/sports/2026/10/15/martinez-apologises-for-man-united-outburst-after-carrick-talks?traffic_source=rss" target="_blank" rel="noopener noreferrer">Man United’s Martinez apologises for outburst after talks with Carrick</a></h3>
+  
+  
+  
+  <p class="article-meta">Al Jazeera · 10/16 05:54</p>
+  <p class="article-excerpt">Lisandro Martinez meets Manchester United manager Michael Carrick before apologising for his criticism of the club.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 曼联球员利桑德罗·马丁内斯在与主教练迈克尔·卡里克交谈后，为其此前对俱乐部的批评言论道歉。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.aljazeera.com/news/2026/10/15/trump-administration-sues-california-over-noncitizens-on-voter-rolls?traffic_source=rss" target="_blank" rel="noopener noreferrer">Trump administration sues California over noncitizens on voter rolls</a></h3>
+  
+  
+  
+  <p class="article-meta">Al Jazeera · 10/16 05:44</p>
+  <p class="article-excerpt">Lawsuit comes weeks before midterm elections and follows debunked claims of noncitizens voting in various states.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 特朗普政府就选民名册上存在非公民一事起诉加利福尼亚州。诉讼在中期选举前数周提出，此前多州有关非公民投票的说法已被证伪。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.nytimes.com/2026/10/15/world/middleeast/yemen-strike-aden-palace.html" target="_blank" rel="noopener noreferrer">Houthi Missiles Strike Government Headquarters in Yemen</a></h3>
+  
+  
+  
+  <p class="article-meta">NYT World · 10/16 05:43</p>
+  <p class="article-excerpt">Five people were killed when the Houthi militia struck the Maashiq Palace in Aden, a Yemeni minister said.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 胡塞武装导弹袭击也门亚丁的政府总部马什格宫，一名也门部长表示，袭击造成5人死亡。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.nytimes.com/2026/10/15/world/europe/albania-student-protests-violence.html" target="_blank" rel="noopener noreferrer">Violent Protests in Albania</a></h3>
+  
+  
+  
+  <p class="article-meta">NYT World · 10/16 05:40</p>
+  <p class="article-excerpt">Opposition to a luxury resort project linked to Jared Kushner has collided with rising discontent over corruption and the cost of living.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 阿尔巴尼亚爆发暴力抗议，反对与贾里德·库什纳相关的一个豪华度假村项目，并与民众对腐败和生活成本上涨的不满交织。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.theguardian.com/world/2026/oct/15/nineteen-injured-minibus-collision-eurotunnel-calais" target="_blank" rel="noopener noreferrer">Nineteen injured in collision between minibus and train on Eurotunnel loading platform</a></h3>
+  
+  
+  
+  <p class="article-meta">The Guardian · 10/16 05:38</p>
+  <p class="article-excerpt">Two people critically hurt when vehicle carrying HGV drivers hit stationary train in Calais, say French authorities Nineteen people have been injured after a minibus collided with a stationary freight train at the loading platform of the Eurotunnel near Calais, French authorities have said. Pas-de-C</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 法国加来附近欧洲隧道装载平台上，一辆载有货车司机的小巴撞上停驻的货运列车，造成19人受伤，其中2人伤势严重。法国当局已证实此事。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.aljazeera.com/video/newsfeed/2026/10/15/several-people-dead-or-missing-after-istanbul-floods?traffic_source=rss" target="_blank" rel="noopener noreferrer">Several people dead or missing after Istanbul floods</a></h3>
+  
+  
+  
+  <p class="article-meta">Al Jazeera · 10/16 05:15</p>
+  <p class="article-excerpt">Three people have died and several are reported missing after torrential rain triggered severe flooding across Istanbul</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 暴雨在伊斯坦布尔引发严重洪灾，已造成3人死亡，另有多人报告失踪。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.aljazeera.com/video/newsfeed/2026/10/15/israeli-ad-firm-helped-infect-spyware-into-al-jazeera-devices?traffic_source=rss" target="_blank" rel="noopener noreferrer">Israeli ‘ad’ firm helped infect spyware into Al Jazeera devices</a></h3>
+  
+  
+  
+  <p class="article-meta">Al Jazeera · 10/16 05:05</p>
+  <p class="article-excerpt">An Israeli spyware disguised as a digital advertisement firm has targeted journalists’ devices at Al Jazeera.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 一家伪装成数字广告公司的以色列间谍软件机构，针对半岛电视台记者的设备实施攻击，将间谍软件植入其设备。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.aljazeera.com/news/2026/10/15/ice-tactics-spark-debate-before-pivotal-us-midterm-elections?traffic_source=rss" target="_blank" rel="noopener noreferrer">ICE tactics spark debate before pivotal US midterm elections</a></h3>
+  
+  
+  
+  <p class="article-meta">Al Jazeera · 10/16 05:02</p>
+  <p class="article-excerpt">Polls have found that Trump&#39;s hardline immigration enforcement effort has divided voters before the 2026 midterm race.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 美国移民与海关执法局的执法方式在2026年中期选举前引发争论。民调显示，特朗普强硬的移民执法行动使选民立场分化。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.aljazeera.com/video/newsfeed/2026/10/15/robots-dance-the-macarena-at-japan-tech-expo?traffic_source=rss" target="_blank" rel="noopener noreferrer">Robots dance the ‘Macarena’ at Japan tech expo</a></h3>
+  
+  
+  
+  <p class="article-meta">Al Jazeera · 10/16 05:00</p>
+  <p class="article-excerpt">Humanoid robots were seen performing the “Macarena” at the annual CEATEC technology exhibition in Chiba, Japan.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 在日本千叶举行的年度CEATEC科技展上，人形机器人表演了「玛卡arena」舞蹈。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.nytimes.com/2026/10/15/world/us-midterms-texas-zelensky-ukraine.html" target="_blank" rel="noopener noreferrer">America’s Most Expensive Senate Race</a></h3>
+  
+  
+  
+  <p class="article-meta">NYT World · 10/16 04:37</p>
+  <p class="article-excerpt">The Senate showdown in Texas shows why Donald Trump and the Republican Party are worried about the midterm elections.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 美国得克萨斯州参议员选战成为全国花费最高的竞选。这场对决显示出唐纳德·特朗普与共和党为何对中期选举感到担忧。</p>
+</article>
+  </div>
+    </div>
+  </div>
+  </section>
+</main>
+
+<!-- Conference Deadlines — MiMo Careers style -->
+<div class="deadlines-section">
+  <div class="section-label">即将截止的会议</div>
+  <a class="deadline-row" href="https://cvpr2027.thecvf.com/" target="_blank" rel="noopener noreferrer">
+  <span class="deadline-num">01</span>
+  <div class="deadline-info"><span class="deadline-name">CVPR 2027</span></div>
+  <span class="deadline-meta">2026-11-15</span>
+  <span class="deadline-badge upcoming">31 天</span>
+  <span class="deadline-arrow" aria-hidden="true">→</span>
+</a>
+<a class="deadline-row" href="https://icml.cc/Conferences/2027" target="_blank" rel="noopener noreferrer">
+  <span class="deadline-num">02</span>
+  <div class="deadline-info"><span class="deadline-name">ICML 2027</span></div>
+  <span class="deadline-meta">2027-01-31</span>
+  <span class="deadline-badge later">108 天</span>
+  <span class="deadline-arrow" aria-hidden="true">→</span>
+</a>
+<a class="deadline-row" href="https://iccv2027.thecvf.com/" target="_blank" rel="noopener noreferrer">
+  <span class="deadline-num">03</span>
+  <div class="deadline-info"><span class="deadline-name">ICCV 2027</span></div>
+  <span class="deadline-meta">2027-03-08</span>
+  <span class="deadline-badge later">144 天</span>
+  <span class="deadline-arrow" aria-hidden="true">→</span>
+</a>
+</div>
+
+<footer class="mimo-footer">
+  <span class="footer-logo">DailyBrief</span>
+  <div class="footer-right">
+    <span class="footer-disclaimer">内容均来自原媒体，本站仅作摘要整理与回链。</span>
+    <span class="footer-copy">© 2026 DailyBrief</span>
+  </div>
+</footer>
+<script>
+  function activateTab(target) {
+    document.querySelectorAll('.tabs > .tab').forEach(function (b) {
+      b.classList.toggle('active', b.dataset.tab === target);
+    });
+    document.querySelectorAll('.panel').forEach(function (p) {
+      p.classList.toggle('active', p.dataset.panel === target);
+    });
+  }
+
+  function scrollToArxivDirection(dir) {
+    activateTab('tech');
+    var panel = document.querySelector('.panel[data-panel="tech"]');
+    if (!panel) return;
+    var subBtn = panel.querySelector('[data-sub="arxiv-papers"]');
+    if (subBtn) subBtn.click();
+    var srcId = 'arxiv-' + dir;
+    var dirBtn = panel.querySelector('[data-source="' + srcId + '"]');
+    if (dirBtn) dirBtn.click();
+    setTimeout(function () {
+      var el = document.getElementById(srcId);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      else {
+        var main = document.getElementById('content');
+        if (main) main.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
+  }
+
+  document.querySelectorAll('[data-arxiv-dir]').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      scrollToArxivDirection(el.dataset.arxivDir);
+    });
+  });
+
+  document.querySelectorAll('[data-nav-tab]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      activateTab(link.dataset.navTab);
+      var main = document.getElementById('content');
+      if (main) main.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  document.querySelectorAll('.tabs > .tab').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      activateTab(btn.dataset.tab);
+    });
+  });
+  document.querySelectorAll('.sub-tab').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var panel = btn.closest('.panel');
+      if (!panel) return;
+      var sub = btn.dataset.sub;
+      panel.querySelectorAll('.sub-tab').forEach(function (b) {
+        b.classList.toggle('active', b === btn);
+      });
+      panel.querySelectorAll('.sub-content').forEach(function (p) {
+        p.classList.toggle('active', p.dataset.subContent === sub);
+      });
+    });
+  });
+  document.querySelectorAll('.source-tab').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var subContent = btn.closest('.sub-content');
+      if (!subContent) return;
+      var src = btn.dataset.source;
+      subContent.querySelectorAll('.source-tab').forEach(function (b) {
+        b.classList.toggle('active', b === btn);
+      });
+      subContent.querySelectorAll('.source-content').forEach(function (p) {
+        p.classList.toggle('active', p.dataset.sourceContent === src);
+      });
+    });
+  });
+</script>
+</body>
+</html>
