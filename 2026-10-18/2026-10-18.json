@@ -1,0 +1,75 @@
+{
+  "hero_headline": "法国抗议失控 开源模型与智能体工具密集迭代",
+  "daily_overview": "技术侧主线是开放权重与智能体工程化：Hugging Face 上线可自持、可定制的 5010 亿参数开放模型 Beam，Anthropic 发布官方 Claude Code 插件目录，GitHub 上编码 Agent 调优项目升温；研究端关注把 RL 策略变化蒸馏进小模型与视觉语言模型的可信拒答机制。时政侧，法国生活成本抗议演变为全国骚乱、逾 400 人被捕，欧洲多国同日现示威；约旦河西岸定居者暴力升温，挪威军演中国产车辆被指录下门禁密码。",
+  "tech_briefs": [
+    {
+      "title": "Anthropic 上线官方 Claude Code 插件目录",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "source": "GitHub Trending",
+      "summary": "Anthropic 官方维护的 Claude Code 插件目录，收录经筛选的命令、Agent 与 MCP 集成插件；开发者可在统一入口检索安装，快速扩展编码智能体能力，省去在社区仓库逐个甄别的成本。",
+      "importance": 7
+    },
+    {
+      "title": "Beam 发布：5010 亿参数开放模型可自持定制",
+      "url": "https://huggingface.co/blog/reflection-beam",
+      "source": "Hugging Face Blog",
+      "summary": "Hugging Face 博客介绍开放模型 Beam，参数规模 5010 亿，主打可自行持有、定制与横向扩展，面向需要私有部署和二次训练、又不愿依赖闭源 API 的团队。",
+      "importance": 8
+    },
+    {
+      "title": "英伟达公布 Indic 预训练数据流水线",
+      "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
+      "source": "Hugging Face Blog",
+      "summary": "英伟达在 Hugging Face 公布 Indic 语系预训练扩展工作：使用 2.8 万亿 token，并开源一套数据生成流水线，为低资源语种的基座模型训练提供可复用的数据构建方法。",
+      "importance": 7
+    },
+    {
+      "title": "DeepMind 与新加坡合作端侧反诈模型",
+      "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "source": "DeepMind Blog",
+      "summary": "Google DeepMind 与新加坡 GovTech 合作，用轻量端侧 Gemma 模型在私聊中拦截对话式诈骗，数据不出设备、无需上云，针对隐私与监管敏感的实时反诈场景。",
+      "importance": 7
+    },
+    {
+      "title": "Waypoint-OPD：用中间检查点迁移 RL 策略",
+      "url": "https://huggingface.co/papers/2610.21601",
+      "source": "HuggingFace Trending Papers",
+      "summary": "现有策略偏移蒸馏只利用教师模型 RL 前后 log 概率之差，忽略局部动作偏好是否一致演化。该论文引入中间检查点作为「路标」，配合门控 on-policy 蒸馏，把 RL 引发的策略变化迁移到学生自生成轨迹上。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "法国抗议演变为全国骚乱 逾 400 人被捕",
+      "url": "https://www.theguardian.com/world/2026/oct/17/protests-france-high-prices-social-security-gilets-jaunes",
+      "source": "The Guardian",
+      "summary": "法国多地因生活成本与学校条件爆发抗议，数万人和平游行，巴黎、马赛等地演变为骚乱、逾 400 人被捕；比利时、意大利、葡萄牙同日亦有大规模示威。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "约旦河西岸定居者袭击巴人与欧洲外交官",
+      "url": "https://www.nytimes.com/2026/10/17/world/middleeast/israeli-settlers-attack-palestinians-diplomats-west-bank.html",
+      "source": "NYT World",
+      "summary": "目击者称，以色列极端定居者在约旦河西岸袭击巴勒斯坦居民，并打碎一辆欧洲外交车辆的车窗；正值橄榄收获季，当地定居者暴力事件明显增加。",
+      "importance": 7
+    },
+    {
+      "title": "挪威军演租用中国产车辆被指录下门禁密码",
+      "url": "https://www.dw.com/zh/中国制造车辆录下门禁密码-挪威军演租车引发安全关注/a-79688210?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "挪威媒体披露，9 月奥斯陆机场军事安全演习中，军方租用的中国产汽车用车载摄像头录下军事设施门禁密码与人员出入信息；挪威国民警卫队证实此事，称无法排除数据外传可能。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "开放权重模型与编码智能体工具同日密集迭代，落地案例增多；欧洲街头压力则提醒，技术扩散与治理议题正同时进入现实。",
+  "keywords": [
+    "开放权重模型",
+    "Claude Code",
+    "智能体工程",
+    "RL 蒸馏",
+    "法国骚乱",
+    "生活成本",
+    "约旦河西岸",
+    "车载数据安全"
+  ]
+}
