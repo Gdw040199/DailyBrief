@@ -1,0 +1,75 @@
+{
+  "hero_headline": "开放模型与AI基建融资升温，乌印局势牵动时政",
+  "daily_overview": "10月16日，科技侧两线并行：开放与自建模型加速，Hugging Face发布5010亿参数开放模型Beam，并公开印度语系2.8万亿token预训练的数据生成流程；智能体基建持续吸金，Modal年经常性收入达10亿美元并完成160亿美元D轮，Anthropic上线官方Claude Code插件目录，研究端出现智能体证伪多义性的主张。时政侧，意大利防长批评美国限制对乌支援，基辅在袭击风险中运转；印度新德里因选民名册审查爆发抗议；重庆前市长黄奇帆被带走的消息引发关注。",
+  "tech_briefs": [
+    {
+      "title": "Modal年收入达10亿美元，完成160亿美元D轮",
+      "url": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d",
+      "source": "Latent Space",
+      "summary": "AI基础设施公司Modal年经常性收入达10亿美元，完成160亿美元D轮融资，成为纽约最新一家AI基础设施十角兽；5个月内使用量与估值均增长3倍，一年内增长15倍。",
+      "importance": 8
+    },
+    {
+      "title": "Hugging Face发布5010亿参数开放模型Beam",
+      "url": "https://huggingface.co/blog/reflection-beam",
+      "source": "Hugging Face Blog",
+      "summary": "Hugging Face发布开放模型Beam，参数规模5010亿，官方称用户可自行拥有、定制并扩展该模型，为希望自建大模型的团队提供可下载权重与扩展空间。",
+      "importance": 8
+    },
+    {
+      "title": "Anthropic上线官方Claude Code插件目录",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "source": "GitHub Trending",
+      "summary": "Anthropic官方维护的Claude Code插件目录，收录经筛选的高质量插件，为开发者提供统一入口来发现、安装与分发扩展编码代理能力的工具，解决插件来源分散、质量参差的问题。",
+      "importance": 7
+    },
+    {
+      "title": "研究主张：智能体证伪多义性并提升可解释性",
+      "url": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity",
+      "source": "Latent Space",
+      "summary": "AI资讯栏目AINews报道，Nick Cammarata提出主张称智能体证伪了多义性假说，并大幅提升模型可解释性与对齐研究水平；该说法若成立将改变对神经元多重含义的既有理解。",
+      "importance": 7
+    },
+    {
+      "title": "FDE-Gym：评测AI交付的最后一公里",
+      "url": "https://huggingface.co/papers/2610.22350",
+      "source": "HuggingFace Trending Papers",
+      "summary": "现有agent评测多基于issue或任务工单等明确需求，真实交付则要求前向部署工程师澄清模糊需求并在实时系统中作业。FDE-Gym为这一「最后一公里」构建评测环境，衡量代理在模糊场景下的交付能力。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "意防长称特朗普限制援乌「完全错误」",
+      "url": "https://www.bbc.co.uk/news/articles/c64g18ljjd8do?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "意大利国防部长克罗塞托接受BBC采访时称，特朗普限制对乌克兰的支援「完全错误」，认为此举可能延长俄罗斯的全面入侵，而不是帮助结束战争。",
+      "importance": 7
+    },
+    {
+      "title": "德媒：重庆前市长黄奇帆被有关部门带走",
+      "url": "https://www.dw.com/zh/没有不倒翁：黄奇帆与-倒查二十年/a-79682475?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "德国之声援引财新网报道称，重庆前市长黄奇帆于10月10日被有关部门带走，其独子同期被带走，事件在国内外引发广泛关注，并牵连「倒查二十年」相关讨论。",
+      "importance": 7
+    },
+    {
+      "title": "印度新德里抗议升级，焦点为选民名册审查",
+      "url": "https://www.npr.org/2026/10/16/g-s1-148383/crowds-throng-new-delhi-and-wave-indian-flags-amid-escalating-protests",
+      "source": "NPR World",
+      "summary": "印度新德里民众持续集会并挥舞国旗，抗议选民名册审查。批评者称审查带有政治动机、可能剥夺部分选民投票资格，选举委员会与莫迪政府否认相关指控。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "技术侧开放模型与AI基建融资升温，时政侧乌克兰与印度议题持续，两条线索都显示监管与地缘因素正深度牵引产业节奏。",
+  "keywords": [
+    "开放模型",
+    "AI基础设施",
+    "Claude Code",
+    "模型可解释性",
+    "智能体评测",
+    "乌克兰战争",
+    "印度抗议",
+    "黄奇帆"
+  ]
+}
