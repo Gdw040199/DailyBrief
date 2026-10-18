@@ -1,0 +1,74 @@
+{
+  "hero_headline": "Modal 估值破百亿，开放模型与欧美政坛震荡并行",
+  "daily_overview": "技术侧，AI 基础设施继续吸金：Modal 以 10 亿美元年化收入、16 亿美元 D 轮成为纽约最新 AI 基建独角兽；开源模型同步扩张，Reflection 发布 5010 亿参数的 Beam，英伟达公开 2.8 万亿 token 的印度语系预训练数据流水线；编码 agent 生态趋于标准化，Anthropic 与 Cursor 相继发布官方插件目录。时政侧，特朗普在多项对俄制裁生效前两天将其阻止，称需维持和平谈判；加拿大韦恩赖特军事基地大火致 4 死数十伤；法国全国抗议演变为骚乱，利摩日市政厅疑遭纵火。",
+  "tech_briefs": [
+    {
+      "title": "Modal 年化收入达 10 亿美元，完成 16 亿美元 D 轮",
+      "url": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d",
+      "source": "Latent Space",
+      "summary": "Modal 宣布年度经常性收入达到 10 亿美元，并完成 16 亿美元 D 轮融资，成为纽约最新一家 AI 基础设施「十角兽」；5 个月内使用量与估值各增 3 倍，一年增长约 15 倍。",
+      "importance": 8
+    },
+    {
+      "title": "Reflection 发布 5010 亿参数开放模型 Beam",
+      "url": "https://huggingface.co/blog/reflection-beam",
+      "source": "Hugging Face Blog",
+      "summary": "Hugging Face 博客介绍开放模型 Beam，参数规模 5010 亿，主打可自行拥有、定制并横向扩展部署，面向希望自托管大模型、掌握权重与推理成本的团队。",
+      "importance": 8
+    },
+    {
+      "title": "英伟达公开 2.8 万亿 token 印度语系预训练流水线",
+      "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
+      "source": "Hugging Face Blog",
+      "summary": "该工作把印度语系预训练规模推到 2.8 万亿 token，并公开整套数据生成流水线，覆盖语料构建、清洗与配比，为低资源语言的大模型训练提供可复用方法。",
+      "importance": 7
+    },
+    {
+      "title": "研究称智能体方法证伪神经网络「多义性」假设",
+      "url": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity",
+      "source": "Latent Space",
+      "summary": "Latent Space 报道 Nick Cammarata 提出的主张：智能体实验证伪了神经元「多义性」假设，并称在可解释性与对齐上取得明显进展；相关结论仍待同行复现验证。",
+      "importance": 7
+    },
+    {
+      "title": "开源编码 agent opencode 登上 GitHub 热榜",
+      "url": "https://github.com/anomalyco/opencode",
+      "source": "GitHub Trending",
+      "summary": "opencode 是可在本地运行的编码 agent，能读写文件、执行命令，完成改码、调试与自动化操作；相比闭源助手更强调自主可控，适合自建 AI 编程工作流的开发者。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "特朗普暂停多项对俄制裁，称需维持和谈",
+      "url": "https://www.bbc.co.uk/news/articles/c9p8gz7zx4peo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "特朗普表示，暂停对俄制裁是为了让和平谈判得以继续；他在多项制裁原定生效前两天将其阻止，此举被视为对俄释放谈判信号。",
+      "importance": 9
+    },
+    {
+      "title": "加拿大韦恩赖特军事基地火灾致 4 死数十伤",
+      "url": "https://www.nytimes.com/2026/10/18/world/canada/canadian-army-base-fire-kills-4.html",
+      "source": "NYT World",
+      "summary": "阿尔伯塔省韦恩赖特军事基地周六发生猛烈且快速蔓延的火灾，造成 4 人死亡、数十人受伤；总理卡尼称军方与应急人员整夜扑救，属和平时期本土最严重悲剧之一。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "法国抗议演变为骚乱，利摩日市政厅疑遭纵火",
+      "url": "https://www.nytimes.com/2026/10/18/world/europe/france-protests-shock-arson.html",
+      "source": "NYT World",
+      "summary": "法国反政府抗议演变为骚乱，多处建筑与商铺受损，利摩日一座历史市政厅疑遭纵火；各派政治人物相互指责，至周日骚乱已大体平息。（多家报道）",
+      "importance": 7
+    }
+  ],
+  "editor_note": "技术与资本同向加速，地缘与内政风险则在同步累积；看融资数字时，也不妨把监管成本与社会代价放在同一张表上。",
+  "keywords": [
+    "Modal",
+    "开放模型",
+    "预训练数据",
+    "编码 agent",
+    "对俄制裁",
+    "加拿大军事基地火灾",
+    "法国骚乱"
+  ]
+}
