@@ -1,0 +1,74 @@
+{
+  "hero_headline": "AI 加速落地生命科学与端侧反诈，新模型密集发布",
+  "daily_overview": "技术侧，模型更新依旧密集：Mercury 3、MiniMax Flash 3.1、DeepSeek V4.1 Flash 同期现身，业内却认为短期内难以大规模铺开；OpenAI 收购 Orchestra Bio，把 AI 运营能力带入生物制药研发；DeepMind 联手新加坡政府，用端侧 Gemma 拦截对话式诈骗，数据不出设备。开源与论文侧，「记忆原生」架构与编码 agent 安全审计工具受到关注，企业 AI 的讨论重心正从能否使用转向成本与效率。时政侧，美方称与德黑兰达成和平协议极其困难，霍尔木兹袭击未止；埃博拉疫情在肯尼亚、尼日利亚扩散；德国投资峰会揽下逾 2250 亿欧元承诺。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI 收购 Orchestra Bio，进军生命科学",
+      "url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+      "source": "OpenAI News",
+      "summary": "OpenAI 宣布收购 Orchestra Bio，计划把 AI 驱动的运营能力引入生命科学研发流程，帮助生物制药团队加快药物开发、推进新疗法，交易金额与时间表未披露。",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind 与新加坡合作端侧 AI 反诈模型",
+      "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "source": "DeepMind Blog",
+      "summary": "Google DeepMind 与新加坡政府科技局基于轻量 Gemma 模型开发端侧反诈能力，可在私人聊天中识别并拦截对话式诈骗，数据无需上传云端，实现零数据外流。",
+      "importance": 7
+    },
+    {
+      "title": "Mercury 3、MiniMax Flash 3.1 等新模型密集发布",
+      "url": "https://tldr.tech/ai/2026-10-20",
+      "source": "TLDR AI",
+      "summary": "TLDR AI 与 Latent Space 同日提及 Mercury 3、MiniMax M3.1 Flash、DeepSeek V4.1 Flash 等模型更新，后者认为这些模型短期内尚难获得大规模使用。（多家报道）",
+      "importance": 7
+    },
+    {
+      "title": "Cloudflare 开源编码 agent 安全审计技能",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "source": "GitHub Trending",
+      "summary": "该开源 skill 把安全审计拆成多个阶段交给编码 agent 执行，输出机器可读的漏洞结论并支持独立复核以减少误报，适合接入代码审查或 CI 流程，降低自动化安全扫描的落地门槛。",
+      "importance": 6
+    },
+    {
+      "title": "MemT-1.0：把记忆做进模型本身",
+      "url": "https://huggingface.co/papers/2610.26825",
+      "source": "HuggingFace Trending Papers",
+      "summary": "论文提出 MemT-1.0，主张把记忆内化为基础模型的固有计算能力，而非外挂检索模块，使模型能持续积累并调用历史信息，为长期个性化 agent 提供「记忆原生」的新路径。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "卢比奥：与德黑兰达成和平协议极其困难",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/10/21/iran-war-live-us-warns-peace-deal-with-tehran-is-extremely-difficult?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "美国国务卿卢比奥对媒体表示，与伊朗达成和平协议极其困难；与此同时霍尔木兹海峡的袭击仍在持续，地区局势未见明显缓和迹象。",
+      "importance": 8
+    },
+    {
+      "title": "埃博拉疫情扩散，肯尼亚、尼日利亚相继确诊",
+      "url": "https://www.npr.org/2026/10/20/g-s1-148975/nigeria-confirms-ebola-case",
+      "source": "NPR World",
+      "summary": "尼日利亚阿布贾确认一例埃博拉病例，患者由乌干达入境；肯尼亚本月已录得 9 例确诊，美国建议本国公民重新考虑赴肯旅行，当地政府则试图安抚民众。（多家报道）",
+      "importance": 7
+    },
+    {
+      "title": "德国投资峰会获逾 2250 亿欧元承诺",
+      "url": "https://www.dw.com/zh/投资德国峰会斩逾2250亿欧元承诺-默茨以-可预测-德国人形象招商/a-79715886?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "柏林「投资德国」峰会累计获得逾 2250 亿欧元投资承诺，亚马逊拟于 2027 年在德投资 160 亿欧元，德国政府同时宣布与英伟达深化 AI 合作；能源价格与劳动力成本仍是外资主要顾虑。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "模型发布节奏密集，但真正值得跟踪的主线是算力成本、落地效率与安全审查三条。",
+  "keywords": [
+    "OpenAI 收购",
+    "端侧反诈",
+    "新模型发布",
+    "记忆原生架构",
+    "埃博拉疫情",
+    "美伊谈判",
+    "德国投资峰会"
+  ]
+}
