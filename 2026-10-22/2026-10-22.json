@@ -1,0 +1,74 @@
+{
+  "hero_headline": "DeepSeek 开源推理系统，AI 查出 PHP 漏洞",
+  "daily_overview": "今日技术主线是推理经济性：DeepSeek 开源 DeepInfer，宣称单集群每日处理 155 万亿 token、利润率约 80%，把推理成本账摊到台面上；vLLM 等开源服务框架持续升温，企业侧则用 Agent 清理技术债。安全方面，研究人员用 AI 在 PHP 中发现两处漏洞，该语言支撑逾七成网站，多国已发警告。时政上，美方因担忧与伊朗冲突再起，下令部分驻沙特外交人员撤离；普京会见美特使后同意重启俄美乌三方和谈；AIPAC 停止为候选人背书与直接捐款。",
+  "tech_briefs": [
+    {
+      "title": "DeepSeek 开源推理系统，称回本仅 81 天",
+      "url": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source",
+      "source": "Latent Space",
+      "summary": "DeepSeek 发布开源推理系统 DeepInfer，称单集群每日处理 155 万亿 token，日收入 2200 万美元、利润率约 80%，回本周期 81 天。",
+      "importance": 9
+    },
+    {
+      "title": "AI 查出 PHP 两处漏洞，多国领导人发警告",
+      "url": "https://www.aljazeera.com/news/2026/10/22/world-leaders-warn-against-security-flaw-found-in-php-computer-programming?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "研究人员借助 AI 在 PHP 语言中发现两处安全漏洞，该语言被超过 70% 的网站使用，多国领导人已就此发出警告。",
+      "importance": 8
+    },
+    {
+      "title": "开源推理框架 vLLM 登上 GitHub 热榜",
+      "url": "https://github.com/vllm-project/vllm",
+      "source": "GitHub Trending",
+      "summary": "高吞吐、显存友好的 LLM 推理与服务引擎，用 PagedAttention 管理 KV cache、连续批处理提升并发吞吐，兼容 HuggingFace 权重，是本地部署与批量推理的主流开源选择。",
+      "importance": 7
+    },
+    {
+      "title": "Uber 用 AI Agent 清理失效开关与死代码",
+      "url": "https://x.com/UberEng/status/2112604623454470476",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "Uber 工程团队以 feature flag 为切口，让 agent 识别并删除已失效的动态开关与死代码，展示了把 agent 用于代码删减而非生成的工程流程与经验。",
+      "importance": 7
+    },
+    {
+      "title": "ChatGPT 广告扩至 26 国，广告主逾 10 万",
+      "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+      "source": "OpenAI News",
+      "summary": "OpenAI 宣布 ChatGPT 广告业务扩展至 26 个新国家，目前已有超过 10 万家广告主使用该平台，涵盖本地商家与全球品牌。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美令部分驻沙特外交官撤离，忧与伊朗冲突",
+      "url": "https://www.theguardian.com/world/2026/oct/22/us-diplomats-told-to-leave-saudi-arabia-amid-houthi-attacks",
+      "source": "The Guardian",
+      "summary": "美国国务院下令部分外交官及政府雇员家属撤离沙特阿拉伯，因担忧中期选举后与伊朗重启冲突；有报道称阿联酋、约旦、卡塔尔和巴林也出现类似撤离。",
+      "importance": 8
+    },
+    {
+      "title": "普京会见美特使，同意重启俄美乌三方和谈",
+      "url": "https://www.dw.com/zh/普京松口-同意重启俄美乌三方和谈/a-79725255?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "美国特使威特科夫在圣彼得堡与普京长谈后，克里姆林宫同意重启俄美乌三方和谈；俄方已释放美国公民哈伯德，美方恢复对乌情报共享。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "AIPAC 停止为候选人背书与直接捐款",
+      "url": "https://www.npr.org/2026/10/21/nx-s1-6011531/aipac-campaign-contributions-israel-democrats",
+      "source": "NPR World",
+      "summary": "美国亲以色列游说团体 AIPAC 宣布，因面临「挑战」，将停止为候选人背书，也不再直接向竞选活动捐款，改为动员其成员以个人名义捐款。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "推理成本与基础软件漏洞同日登上头条：前者决定 AI 能否规模化变现，后者提醒基础设施欠账不可忽视。",
+  "keywords": [
+    "DeepSeek DeepInfer",
+    "推理成本",
+    "vLLM",
+    "PHP 漏洞",
+    "AI Agent",
+    "俄美乌和谈",
+    "AIPAC"
+  ]
+}
