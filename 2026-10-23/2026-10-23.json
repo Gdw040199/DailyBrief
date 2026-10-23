@@ -1,0 +1,75 @@
+{
+  "hero_headline": "PHP 漏洞引发全球攻击潮，美以拟对伊朗动武",
+  "daily_overview": "今日技术与安全交织：PHP 被曝潜藏多年的严重漏洞，黑客攻击达数百万次，欧洲多国政府网站一度下线，中国工信部敦促排查升级。企业侧，Uber 向逾 3 万名员工推广 ChatGPT Work，Anthropic 开源知识工作者插件集，竞争重心从选模型转向搭框架。研究上，DeepMind 发布 10 米分辨率全球森林类型地图。时政方面，特朗普与内塔尼亚胡被指拟定对伊朗新作战计划并暗示再度打击；塞尔维亚大选前贝尔格莱德爆发约 15 万人集会；西藏发生 7.0 级地震。",
+  "tech_briefs": [
+    {
+      "title": "PHP 严重漏洞引发全球攻击潮与紧急修补",
+      "url": "https://www.dw.com/zh/ai爆php漏洞引发全球网络攻击潮：为何影响如此广泛-？/a-79735350?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "PHP 被曝潜藏多年严重漏洞，黑客攻击达数百万次，欧洲多国政府网站与公共服务平台一度下线；中国工信部敦促排查升级，网安公司称漏洞借 AI 才被发现。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "Uber 向逾 3 万员工推广 ChatGPT Work",
+      "url": "https://openai.com/index/uber-chatgpt-work-rollout",
+      "source": "OpenAI News",
+      "summary": "Uber 与 OpenAI 合作，将 ChatGPT Work 推广至逾 3 万名员工，用于调研、数据分析、制作演示文稿及完成复杂工作流程。",
+      "importance": 7
+    },
+    {
+      "title": "DeepMind 发布 10 米分辨率全球森林类型地图",
+      "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 发布全球森林类型地图，把地表每 10 米见方的地块归入不同森林类型，突破以往仅以树冠覆盖率衡量森林的做法，可用于生态与碳汇监测。",
+      "importance": 7
+    },
+    {
+      "title": "Anthropic 开源知识工作者 Claude 插件集",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "source": "GitHub Trending",
+      "summary": "Anthropic 开源面向知识工作者的插件仓库，供 Claude Cowork 使用，把文档处理、资料研究、写作等任务封装为可复用插件，减少重复编写提示词。",
+      "importance": 6
+    },
+    {
+      "title": "PACE：把线性注意力循环状态压到 4-bit",
+      "url": "https://huggingface.co/papers/2610.29545",
+      "source": "HuggingFace Trending Papers",
+      "summary": "线性注意力模型需为每条并发序列保存固定大小的循环状态。论文提出 PACE，用周期性、通道对齐的编码做 4-bit 量化以降低精度损失，使单卡可同时解码更多序列。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美以被指拟定对伊朗新作战计划",
+      "url": "https://www.npr.org/2026/10/22/nx-s1-6012306/what-we-know-about-war-plans-that-trump-and-netanyahu-are-drawing-up",
+      "source": "NPR World",
+      "summary": "NPR 报道特朗普与内塔尼亚胡正拟定战争计划，双方暗示可能对伊朗发动新攻击；半岛电视台直播称特朗普暗示再度打击，并称美国已重创伊朗。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "塞尔维亚大选前贝尔格莱德爆发大规模集会",
+      "url": "https://www.theguardian.com/world/2026/oct/23/serbia-election-student-list-rally-belgrade-aleksandar-vucic",
+      "source": "The Guardian",
+      "summary": "约 15 万名反对派「学生名单」运动支持者走上贝尔格莱德街头，希望在周日关键选举中击败武契奇所属政党；纽约时报称武契奇或借民族主义情绪巩固权力。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "西藏发生 7.0 级地震",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/23/tibet-rocked-by-7-0-magnitude-earthquake?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "据半岛电视台报道，西藏发生 7.0 级地震，报道未披露震中位置、震源深度及人员伤亡与财产损失等进一步细节。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "同一天里，一条老语言的老漏洞与一份新战争计划占据头条：前者考验全球补丁响应速度，后者提醒外交窗口正在收窄。",
+  "keywords": [
+    "PHP漏洞",
+    "网络攻击",
+    "ChatGPT Work",
+    "Anthropic",
+    "DeepMind",
+    "塞尔维亚大选",
+    "伊朗局势",
+    "西藏地震"
+  ]
+}
