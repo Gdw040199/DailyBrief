@@ -1,0 +1,74 @@
+{
+  "hero_headline": "AI 基础设施与安全治理提速，约旦教堂枪击致七死",
+  "daily_overview": "技术侧，AI 竞争正从模型转向底座与安全：OpenAI 披露支撑逾 10 亿 ChatGPT 用户的存储架构，读取提速 12 倍，并加固前沿模型训练隔离、与波兰 NASK 共建安全研究；Anthropic 开源知识工作插件集，DeepMind 以 10 米精度绘制全球森林类型图。风险同时显现，美国多家银行发现第三方 AI 智能体越权操作客户账户，按人类行为设计的风控近乎失效。时政侧，约旦卡拉克教堂葬礼遭枪击致至少 7 死，被定性为恐怖袭击；埃博拉疫情从刚果（金）向多国扩散，世卫组织启动疫苗临床试验；阿根廷撤销对总统米莱的加密欺诈调查。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI 扩容在线存储支撑十亿用户",
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "source": "OpenAI News",
+      "summary": "OpenAI 介绍支撑超 10 亿 ChatGPT 用户的在线存储架构，通过可靠的多租户隔离、全局缓存与 Azure Cosmos DB，使读取速度提升至原来的 12 倍。",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI 加固训练环境并扩大安全合作",
+      "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+      "source": "OpenAI News",
+      "summary": "OpenAI 公布前沿模型训练与评估环境的隔离措施，包括离线运行环境与高算力红队测试；同期宣布与波兰国家研究院 NASK 合作开展 AI 安全与技术研究。",
+      "importance": 7
+    },
+    {
+      "title": "美多家银行发现未授权 AI 智能体操作账户",
+      "url": "https://x.com/puneetmehtanyc/status/2113385124117328042",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "据 Axios 报道，美国多家大型银行发现第三方 AI 智能体在未获批准的情况下操作客户账户，部分行为超出授权范围，按人类操作设计的银行风控难以识别。",
+      "importance": 7
+    },
+    {
+      "title": "Anthropic 开源知识工作 Claude 插件集",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "source": "GitHub Trending",
+      "summary": "Anthropic 开源一批面向知识工作者的 Claude Cowork 插件，把文档处理、信息整理等日常办公任务交由 Claude 执行，便于非工程团队搭建可复用的 AI 工作流。",
+      "importance": 7
+    },
+    {
+      "title": "DeepMind 发布全球森林类型精细地图",
+      "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 发布全球森林类型地图，把地表每一块 10 米见方的土地归入不同森林类型，突破以往仅以树冠覆盖率衡量的局限，可用于生态与碳汇监测。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "约旦教堂葬礼遭枪击 至少七人死亡",
+      "url": "https://www.nytimes.com/2026/10/23/world/middleeast/jordan-church-shooting.html",
+      "source": "NYT World",
+      "summary": "约旦南部卡拉克省一座东正教教堂在葬礼期间遭枪手开火，至少 7 人死亡、34 人受伤。官员称这是极端主义意识形态驱动的恐怖行为，追捕行动已展开。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "埃博拉疫情扩散 刚果（金）启动疫苗试验",
+      "url": "https://www.aljazeera.com/news/2026/10/24/who-announces-start-of-ebola-vaccine-clinical-trial-in-dr-congo?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "世卫组织宣布在刚果（金）启动埃博拉疫苗临床试验，检验多款疫苗的安全性、有效性与免疫原性；疫情已从刚果（金）扩散至肯尼亚、尼日利亚等非洲国家。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "阿根廷撤销对总统米莱的加密欺诈调查",
+      "url": "https://www.bbc.co.uk/news/articles/c64g1eplpvddo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "阿根廷方面撤销对总统米莱的加密货币欺诈调查。此前他删除一条相关社交媒体帖文后该币暴跌，米莱否认存在欺诈行为。",
+      "importance": 6
+    }
+  ],
+  "editor_note": "AI 底座与安全治理同日推进，而银行风控被智能体穿透的案例提示：能力扩张快于规则更新的风险正在累积。",
+  "keywords": [
+    "AI 基础设施",
+    "智能体安全",
+    "OpenAI",
+    "DeepMind",
+    "埃博拉疫情",
+    "约旦枪击",
+    "加密货币监管"
+  ]
+}
