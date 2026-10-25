@@ -1,0 +1,74 @@
+{
+  "hero_headline": "开放权重模型追近闭源，AI 基建与安全同步加码",
+  "daily_overview": "技术侧，Kimi 3.1 Pro 以开放权重把与闭源模型的差距压缩到约一个月；OpenAI 同日披露支撑逾 10 亿 ChatGPT 用户的存储架构，以及前沿模型训练环境的隔离方案；英伟达、Cloudflare、AWS 密集发布 agent 运行时与安全审计工具，agent 落地的基础设施层成为新战场。时政侧，法国大规模抗议持续并外溢至意大利、西班牙等国，俄乌同意在奥列什基实施局部停火并筹备阿布扎比会谈，塞尔维亚议会选举由学生主导的运动挑战执政党。",
+  "tech_briefs": [
+    {
+      "title": "Kimi 3.1 Pro 开放权重发布，称差距缩至约一月",
+      "url": "https://latent.space/p/ainews-kimi-31/",
+      "source": "Latent Space",
+      "summary": "Latent Space 报道，Kimi 3.1 Pro 为 104B 激活、2.8T 总参数的开放权重模型，称开放与闭源差距缩至约一个月，并推出提速 2 至 3 倍的 Pro 高速 API。",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI 披露支撑 10 亿用户的存储扩容方案",
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "source": "OpenAI News",
+      "summary": "OpenAI 介绍支撑逾 10 亿 ChatGPT 用户的在线存储扩容做法：多租户架构、全局缓存与 Azure Cosmos DB 结合，使读取速度提升 12 倍。",
+      "importance": 8
+    },
+    {
+      "title": "英伟达开源自主 agent 安全运行时 OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "source": "GitHub Trending",
+      "summary": "NVIDIA 开源的自主 AI agent 安全运行时，为 agent 提供隔离、私密的执行环境，约束其权限与数据访问边界，便于在本机或云端安全运行自主 agent。",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI 强化前沿模型训练环境隔离",
+      "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+      "source": "OpenAI News",
+      "summary": "OpenAI 说明前沿模型训练与评估环境的强化管控措施，包括离线运行环境与高算力红队测试，以降低训练环节的安全风险。",
+      "importance": 7
+    },
+    {
+      "title": "DeepMind 发布全球森林类型地图",
+      "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 发布全球森林类型地图，将地表每 10 米地块划入不同森林类型，突破以往仅以树冠覆盖率衡量森林的做法，可用于生态监测与碳核算。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "法国再爆大规模抗议，浪潮向邻国蔓延",
+      "url": "https://www.dw.com/zh/法国周末迎新一轮示威-抗议浪潮正向邻国蔓延/a-79751182?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "法国数十万人再度上街，议题涵盖教育经费与经济不平等；内政部部署约 7 万名警察，卢浮宫等景点关闭，巴黎附近致命枪击加剧紧张，抗议向意大利、西班牙等国蔓延。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "俄乌同意在奥列什基实施局部停火",
+      "url": "https://www.dw.com/zh/俄乌将在奥列什基停火-特朗普施压乌克兰-达成交易/a-79751006?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "白宫宣布俄乌同意在被占的乌克兰南部城市奥列什基实施局部停火，用于运送人道援助与平民撤离；美乌俄谈判代表预计 11 月上半月在阿布扎比会谈。",
+      "importance": 9
+    },
+    {
+      "title": "塞尔维亚议会选举，学生运动挑战执政党",
+      "url": "https://www.nytimes.com/2026/10/25/world/europe/serbia-election.html",
+      "source": "NYT World",
+      "summary": "塞尔维亚举行议会选举，一场由学生主导的运动挑战执政党，以及已主导该国政坛十余年的武契奇。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "技术与时政同日给出同一提示：能力扩张的速度，正被安全边界与制度摩擦重新定价。",
+  "keywords": [
+    "开放权重模型",
+    "AI agent 安全",
+    "存储扩容",
+    "法国抗议",
+    "俄乌局部停火",
+    "塞尔维亚选举",
+    "森林类型地图"
+  ]
+}

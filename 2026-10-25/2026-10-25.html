@@ -1,0 +1,1357 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日简报 · 2026-10-25</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  /* ===== MiMo Figma exact clone ===== */
+  @keyframes mimoScrollLeft { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes mimoScrollRight { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #0a0a0a;
+    color: #f0f0f0;
+    font-family: Inter, 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+  main#content {
+    max-width: 860px; margin: 0 auto;
+    padding: 6rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    scroll-margin-top: 4.5rem;
+  }
+  .content-label { margin-bottom: 2.5rem; }
+
+  /* ===== Nav — fixed blur ===== */
+  .top-nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1rem 2rem;
+    background: rgba(10,10,10,0.88);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  .nav-logo {
+    font-weight: 800; font-size: 1.35rem; color: #fff;
+    letter-spacing: 0.06em;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .nav-links { display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; }
+  .nav-link {
+    color: rgba(255,255,255,0.55); font-size: 0.875rem; font-weight: 400;
+    text-decoration: none; transition: color 0.2s;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .nav-link:hover { color: rgba(255,255,255,0.9); }
+  .nav-group { position: relative; }
+  .nav-flyout {
+    position: absolute; top: calc(100% + 0.6rem); left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    min-width: 13.5rem;
+    padding: 0.35rem 0;
+    background: rgba(14,14,14,0.96);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 2px;
+    opacity: 0; visibility: hidden;
+    transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+    pointer-events: none;
+  }
+  .nav-group:hover .nav-flyout,
+  .nav-group:focus-within .nav-flyout {
+    opacity: 1; visibility: visible;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+  }
+  .nav-flyout-link {
+    display: flex; align-items: center; gap: 0.65rem;
+    width: 100%; padding: 0.55rem 1rem;
+    background: none; border: none; cursor: pointer;
+    text-align: left; font-family: Inter, 'Noto Sans SC', sans-serif;
+    color: rgba(255,255,255,0.55); font-size: 0.78rem;
+    transition: background 0.15s, color 0.15s;
+  }
+  .nav-flyout-link:hover {
+    background: rgba(255,255,255,0.04);
+    color: rgba(255,255,255,0.92);
+  }
+  .nav-flyout-num {
+    color: rgba(255,255,255,0.18);
+    font-size: 0.62rem; font-weight: 700;
+    letter-spacing: 0.1em; flex-shrink: 0;
+    font-family: Inter, sans-serif;
+  }
+  .nav-flyout-name { flex: 1; }
+  .nav-flyout-count {
+    color: rgba(255,255,255,0.22);
+    font-size: 0.62rem; flex-shrink: 0;
+    font-family: Inter, sans-serif;
+  }
+  @media (max-width: 600px) {
+    .top-nav { padding: 0.75rem 1.25rem; }
+    .nav-links { gap: 1rem; }
+    .nav-link { font-size: 0.78rem; }
+  }
+
+  /* ===== Hero — 100vh + animated text pattern ===== */
+  .hero-section {
+    position: relative; height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; background: #0a0a0a;
+  }
+  .hero-pattern {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; justify-content: center;
+    overflow: hidden; pointer-events: none; user-select: none;
+  }
+  .pattern-row {
+    white-space: nowrap;
+    color: #fff; opacity: 0.042;
+    font-size: 2.6rem; font-weight: 800;
+    letter-spacing: 0.55em; line-height: 3.6rem;
+    font-family: Inter, sans-serif;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .pattern-row { animation: none !important; }
+    html { scroll-behavior: auto; }
+  }
+  .pattern-text { padding: 0 1.5rem; }
+  .hero-content {
+    position: relative; z-index: 2; text-align: center;
+    animation: fadeIn 0.8s ease-out; padding: 0 2rem;
+  }
+  .hero-title {
+    color: #fff; font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 700; letter-spacing: -0.02em;
+    line-height: 1.15; margin-bottom: 1rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .hero-subtitle {
+    color: rgba(255,255,255,0.38);
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-weight: 400;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    margin-bottom: 0.5rem;
+  }
+  .hero-subtitle-en {
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    font-family: Inter, sans-serif;
+  }
+  .hero-subtitle-zh {
+    letter-spacing: 0.08em;
+    color: rgba(255,255,255,0.28);
+    font-size: 0.9rem;
+  }
+  .hero-date {
+    color: rgba(255,255,255,0.25);
+    font-size: 0.85rem; letter-spacing: 0.08em;
+    font-family: Inter, sans-serif;
+  }
+  .scroll-indicator {
+    position: absolute; left: 50%; bottom: 4rem;
+    transform: translateX(-50%);
+    width: 1px; height: 3rem;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent);
+  }
+
+  /* ===== About — MiMo About section ===== */
+  .about-section {
+    padding: 6rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .about-inner { max-width: 768px; margin: 0 auto; }
+  .about-text {
+    color: rgba(255,255,255,0.72);
+    font-size: 1.08rem; line-height: 1.9;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    font-weight: 300; margin: 0;
+  }
+
+  /* ===== arXiv directions — MiMo Products grid ===== */
+  .arxiv-section {
+    padding: 6rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .arxiv-inner { max-width: 960px; margin: 0 auto; }
+  .arxiv-grid {
+    display: grid; grid-template-columns: 1fr;
+    gap: 1px; background: rgba(255,255,255,0.05);
+  }
+  @media (min-width: 768px) {
+    .arxiv-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  .arxiv-card {
+    position: relative;
+    display: flex; flex-direction: column; align-items: flex-start;
+    text-align: left;
+    background: #0a0a0a;
+    padding: 2.25rem;
+    border: none; cursor: pointer;
+    font-family: inherit;
+    transition: background 0.3s;
+  }
+  .arxiv-card:hover { background: #161616; }
+  .arxiv-card:hover .arxiv-arrow { transform: translateX(4px); }
+  .arxiv-card:hover .arxiv-cta { color: rgba(255,255,255,0.85); }
+  .arxiv-num {
+    color: rgba(255,255,255,0.12);
+    font-size: 0.7rem; letter-spacing: 0.15em;
+    font-weight: 700; margin-bottom: 2.5rem;
+    font-family: Inter, sans-serif;
+  }
+  .arxiv-name {
+    color: #fff; font-size: 1.15rem; font-weight: 600;
+    letter-spacing: -0.01em; line-height: 1.3;
+    margin: 0 0 0.75rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .arxiv-tagline {
+    color: rgba(255,255,255,0.45);
+    font-size: 0.875rem; line-height: 1.65;
+    margin: 0 0 1.5rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    font-weight: 400;
+  }
+  .arxiv-count {
+    color: rgba(255,255,255,0.22);
+    font-size: 0.68rem; letter-spacing: 0.06em;
+    margin-bottom: 2rem;
+    font-family: Inter, sans-serif;
+  }
+  .arxiv-cta {
+    margin-top: auto;
+    color: rgba(255,255,255,0.38);
+    font-size: 0.875rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    transition: color 0.2s;
+  }
+  .arxiv-arrow {
+    display: inline-block;
+    transition: transform 0.2s;
+  }
+  .source-content[id] { scroll-margin-top: 5rem; }
+
+  /* ===== Lab watch — MiMo Blog rows ===== */
+  .lab-watch-section {
+    padding: 6rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .lab-watch-inner { max-width: 860px; margin: 0 auto; }
+  .lab-watch-summary {
+    color: rgba(255,255,255,0.35);
+    font-size: 0.85rem;
+    margin: -2.5rem 0 2rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .lab-watch-list { display: flex; flex-direction: column; }
+  .lab-row {
+    display: flex; align-items: baseline; gap: 1.25rem;
+    padding: 1.2rem 0;
+    border-top: 1px solid rgba(255,255,255,0.055);
+    text-decoration: none; color: inherit;
+    transition: padding-left 0.2s, background 0.2s;
+  }
+  .lab-row:last-child { border-bottom: 1px solid rgba(255,255,255,0.055); }
+  .lab-row:hover { padding-left: 0.75rem; }
+  .lab-row-updated:hover .lab-name { color: rgba(255,255,255,0.95); }
+  .lab-row-updated .lab-name { color: rgba(255,255,255,0.82); }
+  .lab-row-updated .lab-badge {
+    background: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.85);
+    border-color: rgba(255,255,255,0.15);
+  }
+  .lab-row-quiet .lab-name { color: rgba(255,255,255,0.42); }
+  .lab-row-quiet .lab-detail { color: rgba(255,255,255,0.22); }
+  .lab-row-error .lab-detail { color: rgba(255,255,255,0.45); }
+  .lab-num {
+    color: rgba(255,255,255,0.14);
+    font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.1em; flex-shrink: 0;
+    font-family: Inter, sans-serif;
+  }
+  .lab-name {
+    font-size: 0.93rem; line-height: 1.45;
+    flex-shrink: 0; min-width: 11rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    transition: color 0.2s;
+  }
+  .lab-detail {
+    flex: 1; font-size: 0.82rem; line-height: 1.5;
+    color: rgba(255,255,255,0.48);
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .lab-badge {
+    font-size: 0.58rem; padding: 0.12rem 0.45rem;
+    border-radius: 2px; font-weight: 600;
+    border: 1px solid rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.3);
+    flex-shrink: 0; font-family: Inter, sans-serif;
+    letter-spacing: 0.04em;
+  }
+  .lab-arrow {
+    color: rgba(255,255,255,0.15); font-size: 1rem;
+    flex-shrink: 0; transition: color 0.2s, transform 0.2s;
+  }
+  .lab-row:hover .lab-arrow { color: rgba(255,255,255,0.55); transform: translateX(4px); }
+  @media (max-width: 640px) {
+    .lab-row { flex-wrap: wrap; gap: 0.4rem 1rem; }
+    .lab-name { min-width: 0; flex: 1 1 100%; }
+    .lab-detail { flex: 1 1 100%; order: 3; }
+  }
+
+  /* ===== Section labels — MiMo uppercase style ===== */
+  .section-label {
+    color: rgba(255,255,255,0.25);
+    font-size: 0.7rem; letter-spacing: 0.2em;
+    text-transform: uppercase; font-weight: 500;
+    font-family: Inter, sans-serif;
+    margin-bottom: 3.5rem;
+  }
+
+  /* ===== Primary tabs ===== */
+  .tabs {
+    display: flex; gap: 0;
+    margin: 0 0 3rem;
+    border-bottom: 1px solid rgba(255,255,255,0.055);
+  }
+  .tab {
+    background: none; border: none;
+    padding: 1rem 1.8rem;
+    font-size: 0.8rem; font-weight: 500;
+    color: rgba(255,255,255,0.35);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px; font-family: Inter, 'Noto Sans SC', sans-serif;
+    transition: all 0.2s;
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .tab:hover { color: rgba(255,255,255,0.6); }
+  .tab.active { color: rgba(255,255,255,0.9); border-bottom-color: #fff; }
+  .tab .count { font-size: 0.6rem; color: rgba(255,255,255,0.2); margin-left: 0.5rem; }
+  .panel { display: none; }
+  .panel.active { display: block; }
+
+  /* ===== Sub-tabs ===== */
+  .sub-tabs { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 2.5rem; }
+  .sub-tab {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 0.5rem 1.1rem; border-radius: 2px;
+    font-size: 0.75rem; font-weight: 500;
+    color: rgba(255,255,255,0.45);
+    cursor: pointer; font-family: Inter, 'Noto Sans SC', sans-serif;
+    transition: all 0.2s; letter-spacing: 0.03em;
+  }
+  .sub-tab:hover { border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.03); }
+  .sub-tab.active { background: #fff; color: #0a0a0a; border-color: #fff; }
+  .sub-tab .count { font-size: 0.55rem; opacity: 0.5; margin-left: 0.4rem; }
+  .sub-content { display: none; }
+  .sub-content.active { display: block; }
+
+  /* ===== Source tabs — text-only L3 filters ===== */
+  .source-tabs {
+    display: flex; flex-wrap: wrap; gap: 0.4rem;
+    margin: 0 0 2rem; padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.055);
+  }
+  .source-tab {
+    background: none; border: none;
+    padding: 0.3rem 0.6rem; border-radius: 2px;
+    font-size: 0.7rem; color: rgba(255,255,255,0.35);
+    cursor: pointer; font-family: Inter, 'Noto Sans SC', sans-serif;
+    transition: all 0.2s;
+    border-bottom: 1px solid transparent;
+  }
+  .source-tab:hover { color: rgba(255,255,255,0.65); }
+  .source-tab.active {
+    color: rgba(255,255,255,0.9);
+    border-bottom-color: rgba(255,255,255,0.35);
+    background: none;
+  }
+  .source-tab .count { font-size: 0.55rem; opacity: 0.5; margin-left: 0.3rem; }
+  .source-content { display: none; }
+  .source-content.active { display: block; }
+
+  /* ===== Article rows — MiMo blog row style ===== */
+  .article {
+    padding: 1.3rem 0;
+    border-top: 1px solid rgba(255,255,255,0.055);
+    transition: all 0.2s;
+  }
+  .article:first-child { border-top: none; }
+  .article:hover { padding-left: 1rem; }
+  .article:hover .article-title a { color: rgba(255,255,255,0.95); }
+  .article-title {
+    font-size: 0.95rem; margin: 0 0 0.35rem;
+    font-weight: 500; line-height: 1.5;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .article-title a { color: rgba(255,255,255,0.7); text-decoration: none; transition: color 0.2s; }
+  .article-title a:hover { color: rgba(255,255,255,0.95); }
+  .article-authors {
+    color: rgba(255,255,255,0.22);
+    font-size: 0.7rem; margin: 0 0 0.35rem;
+    font-family: Inter, sans-serif;
+  }
+  .article-code { margin: 0 0 0.35rem; }
+  .code-link {
+    display: inline-block; background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.45);
+    font-size: 0.68rem; font-weight: 500;
+    padding: 0.12rem 0.55rem; border-radius: 2px;
+    text-decoration: none; transition: all 0.2s;
+    font-family: Inter, sans-serif;
+  }
+  .code-link:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.8); }
+  .article-meta { color: rgba(255,255,255,0.18); font-size: 0.68rem; margin: 0 0 0.35rem; }
+  .article-stats { color: rgba(255,255,255,0.18); font-size: 0.72rem; margin: 0 0 0.5rem; }
+  .article-excerpt {
+    margin: 0; color: rgba(255,255,255,0.48);
+    font-size: 0.85rem; line-height: 1.75;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    font-weight: 400;
+  }
+  .article-summary {
+    margin: 0.8rem 0 0; padding: 0.9rem 1.2rem;
+    background: rgba(255,255,255,0.03);
+    border-left: 2px solid rgba(255,255,255,0.12);
+    border-radius: 0 2px 2px 0;
+    font-size: 0.82rem; line-height: 1.75;
+    color: rgba(255,255,255,0.5);
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    font-weight: 300;
+  }
+  .summary-label {
+    display: inline-block; font-size: 0.55rem;
+    color: rgba(255,255,255,0.3);
+    margin-right: 0.5rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.15em;
+    font-family: Inter, sans-serif;
+  }
+
+  .empty {
+    color: rgba(255,255,255,0.2);
+    text-align: center; padding: 5rem 0;
+    font-size: 0.85rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+
+  /* ===== Footer — MiMo style ===== */
+  .mimo-footer {
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 1rem;
+    padding: 2.5rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    max-width: 860px; margin: 0 auto;
+  }
+  .footer-logo {
+    font-weight: 800; font-size: 1.25rem; color: #fff;
+    letter-spacing: 0.06em;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .footer-right {
+    display: flex; flex-direction: column; align-items: flex-end;
+    gap: 0.35rem; text-align: right;
+  }
+  .footer-disclaimer {
+    color: rgba(255,255,255,0.22);
+    font-size: 0.68rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    letter-spacing: 0.02em; max-width: 28rem;
+  }
+  .footer-copy {
+    color: rgba(255,255,255,0.2);
+    font-size: 0.72rem; font-family: Inter, sans-serif;
+    letter-spacing: 0.04em;
+  }
+
+  /* ===== Conference Deadlines — MiMo Careers style ===== */
+  .deadlines-section {
+    padding: 6rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    max-width: 860px; margin: 0 auto;
+  }
+  .deadline-row {
+    display: flex; align-items: baseline; gap: 1.5rem;
+    padding: 1.3rem 0;
+    border-top: 1px solid rgba(255,255,255,0.055);
+    transition: all 0.2s;
+    text-decoration: none; color: inherit;
+  }
+  .deadline-row:last-of-type { border-bottom: 1px solid rgba(255,255,255,0.055); }
+  .deadline-row:hover { padding-left: 1rem; }
+  .deadline-row:hover .deadline-arrow { color: rgba(255,255,255,0.6); transform: translateX(4px); }
+  .deadline-num {
+    color: rgba(255,255,255,0.14);
+    font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.1em; flex-shrink: 0;
+    font-family: Inter, sans-serif;
+  }
+  .deadline-info { flex: 1; }
+  .deadline-name {
+    color: rgba(255,255,255,0.62);
+    font-size: 0.93rem; line-height: 1.5;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    font-weight: 400; transition: color 0.2s;
+  }
+  .deadline-row:hover .deadline-name { color: rgba(255,255,255,0.92); }
+  .deadline-meta {
+    color: rgba(255,255,255,0.18);
+    font-size: 0.72rem; flex-shrink: 0;
+    font-family: Inter, sans-serif; letter-spacing: 0.04em;
+  }
+  .deadline-badge {
+    font-size: 0.6rem; padding: 0.1rem 0.4rem;
+    border-radius: 2px; font-weight: 600;
+    font-family: Inter, sans-serif;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .deadline-badge.soon { background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.78); }
+  .deadline-badge.upcoming { background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.55); }
+  .deadline-badge.later { background: rgba(255,255,255,0.03); color: rgba(255,255,255,0.35); }
+  .deadline-arrow {
+    color: rgba(255,255,255,0.15); font-size: 1rem;
+    flex-shrink: 0; transition: color 0.2s, transform 0.2s;
+  }
+  .tab:focus-visible, .sub-tab:focus-visible, .source-tab:focus-visible,
+  .nav-link:focus-visible, .deadline-row:focus-visible,
+  .arxiv-card:focus-visible, .nav-flyout-link:focus-visible,
+  .lab-row:focus-visible {
+    outline: 2px solid rgba(255,255,255,0.4);
+    outline-offset: 2px;
+  }
+</style>
+</head>
+<body>
+<!-- Fixed nav -->
+<nav class="top-nav">
+  <span class="nav-logo">DailyBrief</span>
+  <div class="nav-links">
+    <a class="nav-link" href="#content" data-nav-tab="tech">技术动态</a>
+    <a class="nav-link" href="#content" data-nav-tab="politics">时政观察</a>
+    <a class="nav-link nav-link-archive" href="../archive.html">历史归档</a>
+  </div>
+</nav>
+
+<!-- Hero — 100vh with animated text pattern -->
+<div class="hero-section">
+  <div class="hero-pattern" aria-hidden="true">
+    <div class="pattern-row" style="animation:mimoScrollLeft 22.0s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 23.8s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 25.6s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 27.4s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 29.2s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 31.0s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 32.8s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 34.6s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 36.4s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 38.2s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 40.0s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 41.8s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 43.6s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 45.4s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 47.2s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 49.0s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 50.8s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 52.6s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 54.4s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 56.2s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 58.0s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 59.8s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 61.6s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 63.4s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+  </div>
+  <div class="hero-content">
+    <h1 class="hero-title">开放权重模型追近闭源，AI 基建与安全同步加码</h1>
+    <p class="hero-subtitle hero-subtitle-zh">2026-10-25</p>
+    
+  </div>
+  <div class="scroll-indicator"></div>
+</div>
+
+<section class="about-section" id="about">
+  <div class="about-inner">
+    <div class="section-label">今日总览</div>
+    <p class="about-text">技术侧，Kimi 3.1 Pro 以开放权重把与闭源模型的差距压缩到约一个月；OpenAI 同日披露支撑逾 10 亿 ChatGPT 用户的存储架构，以及前沿模型训练环境的隔离方案；英伟达、Cloudflare、AWS 密集发布 agent 运行时与安全审计工具，agent 落地的基础设施层成为新战场。时政侧，法国大规模抗议持续并外溢至意大利、西班牙等国，俄乌同意在奥列什基实施局部停火并筹备阿布扎比会谈，塞尔维亚议会选举由学生主导的运动挑战执政党。</p>
+  </div>
+</section>
+<section class="lab-watch-section" id="lab-watch">
+  <div class="lab-watch-inner">
+    <div class="section-label">课题组动态</div>
+    <p class="lab-watch-summary">今日暂无课题组主页更新。</p>
+    <div class="lab-watch-list"><a class="lab-row lab-row-quiet" href="http://yuexinma.me/" target="_blank" rel="noopener noreferrer">
+  <span class="lab-num">01</span>
+  <span class="lab-name">Yuexin Ma · ShanghaiTech</span>
+  <span class="lab-detail">2026.10: Two papers are accepted by NeurIPS.</span>
+  <span class="lab-badge">无变化</span>
+  <span class="lab-arrow" aria-hidden="true">→</span>
+</a>
+<a class="lab-row lab-row-quiet" href="https://icoz69.github.io/" target="_blank" rel="noopener noreferrer">
+  <span class="lab-num">02</span>
+  <span class="lab-name">Chi Zhang · Westlake AGI Lab</span>
+  <span class="lab-detail">Sep 2026🚀 We released World in World, exploring video worlds with world models.</span>
+  <span class="lab-badge">无变化</span>
+  <span class="lab-arrow" aria-hidden="true">→</span>
+</a>
+<a class="lab-row lab-row-quiet" href="https://wyhsirius.github.io/" target="_blank" rel="noopener noreferrer">
+  <span class="lab-num">03</span>
+  <span class="lab-name">Yaohui Wang · Shanghai AI Lab</span>
+  <span class="lab-detail">03 / 2026 1 paper AI killed the video star accepted to IJCV.</span>
+  <span class="lab-badge">无变化</span>
+  <span class="lab-arrow" aria-hidden="true">→</span>
+</a></div>
+  </div>
+</section>
+
+
+<main id="content">
+  <div class="section-label content-label">内容</div>
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="tech">技术动态<span class="count">52</span></button>
+    <button class="tab" data-tab="politics">时政观察<span class="count">15</span></button>
+  </nav>
+
+  <section class="panel active" data-panel="tech">
+    <nav class="sub-tabs"><button class="sub-tab active" data-sub="github-trending" data-cat="tech">GitHub Trending<span class="count">10</span></button><button class="sub-tab" data-sub="trending-papers" data-cat="tech">热门论文<span class="count">20</span></button><button class="sub-tab" data-sub="x-viral" data-cat="tech">X 推文<span class="count">7</span></button><button class="sub-tab" data-sub="ai-news" data-cat="tech">AI 媒体<span class="count">15</span></button></nav>
+<div class="sub-contents"><div class="sub-content active" data-sub-content="github-trending" data-cat="tech">
+    
+    <div class="source-contents">
+      <div class="source-content active" data-source-content="github-trending" data-sub="github-trending" data-cat="tech">
+    <article class="article">
+  <h3 class="article-title"><a href="https://github.com/cloudflare/security-audit-skill" target="_blank" rel="noopener noreferrer">cloudflare/security-audit-skill</a></h3>
+  
+  
+  <p class="article-stats">JavaScript · ★ 44,975 · 🍴 2,793 · 📈 2,264 stars today</p>
+  
+  <p class="article-excerpt">A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 面向编码 agent 的安全审计 skill，把审计拆成多个阶段执行，最终给出可被机器读取、且经过独立验证的漏洞结论。适合在代码审查或 CI 流程中让 AI agent 做系统化安全排查的团队。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/NVIDIA/OpenShell" target="_blank" rel="noopener noreferrer">NVIDIA/OpenShell</a></h3>
+  
+  
+  <p class="article-stats">Rust · ★ 19,577 · 🍴 1,938 · 📈 896 stars today</p>
+  
+  <p class="article-excerpt">OpenShell is the safe, private runtime for autonomous AI agents.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> NVIDIA 推出的自主 AI agent 安全运行时，为 agent 提供隔离、私密的执行环境，约束其权限与数据访问边界。适合需要在本机或云端安全运行自主 agent 的开发者和企业部署场景。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/aws/agent-toolkit-for-aws" target="_blank" rel="noopener noreferrer">aws/agent-toolkit-for-aws</a></h3>
+  
+  
+  <p class="article-stats">Python · ★ 3,181 · 🍴 401 · 📈 13 stars today</p>
+  
+  <p class="article-excerpt">Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> AWS 官方维护的 agent 工具包，提供 MCP server、skill 与插件，让 AI agent 能直接调用 AWS 服务来搭建、配置和运维云上资源。适合在 AWS 上开发 agent 应用、希望接入官方能力的团队。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/Nutlope/hallmark" target="_blank" rel="noopener noreferrer">Nutlope/hallmark</a></h3>
+  
+  
+  <p class="article-stats">CSS · ★ 32,350 · 🍴 1,661 · 📈 455 stars today</p>
+  
+  <p class="article-excerpt">Anti-AI-slop design skill for Claude Code, Cursor, and Codex.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对 Claude Code、Cursor、Codex 的“反 AI 味”设计 skill，用于纠正生成式界面常见的套路化审美，让 AI 产出的页面更接近专业设计。适合用 AI 编码工具做前端、又在意视觉质量的开发者。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/luongnv89/claude-howto" target="_blank" rel="noopener noreferrer">luongnv89/claude-howto</a></h3>
+  
+  
+  <p class="article-stats">Python · ★ 44,668 · 🍴 5,498 · 📈 392 stars today</p>
+  
+  <p class="article-excerpt">A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 以图文示例驱动的 Claude Code 使用指南，从基础概念一路讲到进阶 agent 搭建，并附带可直接复制使用的模板，帮助开发者快速上手并把 Claude Code 落到实际工作流中。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/pbakaus/impeccable" target="_blank" rel="noopener noreferrer">pbakaus/impeccable</a></h3>
+  
+  
+  <p class="article-stats">Rust · ★ 86,574 · 🍴 5,168 · 📈 619 stars today</p>
+  
+  <p class="article-excerpt">The design language that makes your AI harness better at design.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 一套面向 AI 编码环境的设计语言，用来提升 Claude Code 等 harness 的设计产出水平，让 agent 生成的界面遵循统一的视觉与交互规范。适合希望 AI 前端产物更专业、更一致的产品与工程团队。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/pollen-robotics/microduck" target="_blank" rel="noopener noreferrer">pollen-robotics/microduck</a></h3>
+  
+  
+  <p class="article-stats">Rust · ★ 11,090 · 🍴 1,418 · 📈 319 stars today</p>
+  
+  <p class="article-excerpt">A Tiny biped duck robot 🦆</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Pollen Robotics 开源的微型双足鸭子机器人，配套硬件设计与运动控制代码，用于双足行走的教学、科研和桌面级机器人实验。适合机器人爱好者、教育场景与小型科研项目。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/google-gemini/gemini-cli" target="_blank" rel="noopener noreferrer">google-gemini/gemini-cli</a></h3>
+  
+  
+  <p class="article-stats">TypeScript · ★ 108,168 · 🍴 14,816 · 📈 44 stars today</p>
+  
+  <p class="article-excerpt">An open-source AI agent that brings the power of Gemini directly into your terminal.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Google 开源的终端 AI agent，把 Gemini 模型能力直接接入命令行，可在终端内阅读代码、执行命令、处理文件并完成多步任务。适合开发者做代码理解、脚本自动化与本地开发辅助。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/jbiaojerry/ebook-treasure-chest" target="_blank" rel="noopener noreferrer">jbiaojerry/ebook-treasure-chest</a></h3>
+  
+  
+  <p class="article-stats">Python · ★ 22,778 · 🍴 3,198 · 📈 227 stars today</p>
+  
+  <p class="article-excerpt">欢迎来到电子书下载宝库，一个汇聚了各类电子书下载链接的地方。无论你是喜欢阅读经典文学、经管励志、终身学习、职场创业、技术手册还是其他类型的书籍，这里都能满足你的需求。 该库涵盖了帆书app(原樊登读书)、微信读书、京东读书、喜马拉雅等读书app的大部分电子书。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 电子书下载链接汇总仓库，覆盖帆书（原樊登读书）、微信读书、京东读书、喜马拉雅等平台的大部分书目，并按经典文学、经管励志、技术手册等分类整理。适合想自行检索下载电子书的读者。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/makecindy/cindy" target="_blank" rel="noopener noreferrer">makecindy/cindy</a></h3>
+  
+  
+  <p class="article-stats">TypeScript · ★ 4,200 · 🍴 604 · 📈 477 stars today</p>
+  
+  <p class="article-excerpt">Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 开源且开箱即用的 AI agent，主打“想到就能做到”，无需复杂配置即可直接运行并接管日常任务。适合想快速把 agent 能力接入个人或团队工作流、又不愿折腾部署的用户。</p>
+</article>
+  </div>
+    </div>
+  </div>
+<div class="sub-content" data-sub-content="trending-papers" data-cat="tech">
+    
+    <div class="source-contents">
+      <div class="source-content active" data-source-content="huggingface-papers" data-sub="trending-papers" data-cat="tech">
+    <article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.30926" target="_blank" rel="noopener noreferrer">Making MLLM Latents Matter: Factor-Aware Predictive Learning for Cinematic Video Generation</a></h3>
+  
+  
+  <p class="article-stats">👍 171</p>
+  <p class="article-meta">10/22 16:43</p>
+  <p class="article-excerpt">Cinematic video generation requires both temporal inference from limited inputs (i.e., sparse rather than frame-by-frame guidance) and factor-aware control of character, scene, action, and camera. Multimodal large language models (MLLMs) offer useful priors for both capabilities, but their represent</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 电影级视频生成需从稀疏输入做时序推断，并对角色、场景、动作、镜头做因子级控制。MLLM 蕴含相关先验，但其 latent 表示未被有效利用。论文提出因子感知预测学习，让 MLLM latent 真正作用于生成过程，提升可控性与画质。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.30181" target="_blank" rel="noopener noreferrer">Deep Search in Real-World Web Environments</a></h3>
+  
+  
+  <p class="article-stats">👍 160</p>
+  <p class="article-meta">10/19 08:00</p>
+  <p class="article-excerpt">Despite substantial progress in Deep Search agents, their ability to conduct end-to-end research in real-world open Web environments remains insufficiently evaluated. Unlike static retrieval settings, information on the real-world Web is distributed across diverse sources, modalities, and heterogene</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 现有 Deep Search 智能体多在静态检索设定下评测，其在真实开放网络中的端到端研究能力仍缺乏检验。真实网络信息分散于多源、多模态、异构页面。论文构建真实网页环境下的深度搜索评测，考察智能体的跨源检索与信息整合能力。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.30949" target="_blank" rel="noopener noreferrer">IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems</a></h3>
+  
+  
+  <p class="article-stats">👍 91</p>
+  <p class="article-meta">10/22 08:00</p>
+  <p class="article-excerpt">We present IQuest-Q1, a sparse Mixture-of-Experts (MoE) agentic foundation model with 320B total parameters (15B activated). IQuest-Q1 is developed through a three-stage process: (1) stable and efficient pre-training, combining Stable SplitNorm, Muon, and muP with a two-stage curriculum whose second</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> IQuest-Q1 是面向命令行智能体系统的稀疏 MoE 基础模型，总参数 320B、激活 15B。训练分三阶段，预训练结合 Stable SplitNorm、Muon 与 muP，并采用两阶段课程，以稳定高效地完成大规模扩展。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.29677" target="_blank" rel="noopener noreferrer">Toward Recursive Self-Improvement in Physical AI</a></h3>
+  
+  
+  <p class="article-stats">👍 56</p>
+  <p class="article-meta">10/21 08:00</p>
+  <p class="article-excerpt">Recursive self-improvement (RSI) describes a system that improves not only its behavior but also the process by which it improves. Recent digital agents test this idea by rewriting their own code and checking each version with executable tests. Bringing these mechanisms into the physical world requi</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 递归自我改进（RSI）指系统不仅改进行为，还改进改进过程本身；数字智能体通过改写自身代码并用可执行测试验证来实现。论文把这套机制推向物理世界，探讨具身系统中的 RSI 路径与所需组件。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.25100" target="_blank" rel="noopener noreferrer">Deep Fusion Memory: A Chunk-Level Parametric Memory for Large Language Models</a></h3>
+  
+  
+  <p class="article-stats">👍 48</p>
+  <p class="article-meta">10/18 08:00</p>
+  <p class="article-excerpt">Large language models need effective ways to acquire and use external knowledge beyond what they retain from pretraining. Continued pretraining risks catastrophic forgetting, while retrieval at inference time can add substantial overhead. External parametric memory avoids online retrieval, but const</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 大模型需在预训练之外获取外部知识：持续预训练易灾难性遗忘，推理时检索开销大。论文提出 Deep Fusion Memory，一种 chunk 级参数化外部记忆，将知识直接写入参数以避免在线检索，同时缓解遗忘。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.27851" target="_blank" rel="noopener noreferrer">LaLa-World: Scaling Latent World Models with Natural Language Actions</a></h3>
+  
+  
+  <p class="article-stats">👍 35</p>
+  <p class="article-meta">10/21 08:00</p>
+  <p class="article-excerpt">This paper shows that JEPA-style latent world models (LWMs) can learn across diverse domains and data sources by adopting the language-conditioned interface of video generation models. We establish this approach as an effective and efficient basis for planning with imagination and downstream policy </p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 论文表明 JEPA 式 latent 世界模型可借用视频生成模型的语言条件接口，在跨领域、跨数据源上统一训练。该方法以想象式规划为基础，为下游策略学习提供高效且可扩展的支撑。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.28416" target="_blank" rel="noopener noreferrer">Code2Video-Compass: A Comprehensive Benchmark for General-Purpose Code-Based Video Generation across T2V, I2V, and V2V</a></h3>
+  
+  
+  <p class="article-stats">👍 32</p>
+  <p class="article-meta">10/20 08:00</p>
+  <p class="article-excerpt">Code-based video generation offers fine-grained control, targeted editing, and component reuse compared with direct video generation. This approach requires multimodal large language models (MLLMs) to translate visual and temporal requirements into executable programs that produce complete videos. H</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 基于代码的视频生成可精细控制、定向编辑并复用组件，但要求 MLLM 把视觉与时序需求翻译为可执行程序。论文提出 Code2Video-Compass，覆盖 T2V、I2V、V2V 的通用代码化视频生成综合基准。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.30753" target="_blank" rel="noopener noreferrer">FilmFlow: Agentic System for 3D Virtual Film Cinematography</a></h3>
+  
+  
+  <p class="article-stats">👍 31</p>
+  <p class="article-meta">10/22 08:00</p>
+  <p class="article-excerpt">Complex camera motion is central to visual storytelling, yet translating cinematographic intent into controllable, executable camera trajectories remains challenging. We introduce FilmFlow, an agentic framework that converts natural-language instructions or reference videos into explicit camera traj</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 复杂运镜是视觉叙事的关键，但把摄影意图转成可执行相机轨迹仍困难。FilmFlow 是一个智能体框架，可将自然语言指令或参考视频转化为显式相机轨迹，用于 3D 虚拟电影摄影。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.27598" target="_blank" rel="noopener noreferrer">Meta Expert: Cross-Layer Expert Sharing for Storage- and Retrieval-Efficient MoE</a></h3>
+  
+  
+  <p class="article-stats">👍 30</p>
+  <p class="article-meta">10/20 08:00</p>
+  <p class="article-excerpt">As model parameters scale up, sparsely activated Mixture-of-Experts (MoE) approaches have become essential for model scaling. However, mainstream models currently adopt hierarchical architectures, where experts in different layers, although topologically independent, exhibit substantial similarity a</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> MoE 是模型扩展的关键，但不同层的专家虽拓扑独立却高度相似。论文提出 Meta Expert，通过跨层专家共享减少存储与检索开销，在保持稀疏激活效果的同时提升 MoE 的存储与检索效率。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.19705" target="_blank" rel="noopener noreferrer">RouteWeaver: Weaving Mode Selection and Execution into Unified LLM Routing</a></h3>
+  
+  
+  <p class="article-stats">👍 23</p>
+  <p class="article-meta">10/19 08:00</p>
+  <p class="article-excerpt">LLM routing dynamically selects and coordinates heterogeneous language models across diverse tasks. However, existing approaches are largely built around a predefined execution paradigm, such as single-round, multi-round, or agentic routing, which fixes how model calls are organized and limits adapt</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> LLM 路由需在不同任务上动态选择并协调异构模型，但现有方法围绕单轮、多轮或 agentic 等预定义执行范式，限制了适应性。RouteWeaver 将模式选择与执行统一到同一路由框架，实现更灵活的路由。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.31158" target="_blank" rel="noopener noreferrer">Beyond Watching and Searching: Benchmarking Agents for Video-centered Deep Research Reports</a></h3>
+  
+  
+  <p class="article-stats">👍 23</p>
+  <p class="article-meta">10/22 08:00</p>
+  <p class="article-excerpt">Deep research agents synthesize open-web evidence into long reports, but current benchmarks do not evaluate research centered on a source video. We introduce Video-Centered Deep Research Report Generation. Given a video and user request, an agent identifies research questions, retrieves external mul</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 深度研究智能体擅长综合开放网络证据生成长报告，但现有基准未评估以源视频为中心的研究。论文提出「以视频为中心的深度研究报告生成」任务与基准，要求智能体从视频出发提出问题、检索多源证据并撰写报告。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.30418" target="_blank" rel="noopener noreferrer">Agent Mosaic: Recognizing Confidentiality Leaks in Agentic LLM Systems</a></h3>
+  
+  
+  <p class="article-stats">👍 22</p>
+  <p class="article-meta">10/21 08:00</p>
+  <p class="article-excerpt">Modern LLM agents can retrieve information from accessible documents, and then disclose a sensitive conclusion assembled from them. This mosaic effect creates a critical risk for agents operating over confidential data. We quantify its realization with 30 synthetic cybersecurity, medical, and milita</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> LLM 智能体可从可访问文档中检索信息，并拼合出敏感结论，形成「马赛克效应」式泄密风险。论文在 30 个网络安全、医疗、军事合成场景中量化该风险的实现程度，并提出识别此类泄露的方法。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.27712" target="_blank" rel="noopener noreferrer">RLSplat: Resource-Linear Budget Control for Feed-forward 3D Gaussian Splatting</a></h3>
+  
+  
+  <p class="article-stats">👍 22</p>
+  <p class="article-meta">10/20 08:00</p>
+  <p class="article-excerpt">Feed-forward 3D Gaussian Splatting (FF3DGS) reconstructs 3D scenes from images in a single forward pass, making it well-suited to applications that must operate within limited resource budgets. To further improve its practicality, recent budget-controllable FF3DGS methods allow the number of Gaussia</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 前馈 3D 高斯泼溅（FF3DGS）单次前向即可重建三维场景，适合资源受限场景；已有预算可控方法可调高斯数量。论文提出 RLSplat，实现随资源线性变化的预算控制，进一步提升实用性。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.26233" target="_blank" rel="noopener noreferrer">Heartbeat Thinking: Speculative Reasoning and Tool Execution While Listening in Realtime Voice Agents</a></h3>
+  
+  
+  <p class="article-stats">👍 22</p>
+  <p class="article-meta">10/19 08:00</p>
+  <p class="article-excerpt">Tool-using voice agents often leave users waiting after speech ends, even when actionable information arrives earlier in the request. Speculative approaches begin work during speech, but chunk-bounded or interrupt-on-update generation can truncate a tool call before its arguments are complete. This </p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 工具调用型语音智能体常在用户说完后才开始工作。论文提出「心跳思考」：在聆听阶段即进行推测式推理与工具执行，避免分块或更新即中断导致的工具调用参数截断，从而显著降低端到端等待时间。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.30755" target="_blank" rel="noopener noreferrer">Is Complex Agentic Memory Always Needed? Naive RAG Is Stronger Than We Thought</a></h3>
+  
+  
+  <p class="article-stats">👍 21</p>
+  <p class="article-meta">10/22 08:00</p>
+  <p class="article-excerpt">LLM memory is widely used in long-term conversation understanding. Agentic memory systems often use mutation, structural organization, learned retrieval strategies, or other complex operations. Is this complexity always necessary? We study Raw-RAG, a naive RAG baseline using dense retrieval and rera</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 智能体记忆系统常引入变异、结构化组织与学习式检索等复杂操作。论文用密集检索加重排的朴素 RAG 基线 Raw-RAG 进行系统对比，发现其性能优于预期，从而质疑复杂 agentic memory 的必要性。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.31198" target="_blank" rel="noopener noreferrer">Different Tasks, Different Timesteps: Temporal Task-Aware Quantization for Diffusion Language Models</a></h3>
+  
+  
+  <p class="article-stats">👍 20</p>
+  <p class="article-meta">10/22 08:00</p>
+  <p class="article-excerpt">Diffusion Language Models (DLMs) introduce unique quantization challenges due to their iterative denoising process. In this work, we reveal that quantization sensitivity is both taskand time-dependent, with different downstream tasks exhibiting distinct precision requirements across denoising steps.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 扩散语言模型（DLM）的迭代去噪带来独特量化难题。论文发现量化敏感性既依赖任务也依赖时间步：不同下游任务在各去噪阶段的精度需求不同，据此提出任务与时间步感知的量化策略。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.31305" target="_blank" rel="noopener noreferrer">Cola2: Co-Adaptive Hierarchical Language Modeling with Continuous Semantic Compression and Balanced Discrete Generation</a></h3>
+  
+  
+  <p class="article-stats">👍 20</p>
+  <p class="article-meta">10/22 08:00</p>
+  <p class="article-excerpt">Hierarchical language generation separates continuous semantic modeling from discrete text realization, but its effectiveness depends on what the latent space compresses and how the discrete generator uses it. We propose Cola2, a framework that jointly studies continuous semantic compression, the ba</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 分层语言生成将连续语义建模与离散文本实现分离，但效果取决于 latent 压缩什么、离散生成器如何使用。论文提出 Cola2，联合研究连续语义压缩与均衡的离散生成，提升分层建模的整体效果。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.04184" target="_blank" rel="noopener noreferrer">EvalResearchBench: Can AI Agents Build Their Own Feedback for Recursive Self-Improvement?</a></h3>
+  
+  
+  <p class="article-stats">👍 18</p>
+  <p class="article-meta">10/16 08:00</p>
+  <p class="article-excerpt">Recursive self-improvement (RSI) relies on evaluation feedback to assess progress and guide further research, yet repeatedly running complex benchmarks is costly and slows iteration. Human experts reduce this cost by selecting benchmark subsets or designing compact suites. We ask whether AI agents c</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 递归自我改进依赖评测反馈指导后续研究，但反复运行复杂基准成本高、迭代慢。EvalResearchBench 考察 AI 智能体能否自行构建紧凑评测子集或反馈信号，以低成本替代完整基准评测。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.31466" target="_blank" rel="noopener noreferrer">AnyGameRenderer: Entity-Consistent Generative Rendering Across Games and an Entity-Level Benchmark</a></h3>
+  
+  
+  <p class="article-stats">👍 17</p>
+  <p class="article-meta">10/22 08:00</p>
+  <p class="article-excerpt">AI coding agents can now build small playable games in minutes, but the results usually look like programmer art: gray blockouts, colored geometric primitives, and flat semantic blobs. We present AnyGameRenderer, a video-to-video generative renderer that turns such footage into high-quality visuals </p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> AI 编程智能体可快速生成小游戏，但画面多为灰盒与几何色块的「程序员美术」。AnyGameRenderer 是视频到视频的生成式渲染器，可将此类画面转为高质量视觉并保持跨游戏实体一致，同时提出实体级基准。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.31494" target="_blank" rel="noopener noreferrer">AgentVQA: A Unified Benchmark for Agentic Visual Understanding</a></h3>
+  
+  
+  <p class="article-stats">👍 17</p>
+  <p class="article-meta">10/22 08:00</p>
+  <p class="article-excerpt">Vision-language models (VLMs) can perform a broad range of tasks across diverse settings, yet their performance in agentic contexts remains poorly understood. Although online evaluations in simulators and real-world environments are essential for measuring interactive agent performance, they are cos</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 视觉语言模型（VLM）能力广泛，但其在智能体情境下的表现仍缺乏理解；在线模拟器与真实环境评测成本高。论文提出 AgentVQA，一个统一的智能体式视觉理解基准，系统评估交互中的视觉推理能力。</p>
+</article>
+  </div>
+    </div>
+  </div>
+<div class="sub-content" data-sub-content="x-viral" data-cat="tech">
+    
+    <div class="source-contents">
+      <div class="source-content active" data-source-content="attentionvc-ai" data-sub="x-viral" data-cat="tech">
+    <article class="article">
+  <h3 class="article-title"><a href="https://x.com/vinayp10/status/2113263397491855821" target="_blank" rel="noopener noreferrer">I Moved my Fiancée off Claude </a></h3>
+  
+  
+  <p class="article-stats">@vinayp10 · 17.3K 粉丝 · 175.8K 阅 · 506 赞 · 15 转</p>
+  <p class="article-meta">10/22 21:37</p>
+  <p class="article-excerpt">Claude, you&#39;re fired! I just moved my fiancée off Claude Code (@claudeai) and onto @bot. We canceled her Claude Code subscription. That&#39;s a first for me. Since February, whenever someone asked which</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 博主把未婚妻的日常工作流从 Claude Code 迁到 @bot，并退订了 Claude Code 订阅，称这是他第一次这么做。自 2 月以来，被问到「该用哪个工具」时的默认答案正在松动，属于一次真实的工具迁移踩坑与对比反馈。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://x.com/ryangrowthh/status/2113276573793267911" target="_blank" rel="noopener noreferrer">Grok Bot as Your Head of Content (FULL GUIDE)</a></h3>
+  
+  
+  <p class="article-stats">@ryangrowthh · 5.6K 粉丝 · 74.8K 阅 · 519 赞 · 27 转</p>
+  <p class="article-meta">10/22 22:29</p>
+  <p class="article-excerpt">My team of 11 Grok Bots helped me generate ~2M impressions in my first two weeks of posting on 𝕏. Today, I&#39;m revealing the entire system. Firstly, the elephant in the room - proof of the results:</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 用 11 个 Grok Bot 组成内容团队，发帖前两周在 X 上累计约 200 万曝光，博主公开整套运作系统：先给结果截图自证，再拆解分工流程。属于多 agent 内容流水线的实操拆解。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://x.com/tibo_maker/status/2113633105776890343" target="_blank" rel="noopener noreferrer">how to build and run an army of AI UGC accounts</a></h3>
+  
+  
+  <p class="article-stats">@tibo_maker · 215.7K 粉丝 · 56.5K 阅 · 510 赞 · 30 转</p>
+  <p class="article-meta">10/23 22:06</p>
+  <p class="article-excerpt">in this article I&#39;ll walk you through all 9 steps of the setup, with the 12 prompts I use, ready to copy, in the order you&#39;ll need them. you&#39;ve probably scrolled past a few of them this week. a girl</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> AI UGC 账号矩阵搭建教程：完整 9 个步骤，附 12 条可直接复制的 prompt，按实际使用顺序排列。面向已经在信息流里刷到过这类虚拟人账号、想自己批量复制的人。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://x.com/BrianDEvans/status/2113367606245880293" target="_blank" rel="noopener noreferrer">AI Is Creating Modern Vampires </a></h3>
+  
+  
+  <p class="article-stats">@BrianDEvans · 1.3M 粉丝 · 50.8K 阅 · 826 赞 · 34 转</p>
+  <p class="article-meta">10/23 04:31</p>
+  <p class="article-excerpt">AI is going to create some ridiculously cracked people. Imagine someone who built a hundred-billion-dollar company around their own invention, won Olympic gold, and directed an Oscar-winning film.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 观点帖：AI 会造出一批「现代吸血鬼」式的极端个体——同时做出千亿美元公司、拿奥运金牌、执导奥斯卡级电影。属于对能力放大与个体上限的推演，而非工具教程。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://x.com/davidim/status/2113359045528867167" target="_blank" rel="noopener noreferrer">Fuck Higgsfield : why we launched a 0% markup API</a></h3>
+  
+  
+  <p class="article-stats">@davidim · 7.6K 粉丝 · 47.8K 阅 · 532 赞 · 31 转</p>
+  <p class="article-meta">10/23 03:57</p>
+  <p class="article-excerpt">Today we launched Sume API with a 0% markup, which means you get the same models at exactly the price the original model provider charges. A lot of people have asked me why we&#39;d do something that</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 发布 Sume API，主打 0% 加价：模型调用价格与原厂完全一致。博文解释为何做这种看似不赚钱的定价，标题直指对 Higgsfield 的不满，属于产品发布加定价策略表态。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://x.com/GoogleCloudTech/status/2113443701938884710" target="_blank" rel="noopener noreferrer">3 markdown architecture patterns that boost agentic productivity</a></h3>
+  
+  
+  <p class="article-stats">@GoogleCloudTech · 1.3M 粉丝 · 38.7K 阅 · 502 赞 · 68 转</p>
+  <p class="article-meta">10/23 09:33</p>
+  <p class="article-excerpt">There is a running joke in modern software engineering that the hottest programming language isn&#39;t Rust, Zig, or Python: it’s Markdown. As coding agents become entrenched in developer workflows, many</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Google Cloud 官方账号拆解 3 种 Markdown 架构写法，用来提升 coding agent 的工作效率。切入点是业内玩笑——当下最热门的编程语言不是 Rust 或 Python，而是 Markdown，因为 agent 已深度嵌入开发流程。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://x.com/puneetmehtanyc/status/2113385124117328042" target="_blank" rel="noopener noreferrer">Banks Built Controls for People. AI Agents Are Walking Right Through Them.</a></h3>
+  
+  
+  <p class="article-stats">@puneetmehtanyc · 4.0K 粉丝 · 37.2K 阅 · 577 赞 · 57 转</p>
+  <p class="article-meta">10/23 05:40</p>
+  <p class="article-excerpt">Major U.S. banks are detecting third-party AI agents operating inside customer accounts without the banks’ approval, Axios reported this morning. Some of those agents appear to be acting beyond their</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 据 Axios 报道，美国多家大银行发现未经授权的第三方 AI agent 在客户账户内操作，部分行为已越界。作者指出银行风控体系是为人类设计的，agent 正从这些缝隙里穿过去，属于 agent 落地后的合规风险观察。</p>
+</article>
+  </div>
+    </div>
+  </div>
+<div class="sub-content" data-sub-content="ai-news" data-cat="tech">
+    
+    <div class="source-contents">
+      <div class="source-content active" data-source-content="_merged" data-sub="ai-news" data-cat="tech">
+    <article class="article">
+  <h3 class="article-title"><a href="https://latent.space/p/ainews-kimi-31/" target="_blank" rel="noopener noreferrer">[AINews] Kimi 3.1 Pro 104BA-2.8T: Fable-5.1-Class Open Weights narrows Closed-AI lead to 1 month... and Pro Highspeed API with 2-3× speed</a></h3>
+  
+  
+  
+  <p class="article-meta">Latent Space · 10/24 15:18</p>
+  <p class="article-excerpt">We have Fable at home... or so we are being told by paid shills</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Latent Space 报道 Kimi 3.1 Pro 发布，标称 104B 激活、2.8T 总参数的开放权重模型，称其将开放与闭源 AI 的差距缩小到约 1 个月，并同步推出 Pro 高速 API，速度提升 2 至 3 倍。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://openai.com/index/scaling-storage-one-billion-users-part-two" target="_blank" rel="noopener noreferrer">Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)</a></h3>
+  
+  
+  
+  <p class="article-meta">OpenAI News · 10/24 01:00</p>
+  <p class="article-excerpt">Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> OpenAI 发文介绍如何将在线存储扩展至服务逾 10 亿 ChatGPT 用户，通过可靠的多租户架构、全局缓存与 Azure Cosmos DB，使 ChatGPT 的读取速度提升 12 倍。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/blog/allenai/litpivot" target="_blank" rel="noopener noreferrer">LitPivot: Developing research ideas through dynamic contextualization within the literature landscape</a></h3>
+  
+  
+  
+  <p class="article-meta">Hugging Face Blog · 10/24 00:15</p>
+  
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Hugging Face 博客介绍 Allen AI 的 LitPivot 方法，主张在文献全景中进行动态情境化，以辅助研究者发展研究想法。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://latent.space/p/ai-is-getting-good-at-math/" target="_blank" rel="noopener noreferrer">AI Is Getting Good at Math. Here’s Why.</a></h3>
+  
+  
+  
+  <p class="article-meta">Latent Space · 10/23 23:19</p>
+  <p class="article-excerpt">AI models are solving more mathematical problems. A pattern is emerging in their successes that could help us predict which problems they’ll solve next.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Latent Space 文章指出，AI 模型正解出越来越多数学问题，其成功案例中浮现出某种模式，或有助于预测它们接下来能解决哪些问题。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://latent.space/p/ainews-black-october/" target="_blank" rel="noopener noreferrer">[AINews] Black October</a></h3>
+  
+  
+  
+  <p class="article-meta">Latent Space · 10/23 18:09</p>
+  <p class="article-excerpt">the Cyber onslaught continues.</p>
+  
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://openai.com/index/securing-our-frontier-model-training-environment" target="_blank" rel="noopener noreferrer">Securing our frontier model training environment</a></h3>
+  
+  
+  
+  <p class="article-meta">OpenAI News · 10/23 18:00</p>
+  <p class="article-excerpt">OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> OpenAI 说明其如何强化前沿模型训练与评估环境的隔离管控，措施包括离线运行环境与高算力红队测试，以降低模型训练过程中的安全风险。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://openai.com/index/openai-nask-ai-safety-security-partnership" target="_blank" rel="noopener noreferrer">OpenAI and Poland’s NASK partner to advance AI safety and security</a></h3>
+  
+  
+  
+  <p class="article-meta">OpenAI News · 10/23 08:00</p>
+  <p class="article-excerpt">OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> OpenAI 与波兰机构 NASK 建立合作，围绕 AI 安全、安保与技术研究展开联合工作，以强化防护措施并支持更具韧性的数字生态。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/blog/torch-neuronx-model-support" target="_blank" rel="noopener noreferrer">Does Your Model Run on AWS Trainium? Look It Up</a></h3>
+  
+  
+  
+  <p class="article-meta">Hugging Face Blog · 10/23 08:00</p>
+  
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Hugging Face 博客发布查询说明，帮助用户确认某个模型是否可在 AWS Trainium 芯片上通过 torch-neuronx 运行。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://tldr.tech/ai/2026-10-23" target="_blank" rel="noopener noreferrer">OpenAI nears $1.25T 💰,  ☁️, 1Password for Agents 🔑, Gemini 3.5 Pro postmortem 🤖</a></h3>
+  
+  
+  
+  <p class="article-meta">TLDR AI · 10/23 08:00</p>
+  
+  <p class="article-summary"><span class="summary-label">中文介绍</span> TLDR AI 当日简报提到，OpenAI 估值接近 1.25 万亿美元；1Password 推出面向 AI 智能体的凭证管理方案；以及 Gemini 3.5 Pro 的事后复盘。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/blog/microsoft/thinkingbox-training" target="_blank" rel="noopener noreferrer">Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox</a></h3>
+  
+  
+  
+  <p class="article-meta">Hugging Face Blog · 10/23 06:24</p>
+  
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Hugging Face 博客刊载微软文章，介绍 ThinkingBox 方法，将数据库评分转化为强化学习奖励，用于智能体的后训练。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/" target="_blank" rel="noopener noreferrer">Designing an AI serving harness built to last</a></h3>
+  
+  
+  
+  <p class="article-meta">MIT Tech Review AI · 10/23 05:17</p>
+  <p class="article-excerpt">The next competitive advantage in enterprise AI has less to do with which model you choose than with what you build around it. That’s an important shift. For the past several years, much of the AI conversation has centered on model capability: bigger models, better reasoning, larger context windows,</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> MIT 科技评论指出，企业 AI 的下一轮竞争优势更多取决于围绕模型搭建的服务框架，而非模型本身的选择，并讨论如何设计可持续演进的 AI 服务框架。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://openai.com/index/decisions-api" target="_blank" rel="noopener noreferrer">Build more responsive apps with the Decisions API</a></h3>
+  
+  
+  
+  <p class="article-meta">OpenAI News · 10/23 03:00</p>
+  <p class="article-excerpt">Fast, focused, low-cost decisions for any application.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> OpenAI 推出 Decisions API，称可为各类应用提供快速、聚焦且低成本的决策能力，帮助开发者构建响应更及时的应用。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.technologyreview.com/2026/10/22/1146103/the-foundations-of-scalable-ai/" target="_blank" rel="noopener noreferrer">The Foundations of Scalable AI</a></h3>
+  
+  
+  
+  <p class="article-meta">MIT Tech Review AI · 10/23 02:48</p>
+  <p class="article-excerpt">A scalable AI system requires a strong foundation. Data, engineering, platforms, operating models, and governance must converge to work as one. This session from MIT Technology Review’s EmTech Future conference explores what it takes to build that foundation in a highly regulated environment and how</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> MIT 科技评论 EmTech Future 会议环节讨论可扩展 AI 的基础，认为数据、工程、平台、运营模式与治理需协同运作，才能在高监管行业中落地。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://latent.space/p/modal-d/" target="_blank" rel="noopener noreferrer">Why AI Compute Comes in Rectangles — Erik Bernhardsson, Modal CEO</a></h3>
+  
+  
+  
+  <p class="article-meta">Latent Space · 10/23 01:40</p>
+  <p class="article-excerpt">Elastic GPUs, sandbox growth, and the economics of the agent cloud</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Latent Space 访谈 Modal 首席执行官 Erik Bernhardsson，讨论 AI 算力为何以「矩形」形态供应、弹性 GPU、沙箱业务增长以及智能体云的经济性。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/" target="_blank" rel="noopener noreferrer">Beyond tree cover: mapping the world’s forest types</a></h3>
+  
+  
+  
+  <p class="article-meta">DeepMind Blog · 10/22 22:30</p>
+  <p class="article-excerpt">A global map categorizing every 10-meter patch of land on Earth into distinct forest types.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> DeepMind 发布全球森林类型地图，将地球地表每 10 米地块归入不同森林类型，突破仅以树冠覆盖率衡量森林的做法。</p>
+</article>
+  </div>
+    </div>
+  </div></div>
+  </section>
+  <section class="panel" data-panel="politics">
+    <div class="sub-content active" data-sub-content="world" data-cat="politics">
+    
+    <div class="source-contents">
+      <div class="source-content active" data-source-content="_merged" data-sub="world" data-cat="politics">
+    <article class="article">
+  <h3 class="article-title"><a href="https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Almost 1,000 arrested as clashes follow another day of mass protests across France</a></h3>
+  
+  
+  
+  <p class="article-meta">BBC World · 10/25 12:16</p>
+  <p class="article-excerpt">Hundreds of thousands took part in demonstrations in France, with protests also taking place in other European countries.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 法国各地再度爆发大规模抗议，数十万人参加示威，随后发生冲突，近1000人被捕。其他欧洲国家也出现抗议活动。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.aljazeera.com/video/newsfeed/2026/10/25/obama-joins-el-sayed-in-michigan-rally-cry-before-key-midterms?traffic_source=rss" target="_blank" rel="noopener noreferrer">Obama joins El-Sayed in Michigan rally cry before key midterms</a></h3>
+  
+  
+  
+  <p class="article-meta">Al Jazeera · 10/25 12:06</p>
+  <p class="article-excerpt">Former US President Barack Obama joined Michigan Senate candidate Abdul El-Sayed at a Detroit rally ahead of midterms.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 美国前总统奥巴马在底特律一场集会上，与密歇根州参议院候选人阿卜杜勒·埃尔-赛义德同台，为关键中期选举造势。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.nytimes.com/2026/10/25/world/africa/tristan-da-cunha-island.html" target="_blank" rel="noopener noreferrer">Far, Far Away</a></h3>
+  
+  
+  
+  <p class="article-meta">NYT World · 10/25 12:01</p>
+  <p class="article-excerpt">Making a home on the world’s most remote inhabited island.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 报道介绍在世界上最偏远的有人居住岛屿上安家生活的情况。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.nytimes.com/2026/10/25/world/europe/serbia-election.html" target="_blank" rel="noopener noreferrer">What to Know as Serbia Votes for a New Parliament</a></h3>
+  
+  
+  
+  <p class="article-meta">NYT World · 10/25 12:01</p>
+  <p class="article-excerpt">A student-led movement is challenging the governing party of Aleksandar Vucic, who has dominated Serbian politics for over a decade.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 塞尔维亚举行议会选举，一场由学生主导的运动挑战执政党及长期主导该国政坛的武契奇。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.aljazeera.com/news/2026/10/25/new-york-archdiocese-agrees-to-pay-800m-to-1300-sexual-abuse-survivors?traffic_source=rss" target="_blank" rel="noopener noreferrer">New York Archdiocese agrees to pay $800m to 1,300 sexual abuse survivors</a></h3>
+  
+  
+  
+  <p class="article-meta">Al Jazeera · 10/25 11:57</p>
+  <p class="article-excerpt">The settlement is the second-largest after an $880m ​deal reached by the Archdiocese of Los ​Angeles in 2024.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 纽约总教区同意向1300名性侵幸存者支付8亿美元赔偿，这是继洛杉矶总教区2024年8.8亿美元和解之后的第二大同类和解。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.theguardian.com/australia-news/2026/oct/25/afp-commissioner-krissy-barrett-threats-mps-political-debate-ntwnfb" target="_blank" rel="noopener noreferrer">AFP boss says politicians’ heated rhetoric is fuelling threats against MPs</a></h3>
+  
+  
+  
+  <p class="article-meta">The Guardian · 10/25 11:54</p>
+  <p class="article-excerpt">Commissioner Krissy Barrett says women are more often singled out, often with threats of sexual violence Get our breaking news email, free app or daily news podcast Australia’s top federal law enforcement official has drawn a direct link between politicians’ rhetoric and threats and abuse being dire</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 澳大利亚联邦警察局长克里西·巴雷特表示，政客的激烈言论正助长针对议员的威胁，女性更常被单独针对，威胁内容常涉及性暴力。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.aljazeera.com/video/newsfeed/2026/10/25/10-25-turkiye-media-crackdown-sv?traffic_source=rss" target="_blank" rel="noopener noreferrer">Thousands rally in Turkiye over journalist arrests, media shutdowns</a></h3>
+  
+  
+  
+  <p class="article-meta">Al Jazeera · 10/25 11:47</p>
+  <p class="article-excerpt">Thousands have protested across Turkiye against the arrests of journalists and restrictions on independent media.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 土耳其数千人举行集会，抗议记者被捕以及独立媒体受到的限制。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.nytimes.com/2026/10/24/world/europe/france-looting-rue-paradis-marseille.html" target="_blank" rel="noopener noreferrer">Looting Left Damage and Fear on Paradise Street in Marseille</a></h3>
+  
+  
+  
+  <p class="article-meta">NYT World · 10/25 10:49</p>
+  <p class="article-excerpt">Looters ravaged a storied commercial avenue in France’s second-largest city. Its merchants fear that more unrest could follow.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 法国第二大城市马赛的一条知名商业街「天堂街」遭抢劫者破坏，商户担忧后续还会出现更多骚乱。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.aljazeera.com/news/2026/10/25/bulgarians-vote-for-president-in-shadow-of-russias-war-in-ukraine?traffic_source=rss" target="_blank" rel="noopener noreferrer">Bulgarians vote for president in shadow of Russia’s war in Ukraine</a></h3>
+  
+  
+  
+  <p class="article-meta">Al Jazeera · 10/25 10:45</p>
+  <p class="article-excerpt">The two leading candidates condemn recent deadly Black Sea drone strikes, but differ on the Ukraine war more broadly.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 保加利亚举行总统选举。两位领先候选人均谴责近期黑海致命无人机袭击，但在乌克兰战争整体立场上存在分歧。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.aljazeera.com/video/newsfeed/2026/10/25/mass-rally-against-netanyahu-ahead-of-pivotal-israeli-election?traffic_source=rss" target="_blank" rel="noopener noreferrer">Mass rally against Netanyahu ahead of pivotal Israeli election</a></h3>
+  
+  
+  
+  <p class="article-meta">Al Jazeera · 10/25 10:07</p>
+  <p class="article-excerpt">Thousands of Israelis rallied against PM Benjamin Netanyahu ahead of elections on Tuesday.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 数千名以色列人在周二关键选举前举行集会，反对总理内塔尼亚胡。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.nytimes.com/2026/10/24/world/americas/salvadoran-soldiers-haiti-dead.html" target="_blank" rel="noopener noreferrer">Remains Found in Haiti During Hunt for Missing Salvadoran Soldiers</a></h3>
+  
+  
+  
+  <p class="article-meta">NYT World · 10/25 10:01</p>
+  <p class="article-excerpt">El Salvador had sent hundreds of troops to find the four men, who disappeared six days ago. The president of El Salvador denied the bodies were those of his soldiers.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 海地在搜寻失踪萨尔瓦多士兵时发现遗骸。萨尔瓦多曾派数百名军人寻找6天前失踪的4人，该国总统否认遗体属于其士兵。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.theguardian.com/australia-news/2026/oct/25/drive-by-shooting-loganholme-four-injured-ntwnfb" target="_blank" rel="noopener noreferrer">‘Horrific’: woman, 19, shot in head in drive-by shooting outside boxing event near Brisbane</a></h3>
+  
+  
+  
+  <p class="article-meta">The Guardian · 10/25 09:41</p>
+  <p class="article-excerpt">Offenders still at large after shots fired from vehicle outside licensed premises in Loganholme Get our breaking news email, free app or daily news podcast Four people have been injured after a drive-by shooting outside a venue hosting a boxing event, including a 19-year-old woman who was shot in th</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 布里斯班附近洛根霍尔姆一场拳击赛事举办地外发生驾车枪击，4人受伤，其中一名19岁女子头部中弹，嫌犯仍在逃。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.nytimes.com/live/2026/10/24/world/france-protests-riots/milan-youth-protests" target="_blank" rel="noopener noreferrer">Italy’s Young Protesters Return to the Streets</a></h3>
+  
+  
+  
+  <p class="article-meta">NYT World · 10/25 09:26</p>
+  <p class="article-excerpt">Fed up with the political establishment and rising cost of living, demonstrators hoped to make their message heard after violence overshadowed protests last weekend.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 意大利年轻抗议者因不满政治建制与生活成本上升而重返街头，希望在上周末暴力事件影响抗议之后让诉求被听见。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.nytimes.com/2026/10/24/world/asia/north-korea-kim-jong-un-china.html" target="_blank" rel="noopener noreferrer">Kim Jong-un Makes First Visit to China in Over a Year</a></h3>
+  
+  
+  
+  <p class="article-meta">NYT World · 10/25 09:14</p>
+  <p class="article-excerpt">The North Korean leader crossed the border on a newly opened bridge for the trip, as the two countries move to deepen ties.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 朝鲜领导人金正恩一年多来首次访问中国，经一座新开通的桥梁过境，两国正寻求深化双边关系。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.nytimes.com/2026/10/24/world/middleeast/iranians-face-anxious-wait-as-threat-of-attack-looms.html" target="_blank" rel="noopener noreferrer">Iranians Face Anxious Wait as Threat of Attack Looms</a></h3>
+  
+  
+  
+  <p class="article-meta">NYT World · 10/25 08:51</p>
+  <p class="article-excerpt">The United States and Israel have drawn up plans to renew strikes against Iran, creating a sense of dread among war-weary residents.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 美国与以色列已制定再次对伊朗发动打击的计划，令饱受战争之苦的伊朗民众陷入焦虑与恐惧。</p>
+</article>
+  </div>
+    </div>
+  </div>
+  </section>
+</main>
+
+<!-- Conference Deadlines — MiMo Careers style -->
+<div class="deadlines-section">
+  <div class="section-label">即将截止的会议</div>
+  <a class="deadline-row" href="https://cvpr2027.thecvf.com/" target="_blank" rel="noopener noreferrer">
+  <span class="deadline-num">01</span>
+  <div class="deadline-info"><span class="deadline-name">CVPR 2027</span></div>
+  <span class="deadline-meta">2026-11-15</span>
+  <span class="deadline-badge soon">剩余 21 天</span>
+  <span class="deadline-arrow" aria-hidden="true">→</span>
+</a>
+<a class="deadline-row" href="https://icml.cc/Conferences/2027" target="_blank" rel="noopener noreferrer">
+  <span class="deadline-num">02</span>
+  <div class="deadline-info"><span class="deadline-name">ICML 2027</span></div>
+  <span class="deadline-meta">2027-01-31</span>
+  <span class="deadline-badge later">98 天</span>
+  <span class="deadline-arrow" aria-hidden="true">→</span>
+</a>
+<a class="deadline-row" href="https://iccv2027.thecvf.com/" target="_blank" rel="noopener noreferrer">
+  <span class="deadline-num">03</span>
+  <div class="deadline-info"><span class="deadline-name">ICCV 2027</span></div>
+  <span class="deadline-meta">2027-03-08</span>
+  <span class="deadline-badge later">134 天</span>
+  <span class="deadline-arrow" aria-hidden="true">→</span>
+</a>
+</div>
+
+<footer class="mimo-footer">
+  <span class="footer-logo">DailyBrief</span>
+  <div class="footer-right">
+    <span class="footer-disclaimer">内容均来自原媒体，本站仅作摘要整理与回链。</span>
+    <span class="footer-copy">© 2026 DailyBrief</span>
+  </div>
+</footer>
+<script>
+  function activateTab(target) {
+    document.querySelectorAll('.tabs > .tab').forEach(function (b) {
+      b.classList.toggle('active', b.dataset.tab === target);
+    });
+    document.querySelectorAll('.panel').forEach(function (p) {
+      p.classList.toggle('active', p.dataset.panel === target);
+    });
+  }
+
+  function scrollToArxivDirection(dir) {
+    activateTab('tech');
+    var panel = document.querySelector('.panel[data-panel="tech"]');
+    if (!panel) return;
+    var subBtn = panel.querySelector('[data-sub="arxiv-papers"]');
+    if (subBtn) subBtn.click();
+    var srcId = 'arxiv-' + dir;
+    var dirBtn = panel.querySelector('[data-source="' + srcId + '"]');
+    if (dirBtn) dirBtn.click();
+    setTimeout(function () {
+      var el = document.getElementById(srcId);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      else {
+        var main = document.getElementById('content');
+        if (main) main.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
+  }
+
+  document.querySelectorAll('[data-arxiv-dir]').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      scrollToArxivDirection(el.dataset.arxivDir);
+    });
+  });
+
+  document.querySelectorAll('[data-nav-tab]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      activateTab(link.dataset.navTab);
+      var main = document.getElementById('content');
+      if (main) main.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  document.querySelectorAll('.tabs > .tab').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      activateTab(btn.dataset.tab);
+    });
+  });
+  document.querySelectorAll('.sub-tab').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var panel = btn.closest('.panel');
+      if (!panel) return;
+      var sub = btn.dataset.sub;
+      panel.querySelectorAll('.sub-tab').forEach(function (b) {
+        b.classList.toggle('active', b === btn);
+      });
+      panel.querySelectorAll('.sub-content').forEach(function (p) {
+        p.classList.toggle('active', p.dataset.subContent === sub);
+      });
+    });
+  });
+  document.querySelectorAll('.source-tab').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var subContent = btn.closest('.sub-content');
+      if (!subContent) return;
+      var src = btn.dataset.source;
+      subContent.querySelectorAll('.source-tab').forEach(function (b) {
+        b.classList.toggle('active', b === btn);
+      });
+      subContent.querySelectorAll('.source-content').forEach(function (p) {
+        p.classList.toggle('active', p.dataset.sourceContent === src);
+      });
+    });
+  });
+</script>
+</body>
+</html>
