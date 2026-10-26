@@ -1,0 +1,75 @@
+{
+  "hero_headline": "卢拉再度当选巴西总统，开源模型与AI基建密集更新",
+  "daily_overview": "技术方面，开源与闭源的差距继续收窄：Kimi 3.1 Pro 以开放权重发布，标称 104B 激活、2.8T 总参数；面向命令行智能体的 IQuest-Q1 采用 320B 稀疏 MoE 架构。基础设施与安全也在同步推进，OpenAI 披露支撑 10 亿 ChatGPT 用户的存储扩展方案，并说明前沿模型训练环境的隔离与红队措施；开源社区则出现完全本地化的语音克隆工具。时政方面，巴西大选由卢拉击败弗拉维奥·博索纳罗再度当选，拉美格局受到关注；塞尔维亚武契奇承认败选，委内瑞拉反对派领袖马查多结束流亡返国。",
+  "tech_briefs": [
+    {
+      "title": "Kimi 3.1 Pro 以开放权重发布，与闭源模型差距收窄",
+      "url": "https://latent.space/p/ainews-kimi-31/",
+      "source": "Latent Space",
+      "summary": "Kimi 3.1 Pro 以开放权重形式发布，标称 104B 激活、2.8T 总参数，据称性能接近 Fable-5.1 级别，把开源与闭源的差距缩至约 1 个月；同步推出提速 2 至 3 倍的 Pro Highspeed API。",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI 披露 Habitat 存储扩展方案",
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "source": "OpenAI News",
+      "summary": "OpenAI 介绍支撑 10 亿 ChatGPT 用户在线存储的 Habitat 系统：以可靠多租户架构、全局缓存与 Azure Cosmos DB 实现横向扩展，读取速度提升 12 倍。",
+      "importance": 7
+    },
+    {
+      "title": "OpenAI 加固前沿模型训练环境隔离",
+      "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+      "source": "OpenAI News",
+      "summary": "OpenAI 说明强化前沿模型训练与评估环境管控的具体措施，包括离线运行环境与高算力红队测试，以降低模型能力外泄与滥用风险。",
+      "importance": 7
+    },
+    {
+      "title": "IQuest-Q1：面向命令行智能体的 320B MoE 模型",
+      "url": "https://huggingface.co/papers/2610.30949",
+      "source": "HuggingFace Trending Papers",
+      "summary": "该稀疏 MoE 基础模型总参数 320B、激活 15B，专为 CLI 智能体场景设计；训练分三阶段，预训练结合 Stable SplitNorm、Muon、muP 与两阶段课程，以提升终端环境下的智能体基础能力。",
+      "importance": 7
+    },
+    {
+      "title": "VoiceStudio：可完全本地运行的开源语音克隆工具",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "source": "GitHub Trending",
+      "summary": "项目定位为完全本地部署的 ElevenLabs 替代品，集语音克隆、音色设计、视频配音、听写转写与有声书制作于一体，宣称覆盖 646 种语言，音频数据无需上传云端。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "卢拉击败博索纳罗之子，第四次当选巴西总统",
+      "url": "https://www.theguardian.com/world/live/2026/oct/25/brazil-election-runoff-live-updates-flavio-bolsonaro-lula",
+      "source": "The Guardian",
+      "summary": "巴西最高选举法院宣布，左翼候选人卢拉在第二轮决选中击败极右翼参议员弗拉维奥·博索纳罗，第四次、非连续当选总统；投票日出现交通延误与恶劣天气。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "武契奇承认败选，学生主导抗议运动赢得选举",
+      "url": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "执政 12 年的塞尔维亚总统武契奇表示，其政党已「清楚」输掉这场被视为对国家未来公投的选举，由学生主导的抗议运动取得胜利。",
+      "importance": 8
+    },
+    {
+      "title": "马查多结束近十个月流亡返回委内瑞拉",
+      "url": "https://www.nytimes.com/2026/10/25/world/americas/machado-venezuela-return.html",
+      "source": "NYT World",
+      "summary": "诺贝尔奖得主、委内瑞拉反对派领袖马查多结束近 10 个月流亡返国。她此前被现领导层排除在政治进程之外，此行意在施压并要求举行新的选举。（多家报道）",
+      "importance": 7
+    }
+  ],
+  "editor_note": "开源权重与算力基建同日推进，模型能力之外，存储、安全与组织落地流程正成为新的竞争焦点。",
+  "keywords": [
+    "开源权重",
+    "AI 基础设施",
+    "智能体",
+    "AI 安全",
+    "语音克隆",
+    "巴西大选",
+    "委内瑞拉",
+    "MoE"
+  ]
+}
