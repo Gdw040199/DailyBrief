@@ -1,0 +1,74 @@
+{
+  "hero_headline": "Anthropic 递交招股书，本地模型与 agent 工程提速",
+  "daily_overview": "技术主线是资本与工程同时加速：Anthropic 递交 IPO 招股书，335 页中约百页用于风险披露；其工程师披露 Claude 平台将模型「大脑」与 agent「双手」分离的设计。模型侧，Nemotron 3.5 Bolt 以 74B 总参、9B 激活跑在 24GB 内存设备上，S3AC 则恢复 token 级信用分配；GitHub 上「去 AI 味」的设计 skill 走热。时政方面，以色列大选投票率创二十余年新高，出口民调无明确赢家，阿拉伯政党表现强劲；刚果（金）埃博拉疫情累计病例破万；姆巴佩因涉华言论道歉并失去三家中国企业合作。",
+  "tech_briefs": [
+    {
+      "title": "Anthropic 递交 IPO 招股书，风险披露约占百页",
+      "url": "https://www.technologyreview.com/2026/10/26/1147672/will-the-real-anthropic-please-stand-up/",
+      "source": "MIT Tech Review AI",
+      "summary": "在数周猜测后，Anthropic 正式递交 IPO 招股书，文件共 335 页，其中约 100 页用于披露风险因素，市场关注其估值与合规、算力成本的平衡。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "Claude 平台工程：模型「大脑」与 agent「双手」分离",
+      "url": "https://latent.space/p/opus55/",
+      "source": "Latent Space",
+      "summary": "Anthropic 工程师在播客中讲解 Opus 5.5 与 Claude 平台：把模型的「大脑」与 agent 的「双手」拆开设计，并涉及 API 扩容与托管 agent 的可靠性工程。（多家报道）",
+      "importance": 7
+    },
+    {
+      "title": "Nemotron 3.5 Bolt：24GB 内存可跑的多模态模型",
+      "url": "https://arxiv.org/abs/2610.33039",
+      "source": "arXiv Papers",
+      "summary": "混合 Mamba-Transformer 视觉语言模型，74B 总参、9B 激活，采用 Star Elastic 等技术，可在 24GB 内存设备上运行，按每 GB 显存的速度与智能为本地 agentic 负载做优化。",
+      "importance": 7
+    },
+    {
+      "title": "S3AC：为 LLM 推理恢复 token 级信用分配",
+      "url": "https://huggingface.co/papers/2610.35518",
+      "source": "HuggingFace Trending Papers",
+      "summary": "无 critic 的 RLVR 方法省去昂贵的 critic 训练，却只能做提示级优势估计。S3AC 提出稳定、可选择且可扩展的 actor-critic 框架，恢复细粒度信用分配并兼顾训练稳定性与规模。",
+      "importance": 6
+    },
+    {
+      "title": "hallmark：给 AI 编程工具加一份「反 AI 味」设计 skill",
+      "url": "https://github.com/Nutlope/hallmark",
+      "source": "GitHub Trending",
+      "summary": "面向 Claude Code、Cursor、Codex 的设计 skill，专门抑制生成界面常见的「AI 味」套路，让排版、配色与细节更接近真实设计师判断，适合用 AI 搭前端又不想成品千篇一律的开发者。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "以色列大选出口民调无明确赢家，投票率创新高",
+      "url": "https://www.nytimes.com/live/2026/10/27/world/israel-elections",
+      "source": "NYT World",
+      "summary": "以色列大选投票率创二十余年新高，出口民调显示无明显赢家。前军方总参谋长艾森科特领导的党派联盟力争击败内塔尼亚胡，阿拉伯政党表现强劲，计票仍在进行。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "刚果（金）埃博拉疫情累计病例破万",
+      "url": "https://www.npr.org/2026/10/27/g-s1-150136/ebola-outbreak-milestone-democratic-republic-congo-vaccine",
+      "source": "NPR World",
+      "summary": "当前埃博拉疫情最初在刚果（金）被发现，累计患者已达 1 万人，传播速度很快，官方与防疫机构正评估疫苗与隔离措施能否遏制扩散。",
+      "importance": 8
+    },
+    {
+      "title": "姆巴佩就涉华言论道歉，三家中国企业停止合作",
+      "url": "https://www.dw.com/zh/姆巴佩就-中国独裁者-言论道歉-赛事、广告-全面叫停/a-79779570?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "足球明星姆巴佩因一番疑似将前中共领袖称为“独裁者”的言论引发争议，在遭到舆论抨击并失去三家中国企业的品牌合作后发表公开道歉。",
+      "importance": 6
+    }
+  ],
+  "editor_note": "IPO 文件里那约百页风险披露，比任何发布会都更直白：模型公司的估值正越来越取决于算力与合规成本。",
+  "keywords": [
+    "Anthropic IPO",
+    "Claude 平台",
+    "Nemotron 3.5 Bolt",
+    "RLVR",
+    "设计 skill",
+    "以色列大选",
+    "埃博拉疫情"
+  ]
+}
