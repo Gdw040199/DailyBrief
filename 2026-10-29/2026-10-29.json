@@ -1,0 +1,74 @@
+{
+  "hero_headline": "DeepMind 同日发布 Gemini 4 与 Genie 4，巴西以色列政局生变",
+  "daily_overview": "技术侧，DeepMind 同日放出前沿模型 Gemini 4 Carbon 与世界模型 Genie 4，把竞争焦点从语言能力推向实时世界模拟；OpenAI 把模型与智能体接入 ServiceNow 企业流程，Anthropic 宣布取消编程面试，显示「写代码」这项技能正被重新定价。开发者工具端，JetBrains 推出可围绕个人习惯自适应的轻量 IDE thinkrail。时政侧，巴西败选候选人博索纳罗抵美后自称「真正的当选者」，以色列大选无阵营过半、组阁前景不明，西班牙高铁追尾脱轨致至少 64 人遇难，铁路市场化后的线路维护问题被推到台前。",
+  "tech_briefs": [
+    {
+      "title": "DeepMind 发布新一代前沿模型 Gemini 4 Carbon",
+      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 发布博客介绍新一代前沿模型 Gemini 4 Carbon，但正文摘要未披露具体能力、参数规模或开放时间等细节，实际表现仍需等待技术报告与第三方评测。",
+      "importance": 9
+    },
+    {
+      "title": "Genie 4 世界模型发布：主打实时模拟真实感",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 推出 Genie 4 世界模型，称其在实时模拟中实现前所未有的真实感，可用于生成可交互的虚拟环境；同日 TLDR AI 简报亦将其列为头条议题之一（多家报道）。",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI 与 ServiceNow 扩大企业工作流合作",
+      "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+      "source": "OpenAI News",
+      "summary": "双方扩大合作：OpenAI 的模型与智能体将进入 ServiceNow 平台及其业务流程，ServiceNow 的工作流则接入 ChatGPT 与 Codex，指向企业软件与模型厂商的深度捆绑。",
+      "importance": 8
+    },
+    {
+      "title": "Anthropic 取消编程面试，称更看重进取心",
+      "url": "https://latent.space/p/ainews-anthropic-ends-coding-interviews-hunger-beats-tenure/",
+      "source": "Latent Space",
+      "summary": "Anthropic 宣布取消编程面试，理由是编程能力已可由 AI 辅助解决，招聘将更侧重候选人的进取心而非资历，报道以「Hunger beats tenure」概括这一转向。",
+      "importance": 7
+    },
+    {
+      "title": "JetBrains 开源 thinkrail：会自我定制的轻量 IDE",
+      "url": "https://github.com/JetBrains/thinkrail",
+      "source": "GitHub Trending",
+      "summary": "JetBrains 的轻量 IDE，主打 vibe coding：内置 pi 智能体，界面与工作流会围绕个人编码习惯自适应调整而非固定布局。它试图解决自然语言驱动开发缺少真正 IDE 调试与工程能力的问题。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "博索纳罗抵美后否认出逃，自称「真正当选者」",
+      "url": "https://www.bbc.co.uk/news/articles/c6kglwe4lxwzo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "巴西败选候选人弗拉维奥·博索纳罗在巴西当局要求其交出护照后抵达迈阿密，否认出逃，自称政变与政治迫害的受害者，并再次提出未经证实的「选举舞弊」指控（多家报道）。",
+      "importance": 8
+    },
+    {
+      "title": "以色列大选无阵营过半，组阁谈判前景不明",
+      "url": "https://www.nytimes.com/2026/10/28/world/middleeast/israel-government-formation-negotiation.html",
+      "source": "NYT World",
+      "summary": "以色列选票仍在统计，初步结果显示内塔尼亚胡领导的右翼联盟与艾森科特领衔的反对派阵营均未获得过半议席，各党将展开组阁博弈；本届选举投票率创下纪录（多家报道）。",
+      "importance": 8
+    },
+    {
+      "title": "西班牙高铁追尾脱轨，至少 64 人遇难",
+      "url": "https://www.dw.com/zh/西班牙高铁再酿惨剧-追尾脱轨至少64人遇难/a-79789821?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "西班牙托莱多省乌尔达附近，一列国有 RENFE 高铁追尾一列停车的私营 IRYO 列车，两节车厢脱轨坠下路堤，至少 64 人死亡、80 人受伤；铁路工会质疑市场化后客流激增而维护未跟上（多家报道）。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "模型迭代与企业落地同步加速，评估与治理讨论仍显滞后；时政条目多为选举与事故后续，细节应以官方通报为准。",
+  "keywords": [
+    "Gemini 4",
+    "Genie 4",
+    "OpenAI",
+    "AI 智能体",
+    "博索纳罗",
+    "以色列大选",
+    "西班牙高铁事故"
+  ]
+}
