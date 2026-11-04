@@ -1,0 +1,74 @@
+{
+  "hero_headline": "民主党夺回国会 特朗普剩余任期受制",
+  "daily_overview": "技术侧，AI 的落点正从模型能力转向工程与治理：开源项目为编码 agent 补上跨会话记忆与并行隔离，研究尝试让模型直接读写权重、用「逆向博弈论」的激励机制约束行为，DeepMind 则把智能体推进到药物发现等具体科研流程。时政侧，美国中期选举成为最大变量：民主党夺回国会控制权，得州、南卡、缅因等州参院席位翻蓝，外界关注特朗普剩余任期的政策空间；欧洲围绕援乌与和谈密集外交，乌美俄三方会谈定于阿布扎比举行。",
+  "tech_briefs": [
+    {
+      "title": "开源工具为编码 agent 补上跨会话记忆",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "source": "GitHub Trending",
+      "summary": "该工具记录 agent 在会话中的全部操作，用 AI 压缩为摘要，并在后续会话自动注入相关上下文，解决每次重开会话都要重复交代背景的问题，面向长期使用 Claude Code 等编码 agent 的开发者。",
+      "importance": 7
+    },
+    {
+      "title": "研究称大模型可直接读写神经网络权重",
+      "url": "https://latent.space/p/ainews-llms-can-read-write-neural-network-weights-weight-space-programming-cuts-autoresearch-out-of/",
+      "source": "Latent Space",
+      "summary": "Latent Space 的 AINews 汇总称，大模型可直接读写神经网络权重，即「权重空间编程」；案例包括编辑 Qwen 权重以减少推理循环，另涉及 DeepSeek 超级智能体原型与 GDPx 基准。",
+      "importance": 8
+    },
+    {
+      "title": "「逆向博弈论」尝试以激励约束 AI 行为",
+      "url": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
+      "source": "MIT Tech Review AI",
+      "summary": "麻省理工科技评论介绍「逆向博弈论」思路：不依赖外部硬性限制，而是设计机制让能力更强的模型在自身激励下选择遵守规则，作为 AI 对齐与管控的一条新路径。",
+      "importance": 7
+    },
+    {
+      "title": "DeepMind 用智能体加速药物发现流程",
+      "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+      "source": "DeepMind Blog",
+      "summary": "谷歌 DeepMind 介绍基于 Google Antigravity 的智能体化学信息学方案，结合其「化学信息学技能」加速药物发现流程、检索化合物，并提出新型刚性大环分子结构。",
+      "importance": 6
+    },
+    {
+      "title": "研究系统比较通用 AI 的模型与策略路由",
+      "url": "https://huggingface.co/papers/2611.05275",
+      "source": "HuggingFace Trending Papers",
+      "summary": "论文主张通用智能不必由单一模型包揽全部能力，而应把异构专用模型编排成生态，并系统比较不同路由策略在跨领域、跨模态任务上的表现与设计取舍。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "民主党夺回国会控制权 中期选举现多项首次",
+      "url": "https://www.bbc.co.uk/news/articles/cmr4y92rgd9po?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "美国中期选举中民主党拿下国会控制权，覆盖特朗普总统任期的剩余时间；众议院435席全部改选，参议院改选100席中的35席，部分州同步就堕胎权、移民权等议题公投并举行州长选举。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "得州、南卡、缅因参院席位易手民主党",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/republicans-fuming-after-democrat-talarico-flips-texas-senate-blue?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "民主党人塔拉里科在得州拿下近40年来首个该州参议院席位；南卡罗来纳州近30年首度选出民主党参议员；缅因州杰克逊击败共和党参议员柯林斯。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "欧盟将就援乌举行会谈 泽连斯基访德",
+      "url": "https://www.theguardian.com/world/live/2026/nov/04/eu-ukraine-russia-france-germany-us-nato-europe-latest-news",
+      "source": "The Guardian",
+      "summary": "欧盟委员会将在马德里与美国、法国、德国、英国、北约及世界银行磋商支持乌克兰；泽连斯基赴柏林会晤德国总理默茨，称乌美俄三方会谈定于11月10日至11日在阿布扎比举行。（多家报道）",
+      "importance": 8
+    }
+  ],
+  "editor_note": "同日信号颇为一致：AI 竞争转向工程细节与制度设计，而选举结果决定了政策时间窗口。",
+  "keywords": [
+    "中期选举",
+    "AI 智能体",
+    "模型对齐",
+    "权重空间编程",
+    "药物发现",
+    "乌克兰和谈",
+    "开源工具"
+  ]
+}
