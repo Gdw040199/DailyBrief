@@ -1,0 +1,74 @@
+{
+  "hero_headline": "中期选举震动AI股，开源模型与智能体基准密集发布",
+  "daily_overview": "美国中期选举成为当日最大变量：民主党大胜后，市场担忧AI监管与发展节奏生变，科技股先遭抛售、随后部分反弹，欧洲与亚洲股市跟跌，「AI 泡沫」争论再起。地缘与贸易层面，美方公开敦促中国落实特朗普与习近平在釜山达成的关税与技术限制共识；巴拉圭因主要银行倒闭引发储户挤兑，总统遭弹劾罢免。技术侧则延续高频迭代：DeepMind 推出低成本长视频模型 Gemini Omni 1.2 Flash，Inkling 2 Small 以 68 小时、12 万亿 token 完成训练，英伟达开源面向 LLM 的语义推理框架，OpenAI 则把评测推进到湿实验室与数学建模等真实科研环节，开源编辑器 Zed 继续受到开发者关注。",
+  "tech_briefs": [
+    {
+      "title": "Zed：Rust 编写的多人协作代码编辑器",
+      "url": "https://github.com/zed-industries/zed",
+      "source": "GitHub Trending",
+      "summary": "由 Atom 与 Tree-sitter 作者打造的编辑器，用 Rust 编写并采用原生 GPU 渲染，主打低输入延迟，支持多人实时同屏编辑与 AI 辅助。对追求响应速度的开发者与需要远程结对编程的团队，是可替代传统编辑器的选项。",
+      "importance": 7
+    },
+    {
+      "title": "英伟达开源 auto-ontology 语义推理框架",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "source": "GitHub Trending",
+      "summary": "该 Python 框架在数据之上构建语义化、图结构的推理层，为 LLM 提供确定性查询生成、更优上下文检索与可解释推理路径。适合把企业数据接入大模型、又要求结果可控可追溯的 RAG 与智能体场景。",
+      "importance": 7
+    },
+    {
+      "title": "Inkling 2 Small 以 68 小时完成 12 万亿 token 训练",
+      "url": "https://latent.space/p/ainews-inkling-2-small-17a-594b-trained-in-68-hours-on-12t-tokens-beating-muse-spark/",
+      "source": "Latent Space",
+      "summary": "据 11 月 5 日消息，Inkling 2 Small（17A-594B）在 68 小时内以 12 万亿 token 完成训练，性能超过 Muse Spark；同期 METR 发布针对 Anthropic AI 研究的调研报告。",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI 推出湿实验室智能体基准 BioBasicsBench",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "source": "OpenAI News",
+      "summary": "BioBasicsBench 含 100 项任务，用于衡量 AI 智能体解读原始实验数据、处理日常湿实验室科研工作的能力，把评测从文本问答推进到真实实验场景。",
+      "importance": 7
+    },
+    {
+      "title": "DeepMind 发布 Gemini Omni 1.2 Flash",
+      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+      "source": "DeepMind Blog",
+      "summary": "谷歌 DeepMind 推出 Gemini Omni 1.2 Flash，主打更快的推理速度与更低的调用成本，并支持生成更长的视频片段，定位为高频、批量场景下的性价比选择。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "民主党中期选举大胜后全球股市下挫",
+      "url": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "民主党在中期选举中大胜后，投资者担忧AI发展放缓，美国科技股遭抛售、市值蒸发数万亿美元，欧亚股市周五跟跌，随后AI相关股票出现回升，分析师预计仍有抛售压力。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "美国敦促中国履行釜山贸易协议承诺",
+      "url": "https://www.aljazeera.com/economy/2026/11/6/us-urges-china-to-honour-busan-trade-deal-commitments?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "美方要求中国落实特朗普与习近平在釜山达成的贸易协议承诺。该协议旨在缓解关税与技术限制，后续进展取决于中方是否兑现相关条款。",
+      "importance": 8
+    },
+    {
+      "title": "巴拉圭总统因银行倒闭危机遭弹劾免职",
+      "url": "https://www.nytimes.com/2026/11/06/world/americas/paraguay-president-removed-ueno.html",
+      "source": "NYT World",
+      "summary": "巴拉圭一家与政府关系密切的主要银行倒闭，数百万储户无法取用存款；总统于周五遭弹劾并被免职，该国正面临金融与政治双重危机。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "市场对政策风向的反应快于技术本身；开源模型、智能体评测与推理框架的进展，才是更值得长期跟踪的变量。",
+  "keywords": [
+    "美国中期选举",
+    "AI股震荡",
+    "开源模型",
+    "智能体评测",
+    "釜山协议",
+    "巴拉圭弹劾",
+    "代码编辑器"
+  ]
+}
