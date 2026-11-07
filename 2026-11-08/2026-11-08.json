@@ -1,0 +1,74 @@
+{
+  "hero_headline": "克拉科夫枪击致 6 死 16 伤 以色列组阁权易手",
+  "daily_overview": "技术侧，Inkling 2 Small 以稀疏结构 68 小时完成 12T token 训练，DeepMind 推出长视频模型 Gemini Omni 1.2 Flash，英伟达开源 Cosmos 3 世界模型；OpenAI 发布湿实验室基准 BioBasicsBench，Cloudflare 把安全审计封装成编码 agent 技能。时政侧，克拉科夫枪击致 6 死 16 伤，以色列总统授权反对派领袖艾森科特组阁，特朗普在中期选举受挫后撤换白宫幕僚长。",
+  "tech_briefs": [
+    {
+      "title": "Inkling 2 Small 以 17A-594B 结构 68 小时完成训练",
+      "url": "https://latent.space/p/ainews-inkling-2-small-17a-594b-trained-in-68-hours-on-12t-tokens-beating-muse-spark/",
+      "source": "Latent Space",
+      "summary": "据 Latent Space，Inkling 2 Small 采用 17A-594B 参数结构，在 68 小时内以 12T token 完成训练，性能超过 Muse Spark；同期内容还包括 METR 对 Anthropic AI 研究的调研。",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind 发布 Gemini Omni 1.2 Flash 模型",
+      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 推出 Gemini Omni 1.2 Flash，主打速度快、成本低，并支持处理更长的视频片段；官方未披露具体性能与价格数字。",
+      "importance": 8
+    },
+    {
+      "title": "英伟达开源 Cosmos 3 交互式世界模拟模型",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+      "source": "Hugging Face Blog",
+      "summary": "英伟达在 Hugging Face 发布 Cosmos 3 系列开放模型，面向交互式世界模拟，可用于生成能对环境动作给出反馈的仿真场景；官方暂未公布参数规模与评测细节。",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI 推出湿实验室智能体基准 BioBasicsBench",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "source": "OpenAI News",
+      "summary": "OpenAI 发布 BioBasicsBench，含 100 项任务，用于衡量 AI 智能体解读原始实验数据、处理日常湿实验室科研工作的能力，补齐生物实验场景的评测缺口。",
+      "importance": 7
+    },
+    {
+      "title": "Cloudflare 开源多阶段安全审计 agent 技能",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "source": "GitHub Trending",
+      "summary": "Cloudflare 开源 security-audit-skill，把安全审计拆成多个阶段，输出可机器读取、经独立验证的漏洞结论。它面向 AI 编码流程，让 agent 在写码同时完成自动化审查，减少人工复核成本。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "克拉科夫集市广场枪击致 6 死 16 伤",
+      "url": "https://www.theguardian.com/world/2026/nov/07/krakow-poland-shooting-market-square-deaths-gunman",
+      "source": "The Guardian",
+      "summary": "波兰克拉科夫集市广场发生随机枪击，造成 6 人死亡、16 人受伤，另在嫌疑人家中发现 3 具遗体。内政部长称嫌疑人受极右意识形态影响，持极端民族主义观点，枪手已被击中送医。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "以色列总统授权艾森科特尝试组阁",
+      "url": "https://www.bbc.co.uk/news/articles/cmy8367lj5xlo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "以色列总统赫尔佐格将组阁授权交给反对派领袖、前军方总参谋长艾森科特。上周选举中内塔尼亚胡阵营与其对手均未取得议会多数，组阁前景仍不明朗。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "中期选举受挫后特朗普撤换白宫幕僚长",
+      "url": "https://www.dw.com/zh/中期选举惨败后首次人事调整：特朗普换掉白宫幕僚长/a-79884880?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "共和党在中期选举遭遇重挫后，特朗普撤换白宫幕僚长怀尔斯，由副幕僚长米勒接任。米勒是强硬移民政策的主要推手，此举被视为 MAGA 阵营仍主导白宫的信号。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "模型迭代更强调成本与可验证性，agent 的工具链与安全边界同步收紧；时政则见暴力事件与权力重组交织，短期仍会发酵。",
+  "keywords": [
+    "Inkling 2 Small",
+    "Gemini Omni 1.2 Flash",
+    "AI agent 安全",
+    "世界模型",
+    "克拉科夫枪击",
+    "以色列组阁",
+    "白宫幕僚长"
+  ]
+}
