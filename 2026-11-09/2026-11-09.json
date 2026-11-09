@@ -1,0 +1,75 @@
+{
+  "hero_headline": "英伟达开放世界模型，华为纽约受审牵动全球",
+  "daily_overview": "技术侧，英伟达开放 Cosmos 3 交互式世界模拟模型，DeepMind 推出更廉价的 Gemini Omni 1.2 Flash，OpenAI 则同时发布安全合作与湿实验室评测基准，AI 竞争正从单点模型能力转向基础设施与评测标准。开源社区出现裸金属 GPU 集群管理平面，瞄准自建算力痛点。时政侧，华为在纽约被控窃取技术与规避制裁出庭受审，英伟达就黄仁勋遭外国情报活动报道启动独立调查，伊拉克库尔德地区气田遇袭导致大面积断电。算力供应链与地缘政治在同一天被同时推上桌面。",
+  "tech_briefs": [
+    {
+      "title": "英伟达开放 Cosmos 3 世界模拟模型",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+      "source": "Hugging Face Blog",
+      "summary": "英伟达发布 Cosmos 3 系列开放模型，面向交互式世界模拟，可生成并预测物理环境随动作演化的状态，主要用于机器人与自动驾驶的仿真和合成数据训练。",
+      "importance": 8
+    },
+    {
+      "title": "Gemini Omni 1.2 Flash 支持更长视频片段",
+      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 发布 Gemini Omni 1.2 Flash，主打推理更快、成本更低，并支持处理更长时长的视频片段，延续多模态模型向轻量低价演进的路线。",
+      "importance": 7
+    },
+    {
+      "title": "OpenAI 发布湿实验室科研智能体基准",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "source": "OpenAI News",
+      "summary": "OpenAI 推出 BioBasicsBench，含 100 项任务，用于衡量 AI 代理解读原始实验数据、处理日常湿实验室科研工作的能力，把评测从文本问答推向真实实验流程。",
+      "importance": 7
+    },
+    {
+      "title": "首个可验证数学建模智能体基准发布",
+      "url": "https://huggingface.co/papers/2611.08237",
+      "source": "HuggingFace Trending Papers",
+      "summary": "论文提出首个终端式、可验证的数学建模基准，要求智能体完成假设、建模、求解与建议全流程，评分兼顾结果接近度与物理可行性，弥补只评片段或依赖人工打分的缺陷。",
+      "importance": 6
+    },
+    {
+      "title": "开源 GPU 裸金属 Kubernetes 管理平面 NVKE",
+      "url": "https://github.com/dsx-ai-factory/nvke",
+      "source": "GitHub Trending",
+      "summary": "NVKE 是面向裸金属环境的 GPU Kubernetes 管理平面，统一纳管 GPU 节点并处理调度与运维，填补公有云托管 K8s 之外的空白，适合自建训练与推理集群的基础设施团队。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "华为在纽约受审，被控窃密与规避制裁",
+      "url": "https://www.npr.org/2026/11/08/nx-s1-6030670/the-worlds-largest-telecoms-firm-is-on-trial-and-the-outcome-has-global-implications",
+      "source": "NPR World",
+      "summary": "全球最大电信设备商华为在纽约开庭受审，被控窃取美国技术并规避美国制裁，案件结果被认为对全球电信与出口管制格局具有影响。",
+      "importance": 8
+    },
+    {
+      "title": "英伟达就黄仁勋遭情报活动报道启动调查",
+      "url": "https://www.theguardian.com/us-news/2026/nov/08/nvidia-jensen-huang-investigation",
+      "source": "The Guardian",
+      "summary": "英伟达宣布启动独立调查。此前有报道称，创始人兼 CEO 黄仁勋成为外国情报活动目标，并与一名向北京传递信息的中国女商人关系密切。",
+      "importance": 8
+    },
+    {
+      "title": "伊拉克库尔德地区气田遇袭停产",
+      "url": "https://www.aljazeera.com/news/2026/11/9/drone-attack-suspends-production-at-iraqs-khor-mor-gasfield?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "伊拉克库尔德地区霍尔莫尔气田遭无人机袭击，生产被迫暂停，导致伊拉克北部库尔德地区超过七成用户断电。",
+      "importance": 6
+    }
+  ],
+  "editor_note": "模型发布依旧密集，但真正影响长期格局的是算力基础设施归属与评测标准制定权，值得持续跟踪。",
+  "keywords": [
+    "英伟达 Cosmos 3",
+    "Gemini Omni 1.2 Flash",
+    "湿实验室基准",
+    "数学建模基准",
+    "GPU 裸金属集群",
+    "华为纽约受审",
+    "黄仁勋调查",
+    "库尔德气田断电"
+  ]
+}
