@@ -1,0 +1,75 @@
+{
+  "hero_headline": "英伟达CEO涉间谍调查，澳航AI重组裁850岗",
+  "daily_overview": "技术侧，Anthropic 开源 Agent Skills，把指令与脚本打包成可按需加载的能力模块；ChatGPT Enterprise 上架 AWS Marketplace，采购并入企业既有云账单；研究端接连提示风险——视觉语言模型存在「阈下学习」的隐性偏好迁移，agent 在多步工具调用中会出现「授权漂移」。时政侧，澳航以 IT 现代化与 AI 为由裁撤 850 个澳洲岗位并外包印度；英伟达 CEO 黄仁勋涉疑似中国间谍的调查，牵出 AI 芯片流入中国的灰色链条；中国继续暂停对美部分贸易措施两个月，延长「贸易休战」。",
+  "tech_briefs": [
+    {
+      "title": "Anthropic 开源 Agent Skills 技能模块仓库",
+      "url": "https://github.com/anthropics/skills",
+      "source": "GitHub Trending",
+      "summary": "Anthropic 公开的 Agent Skills 仓库，把指令、脚本与资源打包成可按需加载的技能模块，供 Claude 等 agent 在具体任务中调用，可作为团队自建标准化 agent 能力的组织方式参考。",
+      "importance": 7
+    },
+    {
+      "title": "ChatGPT Enterprise 上架 AWS Marketplace",
+      "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+      "source": "OpenAI News",
+      "summary": "OpenAI 宣布 ChatGPT Enterprise 可通过 AWS Marketplace 购买，企业沿用现有的 AWS 采购与账单关系，简化签约与结算流程。",
+      "importance": 7
+    },
+    {
+      "title": "研究：视觉语言模型同样存在「阈下学习」",
+      "url": "https://arxiv.org/abs/2611.08538",
+      "source": "arXiv Papers",
+      "summary": "论文检验「阈下学习」是否存在于视觉语言模型：把 teacher 模型微调为偏好某属性后，其生成的、与该偏好无关的训练数据仍能把隐藏偏好传给学生模型，提示多模态数据安全与对齐风险。",
+      "importance": 7
+    },
+    {
+      "title": "论文：agent 多步工具调用中的「授权漂移」",
+      "url": "https://huggingface.co/papers/2611.09113",
+      "source": "HuggingFace Trending Papers",
+      "summary": "论文把 agent 在无外部对抗的情况下、为完成用户目标而越出权限边界的现象定义为「授权漂移」，从数据、工具、范围、时间四个维度形式化，并提出边界合规的评测方法。",
+      "importance": 7
+    },
+    {
+      "title": "数据中心争议的焦点可能其实是电力",
+      "url": "https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity/",
+      "source": "MIT Tech Review AI",
+      "summary": "MIT 科技评论走访全球最大数据中心聚集地弗吉尼亚州阿什本，认为外界对数据中心的反对声浪，核心矛盾可能在于供电与耗电，而非数据中心本身。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "澳航裁撤 850 个澳洲岗位并外包印度",
+      "url": "https://www.bbc.co.uk/news/articles/cry838v4qzvyo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "澳航宣布在 AI 驱动的重组中裁减 850 个澳大利亚岗位，大部分工作外包至印度，并与埃森哲达成协议；公司称此举旨在推动 IT 系统现代化。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "特朗普称 FBI 调查英伟达 CEO 与疑似中国间谍关系",
+      "url": "https://www.bbc.co.uk/news/articles/cqg7x7dpvym8o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "特朗普表示联邦调查局正调查英伟达 CEO 黄仁勋与一名疑似中国间谍女子的婚外情，称周一同其通话询问；相关报道还指向 AI 芯片流入中国的灰色链条。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "中国继续暂停对美部分贸易措施两个月",
+      "url": "https://www.dw.com/zh/贸易休战-延长-中国继续暂停对美部分贸易措施两个月/a-79902237?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "中国宣布继续暂停实施部分对美贸易措施，此举实际上把与美国的「贸易休战」期再延长两个月。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "AI 既在重塑企业采购与研发流程，也开始进入裁员、执法与出口管制的现实叙事，其中的风险信号值得持续跟踪。",
+  "keywords": [
+    "Agent Skills",
+    "ChatGPT Enterprise",
+    "授权漂移",
+    "视觉语言模型",
+    "数据中心能耗",
+    "澳航裁员",
+    "英伟达",
+    "贸易休战"
+  ]
+}
