@@ -1,0 +1,74 @@
+{
+  "hero_headline": "Fable 5.2 重夺模型榜首，美俄乌重启三方会谈",
+  "daily_overview": "技术上，Anthropic 在 IPO 路演当日发布 Claude Fable 5.2，重夺全球模型榜首，并把输入价格降至每百万 token 8 美元；NaiveAI 宣称每秒可生成 2100 token、编码质量与 DeepSeek 相当，推理速度的竞争正在升温。Agent 工程化继续落地，Anthropic 公开 Agent Skills 仓库，把编码等能力整理成可复用的技能。基础设施方面，美国围绕数据中心的争议被指实质是电力供给问题。研究方面，有论文认为，视频大模型的计数失败源于表征读取失灵，并非缺少客体永久性。时政方面，美俄乌在阿布扎比重启三方会谈；美众议院暂阻弹劾防长赫格塞思；联邦法官允许特朗普对 BBC 的百亿美元诽谤诉讼继续推进。",
+  "tech_briefs": [
+    {
+      "title": "Claude Fable 5.2 发布并重夺模型榜首",
+      "url": "https://latent.space/p/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins/",
+      "source": "Latent Space",
+      "summary": "Fable 5.2 与 Mythos 5.2 在 Anthropic IPO 路演当日发布，Fable 5.2 重夺全球第一 LLM 位置；其输入价格从每百万 token 10 美元降至 8 美元。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "Anthropic 开源 Agent Skills 技能仓库",
+      "url": "https://github.com/anthropics/skills",
+      "source": "GitHub Trending",
+      "summary": "Anthropic 官方公开 Agent Skills 仓库，收录可复用的技能定义，用于扩展 Claude 等智能体能力。开发者可参照这些标准化技能，为编码、文档处理等任务配置工作流，减少重复的提示工程。",
+      "importance": 7
+    },
+    {
+      "title": "NaiveAI 实测每秒 2100 token，编码对标 DeepSeek",
+      "url": "https://latent.space/p/naiveai/",
+      "source": "Latent Space",
+      "summary": "Latent Space 实测称，NaiveAI 的生成速度可达每秒 2100 个 token，有望登上 Artificial Analysis 速度榜首；在编码任务上，其质量与 DeepSeek 相当。",
+      "importance": 7
+    },
+    {
+      "title": "美国数据中心争议被指实质是电力问题",
+      "url": "https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity/",
+      "source": "MIT Tech Review AI",
+      "summary": "MIT 科技评论认为，美国选民对数据中心的反弹，实质指向电力供给与电价；作者前往被称为全球最大「数据中心巷」的弗吉尼亚州阿什本实地走访。",
+      "importance": 7
+    },
+    {
+      "title": "研究：视频大模型计数失败源于读取环节",
+      "url": "https://arxiv.org/abs/2611.09949",
+      "source": "arXiv Papers",
+      "summary": "Video LLM 在计数物体穿越屏幕次数时明显失败，此前通常被归因于缺少客体永久性。作者用可控合成测试床与独立标签证明，计数信号仍在表征中，故障出在读取环节，并给出诊断与修复方案。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美众议院暂时阻止弹劾防长赫格塞思",
+      "url": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "美国众议院阻止了针对国防部长赫格塞思的弹劾动议。特朗普对结果表示欢迎，称其为「伟大的美国爱国者」，民主党明年仍可再次提出。（多家报道）",
+      "importance": 7
+    },
+    {
+      "title": "美俄乌在阿布扎比重启三方会谈",
+      "url": "https://www.dw.com/zh/美俄乌和谈首日：美方称已有-一些好主意/a-79910805?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "美俄乌代表在阿布扎比举行今年 2 月以来首次三方会谈，首日持续四小时。俄方要求乌军撤出四州并放弃加入北约，乌方拒绝交出未被占领的领土，欧洲则反对借和谈重塑安全架构。",
+      "importance": 8
+    },
+    {
+      "title": "联邦法官允许特朗普对 BBC 诽谤诉讼推进",
+      "url": "https://www.theguardian.com/us-news/2026/nov/10/trump-10bn-defamation-lawsuit-bbc-allowed",
+      "source": "The Guardian",
+      "summary": "联邦法官孔茨裁定，特朗普对 BBC 提起的 100 亿美元诽谤诉讼可继续推进，部分驳回 BBC 的撤诉动议。",
+      "importance": 6
+    }
+  ],
+  "editor_note": "模型迭代与降价同步发生，Agent 能力正被工程化封装；时政焦点仍在谈判桌与法庭，短期信号多于定论。",
+  "keywords": [
+    "Claude Fable 5.2",
+    "Agent Skills",
+    "AI 数据中心",
+    "算力与电力",
+    "美俄乌会谈",
+    "赫格塞思",
+    "视频大模型"
+  ]
+}
