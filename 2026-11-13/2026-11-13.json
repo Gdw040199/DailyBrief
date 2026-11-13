@@ -1,0 +1,75 @@
+{
+  "hero_headline": "谷歌推决策模型API，英伟达人事与芯片管制引关注",
+  "daily_overview": "11 月 12 日，AI 竞争从「生成」转向「判断」：谷歌发布 Gemini Decisions API，单次调用可并行评估上千个判定问题；OpenAI 开源 Codex Security，把漏洞检测接入开发流水线，模型侧则出现直接编辑权重的修复思路。芯片与地缘政治交织：英伟达称防走私追踪技术可行，黄仁勋辞任 CEO 与对华出口管制之争同步发酵；美国特使赴克里姆林宫会见普京，特朗普称海湾国家要求暂缓打击伊朗。同日微软 365 全球中断逾五小时，暴露云依赖风险。",
+  "tech_briefs": [
+    {
+      "title": "谷歌发布 Gemini Decisions API",
+      "url": "https://x.com/GoogleAIStudio/status/2120589299037147177",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "谷歌发布 Gemini Decisions API，由 Gemini Decision 1 模型驱动，单次调用可并行评估最多 1000 个是/否、多选与评分标准类问题，覆盖文本、图像、音频、视频，标志其进入决策模型市场。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "英伟达称芯片防走私追踪技术可行",
+      "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
+      "source": "MIT Tech Review AI",
+      "summary": "英伟达代表向伊利诺伊州众议员福斯特表示，《芯片安全法案》要求的防走私追踪措施在技术上可以实现；与此同时，一个行业组织公开质疑该措施是否具备可行性。",
+      "importance": 8
+    },
+    {
+      "title": "微软 365 全球中断逾五小时后恢复",
+      "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+      "source": "The Guardian",
+      "summary": "微软发生全球性服务中断，Outlook、Teams、Word、Excel 等 Microsoft 365 应用受影响超过五小时，全球近 13 万用户报告无法访问，公司称恢复流程已经启动。",
+      "importance": 7
+    },
+    {
+      "title": "OpenAI 开源 Codex Security 审计工具",
+      "url": "https://github.com/openai/codex-security",
+      "source": "GitHub Trending",
+      "summary": "OpenAI 开源 Codex Security，提供 CLI 与 TypeScript SDK，用 Codex 模型发现、验证并修复代码漏洞，可嵌入本地或 CI 流水线，便于工程与安全团队把漏洞检测自动化。",
+      "importance": 7
+    },
+    {
+      "title": "Tree-Ising：用位级编辑直接修复模型权重",
+      "url": "https://huggingface.co/papers/2611.14210",
+      "source": "HuggingFace Trending Papers",
+      "summary": "论文提出 Tree-Ising，延续权重空间编程思路，无需梯度即可在权重上做位级 Ising 编辑，通过结构化搜索定位并翻转关键比特，替代此前需 158 轮交互、约 9000 万 token 的 agent 式修复流程。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "黄仁勋辞任英伟达 CEO，对华芯片政策受关注",
+      "url": "https://www.dw.com/zh/黄仁勋辞职-中企忧美收紧监管-忙抢租海外英伟达算力/a-79929183?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "据 DW 中文报道，英伟达宣布黄仁勋辞去总裁、CEO 及董事职务，由 CFO 科莱特·克雷斯任临时 CEO；美国参议员要求保留对华芯片出口相关文件，中国 AI 企业则加紧租用海外算力。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "美国特使在克里姆林宫会见普京",
+      "url": "https://www.npr.org/2026/11/12/nx-s1-6038809/us-envoys-meet-putin-russia-ukraine-war-talks",
+      "source": "NPR World",
+      "summary": "美国特使库什纳与维特科夫在阿布扎比乌克兰会谈后前往克里姆林宫，向俄罗斯总统普京通报情况，随后计划飞往爱尔兰与乌克兰总统泽连斯基会晤。",
+      "importance": 8
+    },
+    {
+      "title": "特朗普称海湾国家要求暂缓打击伊朗",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/11/13/iran-war-live-riyadh-china-discuss-houthis-as-group-claims-aramco-attacks?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "特朗普在白宫表示，海湾国家要求他暂停对伊朗的进一步打击。同一直播报道提到，利雅得与中国就胡塞武装问题进行讨论，该组织宣称袭击了阿美石油设施。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "决策模型把大模型从「生成」推向「判断」，真正值得追问的不是参数规模，而是判定如何被验证、复核与追责。",
+  "keywords": [
+    "Gemini Decisions API",
+    "英伟达",
+    "芯片出口管制",
+    "Codex Security",
+    "权重空间编辑",
+    "微软 365 中断",
+    "美俄会谈",
+    "伊朗局势"
+  ]
+}
