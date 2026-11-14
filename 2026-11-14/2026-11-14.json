@@ -1,0 +1,74 @@
+{
+  "hero_headline": "黄仁勋卸任英伟达CEO，谷歌发布Gemini 4",
+  "daily_overview": "技术方面，黄仁勋卸任英伟达CEO，首席财务官Colette Kress临时接任，公司今后走向成为最大不确定因素；谷歌发布Gemini 4 Hydrogen，主打速度与日常编码；OpenAI推出ChatGPT Wallet，为智能体代付设置授权与银行卡保护；阿里开源open-code-review，以规则流水线加LLM Agent做行级代码审查，llama.cpp升至1.0。时政方面，美国电信故障致全美航班停飞，澳赴美航班受波及；司法部查封朝鲜黑客视频诈骗用云设施，涉及4亿多美元。整体看，AI竞争重心正转向支付、审查与部署等基础设施。",
+  "tech_briefs": [
+    {
+      "title": "黄仁勋卸任英伟达CEO，CFO临时接任",
+      "url": "https://www.npr.org/2026/11/13/g-s1-153532/up-first-newsletter-nvidia-jensen-huang-colette-kress-ukraine-russia-chris-van-hollen",
+      "source": "NPR World",
+      "summary": "执掌英伟达33年的黄仁勋卸任CEO，首席财务官Colette Kress被任命为临时CEO。报道同时讨论此事对开源生态与美国AI领导地位的影响。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "谷歌发布Gemini 4 Hydrogen，强调速度与编码",
+      "url": "https://x.com/GoogleAIStudio/status/2120976872729174329",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "谷歌AI Studio宣布推出Gemini 4 Hydrogen，定位把前沿智能带给所有人，强调速度与效率，面向日常编码等高频任务；发布内容以宣传语为主，未披露基准测试与价格细节。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "ChatGPT Wallet上线：智能体代付需用户批准",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet",
+      "source": "OpenAI News",
+      "summary": "OpenAI推出ChatGPT Wallet，让ChatGPT Work、Codex与dots中的智能体在用户批准下完成购买，并沿用现有银行卡保护与争议处理机制，为agent代付划定授权边界。",
+      "importance": 7
+    },
+    {
+      "title": "阿里开源open-code-review代码审查工具",
+      "url": "https://github.com/alibaba/open-code-review",
+      "source": "GitHub Trending",
+      "summary": "阿里开源代码审查工具，采用确定性流水线加LLM Agent的混合架构：规则引擎保证结果可复现，Agent处理语义级问题，支持行级评论与多语言规则集，适合在CI中做大规模PR审查。",
+      "importance": 7
+    },
+    {
+      "title": "llama.cpp发布v1.0.0，本地推理进入正式版",
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "source": "Hugging Face Blog",
+      "summary": "ggml团队发布llama.cpp v1.0.0，称其为本地AI生态提供更坚实基础。该项目用C/C++实现跨平台量化推理，是本地运行开源模型的主力方案，1.0意味着接口与稳定性承诺升级。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美电信故障致全美航班停飞，澳赴美航班受波及",
+      "url": "https://www.nytimes.com/live/2026/11/13/us/ground-stop-nationwide-flights-faa/nationwide-ground-stop-flights-faa",
+      "source": "NYT World",
+      "summary": "特朗普政府官员将全美航班停飞归因于一起电信故障，但称尚不清楚原因。悉尼、墨尔本机场赴美航班取消或延误，相关起飞禁令已解除；FAA前官员称停飞是最稳妥处置。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "美司法部查封朝鲜黑客诈骗云设施，涉4亿美元",
+      "url": "https://www.dw.com/zh/美国打击加密货币诈骗：视频会议里的-熟人-，可能是朝鲜黑客/a-79942669?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "美国司法部称已查封朝鲜黑客用于视频通话诈骗的云端基础设施，FBI称该「FaceStealer」骗局18个月内骗取逾4亿美元加密货币；法院另批准扣押或冻结币安近期被盗的12亿多美元资金。",
+      "importance": 8
+    },
+    {
+      "title": "乌干达总统之子言论引发「王朝接班」猜测",
+      "url": "https://www.bbc.co.uk/news/articles/cmlydy0xw45wo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "乌干达总统之子、52岁将军在社交平台发表挑衅性言论并伴随军事威胁，加剧外界对家族接班的猜测；近期已有多名将军被捕，副总统受到威胁。",
+      "importance": 6
+    }
+  ],
+  "editor_note": "同一天里，AI新闻重心从参数转向授权、审计与供应链：谁为agent付款、谁审代码、谁管芯片流向，比模型榜单更值得跟踪。",
+  "keywords": [
+    "黄仁勋卸任",
+    "Gemini 4 Hydrogen",
+    "ChatGPT Wallet",
+    "代码审查",
+    "llama.cpp",
+    "全美航班停飞",
+    "朝鲜黑客诈骗"
+  ]
+}
