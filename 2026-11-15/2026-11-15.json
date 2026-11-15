@@ -1,0 +1,75 @@
+{
+  "hero_headline": "Gemini 4 接连发布，黄仁勋辞任英伟达 CEO",
+  "daily_overview": "近三日 AI 领域出现两条主线：一是模型与基础设施持续迭代，DeepMind 接连推出 Gemini 4 Hydrogen 与 Carbon，llama.cpp 迈入 v1.0.0，巩固端侧推理底座；二是产业秩序在变，黄仁勋执掌英伟达 33 年后辞任，OpenAI 上线 ChatGPT Wallet，让智能体在用户授权下完成支付，星舰用「筷子」机械臂完成回收。时政方面，乌克兰「顿巴斯换北约」设想被披露并可能交付公投，美方未予确认；以色列坚持对加沙的进攻政策，也门战事未歇；美国 26 年后失去「麻疹消除」认证，疫苗覆盖率下滑的后果开始显现。",
+  "tech_briefs": [
+    {
+      "title": "DeepMind 发布 Gemini 4 Hydrogen",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 发布 Gemini 4 Hydrogen，此前数日已上线 Gemini 4 Carbon，形成 Gemini 4 双版本迭代节奏；官方未披露参数规模与评测细节。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "黄仁勋辞任英伟达 CEO，Kress 代任",
+      "url": "https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/",
+      "source": "Latent Space",
+      "summary": "据报道，黄仁勋在领导英伟达 33 年后辞去 CEO 职务，由 Colette Kress 出任临时 CEO，业界关注此举对开源生态与美国 AI 领导地位的影响。",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI 推出 ChatGPT Wallet",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet",
+      "source": "OpenAI News",
+      "summary": "OpenAI 推出 ChatGPT Wallet，让 ChatGPT Work、Codex 与 dots 中的智能体在用户批准下完成购买，并沿用现有信用卡保护机制。",
+      "importance": 7
+    },
+    {
+      "title": "llama.cpp 发布 v1.0.0 版本",
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "source": "Hugging Face Blog",
+      "summary": "ggml-org 发布 llama.cpp v1.0.0。该项目以 C/C++ 实现 LLM 推理与量化，让模型能在笔记本、手机等本地设备运行，是端侧与自托管 AI 的关键基础设施；1.0 标志其接口趋稳。",
+      "importance": 8
+    },
+    {
+      "title": "星舰返航用「筷子」机械臂完成捕获",
+      "url": "https://www.bbc.co.uk/news/videos/cwlym2gy3y3eo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "SpaceX 星舰返回地球时，用昵称「筷子」的机械臂成功夹住火箭部件，为可重复使用火箭的回收方式再添一次飞行验证。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "泽连斯基：顿巴斯换北约可交公投",
+      "url": "https://www.dw.com/zh/以顿巴斯换北约？泽连斯基：可交全民公投/a-79948962?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "泽连斯基称，美国和平特使在阿布扎比会谈后询问：若乌克兰加入北约，乌方是否愿撤出顿巴斯。他表示不会割让领土，但若达成含安全保障的全面协议，可交全民公投；美方未证实该说法。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "以色列称将继续对加沙「进攻政策」",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/11/15/iran-war-live-israel-vows-gaza-offensive-policy-despite-caretaker-status?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "以色列方面表示，尽管处于看守政府状态，仍将继续对加沙奉行「进攻政策」；同期也门战事持续，地区紧张局势未见缓和。",
+      "importance": 8
+    },
+    {
+      "title": "美国失去「麻疹消除」认证",
+      "url": "https://www.dw.com/zh/26年纪录终结！美国失去-消除麻疹-地位/a-79948420?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "泛美卫生组织取消美国的「麻疹消除」认证，终结其 26 年纪录。美国今年麻疹确诊逾 5000 例，为 30 多年来最严重疫情，疫苗接种率下降引发关注。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "模型迭代与高层人事同日出现，热闹之外更值得盯住的是智能体支付、芯片追踪与本地推理这些落地环节。",
+  "keywords": [
+    "Gemini 4",
+    "英伟达",
+    "ChatGPT Wallet",
+    "llama.cpp",
+    "星舰回收",
+    "乌克兰",
+    "加沙",
+    "麻疹疫情"
+  ]
+}
