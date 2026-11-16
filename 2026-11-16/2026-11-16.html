@@ -1,0 +1,1341 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日简报 · 2026-11-16</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  /* ===== MiMo Figma exact clone ===== */
+  @keyframes mimoScrollLeft { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes mimoScrollRight { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #0a0a0a;
+    color: #f0f0f0;
+    font-family: Inter, 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+  main#content {
+    max-width: 860px; margin: 0 auto;
+    padding: 6rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    scroll-margin-top: 4.5rem;
+  }
+  .content-label { margin-bottom: 2.5rem; }
+
+  /* ===== Nav — fixed blur ===== */
+  .top-nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1rem 2rem;
+    background: rgba(10,10,10,0.88);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  .nav-logo {
+    font-weight: 800; font-size: 1.35rem; color: #fff;
+    letter-spacing: 0.06em;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .nav-links { display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; }
+  .nav-link {
+    color: rgba(255,255,255,0.55); font-size: 0.875rem; font-weight: 400;
+    text-decoration: none; transition: color 0.2s;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .nav-link:hover { color: rgba(255,255,255,0.9); }
+  .nav-group { position: relative; }
+  .nav-flyout {
+    position: absolute; top: calc(100% + 0.6rem); left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    min-width: 13.5rem;
+    padding: 0.35rem 0;
+    background: rgba(14,14,14,0.96);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 2px;
+    opacity: 0; visibility: hidden;
+    transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+    pointer-events: none;
+  }
+  .nav-group:hover .nav-flyout,
+  .nav-group:focus-within .nav-flyout {
+    opacity: 1; visibility: visible;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+  }
+  .nav-flyout-link {
+    display: flex; align-items: center; gap: 0.65rem;
+    width: 100%; padding: 0.55rem 1rem;
+    background: none; border: none; cursor: pointer;
+    text-align: left; font-family: Inter, 'Noto Sans SC', sans-serif;
+    color: rgba(255,255,255,0.55); font-size: 0.78rem;
+    transition: background 0.15s, color 0.15s;
+  }
+  .nav-flyout-link:hover {
+    background: rgba(255,255,255,0.04);
+    color: rgba(255,255,255,0.92);
+  }
+  .nav-flyout-num {
+    color: rgba(255,255,255,0.18);
+    font-size: 0.62rem; font-weight: 700;
+    letter-spacing: 0.1em; flex-shrink: 0;
+    font-family: Inter, sans-serif;
+  }
+  .nav-flyout-name { flex: 1; }
+  .nav-flyout-count {
+    color: rgba(255,255,255,0.22);
+    font-size: 0.62rem; flex-shrink: 0;
+    font-family: Inter, sans-serif;
+  }
+  @media (max-width: 600px) {
+    .top-nav { padding: 0.75rem 1.25rem; }
+    .nav-links { gap: 1rem; }
+    .nav-link { font-size: 0.78rem; }
+  }
+
+  /* ===== Hero — 100vh + animated text pattern ===== */
+  .hero-section {
+    position: relative; height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; background: #0a0a0a;
+  }
+  .hero-pattern {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; justify-content: center;
+    overflow: hidden; pointer-events: none; user-select: none;
+  }
+  .pattern-row {
+    white-space: nowrap;
+    color: #fff; opacity: 0.042;
+    font-size: 2.6rem; font-weight: 800;
+    letter-spacing: 0.55em; line-height: 3.6rem;
+    font-family: Inter, sans-serif;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .pattern-row { animation: none !important; }
+    html { scroll-behavior: auto; }
+  }
+  .pattern-text { padding: 0 1.5rem; }
+  .hero-content {
+    position: relative; z-index: 2; text-align: center;
+    animation: fadeIn 0.8s ease-out; padding: 0 2rem;
+  }
+  .hero-title {
+    color: #fff; font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 700; letter-spacing: -0.02em;
+    line-height: 1.15; margin-bottom: 1rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .hero-subtitle {
+    color: rgba(255,255,255,0.38);
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-weight: 400;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    margin-bottom: 0.5rem;
+  }
+  .hero-subtitle-en {
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    font-family: Inter, sans-serif;
+  }
+  .hero-subtitle-zh {
+    letter-spacing: 0.08em;
+    color: rgba(255,255,255,0.28);
+    font-size: 0.9rem;
+  }
+  .hero-date {
+    color: rgba(255,255,255,0.25);
+    font-size: 0.85rem; letter-spacing: 0.08em;
+    font-family: Inter, sans-serif;
+  }
+  .scroll-indicator {
+    position: absolute; left: 50%; bottom: 4rem;
+    transform: translateX(-50%);
+    width: 1px; height: 3rem;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent);
+  }
+
+  /* ===== About — MiMo About section ===== */
+  .about-section {
+    padding: 6rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .about-inner { max-width: 768px; margin: 0 auto; }
+  .about-text {
+    color: rgba(255,255,255,0.72);
+    font-size: 1.08rem; line-height: 1.9;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    font-weight: 300; margin: 0;
+  }
+
+  /* ===== arXiv directions — MiMo Products grid ===== */
+  .arxiv-section {
+    padding: 6rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .arxiv-inner { max-width: 960px; margin: 0 auto; }
+  .arxiv-grid {
+    display: grid; grid-template-columns: 1fr;
+    gap: 1px; background: rgba(255,255,255,0.05);
+  }
+  @media (min-width: 768px) {
+    .arxiv-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  .arxiv-card {
+    position: relative;
+    display: flex; flex-direction: column; align-items: flex-start;
+    text-align: left;
+    background: #0a0a0a;
+    padding: 2.25rem;
+    border: none; cursor: pointer;
+    font-family: inherit;
+    transition: background 0.3s;
+  }
+  .arxiv-card:hover { background: #161616; }
+  .arxiv-card:hover .arxiv-arrow { transform: translateX(4px); }
+  .arxiv-card:hover .arxiv-cta { color: rgba(255,255,255,0.85); }
+  .arxiv-num {
+    color: rgba(255,255,255,0.12);
+    font-size: 0.7rem; letter-spacing: 0.15em;
+    font-weight: 700; margin-bottom: 2.5rem;
+    font-family: Inter, sans-serif;
+  }
+  .arxiv-name {
+    color: #fff; font-size: 1.15rem; font-weight: 600;
+    letter-spacing: -0.01em; line-height: 1.3;
+    margin: 0 0 0.75rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .arxiv-tagline {
+    color: rgba(255,255,255,0.45);
+    font-size: 0.875rem; line-height: 1.65;
+    margin: 0 0 1.5rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    font-weight: 400;
+  }
+  .arxiv-count {
+    color: rgba(255,255,255,0.22);
+    font-size: 0.68rem; letter-spacing: 0.06em;
+    margin-bottom: 2rem;
+    font-family: Inter, sans-serif;
+  }
+  .arxiv-cta {
+    margin-top: auto;
+    color: rgba(255,255,255,0.38);
+    font-size: 0.875rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    transition: color 0.2s;
+  }
+  .arxiv-arrow {
+    display: inline-block;
+    transition: transform 0.2s;
+  }
+  .source-content[id] { scroll-margin-top: 5rem; }
+
+  /* ===== Lab watch — MiMo Blog rows ===== */
+  .lab-watch-section {
+    padding: 6rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .lab-watch-inner { max-width: 860px; margin: 0 auto; }
+  .lab-watch-summary {
+    color: rgba(255,255,255,0.35);
+    font-size: 0.85rem;
+    margin: -2.5rem 0 2rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .lab-watch-list { display: flex; flex-direction: column; }
+  .lab-row {
+    display: flex; align-items: baseline; gap: 1.25rem;
+    padding: 1.2rem 0;
+    border-top: 1px solid rgba(255,255,255,0.055);
+    text-decoration: none; color: inherit;
+    transition: padding-left 0.2s, background 0.2s;
+  }
+  .lab-row:last-child { border-bottom: 1px solid rgba(255,255,255,0.055); }
+  .lab-row:hover { padding-left: 0.75rem; }
+  .lab-row-updated:hover .lab-name { color: rgba(255,255,255,0.95); }
+  .lab-row-updated .lab-name { color: rgba(255,255,255,0.82); }
+  .lab-row-updated .lab-badge {
+    background: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.85);
+    border-color: rgba(255,255,255,0.15);
+  }
+  .lab-row-quiet .lab-name { color: rgba(255,255,255,0.42); }
+  .lab-row-quiet .lab-detail { color: rgba(255,255,255,0.22); }
+  .lab-row-error .lab-detail { color: rgba(255,255,255,0.45); }
+  .lab-num {
+    color: rgba(255,255,255,0.14);
+    font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.1em; flex-shrink: 0;
+    font-family: Inter, sans-serif;
+  }
+  .lab-name {
+    font-size: 0.93rem; line-height: 1.45;
+    flex-shrink: 0; min-width: 11rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    transition: color 0.2s;
+  }
+  .lab-detail {
+    flex: 1; font-size: 0.82rem; line-height: 1.5;
+    color: rgba(255,255,255,0.48);
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .lab-badge {
+    font-size: 0.58rem; padding: 0.12rem 0.45rem;
+    border-radius: 2px; font-weight: 600;
+    border: 1px solid rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.3);
+    flex-shrink: 0; font-family: Inter, sans-serif;
+    letter-spacing: 0.04em;
+  }
+  .lab-arrow {
+    color: rgba(255,255,255,0.15); font-size: 1rem;
+    flex-shrink: 0; transition: color 0.2s, transform 0.2s;
+  }
+  .lab-row:hover .lab-arrow { color: rgba(255,255,255,0.55); transform: translateX(4px); }
+  @media (max-width: 640px) {
+    .lab-row { flex-wrap: wrap; gap: 0.4rem 1rem; }
+    .lab-name { min-width: 0; flex: 1 1 100%; }
+    .lab-detail { flex: 1 1 100%; order: 3; }
+  }
+
+  /* ===== Section labels — MiMo uppercase style ===== */
+  .section-label {
+    color: rgba(255,255,255,0.25);
+    font-size: 0.7rem; letter-spacing: 0.2em;
+    text-transform: uppercase; font-weight: 500;
+    font-family: Inter, sans-serif;
+    margin-bottom: 3.5rem;
+  }
+
+  /* ===== Primary tabs ===== */
+  .tabs {
+    display: flex; gap: 0;
+    margin: 0 0 3rem;
+    border-bottom: 1px solid rgba(255,255,255,0.055);
+  }
+  .tab {
+    background: none; border: none;
+    padding: 1rem 1.8rem;
+    font-size: 0.8rem; font-weight: 500;
+    color: rgba(255,255,255,0.35);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px; font-family: Inter, 'Noto Sans SC', sans-serif;
+    transition: all 0.2s;
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .tab:hover { color: rgba(255,255,255,0.6); }
+  .tab.active { color: rgba(255,255,255,0.9); border-bottom-color: #fff; }
+  .tab .count { font-size: 0.6rem; color: rgba(255,255,255,0.2); margin-left: 0.5rem; }
+  .panel { display: none; }
+  .panel.active { display: block; }
+
+  /* ===== Sub-tabs ===== */
+  .sub-tabs { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 2.5rem; }
+  .sub-tab {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 0.5rem 1.1rem; border-radius: 2px;
+    font-size: 0.75rem; font-weight: 500;
+    color: rgba(255,255,255,0.45);
+    cursor: pointer; font-family: Inter, 'Noto Sans SC', sans-serif;
+    transition: all 0.2s; letter-spacing: 0.03em;
+  }
+  .sub-tab:hover { border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.03); }
+  .sub-tab.active { background: #fff; color: #0a0a0a; border-color: #fff; }
+  .sub-tab .count { font-size: 0.55rem; opacity: 0.5; margin-left: 0.4rem; }
+  .sub-content { display: none; }
+  .sub-content.active { display: block; }
+
+  /* ===== Source tabs — text-only L3 filters ===== */
+  .source-tabs {
+    display: flex; flex-wrap: wrap; gap: 0.4rem;
+    margin: 0 0 2rem; padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.055);
+  }
+  .source-tab {
+    background: none; border: none;
+    padding: 0.3rem 0.6rem; border-radius: 2px;
+    font-size: 0.7rem; color: rgba(255,255,255,0.35);
+    cursor: pointer; font-family: Inter, 'Noto Sans SC', sans-serif;
+    transition: all 0.2s;
+    border-bottom: 1px solid transparent;
+  }
+  .source-tab:hover { color: rgba(255,255,255,0.65); }
+  .source-tab.active {
+    color: rgba(255,255,255,0.9);
+    border-bottom-color: rgba(255,255,255,0.35);
+    background: none;
+  }
+  .source-tab .count { font-size: 0.55rem; opacity: 0.5; margin-left: 0.3rem; }
+  .source-content { display: none; }
+  .source-content.active { display: block; }
+
+  /* ===== Article rows — MiMo blog row style ===== */
+  .article {
+    padding: 1.3rem 0;
+    border-top: 1px solid rgba(255,255,255,0.055);
+    transition: all 0.2s;
+  }
+  .article:first-child { border-top: none; }
+  .article:hover { padding-left: 1rem; }
+  .article:hover .article-title a { color: rgba(255,255,255,0.95); }
+  .article-title {
+    font-size: 0.95rem; margin: 0 0 0.35rem;
+    font-weight: 500; line-height: 1.5;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .article-title a { color: rgba(255,255,255,0.7); text-decoration: none; transition: color 0.2s; }
+  .article-title a:hover { color: rgba(255,255,255,0.95); }
+  .article-authors {
+    color: rgba(255,255,255,0.22);
+    font-size: 0.7rem; margin: 0 0 0.35rem;
+    font-family: Inter, sans-serif;
+  }
+  .article-code { margin: 0 0 0.35rem; }
+  .code-link {
+    display: inline-block; background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.45);
+    font-size: 0.68rem; font-weight: 500;
+    padding: 0.12rem 0.55rem; border-radius: 2px;
+    text-decoration: none; transition: all 0.2s;
+    font-family: Inter, sans-serif;
+  }
+  .code-link:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.8); }
+  .article-meta { color: rgba(255,255,255,0.18); font-size: 0.68rem; margin: 0 0 0.35rem; }
+  .article-stats { color: rgba(255,255,255,0.18); font-size: 0.72rem; margin: 0 0 0.5rem; }
+  .article-excerpt {
+    margin: 0; color: rgba(255,255,255,0.48);
+    font-size: 0.85rem; line-height: 1.75;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    font-weight: 400;
+  }
+  .article-summary {
+    margin: 0.8rem 0 0; padding: 0.9rem 1.2rem;
+    background: rgba(255,255,255,0.03);
+    border-left: 2px solid rgba(255,255,255,0.12);
+    border-radius: 0 2px 2px 0;
+    font-size: 0.82rem; line-height: 1.75;
+    color: rgba(255,255,255,0.5);
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    font-weight: 300;
+  }
+  .summary-label {
+    display: inline-block; font-size: 0.55rem;
+    color: rgba(255,255,255,0.3);
+    margin-right: 0.5rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.15em;
+    font-family: Inter, sans-serif;
+  }
+
+  .empty {
+    color: rgba(255,255,255,0.2);
+    text-align: center; padding: 5rem 0;
+    font-size: 0.85rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+
+  /* ===== Footer — MiMo style ===== */
+  .mimo-footer {
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 1rem;
+    padding: 2.5rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    max-width: 860px; margin: 0 auto;
+  }
+  .footer-logo {
+    font-weight: 800; font-size: 1.25rem; color: #fff;
+    letter-spacing: 0.06em;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+  }
+  .footer-right {
+    display: flex; flex-direction: column; align-items: flex-end;
+    gap: 0.35rem; text-align: right;
+  }
+  .footer-disclaimer {
+    color: rgba(255,255,255,0.22);
+    font-size: 0.68rem;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    letter-spacing: 0.02em; max-width: 28rem;
+  }
+  .footer-copy {
+    color: rgba(255,255,255,0.2);
+    font-size: 0.72rem; font-family: Inter, sans-serif;
+    letter-spacing: 0.04em;
+  }
+
+  /* ===== Conference Deadlines — MiMo Careers style ===== */
+  .deadlines-section {
+    padding: 6rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    max-width: 860px; margin: 0 auto;
+  }
+  .deadline-row {
+    display: flex; align-items: baseline; gap: 1.5rem;
+    padding: 1.3rem 0;
+    border-top: 1px solid rgba(255,255,255,0.055);
+    transition: all 0.2s;
+    text-decoration: none; color: inherit;
+  }
+  .deadline-row:last-of-type { border-bottom: 1px solid rgba(255,255,255,0.055); }
+  .deadline-row:hover { padding-left: 1rem; }
+  .deadline-row:hover .deadline-arrow { color: rgba(255,255,255,0.6); transform: translateX(4px); }
+  .deadline-num {
+    color: rgba(255,255,255,0.14);
+    font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.1em; flex-shrink: 0;
+    font-family: Inter, sans-serif;
+  }
+  .deadline-info { flex: 1; }
+  .deadline-name {
+    color: rgba(255,255,255,0.62);
+    font-size: 0.93rem; line-height: 1.5;
+    font-family: Inter, 'Noto Sans SC', sans-serif;
+    font-weight: 400; transition: color 0.2s;
+  }
+  .deadline-row:hover .deadline-name { color: rgba(255,255,255,0.92); }
+  .deadline-meta {
+    color: rgba(255,255,255,0.18);
+    font-size: 0.72rem; flex-shrink: 0;
+    font-family: Inter, sans-serif; letter-spacing: 0.04em;
+  }
+  .deadline-badge {
+    font-size: 0.6rem; padding: 0.1rem 0.4rem;
+    border-radius: 2px; font-weight: 600;
+    font-family: Inter, sans-serif;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .deadline-badge.soon { background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.78); }
+  .deadline-badge.upcoming { background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.55); }
+  .deadline-badge.later { background: rgba(255,255,255,0.03); color: rgba(255,255,255,0.35); }
+  .deadline-arrow {
+    color: rgba(255,255,255,0.15); font-size: 1rem;
+    flex-shrink: 0; transition: color 0.2s, transform 0.2s;
+  }
+  .tab:focus-visible, .sub-tab:focus-visible, .source-tab:focus-visible,
+  .nav-link:focus-visible, .deadline-row:focus-visible,
+  .arxiv-card:focus-visible, .nav-flyout-link:focus-visible,
+  .lab-row:focus-visible {
+    outline: 2px solid rgba(255,255,255,0.4);
+    outline-offset: 2px;
+  }
+</style>
+</head>
+<body>
+<!-- Fixed nav -->
+<nav class="top-nav">
+  <span class="nav-logo">DailyBrief</span>
+  <div class="nav-links">
+    <a class="nav-link" href="#content" data-nav-tab="tech">技术动态</a>
+    <a class="nav-link" href="#content" data-nav-tab="politics">时政观察</a>
+    <a class="nav-link nav-link-archive" href="../archive.html">历史归档</a>
+  </div>
+</nav>
+
+<!-- Hero — 100vh with animated text pattern -->
+<div class="hero-section">
+  <div class="hero-pattern" aria-hidden="true">
+    <div class="pattern-row" style="animation:mimoScrollLeft 22.0s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 23.8s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 25.6s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 27.4s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 29.2s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 31.0s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 32.8s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 34.6s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 36.4s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 38.2s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 40.0s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 41.8s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 43.6s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 45.4s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 47.2s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 49.0s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 50.8s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 52.6s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 54.4s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 56.2s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 58.0s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 59.8s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollLeft 61.6s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="pattern-row" style="animation:mimoScrollRight 63.4s linear infinite"><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="pattern-text">D A I L Y&nbsp;&nbsp;&nbsp;&nbsp;B R I E F&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+  </div>
+  <div class="hero-content">
+    <h1 class="hero-title">英伟达换帅、Gemini 4 发布，星舰首次成功回收</h1>
+    <p class="hero-subtitle hero-subtitle-zh">2026-11-16</p>
+    
+  </div>
+  <div class="scroll-indicator"></div>
+</div>
+
+<section class="about-section" id="about">
+  <div class="about-inner">
+    <div class="section-label">今日总览</div>
+    <p class="about-text">AI 领域本周多方密集动作：DeepMind 发布 Gemini 4 Hydrogen，OpenAI 为智能体开出支付通道 ChatGPT Wallet，本地推理框架 llama.cpp 迈入 v1.0.0；同日英伟达在黄仁勋掌舵 33 年后换帅，Colette Kress 出任临时 CEO，为行业格局添变数。航天方面，SpaceX 星舰完成首次飞船成功回收，可重复使用再进一步。时政层面，澳英加意四国联合呼吁以色列在冬季前放行加沙援助；爱沙尼亚因本国无人机厂商遇袭宣布 12 月起关闭全部对俄口岸；特朗普与习近平、普京预计在深圳 APEC 峰会期间会面，贸易与地区安全议题受关注。</p>
+  </div>
+</section>
+<section class="lab-watch-section" id="lab-watch">
+  <div class="lab-watch-inner">
+    <div class="section-label">课题组动态</div>
+    <p class="lab-watch-summary">今日暂无课题组主页更新。</p>
+    <div class="lab-watch-list"><a class="lab-row lab-row-error" href="http://yuexinma.me/" target="_blank" rel="noopener noreferrer">
+  <span class="lab-num">01</span>
+  <span class="lab-name">Yuexin Ma · ShanghaiTech</span>
+  <span class="lab-detail">no News / New Events section found</span>
+  <span class="lab-badge">检查失败</span>
+  <span class="lab-arrow" aria-hidden="true">→</span>
+</a>
+<a class="lab-row lab-row-quiet" href="https://icoz69.github.io/" target="_blank" rel="noopener noreferrer">
+  <span class="lab-num">02</span>
+  <span class="lab-name">Chi Zhang · Westlake AGI Lab</span>
+  <span class="lab-detail">Sep 2026🚀 We released World in World, exploring video worlds with world models.</span>
+  <span class="lab-badge">无变化</span>
+  <span class="lab-arrow" aria-hidden="true">→</span>
+</a>
+<a class="lab-row lab-row-quiet" href="https://wyhsirius.github.io/" target="_blank" rel="noopener noreferrer">
+  <span class="lab-num">03</span>
+  <span class="lab-name">Yaohui Wang · Shanghai AI Lab</span>
+  <span class="lab-detail">03 / 2026 1 paper AI killed the video star accepted to IJCV.</span>
+  <span class="lab-badge">无变化</span>
+  <span class="lab-arrow" aria-hidden="true">→</span>
+</a></div>
+  </div>
+</section>
+
+
+<main id="content">
+  <div class="section-label content-label">内容</div>
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="tech">技术动态<span class="count">51</span></button>
+    <button class="tab" data-tab="politics">时政观察<span class="count">15</span></button>
+  </nav>
+
+  <section class="panel active" data-panel="tech">
+    <nav class="sub-tabs"><button class="sub-tab active" data-sub="github-trending" data-cat="tech">GitHub Trending<span class="count">12</span></button><button class="sub-tab" data-sub="trending-papers" data-cat="tech">热门论文<span class="count">20</span></button><button class="sub-tab" data-sub="x-viral" data-cat="tech">X 推文<span class="count">4</span></button><button class="sub-tab" data-sub="ai-news" data-cat="tech">AI 媒体<span class="count">15</span></button></nav>
+<div class="sub-contents"><div class="sub-content active" data-sub-content="github-trending" data-cat="tech">
+    
+    <div class="source-contents">
+      <div class="source-content active" data-source-content="github-trending" data-sub="github-trending" data-cat="tech">
+    <article class="article">
+  <h3 class="article-title"><a href="https://github.com/dream-num/univer" target="_blank" rel="noopener noreferrer">dream-num/univer</a></h3>
+  
+  
+  <p class="article-stats">TypeScript · ★ 25,593 · 🍴 2,336 · 📈 1,041 stars today</p>
+  
+  <p class="article-excerpt">Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Univer 是开源的 Office 套件 SDK，把表格编辑、公式计算、多人协作与文件处理能力以可扩展内核的形式嵌入自有产品，并同时面向人和 AI Agent 提供文档操作接口。适合需要在 SaaS 或企业系统里自建在线表格、文档协同功能的开发者。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/ag-ui-protocol/ag-ui" target="_blank" rel="noopener noreferrer">ag-ui-protocol/ag-ui</a></h3>
+  
+  
+  <p class="article-stats">TypeScript · ★ 17,831 · 🍴 1,818 · 📈 393 stars today</p>
+  
+  <p class="article-excerpt">AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> AG-UI 定义了一套 Agent 与用户交互的协议，规范前端如何接收 Agent 的流式输出、状态更新与工具调用，并把用户操作回传给 Agent。适合正把 LLM Agent 集成进 Web 或客户端界面、又不愿为每个框架重写对接层的前端与全栈工程师。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/google-labs-code/stitch-skills" target="_blank" rel="noopener noreferrer">google-labs-code/stitch-skills</a></h3>
+  
+  
+  <p class="article-stats">TypeScript · ★ 9,277 · 🍴 1,125 · 📈 248 stars today</p>
+  
+  <p class="article-excerpt">A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 面向 Stitch MCP server 的 Agent Skills 技能库，每个技能遵循 Agent Skills 开放标准，可被 Antigravity、Gemini CLI、Claude Code 等编码 Agent 直接调用，用于执行 Stitch 提供的设计与代码任务。适合用 coding agent 做界面生成和流程自动化的开发者。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/backnotprop/plannotator" target="_blank" rel="noopener noreferrer">backnotprop/plannotator</a></h3>
+  
+  
+  <p class="article-stats">TypeScript · ★ 11,819 · 🍴 1,082 · 📈 860 stars today</p>
+  
+  <p class="article-excerpt">The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 围绕编码 Agent 的协作工作区：在计划阶段做取舍、批注方案、审查代码，并把反馈一键回传给 Agent，让开发者始终掌握主动权。适合需要多人参与评审、又想让 Agent 持续跟进修改的研发团队。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp" target="_blank" rel="noopener noreferrer">ChromeDevTools/chrome-devtools-mcp</a></h3>
+  
+  
+  <p class="article-stats">TypeScript · ★ 56,900 · 🍴 4,812 · 📈 718 stars today</p>
+  
+  <p class="article-excerpt">Chrome DevTools for coding agents</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 把 Chrome DevTools 的调试能力通过 MCP 协议暴露给编码 Agent，使其能读取页面运行时状态、网络请求与性能数据，从而定位前端问题。适合使用 Claude Code 等支持 MCP 的工具做 Web 调试与自动化排查的开发者。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/alibaba/open-code-review" target="_blank" rel="noopener noreferrer">alibaba/open-code-review</a></h3>
+  
+  
+  <p class="article-stats">Go · ★ 52,048 · 🍴 4,107 · 📈 688 stars today</p>
+  
+  <p class="article-excerpt">Secure, fast, efficient, battle-tested at Alibaba&#39;s scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI &amp; Anthropic compatible.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 阿里开源的代码审查工具，采用确定性流水线加 LLM Agent 的混合架构，经集团规模验证，可输出精确到行的评论，并内置覆盖 NPE 等多语言的规则集。适合希望在 CI 中引入稳定、低误报自动代码审查的工程团队。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/Tencent/LoopForge" target="_blank" rel="noopener noreferrer">Tencent/LoopForge</a></h3>
+  
+  
+  <p class="article-stats">Go · ★ 1,457 · 🍴 264 · 📈 484 stars today</p>
+  
+  <p class="article-excerpt">Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 腾讯自托管的编码 Agent 交付工作流引擎，用脚本编排 CodeBuddy、Codex、Claude Code 的执行步骤，并在关键节点插入人工审批门禁，另附面向本地编码助手的 workflow。适合需要可控、可审计地批量落地 Agent 编码的企业团队。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/ggml-org/ggml" target="_blank" rel="noopener noreferrer">ggml-org/ggml</a></h3>
+  
+  
+  <p class="article-stats">C++ · ★ 15,898 · 🍴 2,018 · 📈 53 stars today</p>
+  
+  <p class="article-excerpt">Tensor library for machine learning</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> ggml 是面向机器学习的 C 语言张量库，提供无第三方依赖的张量运算与量化格式，可在 CPU 及多种后端上高效推理，是 llama.cpp 等本地大模型项目的底层基础。适合在端侧或嵌入式环境自行编译、优化模型推理的开发者。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/elementalsouls/Claude-BugHunter" target="_blank" rel="noopener noreferrer">elementalsouls/Claude-BugHunter</a></h3>
+  
+  
+  <p class="article-stats">Python · ★ 6,408 · 🍴 967 · 📈 221 stars today</p>
+  
+  <p class="article-excerpt">A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 面向漏洞挖掘与外网红队场景的 Claude Code 技能包，含 82 个技能、15 个 slash 命令，并整理 24 类核心漏洞、681 条公开报告模式。适合安全研究人员在授权测试中借助 Agent 完成信息收集、漏洞识别与报告撰写。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/GoogleChrome/modern-web-guidance-src" target="_blank" rel="noopener noreferrer">GoogleChrome/modern-web-guidance-src</a></h3>
+  
+  
+  <p class="article-stats">TypeScript · ★ 7,134 · 🍴 599 · 📈 1,220 stars today</p>
+  
+  <p class="article-excerpt">Keep your coding agent up to date with the latest web best practices</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Chrome 团队维护的现代 Web 最佳实践内容源，用于让编码 Agent 及时获取最新 Web 平台能力与推荐写法，避免生成过时或已废弃的 API 用法。适合构建前端 Agent 工具链、或想为自有 Agent 接入权威 Web 知识的开发者。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/tradermonty/claude-trading-skills" target="_blank" rel="noopener noreferrer">tradermonty/claude-trading-skills</a></h3>
+  
+  
+  <p class="article-stats">Python · ★ 5,522 · 🍴 1,173 · 📈 707 stars today</p>
+  
+  <p class="article-excerpt">Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 面向股票投资者与交易员的 Claude Code 技能集合，覆盖行情分析、技术图表绘制、经济日历、选股筛选与交易策略开发等任务，让 Agent 按统一流程产出研究结论。适合希望用 LLM 辅助日常投研、但仍自行做决策的个人与量化从业者。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://github.com/NVIDIA/SkillEvaluator" target="_blank" rel="noopener noreferrer">NVIDIA/SkillEvaluator</a></h3>
+  
+  
+  <p class="article-stats">Python · ★ 1,651 · 🍴 227 · 📈 205 stars today</p>
+  
+  <p class="article-excerpt">Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> NVIDIA 开源的多层 AI Agent 技能评估框架，提供质量门禁、技能语义重叠检测、合成评测数据集生成，以及衡量技能对 Agent 实际行为影响的在线评估。适合维护大量 skills 的团队做版本准入与去重。</p>
+</article>
+  </div>
+    </div>
+  </div>
+<div class="sub-content" data-sub-content="trending-papers" data-cat="tech">
+    
+    <div class="source-contents">
+      <div class="source-content active" data-source-content="huggingface-papers" data-sub="trending-papers" data-cat="tech">
+    <article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2611.15777" target="_blank" rel="noopener noreferrer">SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models</a></h3>
+  
+  
+  <p class="article-stats">👍 137</p>
+  <p class="article-meta">11/11 08:00</p>
+  <p class="article-excerpt">System One models promise fast, general-purpose decision-making without lengthy token generation. However, understanding their capability spectrum and decision reliability requires more than aggregate performance on current benchmarks. Existing evaluations often provide limited insight into the brea</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对 System One 类模型（不生成冗长 token、快速决策）提出 SO-Arena 基准，突破现有评测只给聚合性能的局限，细粒度刻画其能力谱系与决策可靠性，揭示准确率之外的失效模式。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2610.40394" target="_blank" rel="noopener noreferrer">Scaling Mathematical Proof Supervision from Structured Textbooks</a></h3>
+  
+  
+  <p class="article-stats">👍 49</p>
+  <p class="article-meta">10/29 08:00</p>
+  <p class="article-excerpt">Mathematical supervision for language models is typically flattened into isolated problem-solution pairs, discarding the curricular organization and evidential structure of the original sources. We introduce TOME-Math (Textbook-Oriented Mathematical Evidence), a large-scale corpus that converts 2,11</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 现有数学监督把教材压平成孤立的题解对，丢失课程组织与证据结构。作者构建 TOME-Math（Textbook-Oriented Mathematical Evidence）大规模语料，将教材内容转化为保留原始结构与证明依据的监督数据。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2611.16748" target="_blank" rel="noopener noreferrer">PhysLoop: Harnessing LLMs&#39; Physics Awareness for Self-Improving Video Generation Models</a></h3>
+  
+  
+  <p class="article-stats">👍 46</p>
+  <p class="article-meta">11/12 08:00</p>
+  <p class="article-excerpt">Video generation models produce visually realistic videos but still struggle with physical dynamics and causal consistency. Learning from generated videos requires fine-grained physical supervision, yet reliable quality judgments, correction pairs, and controlled variations are difficult to obtain. </p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 视频生成模型的物理动态与因果一致性仍不足，而从生成视频中学习又缺乏细粒度物理监督。PhysLoop 借助 LLM 的物理感知自动产出质量判断、纠错样本对与受控变体，构成闭环自改进信号。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2611.15131" target="_blank" rel="noopener noreferrer">Duo: A Reciprocal World Model for Full-Duplex Interaction</a></h3>
+  
+  
+  <p class="article-stats">👍 43</p>
+  <p class="article-meta">11/11 08:00</p>
+  <p class="article-excerpt">In this report, we introduce the Reciprocal World Model (RWM) and present Duo v1, a full-duplex world model that continuously perceives audiovisual inputs while responding to users in real time. The RWM treats intelligence and physical reality as equally fundamental to what constitutes a world. Exis</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出 Reciprocal World Model（RWM）与 Duo v1 全双工世界模型，可边持续感知音视频输入边实时回应用户，并把智能与物理现实同列为「世界」的基本要素，面向低延迟实时交互。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2611.13410" target="_blank" rel="noopener noreferrer">SteerDistill: Quantizing LLM Agents via Closed-Loop Teacher Steering</a></h3>
+  
+  
+  <p class="article-stats">👍 39</p>
+  <p class="article-meta">11/10 08:00</p>
+  <p class="article-excerpt">Low-bit quantization reduces the inference cost of LLM agents but can compromise task success. Examining failed rollouts, we find that quantized agents overlook task requirements or environmental conditions, producing environment transitions that diverge from successful full-precision references. Co</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 低比特量化降低 LLM agent 推理成本，却常致任务失败：量化 agent 易忽略任务要求与环境条件，产生偏离全精度成功轨迹的状态转移。SteerDistill 用闭环教师引导蒸馏纠偏，兼顾效率与成功率。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2611.15844" target="_blank" rel="noopener noreferrer">Open Vision Banana: A Fully Open Recipe for Generative Visual Perception</a></h3>
+  
+  
+  <p class="article-stats">👍 36</p>
+  <p class="article-meta">11/11 08:00</p>
+  <p class="article-excerpt">Recent work suggests that pretrained image generators encode real-world understanding beyond image synthesis. Vision Banana exploits this by framing vision tasks as conditional image editing. However, its data, weights, code, and implementation details are not public. We present Open Vision Banana (</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 已有工作发现预训练图像生成器蕴含超越合成的世界理解，可将视觉任务重构为条件图像编辑，但数据、权重与代码未公开。Open Vision Banana 给出完全开源的复现配方，公开数据、模型与实现细节。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2611.17167" target="_blank" rel="noopener noreferrer">Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents</a></h3>
+  
+  
+  <p class="article-stats">👍 34</p>
+  <p class="article-meta">11/12 08:00</p>
+  <p class="article-excerpt">Decision models answer a question with a typed output, such as a choice among options with a probability for each, so one model can choose an agent&#39;s actions, evaluate actions already taken, or score every action to teach a policy with reinforcement learning. Prior work has studied them mainly as ac</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 决策模型以带概率的类型化输出回答问题，故同一模型可充当 actor 选动作、judge 评估已执行动作、teacher 为强化学习策略打分。论文系统比较三种角色在长程 agent 中的表现，填补以往只关注 actor 的空白。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2611.05984" target="_blank" rel="noopener noreferrer">On the Design of Hyper-Connections: Simplification, Stability, and Scalability</a></h3>
+  
+  
+  <p class="article-stats">👍 29</p>
+  <p class="article-meta">11/04 08:00</p>
+  <p class="article-excerpt">Hyper-Connections (HC) architectures are increasingly adopted in frontier language models, yet their components remain insufficiently understood and introduce non-negligible training overhead. In this work, we systematically study the HC architecture to understand its components and identify simpler</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Hyper-Connections（HC）已被前沿语言模型采用，但各组件作用不清且带来不可忽视的训练开销。作者系统拆解 HC 架构，识别可简化的设计，分析其稳定性与可扩展性，在保持性能的同时降低训练成本。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2611.17331" target="_blank" rel="noopener noreferrer">TTB: Test-time Baking for Efficient Rendering of Decoder-only View Synthesis Models</a></h3>
+  
+  
+  <p class="article-stats">👍 25</p>
+  <p class="article-meta">11/12 08:00</p>
+  <p class="article-excerpt">Decoder-only Large View Synthesis Models (LVSMs) with KV-cache have recently achieved state-of-the-art quality by regressing novel views from neural networks without reconstructing 3D geometry, while Test-Time Training (TTT) layers save computation but sacrifice quality. We propose Test-Time Baking </p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 针对 decoder-only 大视图合成模型（LVSM），提出 Test-Time Baking（TTB）：把原本在测试时训练中付出的计算预先烘焙进模型，从而在保留重建质量的同时免去推理期逐场景优化，实现高效渲染。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2608.22237" target="_blank" rel="noopener noreferrer">Read Less, Solve More: Token-Efficient Sparse Reading of External Content for AI Agents</a></h3>
+  
+  
+  <p class="article-stats">👍 22</p>
+  <p class="article-meta">11/07 08:00</p>
+  <p class="article-excerpt">Web-facing AI agents repeatedly access webpages, documents, repositories, and tool responses, yet reading interfaces often expose entire objects when only sparse evidence is needed. This over-reading increases token and latency costs and can dilute relevant evidence. We present SparseRead, a reusabl</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Web agent 读取网页、文档、仓库与工具返回时往往整篇加载，而实际只需稀疏证据，造成 token 与延迟浪费并稀释关键信息。作者提出可复用的 SparseRead 稀疏阅读接口，按需定位证据片段。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2611.08318" target="_blank" rel="noopener noreferrer">Learning the Task or Learning the Verifier? Rethinking Criteria Exposure in Embodied Self-Improvement</a></h3>
+  
+  
+  <p class="article-stats">👍 21</p>
+  <p class="article-meta">11/05 08:00</p>
+  <p class="article-excerpt">Self-improving embodied agents are increasingly being developed and compared on robot simulation benchmarks. Several recent works expose the benchmark&#39;s success criteria to the learning agent, a practice we call Criteria Exposure (CE). These criteria, originally written to verify policies trained by</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 具身智能体自我改进研究中，不少工作把仿真基准的成功判据直接暴露给学习 agent（Criteria Exposure），使其可能「学会验证器」而非真正完成任务。论文检验该做法对评测结论的影响，并提出更严谨的协议。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2611.17334" target="_blank" rel="noopener noreferrer">Unbundling Multimodal Vision Encoding</a></h3>
+  
+  
+  <p class="article-stats">👍 16</p>
+  <p class="article-meta">11/12 08:00</p>
+  <p class="article-excerpt">How multimodal language models should encode visual input remains up for debate. Most models use a pretrained vision encoder, while some recent recipes train the encoder from scratch with the language model or remove it entirely. Vision encoders bundle together three design choices: a visual prior f</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 多模态语言模型的视觉编码方式仍有争议：多数用预训练视觉编码器，少数与语言模型联合从头训练或直接去掉。论文把视觉编码器拆解为先验、架构与训练等独立设计选择分别消融，厘清各因素的真实贡献。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2611.16217" target="_blank" rel="noopener noreferrer">WorldDraft: If Code Builds the World, Can Video Models Just Render It?</a></h3>
+  
+  
+  <p class="article-stats">👍 16</p>
+  <p class="article-meta">11/12 08:00</p>
+  <p class="article-excerpt">Multimodal coding agents decouple 4D world construction from visual generation, repurposing video models from world generators toward generative renderers. This division of labor raises a fundamental question: if code builds the world, can video models just render it? A reliable generative renderer </p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 多模态编码 agent 可将 4D 世界构建与视觉生成解耦，使视频模型退化为生成式渲染器。WorldDraft 探讨「代码建世界、视频模型只负责渲染」的可行性，界定可靠渲染器所需条件并给出对应方案。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2611.16905" target="_blank" rel="noopener noreferrer">Factored One-sided Adam-Moment for Practical and Scalable SOAP</a></h3>
+  
+  
+  <p class="article-stats">👍 14</p>
+  <p class="article-meta">11/12 08:00</p>
+  <p class="article-excerpt">Second-order optimizers (e.g., Shampoo, SOAP) have emerged as compelling alternatives to Adam/AdamW and promise faster per-step convergence than AdamW in transformer training. However, they still remain costly in practice, and even SOAP still pays substantial optimizer-state memory and eigendecompos</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 二阶优化器 Shampoo、SOAP 每步收敛更快，但优化器状态内存与特征分解开销高昂。作者提出 Factored One-sided Adam-Moment，以单边因子化近似降低内存与计算，使 SOAP 类方法在 Transformer 训练中更实用可扩展。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2611.10439" target="_blank" rel="noopener noreferrer">Who Remembers What? Multi-Granularity Memory Extraction for Multi-User, Multi-Agent Interaction</a></h3>
+  
+  
+  <p class="article-stats">👍 13</p>
+  <p class="article-meta">11/07 08:00</p>
+  <p class="article-excerpt">Self-evolving agents improve their own skills, memory, and harness code from experience without retraining the base LLM, and group-evolving agents go further by sharing these lessons across agents. Yet most such systems overlook that sharing across users and heterogeneous agents requires deciding wh</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 自进化与群体进化 agent 会在多用户、多智能体间共享经验，却少有机制决定「谁该记住什么」。论文提出多粒度记忆抽取方法，区分用户与异构 agent 的记忆边界，在共享经验的同时避免信息错配与污染。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2611.12304" target="_blank" rel="noopener noreferrer">Evolving Infra: Agent-Adaptive LLM Serving at Scale</a></h3>
+  
+  
+  <p class="article-stats">👍 12</p>
+  <p class="article-meta">11/09 08:00</p>
+  <p class="article-excerpt">Agentic workloads are a major source of LLM inference demand. Existing prefill--decode (PD) disaggregated serving systems offer limited flexibility for runtime adaptation of compute allocation and KV cache management, and rely on coarse signals that only partly capture the diverse and dynamic agent </p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Agent 负载已成为 LLM 推理的主要需求来源，而现有 PD 分离式服务难以在运行时调整算力分配与 KV cache 管理，且依赖粗粒度信号。论文提出面向 agent 自适应的大规模服务系统，依细粒度负载动态调度。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2611.08538" target="_blank" rel="noopener noreferrer">Subliminal Learning in Vision-Language Models</a></h3>
+  
+  
+  <p class="article-stats">👍 8</p>
+  <p class="article-meta">11/04 08:00</p>
+  <p class="article-excerpt">Subliminal learning is a phenomenon in large language models (LLMs) where a teacher passes a hidden preference to a student through training data unrelated to that preference. We study whether subliminal learning also occurs in vision-language models (VLMs). We finetune a teacher VLM to prefer a spe</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 考察「潜意识学习」是否也存在于视觉语言模型：先微调教师 VLM 使其偏好某特征，再用与该偏好无关的数据训练学生，观察偏好能否被传递。结果表明 VLM 同样会经无关数据继承隐藏偏好，提示数据来源需审查。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2611.16961" target="_blank" rel="noopener noreferrer">The Value of Thinking: Learning When to Reason in Hybrid Decision Models</a></h3>
+  
+  
+  <p class="article-stats">👍 7</p>
+  <p class="article-meta">11/12 08:00</p>
+  <p class="article-excerpt">Existing adaptive-reasoning methods shorten the explicit reasoning a model writes, or skip it by switching modes; either way the answer is still written out token by token. Rather than deciding how much to think, we explore a different paradigm, zero-or-T thinking: a single model either answers from</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 现有自适应推理多在缩短或跳过显式推理，但答案仍须逐 token 写出。论文提出 zero-or-T thinking 范式：同一模型可零推理直接作答，也可切换到显式推理，并学习何时值得思考，在决策任务上兼顾准确率与成本。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2607.13920" target="_blank" rel="noopener noreferrer">DeepStress: Stress-Testing Deep Search Agents</a></h3>
+  
+  
+  <p class="article-stats">👍 7</p>
+  <p class="article-meta">11/12 08:00</p>
+  <p class="article-excerpt">While search agents demonstrate impressive capabilities in multi-step question answering, their robustness to poor-quality evidence remains under-explored. Such evidence is rare in benchmark corpora, and resulting failures are hard to reproduce. We propose DeepStress, a dynamic stress-testing framew</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 深度搜索 agent 在多步问答上表现亮眼，但对低质量证据的鲁棒性研究不足，此类证据在基准中稀少且失败难复现。DeepStress 提出动态压力测试框架，可控注入噪声与误导证据，系统暴露 agent 的失效模式。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/papers/2611.08219" target="_blank" rel="noopener noreferrer">Agent-R^2: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis</a></h3>
+  
+  
+  <p class="article-stats">👍 7</p>
+  <p class="article-meta">11/05 08:00</p>
+  <p class="article-excerpt">Large language models have made rapid progress in agentic reasoning and tool use, raising expectations for agents that can take over realistic productivity work from humans. However, current agents still struggle to finish such tasks, where success requires following long-horizon professional workfl</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 现有 agent 难以完成真实生产力任务，因其需遵循长程专业工作流。Agent-R^2 提出以真实来源数据合成训练与评测环境，规模化生成贴近实际的任务轨迹，提升 agent 在真实生产力场景中的完成率。</p>
+</article>
+  </div>
+    </div>
+  </div>
+<div class="sub-content" data-sub-content="x-viral" data-cat="tech">
+    
+    <div class="source-contents">
+      <div class="source-content active" data-source-content="attentionvc-ai" data-sub="x-viral" data-cat="tech">
+    <article class="article">
+  <h3 class="article-title"><a href="https://x.com/hwchase17/status/2121635683999883577" target="_blank" rel="noopener noreferrer">Goal Engineering: How to Design Goals</a></h3>
+  
+  
+  <p class="article-stats">@hwchase17 · 140.1K 粉丝 · 59.1K 阅 · 501 赞 · 64 转</p>
+  <p class="article-meta">11/15 00:05</p>
+  <p class="article-excerpt">Written in conjunction with @mgarimella (Actively AI) and Anshul Gupta (Actively AI) The scope of tasks that agents can take on has increased drastically over the past few years. They have gone from</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> LangChain 创始人 Harrison Chase 与 Actively AI 团队合写的「目标工程」方法论：随着 agent 能承接的任务范围急剧扩大，重点已从写 prompt 转向为 agent 设计清晰、可验证的目标，属于 agent 工程的上层设计问题，而非具体工具技巧。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://x.com/SuJinyan6/status/2121812102709157921" target="_blank" rel="noopener noreferrer">看起来没有壁垒的数据生意，为何如此繁荣？</a></h3>
+  
+  
+  <p class="article-stats">@SuJinyan6 · 6.5K 粉丝 · 54.2K 阅 · 556 赞 · 63 转</p>
+  <p class="article-meta">11/15 11:46</p>
+  <p class="article-excerpt">The English version can be found on my Substack here. The original Chinese version: 今年我找工作，主要投的是post-training这个方向。 结果来联系我的startup，几乎全是做数据的。</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 作者求职 post-training 方向时发现，主动联系自己的 startup 几乎全在做数据，由此拆解这门「看起来没有壁垒」的数据生意为何繁荣：post-training 与 agent 训练对高质量数据的持续消耗，撑起了这批公司的增长。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://x.com/josiah_arcanist/status/2121321789192081583" target="_blank" rel="noopener noreferrer">I left Ramp and spent eight months rebuilding the setup I couldn’t live without.</a></h3>
+  
+  
+  <p class="article-stats">@josiah_arcanist · 612 粉丝 · 44.1K 阅 · 508 赞 · 32 转</p>
+  <p class="article-meta">11/14 03:18</p>
+  <p class="article-excerpt">You’re sitting there with your agent prompting it 50 times before putting up a PR. The big dawgs like Ramp are handing off changes to their agents and starting on the next task. Anthropic reported</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 作者离开 Ramp 后花八个月重搭一套自己离不开的 agent 工作流：对比「手动 prompt 五十次才提一个 PR」的低效，讲 Ramp、Anthropic 等团队如何把改动交给 agent 并行推进、人只做下一件事的分工方式。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://x.com/andrewdsouza/status/2121305381515456998" target="_blank" rel="noopener noreferrer">Nobody Trusts Your Agent</a></h3>
+  
+  
+  <p class="article-stats">@andrewdsouza · 21.7K 粉丝 · 31.2K 阅 · 538 赞 · 116 转</p>
+  <p class="article-meta">11/14 02:13</p>
+  <p class="article-excerpt">If 2026 was the year of agents, 2027 will be the year of principals. Nobody has ever trusted an agent, and nobody ever will. An agent is something that acts on someone’s behalf. A principal is the one</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 提出「2026 是 agent 之年，2027 是 principal 之年」的判断：没人真正信任过 agent，因为 agent 只是代人行事的一方，真正缺的是委托人（principal）一侧的授权、审计与责任机制，是对 agent 叙事的一次反向切入。</p>
+</article>
+  </div>
+    </div>
+  </div>
+<div class="sub-content" data-sub-content="ai-news" data-cat="tech">
+    
+    <div class="source-contents">
+      <div class="source-content active" data-source-content="_merged" data-sub="ai-news" data-cat="tech">
+    <article class="article">
+  <h3 class="article-title"><a href="https://openai.com/index/step-toward-defining-the-standard-model" target="_blank" rel="noopener noreferrer">A step toward defining the Standard Model on a lattice</a></h3>
+  
+  
+  
+  <p class="article-meta">OpenAI News · 11/16 06:00</p>
+  <p class="article-excerpt">Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> OpenAI 发布研究，探讨为标准模型给出一种非微扰的格点定义候选方案，并称 GPT-6 Astra 协助将该设想推进为详细证明。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://openai.com/index/our-new-blog-for-science" target="_blank" rel="noopener noreferrer">Our new blog for science</a></h3>
+  
+  
+  
+  <p class="article-meta">OpenAI News · 11/16 06:00</p>
+  <p class="article-excerpt">The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> OpenAI 推出科学博客，用于发布新研究发现、实用方法，以及研究者利用 AI 推进科学发现的一手记述。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://latent.space/p/ainews-the-no-ai-slop-manifesto/" target="_blank" rel="noopener noreferrer">[AINews] The No AI Slop Manifesto</a></h3>
+  
+  
+  
+  <p class="article-meta">Latent Space · 11/14 16:31</p>
+  <p class="article-excerpt">November 13, 2026 — AIE speakers unite to lay out how to fight slop.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 2026年11月13日，AIE 的多位演讲者联合提出「拒绝 AI 垃圾内容」宣言，阐述如何应对低质 AI 生成内容。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place" target="_blank" rel="noopener noreferrer">Build a Robot Pick-and-Place Simulation with SimReady Assets</a></h3>
+  
+  
+  
+  <p class="article-meta">Hugging Face Blog · 11/14 02:00</p>
+  
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 英伟达在 Hugging Face 发布教程，介绍如何使用 SimReady 资产构建机器人抓取与放置的仿真环境。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/blog/allenai/xybench" target="_blank" rel="noopener noreferrer">XYBench: Helping with the problem behind the question</a></h3>
+  
+  
+  
+  <p class="article-meta">Hugging Face Blog · 11/14 01:02</p>
+  
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Allen AI 在 Hugging Face 博客介绍 XYBench 基准，聚焦于「问题背后的问题」，即评估中更深层的难点。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://openai.com/index/introducing-chatgpt-wallet" target="_blank" rel="noopener noreferrer">Introducing ChatGPT Wallet</a></h3>
+  
+  
+  
+  <p class="article-meta">OpenAI News · 11/13 23:00</p>
+  <p class="article-excerpt">Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> OpenAI 推出 ChatGPT Wallet，ChatGPT Work、Codex 与 dots 中的智能体可在用户批准下完成购买，并沿用现有银行卡保护机制。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/blog/ggml-org/llama-cpp-v1" target="_blank" rel="noopener noreferrer">llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem</a></h3>
+  
+  
+  
+  <p class="article-meta">Hugging Face Blog · 11/13 22:05</p>
+  
+  <p class="article-summary"><span class="summary-label">中文介绍</span> llama.cpp 发布 v1.0.0 版本，官方称其为本地 AI 生态提供更坚实的基础。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/" target="_blank" rel="noopener noreferrer">[AINews] Jensen Huang resigns after 33 years leading NVIDIA</a></h3>
+  
+  
+  
+  <p class="article-meta">Latent Space · 11/13 17:04</p>
+  <p class="article-excerpt">November 12, 2026 — Colette Kress takes over as interim CEO. What happens to open source/American AI leadership?</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 2026年11月12日，黄仁勋在领导英伟达33年后辞职，由 Colette Kress 出任临时 CEO，业界关注开源与AI领导格局变化。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://openai.com/business/customer-stories/shield" target="_blank" rel="noopener noreferrer">Shield helps technicians hand off legacy portal work with OpenAI</a></h3>
+  
+  
+  
+  <p class="article-meta">OpenAI News · 11/13 16:00</p>
+  <p class="article-excerpt">Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Shield 借助 OpenAI 帮助 IT 技术员交接遗留门户系统中的工作，其 Forge 智能体可代为操作系统，使技术员专注需人工判断的问题。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://latent.space/p/artcraft/" target="_blank" rel="noopener noreferrer">AI Ambition: ArtCraft Cloned Photoshop and Now Wants to &quot;Rebuild Everything&quot;</a></h3>
+  
+  
+  
+  <p class="article-meta">Latent Space · 11/13 12:17</p>
+  <p class="article-excerpt">ArtCraft used AI to rewrite Photoshop as open source software. For CEO Brandon Thomas, the vision is even bigger: to take back the internet!</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> ArtCraft 利用 AI 将 Photoshop 重写为开源软件。CEO Brandon Thomas 表示愿景更大，目标是「重建一切」并夺回互联网。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://tldr.tech/ai/2026-11-13" target="_blank" rel="noopener noreferrer">Gemini 4 Hydrogen 🚀, self-hosted Claude agents 🔒, Replit agent commerce 🛒</a></h3>
+  
+  
+  
+  <p class="article-meta">TLDR AI · 11/13 08:00</p>
+  
+  <p class="article-summary"><span class="summary-label">中文介绍</span> TLDR AI 2026年11月13日摘要：Gemini 4 Hydrogen 发布、可自托管的 Claude 智能体、Replit 智能体商务功能。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/" target="_blank" rel="noopener noreferrer">Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility</a></h3>
+  
+  
+  
+  <p class="article-meta">MIT Tech Review AI · 11/13 04:16</p>
+  <p class="article-excerpt">Representatives from Nvidia told Illinois representative Bill Foster that it would be technically possible to implement the anti-smuggling measures called for in the Chip Security Act, Foster told MIT Technology Review in an interview on Thursday, even while an industry group claimed they were “pote</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> 英伟达代表向伊利诺伊州众议员 Bill Foster 表示，技术上可实现《芯片安全法》所要求的防走私芯片追踪，尽管行业团体公开质疑其可行性。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://openai.com/business/customer-stories/amplitude" target="_blank" rel="noopener noreferrer">How Amplitude ships product improvements in 1–2 days with OpenAI</a></h3>
+  
+  
+  
+  <p class="article-meta">OpenAI News · 11/13 04:00</p>
+  <p class="article-excerpt">Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.</p>
+  <p class="article-summary"><span class="summary-label">中文介绍</span> Amplitude 主要基于 OpenAI 模型构建主动式产品智能体 Wave，可识别开发需求、协助团队用编码智能体交付改动并衡量效果，使产品改进在1至2天内上线。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite" target="_blank" rel="noopener noreferrer">LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B</a></h3>
+  
+  
+  
+  <p class="article-meta">Hugging Face Blog · 11/13 03:07</p>
+  
+  <p class="article-summary"><span class="summary-label">中文介绍</span> IBM 在 Hugging Face 博客介绍面向大模型的原生标记语言 LLMON，并已应用于 Granite 4.1 的 3B 与 8B 模型。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://deepmind.google/blog/introducing-gemini-4-hydrogen/" target="_blank" rel="noopener noreferrer">Introducing Gemini 4 Hydrogen</a></h3>
+  
+  
+  
+  <p class="article-meta">DeepMind Blog · 11/13 02:00</p>
+  
+  <p class="article-summary"><span class="summary-label">中文介绍</span> DeepMind 在官方博客发布 Gemini 4 Hydrogen 模型。</p>
+</article>
+  </div>
+    </div>
+  </div></div>
+  </section>
+  <section class="panel" data-panel="politics">
+    <div class="sub-content active" data-sub-content="world" data-cat="politics">
+    
+    <div class="source-contents">
+      <div class="source-content active" data-source-content="_merged" data-sub="world" data-cat="politics">
+    <article class="article">
+  <h3 class="article-title"><a href="https://www.bbc.co.uk/news/articles/c65y131w1534o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">&#39;Steering casualty&#39; preceded New Orleans cruise ship collision, says NTSB</a></h3>
+  
+  
+  
+  <p class="article-meta">BBC World · 11/16 06:57</p>
+  <p class="article-excerpt">Preliminary findings by National Transportation Safety Board investigators suggest the tanker suffered a steering failure before colliding with the cruise ship on Friday.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 美国国家运输安全委员会（NTSB）公布初步调查结果，指新奥尔良周五发生的一起油轮与邮轮相撞事故，起因可能是油轮先出现转向故障。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.nytimes.com/2026/11/14/world/americas/trump-venezuela-oil.html" target="_blank" rel="noopener noreferrer">Trump’s Oil Grab in Venezuela Is Testing the Country’s National Identity</a></h3>
+  
+  
+  
+  <p class="article-meta">NYT World · 11/16 06:43</p>
+  <p class="article-excerpt">Long-held beliefs in Venezuela about sovereign control over oil are fraying as the U.S. lays claim to the country’s oil reserves.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 美国主张对委内瑞拉石油储备的权利，使委内瑞拉社会长期持有的石油主权观念出现松动，该国国家认同正面临考验。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.aljazeera.com/sports/2026/11/15/england-stun-spain-to-end-la-rojas-43-game-unbeaten-run?traffic_source=rss" target="_blank" rel="noopener noreferrer">England stun Spain to end La Roja’s 43-game unbeaten run</a></h3>
+  
+  
+  
+  <p class="article-meta">Al Jazeera · 11/16 06:40</p>
+  <p class="article-excerpt">Spain suffer first defeat since March 2024 after losing 3-2 to England in Madrid despite grandstand finish.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 在馬德里举行的比赛中，英格兰以3比2击败西班牙，终结西班牙女足自2024年3月以来保持的43场不败纪录。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.bbc.co.uk/news/articles/cqm2j0jvep4eo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Police ban protests near 10 schools and five universities in Paris</a></h3>
+  
+  
+  
+  <p class="article-meta">BBC World · 11/16 06:28</p>
+  <p class="article-excerpt">The order will be in place from 16 to 20 November, Paris police chief Patrice Faure says.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 巴黎警察局长帕特里斯·福尔表示，11月16日至20日期间，巴黎10所学校与5所大学附近禁止举行抗议活动。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.theguardian.com/australia-news/2026/nov/16/australia-uk-canada-italy-urge-israel-critical-aid-gaza-winter-ntwnfb" target="_blank" rel="noopener noreferrer">Australia, UK, Canada and Italy urge Israel to allow critical aid to Gaza ahead of winter</a></h3>
+  
+  
+  
+  <p class="article-meta">The Guardian · 11/16 06:28</p>
+  <p class="article-excerpt">Four countries call situation ‘entirely reversible’ in joint statement as flooding exacerbates humanitarian crisis Australia, Canada, the United Kingdom and Italy have urged Israel to allow critical humanitarian aid to enter Gaza, describing the situation on the ground as “dire”. The four countries </p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 澳大利亚、英国、加拿大和意大利发表联合声明，呼吁以色列在冬季来临前允许关键人道援助进入加沙，称当地局势「严峻」，洪灾加剧了人道危机。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.bbc.co.uk/news/articles/cmdx1vpprk9vo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Suspected China spy linked to Nvidia&#39;s ex-boss left in 2025, Megaspeed says</a></h3>
+  
+  
+  
+  <p class="article-meta">BBC World · 11/16 06:24</p>
+  <p class="article-excerpt">The Nvidia scandal has raised questions over whether advanced AI chips ended up in China, despite US restrictions.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> Megaspeed公司称，一名与英伟达前负责人有关联、疑似中国间谍的人员已于2025年离职。该丑闻引发外界质疑：在美国限制下，先进AI芯片是否仍流入中国。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.theguardian.com/world/2026/nov/15/estonia-to-close-all-border-crossings-with-russia-after-attack-on-drone-maker" target="_blank" rel="noopener noreferrer">Estonia to close all border crossings with Russia after attack on drone maker</a></h3>
+  
+  
+  
+  <p class="article-meta">The Guardian · 11/16 06:17</p>
+  <p class="article-excerpt">Authorities say Russian intelligence service ordered attack which Estonian PM links to Tallinn’s support for Ukraine Estonia will close all its border crossings with Russia from 1 December after a suspected sabotage attack on a drone maker in the Baltic state over the weekend, which authorities said</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 爱沙尼亚将于12月1日起关闭与俄罗斯的所有边境口岸。此前该国一家无人机制造商遭到破坏袭击，当局称俄情报机构下令实施了此次袭击。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.npr.org/2026/11/15/nx-s1-6038814/what-to-expect-from-trump-and-xis-upcoming-meeting-in-china" target="_blank" rel="noopener noreferrer">What to expect from Trump and Xi&#39;s upcoming meeting in China</a></h3>
+  
+  
+  
+  <p class="article-meta">NPR World · 11/16 06:11</p>
+  <p class="article-excerpt">Preview of what to expect as President Trump meets with Chinese leader Xi Jinping and Russian President Vladimir Putin at the Asia-Pacific Economic Cooperation summit in Shenzhen, China this week.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 本周，亚太经合组织峰会将在中国深圳举行。美国总统特朗普将与中国国家主席习近平会面，俄罗斯总统普京也将出席。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.npr.org/2026/11/15/nx-s1-6013327/sydney-sweeney-jeans-american-eagle-garment-industry" target="_blank" rel="noopener noreferrer">Sydney Sweeney has great jeans. Who made them? (Psst: Workers)</a></h3>
+  
+  
+  
+  <p class="article-meta">NPR World · 11/16 06:07</p>
+  <p class="article-excerpt">Sydney Sweeney has great jeans, American Eagle Outfitters tells us. But who made them? And what are working conditions like in the garment factories of Pakistan and Bangladesh?</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 美国鹰牌服饰以影星悉尼·斯威尼的牛仔裤广告引发关注，报道追问这些牛仔裤由谁制造，并关注巴基斯坦和孟加拉国制衣工厂的劳动条件。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.aljazeera.com/news/2026/11/15/australia-canada-italy-and-the-uk-urge-israel-to-allow-aid-into-gaza?traffic_source=rss" target="_blank" rel="noopener noreferrer">Australia, Canada, Italy and the UK urge Israel to allow aid into Gaza</a></h3>
+  
+  
+  
+  <p class="article-meta">Al Jazeera · 11/16 06:06</p>
+  <p class="article-excerpt">The countries accuse Israel of preventing tents and other supplies from entering Gaza, despite the humanitarian crisis.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 澳大利亚、加拿大、意大利和英国敦促以色列允许援助进入加沙，指责其在人道危机期间阻止帐篷和其他物资入境。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.theguardian.com/uk-news/2026/nov/15/prince-harry-ukraine-war-surprise-trip-invictus-games" target="_blank" rel="noopener noreferrer">Prince Harry tells Ukrainians they are ‘going to win war’ on surprise trip to Lviv</a></h3>
+  
+  
+  
+  <p class="article-meta">The Guardian · 11/16 06:00</p>
+  <p class="article-excerpt">Duke of Sussex meets wounded veterans in city and says country could one day host Invictus Games Prince Harry has told Ukrainian soldiers they are going to win the war with Russia, during a surprise visit to the country. The Duke of Sussex met wounded veterans and medics in the city of Lviv, in the </p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 哈里王子突访乌克兰利沃夫，会见受伤退伍军人和医护人员，并告诉乌军士兵他们将赢得对俄战争，还提到乌克兰未来或可主办「不屈运动会」。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.aljazeera.com/news/2026/11/15/us-treasury-chief-calls-for-outsider-to-lead-embattled-tech-firm-nvidia?traffic_source=rss" target="_blank" rel="noopener noreferrer">US Treasury chief calls for outsider to lead embattled tech firm Nvidia</a></h3>
+  
+  
+  
+  <p class="article-meta">Al Jazeera · 11/16 05:47</p>
+  <p class="article-excerpt">Scott Bessent gives Nvidia&#39;s board 10 days to show the company&#39;s compliance with US export controls.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 美国财政部长斯科特·贝森特呼吁由外部人士执掌英伟达，并要求该公司董事会在10天内证明其遵守美国出口管制规定。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.nytimes.com/2026/11/15/world/middleeast/jordan-church-attack-death-sentence.html" target="_blank" rel="noopener noreferrer">Jordan Sentences 3 to Death Over Greek Orthodox Church Attack</a></h3>
+  
+  
+  
+  <p class="article-meta">NYT World · 11/16 05:33</p>
+  <p class="article-excerpt">The Jordanian military said that the men, who were arrested after a shooting at a Greek Orthodox church last month, had been convicted of terrorism charges.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 约旦军事法庭判处三名男子死刑。三人因上月希腊东正教教堂枪击案被捕，被裁定犯有恐怖主义罪名。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.nytimes.com/2026/11/15/world/middleeast/saudi-houthis-yemen-red-sea.html" target="_blank" rel="noopener noreferrer">Saudi-Backed Forces Retreat in Yemen, Leaving Key Strait in Houthi Control</a></h3>
+  
+  
+  
+  <p class="article-meta">NYT World · 11/16 05:26</p>
+  <p class="article-excerpt">It’s a setback for the Yemeni government and its ally Saudi Arabia, as analysts said the momentum in country’s civil war was tilting toward the Iran-backed Houthis.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 也门境内沙特支持的部队撤退，一条关键海峡落入胡塞武装控制。分析人士认为，也门内战势头正偏向伊朗支持的胡塞武装，这对也门政府和沙特构成挫折。</p>
+</article>
+<article class="article">
+  <h3 class="article-title"><a href="https://www.aljazeera.com/video/newsfeed/2026/11/15/yemens-houthis-unilaterally-release-600-war-detainees?traffic_source=rss" target="_blank" rel="noopener noreferrer">Yemen’s Houthis unilaterally release 600 war detainees</a></h3>
+  
+  
+  
+  <p class="article-meta">Al Jazeera · 11/16 05:19</p>
+  <p class="article-excerpt">Yemen’s Houthis have released 600 people imprisoned during the country’s civil war.</p>
+  <p class="article-summary"><span class="summary-label">中文摘要</span> 也门胡塞武装单方面释放600名在内战期间被关押的人员。</p>
+</article>
+  </div>
+    </div>
+  </div>
+  </section>
+</main>
+
+<!-- Conference Deadlines — MiMo Careers style -->
+<div class="deadlines-section">
+  <div class="section-label">即将截止的会议</div>
+  <a class="deadline-row" href="https://icml.cc/Conferences/2027" target="_blank" rel="noopener noreferrer">
+  <span class="deadline-num">01</span>
+  <div class="deadline-info"><span class="deadline-name">ICML 2027</span></div>
+  <span class="deadline-meta">2027-01-31</span>
+  <span class="deadline-badge upcoming">77 天</span>
+  <span class="deadline-arrow" aria-hidden="true">→</span>
+</a>
+<a class="deadline-row" href="https://iccv2027.thecvf.com/" target="_blank" rel="noopener noreferrer">
+  <span class="deadline-num">02</span>
+  <div class="deadline-info"><span class="deadline-name">ICCV 2027</span></div>
+  <span class="deadline-meta">2027-03-08</span>
+  <span class="deadline-badge later">113 天</span>
+  <span class="deadline-arrow" aria-hidden="true">→</span>
+</a>
+</div>
+
+<footer class="mimo-footer">
+  <span class="footer-logo">DailyBrief</span>
+  <div class="footer-right">
+    <span class="footer-disclaimer">内容均来自原媒体，本站仅作摘要整理与回链。</span>
+    <span class="footer-copy">© 2026 DailyBrief</span>
+  </div>
+</footer>
+<script>
+  function activateTab(target) {
+    document.querySelectorAll('.tabs > .tab').forEach(function (b) {
+      b.classList.toggle('active', b.dataset.tab === target);
+    });
+    document.querySelectorAll('.panel').forEach(function (p) {
+      p.classList.toggle('active', p.dataset.panel === target);
+    });
+  }
+
+  function scrollToArxivDirection(dir) {
+    activateTab('tech');
+    var panel = document.querySelector('.panel[data-panel="tech"]');
+    if (!panel) return;
+    var subBtn = panel.querySelector('[data-sub="arxiv-papers"]');
+    if (subBtn) subBtn.click();
+    var srcId = 'arxiv-' + dir;
+    var dirBtn = panel.querySelector('[data-source="' + srcId + '"]');
+    if (dirBtn) dirBtn.click();
+    setTimeout(function () {
+      var el = document.getElementById(srcId);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      else {
+        var main = document.getElementById('content');
+        if (main) main.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
+  }
+
+  document.querySelectorAll('[data-arxiv-dir]').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      scrollToArxivDirection(el.dataset.arxivDir);
+    });
+  });
+
+  document.querySelectorAll('[data-nav-tab]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      activateTab(link.dataset.navTab);
+      var main = document.getElementById('content');
+      if (main) main.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  document.querySelectorAll('.tabs > .tab').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      activateTab(btn.dataset.tab);
+    });
+  });
+  document.querySelectorAll('.sub-tab').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var panel = btn.closest('.panel');
+      if (!panel) return;
+      var sub = btn.dataset.sub;
+      panel.querySelectorAll('.sub-tab').forEach(function (b) {
+        b.classList.toggle('active', b === btn);
+      });
+      panel.querySelectorAll('.sub-content').forEach(function (p) {
+        p.classList.toggle('active', p.dataset.subContent === sub);
+      });
+    });
+  });
+  document.querySelectorAll('.source-tab').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var subContent = btn.closest('.sub-content');
+      if (!subContent) return;
+      var src = btn.dataset.source;
+      subContent.querySelectorAll('.source-tab').forEach(function (b) {
+        b.classList.toggle('active', b === btn);
+      });
+      subContent.querySelectorAll('.source-content').forEach(function (p) {
+        p.classList.toggle('active', p.dataset.sourceContent === src);
+      });
+    });
+  });
+</script>
+</body>
+</html>

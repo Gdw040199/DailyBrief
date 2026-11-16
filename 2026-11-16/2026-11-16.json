@@ -1,0 +1,75 @@
+{
+  "hero_headline": "英伟达换帅、Gemini 4 发布，星舰首次成功回收",
+  "daily_overview": "AI 领域本周多方密集动作：DeepMind 发布 Gemini 4 Hydrogen，OpenAI 为智能体开出支付通道 ChatGPT Wallet，本地推理框架 llama.cpp 迈入 v1.0.0；同日英伟达在黄仁勋掌舵 33 年后换帅，Colette Kress 出任临时 CEO，为行业格局添变数。航天方面，SpaceX 星舰完成首次飞船成功回收，可重复使用再进一步。时政层面，澳英加意四国联合呼吁以色列在冬季前放行加沙援助；爱沙尼亚因本国无人机厂商遇袭宣布 12 月起关闭全部对俄口岸；特朗普与习近平、普京预计在深圳 APEC 峰会期间会面，贸易与地区安全议题受关注。",
+  "tech_briefs": [
+    {
+      "title": "黄仁勋辞任英伟达CEO，Kress任临时CEO",
+      "url": "https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/",
+      "source": "Latent Space",
+      "summary": "2026 年 11 月 12 日，黄仁勋在执掌英伟达 33 年后辞职，由 Colette Kress 出任临时 CEO。业界关注此举对开源生态与美国 AI 领导格局的影响。",
+      "importance": 10
+    },
+    {
+      "title": "DeepMind 发布 Gemini 4 Hydrogen 模型",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 在官方博客推出 Gemini 4 Hydrogen，TLDR AI 同期将其列为当日头条；公开摘要未披露模型参数、上下文长度与开放范围等细节。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "SpaceX 星舰首次实现飞船成功回收",
+      "url": "https://www.dw.com/zh/里程碑：星舰飞船首次成功回收/a-79952900?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "SpaceX 星舰第 15 次试飞完成首次飞船成功回收，被视为通往完全可重复使用的关键突破；本次试飞同时也出现若干挫折。",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI 推出 ChatGPT Wallet，智能体可代付",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet",
+      "source": "OpenAI News",
+      "summary": "OpenAI 发布 ChatGPT Wallet，ChatGPT Work、Codex 与 dots 中的智能体可在用户批准下完成购买，并沿用现有银行卡保护机制。",
+      "importance": 7
+    },
+    {
+      "title": "llama.cpp 发布 v1.0.0，本地推理走向定型",
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "source": "Hugging Face Blog",
+      "summary": "llama.cpp 发布 v1.0.0，官方称其为本地 AI 生态提供更坚实基础。该 C/C++ 推理框架以量化压缩与跨平台著称，是端侧运行开源模型的主要路径之一，1.0 意味着接口与格式趋于稳定。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "四国联合呼吁以色列放行加沙援助物资",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/16/australia-uk-canada-italy-urge-israel-critical-aid-gaza-winter-ntwnfb",
+      "source": "The Guardian",
+      "summary": "澳大利亚、英国、加拿大与意大利发表联合声明，要求以色列在冬季来临前放行帐篷等关键援助物资进入加沙，称洪灾正加剧当地人道危机。（多家报道）",
+      "importance": 7
+    },
+    {
+      "title": "爱沙尼亚 12 月起关闭全部对俄口岸",
+      "url": "https://www.theguardian.com/world/2026/nov/15/estonia-to-close-all-border-crossings-with-russia-after-attack-on-drone-maker",
+      "source": "The Guardian",
+      "summary": "爱沙尼亚宣布自 12 月 1 日起关闭与俄罗斯的所有边境口岸。此前该国一家无人机制造商遭破坏袭击，当局称俄情报机构下令实施了此次袭击。",
+      "importance": 7
+    },
+    {
+      "title": "特朗普与习近平将在深圳 APEC 峰会会面",
+      "url": "https://www.npr.org/2026/11/15/nx-s1-6038814/what-to-expect-from-trump-and-xis-upcoming-meeting-in-china",
+      "source": "NPR World",
+      "summary": "亚太经合组织峰会本周在中国深圳举行，美国总统特朗普将与中国国家主席习近平会面，俄罗斯总统普京亦将出席，贸易与地区安全议题受关注。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "模型迭代之外，支付通道、交互协议与算力归属正构成 AI 竞争的下一层；而边境管控与援助通行等制度议题依旧未见缓和。",
+  "keywords": [
+    "Gemini 4 Hydrogen",
+    "ChatGPT Wallet",
+    "英伟达换帅",
+    "星舰回收",
+    "llama.cpp",
+    "加沙人道援助",
+    "爱沙尼亚边境",
+    "APEC 峰会"
+  ]
+}
