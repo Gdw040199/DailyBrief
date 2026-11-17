@@ -1,0 +1,74 @@
+{
+  "hero_headline": "Gemini 4 Hydrogen 发布；特朗普赴东盟会晤习近平普京",
+  "daily_overview": "技术侧，谷歌 DeepMind 接连发布 Gemini 4 系列（Carbon、Hydrogen），OpenAI 向全球 20 万研究者免费开放前沿模型，Hugging Face 与 OpenRouter 联手降低开放权重模型部署门槛；开源社区围绕智能体补齐基建，AG-UI 统一 Agent 与前端交互协议。研究上，agentic robotics 主张以通用基础模型替代任务专用策略，已在多个具身基准追平专用方案。时政侧，特朗普启程出席东盟峰会，将与习近平、普京同席；欧盟五国敲定卢旺达遣返中心，联合国就致命性自主武器展开谈判。",
+  "tech_briefs": [
+    {
+      "title": "谷歌发布 Gemini 4 Hydrogen，同系列已出 Carbon",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+      "source": "DeepMind Blog",
+      "summary": "谷歌 DeepMind 发布 Gemini 4 Hydrogen，此前一周已推出同系列 Gemini 4 Carbon；官方博客未披露具体评测数据与开放范围，行业通讯已将其列为当日 AI 头条。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI 向 20 万研究者免费开放前沿模型",
+      "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+      "source": "OpenAI News",
+      "summary": "OpenAI 扩大「ChatGPT 学术研究者计划」，向全球 20 万名研究者免费开放前沿模型权限；同期发布对 1800 余名科学家使用情况的调查，涉及日常流程与自报生产率变化。",
+      "importance": 7
+    },
+    {
+      "title": "研究提出 agentic robotics：用基础模型驱动机器人",
+      "url": "https://huggingface.co/papers/2611.18359",
+      "source": "HuggingFace Trending Papers",
+      "summary": "论文提出「agentic robotics」范式：不再为每类任务单独训练策略，而由搭载 agentic harness 的前沿基础模型（如 GPT-6 Astra）驱动机器人，数周内在多个具身基准上追平或超过任务专用策略。",
+      "importance": 7
+    },
+    {
+      "title": "AG-UI 开源协议统一智能体与前端交互",
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "source": "GitHub Trending",
+      "summary": "AG-UI 定义 Agent 与前端的流式事件交互协议，把智能体输出映射为界面更新，解决后端智能体与 Web 前端对接难的问题，并兼容多种 Agent 框架，便于开发者把智能体能力嵌入自家产品。",
+      "importance": 6
+    },
+    {
+      "title": "英伟达回应「让黄仁勋回归」请愿",
+      "url": "https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back/",
+      "source": "MIT Tech Review AI",
+      "summary": "社交平台流传要求黄仁勋重新出任英伟达首席执行官的请愿，签署者含多名科技界人士，特朗普亦表态支持；英伟达对该倡议不予理会。黄仁勋此前已离开该公司 CEO 职位。（多家报道）",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "特朗普启程东盟峰会，将与习近平普京同席",
+      "url": "https://www.nytimes.com/2026/11/16/world/asia/trump-asia-china-xi-putin.html",
+      "source": "NYT World",
+      "summary": "特朗普启程前往马尼拉出席东盟领导人会议，期间将与中国国家主席习近平、俄罗斯总统普京会晤，并会见澳大利亚总理等地区领导人；澳方表示希望看到冲突降温。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "联合国日内瓦谈判拟约束致命性自主武器",
+      "url": "https://www.npr.org/2026/11/16/nx-s1-6042548/un-killer-robots-ai-weapons-drones",
+      "source": "NPR World",
+      "summary": "各国在日内瓦就可在无人工干预下选择并击杀目标的武器规则展开谈判，美国、俄罗斯与以色列抵制具法律约束力的管控，各方阵营分歧明显。",
+      "importance": 8
+    },
+    {
+      "title": "德丹奥希荷五国将在卢旺达设遣返中心",
+      "url": "https://www.bbc.co.uk/news/articles/cw987343352go?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "德国、丹麦、奥地利、希腊与荷兰五国宣布，将在卢旺达设立「遣返中心」，用于安置庇护申请失败者。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "模型迭代与智能体基础设施同步推进，治理议题则从内容安全延伸到自主武器与跨境移民，技术节奏仍快于规则形成。",
+  "keywords": [
+    "Gemini 4",
+    "AI 智能体",
+    "机器人基础模型",
+    "开源协议",
+    "东盟峰会",
+    "自主武器",
+    "遣返中心"
+  ]
+}
