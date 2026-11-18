@@ -1,0 +1,75 @@
+{
+  "hero_headline": "AI 大模型密集更新，中美峰会与海湾局势升温",
+  "daily_overview": "11 月 17 日，AI 竞赛在闭源与开源两端同步加速：OpenAI 发布 GPT-6.2 Astra 与 Sol，主打专业输出、编程与成本下降；DeepMind 上线 Gemini 4 Hydrogen；开源阵营的 K2-Horizon 用 0.9B 到 375B-A23B 六个模型覆盖推理与智能体任务，阿里则开源混合架构的代码审查工具。资本面，英伟达季度业绩强劲但称不会让黄仁勋复职。时政面，特朗普与习近平即将在深圳会晤，英伟达间谍风波令芯片出口更敏感；伊朗与美国在海湾互袭，科威特拦截无人机；以色列议会选出反对派支持的议长卡哈纳。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI 发布 GPT-6.2 Astra 与 Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "source": "OpenAI News",
+      "summary": "OpenAI 推出 GPT-6.2 Astra 与 Sol，称在 ChatGPT Work、Codex 与 API 中提升专业输出、编程与计算机使用表现，同时提高效率、降低调用成本。",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind 上线 Gemini 4 Hydrogen",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 发布 Gemini 4 系列新成员 Hydrogen，官方博客暂未披露参数、上下文长度与基准成绩；该系列本月早些时候已上线 Gemini 4 Carbon。",
+      "importance": 8
+    },
+    {
+      "title": "开源模型 K2-Horizon 一次发布六款型号",
+      "url": "https://huggingface.co/papers/2611.21003",
+      "source": "HuggingFace Trending Papers",
+      "summary": "K2-Horizon 开源六款模型，覆盖 0.9B 稠密到 375B-A23B MoE，面向数学、科学、软件工程与办公自动化的推理与智能体任务；报告称其性能领先或持平更强模型，为团队自建基座提供完整选项。",
+      "importance": 8
+    },
+    {
+      "title": "阿里开源企业级代码审查工具 open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "source": "GitHub Trending",
+      "summary": "阿里开源内部大规模使用的代码审查工具，采用确定性流水线加 LLM Agent 的混合架构：规则先做静态筛查，大模型补充语义判断，输出行级评论，内置空指针等多语言规则集，便于接入 CI。",
+      "importance": 7
+    },
+    {
+      "title": "Claude-BugHunter：面向漏洞挖掘的 Claude Code 技能包",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "source": "GitHub Trending",
+      "summary": "面向漏洞挖掘与外部红队评估的 Claude Code 技能包，内置 82 个 skills、15 个 slash 命令，并按 24 类核心漏洞归纳 681 条公开报告模式，让安全人员复用成熟打法、减少重复编写提示词。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "特朗普与习近平将在深圳会晤，芯片议题承压",
+      "url": "https://www.npr.org/2026/11/17/nx-s1-6026589/xi-said-china-would-welcome-american-students-for-exchanges-whats-the-reality",
+      "source": "NPR World",
+      "summary": "特朗普与习近平即将在中国深圳会晤；习近平在 9 月峰会上提出欢迎 10 万名美国学生赴华交流。同期英伟达间谍风波令外界担忧美国进一步收紧先进芯片出口。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "伊朗与美国在海湾互袭，科威特拦截无人机",
+      "url": "https://www.aljazeera.com/news/2026/11/17/kuwait-reports-drone-attacks-as-iran-us-trade-attacks-on-qeshm-and-bahrain?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "科威特军方称防空部队正在拦截无人机；同日伊朗以无人机袭击美国在巴林的雷达设施，美方则对伊朗重要航运路线沿线目标实施报复。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "以色列议会选出反对派支持的议长卡哈纳",
+      "url": "https://www.theguardian.com/world/2026/nov/17/israeli-parliament-elects-new-knesset-speaker-backed-netanyahus-opponents",
+      "source": "The Guardian",
+      "summary": "以色列议会选举马坦·卡哈纳出任议长，他来自加迪·艾森科特阵营；该阵营承诺在其当选后推动撤销内塔尼亚胡政府部分最具争议的国内政策。（多家报道）",
+      "importance": 7
+    }
+  ],
+  "editor_note": "模型发布节奏已快过多数团队的评估能力；更值得留意的是同一天里，芯片供应与地缘政治再次被绑在一起。",
+  "keywords": [
+    "GPT-6.2",
+    "Gemini 4",
+    "K2-Horizon",
+    "开源大模型",
+    "英伟达",
+    "中美峰会",
+    "海湾局势",
+    "以色列议会"
+  ]
+}
