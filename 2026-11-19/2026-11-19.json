@@ -1,0 +1,75 @@
+{
+  "hero_headline": "前沿模型同日密集迭代，欧盟推450亿欧元贷款援乌",
+  "daily_overview": "11月18日，前沿模型竞赛继续加速：GPT-6.2 Astra 与 Sol 同日登场，Astra 成本降幅最高达600%，但早期测试者评价分化；DeepMind 接连放出 Gemini 4 Neon 与 Genie 4；Xing 4 在昇腾软硬件栈上给出前沿 Agent 模型的训练工程方案。开发侧，OpenAI 公布 Codex 沙箱的运行限制机制，GitHub 上让软件变为 Agent 原生的项目升温。时政方面，以军在加沙「黄线」外发动罕见地面行动；欧盟提议450亿欧元贷款援乌；特朗普政府考虑要求美企披露使用中国 AI 模型的情况。",
+  "tech_briefs": [
+    {
+      "title": "GPT-6.2 Astra 与 Sol 发布，成本大幅下探",
+      "url": "https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol/",
+      "source": "Latent Space",
+      "summary": "GPT-6.2 Astra 与 Sol 于11月17日发布，Astra 成本较前代降低20%至600%，但早期测试者对其使用体验评价不一，Sol 或被当作主力模型。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind 推出 Gemini 4 Neon 模型",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 博客宣布推出 Gemini 4 Neon；公开摘要未披露参数规模、能力范围、开放时间与定价等具体信息。此前一周该系列已有 Gemini 4 Hydrogen 面世。",
+      "importance": 8
+    },
+    {
+      "title": "昇腾软硬件栈上的 Xing 4 系列 Agent 模型",
+      "url": "https://huggingface.co/papers/2611.22115",
+      "source": "HuggingFace Trending Papers",
+      "summary": "Xing 4 在昇腾（Ascend）软硬件栈上延续 TeleChat 血脉，论文给出从架构选型、大规模训练基础设施到系统工程协同优化的设计原则，说明如何在国产芯片与框架上训练前沿 Agent 模型。",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI 说明 Codex 沙箱的权限边界",
+      "url": "https://openai.com/index/inside-the-codex-sandbox",
+      "source": "OpenAI News",
+      "summary": "OpenAI 介绍 Codex 沙箱机制：在 macOS、Linux 与 Windows 上执行命令时，按用户设定的文件系统与网络限制运行，以约束智能体在本机的操作范围。",
+      "importance": 7
+    },
+    {
+      "title": "Claude-BugHunter：面向红队作业的技能包",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "source": "GitHub Trending",
+      "summary": "该仓库把漏洞挖掘与外部红队方法论打包成 Claude Code 技能：82 个 skill、15 个 slash command，并沉淀681条公开披露报告中的攻击模式，覆盖24类核心漏洞，供授权测试时复用。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "以军在加沙「黄线」外发动罕见地面行动",
+      "url": "https://www.bbc.co.uk/news/articles/cw8r7510degno?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "以色列军方在加沙「黄线」以外发动罕见地面行动，称正在拆除一条「恐怖隧道」；哈马斯谴责此举为公然违反停火协议。",
+      "importance": 8
+    },
+    {
+      "title": "欧盟委员会提议450亿欧元贷款援乌",
+      "url": "https://www.theguardian.com/world/2026/nov/18/eu-loan-ukraine-cash-crisis-defences-von-der-leyen-kyiv",
+      "source": "The Guardian",
+      "summary": "欧盟委员会提议向乌克兰提供450亿欧元贷款，用于缓解资金短缺并加强防务。冯德莱恩称希望给基辅在谈判中「有力筹码」，并相信27个成员国都会支持。",
+      "importance": 8
+    },
+    {
+      "title": "美方考虑要求企业披露中国 AI 使用情况",
+      "url": "https://www.dw.com/zh/特朗普政府考虑强制美企披露中国ai使用情况/a-79982497?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "据路透社援引三位知情人士消息，特朗普政府正考虑要求美国企业公开披露其使用中国人工智能模型的情况，目的是减少对中国 AI 技术的依赖并避免引发反弹。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "模型发布节奏已快过评估节奏，能力、成本与安全边界的公开信息明显不对称，关键结论仍应以官方文档为准。",
+  "keywords": [
+    "GPT-6.2 Astra",
+    "Gemini 4",
+    "Xing 4",
+    "昇腾",
+    "Codex 沙箱",
+    "加沙停火",
+    "欧盟援乌",
+    "AI 披露"
+  ]
+}
