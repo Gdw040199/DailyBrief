@@ -1,0 +1,75 @@
+{
+  "hero_headline": "谷歌连发两大模型，Anthropic 上市首日大涨",
+  "daily_overview": "DeepMind 连发 Gemini 4 Neon 与 Genie 4，前者在情报指数得 61 分，对标 Anthropic 顶配；Anthropic 上市首日收涨 17%，募资逾千亿美元。GitHub 上 agent 技能框架与 CLI 封装项目走热。时政方面，欧洲盟友称已就结束乌克兰战争形成统一谈判立场；特朗普与习近平、普京首次三边峰会未在核军控取得突破；国际法院裁定缅甸军方对罗兴亚人实施种族灭绝。",
+  "tech_briefs": [
+    {
+      "title": "DeepMind 发布 Gemini 4 Neon 模型",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+      "source": "DeepMind Blog",
+      "summary": "谷歌 DeepMind 正式发布 Gemini 4 Neon。据多家报道，该中端模型在 Intelligence Index 上得分 61，被视作对标 Anthropic 顶配模型的竞争者。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind 的 Genie 4 世界模型开放使用",
+      "url": "https://deepmind.google/blog/genie-4-is-now-available/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 宣布 Genie 4 世界模型现已开放使用，与 Gemini 4 Neon 同日成为当日 AI 资讯头条之一。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "Anthropic 上市首日收涨 17%",
+      "url": "https://www.npr.org/2026/11/19/g-s1-154344/up-first-newsletter-house-democrats-trump-xi-putin-anthropic",
+      "source": "NPR World",
+      "summary": "Anthropic 完成创纪录 IPO，募资超千亿美元，发行价 83 美元，上市首日股价收涨 17%；市场对 AI 泡沫的担忧同时升温。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "GitHub 热榜：agent 技能框架 superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "source": "GitHub Trending",
+      "summary": "一个面向编码 agent 的技能框架与开发方法论，把可复用的技能、流程和协作规范打包成 agent 可直接调用的形式，让 Claude Code 等工具在真实项目中按既定方法推进而非临时发挥，体现 agent 工程化正从提示词走向可沉淀的流程资产。",
+      "importance": 7
+    },
+    {
+      "title": "HKUDS 开源 CLI-Anything，让软件对 agent 原生",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "source": "GitHub Trending",
+      "summary": "项目把各类软件封装成 CLI 接口供 agent 直接调用，并配套 CLI-Hub 汇总可用工具，目标是降低 agent 接入现有软件生态的改造成本，使既有软件「对 agent 原生」，解决 agent 调用 GUI 软件时接口不稳定的问题。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "欧洲盟友称已就乌克兰问题形成统一谈判立场",
+      "url": "https://www.bbc.co.uk/news/articles/ckzd9nln5e6go?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "乌克兰的欧洲盟友在柏林峰会表示，已就结束乌克兰战争形成「统一」谈判立场，并准备与俄罗斯举行会谈。",
+      "importance": 8
+    },
+    {
+      "title": "特朗普与习近平、普京首次三边峰会未取得突破",
+      "url": "https://www.nytimes.com/2026/11/19/world/asia/trump-xi-putin.html",
+      "source": "NYT World",
+      "summary": "特朗普与习近平、普京举行首次三边峰会，称普京为「朋友」并称赞中方接待，但在核军控、乌克兰战争与人工智能议题上均无突破；德媒评论称国际规则正让位于强权逻辑。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "国际法院裁定缅甸军方对罗兴亚人实施种族灭绝",
+      "url": "https://www.npr.org/2026/11/19/g-s1-154340/un-court-myanmar-genocide-rohingya",
+      "source": "NPR World",
+      "summary": "国际法院认定缅甸安全部队 2017 年在若开邦北部的军事行动中「带有种族灭绝意图」对待罗兴亚人。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "模型迭代与资本狂热同日上演，值得留意的除了跑分，还有算力成本与能耗账单。",
+  "keywords": [
+    "Gemini 4 Neon",
+    "Genie 4",
+    "Anthropic IPO",
+    "AI Agent",
+    "乌克兰谈判",
+    "三边峰会",
+    "国际法院",
+    "AI 能耗"
+  ]
+}
