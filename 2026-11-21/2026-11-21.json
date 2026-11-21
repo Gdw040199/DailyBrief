@@ -1,0 +1,75 @@
+{
+  "hero_headline": "Anthropic 完成史上最大 IPO，估值达 1.5 万亿美元",
+  "daily_overview": "技术侧，Anthropic 以1.5万亿美元估值完成史上最大 IPO；谷歌向开发者开放 Genie 4，Gemini API 新增工具检索以压低上下文成本。METR 更新评估称部分 AI 能力仍沿指数曲线上升，但在判断类任务上落后于编码；OpenAI 公开对抗性蒸馏的分层防御并推出药物化学基准。开源方面，WeMM-Video 补齐带音频的视频理解，CLI-Anything 把软件封装为 agent 可调用的命令行接口。时政侧，高市早苗首次访华未获最高层会晤，特朗普与中俄领导人会面成果有限；法国 2020 年警察施暴案宣判。",
+  "tech_briefs": [
+    {
+      "title": "Anthropic 完成史上最大 IPO，估值 1.5 万亿美元",
+      "url": "https://latent.space/p/ainews-anthropic-successfully-completes-largest-ipo-in-history-valued-at-1-5t/",
+      "source": "Latent Space",
+      "summary": "2026年11月19日，Anthropic 完成史上规模最大的 IPO，估值达1.5万亿美元；发行价83美元，开盘111.50美元，收于97.17美元。同日谷歌向开发者开放 Genie 4。",
+      "importance": 10
+    },
+    {
+      "title": "METR 更新 AI 能力评估：指数增长仍在，判断力落后",
+      "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+      "source": "MIT Tech Review AI",
+      "summary": "AI 评估非营利机构 METR 更新其常被误读的能力曲线报告，发现部分 AI 能力仍沿指数轨迹提升，但模型在需要判断力的任务上表现不如编码类任务。",
+      "importance": 7
+    },
+    {
+      "title": "OpenAI 公布对抗性蒸馏的分层防御方案",
+      "url": "https://openai.com/index/combatting-adversarial-distillation",
+      "source": "OpenAI News",
+      "summary": "OpenAI 介绍其应对对抗性蒸馏的分层做法，将模型训练、安全防护、检测与执法结合，以防止第三方违规提取模型能力。",
+      "importance": 7
+    },
+    {
+      "title": "港大团队开源 CLI-Anything：让软件成为 agent 原生工具",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "source": "GitHub Trending",
+      "summary": "港大数据智能实验室推出 CLI-Anything，主张把各类软件封装成统一命令行接口，供 AI agent 直接调用。它解决的是 agent 操作外部工具时需为每个应用单独写适配的重复工作，适合搭建自动化工作流的开发者。",
+      "importance": 6
+    },
+    {
+      "title": "开源全模态视频理解模型 WeMM-Video 发布中英双语版本",
+      "url": "https://huggingface.co/papers/2611.26409",
+      "source": "HuggingFace Trending Papers",
+      "summary": "WeMM-Video 开源中英双语全模态视频理解模型系列，含 2B、4B、9B 与 35B-A3B 四种规模，以音视频联合感知为核心，针对带音频的视频理解这一多模态难点提供可复现的开源基线。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "高市早苗首次访华未获最高层会晤，日媒称遭冷遇",
+      "url": "https://www.dw.com/zh/高市首相首次访华被冷遇-或激发日本国内更多拥护/a-80005039?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "日本首相高市早苗首次访华，未安排奏乐、鲜花迎接，也未达成双边最高层会晤，有日媒形容其受到怠慢；也有日本专家认为，深圳之行的冷遇反而可能巩固其国内支持者。",
+      "importance": 8
+    },
+    {
+      "title": "特朗普会晤中俄领导人 成果有限引欧洲质疑",
+      "url": "https://www.npr.org/2026/11/20/nx-s1-6047594/trump-asia-trip-xi-putin-press-conference",
+      "source": "NPR World",
+      "summary": "特朗普在白宫记者会上介绍与习近平、普京的会面，除就部分议题发表共同声明外未给出实质成果；德语媒体评论称其在深圳峰会上断送美国的领袖地位。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "法国三警员殴打黑人音乐制作人被判有罪",
+      "url": "https://www.nytimes.com/2026/11/20/world/europe/france-police-brutality-black-producer.html",
+      "source": "NYT World",
+      "summary": "法国三名警察因2020年在巴黎录音室内殴打黑人音乐制作人泽克莱尔被判有罪，施暴过程被监控拍下并引发全国性抗议，该判决被视为对警察暴力的司法回应。（多家报道）",
+      "importance": 6
+    }
+  ],
+  "editor_note": "资本与技术在同期推进：头部模型公司估值冲顶，评估与防御机制也在补课；时政多为姿态性会面，实质成果仍待观察。",
+  "keywords": [
+    "Anthropic IPO",
+    "AI 能力评估",
+    "对抗性蒸馏",
+    "全模态视频理解",
+    "Gemini API",
+    "高市早苗访华",
+    "法国警察案",
+    "agent 工具链"
+  ]
+}
