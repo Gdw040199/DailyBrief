@@ -1,0 +1,75 @@
+{
+  "hero_headline": "谷歌连发 Gemini 4 与 Genie 4，Anthropic 上市估值 1.5 万亿美元",
+  "daily_overview": "技术侧，谷歌密集发布 Gemini 4 Neon、Gemini 4 Hydrogen 与 Genie 4 世界模型，并把 AI Studio 打通到安卓应用上架，模型竞争重心转向工具链与分发；Anthropic 以 1.5 万亿美元估值完成史上最大 IPO。同期 OpenAI 披露对抗性蒸馏的分层防御方案，METR 报告称 AI 能力仍指数增长但判断类任务偏弱，开源侧则有中英双语全模态视频模型 WeMM-Video 问世。时政方面，美国联邦调查局犯罪数据库疑遭入侵，墨西哥在美方情报配合下抓获头号毒枭，特朗普访华出席深圳峰会后的中美互动收益仍待评估。",
+  "tech_briefs": [
+    {
+      "title": "谷歌连发 Gemini 4 系列与 Genie 4，AI Studio 可直出安卓应用",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 发布 Gemini 4 Neon 与 Gemini 4 Hydrogen，并向开发者开放 Genie 4 世界模型；Google AI Studio 称可由单条提示构建全栈安卓应用并发布至 Play Store。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "Anthropic 完成史上最大 IPO，估值达 1.5 万亿美元",
+      "url": "https://latent.space/p/ainews-anthropic-successfully-completes-largest-ipo-in-history-valued-at-1-5t/",
+      "source": "Latent Space",
+      "summary": "Anthropic 以代码 ANT 上市，发行价 83 美元，开盘 111.50 美元、收于 97.17 美元，估值达 1.5 万亿美元，为史上最大规模 IPO。",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI 推分层方案应对模型能力被「蒸馏」提取",
+      "url": "https://openai.com/index/combatting-adversarial-distillation",
+      "source": "OpenAI News",
+      "summary": "OpenAI 介绍应对对抗性蒸馏的分层做法，把模型训练、安全防护、检测与执法结合，目标是阻止外部以蒸馏方式提取其模型能力。",
+      "importance": 7
+    },
+    {
+      "title": "METR 报告：AI 能力仍指数级提升，判断类任务相对落后",
+      "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+      "source": "MIT Tech Review AI",
+      "summary": "AI 评估机构 METR 新报告显示，部分 AI 能力仍沿指数轨迹提升，但模型在需要判断力的任务上不如编码任务表现；MIT 科技评论称这是对一张常被误读图表的更新。",
+      "importance": 7
+    },
+    {
+      "title": "开源中英双语全模态视频理解模型 WeMM-Video 发布",
+      "url": "https://huggingface.co/papers/2611.26409",
+      "source": "HuggingFace Trending Papers",
+      "summary": "WeMM-Video 提供 2B、4B、9B 与 35B-A3B 多个规格的中英双语模型，核心是音视频联合感知，用于补上开源模型在带音频视频理解上的能力短板。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "FBI 犯罪数据库疑遭入侵，当局已展开调查",
+      "url": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "美国联邦调查局正调查国家犯罪信息中心数据库疑似被黑客入侵一事，该数据库由联邦与地方执法机构共享信息。",
+      "importance": 7
+    },
+    {
+      "title": "墨西哥军队抓获头号毒枭梅萨·弗洛雷斯",
+      "url": "https://www.nytimes.com/2026/11/21/world/americas/mexico-captures-drug-kingpin.html",
+      "source": "NYT World",
+      "summary": "美墨当局连续数周共享情报，以无人机、短信与声东击西等手段定位并抓获贩毒集团头目梅萨·弗洛雷斯，其列名 FBI 十大通缉犯。（多家报道）",
+      "importance": 7
+    },
+    {
+      "title": "特朗普访华出席深圳峰会，外界评估中方所得",
+      "url": "https://www.npr.org/2026/11/21/nx-s1-6048741/what-did-xi-jinping-get-from-the-bear-hug-with-trump-at-the-shenzhen-summit",
+      "source": "NPR World",
+      "summary": "美国总统特朗普本周访问中国并出席深圳峰会，NPR 采访马里兰大学美中关系项目主任戴利，分析习近平在此次互动中的收益。",
+      "importance": 8
+    }
+  ],
+  "editor_note": "模型发布与资本热潮同日推进，安全防护与能力评估被摆到与发布同等位置；地缘层面仍是冲突、执法与大国互动的老议题。",
+  "keywords": [
+    "Gemini 4",
+    "Genie 4",
+    "Anthropic 上市",
+    "对抗性蒸馏",
+    "METR 评估",
+    "全模态视频模型",
+    "中美关系",
+    "墨西哥毒枭"
+  ]
+}
