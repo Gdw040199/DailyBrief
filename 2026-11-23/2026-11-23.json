@@ -1,0 +1,74 @@
+{
+  "hero_headline": "DeepMind 发布 Gemini 4 Neon，乌方称在利比亚击沉俄舰",
+  "daily_overview": "技术侧，DeepMind 接连放出 Gemini 4 Neon 与 Genie 4，模型迭代继续加速；评估机构 METR 的报告给出冷静注脚：部分能力仍沿指数轨迹上升，但需要判断力的任务明显落后于编程。OpenAI 公布训练、检测与执法多层并举的反对抗性蒸馏方案。开源与学术社区的主线是让 agent 真正可用——superpowers 把编码 agent 能力拆成可复用技能与工作流，StereoVLM 则用双目几何补上视觉语言模型的度量三维短板。时政方面，泽连斯基称乌军在利比亚班加西击沉俄舰，战事外溢风险上升；印尼一家糖果厂火灾仍有数十人失联；特朗普称普京为「朋友」持续引发争议。",
+  "tech_briefs": [
+    {
+      "title": "DeepMind 发布 Gemini 4 Neon",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 博客发布 Gemini 4 Neon 上线公告，但原文未给出参数量、评测成绩与开放范围等细节，具体能力与可用渠道有待官方后续补充。",
+      "importance": 8
+    },
+    {
+      "title": "METR 报告：AI 能力指数增长，判断力滞后",
+      "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+      "source": "MIT Tech Review AI",
+      "summary": "AI 评估非营利机构 METR 更新报告称，部分 AI 能力仍沿指数轨迹提升，但模型在需要判断力的任务上表现不及编程任务，说明能力发展并不均衡。",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI 公布反「对抗性蒸馏」多层方案",
+      "url": "https://openai.com/index/combatting-adversarial-distillation",
+      "source": "OpenAI News",
+      "summary": "OpenAI 介绍其应对对抗性蒸馏的分层做法，把模型训练、安全防护、检测与执法结合起来，目标是阻止外部通过蒸馏方式提取模型能力。",
+      "importance": 7
+    },
+    {
+      "title": "superpowers：把编码 agent 能力拆为可复用技能",
+      "url": "https://github.com/obra/superpowers",
+      "source": "GitHub Trending",
+      "summary": "一套可直接落地的 agentic skills 框架与开发方法论，把 AI 编码 agent 的能力组织成可复用技能与工作流，规范任务拆解、实现与验证，方便团队将 Claude Code 等 agent 稳定接入日常研发。",
+      "importance": 7
+    },
+    {
+      "title": "StereoVLM：用双目几何做度量级 3D 推理",
+      "url": "https://huggingface.co/papers/2611.27915",
+      "source": "HuggingFace Trending Papers",
+      "summary": "现有视觉语言模型多在无相机标定、无跨视角几何约束下推断场景结构，难以给出真实尺度；该论文引入双目视觉约束，让模型具备度量级三维空间理解能力。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "泽连斯基称乌方在利比亚击沉俄军舰",
+      "url": "https://www.theguardian.com/world/live/2026/nov/23/russia-ukraine-war-zelenskyy-libya-benghazi-drone-attack-ship-merkury-un-nato-europe-latest-news-updates",
+      "source": "The Guardian",
+      "summary": "泽连斯基称乌方对停靠利比亚班加西港的俄舰「Merkury」及货船「MV Angara」实施无人艇与无人机袭击；利比亚东部政府称该舰系返俄途中停靠补给。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "印尼糖果厂火灾仍有数十人下落不明",
+      "url": "https://www.nytimes.com/2026/11/23/world/asia/indonesia-factory-fire.html",
+      "source": "NYT World",
+      "summary": "印度尼西亚一家糖果工厂周六发生火灾，大火持续燃烧数小时，事发时厂区内有数百人，目前仍有数十人下落不明，搜救与事故调查仍在进行。",
+      "importance": 6
+    },
+    {
+      "title": "美情报总监为特朗普称普京「朋友」辩护",
+      "url": "https://www.dw.com/zh/特朗普称普京为-朋友-美国国家情报总监克莱顿称-完全恰当/a-80017869?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "特朗普上周与普京会晤时称对方为「朋友」引发争议，美国国家情报总监克莱顿为其辩护，认为在外交会谈背景下使用「朋友」一词「完全恰当」。",
+      "importance": 6
+    }
+  ],
+  "editor_note": "模型发布会越开越密，真正稀缺的是可靠评测与安全防护；冲突外溢到第三方港口，同样值得持续盯住。",
+  "keywords": [
+    "Gemini 4 Neon",
+    "METR 评估报告",
+    "对抗性蒸馏",
+    "AI 编码 agent",
+    "双目视觉语言模型",
+    "俄乌冲突外溢",
+    "印尼工厂火灾"
+  ]
+}
