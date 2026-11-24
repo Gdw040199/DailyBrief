@@ -1,0 +1,75 @@
+{
+  "hero_headline": "黄仁勋重返英伟达 开源运行时守住补丁窗口",
+  "daily_overview": "11 月 24 日，技术落地与政治干预同时进入深水区。技术侧，OpenAI 与思科发布开源 Linux 运行时 Shirudo，用于填补打补丁期间的系统暴露窗口；DeepMind 以智能体加形式化验证搜索更快的聚变与化学量子算法；METR 报告显示部分 AI 能力仍沿指数曲线上升，但判断类任务明显落后；Uber 公开每月百万次 agent 技能调用的评测方法。时政侧，黄仁勋在特朗普推动下重返英伟达，白宫介入私企与国会国安调查同步发酵；俄罗斯侵入北约领空增加并传出核动力卫星计划；澳大利亚围绕 AI 版权与「AI 军火库」的争论升温。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI 与思科推开源 Linux 补丁防护运行时",
+      "url": "https://openai.com/index/introducing-shirudo",
+      "source": "OpenAI News",
+      "summary": "Shirudo 是面向 Linux 的开源运行时，用于在团队推送补丁期间保护仍在运行的系统，填补从漏洞披露到修复完成之间的暴露窗口。",
+      "importance": 8
+    },
+    {
+      "title": "DeepMind 用智能体加形式化验证加速量子算法发现",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 让智能体团队与形式化验证配合，为核聚变与化学场景搜索更快的量子算法，用机器可检验的证明约束推导过程，降低错误结论风险。",
+      "importance": 7
+    },
+    {
+      "title": "METR 更新 AI 能力曲线：编程之外判断类任务落后",
+      "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+      "source": "MIT Tech Review AI",
+      "summary": "AI 评测非营利机构 METR 更新报告称，部分 AI 能力仍沿指数轨迹提升，但模型在需要判断力的任务上表现不及编程类任务，提示能力增长并不均衡。",
+      "importance": 7
+    },
+    {
+      "title": "Uber 披露每月百万次 agent 技能调用的评测方法",
+      "url": "https://x.com/UberEng/status/2125008806249930999",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "Uber 工程团队把 agent 技能定义为一份 Markdown 文件，每个技能对应创建 PR、查询指标库、起草周报等单一职责，并介绍如何对每月上百万次调用做规模化评测。",
+      "importance": 6
+    },
+    {
+      "title": "Embodied-Harness：机器人操作智能体的递归自我改进",
+      "url": "https://huggingface.co/papers/2611.27689",
+      "source": "HuggingFace Trending Papers",
+      "summary": "针对 VLM 机器人智能体记忆组织不足、失败归因不清、经验难复用的问题，论文提出双智能体框架，通过递归自我改进积累并复用操作经验，提升长程操作表现。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "黄仁勋重返英伟达，白宫介入与国会调查并行",
+      "url": "https://www.dw.com/zh/川普力促黃仁勳回歸引爭議-國會仍將調查國安風險/a-80027866?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "黄仁勋 23 日重返英伟达，回归由特朗普在背后推动，白宫直接介入私企引发争议；国会跨党派仍主张继续调查该公司涉及的国家安全争议，其回归令公司市值增加约 1 万亿美元。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "俄加大对北约领空侵入 北约称将防御太空威胁",
+      "url": "https://www.bbc.co.uk/news/articles/c9x2er1ry2mzo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "北约秘书长吕特在俄巡航导弹落入波兰后安抚东翼成员；德国媒体报道俄计划在未来数周发射携带核弹头的卫星，北约表示将应对相关太空威胁。（多家报道）",
+      "importance": 7
+    },
+    {
+      "title": "澳洲 AI 版权之争升温：艺术家联署与政界表态",
+      "url": "https://www.theguardian.com/technology/2026/nov/24/kate-bush-grace-jones-australian-artists-copyright-law-ai",
+      "source": "The Guardian",
+      "summary": "凯特·布什、格蕾丝·琼斯等 7000 名创作者联署，呼吁工党政府不要削弱版权法；澳政界人士哈斯蒂同日表示，私人富豪不应拥有自己的 AI 军火库。（多家报道）",
+      "importance": 6
+    }
+  ],
+  "editor_note": "补丁窗口防护、评测曲线与芯片人事三件事指向同一问题：AI 落地的瓶颈正从模型能力转向流程与治理。",
+  "keywords": [
+    "Shirudo",
+    "形式化验证",
+    "AI 评测",
+    "智能体技能",
+    "黄仁勋",
+    "北约",
+    "AI 版权",
+    "量子算法"
+  ]
+}
