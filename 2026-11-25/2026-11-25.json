@@ -1,0 +1,75 @@
+{
+  "hero_headline": "GPT-6 实现蛋白质设计，黄仁勋重返英伟达引争议",
+  "daily_overview": "技术方面，OpenAI 称 GPT-6 可以借助推理与代码设计蛋白质，并已在五个靶点观察到结合证据，说明 AI 正进一步进入实验科学环节；开源社区大力推动「软件对智能体原生」，CLI-Anything 把现成工具封装为代理可以直接调用的命令行；还有研究把世界模型当作原生潜动作模型，试图统一异构机器人数据的动作表征。TIDAL 则开始下架并封禁完全由 AI 生成的音乐。时政方面，黄仁勋重返英伟达，引发外界质疑特朗普干预企业人事任命，美国司法部长回避相关提问；华为被判窃取商业机密罪名成立，但敲诈勒索指控不成立；澳大利亚与所罗门群岛签署新安全条约。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI 称 GPT-6 可设计蛋白质并在五靶点验证",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "source": "OpenAI News",
+      "summary": "OpenAI 表示，GPT-6 通过推理和代码生成蛋白质的结构与序列，实验室测试在五个靶点上发现结合证据，这被视为通用模型进入实验科学流程的一个案例。",
+      "importance": 9
+    },
+    {
+      "title": "TIDAL 下架并封禁全 AI 生成音乐",
+      "url": "https://x.com/TIDAL/status/2125233598714487170",
+      "source": "X 推文 (AttentionVC)",
+      "summary": "TIDAL 称，其 AI 政策已执行识别、标注并取消全 AI 曲目变现；如今进一步下架、拒收和封禁 100% AI 生成的音乐，理由是保护音乐人并让听众知情。",
+      "importance": 7
+    },
+    {
+      "title": "港大开源 CLI-Anything，让软件对智能体原生",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "source": "GitHub Trending",
+      "summary": "香港大学数据智能实验室开源的项目，通过 CLI-Hub 把各类软件封装成命令行接口，让 AI 代理能直接调用现成工具完成操作，面向自动化工作流与智能体集成场景。",
+      "importance": 7
+    },
+    {
+      "title": "论文：以世界模型充当原生潜动作模型",
+      "url": "https://huggingface.co/papers/2611.30898",
+      "source": "HuggingFace Trending Papers",
+      "summary": "第一视角人类视频与异构机器人数据通常缺少动作标注或共享动作空间。该论文提出把世界模型本身当作潜动作模型，省去单独训练逆动态与正动态模型，从而统一建模动态与动作。",
+      "importance": 7
+    },
+    {
+      "title": "AI 与智能体流量令企业网络承压",
+      "url": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/",
+      "source": "MIT Tech Review AI",
+      "summary": "报道指出，随着企业加速部署 AI，AI 已成为企业网络最大的需求来源，智能体任务产生的网络流量估计高出 450%，网络现代化改造因此压力上升。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "黄仁勋重返英伟达，特朗普干预任命引质疑",
+      "url": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "英伟达股价下跌 7%，议员要求说明总统特朗普在黄仁勋复职中扮演的角色，美国司法部长回避相关提问；德国媒体也批评此举为投资者敲响警钟。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "华为被判窃取商业机密罪成，勒索指控不成立",
+      "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "纽约法院经数月审理后裁定华为窃取商业机密罪名成立，但敲诈勒索指控不成立，判决涉及该公司在美国业务的相关争议。",
+      "importance": 8
+    },
+    {
+      "title": "澳与所罗门群岛签新安全条约",
+      "url": "https://www.theguardian.com/world/2026/nov/25/australia-solomon-islands-treaty-blow-to-china-pacific-influence",
+      "source": "The Guardian",
+      "summary": "澳大利亚总理阿尔巴尼斯与所罗门群岛总理瓦莱签署新安全条约。瓦莱称该国不再是太平洋地区「不确定与疑虑的来源」，报道认为此举削弱中国在该地区的影响力。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "同日多条线索指向同一问题：AI 能力扩张的速度，正快于企业网络、内容平台与监管框架的承接能力。",
+  "keywords": [
+    "GPT-6",
+    "蛋白质设计",
+    "智能体",
+    "世界模型",
+    "黄仁勋",
+    "华为",
+    "所罗门群岛",
+    "AI 音乐"
+  ]
+}
