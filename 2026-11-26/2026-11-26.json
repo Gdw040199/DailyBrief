@@ -1,0 +1,75 @@
+{
+  "hero_headline": "AI 攻入蛋白质设计与数学证明，美国再挥关税大棒",
+  "daily_overview": "11 月 25 日的信息集中在科研落地与地缘摩擦两条线。技术上，大模型正从通用对话外溢到科研与工程：GPT-6 可设计蛋白质结构与序列，并在五个靶点取得结合证据；AI 生成的数学证明增速已超过研究者的阅读速度。工程侧围绕智能体补配套：CLI-Anything 把各类软件封装为 agent 原生接口，也有论文指出长任务 agent 会过早锁定答案。时政方面，美国对中欧等主要伙伴加征新关税，金正恩要求扩大战术核武部署，西班牙大选或终结左翼长期执政。",
+  "tech_briefs": [
+    {
+      "title": "GPT-6 展示蛋白质结构与序列设计能力",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "source": "OpenAI News",
+      "summary": "OpenAI 称 GPT-6 可借助推理与代码设计蛋白质结构与序列，实验室测试在五个靶点上发现结合证据，意味着大模型开始进入需湿实验验证的科研环节。",
+      "importance": 9
+    },
+    {
+      "title": "AI 数学证明产出速度超过研究者阅读速度",
+      "url": "https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/",
+      "source": "Latent Space",
+      "summary": "从 Erdős 问题到矩阵乘法与傅里叶变换的新界，AI 产出的数学证明数量增长过快，已超出研究者消化速度；同期 TLDR AI 亦收录 OpenAI 在矩阵数学上的进展（多家报道）。",
+      "importance": 8
+    },
+    {
+      "title": "CLI-Anything：把各类软件变成 agent 可调用的命令行",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "source": "GitHub Trending",
+      "summary": "该项目主张让所有软件成为 agent 原生能力，通过统一 CLI-Hub 将工具封装为可直接执行的接口，省去逐个适配的成本，便于搭建自动化工具链。",
+      "importance": 7
+    },
+    {
+      "title": "研究：一面镜子即可让现有机器人策略失效",
+      "url": "https://huggingface.co/papers/2611.33010",
+      "source": "HuggingFace Trending Papers",
+      "summary": "受动物镜像自我识别测试启发，团队构建 RoboDojo-Mirror 基准，发现现有机器人操作策略在含镜面反射的场景中明显失效，暴露出具身模型在空间与自我表征上的缺陷。",
+      "importance": 7
+    },
+    {
+      "title": "新论文用可验证信念的强化学习纠正 agent「懒惰」",
+      "url": "https://huggingface.co/papers/2611.32884",
+      "source": "HuggingFace Trending Papers",
+      "summary": "针对长任务 agent 在证据不足时过早锁定答案的「懒惰」行为，论文提出以信念一致性为约束的强化学习，让 agent 依据自身信念行动，而非只依赖末端结果奖励。",
+      "importance": 7
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美国对华及欧盟等主要贸易伙伴加征新关税",
+      "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "summary": "美国宣布对包括中国、欧盟在内的多个国家加征新关税，涉及美国多个主要贸易伙伴，具体税率与生效安排仍待细则公布。",
+      "importance": 9
+    },
+    {
+      "title": "金正恩要求扩大战术核武器部署",
+      "url": "https://www.aljazeera.com/news/2026/11/26/kim-jong-un-says-north-korea-should-widen-deployment-of-tactical-nukes?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "金正恩表示朝鲜应扩大战术核武器部署，并警告任何否认其核国家地位的做法都将被视为「公开宣战」。",
+      "importance": 8
+    },
+    {
+      "title": "西班牙大选投票在即，左翼长期执政或告终",
+      "url": "https://www.theguardian.com/news/audio/2026/nov/26/spains-election-the-end-of-a-leftwing-icon-podcast",
+      "source": "The Guardian",
+      "summary": "西班牙本周末举行关键选举，长期执政的首相桑切斯可能被包含极右翼政党的保守派联盟取代，选后组阁前景受关注。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "模型能力正外溢到科研与安全场景，配套的工程方法与评测基准同步跟上；关税与核部署的表态则需观察后续落地细节。",
+  "keywords": [
+    "蛋白质设计",
+    "AI Agent",
+    "数学证明",
+    "开源框架",
+    "具身智能",
+    "关税",
+    "朝鲜核武",
+    "西班牙大选"
+  ]
+}
