@@ -1,0 +1,74 @@
+{
+  "hero_headline": "GPT-6 展现蛋白质设计能力，新西兰联盟失多数",
+  "daily_overview": "技术侧，模型能力正从通用对话转向可验证的科学任务：GPT-6 展示蛋白质结构与序列设计能力并给出实验室结合证据，DeepMind 以智能体团队加形式化验证改进面向核聚变与化学的量子算法；开源社区则聚焦效率，循环 Transformer 的跨循环传递机制、多页文档的跨页编码成为新优化点，GitHub 趋势榜被「让软件成为智能体原生接口」类框架占据。时政侧，新西兰大选最终结果显示执政联盟失去多数、需中间小党支持，朝鲜宣布继续扩充核武，刚果（金）埃博拉疫情升至 1.2 万例。",
+  "tech_briefs": [
+    {
+      "title": "GPT-6 展示内在蛋白质设计能力",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "source": "OpenAI News",
+      "summary": "OpenAI 称 GPT-6 可借助推理与代码设计蛋白质结构与序列，实验室测试在五个靶点上发现结合证据，指向通用模型直接参与湿实验前的分子设计。",
+      "importance": 9
+    },
+    {
+      "title": "DeepMind 用智能体与形式化验证改进量子算法",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "source": "DeepMind Blog",
+      "summary": "DeepMind 让智能体团队搜索量子线路，再用形式化验证确认正确性，针对核聚变与化学模拟场景改进算法，把「机器搜索」与「机器证明」串成闭环。",
+      "importance": 8
+    },
+    {
+      "title": "Mixture-of-Loops：重构循环 Transformer 传递机制",
+      "url": "https://huggingface.co/papers/2611.34923",
+      "source": "HuggingFace Trending Papers",
+      "summary": "循环 Transformer 复用共享层可提升表达力，但牺牲推理效率。该论文重新设计相邻循环之间的核心传递机制，回答「应当传递什么」，以推进表达力与效率的平衡。",
+      "importance": 7
+    },
+    {
+      "title": "DocSEAM：多页文档的双向跨页编码",
+      "url": "https://huggingface.co/papers/2611.34420",
+      "source": "HuggingFace Trending Papers",
+      "summary": "多页文档视觉语言模型通常逐页独立编码，页边界处特征不连续。DocSEAM 让每页视觉 token 在生成时即可读取相邻页内容，提升跨页信息连贯性与理解表现。",
+      "importance": 7
+    },
+    {
+      "title": "CLI-Anything：让软件成为智能体原生接口",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "source": "GitHub Trending",
+      "summary": "该项目通过 CLI-Hub 把现有命令行工具统一暴露给 AI 智能体，使其可被发现与调用，目标是让各类软件成为 agent 可直接操作的对象，降低自动化接入成本。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "新西兰执政联盟未获过半，需中间小党支持",
+      "url": "https://www.theguardian.com/world/2026/nov/27/new-zealand-nz-election-2026-final-results",
+      "source": "The Guardian",
+      "summary": "新西兰大选最终结果显示，总理卢克森领导的右倾联盟失去议会多数，须争取中间派「机会党」支持方可继续执政，否则面临重新大选。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "金正恩视察核设施，称将扩充核武库",
+      "url": "https://www.npr.org/2026/11/26/g-s1-155955/north-korea-kim-nuclear-weapons-trump",
+      "source": "NPR World",
+      "summary": "金正恩视察核原料生产设施，要求扩充核武器以应对美韩威胁；此前特朗普释放的接触信号未获回应。",
+      "importance": 7
+    },
+    {
+      "title": "刚果（金）埃博拉病例升至 1.2 万，救援受阻",
+      "url": "https://www.npr.org/2026/11/26/g-s1-155957/congo-ebola-responders",
+      "source": "NPR World",
+      "summary": "刚果（金）东部埃博拉疫情快速扩散至 1.2 万例，叛军与政府军交战干扰防控工作，部分响应人员已撤离。",
+      "importance": 7
+    }
+  ],
+  "editor_note": "模型能力正从语言生成转向蛋白质、算法等可验证领域；多地政治不确定性上升。两条线索都指向同一件事：能被验证，比能被宣称更重要。",
+  "keywords": [
+    "GPT-6",
+    "蛋白质设计",
+    "量子算法",
+    "AI 智能体",
+    "多页文档理解",
+    "新西兰大选",
+    "埃博拉疫情"
+  ]
+}
