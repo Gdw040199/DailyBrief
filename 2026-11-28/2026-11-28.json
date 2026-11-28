@@ -1,0 +1,75 @@
+{
+  "hero_headline": "GPT-6 展示蛋白设计能力，AI 评测与工程生态同步扩张",
+  "daily_overview": "技术侧，OpenAI 称 GPT-6 借助推理与代码完成蛋白质结构与序列设计，实验室测试在五个靶点观察到结合证据；研究端围绕线性注意力循环状态的稳定性、语言与视觉模型的表征一致性继续推进，GitHub 上让软件「agent 原生」的命令行封装，以及在 AWS Trainium3 上运行视频生成的实践也同步升温。时政侧，外媒围绕上海市委书记陈吉宁被查与接班格局的解读持续发酵，澳大利亚维多利亚州州选举投票举行，联合国秘书长人选因大国分歧迟迟未定。",
+  "tech_briefs": [
+    {
+      "title": "OpenAI 称 GPT-6 具备内生蛋白质设计能力",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "source": "OpenAI News",
+      "summary": "OpenAI 表示 GPT-6 通过推理与代码完成蛋白质结构与序列设计，实验室测试在五个靶点上观察到结合证据，显示通用模型未经专门训练也具备蛋白设计能力。",
+      "importance": 8
+    },
+    {
+      "title": "研究解析 Gated DeltaNet-2 循环状态不稳定问题",
+      "url": "https://huggingface.co/papers/2611.34051",
+      "source": "HuggingFace Trending Papers",
+      "summary": "论文定位 Gated DeltaNet-2 线性注意力中通道级擦除与写入控制带来的状态更新误差累积，提出稳定化门控与归一化方案，在保持固定规模循环状态的同时改善长序列训练稳定性。",
+      "importance": 7
+    },
+    {
+      "title": "新研究在雅可比空间检验跨模态表征趋同假说",
+      "url": "https://arxiv.org/abs/2611.33304",
+      "source": "arXiv Papers",
+      "summary": "论文把 Platonic Representation Hypothesis 从激活值拓展到雅可比空间，比较语言与视觉模型对输入扰动的响应结构，发现二者表征近似一致、差异可归结为一个旋转，为跨模态收敛假说补充证据。",
+      "importance": 6
+    },
+    {
+      "title": "CLI-Anything：把软件封装为 agent 可调用的命令行",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "source": "GitHub Trending",
+      "summary": "该项目提出让软件「agent 原生」，通过 CLI-Hub 把各类图形界面工具封装成命令行接口供 AI agent 直接调用，绕开界面操作难题，面向搭建自动化工作流的开发者。",
+      "importance": 7
+    },
+    {
+      "title": "Hugging Face 展示在 Trainium3 上生成视频",
+      "url": "https://huggingface.co/blog/video-trainium3",
+      "source": "Hugging Face Blog",
+      "summary": "Hugging Face 博客给出在 AWS 自研 Trainium3 芯片上运行 LTX-2.5 生成视频的实践，披露该加速硬件在视频生成负载下的实测表现，为通用 GPU 之外的推理路径提供参考。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "外媒聚焦陈吉宁被查与接班格局解读",
+      "url": "https://www.dw.com/zh/德语媒体：习近平清除了一名潜在继任者/a-80077870?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "《新苏黎世报》等外媒分析称，上海市委书记陈吉宁被查意味着又一名潜在继任者出局；《经济周刊》则关注房地产危机的连锁反应仍在拖累中国经济。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "澳大利亚维多利亚州举行州选举投票",
+      "url": "https://www.theguardian.com/australia-news/live/2026/nov/28/victorian-election-live-results-updates-premier-ben-carroll-jess-wilson-warren-pickering-2026-victoria-polls-votes-latest-news-ntwnfb",
+      "source": "The Guardian",
+      "summary": "澳大利亚维多利亚州选民前往投票站，工党候选人本·卡罗尔与自由党领袖杰斯·威尔逊角逐州长职位，计票结果预计当晚公布。",
+      "importance": 6
+    },
+    {
+      "title": "联合国秘书长遴选僵持，任期将尽人选未定",
+      "url": "https://www.npr.org/2026/11/27/nx-s1-6050907/as-un-secretary-generals-last-day-approaches-search-for-his-replacement-continues",
+      "source": "NPR World",
+      "summary": "现任联合国秘书长任期于今年结束，主要大国仍未就继任人选达成一致，观察人士担忧留给新任秘书长的适应时间过短。",
+      "importance": 6
+    }
+  ],
+  "editor_note": "模型能力正同时向科研与工程两端外溢，而评测与稳定性研究仍在补课；时政信息多来自外媒解读，宜交叉核实。",
+  "keywords": [
+    "GPT-6",
+    "蛋白质设计",
+    "线性注意力",
+    "AI Agent",
+    "跨模态表征",
+    "维多利亚州选举",
+    "联合国秘书长",
+    "训练数据"
+  ]
+}
